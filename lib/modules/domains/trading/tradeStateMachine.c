@@ -20,11 +20,6 @@ public void SetupTaipanStates()
     addTransition("random event", "battle", "startBattle");
     addTransition("battle", "traveling", "endBattle");
 
-    addState("overloaded", "Your vehicle is overloaded!");
-    addEntryAction("overloaded", "handleOverload");
-    addTransition("at port", "overloaded", "overload");
-    addTransition("overloaded", "at port", "resolveOverload");
-
     addFinalState("bankrupt", "You have gone bankrupt.", 0, "failure");
     addEntryAction("bankrupt", "showBankruptcy");
     addTransition("at port", "bankrupt", "bankrupt");
@@ -34,63 +29,105 @@ public void SetupTaipanStates()
     addTransition("battle", "dead", "dead");
 
     setInitialState("at port");
-
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Example entry action for "at port"
-public void showTradingMenu()
+public void showTradingMenu(object player)
 {
-    // Call tradingSelector or similar to present port options
-    // e.g., present buy/sell/bank/transfer/retire menu
-    // tradingSelector->presentMenu();
+    if (objectp(player))
+    {
+        object selector = clone_object(
+            "/lib/modules/domains/trading/selectors/tradingSelector.c");
+        move_object(selector, player);
+        selector->registerEvent(this_object());
+        selector->initiateSelector(player);
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Example entry action for "traveling"
-public void startTravel()
+public void startTravel(object player)
 {
-    // Call travelSelector or similar to handle travel logic
-    // travelSelector->beginTravel();
+    if (objectp(player))
+    {
+        object env = environment(player);
+        if (env && function_exists("isPort", env) && env->isPort())
+        {
+            object selector = clone_object(
+                "/lib/modules/domains/trading/selectors/travelSelector.c");
+            selector->setPort(env);
+            move_object(selector, player);
+            selector->registerEvent(this_object());
+            selector->initiateSelector(player);
+        }
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Example entry action for "random event"
-public void handleRandomEvent()
+public void handleRandomEvent(object player)
 {
-    // TODO: Implement random event logic (pirates, storm, Li Yuen, Wu, etc.)
-    // This should trigger the appropriate event (e.g., startBattle, arrivePort, etc.)
+    if (objectp(player))
+    {
+        object *vehicles = player->getVehicles();
+        if (sizeof(vehicles))
+        {
+            object vehicle = vehicles[0];
+            string dest = player->getCurrentLocation();
+            object selector = clone_object(
+                "/lib/modules/domains/trading/selectors/travelEventSelector.c");
+            selector->setVehicle(vehicle);
+            selector->setDestination(dest);
+            selector->setRouteInfo(([
+                "type": "overland",
+                "days": 1,
+                "danger": 20
+            ]));
+            move_object(selector, player);
+            selector->registerEvent(this_object());
+            selector->initiateSelector(player);
+        }
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Example entry action for "sea battle"
-public void startSeaBattle()
+public void startSeaBattle(object player)
 {
-    // TODO: Implement sea battle logic
-    // This should handle combat and, on completion, trigger endBattle or dead
+    // Combat is handled within travelEventSelector's fight/flee/bribe
+    // options. This entry point exists for future standalone battle
+    // encounters outside the travel flow.
+    if (objectp(player))
+    {
+        tell_object(player, "Battle commences!\n");
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Example entry action for "overloaded"
-public void handleOverload()
+public void showBankruptcy(object player)
 {
-    // Call overloadSelector or similar to resolve overload
-    // overloadSelector->presentMenu();
+    if (objectp(player))
+    {
+        object configDict = getService("configuration");
+        string colorConfig = player->colorConfiguration();
+
+        tell_object(player, configDict->decorate(
+            sprintf("\nYour trading company has gone bankrupt.\n"
+                "Final Debt: %d gold.\n"
+                "Your trading career is over.\n",
+                player->getDebt()),
+            "failure", "selector", colorConfig));
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Example entry actions for end states
-public void showRetirement()
+public void showDeath(object player)
 {
-    // TODO: Show retirement/endgame summary
-}
+    if (objectp(player))
+    {
+        object configDict = getService("configuration");
+        string colorConfig = player->colorConfiguration();
 
-public void showBankruptcy()
-{
-    // TODO: Show bankruptcy/endgame summary
-}
-
-public void showDeath()
-{
-    // TODO: Show death/endgame summary
+        tell_object(player, configDict->decorate(
+            "\nYou have perished during your travels.\n"
+            "Your trading legacy ends here.\n",
+            "failure", "selector", colorConfig));
+    }
 }

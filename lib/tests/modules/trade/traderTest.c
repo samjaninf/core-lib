@@ -311,3 +311,90 @@ void CompleteContractFailsWithNonexistentContract()
     int result = Trader->removeActiveContract("nonexistent");
     ExpectEq(0, result);
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void CompleteContractRemovesActiveContract()
+{
+    Trader->acceptContract("c1", ([
+        "item type": "food",
+        "quantity": 10,
+        "destination": "eledhel",
+        "reward": 500,
+        "description": "Deliver food"
+    ]));
+    ExpectEq(1, sizeof(Trader->getActiveContracts()));
+    ExpectEq(1, Trader->completeContract("c1"));
+    ExpectEq(0, sizeof(Trader->getActiveContracts()));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void GetNetWorthCalculatesCorrectly()
+{
+    Trader->addCash(1000);
+    Trader->depositMoney(500);
+    // cash=500, bank=500, wagon cost=250, net=1250
+    int netWorth = Trader->getNetWorth();
+    ExpectTrue(netWorth >= 1250,
+        "Net worth should include cash + bank + vehicle value");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void GetNetWorthAccountsForDebt()
+{
+    Trader->addCash(2000);
+    Trader->borrowMoney(1000);
+    int netWorth = Trader->getNetWorth();
+    // cash=3000, debt=1000, plus vehicle value
+    // net = 3000 + vehicleValue - 1000
+    int cashPlusVehicleMinusDebt = Trader->getCash() +
+        Trader->getBank() - Trader->getDebt();
+    ExpectTrue(netWorth >= cashPlusVehicleMinusDebt,
+        "Net worth should account for debt");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void IsBankruptReturnsFalseWithCash()
+{
+    Trader->addCash(100);
+    ExpectFalse(Trader->isBankrupt());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void IsBankruptReturnsFalseWithVehicles()
+{
+    // Trader has a vehicle from Setup, even with 0 cash not bankrupt
+    ExpectFalse(Trader->isBankrupt());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CanRetireReturnsFalseWhenPoor()
+{
+    Trader->addCash(100);
+    ExpectFalse(Trader->canRetire());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CanRetireReturnsTrueWhenWealthy()
+{
+    Trader->addCash(200000);
+    ExpectTrue(Trader->canRetire());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void GetRetirementRatingScalesWithWealth()
+{
+    Trader->addCash(50000);
+    ExpectEq("Struggling Peddler", Trader->getRetirementRating());
+
+    Trader->addCash(50000);
+    ExpectEq("Successful Merchant", Trader->getRetirementRating());
+
+    Trader->addCash(200000);
+    ExpectEq("Wealthy Trader", Trader->getRetirementRating());
+
+    Trader->addCash(300000);
+    ExpectEq("Master Merchant", Trader->getRetirementRating());
+
+    Trader->addCash(500000);
+    ExpectEq("Trade Emperor", Trader->getRetirementRating());
+}

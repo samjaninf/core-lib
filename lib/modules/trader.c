@@ -110,6 +110,7 @@ public object addVehicle(string type, string location)
 /////////////////////////////////////////////////////////////////////////////
 public object *getVehicles()
 {
+    vehicles = filter(vehicles, (: objectp($1) :));
     object *result = vehicles + ({});
     return result;
 }
@@ -117,7 +118,8 @@ public object *getVehicles()
 /////////////////////////////////////////////////////////////////////////////
 public object *getVehiclesAtLocation(string location)
 {
-    return filter(vehicles, (: $1->getLocation() == $2:), location);
+    vehicles = filter(vehicles, (: objectp($1) :));
+    return filter(vehicles, (: $1->getLocation() == $2 :), location);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -615,6 +617,12 @@ public int removeActiveContract(string contractId)
 }
 
 /////////////////////////////////////////////////////////////////////////////
+public int completeContract(string contractId)
+{
+    return removeActiveContract(contractId);
+}
+
+/////////////////////////////////////////////////////////////////////////////
 public int setActiveContract(string contractId, mapping contractData)
 {
     int ret = 0;
@@ -625,4 +633,69 @@ public int setActiveContract(string contractId, mapping contractData)
         ret = 1;
     }
     return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public int getNetWorth()
+{
+    int cash = tradingCompany["cash"];
+    int bank = tradingCompany["bank"];
+    int debt = tradingCompany["debt"];
+
+    int vehicleValue = 0;
+    foreach(object vehicle in vehicles)
+    {
+        if (objectp(vehicle))
+        {
+            mapping blueprint = vehicle->getBlueprint();
+            if (mappingp(blueprint) && member(blueprint, "cost"))
+            {
+                vehicleValue += blueprint["cost"];
+            }
+        }
+    }
+
+    return cash + bank + vehicleValue - debt;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public int isBankrupt()
+{
+    calculateInterest();
+    int cash = tradingCompany["cash"];
+    int bank = tradingCompany["bank"];
+    int debt = tradingCompany["debt"];
+
+    return (cash <= 0 && bank <= 0 && debt > 0 &&
+        !sizeof(getVehicles()));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public int canRetire()
+{
+    return getNetWorth() >= 100000;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public string getRetirementRating()
+{
+    int netWorth = getNetWorth();
+
+    if (netWorth >= 1000000)
+    {
+        return "Trade Emperor";
+    }
+    if (netWorth >= 500000)
+    {
+        return "Master Merchant";
+    }
+    if (netWorth >= 250000)
+    {
+        return "Wealthy Trader";
+    }
+    if (netWorth >= 100000)
+    {
+        return "Successful Merchant";
+    }
+    return "Struggling Peddler";
 }

@@ -11,7 +11,7 @@ object TradingSelector;
 void Init()
 {
     ignoreList += ({ "resetPlayerMessages", "getMenuOptionNumber",
-        "tradingSelectorRemoved", "onSelectorCompleted" });
+        "tradingSelectorRemoved", "onSelectorCompleted", "onSelectorAborted" });
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -116,6 +116,7 @@ void TradingSelectorDisplaysMainMenuCorrectly()
     ExpectSubStringMatch("Browse Contracts", message);
     ExpectSubStringMatch("Visit Bank", message);
     ExpectSubStringMatch("Select Port", message);
+    ExpectSubStringMatch("Manage Vehicles", message);
     ExpectSubStringMatch("Exit Trading Menu", message);
 }
 
@@ -173,6 +174,16 @@ void ChoosingSelectPortDisplaysPortSelector()
     command(getMenuOptionNumber("Select Port"), Player);
     string result = Player.caughtMessage();
     ExpectSubStringMatch("Select Port", result);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void ChoosingManageVehiclesDisplaysVehicleSelector()
+{
+    resetPlayerMessages();
+    TradingSelector.initiateSelector(Player);
+    command(getMenuOptionNumber("Manage Vehicles"), Player);
+    string result = Player.caughtMessage();
+    ExpectSubStringMatch("Vehicle Management", result);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -240,4 +251,43 @@ void ExitRemovesSelectorFromPlayer()
     ExpectTrue(tradingSelectorRemoved(),
         "Selector should be removed from player on cancel command");
     ToggleCallOutBypass();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void RetireOptionAppearsWhenWealthy()
+{
+    Player->addCash(200000);
+    resetPlayerMessages();
+    TradingSelector.initiateSelector(Player);
+
+    string message = Player.caughtMessage();
+    ExpectSubStringMatch("Retire", message);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void RetireOptionDoesNotAppearWhenPoor()
+{
+    resetPlayerMessages();
+    TradingSelector.initiateSelector(Player);
+
+    string message = Player.caughtMessage();
+    ExpectFalse(sizeof(regexp(({ message }), "Retire")),
+        "Retire option should not appear without sufficient wealth");
+}
+
+///////////////////////////////////////////////////////////////////////////////
+void BankruptcyWarningDisplaysWhenBankrupt()
+{
+    // Set up bankruptcy: give cash, borrow to create debt, then drain cash
+    Player->addCash(1000);
+    Player->borrowMoney(2000);
+    // Now cash=3000, debt=2000
+    Player->addCash(-3000);
+    // Now cash=0, debt=2000, bank=0
+
+    resetPlayerMessages();
+    TradingSelector.initiateSelector(Player);
+
+    string message = implode(Player.caughtMessages(), "\n");
+    ExpectSubStringMatch("Bankruptcy", message);
 }

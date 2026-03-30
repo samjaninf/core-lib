@@ -5,6 +5,7 @@ inherit "/lib/core/baseSelector.c";
 
 private object Port;
 private object *Vehicles = ({});
+private object SelectedVehicle;
 
 /////////////////////////////////////////////////////////////////////////////
 public void setPort(object port)
@@ -82,6 +83,12 @@ protected nomask void setUpUserForSelection()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+public nomask object getSelectedVehicle()
+{
+    return SelectedVehicle;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 protected nomask int processSelection(string selection)
 {
     int ret = -1;
@@ -89,14 +96,15 @@ protected nomask int processSelection(string selection)
     if (User && Data[selection]["canShow"])
     {
         string type = Data[selection]["type"];
-        ret = type == "exit";
+        ret = (type == "exit");
 
         if (type == "vehicle")
         {
-            object vehicle = Data[selection]["vehicle"];
+            SelectedVehicle = Data[selection]["vehicle"];
+            ret = 1;
         }
     }
-    return -1;
+    return ret;
 }
 
 /////////////////////////////////////////////////////////////////////////////

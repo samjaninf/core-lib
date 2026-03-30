@@ -39,12 +39,12 @@ public nomask void InitializeSelector()
 /////////////////////////////////////////////////////////////////////////////
 protected nomask void setUpUserForSelection()
 {
-    object vehicleService = getService("vehicle");
-    if (vehicleService && objectp(Vehicle))
+    object vehicleMgmt = getService("vehicleManagement");
+    if (vehicleMgmt && objectp(Vehicle))
     {
-        Data = vehicleService->getEnhancementMenu(User, Vehicle, SlotType);
+        Data = vehicleMgmt->getEnhancementMenu(User, Vehicle, SlotType);
     }
-    
+
     Data[to_string(sizeof(Data) + 1)] = ([
         "name": "Return to Vehicle Menu",
         "type": "exit",
@@ -63,28 +63,24 @@ protected nomask int processSelection(string selection)
 
         if (!ret && member(Data[selection], "component"))
         {
-            object vehicleService = getService("vehicle");
-            if (vehicleService)
+            string component = Data[selection]["component"];
+            string slot = Data[selection]["slot"];
+            int cost = Data[selection]["cost"];
+
+            if (User->getCash() >= cost)
             {
-                string component = Data[selection]["component"];
-                string slot = Data[selection]["slot"];
-                int cost = Data[selection]["cost"];
-                
-                if (User->getMoney() >= cost)
-                {
-                    User->addMoney(-cost);
-                    Vehicle->setComponent(slot, component);
-                    
-                    tell_object(User, sprintf("You have installed %s in the %s slot for %d gold.",
-                        component, slot, cost));
-                    ret = 1;
-                }
-                else
-                {
-                    tell_object(User, sprintf("You need %d gold to install this component.",
-                        cost));
-                    ret = 0;
-                }
+                User->addCash(-cost);
+                Vehicle->installComponent(slot, component);
+
+                tell_object(User, sprintf("You have installed %s in the %s slot for %d gold.",
+                    component, slot, cost));
+                ret = 1;
+            }
+            else
+            {
+                tell_object(User, sprintf("You need %d gold to install this component.",
+                    cost));
+                ret = 0;
             }
         }
     }

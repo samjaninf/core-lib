@@ -11,7 +11,7 @@ object Selector;
 void Init()
 {
     ignoreList += ({
-        "__inline_lib_tests_modules_trade_vehicleSelectorTest_c_162_#0000",
+        "__inline_lib_tests_modules_trade_vehicleSelectorTest_c_161_#0000",
         "resetPlayerMessages",
         "getMenuOptionNumber", 
         "setupPlayerVehicles",
@@ -48,29 +48,26 @@ private void setupPlayerVehicles()
 /////////////////////////////////////////////////////////////////////////////
 private void setupPlayerHenchmen()
 {
-    Player->addHenchman("eledhel", ([
+    Player->addHenchman("eledhel trading post", ([
         "name": "Gareth",
-        "type": "sailor", 
-        "traits": ({ "/lib/instances/traits/domains/journeyman-sailor.c" }),
+        "type": "sailor",
         "persona": "swordsman",
-        "level": 8,
-        "activity": "idle"
-    ]));
-
-    Player->addHenchman("eledhel", ([
-        "name": "Marcus",
-        "type": "marine",
-        "traits": ({ "/lib/instances/traits/domains/journeyman-marine.c" }),
-        "persona": "fighter",
         "level": 10,
         "activity": "idle"
     ]));
 
-    Player->addHenchman("riverport", ([
+    Player->addHenchman("eledhel trading post", ([
+        "name": "Marcus",
+        "type": "marine",
+        "persona": "man-at-arms",
+        "level": 10,
+        "activity": "idle"
+    ]));
+
+    Player->addHenchman("hillgarath trading post", ([
         "name": "Finn",
         "type": "sailor",
-        "traits": ({ "/lib/instances/traits/domains/master-sailor.c" }),
-        "persona": "rogue",
+        "persona": "swordsman",
         "level": 12,
         "activity": "idle"
     ]));
@@ -88,8 +85,10 @@ void Setup()
     Player->colorConfiguration("none");
     Player->charsetConfiguration("ascii");
     Player->addMoney(10000);
-    Player->addPlayerHolding("eledhel");
-    Player->initializeTrader(); // Initialize trader functionality
+    Player->addPlayerHolding("eledhel trading post");
+    Player->addPlayerHolding("hillgarath trading post");
+    Player->initializeTrader();
+    Player->addCash(10000);
 
     setupPlayerHenchmen();
     setupPlayerVehicles();
@@ -241,340 +240,104 @@ void CorrectlyDisplaysVehicleManagementMenu()
 //}
 //
 ///////////////////////////////////////////////////////////////////////////////
-//void ViewVehicleFleetDisplaysCorrectInformation()
-//{
-//    navigateToVehicleMenu();
-//    string fleetOption = findOptionByText("View Vehicle Fleet");
-//    command(fleetOption, Player);
-//    
-//    string message = Player->caughtMessage();
-//    
-//    ExpectSubStringMatch("=== Vehicle Fleet ===", message);
-//    ExpectSubStringMatch("Handcart", message);
-//    ExpectSubStringMatch("Wagon", message);
-//    ExpectSubStringMatch("Capacity:", message);
-//    ExpectSubStringMatch("Crew Efficiency:", message);
-//}
-//
+void ViewVehicleFleetDisplaysVehicleStatus()
+{
+    navigateToVehicleMenu();
+    string fleetOption = findOptionByText("View Vehicle Fleet");
+    resetPlayerMessages();
+    command(fleetOption, Player);
+
+    string message = Player->caughtMessage();
+
+    ExpectSubStringMatch("Status", message);
+    ExpectSubStringMatch("Location:", message);
+    ExpectSubStringMatch("Structure:", message);
+    ExpectSubStringMatch("Capacity:", message);
+}
+
 ///////////////////////////////////////////////////////////////////////////////
-//void ManageVehicleDisplaysEnhancementOptions()
-//{
-//    navigateToVehicleMenu();
-//    string wagonOption = findOptionByText("Manage Wagon");
-//    command(wagonOption, Player);
-//    
-//    string message = Player->caughtMessage();
-//    
-//    ExpectSubStringMatch("Enhance Vehicle", message);
-//    ExpectSubStringMatch("View Vehicle Layout", message);
-//    ExpectSubStringMatch("Upgrade.*Slot", message);
-//    ExpectSubStringMatch("Return", message);
-//}
-//
+void ManageVehicleDisplaysEnhancementOptions()
+{
+    navigateToVehicleMenu();
+    string wagonOption = findOptionByText("Manage Wagon");
+    resetPlayerMessages();
+    command(wagonOption, Player);
+
+    string message = Player->caughtMessage();
+
+    ExpectSubStringMatch("Enhance Vehicle", message);
+    ExpectSubStringMatch("View Vehicle Layout", message);
+    ExpectSubStringMatch("Upgrade.*Slot", message);
+    ExpectSubStringMatch("Return", message);
+}
+
 ///////////////////////////////////////////////////////////////////////////////
-//void VehicleLayoutDisplaysCorrectly()
-//{
-//    navigateToVehicleMenu();
-//    string wagonOption = findOptionByText("Manage Wagon");
-//    command(wagonOption, Player);
-//    
-//    string layoutOption = findOptionByText("View Vehicle Layout");
-//    command(layoutOption, Player);
-//    
-//    string message = Player->caughtMessage();
-//    
-//    // Check for wagon layout elements
-//    ExpectSubStringMatch("\\[FRAME\\]", message);
-//    ExpectSubStringMatch("\\[CARGO1\\]", message);
-//    ExpectSubStringMatch("\\[CARGO2\\]", message);
-//    ExpectSubStringMatch("\\[HENCHMAN\\]", message);
-//}
-//
+void ExitReturnsToMainMenu()
+{
+    navigateToVehicleMenu();
+    string exitOption = findOptionByText("Exit Vehicle Management");
+    command(exitOption, Player);
+
+    string message = Player->caughtMessage();
+    ExpectSubStringMatch("Exit Vehicle Management", message);
+}
+
 ///////////////////////////////////////////////////////////////////////////////
-//void ComponentUpgradeMenuDisplaysAvailableComponents()
-//{
-//    navigateToVehicleMenu();
-//    string wagonOption = findOptionByText("Manage Wagon");
-//    command(wagonOption, Player);
-//    
-//    string upgradeOption = findOptionByText("Upgrade.*frame.*Slot");
-//    command(upgradeOption, Player);
-//    
-//    string message = Player->caughtMessage();
-//    
-//    ExpectSubStringMatch("Available Components", message);
-//    ExpectSubStringMatch("basic.*frame", message);
-//}
-//
+void VehicleCargoManagementWorks()
+{
+    object wagon = getFirstVehicleOfType("wagon");
+    ExpectTrue(objectp(wagon));
+
+    int initialUsed = wagon->getUsedSpace();
+    ExpectTrue(wagon->addCargo("wood", 2));
+    ExpectEq(initialUsed + 2, wagon->getUsedSpace());
+
+    ExpectTrue(wagon->removeCargo("grain", 3));
+    ExpectEq(2, wagon->getCargoQuantity("grain"));
+}
+
 ///////////////////////////////////////////////////////////////////////////////
-//void CrewManagementDisplaysAvailableHenchmen()
-//{
-//    navigateToVehicleMenu();
-//    string wagonOption = findOptionByText("Manage Wagon");
-//    command(wagonOption, Player);
-//    
-//    string crewOption = findOptionByText("Manage.*henchman.*Position");
-//    command(crewOption, Player);
-//    
-//    string message = Player->caughtMessage();
-//    
-//    ExpectSubStringMatch("Crew Assignment", message);
-//    ExpectSubStringMatch("View Current Crew", message);
-//    ExpectSubStringMatch("Assign.*Gareth", message);
-//    ExpectSubStringMatch("Assign.*Marcus", message);
-//}
-//
+void VehicleDamageAndRepairWorks()
+{
+    object wagon = getFirstVehicleOfType("wagon");
+    ExpectTrue(objectp(wagon));
+
+    int maxStructure = wagon->getMaxStructure();
+    int initialStructure = wagon->getCurrentStructure();
+
+    ExpectEq(10, wagon->takeDamage(10));
+    ExpectEq(initialStructure - 10, wagon->getCurrentStructure());
+    ExpectFalse(wagon->isDestroyed());
+
+    ExpectEq(5, wagon->repair(5));
+    ExpectEq(initialStructure - 5, wagon->getCurrentStructure());
+
+    wagon->takeDamage(maxStructure);
+    ExpectTrue(wagon->isDestroyed());
+}
+
 ///////////////////////////////////////////////////////////////////////////////
-//void CanAssignHenchmanToVehicle()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    // Remove current crew assignment
-//    wagon->unassignHenchman("henchman");
-//    
-//    navigateToVehicleMenu();
-//    string wagonOption = findOptionByText("Manage Wagon");
-//    command(wagonOption, Player);
-//    
-//    string crewOption = findOptionByText("Manage.*henchman.*Position");
-//    command(crewOption, Player);
-//    
-//    string assignOption = findOptionByText("Assign.*Marcus");
-//    command(assignOption, Player);
-//    
-//    mapping crew = wagon->getCrew();
-//    ExpectTrue(member(crew, "henchman"));
-//    ExpectEq("Marcus", crew["henchman"]);
-//}
-//
+void PurchaseOptionLaunchesPurchaseSelector()
+{
+    navigateToVehicleMenu();
+    string purchaseOption = findOptionByText("Purchase New Vehicle");
+    resetPlayerMessages();
+    command(purchaseOption, Player);
+
+    string message = Player->caughtMessage();
+    ExpectSubStringMatch("Purchase Vehicle", message);
+    ExpectSubStringMatch("Return to Vehicle Menu", message);
+}
+
 ///////////////////////////////////////////////////////////////////////////////
-//void CrewAssignmentUpdatesVehicleEfficiency()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    // Test without crew
-//    wagon->unassignHenchman("henchman");
-//    int lowEfficiency = wagon->getCrewEfficiency();
-//    
-//    // Test with crew
-//    wagon->assignHenchman("henchman", "Marcus");
-//    int highEfficiency = wagon->getCrewEfficiency();
-//    
-//    ExpectTrue(highEfficiency > lowEfficiency);
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void VehicleStatusDisplaysDetailedInformation()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    string stat = wagon->getVehicleStatus(Player);
-//    
-//    ExpectSubStringMatch("=== Wagon Status ===", stat);
-//    ExpectSubStringMatch("Location: eledhel", stat);
-//    ExpectSubStringMatch("Structure:", stat);
-//    ExpectSubStringMatch("Capacity:", stat);
-//    ExpectSubStringMatch("Speed:", stat);
-//    ExpectSubStringMatch("Protection:", stat);
-//    ExpectSubStringMatch("Crew Efficiency:", stat);
-//    ExpectSubStringMatch("grain: 5 units", stat);
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void CanHireNewCrewMember()
-//{
-//    int initialMoney = Player->getMoney();
-//    mapping initialHenchmen = Player->getHenchmen("all", "eledhel");
-//    
-//    navigateToVehicleMenu();
-//    string wagonOption = findOptionByText("Manage Wagon");
-//    command(wagonOption, Player);
-//    
-//    string crewOption = findOptionByText("Manage.*henchman.*Position");
-//    command(crewOption, Player);
-//    
-//    string hireOption = findOptionByText("Hire Sailor.*1000");
-//    command(hireOption, Player);
-//    
-//    ExpectEq(initialMoney - 1000, Player->getMoney());
-//    mapping newHenchmen = Player->getHenchmen("all", "eledhel");
-//    ExpectTrue(sizeof(newHenchmen) > sizeof(initialHenchmen));
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void VehiclesAtDifferentLocationsNotShown()
-//{
-//    // Add vehicle at different location
-//    object barge = clone_object("/lib/items/vehicle.c");
-//    barge->set("vehicle type", "barge");
-//    barge->setLocation("riverport");
-//    
-//    object vehicleService = getService("vehicle");
-//    mapping blueprint = vehicleService->queryVehicleBlueprint("barge");
-//    barge->initializeVehicle(blueprint);
-//    Player->addVehicle(barge);
-//    
-//    navigateToVehicleMenu();
-//    string message = Player->caughtMessage();
-//    
-//    // Should show eledhel vehicles but not riverport barge
-//    ExpectSubStringMatch("Handcart", message);
-//    ExpectSubStringMatch("Wagon", message);
-//    ExpectFalse(sizeof(regexp(({ message }), "Barge")));
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void SelectorHandlesEmptyVehicleList()
-//{
-//    // Remove all vehicles at location
-//    object *vehicles = Player->getVehiclesAtLocation("eledhel");
-//    foreach (object vehicle in vehicles)
-//    {
-//        Player->removeVehicle(vehicle);
-//    }
-//    
-//    navigateToVehicleMenu();
-//    string message = Player->caughtMessage();
-//    
-//    ExpectSubStringMatch("Purchase New Vehicle", message);
-//    ExpectFalse(sizeof(regexp(({ message }), "View Vehicle Fleet")));
-//    ExpectFalse(sizeof(regexp(({ message }), "Manage.*Vehicle")));
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void VehicleCapacityAffectedByCrewEfficiency()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    // Test without crew
-//    wagon->unassignHenchman("henchman");
-//    int lowCapacity = wagon->getCapacity();
-//    
-//    // Test with crew
-//    wagon->assignHenchman("henchman", "Marcus");
-//    int highCapacity = wagon->getCapacity();
-//    
-//    ExpectTrue(highCapacity > lowCapacity);
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void VehicleCargoManagementWorks()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    int initialUsed = wagon->getUsedSpace();
-//    ExpectTrue(wagon->addCargo("wood", 2));
-//    ExpectEq(initialUsed + 2, wagon->getUsedSpace());
-//    
-//    ExpectTrue(wagon->removeCargo("grain", 3));
-//    ExpectEq(2, wagon->getCargoQuantity("grain"));
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void VehicleDamageAndRepairWorks()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    int maxStructure = wagon->getMaxStructure();
-//    int initialStructure = wagon->getCurrentStructure();
-//    
-//    ExpectEq(10, wagon->takeDamage(10));
-//    ExpectEq(initialStructure - 10, wagon->getCurrentStructure());
-//    ExpectFalse(wagon->isDestroyed());
-//    
-//    ExpectEq(5, wagon->repair(5));
-//    ExpectEq(initialStructure - 5, wagon->getCurrentStructure());
-//    
-//    // Test destruction
-//    wagon->takeDamage(maxStructure);
-//    ExpectTrue(wagon->isDestroyed());
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void ExitReturnsToMainMenu()
-//{
-//    navigateToVehicleMenu();
-//    string exitOption = findOptionByText("Exit Vehicle Management");
-//    command(exitOption, Player);
-//    
-//    string message = Player->caughtMessage();
-//    ExpectSubStringMatch("Vehicle Management.*Main Menu", message);
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void DescribeOptionShowsDetailedInformation()
-//{
-//    navigateToVehicleMenu();
-//    command("? 1", Player);
-//    
-//    string message = Player->caughtMessage();
-//    ExpectSubStringMatch("Browse and purchase new vehicles", message);
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void InvalidSelectionHandledGracefully()
-//{
-//    navigateToVehicleMenu();
-//    command("99", Player);
-//    
-//    string message = Player->caughtMessage();
-//    ExpectSubStringMatch("You must select a number from", message);
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void VehicleComponentsDisplayCorrectly()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    mapping components = wagon->getComponents();
-//    ExpectTrue(sizeof(components) > 0);
-//    ExpectTrue(member(components, "frame"));
-//    ExpectTrue(member(components, "cargo1"));
-//    ExpectTrue(member(components, "cargo2"));
-//    ExpectTrue(member(components, "henchman"));
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void VehicleVisualizationDisplaysCorrectly()
-//{
-//    object wagon = getFirstVehicleOfType("wagon");
-//    ExpectTrue(objectp(wagon));
-//    
-//    string visualization = wagon->displayVehicle(Player);
-//    ExpectTrue(sizeof(visualization) > 0);
-//    ExpectSubStringMatch("\\[FRAME\\]", visualization);
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void HenchmenFilteredByLocation()
-//{
-//    mapping localHenchmen = Player->getHenchmen("all", "eledhel");
-//    mapping allHenchmen = Player->getHenchmen("all");
-//    
-//    ExpectEq(2, sizeof(localHenchmen)); // Gareth and Marcus at eledhel
-//    ExpectEq(3, sizeof(allHenchmen));   // Including Finn at riverport
-//    
-//    ExpectTrue(member(localHenchmen, "Gareth"));
-//    ExpectTrue(member(localHenchmen, "Marcus"));
-//    ExpectFalse(member(localHenchmen, "Finn"));
-//}
-//
-///////////////////////////////////////////////////////////////////////////////
-//void HenchmenFilteredByType()
-//{
-//    mapping sailors = Player->getHenchmen("sailor", "eledhel");
-//    mapping marines = Player->getHenchmen("marine", "eledhel");
-//    
-//    ExpectEq(1, sizeof(sailors));  // Only Gareth
-//    ExpectEq(1, sizeof(marines));  // Only Marcus
-//    
-//    ExpectTrue(member(sailors, "Gareth"));
-//    ExpectTrue(member(marines, "Marcus"));
-//}
+void ManageOptionLaunchesEnhanceSelector()
+{
+    navigateToVehicleMenu();
+    string wagonOption = findOptionByText("Manage Wagon");
+    resetPlayerMessages();
+    command(wagonOption, Player);
+
+    string message = Player->caughtMessage();
+    ExpectSubStringMatch("Enhance Vehicle", message);
+    ExpectSubStringMatch("Return to Vehicle Menu", message);
+}

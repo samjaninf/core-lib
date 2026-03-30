@@ -50,17 +50,32 @@ protected nomask void setUpUserForSelection()
         foreach(string dest in destinations) 
         {
             mapping route = routes[dest];
-            
-            // Calculate travel cost based on distance and vehicle type
-            int baseCost = route["days"] * 50; // 50 gold per day
-            mapping vehicle = User->getVehicle();
-            
-            // Modify cost based on vehicle type
-            switch(vehicle["type"]) 
+
+            // Calculate travel cost based on distance
+            int baseCost = route["days"] * 50;
+
+            // Modify cost based on best available vehicle type at this port
+            object *vehicles = User->getVehiclesAtLocation(
+                Port->getPortName());
+            if (sizeof(vehicles))
             {
-                case "ship": baseCost = to_int(baseCost * 0.8); break;  // Ships are efficient
-                case "wagon": baseCost = to_int(baseCost * 1.0); break; // Standard cost
-                case "barge": baseCost = to_int(baseCost * 0.9); break; // Barges moderate
+                mapping blueprint = vehicles[0]->getBlueprint();
+                if (mappingp(blueprint) && member(blueprint, "route type"))
+                {
+                    switch(blueprint["route type"])
+                    {
+                        case "maritime":
+                        {
+                            baseCost = to_int(baseCost * 0.8);
+                            break;
+                        }
+                        case "river":
+                        {
+                            baseCost = to_int(baseCost * 0.9);
+                            break;
+                        }
+                    }
+                }
             }
             
             Data[to_string(counter++)] = ([

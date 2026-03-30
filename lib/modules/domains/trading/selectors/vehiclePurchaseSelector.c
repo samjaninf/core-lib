@@ -32,10 +32,10 @@ public nomask void InitializeSelector()
 /////////////////////////////////////////////////////////////////////////////
 protected nomask void setUpUserForSelection()
 {
-    object vehicleService = getService("vehicle");
-    if (vehicleService)
+    object vehicleMgmt = getService("vehicleManagement");
+    if (vehicleMgmt)
     {
-        Data = vehicleService->getPurchaseMenu(User, Location, VehicleType);
+        Data = vehicleMgmt->getPurchaseMenu(User, Location, VehicleType);
     }
     
     Data[to_string(sizeof(Data) + 1)] = ([
@@ -56,28 +56,26 @@ protected nomask int processSelection(string selection)
 
         if (!ret && member(Data[selection], "vehicle type"))
         {
-            object vehicleService = getService("vehicle");
-            if (vehicleService)
+            string vehicleType = Data[selection]["vehicle type"];
+            int cost = Data[selection]["cost"];
+
+            if (User->getCash() >= cost)
             {
-                string vehicleType = Data[selection]["vehicle type"];
-                int cost = Data[selection]["cost"];
-                
-                if (User->getMoney() >= cost)
+                User->addCash(-cost);
+                object vehicle = User->addVehicle(vehicleType, Location);
+
+                if (objectp(vehicle))
                 {
-                    User->addMoney(-cost);
-                    object vehicle = vehicleService->createVehicle(vehicleType, Location);
-                    User->addVehicle(vehicle);
-                    
                     tell_object(User, sprintf("You have purchased a %s for %d gold.",
                         Data[selection]["name"], cost));
-                    ret = 1;
                 }
-                else
-                {
-                    tell_object(User, sprintf("You need %d gold to purchase this vehicle.",
-                        cost));
-                    ret = 0;
-                }
+                ret = 1;
+            }
+            else
+            {
+                tell_object(User, sprintf("You need %d gold to purchase this vehicle.",
+                    cost));
+                ret = 0;
             }
         }
     }

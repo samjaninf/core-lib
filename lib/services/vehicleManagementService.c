@@ -76,10 +76,10 @@ public nomask mapping getPurchaseMenu(object user, string location, string vehic
                     canPurchase = user->canMeetPrerequisites(blueprint["prerequisites"]);
                 }
                 
-                string costDisplay = sprintf(" ($%d)", blueprint["cost"]);
-                if (user->getMoney() < blueprint["cost"])
+                string costDisplay = sprintf(" (%d gold)", blueprint["cost"]);
+                if (user->getCash() < blueprint["cost"])
                 {
-                    costDisplay += " low $";
+                    costDisplay += " [insufficient funds]";
                 }
                 
                 ret[to_string(counter++)] = ([
@@ -159,10 +159,10 @@ public nomask mapping getEnhancementMenu(object user, object vehicle, string slo
                     }
                     
                     int cost = component["cost"] || 0;
-                    string costDisplay = cost ? sprintf(" ($%d)", cost) : "";
-                    if (cost && user->getMoney() < cost)
+                    string costDisplay = cost ? sprintf(" (%d gold)", cost) : "";
+                    if (cost && user->getCash() < cost)
                     {
-                        costDisplay += " low $";
+                        costDisplay += " [insufficient funds]";
                     }
                     
                     ret[to_string(counter++)] = ([
@@ -227,23 +227,24 @@ public nomask mapping getCrewAssignmentMenu(object user, object vehicle, string 
         // If a specific slot is selected, show available henchmen
         if (slotType)
         {
-            mapping *availableHenchmen = user->getHenchmenAtLocation(location);
-            foreach (mapping henchman in availableHenchmen)
+            mapping availableHenchmen = user->getHenchmenAtLocation(location);
+            foreach (string key in m_indices(availableHenchmen))
             {
-                if (henchman["activity"] == "idle")
+                object henchman = availableHenchmen[key];
+                if (objectp(henchman) && henchman->activity() == "idle")
                 {
                     ret[to_string(counter++)] = ([
-                        "name": sprintf("Assign %s", henchman["name"]),
+                        "name": sprintf("Assign %s", key),
                         "type": "assign",
-                        "henchman": henchman["id"],
+                        "henchman": key,
                         "slot": slotType,
                         "description": sprintf("Assign %s to the %s position.\n", 
-                            henchman["name"], slotType),
+                            key, slotType),
                         "canShow": 1
                     ]);
                 }
             }
-            
+
             // Option to hire new crew
             ret[to_string(counter++)] = ([
                 "name": "Hire Sailor (1000 gold)",
@@ -251,16 +252,16 @@ public nomask mapping getCrewAssignmentMenu(object user, object vehicle, string 
                 "henchman type": "sailor",
                 "cost": 1000,
                 "description": "Hire a new sailor for your crew.\n",
-                "canShow": (user->getMoney() >= 1000)
+                "canShow": (user->getCash() >= 1000)
             ]);
-            
+
             ret[to_string(counter++)] = ([
                 "name": "Hire Marine (1500 gold)",
                 "type": "hire", 
                 "henchman type": "marine",
                 "cost": 1500,
                 "description": "Hire a marine to defend your vessel.\n",
-                "canShow": (user->getMoney() >= 1500)
+                "canShow": (user->getCash() >= 1500)
             ]);
         }
     }
@@ -353,21 +354,15 @@ public nomask int purchaseVehicle(object user, string vehicleType, string locati
         if (sizeof(blueprint))
         {
             int cost = blueprint["cost"] || 0;
-            int canAfford = (user->getMoney() >= cost);
-            int hasPrerequisites = 1;
-            
-            if (member(blueprint, "prerequisites"))
+            int canAfford = (user->getCash() >= cost);
+
+            if (canAfford)
             {
-                hasPrerequisites = user->canMeetPrerequisites(blueprint["prerequisites"]);
-            }
-            
-            if (canAfford && hasPrerequisites)
-            {
-                user->addMoney(-cost);
-                object vehicle = createVehicle(vehicleType, location);
+                user->addCash(-cost);
+                object vehicle = user->addVehicle(vehicleType, location);
                 if (objectp(vehicle))
                 {
-                    user->addVehicle(vehicle);
+                    vehicle->initializeVehicle(blueprint);
                     result = 1;
                 }
             }
@@ -389,20 +384,14 @@ public nomask int installVehicleComponent(object user, object vehicle, string sl
         if (sizeof(component))
         {
             int cost = component["cost"] || 0;
-            int canAfford = (user->getMoney() >= cost);
-            int hasPrerequisites = 1;
-            
-            if (member(component, "prerequisites"))
-            {
-                hasPrerequisites = user->canMeetPrerequisites(component["prerequisites"]);
-            }
-            
-            if (canAfford && hasPrerequisites)
+            int canAfford = (user->getCash() >= cost);
+
+            if (canAfford)
             {
                 int installed = vehicle->installComponent(slot, componentName);
                 if (installed)
                 {
-                    user->addMoney(-cost);
+                    user->addCash(-cost);
                     result = 1;
                 }
             }
@@ -416,33 +405,20 @@ public nomask int installVehicleComponent(object user, object vehicle, string sl
 public nomask int assignCrewMember(object user, object vehicle, string slot, string henchmanId, string location)
 {
     int result = 0;
-    
+
     if (objectp(user) && objectp(vehicle) && stringp(slot) && stringp(henchmanId))
     {
-        mapping *henchmen = user->getHenchmenAtLocation(location);
-        int validHenchman = 0;
-        
-        foreach (mapping henchman in henchmen)
+        mapping localHenchmen = user->getHenchmenAtLocation(location);
+        if (member(localHenchmen, henchmanId) &&
+            objectp(localHenchmen[henchmanId]) &&
+            localHenchmen[henchmanId]->activity() == "idle")
         {
-            if (henchman["id"] == henchmanId && henchman["activity"] == "idle")
-            {
-                validHenchman = 1;
-                break;
-            }
-        }
-        
-        if (validHenchman)
-        {
-            string *availableSlots = vehicle->getAvailableCrewSlots();
-            if (member(availableSlots, slot))
-            {
-                vehicle->assignHenchman(slot, henchmanId);
-                user->setHenchmanActivity(henchmanId, "assigned to vehicle");
-                result = 1;
-            }
+            vehicle->assignHenchman(slot, henchmanId);
+            user->setHenchmanActivity(henchmanId, "assigned to vehicle");
+            result = 1;
         }
     }
-    
+
     return result;
 }
 
@@ -451,9 +427,9 @@ public nomask int hireCrewMember(object user, string location, string crewType, 
 {
     int result = 0;
     
-    if (objectp(user) && stringp(location) && stringp(crewType) && (user->getMoney() >= cost))
+    if (objectp(user) && stringp(location) && stringp(crewType) && (user->getCash() >= cost))
     {
-        user->addMoney(-cost);
+        user->addCash(-cost);
         mapping henchmanData = ([
             "type": crewType,
             "activity": "idle"

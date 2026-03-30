@@ -5,6 +5,8 @@
 inherit "/lib/core/baseSelector.c";
 
 private string Location;
+private object SubselectorObj;
+private int justDisplayedStatus = 0;
 
 /////////////////////////////////////////////////////////////////////////////
 public nomask void setLocation(string location)
@@ -39,11 +41,84 @@ protected nomask void setUpUserForSelection()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+protected nomask int processSelection(string selection)
+{
+    int ret = -1;
+    if (User)
+    {
+        ret = (Data[selection]["type"] == "exit") || (selection == "abort");
+
+        if (!ret && Data[selection]["canShow"])
+        {
+            string type = Data[selection]["type"];
+            ret = 0;
+
+            switch(type)
+            {
+                case "purchase":
+                {
+                    SubselectorObj = clone_object(
+                        "/lib/modules/domains/trading/selectors/vehiclePurchaseSelector.c");
+                    SubselectorObj->setLocation(Location);
+                    break;
+                }
+                case "view":
+                {
+                    object *vehicles = User->getVehiclesAtLocation(Location);
+                    foreach(object vehicle in vehicles)
+                    {
+                        if (objectp(vehicle))
+                        {
+                            tell_object(User, vehicle->getVehicleStatus(User));
+                        }
+                    }
+                    justDisplayedStatus = 1;
+                    ret = -1;
+                    break;
+                }
+                case "manage":
+                {
+                    object vehicle = Data[selection]["vehicle"];
+                    if (objectp(vehicle))
+                    {
+                        SubselectorObj = clone_object(
+                            "/lib/modules/domains/trading/selectors/vehicleEnhanceSelector.c");
+                        SubselectorObj->setLocation(Location);
+                        SubselectorObj->setVehicle(vehicle);
+                    }
+                    break;
+                }
+            }
+
+            if (SubselectorObj)
+            {
+                move_object(SubselectorObj, User);
+                SubselectorObj->registerEvent(this_object());
+                SubselectorObj->initiateSelector(User);
+            }
+        }
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 public nomask void onSelectorCompleted(object caller)
 {
     if (User)
     {
+        setUpUserForSelection();
         tell_object(User, displayMessage());
     }
     caller->cleanUp();
+}
+
+/////////////////////////////////////////////////////////////////////////////
+protected nomask int suppressMenuDisplay()
+{
+    int ret = objectp(SubselectorObj) || justDisplayedStatus;
+    if (justDisplayedStatus)
+    {
+        justDisplayedStatus = 0;
+    }
+    return ret;
 }

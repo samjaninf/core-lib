@@ -173,3 +173,33 @@ public nomask varargs object getHenchman(string name, string location)
 {
     return this_object();
 }
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getHenchmenAtLocation(string location)
+{
+    mapping ret = ([]);
+
+    if (stringp(location) && member(henchmen, location))
+    {
+        ret = henchmen[location] + ([]);
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask int setHenchmanActivity(string henchmanKey, string activity)
+{
+    int ret = 0;
+
+    foreach(string loc in m_indices(henchmen))
+    {
+        if (member(henchmen[loc], henchmanKey) &&
+            objectp(henchmen[loc][henchmanKey]))
+        {
+            henchmen[loc][henchmanKey]->setActivity(activity);
+            ret = 1;
+            break;
+        }
+    }
+    return ret;
+}

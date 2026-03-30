@@ -91,6 +91,30 @@ protected nomask void setUpUserForSelection()
     Data = ([]);
     int counter = 1;
 
+    if (User->isBankrupt())
+    {
+        string colorConfig = User->colorConfiguration();
+        object commandsService = getService("commands");
+        string charset = User->charsetConfiguration();
+
+        string bankruptDisplay = commandsService->buildBanner(
+            colorConfig, charset, "top", "Bankruptcy");
+        bankruptDisplay += commandsService->banneredContent(
+            colorConfig, charset,
+            configuration->decorate(
+                "Your trading company has gone bankrupt! You have no "
+                "cash, no savings, no vehicles, and outstanding debt.",
+                "failure", "selector", colorConfig));
+        bankruptDisplay += commandsService->banneredContent(
+            colorConfig, charset,
+            configuration->decorate(
+                sprintf("Final Debt: %d gold", User->getDebt()),
+                "penalty modifier", "research", colorConfig));
+        bankruptDisplay += commandsService->buildBanner(
+            colorConfig, charset, "bottom", "-");
+        tell_object(User, bankruptDisplay);
+    }
+
     Data[to_string(counter++)] = ([
         "name": "View Company Status",
         "type": "status",
@@ -121,6 +145,25 @@ protected nomask void setUpUserForSelection()
         "description": "Choose a port to manage trading actions at that location.",
         "canShow": 1
     ]);
+    Data[to_string(counter++)] = ([
+        "name": "Manage Vehicles",
+        "type": "vehicles",
+        "description": "Purchase, upgrade, and manage your trading vehicles.",
+        "canShow": 1
+    ]);
+
+    if (User->canRetire())
+    {
+        Data[to_string(counter++)] = ([
+            "name": sprintf("Retire (%s)", User->getRetirementRating()),
+            "type": "retire",
+            "description": sprintf("End your trading career. Net worth: %d gold. "
+                "Rating: %s.",
+                User->getNetWorth(), User->getRetirementRating()),
+            "canShow": 1
+        ]);
+    }
+
     Data[to_string(counter++)] = ([
         "name": "Exit Trading Menu",
         "type": "exit",
@@ -167,6 +210,45 @@ protected nomask int processSelection(string selection)
                 case "selectPort":
                 {
                     SubselectorObj = clone_object("/lib/modules/domains/trading/selectors/selectPortSelector.c");
+                    break;
+                }
+                case "vehicles":
+                {
+                    SubselectorObj = clone_object("/lib/modules/domains/trading/selectors/vehicleSelector.c");
+                    SubselectorObj->setLocation(User->getCurrentLocation());
+                    break;
+                }
+                case "retire":
+                {
+                    string colorConfig = User->colorConfiguration();
+                    object commandsService = getService("commands");
+                    string charset = User->charsetConfiguration();
+
+                    string retireDisplay = commandsService->buildBanner(
+                        colorConfig, charset, "top", "Retirement");
+                    retireDisplay += commandsService->banneredContent(
+                        colorConfig, charset,
+                        configuration->decorate(
+                            sprintf("Congratulations, %s!",
+                                User->getFirmName()),
+                            "success", "quests", colorConfig));
+                    retireDisplay += commandsService->banneredContent(
+                        colorConfig, charset,
+                        configuration->decorate(
+                            sprintf("Net Worth: %d gold",
+                                User->getNetWorth()),
+                            "field data", "research", colorConfig));
+                    retireDisplay += commandsService->banneredContent(
+                        colorConfig, charset,
+                        configuration->decorate(
+                            sprintf("Final Rating: %s",
+                                User->getRetirementRating()),
+                            "field header", "research", colorConfig));
+                    retireDisplay += commandsService->buildBanner(
+                        colorConfig, charset, "bottom", "-");
+
+                    tell_object(User, retireDisplay);
+                    ret = 1;
                     break;
                 }
             }

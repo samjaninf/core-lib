@@ -98,7 +98,8 @@ public nomask int isValidHenchmanType(string data)
         "carpenter", "stonemason", "armorer", "weaponsmith", "banker", "innkeeper",
         "foreman", "retailer", "administrator", "scientist", "farmer",
         "arcane craftsman", "miner", "trader", "priest", "monk", "druid",
-        "entertainer" }), data) > -1;
+        "entertainer", "sailor", "marine", "navigator", "quartermaster" }),
+        data) > -1;
 }
 
 /////////////////////////////////////////////////////////////////////////////

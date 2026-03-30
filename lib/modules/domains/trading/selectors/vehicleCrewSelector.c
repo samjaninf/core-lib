@@ -39,12 +39,12 @@ public nomask void InitializeSelector()
 /////////////////////////////////////////////////////////////////////////////
 protected nomask void setUpUserForSelection()
 {
-    object vehicleService = getService("vehicle");
-    if (vehicleService && objectp(Vehicle))
+    object vehicleMgmt = getService("vehicleManagement");
+    if (vehicleMgmt && objectp(Vehicle))
     {
-        Data = vehicleService->getCrewAssignmentMenu(User, Vehicle, Location, SlotType);
+        Data = vehicleMgmt->getCrewAssignmentMenu(User, Vehicle, Location, SlotType);
     }
-    
+
     Data[to_string(sizeof(Data) + 1)] = ([
         "name": "Return to Vehicle Menu",
         "type": "exit",
@@ -63,42 +63,38 @@ protected nomask int processSelection(string selection)
 
         if (!ret && member(Data[selection], "henchman"))
         {
-            object vehicleService = getService("vehicle");
-            if (vehicleService)
+            string henchmanId = Data[selection]["henchman"];
+            string slot = Data[selection]["slot"];
+
+            if (Data[selection]["type"] == "assign")
             {
-                string henchmanId = Data[selection]["henchman"];
-                string slot = Data[selection]["slot"];
-                
-                if (Data[selection]["type"] == "assign")
-                {
-                    Vehicle->assignHenchman(slot, henchmanId);
-                    tell_object(User, sprintf("You have assigned %s to the %s position.",
-                        Data[selection]["name"], slot));
-                }
-                else if (Data[selection]["type"] == "unassign")
-                {
-                    Vehicle->unassignHenchman(slot);
-                    tell_object(User, sprintf("You have removed %s from the %s position.",
-                        Data[selection]["name"], slot));
-                }
-                ret = 0; // Stay in menu to allow more assignments
+                Vehicle->assignHenchman(slot, henchmanId);
+                tell_object(User, sprintf("You have assigned %s to the %s position.",
+                    Data[selection]["name"], slot));
             }
+            else if (Data[selection]["type"] == "unassign")
+            {
+                Vehicle->unassignHenchman(slot);
+                tell_object(User, sprintf("You have removed %s from the %s position.",
+                    Data[selection]["name"], slot));
+            }
+            ret = 0;
         }
         else if (!ret && Data[selection]["type"] == "hire")
         {
             int cost = Data[selection]["cost"];
-            if (User->getMoney() >= cost)
+            if (User->getCash() >= cost)
             {
-                User->addMoney(-cost);
+                User->addCash(-cost);
                 string henchmanType = Data[selection]["henchman type"];
-                object newHenchman = User->addHenchman(Location, ([
+                User->addHenchman(Location, ([
                     "type": henchmanType,
                     "activity": "idle"
                 ]));
-                
+
                 tell_object(User, sprintf("You have hired a %s for %d gold.",
                     henchmanType, cost));
-                ret = 0; // Refresh menu
+                ret = 0;
             }
             else
             {

@@ -559,11 +559,10 @@ public nomask void initializeVehicle(mapping blueprint)
 {
     if (mappingp(blueprint))
     {
-        set("vehicle type", blueprint["type"] || "unknown");
         set("name", blueprint["display name"] || blueprint["type"]);
         set("short", blueprint["display name"] || blueprint["type"]);
         set("long", blueprint["default description"] || "A vehicle.");
-        
+
         mapping components = ([]);
         if (member(blueprint, "slots"))
         {
@@ -574,10 +573,10 @@ public nomask void initializeVehicle(mapping blueprint)
             }
         }
         set("components", components);
-        
+
         set("cargo", ([]));
         set("crew", ([]));
-        
+
         currentStructure = getMaxStructure();
     }
 }

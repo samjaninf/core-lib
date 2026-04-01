@@ -15,7 +15,8 @@ void Init()
         "resetPlayerMessages",
         "findOptionByText",
         "setupWagon",
-        "onSelectorCompleted"
+        "onSelectorCompleted",
+        "stripColors"
     });
 }
 
@@ -86,6 +87,12 @@ private void resetPlayerMessages()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private string stripColors(string text)
+{
+    return regreplace(text, "\x1B\\[[0-9;]*[A-Za-z]", "", 1);
+}
+
+/////////////////////////////////////////////////////////////////////////////
 private string findOptionByText(string searchText)
 {
     string result = "0";
@@ -98,7 +105,7 @@ private string findOptionByText(string searchText)
 
     foreach (string line in lines)
     {
-        line = regreplace(line, "\x1B\\[[0-9;]*[A-Za-z]", "", 1);
+        line = stripColors(line);
         if (sizeof(regexp(({ line }), searchText)))
         {
             result = regreplace(line,
@@ -110,36 +117,206 @@ private string findOptionByText(string searchText)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-void EnhanceMenuDisplaysLayoutAndSlots()
+void WagonInitializesWithUnbuiltComponents()
 {
-    resetPlayerMessages();
-    Selector->initiateSelector(Player);
+    ExpectTrue(objectp(Wagon), "Wagon should be created");
 
-    string message = Player->caughtMessage();
-    ExpectSubStringMatch("Enhance Vehicle", message);
-    ExpectSubStringMatch("View Vehicle Layout", message);
-    ExpectSubStringMatch("Return to Vehicle Menu", message);
+    mapping components = Wagon->getComponents();
+    ExpectEq("unbuilt frame", components["frame"]);
+    ExpectEq("unbuilt cargo", components["cargo1"]);
+    ExpectEq("unbuilt cargo", components["cargo2"]);
+    ExpectEq("unbuilt henchman", components["henchman"]);
 }
 
 /////////////////////////////////////////////////////////////////////////////
-void EnhanceMenuShowsUpgradeSlots()
+void EnhanceMenuDisplaysCorrectly()
 {
     resetPlayerMessages();
     Selector->initiateSelector(Player);
 
-    string message = Player->caughtMessage();
-    ExpectSubStringMatch("Upgrade.*Slot", message);
+    string message = stripColors(Player->caughtMessage());
+
+    ExpectEq("Vehicle Enhancement - Wagon Enhancement:\n"
+        "From this menu, you can upgrade and configure components for your Wagon.\n\n"
+        "Stats:                         ......\n"
+        "    Capacity: 8               /------\\\n"
+        "    Speed: 2                 |........|\n"
+        "    Structure: 20            |........|\n"
+        "    Protection: 1            |        |\n"
+        "                              \\------/\n"
+        "Crew:                           O---O\n"
+        "    Henchman          -  0/1 \n"
+        "                             \n"
+        "[1] - Upgrade Cargo1         Unbuilt\n"
+        "[2] - Upgrade Cargo2         Unbuilt\n"
+        "[3] - Upgrade Frame          Unbuilt\n"
+        "[4] - Manage Crew            \n"
+        "[5] - Return to Vehicle Menu \n"
+        "You must select a number from 1 to 5.\n"
+        "Type 'exit' if you do not wish to make a selection at this time.\n"
+        "For details on a given choice, type 'describe X' (or '? X') where\n"
+        "X is the option about which you would like further details.\n",
+        message);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void EnhanceMenuHasFiveOptions()
+{
+    resetPlayerMessages();
+    Selector->initiateSelector(Player);
+
+    string message = stripColors(Player->caughtMessage());
+    ExpectEq(1, sizeof(regexp(({ message }), "select a number from 1 to 5")));
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void ReturnOptionExitsEnhanceMenu()
 {
-    resetPlayerMessages();
     Selector->initiateSelector(Player);
 
     string exitOption = findOptionByText("Return to Vehicle Menu");
+    ExpectTrue(to_int(exitOption) > 0,
+        "Should find Return option number");
+
+    resetPlayerMessages();
     command(exitOption, Player);
 
-    string message = Player->caughtMessage();
-    ExpectSubStringMatch("Return to Vehicle Menu", message);
+    string message = stripColors(Player->caughtMessage());
+    ExpectEq(1, sizeof(regexp(({ message }), "Return to Vehicle Menu")));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void InstalledComponentShowsInLayout()
+{
+    Wagon->installComponent("frame", "basic wagon frame");
+
+    resetPlayerMessages();
+    Selector->initiateSelector(Player);
+
+    string message = stripColors(Player->caughtMessage());
+    // Layout is in the header section now, installed frame shows name
+    ExpectEq(1, sizeof(regexp(({ message }), "Basic")));
+    ExpectEq(1, sizeof(regexp(({ message }), "O---O")));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void SelectingSlotShowsAvailableComponents()
+{
+    Selector->initiateSelector(Player);
+
+    string frameOption = findOptionByText("Upgrade Frame");
+    ExpectTrue(to_int(frameOption) > 0,
+        "Should find Upgrade Frame option");
+
+    resetPlayerMessages();
+    command(frameOption, Player);
+
+    string message = stripColors(Player->caughtMessage());
+    ExpectEq(1, sizeof(regexp(({ message }), "basic wagon frame")));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void InstalledComponentUpdatesSlotDisplay()
+{
+    Wagon->installComponent("cargo1", "wagon cargo bed");
+
+    resetPlayerMessages();
+    Selector->initiateSelector(Player);
+
+    string message = stripColors(Player->caughtMessage());
+    ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Cargo1.*Cargo B")));
+    ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Cargo2.*Unbuilt")));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void RiverCatamaranDisplaysCorrectly()
+{
+    object cat = Player->addVehicle("river catamaran", "eledhel");
+    if (objectp(cat))
+    {
+        object vehicleService = getService("vehicle");
+        mapping blueprint = vehicleService->queryVehicleBlueprint("river catamaran");
+        cat->initializeVehicle(blueprint);
+
+        object sel = clone_object(
+            "/lib/modules/domains/trading/selectors/vehicleEnhanceSelector.c");
+        sel->setLocation("eledhel");
+        sel->setVehicle(cat);
+        move_object(sel, Player);
+        sel->registerEvent(this_object());
+
+        resetPlayerMessages();
+        sel->initiateSelector(Player);
+
+        string message = stripColors(Player->caughtMessage());
+
+        ExpectEq(1, sizeof(regexp(({ message }), "Stats:")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Capacity: 4")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Speed: 8")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Weapon slots: 1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Defense slots: 1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Crew:")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Henchman1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Henchman2")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Manage Crew")));
+        ExpectEq(1, sizeof(regexp(({ message }), "~~~~~~")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Cargo1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Defense")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Weapon")));
+
+        if (objectp(sel))
+        {
+            destruct(sel);
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void BalingerDisplaysCorrectly()
+{
+    object bal = Player->addVehicle("balinger", "eledhel");
+    if (objectp(bal))
+    {
+        object vehicleService = getService("vehicle");
+        mapping blueprint = vehicleService->queryVehicleBlueprint("balinger");
+        bal->initializeVehicle(blueprint);
+
+        object sel = clone_object(
+            "/lib/modules/domains/trading/selectors/vehicleEnhanceSelector.c");
+        sel->setLocation("eledhel");
+        sel->setVehicle(bal);
+        move_object(sel, Player);
+        sel->registerEvent(this_object());
+
+        resetPlayerMessages();
+        sel->initiateSelector(Player);
+
+        string message = stripColors(Player->caughtMessage());
+
+        ExpectEq(1, sizeof(regexp(({ message }), "Stats:")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Capacity: 20")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Speed: 7")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Structure: 60")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Protection: 2")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Weapon slots: 1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Defense slots: 1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Crew:")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Henchman1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Henchman2")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Henchman3")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Henchman4")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Manage Crew")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Cargo1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Cargo2")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Defense")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Weapon")));
+        ExpectEq(1, sizeof(regexp(({ message }), "Upgrade Mast1")));
+        ExpectEq(1, sizeof(regexp(({ message }), "~~~~~~~~~~~~~~")));
+        ExpectEq(1, sizeof(regexp(({ message }), "select a number from 1 to 8")));
+
+        if (objectp(sel))
+        {
+            destruct(sel);
+        }
+    }
 }

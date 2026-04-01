@@ -4,94 +4,478 @@
 //*****************************************************************************
 
 /////////////////////////////////////////////////////////////////////////////
+private nomask mapping buildRepairEntries(object user,
+    object *vehicles, int counter)
+{
+    mapping ret = ([]);
+
+    object *damaged = filter(vehicles,
+        (: objectp($1) &&
+            $1->getCurrentStructure() < $1->getMaxStructure() :));
+
+    foreach (object vehicle in damaged)
+    {
+        if (objectp(vehicle))
+        {
+            string vehicleName = vehicle->query("name") ||
+                "Unknown Vehicle";
+            int current = vehicle->getCurrentStructure();
+            int max = vehicle->getMaxStructure();
+            int repairCost = (max - current) * 5;
+
+            ret[to_string(counter)] = ([
+                "name": sprintf("Repair %s (%d/%d, %d gold)",
+                    vehicleName, current, max, repairCost),
+                "type": "repair",
+                "vehicle": vehicle,
+                "cost": repairCost,
+                "description": sprintf("Repair %s to full "
+                    "structure. Cost: %d gold.\n",
+                    vehicleName, repairCost),
+                "canShow": (user->getCash() >= repairCost)
+            ]);
+            counter++;
+        }
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask mapping buildSellEntries(object *vehicles, int counter)
+{
+    mapping ret = ([]);
+
+    foreach (object vehicle in vehicles)
+    {
+        if (objectp(vehicle))
+        {
+            string vehicleName = vehicle->query("name") ||
+                "Unknown Vehicle";
+            mapping blueprint = vehicle->getBlueprint();
+            int sellPrice = 0;
+            if (mappingp(blueprint) && member(blueprint, "cost"))
+            {
+                sellPrice = blueprint["cost"] / 2;
+            }
+
+            int hasCargo = vehicle->getUsedSpace() > 0;
+
+            ret[to_string(counter)] = ([
+                "name": sprintf("Sell %s (%d gold)",
+                    vehicleName, sellPrice),
+                "type": "sell",
+                "vehicle": vehicle,
+                "sell price": sellPrice,
+                "description": sprintf("Sell %s for %d gold "
+                    "(half purchase price).%s\n",
+                    vehicleName, sellPrice,
+                    hasCargo ? " Must unload cargo first." : ""),
+                "canShow": !hasCargo
+            ]);
+            counter++;
+        }
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 public nomask mapping getVehicleMenu(object user, string location)
 {
     mapping ret = ([]);
-    
+
     if (objectp(user))
     {
         object *vehicles = user->getVehiclesAtLocation(location);
         int counter = 1;
-        
-        // Purchase new vehicles
+
         ret[to_string(counter++)] = ([
             "name": "Purchase New Vehicle",
             "type": "purchase",
-            "description": "Browse and purchase new vehicles for your fleet.\n",
+            "description": "Browse and purchase new vehicles "
+                "for your fleet.\n",
             "selector": "vehiclePurchase",
             "canShow": 1
         ]);
-        
-        // List existing vehicles and management options
+
         if (sizeof(vehicles))
         {
             ret[to_string(counter++)] = ([
                 "name": "View Vehicle Fleet",
                 "type": "view",
-                "description": "Display detailed information about your vehicle fleet.\n",
+                "description": "Display detailed information about "
+                    "your vehicle fleet.\n",
                 "canShow": 1
             ]);
-            
+
             foreach (object vehicle in vehicles)
             {
                 if (objectp(vehicle))
                 {
-                    string vehicleName = vehicle->query("name") || "Unknown Vehicle";
-                    string vehicleType = vehicle->query("vehicle type") || "unknown";
-                    
+                    string vehicleName = vehicle->query("name") ||
+                        "Unknown Vehicle";
+                    string vehicleType =
+                        vehicle->query("vehicle type") || "unknown";
+
                     ret[to_string(counter++)] = ([
                         "name": sprintf("Manage %s", vehicleName),
                         "type": "manage",
                         "vehicle": vehicle,
-                        "description": sprintf("Manage this %s - enhance components, assign crew, and configure settings.\n", vehicleType),
+                        "description": sprintf("Manage this %s - enhance "
+                            "components, assign crew, and configure "
+                            "settings.\n", vehicleType),
                         "canShow": 1
                     ]);
                 }
             }
+
+            mapping repairEntries =
+                buildRepairEntries(user, vehicles, counter);
+            ret += repairEntries;
+            counter += sizeof(repairEntries);
+
+            mapping sellEntries =
+                buildSellEntries(vehicles, counter);
+            ret += sellEntries;
         }
     }
-    
+
     return ret;
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public nomask mapping getPurchaseMenu(object user, string location, string vehicleType)
+private nomask string findTagForSlot(string upperSlot, string *layoutLines)
+{
+    string tag = 0;
+
+    foreach (string line in layoutLines)
+    {
+        int pos = strstr(line, upperSlot);
+        if (pos >= 0)
+        {
+            int end = pos + sizeof(upperSlot);
+            while (end < sizeof(line) &&
+                ((line[end] >= 'A' && line[end] <= 'Z') ||
+                 (line[end] >= '0' && line[end] <= '9') ||
+                 line[end] == '_'))
+            {
+                end++;
+            }
+            tag = line[pos..end - 1];
+            break;
+        }
+    }
+    return tag;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string renderSlotDisplay(string compName, int tagWidth,
+    string colorConfig, object configService)
+{
+    string displayStr;
+
+    int isBuilt = stringp(compName) &&
+        (sizeof(compName) < 8 || compName[0..7] != "unbuilt ");
+
+    if (isBuilt)
+    {
+        mapping comp =
+            getService("vehicle")->queryComponent(compName);
+        string name = (sizeof(comp) &&
+            member(comp, "display name")) ?
+            comp["display name"] : compName;
+
+        if (sizeof(name) > tagWidth)
+        {
+            name = name[0..(tagWidth - 1)];
+        }
+
+        displayStr = configService->decorate(
+            sprintf("%-*s", tagWidth, name),
+            "choice enabled", "selector", colorConfig);
+    }
+    else
+    {
+        string fill = "";
+        for (int i = 0; i < tagWidth; i++)
+        {
+            fill += ".";
+        }
+        displayStr = configService->decorate(fill,
+            "choice disabled", "selector", colorConfig);
+    }
+    return displayStr;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string *buildLayoutFromBlueprint(object user,
+    object vehicle, mapping blueprint)
+{
+    string colorConfig = user->colorConfiguration();
+    object configService = getService("configuration");
+
+    string *layoutTemplate = blueprint["layout"];
+    string layoutStr = implode(layoutTemplate, "\n");
+
+    mapping slots = blueprint["slots"] || ([]);
+    mapping currentComponents = vehicle->getComponents();
+
+    string *slotNames = sort_array(m_indices(slots),
+        (: sizeof($2) - sizeof($1) :));
+
+    foreach (string slot in slotNames)
+    {
+        string tag = findTagForSlot(upper_case(slot), layoutTemplate);
+
+        if (stringp(tag) && sizeof(tag) >= 1)
+        {
+            string compName = (member(currentComponents, slot) &&
+                stringp(currentComponents[slot])) ?
+                currentComponents[slot] : 0;
+
+            string displayStr = renderSlotDisplay(compName,
+                sizeof(tag), colorConfig, configService);
+
+            layoutStr = regreplace(layoutStr, tag, displayStr, 1);
+        }
+    }
+
+    return explode(layoutStr, "\n");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask string *getVehicleLayout(object user, object vehicle)
+{
+    string *layout = ({});
+
+    if (objectp(user) && objectp(vehicle))
+    {
+        string vehicleType = vehicle->query("vehicle type");
+        mapping blueprint =
+            getService("vehicle")->queryVehicleBlueprint(vehicleType);
+
+        if (sizeof(blueprint) && member(blueprint, "layout"))
+        {
+            layout = buildLayoutFromBlueprint(user, vehicle, blueprint);
+        }
+    }
+
+    return layout;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string formatComponentStats(mapping component,
+    string colorConfig, object configService)
+{
+    string ret = "";
+
+    if (member(component, "structure"))
+    {
+        ret += configService->decorate(
+            sprintf("  Structure: %d\n", component["structure"]),
+            "details", "selector", colorConfig);
+    }
+    if (member(component, "protection"))
+    {
+        ret += configService->decorate(
+            sprintf("  Protection: %d\n", component["protection"]),
+            "details", "selector", colorConfig);
+    }
+    if (member(component, "weight"))
+    {
+        ret += configService->decorate(
+            sprintf("  Weight: %d\n", component["weight"]),
+            "details", "selector", colorConfig);
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string formatConstructionMaterials(mapping construction,
+    mapping constructionData, string colorConfig, object configService)
+{
+    string ret = "";
+
+    if (member(construction, "materials"))
+    {
+        ret += configService->decorate("  Required Materials:\n",
+            "heading", "player domains", colorConfig);
+
+        foreach (string section, mapping mats
+            in construction["materials"])
+        {
+            string matList = "";
+            foreach (string mat, int qty in mats)
+            {
+                matList += (matList != "" ? ", " : "") +
+                    sprintf("%s: %d", mat, qty);
+            }
+
+            string selected = "";
+            if (mappingp(constructionData) &&
+                member(constructionData, "selected materials") &&
+                member(constructionData["selected materials"], section))
+            {
+                selected = sprintf(" [%s]",
+                    constructionData["selected materials"][section]);
+            }
+
+            ret += configService->decorate(
+                sprintf("    %s (%s)%s\n",
+                    capitalize(section), matList, selected),
+                "details", "selector", colorConfig);
+        }
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string formatConstructionWorkers(mapping construction,
+    mapping constructionData, string colorConfig, object configService)
+{
+    string ret = "";
+
+    if (member(construction, "workers"))
+    {
+        ret += configService->decorate("  Required Workers:\n",
+            "heading", "player domains", colorConfig);
+
+        foreach (string workerType, int qty in construction["workers"])
+        {
+            int assigned = 0;
+            if (mappingp(constructionData) &&
+                member(constructionData, "assigned workers") &&
+                member(constructionData["assigned workers"], workerType))
+            {
+                mixed workers =
+                    constructionData["assigned workers"][workerType];
+                assigned = pointerp(workers) ?
+                    sizeof(workers) : (intp(workers) ? workers : 0);
+            }
+
+            ret += configService->decorate(
+                sprintf("    %s: %d needed (%d assigned)\n",
+                    capitalize(workerType), qty, assigned),
+                "details", "selector", colorConfig);
+        }
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask string getVehicleConstructionInfo(object user,
+    string componentName, mapping constructionData)
+{
+    string ret = "";
+
+    if (objectp(user) && stringp(componentName))
+    {
+        string colorConfig = user->colorConfiguration();
+        object configService = getService("configuration");
+        mapping component =
+            getService("vehicle")->queryComponent(componentName);
+
+        if (sizeof(component))
+        {
+            string displayName = member(component, "display name") ?
+                component["display name"] : componentName;
+
+            ret += configService->decorate(
+                sprintf("Component: %s\n", displayName),
+                "field header", "player domains", colorConfig);
+
+            ret += formatComponentStats(component,
+                colorConfig, configService);
+
+            if (member(component, "construction"))
+            {
+                mapping construction = component["construction"];
+
+                if (member(construction, "duration"))
+                {
+                    ret += configService->decorate(
+                        sprintf("  Build Time: %d\n",
+                            construction["duration"]),
+                        "details", "selector", colorConfig);
+                }
+
+                ret += formatConstructionMaterials(construction,
+                    constructionData, colorConfig, configService);
+
+                ret += formatConstructionWorkers(construction,
+                    constructionData, colorConfig, configService);
+            }
+        }
+    }
+
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask int checkPrerequisites(object user, mapping prereqs)
+{
+    int canDo = 1;
+
+    foreach(string key in m_indices(prereqs))
+    {
+        if (mappingp(prereqs[key]) && member(prereqs[key], "type"))
+        {
+            if (prereqs[key]["type"] == "skill" &&
+                member(prereqs[key], "value"))
+            {
+                canDo &&= (user->getSkill(key) >=
+                    prereqs[key]["value"]);
+            }
+            else if (prereqs[key]["type"] == "research")
+            {
+                canDo &&= user->isResearched(key);
+            }
+        }
+    }
+    return canDo;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getPurchaseMenu(object user, string location,
+    string vehicleType)
 {
     mapping ret = ([]);
-    
+
     if (objectp(user))
     {
-        string *availableTypes = getService("vehicle")->queryAllVehicleTypes();
+        string *availableTypes =
+            getService("vehicle")->queryAllVehicleTypes();
         int counter = 1;
-        
+
         foreach (string type in availableTypes)
         {
-            mapping blueprint = getService("vehicle")->queryVehicleBlueprint(type);
+            mapping blueprint =
+                getService("vehicle")->queryVehicleBlueprint(type);
+
             if (sizeof(blueprint))
             {
-                // Check prerequisites
-                int canPurchase = 1;
-                if (member(blueprint, "prerequisites"))
-                {
-                    canPurchase = user->canMeetPrerequisites(blueprint["prerequisites"]);
-                }
-                
-                string costDisplay = sprintf(" (%d gold)", blueprint["cost"]);
+                int canPurchase = member(blueprint, "prerequisites") ?
+                    checkPrerequisites(user,
+                        blueprint["prerequisites"]) : 1;
+
+                string costDisplay =
+                    sprintf(" (%d gold)", blueprint["cost"]);
                 if (user->getCash() < blueprint["cost"])
                 {
                     costDisplay += " [insufficient funds]";
                 }
-                
+
                 ret[to_string(counter++)] = ([
                     "name": blueprint["display name"] + costDisplay,
                     "type": "purchase",
                     "vehicle type": type,
                     "cost": blueprint["cost"],
-                    "description": sprintf("%s\n\nCost: %d gold\nCapacity: %d units\nCrew Required: %d\nSpeed: %d\nStructure: %d\nProtection: %d\n",
+                    "description": sprintf("%s\n\nCost: %d gold\n"
+                        "Capacity: %d units\nCrew Required: %d\n"
+                        "Speed: %d\nStructure: %d\nProtection: %d\n",
                         blueprint["default description"],
                         blueprint["cost"],
                         blueprint["capacity"],
-                        blueprint["crew required"], 
+                        blueprint["crew required"],
                         blueprint["base speed"],
                         blueprint["structure"],
                         blueprint["protection"]),
@@ -100,87 +484,338 @@ public nomask mapping getPurchaseMenu(object user, string location, string vehic
             }
         }
     }
-    
+
     return ret;
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public nomask mapping getEnhancementMenu(object user, object vehicle, string slotType)
+private nomask string getComponentDisplayName(string currentComponent)
+{
+    string compDisplay = "Unbuilt";
+
+    if (stringp(currentComponent) && sizeof(currentComponent) >= 8 &&
+        currentComponent[0..7] == "unbuilt ")
+    {
+        compDisplay = "Unbuilt";
+    }
+    else if (stringp(currentComponent))
+    {
+        mapping compData =
+            getService("vehicle")->queryComponent(currentComponent);
+        compDisplay = sizeof(compData) &&
+            member(compData, "display name") ?
+            compData["display name"] : currentComponent;
+    }
+    return compDisplay;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask mapping buildSlotEntries(mapping slots,
+    mapping currentComponents, int counter)
 {
     mapping ret = ([]);
-    
-    if (objectp(user) && objectp(vehicle))
+
+    string *slotOrder = sort_array(m_indices(slots),
+        (: $1 > $2 :));
+
+    foreach (string slot in slotOrder)
     {
-        string vehicleType = vehicle->query("vehicle type");
-        mapping blueprint = getService("vehicle")->queryVehicleBlueprint(vehicleType);
-        mapping slots = blueprint["slots"] || ([]);
-        mapping currentComponents = vehicle->getComponents();
-        
-        int counter = 1;
-        
-        // Show current vehicle layout
-        ret[to_string(counter++)] = ([
-            "name": "View Vehicle Layout",
-            "type": "view",
-            "description": "Display the current vehicle configuration and component layout.\n",
+        string componentClass = slots[slot];
+        if (componentClass == "henchman")
+        {
+            continue;
+        }
+
+        string currentComponent = member(currentComponents, slot) ?
+            currentComponents[slot] : "empty";
+
+        string compDisplay = getComponentDisplayName(currentComponent);
+
+        ret[to_string(counter)] = ([
+            "name": sprintf("%-23s",
+                sprintf("Upgrade %s", capitalize(slot))),
+            "type": "slot",
+            "slot": slot,
+            "class": componentClass,
+            "status": compDisplay,
+            "description": sprintf("Upgrade or install components "
+                "in the %s slot.\n", slot),
             "canShow": 1
         ]);
-        
-        // List available component slots
-        foreach (string slot in m_indices(slots))
+        counter++;
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string formatMaterialsDisplay(mapping component)
+{
+    string materialsDisplay = "";
+
+    if (member(component, "crafting materials"))
+    {
+        string* mats = ({});
+        foreach(string mat, int qty in component["crafting materials"])
         {
-            string componentClass = slots[slot];
-            string currentComponent = member(currentComponents, slot) ? 
-                currentComponents[slot] : "empty";
-                
-            ret[to_string(counter++)] = ([
-                "name": sprintf("Upgrade %s Slot (%s)", capitalize(slot), currentComponent),
-                "type": "slot",
-                "slot": slot,
-                "class": componentClass,
-                "description": sprintf("Upgrade or install components in the %s slot.\n", slot),
-                "canShow": 1
-            ]);
+            mats += ({ sprintf("%s: %d", mat, qty) });
         }
-        
-        // If a specific slot type is selected, show available components
-        if (slotType)
+        materialsDisplay = " [" + implode(mats, ", ") + "]";
+    }
+    return materialsDisplay;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask mapping buildComponentInstallEntries(object user,
+    string slotType, int counter)
+{
+    mapping ret = ([]);
+
+    string *availableComponents =
+        getService("vehicle")->queryComponentsByClass(slotType);
+
+    foreach (string componentName in availableComponents)
+    {
+        mapping component =
+            getService("vehicle")->queryComponent(componentName);
+
+        if (sizeof(component))
         {
-            string *availableComponents = getService("vehicle")->queryComponentsByClass(slotType);
-            foreach (string componentName in availableComponents)
+            int canInstall = member(component, "prerequisites") ?
+                checkPrerequisites(user,
+                    component["prerequisites"]) : 1;
+
+            string materialsDisplay =
+                formatMaterialsDisplay(component);
+
+            ret[to_string(counter)] = ([
+                "name": componentName + materialsDisplay,
+                "type": "install",
+                "component": componentName,
+                "slot": slotType,
+                "crafting materials": (member(component,
+                    "crafting materials") ?
+                    component["crafting materials"] : ([])),
+                "description": sprintf("%s\n\nStructure: %d\n"
+                    "Protection: %d\nWeight: %d\n%s",
+                    component["description"] ||
+                        "No description available.",
+                    component["structure"] || 0,
+                    component["protection"] || 0,
+                    component["weight"] || 0,
+                    materialsDisplay != "" ?
+                        sprintf("Materials: %s\n",
+                            materialsDisplay[2..]) : ""),
+                "canShow": canInstall
+            ]);
+            counter++;
+        }
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string *getVehicleStatsLines(object user,
+    object vehicle, mapping blueprint)
+{
+    string *ret = ({});
+    string colorConfig = user->colorConfiguration();
+    object configService = getService("configuration");
+
+    ret += ({
+        configService->decorate(sprintf("%-29s", "Stats:"),
+            "heading", "player domains", colorConfig)
+    });
+
+    ret += ({
+        configService->decorate(
+            sprintf("    %-25s", sprintf("Capacity: %d",
+                blueprint["capacity"] || 0)),
+            "value", "player domains", colorConfig)
+    });
+
+    ret += ({
+        configService->decorate(
+            sprintf("    %-25s", sprintf("Speed: %d",
+                blueprint["base speed"] || 0)),
+            "value", "player domains", colorConfig)
+    });
+
+    int totalStructure = blueprint["structure"] || 0;
+    int totalProtection = blueprint["protection"] || 0;
+    int weaponCount = 0;
+    int defenseCount = 0;
+
+    mapping currentComponents = vehicle->getComponents();
+    foreach (string slot in m_indices(currentComponents))
+    {
+        string compName = currentComponents[slot];
+        if (stringp(compName) &&
+            (sizeof(compName) < 8 || compName[0..7] != "unbuilt "))
+        {
+            mapping comp =
+                getService("vehicle")->queryComponent(compName);
+            if (sizeof(comp))
             {
-                mapping component = getService("vehicle")->queryComponent(componentName);
-                if (sizeof(component))
-                {
-                    int canInstall = 1;
-                    if (member(component, "prerequisites"))
-                    {
-                        canInstall = user->canMeetPrerequisites(component["prerequisites"]);
-                    }
-                    
-                    int cost = component["cost"] || 0;
-                    string costDisplay = cost ? sprintf(" (%d gold)", cost) : "";
-                    if (cost && user->getCash() < cost)
-                    {
-                        costDisplay += " [insufficient funds]";
-                    }
-                    
-                    ret[to_string(counter++)] = ([
-                        "name": componentName + costDisplay,
-                        "type": "install",
-                        "component": componentName,
-                        "slot": slotType,
-                        "cost": cost,
-                        "description": sprintf("%s\n\nCost: %d gold\n",
-                            component["description"] || "No description available.",
-                            cost),
-                        "canShow": canInstall
-                    ]);
-                }
+                totalStructure += comp["structure"] || 0;
+                totalProtection += comp["protection"] || 0;
             }
         }
     }
-    
+
+    mapping slots = blueprint["slots"] || ([]);
+    foreach (string slot in m_indices(slots))
+    {
+        if (slots[slot] == "weapon")
+        {
+            weaponCount++;
+        }
+        else if (slots[slot] == "defense")
+        {
+            defenseCount++;
+        }
+    }
+
+    ret += ({
+        configService->decorate(
+            sprintf("    %-25s", sprintf("Structure: %d",
+                totalStructure)),
+            "value", "player domains", colorConfig)
+    });
+
+    ret += ({
+        configService->decorate(
+            sprintf("    %-25s", sprintf("Protection: %d",
+                totalProtection)),
+            "value", "player domains", colorConfig)
+    });
+
+    if (weaponCount > 0)
+    {
+        ret += ({
+            configService->decorate(
+                sprintf("    %-25s",
+                    sprintf("Weapon slots: %d", weaponCount)),
+                "value", "player domains", colorConfig)
+        });
+    }
+
+    if (defenseCount > 0)
+    {
+        ret += ({
+            configService->decorate(
+                sprintf("    %-25s",
+                    sprintf("Defense slots: %d", defenseCount)),
+                "value", "player domains", colorConfig)
+        });
+    }
+
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask string *getCrewInfoLines(object user, object vehicle,
+    mapping slots)
+{
+    string *ret = ({});
+    string colorConfig = user->colorConfiguration();
+    object configService = getService("configuration");
+
+    string *henchmanSlots = ({});
+    foreach (string slot in sort_array(m_indices(slots), (: $1 > $2 :)))
+    {
+        if (slots[slot] == "henchman")
+        {
+            henchmanSlots += ({ slot });
+        }
+    }
+
+    if (sizeof(henchmanSlots))
+    {
+        mapping currentCrew = vehicle->getCrew();
+
+        ret += ({
+            configService->decorate(sprintf("%-29s", ""),
+                "heading", "player domains", colorConfig),
+            configService->decorate(sprintf("%-29s", "Crew:"),
+                "heading", "player domains", colorConfig)
+        });
+
+        foreach (string slot in henchmanSlots)
+        {
+            int assigned = (mappingp(currentCrew) &&
+                member(currentCrew, slot)) ? 1 : 0;
+
+            ret += ({
+                configService->decorate(
+                    sprintf("    %-17s - ", capitalize(slot)),
+                    "worker", "player domains", colorConfig) +
+                configService->decorate(sprintf("%2d", assigned),
+                    assigned ? "value" : "incomplete",
+                    "player domains", colorConfig) +
+                configService->decorate("/",
+                    assigned, "heading", "player domains",
+                    colorConfig) +
+                configService->decorate(sprintf("%-2d", 1),
+                    "total", "player domains", colorConfig)
+            });
+        }
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getEnhancementMenu(object user, object vehicle,
+    string slotType)
+{
+    mapping ret = ([]);
+
+    if (objectp(user) && objectp(vehicle))
+    {
+        string vehicleType = vehicle->query("vehicle type");
+        mapping blueprint =
+            getService("vehicle")->queryVehicleBlueprint(vehicleType);
+        mapping slots = blueprint["slots"] || ([]);
+        mapping currentComponents = vehicle->getComponents();
+
+        int counter = 1;
+
+        ret += buildSlotEntries(slots, currentComponents, counter);
+        counter = sizeof(ret) + 1;
+
+        ret[to_string(counter++)] = ([
+            "name": sprintf("%-23s", "Manage Crew"),
+            "type": "crew",
+            "description": "Assign or reassign crew to "
+                "henchman positions on this vehicle.\n",
+            "canShow": 1
+        ]);
+
+        if (stringp(slotType))
+        {
+            ret += buildComponentInstallEntries(user, slotType,
+                counter);
+        }
+    }
+
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask string *getVehicleInfo(object user, object vehicle)
+{
+    string *ret = ({});
+
+    if (objectp(user) && objectp(vehicle))
+    {
+        string vehicleType = vehicle->query("vehicle type");
+        mapping blueprint =
+            getService("vehicle")->queryVehicleBlueprint(vehicleType);
+        mapping slots = blueprint["slots"] || ([]);
+
+        ret = getVehicleStatsLines(user, vehicle, blueprint) +
+            getCrewInfoLines(user, vehicle, slots);
+    }
+
     return ret;
 }
 
@@ -292,15 +927,15 @@ public nomask string displayVehicleFleet(object user, string location)
 {
     string result = "No vehicles available.";
     string colorConfig = user ? user->colorConfiguration() : "none";
-    object configDict = getService("configuration");
+    object configService = getService("configuration");
     
-    if (configDict && objectp(user))
+    if (configService && objectp(user))
     {
         object *vehicles = user->getVehiclesAtLocation(location);
         
         if (sizeof(vehicles))
         {
-            result = configDict->decorate("=== Vehicle Fleet ===", "header", "vehicle", colorConfig) + "\n";
+            result = configService->decorate("=== Vehicle Fleet ===", "header", "vehicle", colorConfig) + "\n";
             
             foreach (object vehicle in vehicles)
             {
@@ -312,11 +947,11 @@ public nomask string displayVehicleFleet(object user, string location)
                     int usedSpace = vehicle->getUsedSpace();
                     int efficiency = vehicle->getCrewEfficiency();
                     
-                    result += "\n" + configDict->decorate(vehicleName, "field header", "vehicle", colorConfig) +
-                              configDict->decorate(sprintf(" (%s)", vehicleType), "data", "vehicle", colorConfig) + "\n";
+                    result += "\n" + configService->decorate(vehicleName, "field header", "vehicle", colorConfig) +
+                              configService->decorate(sprintf(" (%s)", vehicleType), "data", "vehicle", colorConfig) + "\n";
                     
-                    result += configDict->decorate("  Capacity: ", "field header", "vehicle", colorConfig) +
-                              configDict->decorate(sprintf("%d/%d units", usedSpace, capacity), "data", "vehicle", colorConfig) + "\n";
+                    result += configService->decorate("  Capacity: ", "field header", "vehicle", colorConfig) +
+                              configService->decorate(sprintf("%d/%d units", usedSpace, capacity), "data", "vehicle", colorConfig) + "\n";
                     
                     string efficiencyColor = "data";
                     if (efficiency < 60)
@@ -332,8 +967,8 @@ public nomask string displayVehicleFleet(object user, string location)
                         efficiencyColor = "success";
                     }
                     
-                    result += configDict->decorate("  Crew Efficiency: ", "field header", "vehicle", colorConfig) +
-                              configDict->decorate(sprintf("%d%%", efficiency), efficiencyColor, "vehicle", colorConfig) + "\n";
+                    result += configService->decorate("  Crew Efficiency: ", "field header", "vehicle", colorConfig) +
+                              configService->decorate(sprintf("%d%%", efficiency), efficiencyColor, "vehicle", colorConfig) + "\n";
                 }
             }
         }
@@ -373,31 +1008,109 @@ public nomask int purchaseVehicle(object user, string vehicleType, string locati
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public nomask int installVehicleComponent(object user, object vehicle, string slot, string componentName)
+public nomask int installVehicleComponent(object user, object vehicle,
+    string slot, string componentName)
 {
     int result = 0;
-    
-    if (objectp(user) && objectp(vehicle) && stringp(slot) && stringp(componentName))
+
+    if (objectp(user) && objectp(vehicle) && stringp(slot) &&
+        stringp(componentName))
     {
-        mapping component = getService("vehicle")->queryComponent(componentName);
-        
+        mapping component =
+            getService("vehicle")->queryComponent(componentName);
+
         if (sizeof(component))
         {
-            int cost = component["cost"] || 0;
-            int canAfford = (user->getCash() >= cost);
-
-            if (canAfford)
+            int duration = 0;
+            if (member(component, "construction") &&
+                member(component["construction"], "duration"))
             {
-                int installed = vehicle->installComponent(slot, componentName);
-                if (installed)
+                duration = component["construction"]["duration"];
+            }
+
+            if (duration > 0)
+            {
+                string pendingName = "unbuilt " + componentName;
+                vehicle->installComponent(slot, pendingName);
+
+                mapping pending = vehicle->query("pending construction")
+                    || ([]);
+                pending[slot] = ([
+                    "component": componentName,
+                    "construction started": time(),
+                    "construction completion": time() + duration
+                ]);
+                vehicle->set("pending construction", pending);
+            }
+            else
+            {
+                vehicle->installComponent(slot, componentName);
+            }
+            result = 1;
+        }
+    }
+
+    return result;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask int checkVehicleConstruction(object vehicle)
+{
+    int completed = 0;
+
+    if (objectp(vehicle))
+    {
+        mapping pending = vehicle->query("pending construction");
+        if (mappingp(pending) && sizeof(pending))
+        {
+            string *slots = m_indices(pending);
+            foreach (string slot in slots)
+            {
+                if (mappingp(pending[slot]) &&
+                    member(pending[slot], "construction completion") &&
+                    time() >= pending[slot]["construction completion"])
                 {
-                    user->addCash(-cost);
-                    result = 1;
+                    string componentName = pending[slot]["component"];
+                    vehicle->installComponent(slot, componentName);
+                    m_delete(pending, slot);
+                    completed++;
+                }
+            }
+            vehicle->set("pending construction", pending);
+        }
+    }
+
+    return completed;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getConstructionStatus(object vehicle)
+{
+    mapping result = ([]);
+
+    if (objectp(vehicle))
+    {
+        mapping pending = vehicle->query("pending construction");
+        if (mappingp(pending) && sizeof(pending))
+        {
+            foreach (string slot, mapping data in pending)
+            {
+                if (mappingp(data) &&
+                    member(data, "construction completion"))
+                {
+                    int remaining =
+                        data["construction completion"] - time();
+                    result[slot] = ([
+                        "component": data["component"],
+                        "time remaining": (remaining > 0) ?
+                            remaining : 0,
+                        "complete": (remaining <= 0)
+                    ]);
                 }
             }
         }
     }
-    
+
     return result;
 }
 

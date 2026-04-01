@@ -29,20 +29,13 @@ protected mapping Vehicles = ([
             "frame": "frame",
             "cargo": "cargo"
         ]),
-        "layout": ([
-            "ascii":
-                "   [FRAME]\n"
-                "   |   |\n"
-                " [CARGO]\n"
-                "   |   |\n"
-                "   O---O",
-            "unicode":
-                "   [FRAME]\n"
-                "   \u2502   \u2502\n"
-                " [CARGO]\n"
-                "   \u2502   \u2502\n"
-                "   \u25EF\u2500\u2500\u2500\u25EF"
-        ]),
+        "layout": ({
+            "   FRAME_",
+            "   |   |",
+            " CARGO__",
+            "   |   |",
+            "   O---O"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/wagons/basic-wagon-construction.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 1 ]),
@@ -65,20 +58,13 @@ protected mapping Vehicles = ([
             "frame": "frame",
             "cargo": "cargo"
         ]),
-        "layout": ([
-            "ascii":
-                "   [FRAME]\n"
-                "   |   |\n"
-                " [CARGO]\n"
-                "   |   |\n"
-                "   O---O",
-            "unicode":
-                "   [FRAME]\n"
-                "   \u2502   \u2502\n"
-                " [CARGO]\n"
-                "   \u2502   \u2502\n"
-                "   \u25EF\u2500\u2500\u2500\u25EF"
-        ]),
+        "layout": ({
+            "   FRAME_",
+            "   |   |",
+            " CARGO__",
+            "   |   |",
+            "   O---O"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/wagons/basic-wagon-construction.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 1 ]),
@@ -103,24 +89,15 @@ protected mapping Vehicles = ([
             "cargo2": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "  [FRAME]\n"
-                " /-------\\\n"
-                "|[CARGO1]|\n"
-                "|[CARGO2]|\n"
-                "|[HENCHMAN]|\n"
-                " \\-------/\n"
-                "   O---O",
-            "unicode":
-                "  [FRAME]\n"
-                " \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "\u2503[CARGO1]\u2503\n"
-                "\u2503[CARGO2]\u2503\n"
-                "\u2503[HENCHMAN]\u2503\n"
-                " \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u25EF\u2500\u2500\u2500\u25EF"
-        ]),
+        "layout": ({
+            "  FRAME_",
+            " /------\\",
+            "|CARGO1__|",
+            "|CARGO2__|",
+            "|        |",
+            " \\------/",
+            "   O---O"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/wagons/basic-wagon-construction.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 2 ]),
@@ -147,26 +124,16 @@ protected mapping Vehicles = ([
             "henchman1": "henchman",
             "henchman2": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "  [FRAME]\n"
-                " /-------\\\n"
-                "|[CARGO1]|\n"
-                "|[CARGO2]|\n"
-                "|[DEFENSE]|\n"
-                "|[HENCHMAN1][HENCHMAN2]|\n"
-                " \\-------/\n"
-                "   O---O",
-            "unicode":
-                "  [FRAME]\n"
-                " \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "\u2503[CARGO1]\u2503\n"
-                "\u2503[CARGO2]\u2503\n"
-                "\u2503[DEFENSE]\u2503\n"
-                "\u2503[HENCHMAN1][HENCHMAN2]\u2503\n"
-                " \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u25EF\u2500\u2500\u2500\u25EF"
-        ]),
+        "layout": ({
+            "  FRAME_",
+            " /------\\",
+            "|CARGO1__|" ,
+            "|CARGO2__|" ,
+            "|DEFENSE_|" ,
+            "|        |" ,
+            " \\------/",
+            "   O---O"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/wagons/covered-wagons.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 3 ]),
@@ -195,28 +162,17 @@ protected mapping Vehicles = ([
             "henchman1": "henchman",
             "henchman2": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "  [FRAME]\n"
-                " /-[DEF1]-\\\n"
-                "|[WEAPON1]|\n"
-                "|[CARGO]  |\n"
-                "|[WEAPON2]|\n"
-                "|-[DEF2]- |\n"
-                "|[HENCHMAN1][HENCHMAN2]|\n"
-                " \\-------/\n"
-                "   O---O",
-            "unicode":
-                "  [FRAME]\n"
-                " \u2571\u2501[DEF1]\u2501\u2572\n"
-                "\u2503[WEAPON1]\u2503\n"
-                "\u2503[CARGO]  \u2503\n"
-                "\u2503[WEAPON2]\u2503\n"
-                "\u2503\u2501[DEF2]\u2501 \u2503\n"
-                "\u2503[HENCHMAN1][HENCHMAN2]\u2503\n"
-                " \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u25EF\u2500\u2500\u2500\u25EF"
-        ]),
+        "layout": ({
+            "    FRAME_",
+            " /--DEFENSE1___--\\",
+            "|  WEAPON1____   |",
+            "|  CARGO______   |",
+            "|  WEAPON2____   |",
+            " \\--DEFENSE2___--/",
+            "|                 |",
+            " \\-----------/",
+            "     O---O"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/wagons/war-wagons.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 5 ]),
@@ -242,24 +198,15 @@ protected mapping Vehicles = ([
             "defense": "defense",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "  [FRAME]\n"
-                " /-------\\\n"
-                "|[CARGO]|\n"
-                "|[DEFENSE]|\n"
-                "|[HENCHMAN]|\n"
-                " \\-------/\n"
-                "   O---O",
-            "unicode":
-                "  [FRAME]\n"
-                " \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "\u2503[CARGO]\u2503\n"
-                "\u2503[DEFENSE]\u2503\n"
-                "\u2503[HENCHMAN]\u2503\n"
-                " \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u25EF\u2500\u2500\u2500\u25EF"
-        ]),
+        "layout": ({
+            "  FRAME_",
+            " /------\\",
+            "|CARGO__|" ,
+            "|DEFENSE_|" ,
+            "|        |" ,
+            " \\------/",
+            "   O---O"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/wagons/stagecoaches.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 3 ]),
@@ -291,30 +238,18 @@ protected mapping Vehicles = ([
             "henchman3": "henchman",
             "henchman4": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "  [FRAME]\n"
-                " /-[DEF1]-\\\n"
-                "|[WEAPON1]|\n"
-                "|[CARGO1] |\n"
-                "|[WEAPON2]|\n"
-                "|[CARGO2] |\n"
-                "|-[DEF2]- |\n"
-                "|[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]|\n"
-                " \\-------/\n"
-                "   O---O",
-            "unicode":
-                "  [FRAME]\n"
-                " \u2571\u2501[DEF1]\u2501\u2572\n"
-                "\u2503[WEAPON1]\u2503\n"
-                "\u2503[CARGO1] \u2503\n"
-                "\u2503[WEAPON2]\u2503\n"
-                "\u2503[CARGO2] \u2503\n"
-                "\u2503\u2501[DEF2]\u2501 \u2503\n"
-                "\u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]\u2503\n"
-                " \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u25EF\u2500\u2500\u2500\u25EF"
-        ]),
+        "layout": ({
+            "    FRAME_",
+            " /--DEFENSE1___--\\",
+            "|  WEAPON1____   |",
+            "|  CARGO1_____   |",
+            "|  WEAPON2____   |",
+            "|  CARGO2_____   |",
+            " \\--DEFENSE2___--/",
+            "|                 |",
+            " \\-----------/",
+            "     O---O"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/wagons/siege-wagons.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 8 ]),
@@ -345,20 +280,13 @@ protected mapping Vehicles = ([
             "hull": "hull",
             "cargo": "cargo"
         ]),
-        "layout": ([
-            "ascii":
-                "   [HULL]\n"
-                "  /-----\\\n"
-                " |[CARGO]|\n"
-                "  \\-----/\n"
-                "   ~~~~~",
-            "unicode":
-                "   [HULL]\n"
-                "  \u2571\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                " \u2503[CARGO]\u2503\n"
-                "  \u2572\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "   HULL__",
+            "  /-----\\",
+            " |CARGO__|" ,
+            "  \\-----/",
+            "   ~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/basic-boatbuilding.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 2 ]),
@@ -385,20 +313,13 @@ protected mapping Vehicles = ([
             "hull": "hull",
             "cargo": "cargo"
         ]),
-        "layout": ([
-            "ascii":
-                "   [HULL]\n"
-                "  /-----\\\n"
-                " |[CARGO]|\n"
-                "  \\-----/\n"
-                "   ~~~~~",
-            "unicode":
-                "   [HULL]\n"
-                "  \u2571\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                " \u2503[CARGO]\u2503\n"
-                "  \u2572\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "   HULL__",
+            "  /-----\\",
+            " |CARGO__|" ,
+            "  \\-----/",
+            "   ~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/basic-boatbuilding.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 1 ]),
@@ -426,20 +347,13 @@ protected mapping Vehicles = ([
             "hull": "hull",
             "cargo": "cargo"
         ]),
-        "layout": ([
-            "ascii":
-                "   [HULL]\n"
-                "  /-----\\\n"
-                " |[CARGO]|\n"
-                "  \\-----/\n"
-                "   ~~~~~",
-            "unicode":
-                "   [HULL]\n"
-                "  \u2571\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                " \u2503[CARGO]\u2503\n"
-                "  \u2572\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "   HULL__",
+            "  /-----\\",
+            " |CARGO__|" ,
+            "  \\-----/",
+            "   ~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/basic-boatbuilding.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 2 ]),
@@ -472,28 +386,17 @@ protected mapping Vehicles = ([
             "henchman1": "henchman",
             "henchman2": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "  [HULL]\n"
-                " /-------\\\n"
-                "|[CARGO1]|\n"
-                "|[CARGO2]|\n"
-                "|[CARGO3]|\n"
-                "|[DEFENSE]|\n"
-                "|[HENCHMAN1][HENCHMAN2]|\n"
-                " \\-------/\n"
-                "   ~~~~~~",
-            "unicode":
-                "  [HULL]\n"
-                " \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "\u2503[CARGO1]\u2503\n"
-                "\u2503[CARGO2]\u2503\n"
-                "\u2503[CARGO3]\u2503\n"
-                "\u2503[DEFENSE]\u2503\n"
-                "\u2503[HENCHMAN1][HENCHMAN2]\u2503\n"
-                " \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "  HULL__",
+            " /-------\\",
+            "|CARGO1__|",
+            "|CARGO2__|",
+            "|CARGO3__|",
+            "|DEFENSE__|",
+            "|        |",
+            " \\-------/",
+            "   ~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/river-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 5 ]),
@@ -524,24 +427,14 @@ protected mapping Vehicles = ([
             "henchman1": "henchman",
             "henchman2": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "   /------\\   /------\\\n"
-                "  | [MAST]|   |      |\n"
-                "  |[CARGO1]|  |[CARGO2]|\n"
-                "  |[DEFENSE]| |[WEAPON]|\n"
-                "  |[HENCHMAN1]|[HENCHMAN2]|\n"
-                "   \\------/   \\------/\n"
-                "    ~~~~~~     ~~~~~~",
-            "unicode":
-                "   \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2572   \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "  \u2503 [MAST]\u2503   \u2503      \u2503\n"
-                "  \u2503[CARGO1]\u2503  \u2503[CARGO2]\u2503\n"
-                "  \u2503[DEFENSE]\u2503 \u2503[WEAPON]\u2503\n"
-                "  \u2503[HENCHMAN1]\u2503[HENCHMAN2]\u2503\n"
-                "   \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2571   \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "    \u2248\u2248\u2248\u2248\u2248\u2248     \u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "   /------\\   /------\\",
+            "  | MAST__|   |      |",
+            "  |CARGO1__|  |CARGO2__|",
+            "  |DEFENSE__| |WEAPON__|",
+            "   \\------/   \\------/",
+            "    ~~~~~~     ~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/multi-hull-vessel.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 2 ]),
@@ -571,24 +464,15 @@ protected mapping Vehicles = ([
             "cargo2": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "  [HULL]\n"
-                " /-------\\\n"
-                "|[CARGO1]|\n"
-                "|[CARGO2]|\n"
-                "|[HENCHMAN]|\n"
-                " \\-------/\n"
-                "   ~~~~~~",
-            "unicode":
-                "  [HULL]\n"
-                " \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "\u2503[CARGO1]\u2503\n"
-                "\u2503[CARGO2]\u2503\n"
-                "\u2503[HENCHMAN]\u2503\n"
-                " \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "   \u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "  HULL__",
+            " /-------\\",
+            "|CARGO1__|",
+            "|CARGO2__|",
+            "|        |",
+            " \\-------/",
+            "   ~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/river-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 3 ]),
@@ -623,28 +507,17 @@ protected mapping Vehicles = ([
             "henchman3": "henchman",
             "henchman4": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |   [DEFENSE   ]   |\n"
-                "     |[CARGO1   ][CARGO2   ]|\n"
-                "     |[HENCHMAN1][HENCHMAN2]|\n"
-                "     |[HENCHMAN3][HENCHMAN4]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503   [DEFENSE   ]   \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ]\u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2]\u2503\n"
-                "     \u2503[HENCHMAN3][HENCHMAN4]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |   WEAPON______   |",
+            "     |   DEFENSE_____   |",
+            "     |CARGO1_____CARGO2_____|",
+            "     |                     |",
+            "     |                     |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/coastal-sailing-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 6 ]),
@@ -672,24 +545,15 @@ protected mapping Vehicles = ([
             "henchman1": "henchman",
             "henchman2": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |   [CARGO     ]   |\n"
-                "     |[HENCHMAN1][HENCHMAN2]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503   [CARGO     ]   \u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |   WEAPON______   |",
+            "     |   CARGO_______   |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/longships.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 6 ]),
@@ -725,32 +589,19 @@ protected mapping Vehicles = ([
             "henchman4": "henchman",
             "henchman5": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |[WEAPON1   ][WEAPON2   ]|\n"
-                "     |   [DEFENSE1 ]   |\n"
-                "     |[CARGO1    ][CARGO2    ]|\n"
-                "     |   [MAST2     ]   |\n"
-                "     |   [DEFENSE2 ]   |\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3]|\n"
-                "     |[HENCHMAN4][HENCHMAN5]         |\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503[WEAPON1   ][WEAPON2   ]\u2503\n"
-                "     \u2503   [DEFENSE1 ]   \u2503\n"
-                "     \u2503[CARGO1    ][CARGO2    ]\u2503\n"
-                "     \u2503   [MAST2     ]   \u2503\n"
-                "     \u2503   [DEFENSE2 ]   \u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3]\u2503\n"
-                "     \u2503[HENCHMAN4][HENCHMAN5]         \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |WEAPON1_____WEAPON2_____|",
+            "     |   DEFENSE1___   |",
+            "     |CARGO1______CARGO2______|",
+            "     |   MAST2_______   |",
+            "     |   DEFENSE2___   |",
+            "     |                  |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/lateen-rigged-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 8 ]),
@@ -791,36 +642,21 @@ protected mapping Vehicles = ([
             "henchman7": "henchman",
             "henchman8": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |[WEAPON1   ][WEAPON2   ]|\n"
-                "     |   [DEFENSE1 ]   |\n"
-                "     |[CARGO1    ][CARGO2    ]|\n"
-                "     |   [MAST2     ]   |\n"
-                "     |   [DEFENSE2 ]   |\n"
-                "     |   [MAST3     ]   |\n"
-                "     |   [CARGO3   ]   |\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]|\n"
-                "     |[HENCHMAN5][HENCHMAN6][HENCHMAN7][HENCHMAN8]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503[WEAPON1   ][WEAPON2   ]\u2503\n"
-                "     \u2503   [DEFENSE1 ]   \u2503\n"
-                "     \u2503[CARGO1    ][CARGO2    ]\u2503\n"
-                "     \u2503   [MAST2     ]   \u2503\n"
-                "     \u2503   [DEFENSE2 ]   \u2503\n"
-                "     \u2503   [MAST3     ]   \u2503\n"
-                "     \u2503   [CARGO3   ]   \u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]\u2503\n"
-                "     \u2503[HENCHMAN5][HENCHMAN6][HENCHMAN7][HENCHMAN8]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |WEAPON1_____WEAPON2_____|",
+            "     |   DEFENSE1___   |",
+            "     |CARGO1______CARGO2______|",
+            "     |   MAST2_______   |",
+            "     |   DEFENSE2___   |",
+            "     |   MAST3_______   |",
+            "     |   CARGO3_____   |",
+            "     |                  |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/large-square-rigged-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 12 ]),
@@ -852,24 +688,14 @@ protected mapping Vehicles = ([
             "henchman1": "henchman",
             "henchman2": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "    /--------\\   /--------\\\n"
-                "   | [MAST1] |   | [MAST2] |\n"
-                "   |[CARGO1] |   |[CARGO2] |\n"
-                "   |[DEFENSE]|   |[WEAPON] |\n"
-                "   |[HENCHMAN1] [HENCHMAN2]|\n"
-                "    \\--------/   \\--------/\n"
-                "      ~~~~~~     ~~~~~~",
-            "unicode":
-                "    \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572   \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "   \u2503 [MAST1] \u2503   \u2503 [MAST2] \u2503\n"
-                "   \u2503[CARGO1] \u2503   \u2503[CARGO2] \u2503\n"
-                "   \u2503[DEFENSE]\u2503   \u2503[WEAPON] \u2503\n"
-                "   \u2503[HENCHMAN1] [HENCHMAN2]\u2503\n"
-                "    \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571   \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "      \u2248\u2248\u2248\u2248\u2248\u2248     \u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "    /--------\\   /--------\\",
+            "   | MAST1__ |   | MAST2__ |",
+            "   |CARGO1__ |   |CARGO2__ |",
+            "   |DEFENSE__|   |WEAPON__ |",
+            "    \\--------/   \\--------/",
+            "      ~~~~~~     ~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/multi-hull-vessel.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 6 ]),
@@ -900,26 +726,16 @@ protected mapping Vehicles = ([
             "henchman2": "henchman",
             "henchman3": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |   [DEFENSE   ]   |\n"
-                "     |[CARGO1   ][CARGO2   ]|\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503   [DEFENSE   ]   \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ]\u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |   WEAPON______   |",
+            "     |   DEFENSE_____   |",
+            "     |CARGO1_____CARGO2_____|",
+            "     |                     |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/coastal-sailing-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 6 ]),
@@ -946,22 +762,14 @@ protected mapping Vehicles = ([
             "cargo2": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |[CARGO1   ][CARGO2   ]|\n"
-                "     |   [HENCHMAN ]   |\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ]\u2503\n"
-                "     \u2503   [HENCHMAN ]   \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |CARGO1_____CARGO2_____|",
+            "     |                     |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/coastal-sailing-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 4 ]),
@@ -1040,52 +848,27 @@ protected mapping Vehicles = ([
             "henchman19": "henchman",
             "henchman20": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------------------\\\n"
-                "     |     [MAST1           ]      |\n"
-                "     |[WEAPON1][WEAPON2][WEAPON3][WEAPON4]|\n"
-                "     |     [DEFENSE1        ]      |\n"
-                "     |[CARGO1 ][CARGO2 ][CARGO3 ][CARGO4 ]|\n"
-                "     |     [MAST2           ]      |\n"
-                "     |[WEAPON5][WEAPON6][WEAPON7][WEAPON8]|\n"
-                "     |     [DEFENSE2        ]      |\n"
-                "     |[CARGO5 ][CARGO6 ][CARGO7 ][CARGO8 ]|\n"
-                "     |     [MAST3           ]      |\n"
-                "     |     [DEFENSE3        ]      |\n"
-                "     |     [DEFENSE4        ]      |\n"
-                "     |     [MAST4           ]      |\n"
-                "     |[WEAPON9][WEAPON10]          |\n"
-                "     |     [DEFENSE5        ]      |\n"
-                "     |     [DEFENSE6        ]      |\n"
-                "     |     [MAST5           ]      |\n"
-                "     |[HENCHMAN1]...[HENCHMAN10]   |\n"
-                "     |[HENCHMAN11]...[HENCHMAN20]  |\n"
-                "      \\--------------------------/\n"
-                "        ~~~~~~~~~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503     [MAST1           ]      \u2503\n"
-                "     \u2503[WEAPON1][WEAPON2][WEAPON3][WEAPON4]\u2503\n"
-                "     \u2503     [DEFENSE1        ]      \u2503\n"
-                "     \u2503[CARGO1 ][CARGO2 ][CARGO3 ][CARGO4 ]\u2503\n"
-                "     \u2503     [MAST2           ]      \u2503\n"
-                "     \u2503[WEAPON5][WEAPON6][WEAPON7][WEAPON8]\u2503\n"
-                "     \u2503     [DEFENSE2        ]      \u2503\n"
-                "     \u2503[CARGO5 ][CARGO6 ][CARGO7 ][CARGO8 ]\u2503\n"
-                "     \u2503     [MAST3           ]      \u2503\n"
-                "     \u2503     [DEFENSE3        ]      \u2503\n"
-                "     \u2503     [DEFENSE4        ]      \u2503\n"
-                "     \u2503     [MAST4           ]      \u2503\n"
-                "     \u2503[WEAPON9][WEAPON10]          \u2503\n"
-                "     \u2503     [DEFENSE5        ]      \u2503\n"
-                "     \u2503     [DEFENSE6        ]      \u2503\n"
-                "     \u2503     [MAST5           ]      \u2503\n"
-                "     \u2503[HENCHMAN1]...[HENCHMAN10]   \u2503\n"
-                "     \u2503[HENCHMAN11]...[HENCHMAN20]  \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------------------\\",
+            "     |     MAST1_____________      |",
+            "     |WEAPON1__WEAPON2__WEAPON3__WEAPON4__|",
+            "     |     DEFENSE1__________      |",
+            "     |CARGO1___CARGO2___CARGO3___CARGO4___|",
+            "     |     MAST2_____________      |",
+            "     |WEAPON5__WEAPON6__WEAPON7__WEAPON8__|",
+            "     |     DEFENSE2__________      |",
+            "     |CARGO5___CARGO6___CARGO7___CARGO8___|",
+            "     |     MAST3_____________      |",
+            "     |     DEFENSE3__________      |",
+            "     |     DEFENSE4__________      |",
+            "     |     MAST4_____________      |",
+            "     |WEAPON9__WEAPON10__          |",
+            "     |     DEFENSE5__________      |",
+            "     |     DEFENSE6__________      |",
+            "     |     MAST5_____________      |",
+            "      \\--------------------------/",
+            "        ~~~~~~~~~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/dreadnoughts.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 20 ]),
@@ -1126,34 +909,20 @@ protected mapping Vehicles = ([
             "henchman7": "henchman",
             "henchman8": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |[WEAPON1   ][WEAPON2   ]|\n"
-                "     |   [DEFENSE1 ]   |\n"
-                "     |[CARGO1    ][CARGO2    ]|\n"
-                "     |   [WEAPON3  ]   |\n"
-                "     |   [DEFENSE2 ]   |\n"
-                "     |   [CARGO3   ]   |\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]|\n"
-                "     |[HENCHMAN5][HENCHMAN6][HENCHMAN7][HENCHMAN8]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503[WEAPON1   ][WEAPON2   ]\u2503\n"
-                "     \u2503   [DEFENSE1 ]   \u2503\n"
-                "     \u2503[CARGO1    ][CARGO2    ]\u2503\n"
-                "     \u2503   [WEAPON3  ]   \u2503\n"
-                "     \u2503   [DEFENSE2 ]   \u2503\n"
-                "     \u2503   [CARGO3   ]   \u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]\u2503\n"
-                "     \u2503[HENCHMAN5][HENCHMAN6][HENCHMAN7][HENCHMAN8]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |WEAPON1_____WEAPON2_____|",
+            "     |   DEFENSE1___   |",
+            "     |CARGO1______CARGO2______|",
+            "     |   WEAPON3____   |",
+            "     |   DEFENSE2___   |",
+            "     |   CARGO3_____   |",
+            "     |                  |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/oared-warships.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 12 ]),
@@ -1197,38 +966,22 @@ protected mapping Vehicles = ([
             "henchman7": "henchman",
             "henchman8": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /--------------------\\\n"
-                "     |   [MAST1       ]    |\n"
-                "     |[WEAPON1][WEAPON2]   |\n"
-                "     |   [DEFENSE1    ]    |\n"
-                "     |[CARGO1 ][CARGO2 ]   |\n"
-                "     |   [MAST2       ]    |\n"
-                "     |[WEAPON3][WEAPON4]   |\n"
-                "     |   [DEFENSE2    ]    |\n"
-                "     |[CARGO3 ][CARGO4 ]   |\n"
-                "     |   [MAST3       ]    |\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]|\n"
-                "     |[HENCHMAN5][HENCHMAN6][HENCHMAN7][HENCHMAN8]|\n"
-                "      \\--------------------/\n"
-                "        ~~~~~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1       ]    \u2503\n"
-                "     \u2503[WEAPON1][WEAPON2]   \u2503\n"
-                "     \u2503   [DEFENSE1    ]    \u2503\n"
-                "     \u2503[CARGO1 ][CARGO2 ]   \u2503\n"
-                "     \u2503   [MAST2       ]    \u2503\n"
-                "     \u2503[WEAPON3][WEAPON4]   \u2503\n"
-                "     \u2503   [DEFENSE2    ]    \u2503\n"
-                "     \u2503[CARGO3 ][CARGO4 ]   \u2503\n"
-                "     \u2503   [MAST3       ]    \u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]\u2503\n"
-                "     \u2503[HENCHMAN5][HENCHMAN6][HENCHMAN7][HENCHMAN8]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /--------------------\\",
+            "     |   MAST1_________    |",
+            "     |WEAPON1__WEAPON2__   |",
+            "     |   DEFENSE1______    |",
+            "     |CARGO1___CARGO2___   |",
+            "     |   MAST2_________    |",
+            "     |WEAPON3__WEAPON4__   |",
+            "     |   DEFENSE2______    |",
+            "     |CARGO3___CARGO4___   |",
+            "     |   MAST3_________    |",
+            "     |                      |",
+            "     |                      |",
+            "      \\--------------------/",
+            "        ~~~~~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/large-square-rigged-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 10 ]),
@@ -1254,22 +1007,14 @@ protected mapping Vehicles = ([
             "cargo": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |   [CARGO     ]   |\n"
-                "     |   [HENCHMAN  ]   |\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503   [CARGO     ]   \u2503\n"
-                "     \u2503   [HENCHMAN  ]   \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |   CARGO_______   |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/coastal-sailing-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 3 ]),
@@ -1302,28 +1047,18 @@ protected mapping Vehicles = ([
             "henchman3": "henchman",
             "henchman4": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |   [DEFENSE   ]   |\n"
-                "     |[CARGO1   ][CARGO2   ]|\n"
-                "     |   [CARGO3   ]   |\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503   [DEFENSE   ]   \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ]\u2503\n"
-                "     \u2503   [CARGO3   ]   \u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |   WEAPON______   |",
+            "     |   DEFENSE_____   |",
+            "     |CARGO1_____CARGO2_____|",
+            "     |   CARGO3_____   |",
+            "     |                  |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/large-square-rigged-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 8 ]),
@@ -1351,22 +1086,14 @@ protected mapping Vehicles = ([
             "henchman1": "henchman",
             "henchman2": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |[CARGO1   ][CARGO2   ]|\n"
-                "     |[HENCHMAN1][HENCHMAN2]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ]\u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |CARGO1_____CARGO2_____|",
+            "     |                     |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/longships.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 6 ]),
@@ -1415,44 +1142,25 @@ protected mapping Vehicles = ([
             "henchman9": "henchman",
             "henchman10": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |    [MAST1    ]   |\n"
-                "     |[WEAPON1  ][WEAPON2  ]|\n"
-                "     |    [DEFENSE1 ]   |\n"
-                "     |[CARGO1   ][CARGO2   ]|\n"
-                "     |    [MAST2    ]  |\n"
-                "     |    [WEAPON3  ]  |\n"
-                "     |    [DEFENSE2 ]  |\n"
-                "     |[CARGO3   ][CARGO4   ]|\n"
-                "     |    [MAST3    ]  |\n"
-                "     |[WEAPON4  ][WEAPON5  ]|\n"
-                "     |    [DEFENSE3 ]  |\n"
-                "     |    [CARGO5   ]  |\n"
-                "     |[HENCHMAN1] [HENCHMAN2] [HENCHMAN3] [HENCHMAN4] [HENCHMAN5]|\n"
-                "     |[HENCHMAN6] [HENCHMAN7] [HENCHMAN8] [HENCHMAN9] [HENCHMAN10]|\n"
-                "      \\--------------/\n"
-                "        ~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503    [MAST1    ]   \u2503\n"
-                "     \u2503[WEAPON1  ][WEAPON2  ]\u2503\n"
-                "     \u2503    [DEFENSE1 ]   \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ]\u2503\n"
-                "     \u2503    [MAST2    ]  \u2503\n"
-                "     \u2503    [WEAPON3  ]  \u2503\n"
-                "     \u2503    [DEFENSE2 ]  \u2503\n"
-                "     \u2503[CARGO3   ][CARGO4   ]\u2503\n"
-                "     \u2503    [MAST3    ]  \u2503\n"
-                "     \u2503[WEAPON4  ][WEAPON5  ]\u2503\n"
-                "     \u2503    [DEFENSE3 ]  \u2503\n"
-                "     \u2503    [CARGO5   ]  \u2503\n"
-                "     \u2503[HENCHMAN1] [HENCHMAN2] [HENCHMAN3] [HENCHMAN4] [HENCHMAN5]\u2503\n"
-                "     \u2503[HENCHMAN6] [HENCHMAN7] [HENCHMAN8] [HENCHMAN9] [HENCHMAN10]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |    MAST1______   |",
+            "     |WEAPON1____WEAPON2____|",
+            "     |    DEFENSE1___   |",
+            "     |CARGO1_____CARGO2_____|",
+            "     |    MAST2______  |",
+            "     |    WEAPON3____  |",
+            "     |    DEFENSE2___  |",
+            "     |CARGO3_____CARGO4_____|",
+            "     |    MAST3______  |",
+            "     |WEAPON4____WEAPON5____|",
+            "     |    DEFENSE3___  |",
+            "     |    CARGO5_____  |",
+            "     |                  |",
+            "     |                  |",
+            "      \\--------------/",
+            "        ~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/large-square-rigged-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 15 ]),
@@ -1484,26 +1192,17 @@ protected mapping Vehicles = ([
             "henchman3": "henchman",
             "henchman4": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |   [DEFENSE   ]   |\n"
-                "     |[CARGO1   ][CARGO2   ]|\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503   [DEFENSE   ]   \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ]\u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |   WEAPON______   |",
+            "     |   DEFENSE_____   |",
+            "     |CARGO1_____CARGO2_____|",
+            "     |                     |",
+            "     |                     |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/longships.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 6 ]),
@@ -1566,44 +1265,23 @@ protected mapping Vehicles = ([
             "henchman19": "henchman",
             "henchman20": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /------------------------\\\n"
-                "     |    [MAST1         ]     |\n"
-                "     |[WEAPON1  ][WEAPON2  ][WEAPON3  ]|\n"
-                "     |    [DEFENSE1      ]     |\n"
-                "     |[CARGO1   ][CARGO2   ][CARGO3   ]|\n"
-                "     |    [MAST2         ]     |\n"
-                "     |[WEAPON4  ][WEAPON5  ][WEAPON6  ]|\n"
-                "     |    [DEFENSE2      ]     |\n"
-                "     |[CARGO4   ][CARGO5   ][CARGO6   ]|\n"
-                "     |    [MAST3         ]     |\n"
-                "     |    [DEFENSE3      ]     |\n"
-                "     |    [DEFENSE4      ]     |\n"
-                "     |    [MAST4         ]     |\n"
-                "     |[HENCHMAN1]...[HENCHMAN10]|\n"
-                "     |[HENCHMAN11]...[HENCHMAN20]|\n"
-                "      \\----------------------/\n"
-                "        ~~~~~~~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503    [MAST1         ]     \u2503\n"
-                "     \u2503[WEAPON1  ][WEAPON2  ][WEAPON3  ]\u2503\n"
-                "     \u2503    [DEFENSE1      ]     \u2503\n"
-                "     \u2503[CARGO1   ][CARGO2   ][CARGO3   ]\u2503\n"
-                "     \u2503    [MAST2         ]     \u2503\n"
-                "     \u2503[WEAPON4  ][WEAPON5  ][WEAPON6  ]\u2503\n"
-                "     \u2503    [DEFENSE2      ]     \u2503\n"
-                "     \u2503[CARGO4   ][CARGO5   ][CARGO6   ]\u2503\n"
-                "     \u2503    [MAST3         ]     \u2503\n"
-                "     \u2503    [DEFENSE3      ]     \u2503\n"
-                "     \u2503    [DEFENSE4      ]     \u2503\n"
-                "     \u2503    [MAST4         ]     \u2503\n"
-                "     \u2503[HENCHMAN1]...[HENCHMAN10]\u2503\n"
-                "     \u2503[HENCHMAN11]...[HENCHMAN20]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /------------------------\\",
+            "     |    MAST1___________     |",
+            "     |WEAPON1____WEAPON2____WEAPON3____|",
+            "     |    DEFENSE1________     |",
+            "     |CARGO1_____CARGO2_____CARGO3_____|",
+            "     |    MAST2___________     |",
+            "     |WEAPON4____WEAPON5____WEAPON6____|",
+            "     |    DEFENSE2________     |",
+            "     |CARGO4_____CARGO5_____CARGO6_____|",
+            "     |    MAST3___________     |",
+            "     |    DEFENSE3________     |",
+            "     |    DEFENSE4________     |",
+            "     |    MAST4___________     |",
+            "      \\----------------------/",
+            "        ~~~~~~~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/large-square-rigged-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 18 ]),
@@ -1629,22 +1307,14 @@ protected mapping Vehicles = ([
             "cargo": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |   [CARGO     ]   |\n"
-                "     |   [HENCHMAN  ]   |\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503   [CARGO     ]   \u2503\n"
-                "     \u2503   [HENCHMAN  ]   \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |   CARGO_______   |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/coastal-sailing-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 2 ]),
@@ -1679,30 +1349,19 @@ protected mapping Vehicles = ([
             "henchman3": "henchman",
             "henchman4": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |[WEAPON1   ][WEAPON2   ]|\n"
-                "     |   [DEFENSE1 ]   |\n"
-                "     |[CARGO1    ][CARGO2    ]|\n"
-                "     |   [MAST2     ]   |\n"
-                "     |   [DEFENSE2 ]   |\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503[WEAPON1   ][WEAPON2   ]\u2503\n"
-                "     \u2503   [DEFENSE1 ]   \u2503\n"
-                "     \u2503[CARGO1    ][CARGO2    ]\u2503\n"
-                "     \u2503   [MAST2     ]   \u2503\n"
-                "     \u2503   [DEFENSE2 ]   \u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3][HENCHMAN4]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |WEAPON1_____WEAPON2_____|",
+            "     |   DEFENSE1___   |",
+            "     |CARGO1______CARGO2______|",
+            "     |   MAST2_______   |",
+            "     |   DEFENSE2___   |",
+            "     |                  |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/large-square-rigged-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 10 ]),
@@ -1739,30 +1398,18 @@ protected mapping Vehicles = ([
             "henchman5": "henchman",
             "henchman6": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST1     ]   |\n"
-                "     |[WEAPON1   ][WEAPON2   ][WEAPON3   ]|\n"
-                "     |   [DEFENSE1 ]   |\n"
-                "     |   [DEFENSE2 ]   |\n"
-                "     |[CARGO1    ][CARGO2    ]|\n"
-                "     |[HENCHMAN1][HENCHMAN2][HENCHMAN3]|\n"
-                "     |[HENCHMAN4][HENCHMAN5][HENCHMAN6]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1     ]   \u2503\n"
-                "     \u2503[WEAPON1   ][WEAPON2   ][WEAPON3   ]\u2503\n"
-                "     \u2503   [DEFENSE1 ]   \u2503\n"
-                "     \u2503   [DEFENSE2 ]   \u2503\n"
-                "     \u2503[CARGO1    ][CARGO2    ]\u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2][HENCHMAN3]\u2503\n"
-                "     \u2503[HENCHMAN4][HENCHMAN5][HENCHMAN6]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST1_______   |",
+            "     |WEAPON1_____WEAPON2_____WEAPON3_____|",
+            "     |   DEFENSE1___   |",
+            "     |   DEFENSE2___   |",
+            "     |CARGO1______CARGO2______|",
+            "     |                        |",
+            "     |                        |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/oared-warships.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 12 ]),
@@ -1793,26 +1440,16 @@ protected mapping Vehicles = ([
             "cargo": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [HULL      ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |[DEFENSE1][DEFENSE2]|\n"
-                "     |   [CARGO     ]   |\n"
-                "     |   [HENCHMAN  ]   |\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [HULL      ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503[DEFENSE1][DEFENSE2]\u2503\n"
-                "     \u2503   [CARGO     ]   \u2503\n"
-                "     \u2503   [HENCHMAN  ]   \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   HULL________   |",
+            "     |   WEAPON______   |",
+            "     |DEFENSE1__DEFENSE2__|",
+            "     |   CARGO_______   |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/arcane-vessels.c": ([ "type": "research" ]),
             "spellcraft": ([ "type": "skill", "value": 10 ]),
@@ -1845,28 +1482,17 @@ protected mapping Vehicles = ([
             "henchman3": "henchman",
             "henchman4": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [HULL      ]   |\n"
-                "     |[WEAPON1][WEAPON2]|\n"
-                "     |[DEFENSE1][DEFENSE2]|\n"
-                "     |[CARGO1  ][CARGO2  ]|\n"
-                "     |[HENCHMAN1][HENCHMAN2]|\n"
-                "     |[HENCHMAN3][HENCHMAN4]|\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [HULL      ]   \u2503\n"
-                "     \u2503[WEAPON1][WEAPON2]\u2503\n"
-                "     \u2503[DEFENSE1][DEFENSE2]\u2503\n"
-                "     \u2503[CARGO1  ][CARGO2  ]\u2503\n"
-                "     \u2503[HENCHMAN1][HENCHMAN2]\u2503\n"
-                "     \u2503[HENCHMAN3][HENCHMAN4]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   HULL________   |",
+            "     |WEAPON1__WEAPON2__|",
+            "     |DEFENSE1__DEFENSE2__|",
+            "     |CARGO1____CARGO2____|",
+            "     |                  |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/arcane-vessels.c": ([ "type": "research" ]),
             "spellcraft": ([ "type": "skill", "value": 15 ]),
@@ -1942,50 +1568,26 @@ protected mapping Vehicles = ([
             "henchman19": "henchman",
             "henchman20": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /------------------------------\\\n"
-                "     |   [MAST1             ]        |\n"
-                "     |[WEAPON1][WEAPON2][WEAPON3][WEAPON4]|\n"
-                "     |   [DEFENSE1          ]        |\n"
-                "     |[CARGO1 ][CARGO2 ][CARGO3 ][CARGO4 ]|\n"
-                "     |   [MAST2             ]        |\n"
-                "     |[WEAPON5][WEAPON6][WEAPON7][WEAPON8]|\n"
-                "     |   [DEFENSE2          ]        |\n"
-                "     |[CARGO5 ][CARGO6 ][CARGO7 ][CARGO8 ]|\n"
-                "     |   [MAST3             ]        |\n"
-                "     |[WEAPON9][WEAPON10][WEAPON11][WEAPON12]|\n"
-                "     |   [DEFENSE3][DEFENSE4]        |\n"
-                "     |   [MAST4             ]        |\n"
-                "     |   [DEFENSE5][DEFENSE6]        |\n"
-                "     |   [MAST5             ]        |\n"
-                "     |   [DEFENSE7][DEFENSE8]        |\n"
-                "     |[HENCHMAN1]...[HENCHMAN10]     |\n"
-                "     |[HENCHMAN11]...[HENCHMAN20]    |\n"
-                "      \\----------------------------/\n"
-                "        ~~~~~~~~~~~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1             ]        \u2503\n"
-                "     \u2503[WEAPON1][WEAPON2][WEAPON3][WEAPON4]\u2503\n"
-                "     \u2503   [DEFENSE1          ]        \u2503\n"
-                "     \u2503[CARGO1 ][CARGO2 ][CARGO3 ][CARGO4 ]\u2503\n"
-                "     \u2503   [MAST2             ]        \u2503\n"
-                "     \u2503[WEAPON5][WEAPON6][WEAPON7][WEAPON8]\u2503\n"
-                "     \u2503   [DEFENSE2          ]        \u2503\n"
-                "     \u2503[CARGO5 ][CARGO6 ][CARGO7 ][CARGO8 ]\u2503\n"
-                "     \u2503   [MAST3             ]        \u2503\n"
-                "     \u2503[WEAPON9][WEAPON10][WEAPON11][WEAPON12]\u2503\n"
-                "     \u2503   [DEFENSE3][DEFENSE4]        \u2503\n"
-                "     \u2503   [MAST4             ]        \u2503\n"
-                "     \u2503   [DEFENSE5][DEFENSE6]        \u2503\n"
-                "     \u2503   [MAST5             ]        \u2503\n"
-                "     \u2503   [DEFENSE7][DEFENSE8]        \u2503\n"
-                "     \u2503[HENCHMAN1]...[HENCHMAN10]     \u2503\n"
-                "     \u2503[HENCHMAN11]...[HENCHMAN20]    \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /------------------------------\\",
+            "     |   MAST1_______________        |",
+            "     |WEAPON1__WEAPON2__WEAPON3__WEAPON4__|",
+            "     |   DEFENSE1____________        |",
+            "     |CARGO1___CARGO2___CARGO3___CARGO4___|",
+            "     |   MAST2_______________        |",
+            "     |WEAPON5__WEAPON6__WEAPON7__WEAPON8__|",
+            "     |   DEFENSE2____________        |",
+            "     |CARGO5___CARGO6___CARGO7___CARGO8___|",
+            "     |   MAST3_______________        |",
+            "     |WEAPON9__WEAPON10__WEAPON11__WEAPON12__|",
+            "     |   DEFENSE3__DEFENSE4__        |",
+            "     |   MAST4_______________        |",
+            "     |   DEFENSE5__DEFENSE6__        |",
+            "     |   MAST5_______________        |",
+            "     |   DEFENSE7__DEFENSE8__        |",
+            "      \\----------------------------/",
+            "        ~~~~~~~~~~~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/arcane-dreadnoughts.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 22 ]),
@@ -2014,26 +1616,16 @@ protected mapping Vehicles = ([
             "cargo": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST      ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |   [DEFENSE   ]   |\n"
-                "     |   [CARGO     ]   |\n"
-                "     |   [HENCHMAN  ]   |\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST      ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503   [DEFENSE   ]   \u2503\n"
-                "     \u2503   [CARGO     ]   \u2503\n"
-                "     \u2503   [HENCHMAN  ]   \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST________   |",
+            "     |   WEAPON______   |",
+            "     |   DEFENSE_____   |",
+            "     |   CARGO_______   |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/crystal-vessels.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 4 ]),
@@ -2096,44 +1688,23 @@ protected mapping Vehicles = ([
             "henchman19": "henchman",
             "henchman20": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /------------------------\\\n"
-                "     |   [MAST1         ]      |\n"
-                "     |[WEAPON1][WEAPON2][WEAPON3]|\n"
-                "     |   [DEFENSE1      ]      |\n"
-                "     |[CARGO1][CARGO2][CARGO3] |\n"
-                "     |   [MAST2         ]      |\n"
-                "     |[WEAPON4][WEAPON5][WEAPON6]|\n"
-                "     |   [DEFENSE2      ]      |\n"
-                "     |[CARGO4][CARGO5][CARGO6] |\n"
-                "     |   [MAST3         ]      |\n"
-                "     |   [DEFENSE3      ]      |\n"
-                "     |   [DEFENSE4      ]      |\n"
-                "     |   [MAST4         ]      |\n"
-                "     |[HENCHMAN1]...[HENCHMAN10]|\n"
-                "     |[HENCHMAN11]...[HENCHMAN20]|\n"
-                "      \\----------------------/\n"
-                "        ~~~~~~~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST1         ]      \u2503\n"
-                "     \u2503[WEAPON1][WEAPON2][WEAPON3]\u2503\n"
-                "     \u2503   [DEFENSE1      ]      \u2503\n"
-                "     \u2503[CARGO1][CARGO2][CARGO3] \u2503\n"
-                "     \u2503   [MAST2         ]      \u2503\n"
-                "     \u2503[WEAPON4][WEAPON5][WEAPON6]\u2503\n"
-                "     \u2503   [DEFENSE2      ]      \u2503\n"
-                "     \u2503[CARGO4][CARGO5][CARGO6] \u2503\n"
-                "     \u2503   [MAST3         ]      \u2503\n"
-                "     \u2503   [DEFENSE3      ]      \u2503\n"
-                "     \u2503   [DEFENSE4      ]      \u2503\n"
-                "     \u2503   [MAST4         ]      \u2503\n"
-                "     \u2503[HENCHMAN1]...[HENCHMAN10]\u2503\n"
-                "     \u2503[HENCHMAN11]...[HENCHMAN20]\u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /------------------------\\",
+            "     |   MAST1___________      |",
+            "     |WEAPON1__WEAPON2__WEAPON3__|",
+            "     |   DEFENSE1________      |",
+            "     |CARGO1__CARGO2__CARGO3__ |",
+            "     |   MAST2___________      |",
+            "     |WEAPON4__WEAPON5__WEAPON6__|",
+            "     |   DEFENSE2________      |",
+            "     |CARGO4__CARGO5__CARGO6__ |",
+            "     |   MAST3___________      |",
+            "     |   DEFENSE3________      |",
+            "     |   DEFENSE4________      |",
+            "     |   MAST4___________      |",
+            "      \\----------------------/",
+            "        ~~~~~~~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/mystical-man-of-war.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 15 ]),
@@ -2162,26 +1733,16 @@ protected mapping Vehicles = ([
             "cargo": "cargo",
             "henchman": "henchman"
         ]),
-        "layout": ([
-            "ascii":
-                "      /----------------\\\n"
-                "     |   [MAST      ]   |\n"
-                "     |   [WEAPON    ]   |\n"
-                "     |   [DEFENSE   ]   |\n"
-                "     |   [CARGO     ]   |\n"
-                "     |   [HENCHMAN  ]   |\n"
-                "      \\----------------/\n"
-                "        ~~~~~~~~~~~~~~",
-            "unicode":
-                "      \u2571\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2572\n"
-                "     \u2503   [MAST      ]   \u2503\n"
-                "     \u2503   [WEAPON    ]   \u2503\n"
-                "     \u2503   [DEFENSE   ]   \u2503\n"
-                "     \u2503   [CARGO     ]   \u2503\n"
-                "     \u2503   [HENCHMAN  ]   \u2503\n"
-                "      \u2572\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2571\n"
-                "        \u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248\u2248"
-        ]),
+        "layout": ({
+            "      /----------------\\",
+            "     |   MAST________   |",
+            "     |   WEAPON______   |",
+            "     |   DEFENSE_____   |",
+            "     |   CARGO_______   |",
+            "     |                  |",
+            "      \\----------------/",
+            "        ~~~~~~~~~~~~~~"
+        }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/boats/arcane-glider.c": ([ "type": "research" ]),
             "carpentry": ([ "type": "skill", "value": 3 ]),

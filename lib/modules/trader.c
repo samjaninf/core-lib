@@ -123,6 +123,27 @@ public object *getVehiclesAtLocation(string location)
 }
 
 /////////////////////////////////////////////////////////////////////////////
+public int removeVehicle(object vehicle)
+{
+    int ret = 0;
+    if (objectp(vehicle) && (member(vehicles, vehicle) > -1))
+    {
+        // Unassign from any trade runs
+        foreach (string key in m_indices(tradeRunVehicles))
+        {
+            if (tradeRunVehicles[key] == vehicle)
+            {
+                m_delete(tradeRunVehicles, key);
+            }
+        }
+        vehicles -= ({ vehicle });
+        destruct(vehicle);
+        ret = 1;
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 public int assignVehicleToTradeRun(string tradeRunId, object vehicle)
 {
     int ret = 0;

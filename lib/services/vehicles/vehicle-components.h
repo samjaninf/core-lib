@@ -12,6 +12,7 @@ private mapping VehicleComponents =
     //=========================================================================
     "basic wagon frame": ([
         "class": "frame",
+        "display name": "Basic Frame",
         "description": "A simple wooden frame for a small wagon or cart.",
         "structure": 10,
         "protection": 0,
@@ -155,6 +156,7 @@ private mapping VehicleComponents =
     //=========================================================================
     "wagon cargo bed": ([
         "class": "cargo",
+        "display name": "Cargo Bed",
         "description": "A flat bed for carrying goods and supplies.",
         "capacity bonus": 300,
         "weight": 3,

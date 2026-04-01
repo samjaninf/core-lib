@@ -88,6 +88,66 @@ protected nomask int processSelection(string selection)
                     }
                     break;
                 }
+                case "repair":
+                {
+                    object vehicle = Data[selection]["vehicle"];
+                    int cost = Data[selection]["cost"];
+                    if (objectp(vehicle) && User->getCash() >= cost)
+                    {
+                        User->addCash(-cost);
+                        int max = vehicle->getMaxStructure();
+                        int current = vehicle->getCurrentStructure();
+                        vehicle->repair(max - current);
+                        string vehicleName = vehicle->query("name") ||
+                            "Vehicle";
+                        tell_object(User, configuration->decorate(
+                            sprintf("%s has been fully repaired for "
+                                "%d gold.", vehicleName, cost),
+                            "success", "quests",
+                            colorConfiguration) + "\n");
+                    }
+                    else
+                    {
+                        tell_object(User, configuration->decorate(
+                            "You cannot afford this repair.",
+                            "failure", "selector",
+                            colorConfiguration) + "\n");
+                    }
+                    setUpUserForSelection();
+                    tell_object(User, displayMessage());
+                    ret = -1;
+                    break;
+                }
+                case "sell":
+                {
+                    object vehicle = Data[selection]["vehicle"];
+                    int sellPrice = Data[selection]["sell price"];
+                    if (objectp(vehicle) &&
+                        vehicle->getUsedSpace() == 0)
+                    {
+                        string vehicleName = vehicle->query("name") ||
+                            "Vehicle";
+                        User->addCash(sellPrice);
+                        User->removeVehicle(vehicle);
+                        tell_object(User, configuration->decorate(
+                            sprintf("You sold %s for %d gold.",
+                                vehicleName, sellPrice),
+                            "success", "quests",
+                            colorConfiguration) + "\n");
+                    }
+                    else
+                    {
+                        tell_object(User, configuration->decorate(
+                            "Cannot sell this vehicle. Unload "
+                            "cargo first.",
+                            "failure", "selector",
+                            colorConfiguration) + "\n");
+                    }
+                    setUpUserForSelection();
+                    tell_object(User, displayMessage());
+                    ret = -1;
+                    break;
+                }
             }
 
             if (SubselectorObj)

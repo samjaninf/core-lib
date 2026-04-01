@@ -265,9 +265,9 @@ void ManageVehicleDisplaysEnhancementOptions()
 
     string message = Player->caughtMessage();
 
-    ExpectSubStringMatch("Enhance Vehicle", message);
-    ExpectSubStringMatch("View Vehicle Layout", message);
-    ExpectSubStringMatch("Upgrade.*Slot", message);
+    ExpectSubStringMatch("Vehicle Enhancement", message);
+    ExpectSubStringMatch("Manage Crew", message);
+    ExpectSubStringMatch("Upgrade.*\\(", message);
     ExpectSubStringMatch("Return", message);
 }
 
@@ -338,6 +338,6 @@ void ManageOptionLaunchesEnhanceSelector()
     command(wagonOption, Player);
 
     string message = Player->caughtMessage();
-    ExpectSubStringMatch("Enhance Vehicle", message);
+    ExpectSubStringMatch("Vehicle Enhancement", message);
     ExpectSubStringMatch("Return to Vehicle Menu", message);
 }

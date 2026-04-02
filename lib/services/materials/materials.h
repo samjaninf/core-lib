@@ -166,6 +166,9 @@ protected mapping materials =
             "physical": 1
         ]),
         "encumberance": -1,
+        "vehicle": ([
+            "speed": 1,
+        ]),
         "value multiplier": 2.2,
         "default description": "This is a textile made from the tightly-woven strands of silkworm cocoons.",
         "scarcity": "rare",
@@ -689,6 +692,10 @@ protected mapping materials =
             "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
             "wood crafting": (["type":"skill", "value": 1]),
         ]),
+        "vehicle": ([
+            "structure": 1,
+            "speed": 1,
+        ]),
         "default description": "This is a plank of pine.",
         "scarcity": "common",
         "experience modifier": 1,
@@ -737,6 +744,10 @@ protected mapping materials =
             "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
             "wood crafting": (["type":"skill", "value": 2]),
         ]),
+        "vehicle": ([
+            "structure": 2,
+            "speed": 1,
+        ]),
         "default description": "This is a plank of cedar.",
         "scarcity": "common",
         "experience modifier": 1,
@@ -750,6 +761,10 @@ protected mapping materials =
             "wood crafting": (["type":"skill", "value": 3]),
         ]),
         "value multiplier": 1.1,
+        "vehicle": ([
+            "structure": 2,
+            "protection": 1,
+        ]),
         "default description": "This is a plank of oak.",
         "scarcity": "common",
         "experience modifier": 1,
@@ -1105,6 +1120,11 @@ protected mapping materials =
             "wood crafting": (["type":"skill", "value": 6]),
         ]),
         "value multiplier": 1.5,
+        "vehicle": ([
+            "structure": 3,
+            "protection": 2,
+            "speed": 1,
+        ]),
         "default description": "This is a plank of teak.",
         "scarcity": "uncommon",
         "experience modifier": 1.15,
@@ -1276,6 +1296,10 @@ protected mapping materials =
             "wood crafting": (["type":"skill", "value": 5]),
         ]),
         "value multiplier": 1.1,
+        "vehicle": ([
+            "structure": 3,
+            "protection": 2,
+        ]),
         "default description": "This is a plank of ironwood.",
         "scarcity": "common",
         "experience modifier": 1.1,
@@ -2330,6 +2354,9 @@ protected mapping materials =
             "physical": -1
         ]),
         "encumberance": -1,
+        "vehicle": ([
+            "structure": 1,
+        ]),
         "value multiplier": 0.9,
         "default description": "This is a refined copper ingot.",
         "scarcity": "common",
@@ -3003,6 +3030,10 @@ protected mapping materials =
         "crafting materials": ([
             "iron ore": 3,
         ]),
+        "vehicle": ([
+            "structure": 2,
+            "protection": 1,
+        ]),
         "default description": "This is a refined iron ingot.",
         "scarcity": "common",
         "experience modifier": 1,
@@ -3028,6 +3059,10 @@ protected mapping materials =
         "attack rating": 1,
         "defense": ([
             "physical": 1
+        ]),
+        "vehicle": ([
+            "structure": 4,
+            "protection": 3,
         ]),
         "value multiplier": 1.1,
         "default description": "This is an iron-graphite steel ingot.",

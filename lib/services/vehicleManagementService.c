@@ -720,19 +720,24 @@ private nomask string *getCrewInfoLines(object user, object vehicle,
     string colorConfig = user->colorConfiguration();
     object configService = getService("configuration");
 
-    string *henchmanSlots = ({});
-    foreach (string slot in sort_array(m_indices(slots), (: $1 > $2 :)))
+    int totalHenchmanSlots = 0;
+    int assignedHenchmen = 0;
+    mapping currentCrew = vehicle->getCrew();
+
+    foreach (string slot in m_indices(slots))
     {
         if (slots[slot] == "henchman")
         {
-            henchmanSlots += ({ slot });
+            totalHenchmanSlots++;
+            if (mappingp(currentCrew) && member(currentCrew, slot))
+            {
+                assignedHenchmen++;
+            }
         }
     }
 
-    if (sizeof(henchmanSlots))
+    if (totalHenchmanSlots)
     {
-        mapping currentCrew = vehicle->getCrew();
-
         ret += ({
             configService->decorate(sprintf("%-29s", ""),
                 "heading", "player domains", colorConfig),
@@ -740,25 +745,20 @@ private nomask string *getCrewInfoLines(object user, object vehicle,
                 "heading", "player domains", colorConfig)
         });
 
-        foreach (string slot in henchmanSlots)
-        {
-            int assigned = (mappingp(currentCrew) &&
-                member(currentCrew, slot)) ? 1 : 0;
-
-            ret += ({
-                configService->decorate(
-                    sprintf("    %-17s - ", capitalize(slot)),
-                    "worker", "player domains", colorConfig) +
-                configService->decorate(sprintf("%2d", assigned),
-                    assigned ? "value" : "incomplete",
-                    "player domains", colorConfig) +
-                configService->decorate("/",
-                    assigned, "heading", "player domains",
-                    colorConfig) +
-                configService->decorate(sprintf("%-2d", 1),
-                    "total", "player domains", colorConfig)
-            });
-        }
+        ret += ({
+            configService->decorate(
+                sprintf("    %-17s - ", "Henchman"),
+                "worker", "player domains", colorConfig) +
+            configService->decorate(
+                sprintf("%2d", assignedHenchmen),
+                assignedHenchmen ? "value" : "incomplete",
+                "player domains", colorConfig) +
+            configService->decorate("/",
+                "heading", "player domains", colorConfig) +
+            configService->decorate(
+                sprintf("%-2d", totalHenchmanSlots),
+                "total", "player domains", colorConfig)
+        });
     }
     return ret;
 }

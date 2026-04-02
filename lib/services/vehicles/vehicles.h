@@ -428,12 +428,12 @@ protected mapping Vehicles = ([
             "henchman2": "henchman"
         ]),
         "layout": ({
-            "   /------\\   /------\\",
-            "  | MAST__|   |      |",
-            "  |CARGO1__|  |CARGO2__|",
-            "  |DEFENSE__| |WEAPON__|",
-            "   \\------/   \\------/",
-            "    ~~~~~~     ~~~~~~"
+            "   /------\\     /------\\",
+            "  | MAST__ |   |        |",
+            "  |CARGO1__|===|CARGO2__|",
+            "  |DEFENSE_|===|WEAPON__|",
+            "   \\------/     \\------/",
+            "    ~~~~~~       ~~~~~~"
         }),
         "prerequisites": ([
             "/lib/instances/research/vehicles/ships/multi-hull-vessel.c": ([ "type": "research" ]),
@@ -512,9 +512,9 @@ protected mapping Vehicles = ([
             "     |   MAST1_______   |",
             "     |   WEAPON______   |",
             "     |   DEFENSE_____   |",
-            "     |CARGO1_____CARGO2_____|",
-            "     |                     |",
-            "     |                     |",
+            "     |CARGO1___CARGO2___|",
+            "     |                  |",
+            "     |                  |",
             "      \\----------------/",
             "        ~~~~~~~~~~~~~~"
         }),

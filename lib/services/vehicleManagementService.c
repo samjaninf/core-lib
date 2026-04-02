@@ -168,21 +168,26 @@ private nomask string findTagForSlot(string upperSlot, string *layoutLines)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-private nomask string renderSlotDisplay(string compName, int tagWidth,
+private nomask string renderSlotDisplay(string componentName, int tagWidth,
     string colorConfig, object configService)
 {
     string displayStr;
 
-    int isBuilt = stringp(compName) &&
-        (sizeof(compName) < 8 || compName[0..7] != "unbuilt ");
+    int isBuilt = 0;
+    if (stringp(componentName))
+    {
+        string tmp = "";
+        int matches = sscanf(componentName, "unbuilt %s", tmp);
+        isBuilt = (matches != 1);
+    }
 
     if (isBuilt)
     {
-        mapping comp =
-            getService("vehicle")->queryComponent(compName);
-        string name = (sizeof(comp) &&
-            member(comp, "display name")) ?
-            comp["display name"] : compName;
+        mapping componentData =
+            getService("vehicle")->queryComponent(componentName);
+        string name = (mappingp(componentData) &&
+            member(componentData, "display name")) ?
+            componentData["display name"] : componentName;
 
         if (sizeof(name) > tagWidth)
         {
@@ -228,11 +233,11 @@ private nomask string *buildLayoutFromBlueprint(object user,
 
         if (stringp(tag) && sizeof(tag) >= 1)
         {
-            string compName = (member(currentComponents, slot) &&
+            string componentName = (member(currentComponents, slot) &&
                 stringp(currentComponents[slot])) ?
                 currentComponents[slot] : 0;
 
-            string displayStr = renderSlotDisplay(compName,
+            string displayStr = renderSlotDisplay(componentName,
                 sizeof(tag), colorConfig, configService);
 
             layoutStr = regreplace(layoutStr, tag, displayStr, 1);
@@ -489,24 +494,32 @@ public nomask mapping getPurchaseMenu(object user, string location,
 }
 
 /////////////////////////////////////////////////////////////////////////////
-private nomask string getComponentDisplayName(string currentComponent)
+private nomask string getComponentDisplayName(string componentIdentifier)
 {
-    string compDisplay = "Unbuilt";
+    string displayName = "Unbuilt";
 
-    if (stringp(currentComponent) && sizeof(currentComponent) >= 8 &&
-        currentComponent[0..7] == "unbuilt ")
+    if (stringp(componentIdentifier))
     {
-        compDisplay = "Unbuilt";
+        string parsed = "";
+        int isUnbuilt = sscanf(componentIdentifier, "unbuilt %s", parsed);
+        if (isUnbuilt == 1)
+        {
+            displayName = "Unbuilt";
+        }
+        else
+        {
+            mapping componentData = getService("vehicle")->queryComponent(componentIdentifier);
+            if (mappingp(componentData) && member(componentData, "display name"))
+            {
+                displayName = componentData["display name"];
+            }
+            else
+            {
+                displayName = componentIdentifier;
+            }
+        }
     }
-    else if (stringp(currentComponent))
-    {
-        mapping compData =
-            getService("vehicle")->queryComponent(currentComponent);
-        compDisplay = sizeof(compData) &&
-            member(compData, "display name") ?
-            compData["display name"] : currentComponent;
-    }
-    return compDisplay;
+    return displayName;
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -521,28 +534,28 @@ private nomask mapping buildSlotEntries(mapping slots,
     foreach (string slot in slotOrder)
     {
         string componentClass = slots[slot];
-        if (componentClass == "henchman")
+        if (componentClass != "henchman")
         {
-            continue;
+            string currentComponent =
+                member(currentComponents, slot) ?
+                currentComponents[slot] : "empty";
+
+            string compDisplay =
+                getComponentDisplayName(currentComponent);
+
+            ret[to_string(counter)] = ([
+                "name": sprintf("%-23s",
+                    sprintf("Upgrade %s", capitalize(slot))),
+                "type": "slot",
+                "slot": slot,
+                "class": componentClass,
+                "status": compDisplay,
+                "description": sprintf("Upgrade or install "
+                    "components in the %s slot.\n", slot),
+                "canShow": 1
+            ]);
+            counter++;
         }
-
-        string currentComponent = member(currentComponents, slot) ?
-            currentComponents[slot] : "empty";
-
-        string compDisplay = getComponentDisplayName(currentComponent);
-
-        ret[to_string(counter)] = ([
-            "name": sprintf("%-23s",
-                sprintf("Upgrade %s", capitalize(slot))),
-            "type": "slot",
-            "slot": slot,
-            "class": componentClass,
-            "status": compDisplay,
-            "description": sprintf("Upgrade or install components "
-                "in the %s slot.\n", slot),
-            "canShow": 1
-        ]);
-        counter++;
     }
     return ret;
 }
@@ -621,6 +634,11 @@ private nomask string *getVehicleStatsLines(object user,
     string colorConfig = user->colorConfiguration();
     object configService = getService("configuration");
 
+    mapping bonuses = vehicle->getVehicleBonuses();
+
+    int totalCapacity = member(bonuses, "capacity") ? bonuses["capacity"] : 0;
+    int totalSpeed = member(bonuses, "speed") ? bonuses["speed"] : 0;
+
     ret += ({
         configService->decorate(sprintf("%-29s", "Stats:"),
             "heading", "player domains", colorConfig)
@@ -628,64 +646,31 @@ private nomask string *getVehicleStatsLines(object user,
 
     ret += ({
         configService->decorate(
-            sprintf("    %-25s", sprintf("Capacity: %d",
-                blueprint["capacity"] || 0)),
+            sprintf("    %-25s", sprintf("Capacity: %d", totalCapacity)),
             "value", "player domains", colorConfig)
     });
 
     ret += ({
         configService->decorate(
-            sprintf("    %-25s", sprintf("Speed: %d",
-                blueprint["base speed"] || 0)),
+            sprintf("    %-25s", sprintf("Speed: %d", totalSpeed)),
             "value", "player domains", colorConfig)
     });
 
-    int totalStructure = blueprint["structure"] || 0;
-    int totalProtection = blueprint["protection"] || 0;
-    int weaponCount = 0;
-    int defenseCount = 0;
+    int totalStructure = member(bonuses, "structure") ? bonuses["structure"] : 0;
+    int totalProtection = member(bonuses, "protection") ? bonuses["protection"] : 0;
 
-    mapping currentComponents = vehicle->getComponents();
-    foreach (string slot in m_indices(currentComponents))
-    {
-        string compName = currentComponents[slot];
-        if (stringp(compName) &&
-            (sizeof(compName) < 8 || compName[0..7] != "unbuilt "))
-        {
-            mapping comp =
-                getService("vehicle")->queryComponent(compName);
-            if (sizeof(comp))
-            {
-                totalStructure += comp["structure"] || 0;
-                totalProtection += comp["protection"] || 0;
-            }
-        }
-    }
-
-    mapping slots = blueprint["slots"] || ([]);
-    foreach (string slot in m_indices(slots))
-    {
-        if (slots[slot] == "weapon")
-        {
-            weaponCount++;
-        }
-        else if (slots[slot] == "defense")
-        {
-            defenseCount++;
-        }
-    }
+    int weaponCount = member(bonuses, "weapon slots") ? bonuses["weapon slots"] : 0;
+    int defenseCount = member(bonuses, "defense slots") ? bonuses["defense slots"] : 0;
 
     ret += ({
         configService->decorate(
-            sprintf("    %-25s", sprintf("Structure: %d",
-                totalStructure)),
+            sprintf("    %-25s", sprintf("Structure: %d", totalStructure)),
             "value", "player domains", colorConfig)
     });
 
     ret += ({
         configService->decorate(
-            sprintf("    %-25s", sprintf("Protection: %d",
-                totalProtection)),
+            sprintf("    %-25s", sprintf("Protection: %d", totalProtection)),
             "value", "player domains", colorConfig)
     });
 
@@ -693,8 +678,7 @@ private nomask string *getVehicleStatsLines(object user,
     {
         ret += ({
             configService->decorate(
-                sprintf("    %-25s",
-                    sprintf("Weapon slots: %d", weaponCount)),
+                sprintf("    %-25s", sprintf("Weapon slots: %d", weaponCount)),
                 "value", "player domains", colorConfig)
         });
     }
@@ -703,8 +687,7 @@ private nomask string *getVehicleStatsLines(object user,
     {
         ret += ({
             configService->decorate(
-                sprintf("    %-25s",
-                    sprintf("Defense slots: %d", defenseCount)),
+                sprintf("    %-25s", sprintf("Defense slots: %d", defenseCount)),
                 "value", "player domains", colorConfig)
         });
     }
@@ -1008,8 +991,8 @@ public nomask int purchaseVehicle(object user, string vehicleType, string locati
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public nomask int installVehicleComponent(object user, object vehicle,
-    string slot, string componentName)
+public nomask varargs int installVehicleComponent(object user, object vehicle,
+    string slot, string componentName, mapping selectedMaterials)
 {
     int result = 0;
 
@@ -1045,6 +1028,13 @@ public nomask int installVehicleComponent(object user, object vehicle,
             else
             {
                 vehicle->installComponent(slot, componentName);
+            }
+
+            if (mappingp(selectedMaterials) &&
+                sizeof(selectedMaterials))
+            {
+                vehicle->setComponentMaterials(slot,
+                    selectedMaterials);
             }
             result = 1;
         }

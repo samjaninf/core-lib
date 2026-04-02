@@ -140,6 +140,46 @@ public nomask mapping getCrew()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+public nomask void setComponentMaterials(string slot,
+    mapping selectedMaterials)
+{
+    if (stringp(slot) && mappingp(selectedMaterials))
+    {
+        mapping allMaterials =
+            query("component materials") || ([]);
+        allMaterials[slot] = selectedMaterials + ([]);
+        set("component materials", allMaterials);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getComponentMaterials(string slot)
+{
+    mapping result = ([]);
+    mapping allMaterials = query("component materials");
+
+    if (mappingp(allMaterials) && stringp(slot) &&
+        member(allMaterials, slot))
+    {
+        result = allMaterials[slot] + ([]);
+    }
+    return result;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getAllComponentMaterials()
+{
+    mapping result = ([]);
+    mapping allMaterials = query("component materials");
+
+    if (mappingp(allMaterials))
+    {
+        result = allMaterials + ([]);
+    }
+    return result;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 public nomask int getMaxStructure()
 {
     int structure = 0;
@@ -265,6 +305,194 @@ public nomask int getSpeed()
         }
     }
     return speed;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask mapping blueprintBaseStats()
+{
+    mapping result = (["structure": 0, "protection": 0, "speed": 0,
+        "capacity": 0, "weapon slots": 0, "defense slots": 0]);
+
+    mapping blueprint = getBlueprint();
+    if (mappingp(blueprint))
+    {
+        if (member(blueprint, "structure"))
+        {
+            result["structure"] = blueprint["structure"];
+        }
+        if (member(blueprint, "protection"))
+        {
+            result["protection"] = blueprint["protection"];
+        }
+        if (member(blueprint, "base speed"))
+        {
+            result["speed"] = blueprint["base speed"];
+        }
+        if (member(blueprint, "capacity"))
+        {
+            result["capacity"] = blueprint["capacity"];
+        }
+
+        mapping slots = blueprint["slots"] || ([]);
+        foreach (string slot in m_indices(slots))
+        {
+            string slotType = slots[slot];
+            if (slotType == "weapon")
+            {
+                result["weapon slots"] += 1;
+            }
+            else if (slotType == "defense")
+            {
+                result["defense slots"] += 1;
+            }
+        }
+    }
+    return result;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask mapping componentContributions()
+{
+    mapping totals = (["structure": 0, "protection": 0, "speed": 0,
+        "capacity": 0, "henchman": 0, "weapon slots": 0, "defense slots": 0]);
+
+    mapping components = query("components") || ([]);
+    if (!mappingp(components))
+    {
+        return totals;
+    }
+
+    string *slots = m_indices(components);
+    foreach (string slot in slots)
+    {
+        string compId = components[slot];
+        string tmp = "";
+        if (!stringp(compId) || (sscanf(compId, "unbuilt %s", tmp) == 1))
+        {
+            continue;
+        }
+
+        mapping details = getComponent(slot);
+        if (!mappingp(details))
+        {
+            continue;
+        }
+
+        if (member(details, "structure"))
+        {
+            totals["structure"] += details["structure"];
+        }
+        if (member(details, "protection"))
+        {
+            totals["protection"] += details["protection"];
+        }
+        if (member(details, "capacity bonus"))
+        {
+            totals["capacity"] += details["capacity bonus"];
+        }
+        if (member(details, "speed bonus"))
+        {
+            totals["speed"] += details["speed bonus"];
+        }
+        if (member(details, "henchman bonus"))
+        {
+            totals["henchman"] += details["henchman bonus"];
+        }
+        if (member(details, "weapon slots"))
+        {
+            totals["weapon slots"] += details["weapon slots"];
+        }
+        if (member(details, "defense slots"))
+        {
+            totals["defense slots"] += details["defense slots"];
+        }
+    }
+    return totals;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private nomask mapping materialBonuses()
+{
+    mapping totals = (["structure": 0, "protection": 0, "speed": 0, "capacity": 0]);
+    object materialsService = getService("materials");
+    if (!objectp(materialsService))
+    {
+        return totals;
+    }
+
+    mapping components = query("components") || ([]);
+    if (!mappingp(components))
+    {
+        return totals;
+    }
+
+    foreach (string slot in m_indices(components))
+    {
+        mapping slotMaterials = getComponentMaterials(slot);
+        if (!mappingp(slotMaterials))
+        {
+            continue;
+        }
+        foreach (string matKey in m_indices(slotMaterials))
+        {
+            string matName = slotMaterials[matKey];
+            if (!stringp(matName))
+            {
+                continue;
+            }
+            mapping bonus = materialsService->getMaterialVehicleBonus(matName);
+            if (!mappingp(bonus))
+            {
+                continue;
+            }
+            if (member(bonus, "structure"))
+            {
+                totals["structure"] += bonus["structure"];
+            }
+            if (member(bonus, "protection"))
+            {
+                totals["protection"] += bonus["protection"];
+            }
+            if (member(bonus, "speed"))
+            {
+                totals["speed"] += bonus["speed"];
+            }
+            if (member(bonus, "capacity"))
+            {
+                totals["capacity"] += bonus["capacity"];
+            }
+        }
+    }
+    return totals;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getVehicleBonuses()
+{
+    // Delegate to smaller helpers to respect the long method rule.
+    mapping totals = blueprintBaseStats();
+    mapping componentTotals = componentContributions();
+    mapping materialTotals = materialBonuses();
+
+    foreach (string key in m_indices(componentTotals))
+    {
+        if (!member(totals, key))
+        {
+            totals[key] = 0;
+        }
+        totals[key] += componentTotals[key];
+    }
+
+    foreach (string key in m_indices(materialTotals))
+    {
+        if (!member(totals, key))
+        {
+            totals[key] = 0;
+        }
+        totals[key] += materialTotals[key];
+    }
+
+    return totals;
 }
 
 /////////////////////////////////////////////////////////////////////////////

@@ -257,60 +257,58 @@ void InstalledComponentUpdatesSlotDisplay()
 void RiverCatamaranDisplaysCorrectly()
 {
     object cat = Player->addVehicle("river catamaran", "eledhel");
-    if (objectp(cat))
+
+    object vehicleService = getService("vehicle");
+    mapping blueprint = vehicleService->queryVehicleBlueprint("river catamaran");
+    cat->initializeVehicle(blueprint);
+
+    object sel = clone_object(
+        "/lib/modules/domains/trading/selectors/vehicleEnhanceSelector.c");
+    sel->setLocation("eledhel");
+    sel->setVehicle(cat);
+    move_object(sel, Player);
+    sel->registerEvent(this_object());
+
+    resetPlayerMessages();
+    sel->initiateSelector(Player);
+
+    string message = stripColors(Player->caughtMessage());
+
+    ExpectEq("Vehicle Enhancement - "
+        "River Catamaran Enhancement:\n"
+        "From this menu, you can upgrade and configure "
+        "components for your River\nCatamaran.\n\n"
+        "Stats:                          /------\\     /------\\\n"
+        "    Capacity: 4                | ...... |   |        |\n"
+        "    Speed: 8                   |........|===|........|\n"
+        "    Structure: 12              |........|===|........|\n"
+        "    Protection: 1               \\------/     \\------/\n"
+        "    Weapon slots: 1              ~~~~~~       ~~~~~~\n"
+        "    Defense slots: 1         \n"
+        "                             \n"
+        "Crew:                        \n"
+        "    Henchman          -  0/2 \n"
+        "                             \n"
+        "[1] - Upgrade Cargo1         Unbuilt\n"
+        "[2] - Upgrade Cargo2         Unbuilt\n"
+        "[3] - Upgrade Defense        Unbuilt\n"
+        "[4] - Upgrade Hull1          Unbuilt\n"
+        "[5] - Upgrade Hull2          Unbuilt\n"
+        "[6] - Upgrade Mast           Unbuilt\n"
+        "[7] - Upgrade Weapon         Unbuilt\n"
+        "[8] - Manage Crew            \n"
+        "[9] - Return to Vehicle Menu \n"
+        "You must select a number from 1 to 9.\n"
+        "Type 'exit' if you do not wish to make a selection "
+        "at this time.\n"
+        "For details on a given choice, type 'describe X' "
+        "(or '? X') where\nX is the option about which you "
+        "would like further details.\n",
+        message);
+
+    if (objectp(sel))
     {
-        object vehicleService = getService("vehicle");
-        mapping blueprint = vehicleService->queryVehicleBlueprint("river catamaran");
-        cat->initializeVehicle(blueprint);
-
-        object sel = clone_object(
-            "/lib/modules/domains/trading/selectors/vehicleEnhanceSelector.c");
-        sel->setLocation("eledhel");
-        sel->setVehicle(cat);
-        move_object(sel, Player);
-        sel->registerEvent(this_object());
-
-        resetPlayerMessages();
-        sel->initiateSelector(Player);
-
-        string message = stripColors(Player->caughtMessage());
-
-        ExpectEq("Vehicle Enhancement - "
-            "River Catamaran Enhancement:\n"
-            "From this menu, you can upgrade and configure "
-            "components for your River\nCatamaran.\n\n"
-            "Stats:                          /------\\     /------\\\n"
-            "    Capacity: 4                | ...... |   |        |\n"
-            "    Speed: 8                   |........|===|........|\n"
-            "    Structure: 12              |........|===|........|\n"
-            "    Protection: 1               \\------/     \\------/\n"
-            "    Weapon slots: 1              ~~~~~~       ~~~~~~\n"
-            "    Defense slots: 1         \n"
-            "                             \n"
-            "Crew:                        \n"
-            "    Henchman          -  0/2 \n"
-            "                             \n"
-            "[1] - Upgrade Cargo1         Unbuilt\n"
-            "[2] - Upgrade Cargo2         Unbuilt\n"
-            "[3] - Upgrade Defense        Unbuilt\n"
-            "[4] - Upgrade Hull1          Unbuilt\n"
-            "[5] - Upgrade Hull2          Unbuilt\n"
-            "[6] - Upgrade Mast           Unbuilt\n"
-            "[7] - Upgrade Weapon         Unbuilt\n"
-            "[8] - Manage Crew            \n"
-            "[9] - Return to Vehicle Menu \n"
-            "You must select a number from 1 to 9.\n"
-            "Type 'exit' if you do not wish to make a selection "
-            "at this time.\n"
-            "For details on a given choice, type 'describe X' "
-            "(or '? X') where\nX is the option about which you "
-            "would like further details.\n",
-            message);
-
-        if (objectp(sel))
-        {
-            destruct(sel);
-        }
+        destruct(sel);
     }
 }
 
@@ -318,58 +316,56 @@ void RiverCatamaranDisplaysCorrectly()
 void BalingerDisplaysCorrectly()
 {
     object bal = Player->addVehicle("balinger", "eledhel");
-    if (objectp(bal))
+
+    object vehicleService = getService("vehicle");
+    mapping blueprint = vehicleService->queryVehicleBlueprint("balinger");
+    bal->initializeVehicle(blueprint);
+
+    object sel = clone_object(
+        "/lib/modules/domains/trading/selectors/vehicleEnhanceSelector.c");
+    sel->setLocation("eledhel");
+    sel->setVehicle(bal);
+    move_object(sel, Player);
+    sel->registerEvent(this_object());
+
+    resetPlayerMessages();
+    sel->initiateSelector(Player);
+
+    string message = stripColors(Player->caughtMessage());
+
+    ExpectEq("Vehicle Enhancement - "
+        "Balinger Enhancement:\n"
+        "From this menu, you can upgrade and configure "
+        "components for your Balinger.\n\n"
+        "Stats:                             /----------------\\\n"
+        "    Capacity: 20                  |   ............   |\n"
+        "    Speed: 7                      |   ............   |\n"
+        "    Structure: 60                 |   ............   |\n"
+        "    Protection: 2                 |..................|\n"
+        "    Weapon slots: 1               |                  |\n"
+        "    Defense slots: 1              |                  |\n"
+        "                                   \\----------------/\n"
+        "Crew:                                ~~~~~~~~~~~~~~\n"
+        "    Henchman          -  0/4 \n"
+        "                             \n"
+        "[1] - Upgrade Cargo1         Unbuilt\n"
+        "[2] - Upgrade Cargo2         Unbuilt\n"
+        "[3] - Upgrade Defense        Unbuilt\n"
+        "[4] - Upgrade Hull           Unbuilt\n"
+        "[5] - Upgrade Mast1          Unbuilt\n"
+        "[6] - Upgrade Weapon         Unbuilt\n"
+        "[7] - Manage Crew            \n"
+        "[8] - Return to Vehicle Menu \n"
+        "You must select a number from 1 to 8.\n"
+        "Type 'exit' if you do not wish to make a selection "
+        "at this time.\n"
+        "For details on a given choice, type 'describe X' "
+        "(or '? X') where\nX is the option about which you "
+        "would like further details.\n",
+        message);
+
+    if (objectp(sel))
     {
-        object vehicleService = getService("vehicle");
-        mapping blueprint = vehicleService->queryVehicleBlueprint("balinger");
-        bal->initializeVehicle(blueprint);
-
-        object sel = clone_object(
-            "/lib/modules/domains/trading/selectors/vehicleEnhanceSelector.c");
-        sel->setLocation("eledhel");
-        sel->setVehicle(bal);
-        move_object(sel, Player);
-        sel->registerEvent(this_object());
-
-        resetPlayerMessages();
-        sel->initiateSelector(Player);
-
-        string message = stripColors(Player->caughtMessage());
-
-        ExpectEq("Vehicle Enhancement - "
-            "Balinger Enhancement:\n"
-            "From this menu, you can upgrade and configure "
-            "components for your Balinger.\n\n"
-            "Stats:                             /----------------\\\n"
-            "    Capacity: 20                  |   ............   |\n"
-            "    Speed: 7                      |   ............   |\n"
-            "    Structure: 60                 |   ............   |\n"
-            "    Protection: 2                 |..................|\n"
-            "    Weapon slots: 1               |                  |\n"
-            "    Defense slots: 1              |                  |\n"
-            "                                   \\----------------/\n"
-            "Crew:                                ~~~~~~~~~~~~~~\n"
-            "    Henchman          -  0/4 \n"
-            "                             \n"
-            "[1] - Upgrade Cargo1         Unbuilt\n"
-            "[2] - Upgrade Cargo2         Unbuilt\n"
-            "[3] - Upgrade Defense        Unbuilt\n"
-            "[4] - Upgrade Hull           Unbuilt\n"
-            "[5] - Upgrade Mast1          Unbuilt\n"
-            "[6] - Upgrade Weapon         Unbuilt\n"
-            "[7] - Manage Crew            \n"
-            "[8] - Return to Vehicle Menu \n"
-            "You must select a number from 1 to 8.\n"
-            "Type 'exit' if you do not wish to make a selection "
-            "at this time.\n"
-            "For details on a given choice, type 'describe X' "
-            "(or '? X') where\nX is the option about which you "
-            "would like further details.\n",
-            message);
-
-        if (objectp(sel))
-        {
-            destruct(sel);
-        }
+        destruct(sel);
     }
 }

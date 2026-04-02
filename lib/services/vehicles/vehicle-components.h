@@ -807,7 +807,7 @@ private mapping VehicleComponents =
     // SAILS & RIGGING
     //=========================================================================
     "simple sail": ([
-        "class": "sail",
+        "class": "propulsion",
         "description": "A basic square sail made from textile.",
         "speed bonus": 1,
         "weight": 1,
@@ -818,7 +818,7 @@ private mapping VehicleComponents =
         ]),
     ]),
     "lateen sail": ([
-        "class": "sail",
+        "class": "propulsion",
         "description": "A triangular sail for improved maneuverability.",
         "speed bonus": 2,
         "weight": 2,
@@ -830,7 +830,7 @@ private mapping VehicleComponents =
         ]),
     ]),
     "square sail": ([
-        "class": "sail",
+        "class": "propulsion",
         "description": "A large, square sail for maximum speed with the wind.",
         "speed bonus": 3,
         "weight": 3,
@@ -842,7 +842,7 @@ private mapping VehicleComponents =
         ]),
     ]),
     "arcane sail": ([
-        "class": "sail",
+        "class": "propulsion",
         "description": "A sail woven with magical threads, catching even the faintest breeze.",
         "speed bonus": 4,
         "weight": 1,

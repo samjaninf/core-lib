@@ -17,6 +17,7 @@
 #include "/lib/services/materials/components/item-statistics.c"
 #include "/lib/services/materials/components/locations.c"
 #include "/lib/services/materials/components/random-material.c"
+#include "/lib/services/materials/components/vehicle-statistics.c"
 #include "/lib/services/materials/components/weapon-statistics.c"
 
 /////////////////////////////////////////////////////////////////////////////

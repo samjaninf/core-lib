@@ -5,6 +5,8 @@
 #ifndef _vehicle_statistics_c
 #define _vehicle_statistics_c
 
+#include "/lib/services/materials/materials.h"
+
 /////////////////////////////////////////////////////////////////////////////
 public nomask mapping getMaterialVehicleBonus(string material)
 {

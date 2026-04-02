@@ -466,8 +466,10 @@ public int loadFromWarehouseToVehicleForTradeRun(string tradeRunId, string item,
     {
         useLocation = currentLocation;
     }
+
     mapping warehouse = getWarehouse(useLocation);
     object vehicle = getVehicleForTradeRun(tradeRunId);
+
     if (member(warehouse["inventory"], item) &&
         warehouse["inventory"][item] >= quantity &&
         objectp(vehicle) &&

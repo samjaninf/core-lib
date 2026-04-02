@@ -20,15 +20,15 @@ private void setupPlayerWithWarehouse()
     Player->addCash(5000);
     Player->setCurrentLocation("Eledhel");
 
-    object wagon = Player->addVehicle("wagon", "Eledhel");
-    if (objectp(wagon))
+    object barge = Player->addVehicle("barge", "Eledhel");
+    if (objectp(barge))
     {
         object vehicleService = getService("vehicle");
         mapping blueprint =
-            vehicleService->queryVehicleBlueprint("wagon");
-        wagon->initializeVehicle(blueprint);
-        wagon->addCargo("grain", 5);
-        wagon->addCargo("wood", 3);
+            vehicleService->queryVehicleBlueprint("barge");
+        barge->initializeVehicle(blueprint);
+        barge->addCargo("grain", 5);
+        barge->addCargo("wood", 3);
     }
 }
 
@@ -40,8 +40,10 @@ void Setup()
     Player->addCommands();
     Player->colorConfiguration("none");
     Player->charsetConfiguration("ascii");
+
     MockPort = clone_object(
         "/lib/tests/support/environment/mockTradePort.c");
+
     MockPort->setPortName("Eledhel");
     setupPlayerWithWarehouse();
 }
@@ -83,8 +85,10 @@ void WarehouseAtDifferentLocationsAreIndependent()
 {
     Player->storeInWarehouse("grain", 5, "Eledhel");
     Player->storeInWarehouse("wood", 3, "Hillgarath");
+
     mapping eledhelWh = Player->getWarehouse("Eledhel");
     mapping hillWh = Player->getWarehouse("Hillgarath");
+
     ExpectEq(5, eledhelWh["inventory"]["grain"]);
     ExpectFalse(member(eledhelWh["inventory"], "wood"),
         "Eledhel warehouse should not have wood");
@@ -96,14 +100,21 @@ void LoadFromWarehouseToVehicleTransfersCargo()
 {
     Player->storeInWarehouse("grain", 10, "Eledhel");
     object *vehicles = Player->getVehiclesAtLocation("Eledhel");
+
     ExpectTrue(sizeof(vehicles) > 0);
     string tradeRunId = "test_run";
     Player->assignVehicleToTradeRun(tradeRunId, vehicles[0]);
+
     int initialCargo = vehicles[0]->getCargoQuantity("grain");
+
+    ExpectEq(5, initialCargo, "Vehicle should start with 5 grain cargo");
+
     ExpectTrue(Player->loadFromWarehouseToVehicleForTradeRun(
-        tradeRunId, "grain", 5, "Eledhel"));
+        tradeRunId, "grain", 5, "Eledhel"), 
+        "Failed to load cargo from warehouse to vehicle");
     ExpectEq(initialCargo + 5,
         vehicles[0]->getCargoQuantity("grain"));
+
     mapping warehouse = Player->getWarehouse("Eledhel");
     ExpectEq(5, warehouse["inventory"]["grain"]);
 }
@@ -113,8 +124,10 @@ void UnloadFromVehicleToWarehouseTransfersCargo()
 {
     object *vehicles = Player->getVehiclesAtLocation("Eledhel");
     ExpectTrue(sizeof(vehicles) > 0);
+
     string tradeRunId = "test_run";
-    Player->assignVehicleToTradeRun(tradeRunId, vehicles[0]);
+    Player->assignVehicleToTradeRun(tradeRunId, vehicles[0])
+        ;
     int initialGrain = vehicles[0]->getCargoQuantity("grain");
     ExpectTrue(initialGrain > 0);
     ExpectTrue(Player->unloadFromVehicleToWarehouseForTradeRun(
@@ -123,4 +136,68 @@ void UnloadFromVehicleToWarehouseTransfersCargo()
         vehicles[0]->getCargoQuantity("grain"));
     mapping warehouse = Player->getWarehouse("Eledhel");
     ExpectEq(2, warehouse["inventory"]["grain"]);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void AddTooMuchToVehicleFails()
+{
+    // Ensure warehouse has plenty of goods
+    ExpectTrue(Player->storeInWarehouse("grain", 100, "Eledhel"));
+
+    object *vehicles = Player->getVehiclesAtLocation("Eledhel");
+    ExpectTrue(sizeof(vehicles) > 0);
+
+    string tradeRunId = "limit_run";
+    ExpectTrue(Player->assignVehicleToTradeRun(tradeRunId, vehicles[0]));
+
+    // barge initial grain is 5; capacity for barge is 20 -> free space = 15
+    int initialCargo = vehicles[0]->getCargoQuantity("grain");
+    ExpectEq(5, initialCargo, "Vehicle should start with 5 grain cargo");
+
+    // Attempt to load more than free space (16 > 15)
+    ExpectFalse(Player->loadFromWarehouseToVehicleForTradeRun(
+        tradeRunId, "grain", 16, "Eledhel"),
+        "Should not be able to load more than vehicle free space");
+
+    // Ensure vehicle and warehouse unchanged
+    ExpectEq(initialCargo, vehicles[0]->getCargoQuantity("grain"));
+    mapping warehouse = Player->getWarehouse("Eledhel");
+    ExpectEq(100, warehouse["inventory"]["grain"]);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void LoadMoreThanWarehouseHasFails()
+{
+    // store 5 in the warehouse (reset)
+    ExpectTrue(Player->storeInWarehouse("grain", 5, "Eledhel"));
+
+    object *vehicles = Player->getVehiclesAtLocation("Eledhel");
+    ExpectTrue(sizeof(vehicles) > 0);
+
+    string tradeRunId = "limit_run2";
+    ExpectTrue(Player->assignVehicleToTradeRun(tradeRunId, vehicles[0]));
+
+    // Attempt to load more than warehouse has should fail
+    ExpectFalse(Player->loadFromWarehouseToVehicleForTradeRun(
+        tradeRunId, "grain", 10, "Eledhel"),
+        "Should not load more than warehouse inventory");
+
+    mapping warehouse = Player->getWarehouse("Eledhel");
+    ExpectEq(5, warehouse["inventory"]["grain"]);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void UnloadMoreThanVehicleHasFails()
+{
+    object *vehicles = Player->getVehiclesAtLocation("Eledhel");
+    ExpectTrue(sizeof(vehicles) > 0);
+
+    string tradeRunId = "limit_run3";
+    ExpectTrue(Player->assignVehicleToTradeRun(tradeRunId, vehicles[0]));
+
+    int vehicleGrain = vehicles[0]->getCargoQuantity("grain");
+    // Attempt to unload more than vehicle has
+    ExpectFalse(Player->unloadFromVehicleToWarehouseForTradeRun(
+        tradeRunId, "grain", vehicleGrain + 5, "Eledhel"),
+        "Should not unload more than vehicle has");
 }

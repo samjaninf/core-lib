@@ -49,7 +49,12 @@ public int executeTests()
         Setup();
         CurrentTestPassed = 1;
 
-        call_other(this_object(), test);
+        string err = catch(call_other(this_object(), test));
+        if(err)
+        {
+            CurrentTestPassed = 0;
+            debug_message(sprintf("%s %s threw an error: %s\n", Fail, test, err), 0x5);
+        }
 
         timeStruct = rusage();
         int timeOfExecution = timeStruct[0] + timeStruct[1] - timeBeforeExecution;

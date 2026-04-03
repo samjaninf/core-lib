@@ -12,6 +12,7 @@ virtual inherit "/lib/modules/skills.c";
 virtual inherit "/lib/modules/races.c";
 virtual inherit "/lib/modules/movement.c";
 virtual inherit "/lib/modules/state.c";
+virtual inherit "/lib/modules/settings.c";
 
 virtual inherit "/lib/tests/support/services/mockBackgroundModule.c";
 virtual inherit "/lib/tests/support/services/mockBiologicalModule.c";
@@ -27,6 +28,8 @@ private int UseMagicalAttackBonus;
 private int UseMagicalDefenseBonus;
 private int UseMagicalDamageBonus;
 private int Experience;
+private string lastCatch = 0;
+private string* catchList = ({ });
 
 /////////////////////////////////////////////////////////////////////////////
 public int has(string service)
@@ -138,4 +141,30 @@ public int experience()
 public nomask int isRealizationOfLiving()
 {
     return 1;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void catch_tell(string message)
+{
+    lastCatch = message;
+    catchList += ({ message });
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public string caughtMessage()
+{
+    return lastCatch;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public string* caughtMessages()
+{
+    return catchList + ({ });
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void resetCatchList()
+{
+    catchList = ({ });
+    lastCatch = 0;
 }

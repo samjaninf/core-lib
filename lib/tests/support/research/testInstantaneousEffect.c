@@ -40,7 +40,7 @@ public int applyEffect(object initiator, object target, mapping effectData)
 /////////////////////////////////////////////////////////////////////////////
 public int testApplyFormula(object initiator, string type)
 {
-    return instantaneousEffect::applyFormula(initiator, type);
+    return instantaneousEffect::applyFormula(initiator, type, specificationData);
 }
 
 /////////////////////////////////////////////////////////////////////////////

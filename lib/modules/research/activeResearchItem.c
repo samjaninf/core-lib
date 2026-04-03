@@ -275,8 +275,18 @@ public nomask void repeatEffect(int timesRemaining, string command,
     object owner, string researchName)
 {
     int ret = applyToScope(command, owner, researchName);
+
+    if(member(specificationData, "repeated ability message") &&
+        stringp(specificationData["repeated ability message"]))
+    {
+        object target = getTarget(owner, command);
+        displayMessage(specificationData["repeated ability message"],
+            owner, target ? target : owner);
+    }
+
     if (ret && (timesRemaining > 1))
     {
+
         call_out("repeatEffect", 2, timesRemaining - 1,
             command, owner, researchName);
     }

@@ -78,7 +78,6 @@ protected nomask int applyFormula(object initiator, string type,
     mapping effectData)
 {
     int ret = 0;
-    
     if(member(effectData, type) && isValidFormula(effectData[type]))
     {
         mapping formulaDictionary = ([ ]);

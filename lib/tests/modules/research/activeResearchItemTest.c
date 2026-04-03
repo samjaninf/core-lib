@@ -464,8 +464,11 @@ void RepeatEffectDisplaysRepeatedAbilityMessage()
     object Room = clone_object("/lib/environment/environment");
     move_object(User, Room);
     User.colorConfiguration("none");
+    User.resetCatchList();
 
+    ToggleCallOutBypass();
     ResearchItem.addSpecification("scope", "area");
+    ResearchItem.addSpecification("command template", "the command");
     ResearchItem.addSpecification("repeated ability message", 
         "##InitiatorName## ##Infinitive::blast## foes with lightning.");
 
@@ -475,8 +478,10 @@ void RepeatEffectDisplaysRepeatedAbilityMessage()
     ResearchItem.testRepeatEffect(1, "the command", User, 
         "/lib/tests/support/research/testActiveResearchItem.c");
 
-    ExpectSubStringMatch("Bob blasts foes with lightning", User.caughtMessage(),
+    ExpectSubStringMatch("You blast foes with lightning", User.caughtMessage(),
         "repeated ability message is displayed");
+
+    ToggleCallOutBypass();
 
     destruct(Room);
 }
@@ -487,10 +492,13 @@ void RepeatEffectDisplaysRepeatedAbilityMessageWithTargetForTargetedScope()
     object Room = clone_object("/lib/environment/environment");
     move_object(User, Room);
     User.colorConfiguration("none");
+    User.resetCatchList();
+    ToggleCallOutBypass();
 
     object Target = clone_object("/lib/realizations/monster.c");
     Target.Name("Orc");
-    Target.setUpRandomEquipment("low");
+    Target.SetUpPersonaOfLevel("swordsman", 5);
+    Target.setUpRandomEquipment(0);
     move_object(Target, Room);
 
     ResearchItem.addSpecification("scope", "targeted");
@@ -503,9 +511,10 @@ void RepeatEffectDisplaysRepeatedAbilityMessageWithTargetForTargetedScope()
     ResearchItem.testRepeatEffect(1, "zap orc", User, 
         "/lib/tests/support/research/testActiveResearchItem.c");
 
-    ExpectSubStringMatch("Bob zaps Orc again", User.caughtMessage(),
+    ExpectSubStringMatch("You zap Orc again", User.caughtMessage(),
         "repeated ability message with target is displayed");
 
+    ToggleCallOutBypass();
     destruct(Target);
     destruct(Room);
 }
@@ -516,6 +525,7 @@ void RepeatEffectDoesNotDisplayMessageWhenNotSet()
     object Room = clone_object("/lib/environment/environment");
     move_object(User, Room);
     User.colorConfiguration("none");
+    User.resetCatchList();
 
     ResearchItem.addSpecification("scope", "area");
 

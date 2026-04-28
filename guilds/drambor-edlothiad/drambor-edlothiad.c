@@ -12,17 +12,23 @@ public void SetupGuild()
     prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk", 
         "Disciple of Argloth", "Guardian of Khazurath",
         "League of Assassins", "phaedra", "ranger", "rogue", "Werric Knight",
-        "Wrathguard", "necromancer", "Aegis Guard" }));
+        "Wrathguard", "necromancer", "Aegis Guard", "Hand of Bilanx" }));
 
     addCriteria("hit points", ([
         "type": "modifier",
-        "apply" : "5 every level",
+        "apply" : "4 every level",
+        "begin at level" : 1
+    ]));
+
+    addCriteria("spell points", ([
+        "type": "modifier",
+        "apply" : "4 every level",
         "begin at level" : 1
     ]));
 
     addCriteria("stamina points", ([
         "type": "modifier",
-        "apply" : "2 every level",
+        "apply" : "3 every level",
         "begin at level" : 1
     ]));
 
@@ -40,4 +46,41 @@ public void SetupGuild()
         "type":"skill points",
         "apply" : "5 every level"
     ]));
+
+    addCriteria("initial research points", ([
+        "type":"research points",
+        "apply": "at level 1"
+    ]));
+
+    addCriteria("research points", ([
+        "type":"research points",
+        "apply" : "1 every level"
+    ]));
+
+    addCriteria("research points", ([
+        "type":"research points",
+        "apply" : "1 every 5 levels"
+    ]));
+
+    addCriteria("bonus hit points", ([
+        "type": "bonus modifier",
+        "apply" : "10 at level 10",
+        "types" : ({ "hit points" }),
+        "begin at level" : 10
+    ]));
+
+    addCriteria("bonus spell points", ([
+        "type": "bonus modifier",
+        "apply" : "10 at level 10",
+        "types" : ({ "spell points" }),
+        "begin at level" : 10
+    ]));
+
+    addResearchTree("/guilds/drambor-edlothiad/blade-and-magic.c");
+    addResearchTree("/guilds/drambor-edlothiad/elven-sorcery.c");
+    addResearchTree("/guilds/drambor-edlothiad/battle-magic.c");
+    addResearchTree("/guilds/drambor-edlothiad/arcane-warrior.c");
+    addResearchTree("/guilds/drambor-edlothiad/elemental-blade.c");
+    addResearchTree("/guilds/drambor-edlothiad/mystical-defense.c");
+    addResearchTree("/guilds/drambor-edlothiad/elven-heritage.c");
 }

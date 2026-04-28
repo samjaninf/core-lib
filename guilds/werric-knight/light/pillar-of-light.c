@@ -1,0 +1,71 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/modules/research/instantaneousActiveResearchItem.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    addSpecification("name", "Pillar of Light");
+    addSpecification("source", "Werric Knight");
+    addSpecification("description", "You summon a pillar of pure holy light that "
+        "descends from the heavens, obliterating evil in its path.");
+
+    addPrerequisite("guilds/werric-knight/light/divine-mastery.c",
+        (["type":"research"]));
+    addPrerequisite("/guilds/werric-knight/werric-knight.c",
+        (["type":"guild", "level":45]));
+
+    addSpecification("scope", "targeted");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("cooldown", 180);
+    addSpecification("spell point cost", 150);
+    addSpecification("command template", "pillar of light on ##Target##");
+    addSpecification("use ability message", "##InitiatorName## ##Infinitive::summon:: "
+        "a pillar of holy light upon ##TargetName##!");
+
+    addSpecification("damage hit points", ({ ([
+        "probability":65,
+        "base damage":150,
+        "range":120
+    ]),
+    ([
+        "probability":35,
+        "base damage":220,
+        "range":150
+    ]) }));
+    addSpecification("damage type", "holy");
+    
+    addSpecification("modifiers", ({
+        ([
+            "type":"research",
+            "research item":"/guilds/werric-knight/light/radiant-power.c",
+            "name":"Radiant Power",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
+        ([
+            "type":"research",
+            "research item":"/guilds/werric-knight/light/divine-mastery.c",
+            "name":"Divine Mastery",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
+        ([
+            "type":"attribute",
+            "name":"wisdom",
+            "formula":"additive",
+            "rate":0.25
+        ]),
+        ([
+            "type":"attribute",
+            "name":"charisma",
+            "formula":"additive",
+            "rate":0.15
+        ])
+    }));
+}

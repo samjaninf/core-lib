@@ -36,30 +36,37 @@ protected void Setup()
         "probability":20,
         "base damage":70,
         "range":50
-    ]) }));
+    ]),
+        ([
+            "type":"skill",
+            "name":"etiquette",
+            "formula":"additive",
+            "rate":0.05
+        ])
+    }));
     addSpecification("damage type", "physical");
 
     addSpecification("modifiers", ({
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/virtues/righteous-focus.c",
-            "name":"Righteous Focus",
+            "research item":"/guilds/werric-knight/virtues/virtuous-strike.c",
+            "name":"Virtuous Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/virtues/justice-magnified.c",
-            "name":"Justice Magnified",
+            "research item":"/guilds/werric-knight/virtues/virtuous-strike.c",
+            "name":"Virtuous Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/virtues/virtuous-power.c",
-            "name":"Virtuous Power",
+            "research item":"/guilds/werric-knight/virtues/virtuous-strike.c",
+            "name":"Virtuous Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
@@ -69,26 +76,28 @@ protected void Setup()
             "name":"long sword",
             "types":({"long sword"}),
             "formula":"additive",
-            "rate":1.0
+            "rate": 0.75
         ]),
         ([
             "type":"weapon damage",
             "name":"hand and a half sword",
             "types":({"hand and a half sword"}),
             "formula":"additive",
-            "rate":1.0
+            "rate": 0.75
         ]),
         ([
             "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
-            "rate":0.25
+            "name":"strength", "formula":"additive", "rate": 0.25
         ]),
         ([
             "type":"attribute",
-            "name":"charisma",
+            "name":"charisma", "formula":"additive", "rate": 0.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"etiquette",
             "formula":"additive",
-            "rate":0.10
+            "rate":0.05
         ])
     }));
 }

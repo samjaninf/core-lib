@@ -32,7 +32,7 @@ protected void Setup()
     addSpecification("use ability deactivate message", "The aura of manifest will "
         "around ##InitiatorName## fades.");
 
-    addSpecification("bonus willpower", 6);
+    addSpecification("bonus wisdom", 6);
     addSpecification("bonus constitution", 5);
     addSpecification("bonus strength", 4);
     addSpecification("bonus attack", 4);

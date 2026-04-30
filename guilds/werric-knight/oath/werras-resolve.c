@@ -34,11 +34,11 @@ protected void Setup()
     addSpecification("use ability deactivate message", "##InitiatorName##'s "
         "connection to Werra's legendary resolve fades.");
 
-    addSpecification("bonus willpower", 10);
+    addSpecification("bonus wisdom", 10);
     addSpecification("bonus wisdom", 8);
     addSpecification("bonus defense", 5);
-    addSpecification("bonus resist mental", 50);
-    addSpecification("bonus resist charm", 50);
-    addSpecification("bonus resist fear", 50);
-    addSpecification("bonus resist illusion", 40);
+    addSpecification("bonus resist psionic", 50);
+    addSpecification("bonus resist psionic", 50);
+    addSpecification("bonus resist psionic", 50);
+    addSpecification("bonus resist magical", 40);
 }

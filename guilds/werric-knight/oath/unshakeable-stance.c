@@ -32,7 +32,7 @@ protected void Setup()
     addSpecification("use ability deactivate message", "##InitiatorName## "
         "##Infinitive::release## the Unshakeable Stance.");
 
-    addSpecification("bonus willpower", 5);
+    addSpecification("bonus wisdom", 5);
     addSpecification("bonus defense", 4);
-    addSpecification("bonus resist mental", 15);
+    addSpecification("bonus resist psionic", 15);
 }

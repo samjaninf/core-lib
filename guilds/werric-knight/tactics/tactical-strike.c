@@ -33,27 +33,74 @@ protected void Setup()
     addSpecification("damage type", "physical");
     addSpecification("damage hit points", ({ ([
         "probability":70,
-        "base damage":95,
-        "range":80
+        "base damage":40,
+        "range":70
     ]),
     ([
         "probability":30,
-        "base damage":145,
-        "range":100
-    ]) }));
-    
+        "base damage":80,
+        "range":140
+    ]),
+        ([
+            "type":"skill",
+            "name":"logistics",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
+
     addSpecification("modifiers", ({
+        ([
+            "type":"research",
+            "research item":"/guilds/werric-knight/tactics/tactical-precision.c",
+            "name":"Tactical Precision",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
+        ([
+            "type":"weapon damage",
+            "name":"weapon",
+            "types":({"long sword", "hand and a half sword", "two-handed sword", "pole arm"}),
+            "formula":"additive",
+            "rate":0.75
+        ]),
+        ([
+            "type":"highest skill",
+            "name":"weapon skills",
+            "skills":({"long sword", "hand and a half sword", "two-handed sword", "pole arm"}),
+            "formula":"additive",
+            "rate":0.5
+        ]),
+        ([
+            "type":"skill",
+            "name":"tactics",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"strategy",
+            "formula":"additive",
+            "rate":0.10
+        ]),
         ([
             "type":"attribute",
             "name":"intelligence",
             "formula":"additive",
-            "rate":0.25
+            "rate":0.15
         ]),
         ([
             "type":"attribute",
-            "name":"charisma",
+            "name":"strength",
             "formula":"additive",
-            "rate":0.15
+            "rate":0.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"logistics",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

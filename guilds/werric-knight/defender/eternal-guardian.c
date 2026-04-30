@@ -28,7 +28,7 @@ protected void Setup()
     addSpecification("bonus defense", 10);
     addSpecification("bonus parry", 8);
     addSpecification("bonus constitution", 8);
-    addSpecification("bonus willpower", 7);
+    addSpecification("bonus wisdom", 7);
     addSpecification("bonus wisdom", 6);
     addSpecification("bonus hit points", 250);
     addSpecification("bonus stamina points", 150);

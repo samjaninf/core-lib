@@ -34,7 +34,7 @@ protected void Setup()
     addSpecification("use ability deactivate message", "##InitiatorName## "
         "##Infinitive::return:: from being the Avatar of Determination.");
 
-    addSpecification("bonus willpower", 10);
+    addSpecification("bonus wisdom", 10);
     addSpecification("bonus constitution", 8);
     addSpecification("bonus wisdom", 6);
     addSpecification("bonus strength", 6);

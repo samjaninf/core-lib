@@ -37,6 +37,12 @@ protected void Setup()
             "name":"willpower",
             "formula":"additive",
             "rate":0.35
+        ]),
+        ([
+            "type":"skill",
+            "name":"philosophy",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

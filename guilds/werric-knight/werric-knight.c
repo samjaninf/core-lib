@@ -76,13 +76,18 @@ public void SetupGuild()
     ]));
 
     addResearchTree("/guilds/werric-knight/sword-mastery.c");
-    addResearchTree("/guilds/werric-knight/shield-defense.c");
+    addResearchTree("/guilds/werric-knight/shield-mastery.c");
     addResearchTree("/guilds/werric-knight/oath-bound.c");
     addResearchTree("/guilds/werric-knight/light-magic.c");
     addResearchTree("/guilds/werric-knight/defensive-tactics.c");
     addResearchTree("/guilds/werric-knight/mounted-combat.c");
     addResearchTree("/guilds/werric-knight/discipline.c");
     addResearchTree("/guilds/werric-knight/knightly-virtues.c");
+    addResearchTree("/guilds/werric-knight/elven-martial-arts.c");
+    addResearchTree("/guilds/werric-knight/tactical-warfare.c");
+    addResearchTree("/guilds/werric-knight/unbroken-will.c");
+    addResearchTree("/guilds/werric-knight/defender-of-crown.c");
+    addResearchTree("/guilds/werric-knight/lord-marshal.c");
 
     addRank("initiate", ([
         "title" : "Initiate",

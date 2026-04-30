@@ -23,7 +23,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("bonus willpower", 6);
+    addSpecification("bonus wisdom", 6);
     addSpecification("bonus wisdom", 5);
     addSpecification("bonus intelligence", 4);
     addSpecification("bonus constitution", 5);

@@ -25,17 +25,17 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("bonus willpower", 8);
+    addSpecification("bonus wisdom", 8);
     addSpecification("bonus constitution", 7);
     addSpecification("bonus wisdom", 6);
     addSpecification("bonus intelligence", 5);
     addSpecification("bonus hit points", 200);
     addSpecification("bonus stamina points", 150);
     addSpecification("bonus spell points", 100);
-    addSpecification("bonus resist mental", 50);
-    addSpecification("bonus resist charm", 50);
-    addSpecification("bonus resist fear", 50);
-    addSpecification("bonus resist illusion", 40);
+    addSpecification("bonus resist psionic", 50);
+    addSpecification("bonus resist psionic", 50);
+    addSpecification("bonus resist psionic", 50);
+    addSpecification("bonus resist magical", 40);
 
     addSpecification("affected research", ([
         "Iron Discipline": 40,

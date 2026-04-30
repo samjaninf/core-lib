@@ -23,12 +23,12 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("bonus willpower", 5);
+    addSpecification("bonus wisdom", 5);
     addSpecification("bonus wisdom", 4);
     addSpecification("bonus constitution", 4);
-    addSpecification("bonus resist mental", 30);
-    addSpecification("bonus resist charm", 30);
-    addSpecification("bonus resist fear", 30);
+    addSpecification("bonus resist psionic", 30);
+    addSpecification("bonus resist psionic", 30);
+    addSpecification("bonus resist psionic", 30);
 
     addSpecification("affected research", ([
         "Mind Fortress": 35,

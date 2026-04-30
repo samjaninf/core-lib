@@ -28,44 +28,67 @@ protected void Setup()
 
     addSpecification("damage hit points", ({ ([
         "probability":65,
-        "base damage":150,
-        "range":120
+        "base damage":45,
+        "range":75
     ]),
     ([
         "probability":35,
-        "base damage":220,
+        "base damage":90,
         "range":150
-    ]) }));
-    addSpecification("damage type", "holy");
-    
+    ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
+    addSpecification("damage type", "good");
+
     addSpecification("modifiers", ({
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/light/radiant-power.c",
-            "name":"Radiant Power",
+            "research item":"/guilds/werric-knight/light/ultimate-judgment.c",
+            "name":"Ultimate Judgment",
             "formula":"multiplicative",
             "base value":1,
-            "rate":1.25
+            "rate":1.5
         ]),
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/light/divine-mastery.c",
-            "name":"Divine Mastery",
-            "formula":"multiplicative",
-            "base value":1,
-            "rate":1.25
+            "type":"skill",
+            "name":"magical essence",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"spellcraft",
+            "formula":"additive",
+            "rate":0.10
         ]),
         ([
             "type":"attribute",
             "name":"wisdom",
             "formula":"additive",
-            "rate":0.25
+            "rate":0.15
         ]),
         ([
             "type":"attribute",
             "name":"charisma",
             "formula":"additive",
+            "rate":0.25
+        ]),
+        ([
+            "type":"attribute",
+            "name":"intelligence",
+            "formula":"additive",
             "rate":0.15
+        ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

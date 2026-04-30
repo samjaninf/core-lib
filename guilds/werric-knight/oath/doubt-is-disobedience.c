@@ -24,9 +24,9 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("bonus willpower", 6);
+    addSpecification("bonus wisdom", 6);
     addSpecification("bonus wisdom", 4);
-    addSpecification("bonus resist confusion", 30);
+    addSpecification("bonus resist psionic", 30);
 
     addSpecification("affected research", ([
         "I Am Not My Doubt": 40,

@@ -10,6 +10,10 @@ private void FirstLevel()
     addResearchElement("/guilds/werric-knight/virtues/code-of-honor.c");
     addChild("/guilds/werric-knight/virtues/code-of-honor.c",
         "/guilds/werric-knight/virtues/root.c");
+
+    addResearchElement("/guilds/werric-knight/virtues/courage.c");
+    addChild("/guilds/werric-knight/virtues/courage.c",
+        "/guilds/werric-knight/virtues/root.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -26,6 +30,10 @@ private void FifthLevel()
     addResearchElement("/guilds/werric-knight/virtues/righteous-focus.c");
     addChild("/guilds/werric-knight/virtues/righteous-focus.c",
         "/guilds/werric-knight/virtues/strike-of-justice.c");
+
+    addResearchElement("/guilds/werric-knight/virtues/virtuous-strike.c");
+    addChild("/guilds/werric-knight/virtues/virtuous-strike.c",
+        "/guilds/werric-knight/virtues/strike-of-justice.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -34,6 +42,10 @@ private void SeventhLevel()
     addResearchElement("/guilds/werric-knight/virtues/courage-unwavering.c");
     addChild("/guilds/werric-knight/virtues/courage-unwavering.c",
         "/guilds/werric-knight/virtues/righteous-focus.c");
+
+    addResearchElement("/guilds/werric-knight/virtues/aura-of-protection.c");
+    addChild("/guilds/werric-knight/virtues/aura-of-protection.c",
+        "/guilds/werric-knight/virtues/courage.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -50,6 +62,10 @@ private void EleventhLevel()
     addResearchElement("/guilds/werric-knight/virtues/noble-bearing.c");
     addChild("/guilds/werric-knight/virtues/noble-bearing.c",
         "/guilds/werric-knight/virtues/merciful-protection.c");
+
+    addResearchElement("/guilds/werric-knight/virtues/inspiring-presence.c");
+    addChild("/guilds/werric-knight/virtues/inspiring-presence.c",
+        "/guilds/werric-knight/virtues/noble-bearing.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -65,6 +81,14 @@ private void FifteenthLevel()
 {
     addResearchElement("/guilds/werric-knight/virtues/justice-magnified.c");
     addChild("/guilds/werric-knight/virtues/justice-magnified.c",
+        "/guilds/werric-knight/virtues/champions-challenge.c");
+
+    addResearchElement("/guilds/werric-knight/virtues/paragon-of-virtue.c");
+    addChild("/guilds/werric-knight/virtues/paragon-of-virtue.c",
+        "/guilds/werric-knight/virtues/inspiring-presence.c");
+
+    addResearchElement("/guilds/werric-knight/virtues/righteous-power.c");
+    addChild("/guilds/werric-knight/virtues/righteous-power.c",
         "/guilds/werric-knight/virtues/champions-challenge.c");
 }
 

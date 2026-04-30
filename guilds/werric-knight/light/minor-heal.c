@@ -35,21 +35,28 @@ protected void Setup()
         "probability":15,
         "base damage":35,
         "range":25
-    ]) }));
+    ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
     
     addSpecification("modifiers", ({
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/light/radiant-power.c",
-            "name":"Radiant Power",
+            "research item":"/guilds/werric-knight/light/smiting-technique.c",
+            "name":"Smiting Technique",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/light/divine-mastery.c",
-            "name":"Divine Mastery",
+            "research item":"/guilds/werric-knight/light/righteous-strike.c",
+            "name":"Righteous Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
@@ -65,6 +72,12 @@ protected void Setup()
             "name":"charisma",
             "formula":"additive",
             "rate":0.15
+        ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

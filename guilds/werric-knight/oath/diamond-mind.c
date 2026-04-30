@@ -24,11 +24,11 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("bonus willpower", 7);
+    addSpecification("bonus wisdom", 7);
     addSpecification("bonus intelligence", 4);
     addSpecification("bonus wisdom", 4);
-    addSpecification("bonus resist mental", 40);
-    addSpecification("bonus resist illusion", 35);
+    addSpecification("bonus resist psionic", 40);
+    addSpecification("bonus resist magical", 35);
 
     addSpecification("affected research", ([
         "Unshakeable Resolve": 40,

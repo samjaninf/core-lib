@@ -23,6 +23,6 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("bonus willpower", 3);
-    addSpecification("bonus resist confusion", 15);
+    addSpecification("bonus wisdom", 3);
+    addSpecification("bonus resist psionic", 15);
 }

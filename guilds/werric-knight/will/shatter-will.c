@@ -30,24 +30,50 @@ protected void Setup()
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::project:: "
         "overwhelming will at ##TargetName##, shattering ##TargetPossessive## resolve!");
 
-    addSpecification("damage type", "mental");
+    addSpecification("damage type", "psionic");
     addSpecification("damage hit points", ({ ([
         "probability":70,
-        "base damage":130,
-        "range":100
+        "base damage":50,
+        "range":85
     ]),
     ([
         "probability":30,
-        "base damage":200,
-        "range":130
+        "base damage":100,
+        "range":170
     ]) }));
-    
+
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"willpower",
+            "type":"research",
+            "research item":"/guilds/werric-knight/will/willpower-manifestation.c",
+            "name":"Willpower Manifestation",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"intimidation",
             "formula":"additive",
-            "rate":0.35
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"philosophy",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"attribute",
+            "name":"wisdom",
+            "formula":"additive",
+            "rate":0.15
+        ]),
+        ([
+            "type":"attribute",
+            "name":"charisma",
+            "formula":"additive",
+            "rate":0.25
         ])
     }));
 }

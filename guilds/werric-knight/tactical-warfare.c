@@ -50,6 +50,14 @@ private void NinthLevel()
     addResearchElement("/guilds/werric-knight/tactics/exploit-weakness.c");
     addChild("/guilds/werric-knight/tactics/exploit-weakness.c",
         "/guilds/werric-knight/tactics/strategic-positioning.c");
+
+    addResearchElement("/guilds/werric-knight/tactics/tactical-precision.c");
+    addChild("/guilds/werric-knight/tactics/tactical-precision.c",
+        "/guilds/werric-knight/tactics/coordinated-strike.c");
+
+    addResearchElement("/guilds/werric-knight/tactics/art-of-war.c");
+    addChild("/guilds/werric-knight/tactics/art-of-war.c",
+        "/guilds/werric-knight/tactics/exploit-weakness.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -86,6 +94,14 @@ private void SeventeenthLevel()
     addResearchElement("/guilds/werric-knight/tactics/tactical-strike.c");
     addChild("/guilds/werric-knight/tactics/tactical-strike.c",
         "/guilds/werric-knight/tactics/offensive-formation.c");
+
+    addResearchElement("/guilds/werric-knight/tactics/exploitation-technique.c");
+    addChild("/guilds/werric-knight/tactics/exploitation-technique.c",
+        "/guilds/werric-knight/tactics/exploit-weakness.c");
+
+    addResearchElement("/guilds/werric-knight/tactics/supreme-tactics.c");
+    addChild("/guilds/werric-knight/tactics/supreme-tactics.c",
+        "/guilds/werric-knight/tactics/tactical-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

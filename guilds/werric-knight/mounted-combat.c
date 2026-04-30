@@ -26,6 +26,10 @@ private void FifthLevel()
     addResearchElement("/guilds/werric-knight/mounted/charge-attack.c");
     addChild("/guilds/werric-knight/mounted/charge-attack.c",
         "/guilds/werric-knight/mounted/mounted-defense.c");
+
+    addResearchElement("/guilds/werric-knight/mounted/charge-technique.c");
+    addChild("/guilds/werric-knight/mounted/charge-technique.c",
+        "/guilds/werric-knight/mounted/charge-attack.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -66,6 +70,10 @@ private void FifteenthLevel()
     addResearchElement("/guilds/werric-knight/mounted/trampling-charge.c");
     addChild("/guilds/werric-knight/mounted/trampling-charge.c",
         "/guilds/werric-knight/mounted/mounted-agility.c");
+
+    addResearchElement("/guilds/werric-knight/mounted/momentum-strike.c");
+    addChild("/guilds/werric-knight/mounted/momentum-strike.c",
+        "/guilds/werric-knight/mounted/trampling-charge.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -98,6 +106,10 @@ private void TwentyFifthLevel()
     addResearchElement("/guilds/werric-knight/mounted/thundering-charge.c");
     addChild("/guilds/werric-knight/mounted/thundering-charge.c",
         "/guilds/werric-knight/mounted/cavalry-tactics.c");
+
+    addResearchElement("/guilds/werric-knight/mounted/thundering-impact.c");
+    addChild("/guilds/werric-knight/mounted/thundering-impact.c",
+        "/guilds/werric-knight/mounted/thundering-charge.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -146,6 +158,10 @@ private void FortyFifthLevel()
     addResearchElement("/guilds/werric-knight/mounted/legendary-rider.c");
     addChild("/guilds/werric-knight/mounted/legendary-rider.c",
         "/guilds/werric-knight/mounted/devastating-charge.c");
+
+    addResearchElement("/guilds/werric-knight/mounted/ultimate-cavalry.c");
+    addChild("/guilds/werric-knight/mounted/ultimate-cavalry.c",
+        "/guilds/werric-knight/mounted/legendary-rider.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

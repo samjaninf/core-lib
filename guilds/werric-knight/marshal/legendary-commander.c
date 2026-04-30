@@ -27,5 +27,5 @@ protected void Setup()
     addSpecification("bonus intelligence", 5);
     addSpecification("bonus wisdom", 5);
     addSpecification("bonus charisma", 6);
-    addSpecification("bonus leadership", 5);
+    addSpecification("bonus charisma", 5);
 }

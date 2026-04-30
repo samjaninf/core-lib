@@ -27,7 +27,7 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addSpecification("bonus dexterity", 4);
-    addSpecification("bonus agility", 3);
+    addSpecification("bonus dexterity", 3);
     addSpecification("bonus dodge", 3);
     addSpecification("bonus defense", 2);
 

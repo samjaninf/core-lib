@@ -25,5 +25,5 @@ protected void Setup()
 
     addSpecification("bonus dexterity", 2);
     addSpecification("bonus dodge", 2);
-    addSpecification("bonus agility", 1);
+    addSpecification("bonus dexterity", 1);
 }

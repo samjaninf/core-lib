@@ -23,7 +23,7 @@ protected void Setup()
 
     addSpecification("bonus strength", 3);
     addSpecification("bonus constitution", 3);
-    addSpecification("bonus willpower", 3);
+    addSpecification("bonus wisdom", 3);
 
     addSpecification("affected research", ([
         "Physical Training": 25,

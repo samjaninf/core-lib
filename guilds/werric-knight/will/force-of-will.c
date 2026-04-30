@@ -31,24 +31,50 @@ protected void Setup()
         "##InitiatorPossessive## will as tangible force, striking ##TargetName## with "
         "overwhelming determination!");
 
-    addSpecification("damage type", "mental");
+    addSpecification("damage type", "psionic");
     addSpecification("damage hit points", ({ ([
         "probability":75,
-        "base damage":100,
-        "range":80
+        "base damage":35,
+        "range":60
     ]),
     ([
         "probability":25,
-        "base damage":150,
-        "range":100
+        "base damage":70,
+        "range":120
     ]) }));
-    
+
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"willpower",
+            "type":"research",
+            "research item":"/guilds/werric-knight/will/willpower-manifestation.c",
+            "name":"Willpower Manifestation",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"intimidation",
             "formula":"additive",
-            "rate":0.35
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"philosophy",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"attribute",
+            "name":"wisdom",
+            "formula":"additive",
+            "rate":0.15
+        ]),
+        ([
+            "type":"attribute",
+            "name":"charisma",
+            "formula":"additive",
+            "rate":0.25
         ])
     }));
 }

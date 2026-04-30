@@ -1,0 +1,94 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/modules/research/instantaneousActiveResearchItem.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    addSpecification("name", "Radiant Burst");
+    addSpecification("source", "Werric Knight");
+    addSpecification("description", "You release a burst of radiant light that "
+        "damages all nearby evil creatures.");
+
+    addPrerequisite("/guilds/werric-knight/light/holy-light.c",
+        (["type":"research"]));
+    addPrerequisite("/guilds/werric-knight/werric-knight.c",
+        (["type":"guild", "level":7]));
+
+    addSpecification("scope", "area");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("cooldown", 60);
+    addSpecification("spell point cost", 60);
+
+    addSpecification("damage hit points", ({ ([
+        "probability":80,
+        "base damage":15,
+        "range":25
+    ]),
+    ([
+        "probability":20,
+        "base damage":30,
+        "range":50
+    ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
+    addSpecification("damage type", "good");
+    addSpecification("command template", "radiant burst");
+    addSpecification("use ability message", "##InitiatorName## ##Infinitive::release## "
+        "a burst of radiant light, scouring nearby foes!");
+
+    addSpecification("modifiers", ({
+        ([
+            "type":"research",
+            "research item":"/guilds/werric-knight/light/smiting-technique.c",
+            "name":"Smiting Technique",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"magical essence",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"spellcraft",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"attribute",
+            "name":"wisdom",
+            "formula":"additive",
+            "rate":0.25
+        ]),
+        ([
+            "type":"attribute",
+            "name":"charisma",
+            "formula":"additive",
+            "rate":0.25
+        ]),
+        ([
+            "type":"attribute",
+            "name":"intelligence",
+            "formula":"additive",
+            "rate":0.15
+        ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
+}

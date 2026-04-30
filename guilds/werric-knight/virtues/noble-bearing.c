@@ -22,5 +22,5 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addSpecification("bonus charisma", 3);
-    addSpecification("bonus leadership", 2);
+    addSpecification("bonus charisma", 2);
 }

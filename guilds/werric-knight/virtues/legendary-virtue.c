@@ -23,8 +23,8 @@ protected void Setup()
 
     addSpecification("bonus charisma", 5);
     addSpecification("bonus wisdom", 4);
-    addSpecification("bonus willpower", 4);
-    addSpecification("bonus leadership", 4);
+    addSpecification("bonus wisdom", 4);
+    addSpecification("bonus charisma", 4);
 
     addSpecification("affected research", ([
         "Exemplar of Virtue": 40,

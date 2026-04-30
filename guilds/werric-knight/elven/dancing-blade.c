@@ -33,34 +33,80 @@ protected void Setup()
     addSpecification("damage type", "physical");
     addSpecification("damage hit points", ({ ([
         "probability":80,
-        "base damage":60,
-        "range":55
+        "base damage":15,
+        "range":25
     ]),
     ([
         "probability":20,
-        "base damage":95,
-        "range":70
-    ]) }));
-    
+        "base damage":30,
+        "range":50
+    ]),
+        ([
+            "type":"skill",
+            "name":"perception",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
+
     addSpecification("modifiers", ({
+        ([
+            "type":"research",
+            "research item":"/guilds/werric-knight/elven/swift-blade-technique.c",
+            "name":"Swift Blade Technique",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
         ([
             "type":"weapon damage",
             "name":"sword",
             "types":({"dagger", "short sword", "long sword", "hand and a half sword"}),
             "formula":"additive",
-            "rate":1.0
+            "rate":0.75
+        ]),
+        ([
+            "type":"highest skill",
+            "name":"sword skills",
+            "skills":({"dagger", "short sword", "long sword", "hand and a half sword"}),
+            "formula":"additive",
+            "rate":0.5
+        ]),
+        ([
+            "type":"skill",
+            "name":"anatomy and physiology",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"acrobatics",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"dancing",
+            "formula":"additive",
+            "rate":0.05
         ]),
         ([
             "type":"attribute",
             "name":"dexterity",
             "formula":"additive",
-            "rate":0.30
+            "rate":0.25
         ]),
         ([
             "type":"attribute",
             "name":"strength",
             "formula":"additive",
-            "rate":0.15
+            "rate":0.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"perception",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

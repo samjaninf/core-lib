@@ -27,6 +27,6 @@ protected void Setup()
         "##Infinitive::emanate## an Aura of Courage!");
     addSpecification("use ability deactivate message", "The Aura of Courage fades.");
 
-    addSpecification("bonus resist fear", 25);
-    addSpecification("bonus willpower", 3);
+    addSpecification("bonus resist psionic", 25);
+    addSpecification("bonus wisdom", 3);
 }

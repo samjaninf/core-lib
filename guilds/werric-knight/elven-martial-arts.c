@@ -38,6 +38,10 @@ private void SeventhLevel()
     addResearchElement("/guilds/werric-knight/elven/flowing-water-stance.c");
     addChild("/guilds/werric-knight/elven/flowing-water-stance.c",
         "/guilds/werric-knight/elven/dancing-blade.c");
+
+    addResearchElement("/guilds/werric-knight/elven/swift-blade-technique.c");
+    addChild("/guilds/werric-knight/elven/swift-blade-technique.c",
+        "/guilds/werric-knight/elven/swift-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -66,6 +70,10 @@ private void ThirteenthLevel()
     addResearchElement("/guilds/werric-knight/elven/phantom-strike.c");
     addChild("/guilds/werric-knight/elven/phantom-strike.c",
         "/guilds/werric-knight/elven/eneldhor-technique.c");
+
+    addResearchElement("/guilds/werric-knight/elven/phantom-technique.c");
+    addChild("/guilds/werric-knight/elven/phantom-technique.c",
+        "/guilds/werric-knight/elven/phantom-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -97,6 +105,10 @@ private void TwentyFirstLevel()
 {
     addResearchElement("/guilds/werric-knight/elven/elven-grace.c");
     addChild("/guilds/werric-knight/elven/elven-grace.c",
+        "/guilds/werric-knight/elven/sevenfold-strike.c");
+
+    addResearchElement("/guilds/werric-knight/elven/ancient-bladework.c");
+    addChild("/guilds/werric-knight/elven/ancient-bladework.c",
         "/guilds/werric-knight/elven/sevenfold-strike.c");
 }
 

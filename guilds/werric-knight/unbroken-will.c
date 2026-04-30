@@ -42,6 +42,10 @@ private void TwentyFirstLevel()
     addResearchElement("/guilds/werric-knight/will/force-of-will.c");
     addChild("/guilds/werric-knight/will/force-of-will.c",
         "/guilds/werric-knight/will/beyond-mortal-limits.c");
+
+    addResearchElement("/guilds/werric-knight/will/willpower-manifestation.c");
+    addChild("/guilds/werric-knight/will/willpower-manifestation.c",
+        "/guilds/werric-knight/will/force-of-will.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

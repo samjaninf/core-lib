@@ -17,6 +17,6 @@ protected void Setup()
     addSpecification("scope", "self");
     addSpecification("research type", "tree root");
 
-    addSpecification("bonus willpower", 2);
+    addSpecification("bonus wisdom", 2);
     addSpecification("bonus constitution", 1);
 }

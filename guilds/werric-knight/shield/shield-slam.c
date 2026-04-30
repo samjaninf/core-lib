@@ -81,13 +81,13 @@ protected void Setup()
             "type":"attribute",
             "name":"strength",
             "formula":"additive",
-            "rate":0.05
+            "rate":0.25
         ]),
         ([
             "type":"attribute",
             "name":"constitution",
             "formula":"additive",
-            "rate":0.05
+            "rate":0.25
         ])
     }));
 }

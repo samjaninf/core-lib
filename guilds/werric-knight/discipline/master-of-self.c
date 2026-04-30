@@ -24,6 +24,6 @@ protected void Setup()
     addSpecification("bonus strength", 4);
     addSpecification("bonus constitution", 4);
     addSpecification("bonus dexterity", 3);
-    addSpecification("bonus willpower", 4);
+    addSpecification("bonus wisdom", 4);
     addSpecification("bonus wisdom", 3);
 }

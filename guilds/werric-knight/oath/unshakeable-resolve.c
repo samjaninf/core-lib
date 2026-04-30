@@ -26,9 +26,9 @@ protected void Setup()
     addSpecification("research cost", 1);
     addSpecification("bonus wisdom", 2);
     addSpecification("bonus constitution", 2);
-    addSpecification("bonus resist mind", 20);
-    addSpecification("bonus resist charm", 20);
-    addSpecification("bonus resist fear", 20);
+    addSpecification("bonus resist psionic", 20);
+    addSpecification("bonus resist psionic", 20);
+    addSpecification("bonus resist psionic", 20);
     addSpecification("bonus resist paralysis", 15);
     addSpecification("bonus hit points", 25);
 }

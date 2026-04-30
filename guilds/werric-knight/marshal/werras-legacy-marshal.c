@@ -27,7 +27,7 @@ protected void Setup()
     addSpecification("bonus intelligence", 7);
     addSpecification("bonus wisdom", 7);
     addSpecification("bonus charisma", 8);
-    addSpecification("bonus willpower", 6);
+    addSpecification("bonus wisdom", 6);
 
     addSpecification("affected research", ([
         "Marshal's Presence": 45,

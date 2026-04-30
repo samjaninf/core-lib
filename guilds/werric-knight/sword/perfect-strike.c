@@ -37,6 +37,12 @@ protected void Setup()
             "probability": 10,
             "base damage": 35,
             "range": 70
+        ]),
+        ([
+            "type":"skill",
+            "name":"linguistics",
+            "formula":"additive",
+            "rate":0.05
         ])
     }));
 
@@ -49,6 +55,12 @@ protected void Setup()
             "probability": 10,
             "base damage": 30,
             "range": 50
+        ]),
+        ([
+            "type":"skill",
+            "name":"linguistics",
+            "formula":"additive",
+            "rate":0.05
         ])
     }));
 
@@ -111,19 +123,25 @@ protected void Setup()
             "type":"attribute",
             "name":"strength",
             "formula":"additive",
-            "rate":0.05
+            "rate":0.25
         ]),
         ([
             "type":"attribute",
             "name":"dexterity",
             "formula":"additive",
-            "rate":0.05
+            "rate":0.25
         ]),
         ([
             "type":"attribute",
             "name":"intelligence",
             "formula":"additive",
-            "rate":0.025
+            "rate":0.15
+        ]),
+        ([
+            "type":"skill",
+            "name":"linguistics",
+            "formula":"additive",
+            "rate":0.05
         ])
     }));
 }

@@ -15,5 +15,5 @@ protected void Setup()
     addSpecification("scope", "self");
     addSpecification("research type", "tree root");
     addSpecification("bonus wisdom", 1);
-    addSpecification("bonus resist mind", 5);
+    addSpecification("bonus resist psionic", 5);
 }

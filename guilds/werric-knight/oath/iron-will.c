@@ -26,11 +26,11 @@ protected void Setup()
     addSpecification("research cost", 1);
     addSpecification("spell point cost", 50);
 
-    addSpecification("bonus resist mind", 15);
-    addSpecification("bonus resist charm", 15);
-    addSpecification("bonus resist fear", 15);
+    addSpecification("bonus resist psionic", 15);
+    addSpecification("bonus resist psionic", 15);
+    addSpecification("bonus resist psionic", 15);
     addSpecification("bonus stamina points", 20);
-    addSpecification("bonus stamina point recovery", 3);
+    addSpecification("bonus recover stamina points", 3);
 
     addSpecification("command template", "iron will");
     addSpecification("use ability activate message", "##InitiatorName## "

@@ -36,7 +36,7 @@ protected void Setup()
         "##Infinitive::conclude:: the Dance of Blades.");
 
     addSpecification("bonus dexterity", 6);
-    addSpecification("bonus agility", 5);
+    addSpecification("bonus strength", 2);
     addSpecification("bonus attack", 6);
     addSpecification("bonus damage", 4);
     addSpecification("bonus dodge", 5);

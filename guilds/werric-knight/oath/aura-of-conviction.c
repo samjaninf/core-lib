@@ -31,5 +31,5 @@ protected void Setup()
     addSpecification("use ability deactivate message", "##InitiatorName##'s "
         "aura of conviction fades.");
 
-    addSpecification("bonus willpower", 3);
+    addSpecification("bonus wisdom", 3);
 }

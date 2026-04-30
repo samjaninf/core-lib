@@ -27,8 +27,8 @@ protected void Setup()
     addSpecification("bonus intelligence", 8);
     addSpecification("bonus wisdom", 8);
     addSpecification("bonus charisma", 10);
-    addSpecification("bonus willpower", 7);
-    addSpecification("bonus leadership", 8);
+    addSpecification("bonus wisdom", 7);
+    addSpecification("bonus charisma", 8);
 
     addSpecification("affected research", ([
         "Strategic Command": 50,

@@ -35,5 +35,5 @@ protected void Setup()
     addSpecification("bonus parry", 4);
     addSpecification("bonus dodge", 3);
     addSpecification("bonus perception", 5);
-    addSpecification("bonus willpower", 3);
+    addSpecification("bonus wisdom", 3);
 }

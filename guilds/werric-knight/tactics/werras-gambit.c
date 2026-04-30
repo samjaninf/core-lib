@@ -36,32 +36,79 @@ protected void Setup()
     addSpecification("damage type", "physical");
     addSpecification("damage hit points", ({ ([
         "probability":50,
-        "base damage":150,
-        "range":120
+        "base damage":60,
+        "range":100
     ]),
     ([
         "probability":35,
-        "base damage":225,
-        "range":150
+        "base damage":120,
+        "range":200
     ]),
     ([
         "probability":15,
-        "base damage":325,
-        "range":175
-    ]) }));
-    
+        "base damage":240,
+        "range":320
+    ]),
+        ([
+            "type":"skill",
+            "name":"logistics",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
+
     addSpecification("modifiers", ({
+        ([
+            "type":"research",
+            "research item":"/guilds/werric-knight/tactics/supreme-tactics.c",
+            "name":"Supreme Tactics",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.5
+        ]),
+        ([
+            "type":"weapon damage",
+            "name":"weapon",
+            "types":({"long sword", "hand and a half sword", "two-handed sword", "pole arm"}),
+            "formula":"additive",
+            "rate":0.75
+        ]),
+        ([
+            "type":"highest skill",
+            "name":"weapon skills",
+            "skills":({"long sword", "hand and a half sword", "two-handed sword", "pole arm"}),
+            "formula":"additive",
+            "rate":0.5
+        ]),
+        ([
+            "type":"skill",
+            "name":"tactics",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"strategy",
+            "formula":"additive",
+            "rate":0.10
+        ]),
         ([
             "type":"attribute",
             "name":"intelligence",
             "formula":"additive",
-            "rate":0.25
+            "rate":0.15
         ]),
         ([
             "type":"attribute",
-            "name":"charisma",
+            "name":"strength",
             "formula":"additive",
-            "rate":0.15
+            "rate":0.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"logistics",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

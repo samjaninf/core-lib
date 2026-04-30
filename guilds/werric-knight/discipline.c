@@ -34,6 +34,10 @@ private void SeventhLevel()
     addResearchElement("/guilds/werric-knight/discipline/combat-conditioning.c");
     addChild("/guilds/werric-knight/discipline/combat-conditioning.c",
         "/guilds/werric-knight/discipline/endurance-training.c");
+
+    addResearchElement("/guilds/werric-knight/discipline/fortitude.c");
+    addChild("/guilds/werric-knight/discipline/fortitude.c",
+        "/guilds/werric-knight/discipline/mental-fortitude.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -50,6 +54,10 @@ private void ThirteenthLevel()
     addResearchElement("/guilds/werric-knight/discipline/iron-body.c");
     addChild("/guilds/werric-knight/discipline/iron-body.c",
         "/guilds/werric-knight/discipline/focused-mind.c");
+
+    addResearchElement("/guilds/werric-knight/discipline/resilience.c");
+    addChild("/guilds/werric-knight/discipline/resilience.c",
+        "/guilds/werric-knight/discipline/fortitude.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -58,6 +66,10 @@ private void SixteenthLevel()
     addResearchElement("/guilds/werric-knight/discipline/steel-mind.c");
     addChild("/guilds/werric-knight/discipline/steel-mind.c",
         "/guilds/werric-knight/discipline/iron-body.c");
+
+    addResearchElement("/guilds/werric-knight/discipline/unwavering.c");
+    addChild("/guilds/werric-knight/discipline/unwavering.c",
+        "/guilds/werric-knight/discipline/resilience.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -74,6 +86,10 @@ private void TwentyFifthLevel()
     addResearchElement("/guilds/werric-knight/discipline/peak-performance.c");
     addChild("/guilds/werric-knight/discipline/peak-performance.c",
         "/guilds/werric-knight/discipline/advanced-training.c");
+
+    addResearchElement("/guilds/werric-knight/discipline/absolute-discipline.c");
+    addChild("/guilds/werric-knight/discipline/absolute-discipline.c",
+        "/guilds/werric-knight/discipline/unwavering.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

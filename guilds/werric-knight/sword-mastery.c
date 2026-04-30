@@ -26,6 +26,14 @@ private void ThirdLevel()
     addResearchElement("/guilds/werric-knight/sword/discipline-cut.c");
     addChild("/guilds/werric-knight/sword/discipline-cut.c",
         "/guilds/werric-knight/sword/basic-form.c");
+
+    addResearchElement("/guilds/werric-knight/sword/flowing-form.c");
+    addChild("/guilds/werric-knight/sword/flowing-form.c",
+        "/guilds/werric-knight/sword/precise-strike.c");
+
+    addResearchElement("/guilds/werric-knight/sword/powerful-strike.c");
+    addChild("/guilds/werric-knight/sword/powerful-strike.c",
+        "/guilds/werric-knight/sword/discipline-cut.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -42,6 +50,14 @@ private void FifthLevel()
     addResearchElement("/guilds/werric-knight/sword/combat-mastery.c");
     addChild("/guilds/werric-knight/sword/combat-mastery.c",
         "/guilds/werric-knight/sword/basic-form.c");
+
+    addResearchElement("/guilds/werric-knight/sword/rising-cut.c");
+    addChild("/guilds/werric-knight/sword/rising-cut.c",
+        "/guilds/werric-knight/sword/blade-focus.c");
+
+    addResearchElement("/guilds/werric-knight/sword/falling-blade.c");
+    addChild("/guilds/werric-knight/sword/falling-blade.c",
+        "/guilds/werric-knight/sword/perfect-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -74,6 +90,14 @@ private void NinthLevel()
     addResearchElement("/guilds/werric-knight/sword/improved-precision.c");
     addChild("/guilds/werric-knight/sword/improved-precision.c",
         "/guilds/werric-knight/sword/offensive-stance.c");
+
+    addResearchElement("/guilds/werric-knight/sword/spinning-cut.c");
+    addChild("/guilds/werric-knight/sword/spinning-cut.c",
+        "/guilds/werric-knight/sword/whirling-blade.c");
+
+    addResearchElement("/guilds/werric-knight/sword/swift-riposte.c");
+    addChild("/guilds/werric-knight/sword/swift-riposte.c",
+        "/guilds/werric-knight/sword/riposte.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -106,6 +130,10 @@ private void ThirteenthLevel()
     addResearchElement("/guilds/werric-knight/sword/flowing-forms.c");
     addChild("/guilds/werric-knight/sword/flowing-forms.c",
         "/guilds/werric-knight/sword/blade-weaving.c");
+
+    addResearchElement("/guilds/werric-knight/sword/penetrating-thrust.c");
+    addChild("/guilds/werric-knight/sword/penetrating-thrust.c",
+        "/guilds/werric-knight/sword/critical-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -138,6 +166,14 @@ private void SeventeenthLevel()
     addResearchElement("/guilds/werric-knight/sword/parry-mastery.c");
     addChild("/guilds/werric-knight/sword/parry-mastery.c",
         "/guilds/werric-knight/sword/counterattack.c");
+
+    addResearchElement("/guilds/werric-knight/sword/blade-tempest-technique.c");
+    addChild("/guilds/werric-knight/sword/blade-tempest-technique.c",
+        "/guilds/werric-knight/sword/blade-tempest.c");
+
+    addResearchElement("/guilds/werric-knight/sword/dancing-steel.c");
+    addChild("/guilds/werric-knight/sword/dancing-steel.c",
+        "/guilds/werric-knight/sword/devastating-combo.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -170,6 +206,10 @@ private void TwentyFirstLevel()
     addResearchElement("/guilds/werric-knight/sword/death-blow.c");
     addChild("/guilds/werric-knight/sword/death-blow.c",
         "/guilds/werric-knight/sword/deadly-precision.c");
+
+    addResearchElement("/guilds/werric-knight/sword/fury-strike.c");
+    addChild("/guilds/werric-knight/sword/fury-strike.c",
+        "/guilds/werric-knight/sword/righteous-fury.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -202,6 +242,10 @@ private void ThirtyFirstLevel()
     addResearchElement("/guilds/werric-knight/sword/sword-saint.c");
     addChild("/guilds/werric-knight/sword/sword-saint.c",
         "/guilds/werric-knight/sword/perfect-form.c");
+
+    addResearchElement("/guilds/werric-knight/sword/supreme-blade-mastery.c");
+    addChild("/guilds/werric-knight/sword/supreme-blade-mastery.c",
+        "/guilds/werric-knight/sword/ultimate-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

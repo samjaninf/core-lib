@@ -31,7 +31,7 @@ protected void Setup()
     addSpecification("use ability deactivate message", "##InitiatorName##'s "
         "indomitable spirit fades.");
 
-    addSpecification("bonus willpower", 5);
+    addSpecification("bonus wisdom", 5);
     addSpecification("bonus constitution", 4);
     addSpecification("bonus strength", 3);
     addSpecification("bonus stamina points", 50);

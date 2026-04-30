@@ -32,5 +32,5 @@ protected void Setup()
     addSpecification("use ability deactivate message", "##InitiatorName##'s "
         "beacon of resolve fades.");
 
-    addSpecification("bonus willpower", 6);
+    addSpecification("bonus wisdom", 6);
 }

@@ -10,6 +10,10 @@ private void FirstLevel()
     addResearchElement("/guilds/werric-knight/light/divine-connection.c");
     addChild("/guilds/werric-knight/light/divine-connection.c",
         "/guilds/werric-knight/light/root.c");
+
+    addResearchElement("/guilds/werric-knight/light/holy-light.c");
+    addChild("/guilds/werric-knight/light/holy-light.c",
+        "/guilds/werric-knight/light/root.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -26,6 +30,18 @@ private void FifthLevel()
     addResearchElement("/guilds/werric-knight/light/smite-evil.c");
     addChild("/guilds/werric-knight/light/smite-evil.c",
         "/guilds/werric-knight/light/minor-heal.c");
+
+    addResearchElement("/guilds/werric-knight/light/radiant-burst.c");
+    addChild("/guilds/werric-knight/light/radiant-burst.c",
+        "/guilds/werric-knight/light/holy-light.c");
+
+    addResearchElement("/guilds/werric-knight/light/smite.c");
+    addChild("/guilds/werric-knight/light/smite.c",
+        "/guilds/werric-knight/light/radiant-burst.c");
+
+    addResearchElement("/guilds/werric-knight/light/smiting-technique.c");
+    addChild("/guilds/werric-knight/light/smiting-technique.c",
+        "/guilds/werric-knight/light/smite-evil.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -58,6 +74,10 @@ private void ThirteenthLevel()
     addResearchElement("/guilds/werric-knight/light/holy-strike.c");
     addChild("/guilds/werric-knight/light/holy-strike.c",
         "/guilds/werric-knight/light/healing-touch.c");
+
+    addResearchElement("/guilds/werric-knight/light/righteous-strike.c");
+    addChild("/guilds/werric-knight/light/righteous-strike.c",
+        "/guilds/werric-knight/light/holy-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -82,6 +102,10 @@ private void TwentiethLevel()
     addResearchElement("/guilds/werric-knight/light/divine-wrath.c");
     addChild("/guilds/werric-knight/light/divine-wrath.c",
         "/guilds/werric-knight/light/channel-divinity.c");
+
+    addResearchElement("/guilds/werric-knight/light/holy-wrath.c");
+    addChild("/guilds/werric-knight/light/holy-wrath.c",
+        "/guilds/werric-knight/light/divine-wrath.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -146,6 +170,10 @@ private void FortyFifthLevel()
     addResearchElement("/guilds/werric-knight/light/pillar-of-light.c");
     addChild("/guilds/werric-knight/light/pillar-of-light.c",
         "/guilds/werric-knight/light/divine-mastery.c");
+
+    addResearchElement("/guilds/werric-knight/light/ultimate-judgment.c");
+    addChild("/guilds/werric-knight/light/ultimate-judgment.c",
+        "/guilds/werric-knight/light/pillar-of-light.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -241,46 +269,4 @@ protected void Setup()
     SixtyThirdLevel();
     SixtySixthLevel();
     SeventiethLevel();
-}
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void EleventhLevel()
-{
-    addResearchElement("/guilds/werric-knight/light/healing-touch.c");
-    addChild("/guilds/werric-knight/light/healing-touch.c",
-        "/guilds/werric-knight/light/smite.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void SeventeenthLevel()
-{
-    addResearchElement("/guilds/werric-knight/light/radiant-burst.c");
-    addChild("/guilds/werric-knight/light/radiant-burst.c",
-        "/guilds/werric-knight/light/healing-touch.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void TwentyFifthLevel()
-{
-    addResearchElement("/guilds/werric-knight/light/holy-light.c");
-    addChild("/guilds/werric-knight/light/holy-light.c",
-        "/guilds/werric-knight/light/radiant-burst.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-protected void Setup()
-{
-    Name("Light Magic");
-    Description("This research tree provides access to holy light magic, "
-        "used to heal allies and smite enemies.");
-    Source("Werric Knight");
-    addResearchElement("/guilds/werric-knight/light/root.c");
-    TreeRoot("/guilds/werric-knight/light/root.c");
-
-    FirstLevel();
-    FifthLevel();
-    EleventhLevel();
-    SeventeenthLevel();
-    TwentyFifthLevel();
 }

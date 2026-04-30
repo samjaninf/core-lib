@@ -35,6 +35,5 @@ protected void Setup()
 
     addSpecification("bonus dodge", 5);
     addSpecification("bonus defense", 3);
-    addSpecification("bonus agility", 2);
-    addSpecification("penalty parry", 2);
+    addSpecification("bonus dexterity", 2);
 }

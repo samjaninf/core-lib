@@ -23,7 +23,7 @@ protected void Setup()
 
     addSpecification("bonus charisma", 4);
     addSpecification("bonus wisdom", 3);
-    addSpecification("bonus willpower", 3);
+    addSpecification("bonus wisdom", 3);
 
     addSpecification("affected research", ([
         "Code of Honor": 30,

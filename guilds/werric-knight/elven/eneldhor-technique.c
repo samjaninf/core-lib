@@ -26,7 +26,7 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addSpecification("bonus dexterity", 3);
-    addSpecification("bonus agility", 2);
+    addSpecification("bonus dexterity", 2);
     addSpecification("bonus long sword", 3);
     addSpecification("bonus hand and a half sword", 3);
     addSpecification("bonus attack", 3);

@@ -23,5 +23,5 @@ protected void Setup()
 
     addSpecification("bonus charisma", 2);
     addSpecification("bonus wisdom", 1);
-    addSpecification("bonus willpower", 1);
+    addSpecification("bonus wisdom", 1);
 }

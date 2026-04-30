@@ -28,49 +28,80 @@ protected void Setup()
 
     addSpecification("damage hit points", ({ ([
         "probability":60,
-        "base damage":200,
-        "range":150
+        "base damage":50,
+        "range":85
     ]),
     ([
         "probability":30,
-        "base damage":300,
-        "range":180
+        "base damage":100,
+        "range":170
     ]),
     ([
         "probability":10,
-        "base damage":420,
-        "range":200
-    ]) }));
-    addSpecification("damage type", "holy");
-    
+        "base damage":200,
+        "range":280
+    ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
+    addSpecification("damage type", "good");
+
     addSpecification("modifiers", ({
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/light/radiant-power.c",
-            "name":"Radiant Power",
+            "research item":"/guilds/werric-knight/light/holy-wrath.c",
+            "name":"Holy Wrath",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/light/divine-mastery.c",
-            "name":"Divine Mastery",
+            "research item":"/guilds/werric-knight/light/ultimate-judgment.c",
+            "name":"Ultimate Judgment",
             "formula":"multiplicative",
             "base value":1,
-            "rate":1.25
+            "rate":1.5
+        ]),
+        ([
+            "type":"skill",
+            "name":"magical essence",
+            "formula":"additive",
+            "rate":0.10
+        ]),
+        ([
+            "type":"skill",
+            "name":"spellcraft",
+            "formula":"additive",
+            "rate":0.10
         ]),
         ([
             "type":"attribute",
             "name":"wisdom",
             "formula":"additive",
-            "rate":0.25
+            "rate":0.15
         ]),
         ([
             "type":"attribute",
             "name":"charisma",
             "formula":"additive",
+            "rate":0.25
+        ]),
+        ([
+            "type":"attribute",
+            "name":"intelligence",
+            "formula":"additive",
             "rate":0.15
+        ]),
+        ([
+            "type":"skill",
+            "name":"theology",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

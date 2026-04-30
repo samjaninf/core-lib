@@ -38,6 +38,14 @@ private void FifthLevel()
     addResearchElement("/guilds/werric-knight/shield/protect-ally.c");
     addChild("/guilds/werric-knight/shield/protect-ally.c",
         "/guilds/werric-knight/shield/counter-block.c");
+
+    addResearchElement("/guilds/werric-knight/shield/shield-impact.c");
+    addChild("/guilds/werric-knight/shield/shield-impact.c",
+        "/guilds/werric-knight/shield/shield-bash.c");
+
+    addResearchElement("/guilds/werric-knight/shield/defensive-mastery.c");
+    addChild("/guilds/werric-knight/shield/defensive-mastery.c",
+        "/guilds/werric-knight/shield/bulwark.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -50,6 +58,10 @@ private void SeventhLevel()
     addResearchElement("/guilds/werric-knight/shield/fortified-defense.c");
     addChild("/guilds/werric-knight/shield/fortified-defense.c",
         "/guilds/werric-knight/shield/protect-ally.c");
+
+    addResearchElement("/guilds/werric-knight/shield/defensive-strike.c");
+    addChild("/guilds/werric-knight/shield/defensive-strike.c",
+        "/guilds/werric-knight/shield/counter-block.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -74,6 +86,10 @@ private void EleventhLevel()
     addResearchElement("/guilds/werric-knight/shield/shield-charge.c");
     addChild("/guilds/werric-knight/shield/shield-charge.c",
         "/guilds/werric-knight/shield/aegis-formation.c");
+
+    addResearchElement("/guilds/werric-knight/shield/crushing-force.c");
+    addChild("/guilds/werric-knight/shield/crushing-force.c",
+        "/guilds/werric-knight/shield/crushing-blow.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -86,6 +102,10 @@ private void ThirteenthLevel()
     addResearchElement("/guilds/werric-knight/shield/devastating-counter.c");
     addChild("/guilds/werric-knight/shield/devastating-counter.c",
         "/guilds/werric-knight/shield/unyielding-defense.c");
+
+    addResearchElement("/guilds/werric-knight/shield/counter-mastery.c");
+    addChild("/guilds/werric-knight/shield/counter-mastery.c",
+        "/guilds/werric-knight/shield/devastating-counter.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -118,6 +138,10 @@ private void NineteenthLevel()
     addResearchElement("/guilds/werric-knight/shield/retribution-strike.c");
     addChild("/guilds/werric-knight/shield/retribution-strike.c",
         "/guilds/werric-knight/shield/fortress-stance.c");
+
+    addResearchElement("/guilds/werric-knight/shield/thunderous-blow.c");
+    addChild("/guilds/werric-knight/shield/thunderous-blow.c",
+        "/guilds/werric-knight/shield/retribution-strike.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -142,6 +166,10 @@ private void TwentyFifthLevel()
     addResearchElement("/guilds/werric-knight/shield/shield-of-werra.c");
     addChild("/guilds/werric-knight/shield/shield-of-werra.c",
         "/guilds/werric-knight/shield/master-guardian.c");
+
+    addResearchElement("/guilds/werric-knight/shield/ultimate-defense.c");
+    addChild("/guilds/werric-knight/shield/ultimate-defense.c",
+        "/guilds/werric-knight/shield/shield-of-werra.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

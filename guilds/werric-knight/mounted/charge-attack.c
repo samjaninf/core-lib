@@ -29,21 +29,36 @@ protected void Setup()
 
     addSpecification("damage hit points", ({ ([
         "probability":80,
-        "base damage":50,
-        "range":50
+        "base damage":15,
+        "range":25
     ]),
     ([
         "probability":20,
-        "base damage":85,
-        "range":65
-    ]) }));
+        "base damage":30,
+        "range":50
+    ]),
+        ([
+            "type":"skill",
+            "name":"animal handling",
+            "formula":"additive",
+            "rate":0.1
+        ])
+    }));
     addSpecification("damage type", "physical");
-    
+
     addSpecification("modifiers", ({
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/mounted/cavalry-tactics.c",
-            "name":"Cavalry Tactics",
+            "research item":"/guilds/werric-knight/mounted/charge-technique.c",
+            "name":"Charge Technique",
+            "formula":"multiplicative",
+            "base value":1,
+            "rate":1.25
+        ]),
+        ([
+            "type":"research",
+            "research item":"/guilds/werric-knight/mounted/momentum-strike.c",
+            "name":"Momentum Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
@@ -53,7 +68,26 @@ protected void Setup()
             "name":"weapon",
             "types":({"long sword", "hand and a half sword", "pole arm"}),
             "formula":"additive",
-            "rate":1.0
+            "rate":0.75
+        ]),
+        ([
+            "type":"skill",
+            "name":"riding",
+            "formula":"additive",
+            "rate":0.50
+        ]),
+        ([
+            "type":"highest skill",
+            "name":"weapon skills",
+            "skills":({"long sword", "hand and a half sword", "pole arm"}),
+            "formula":"additive",
+            "rate":0.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"physics",
+            "formula":"additive",
+            "rate":0.10
         ]),
         ([
             "type":"attribute",
@@ -62,10 +96,16 @@ protected void Setup()
             "rate":0.25
         ]),
         ([
-            "type":"skill",
-            "name":"riding",
+            "type":"attribute",
+            "name":"dexterity",
             "formula":"additive",
-            "rate":0.10
+            "rate":0.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"animal handling",
+            "formula":"additive",
+            "rate":0.1
         ])
     }));
 }

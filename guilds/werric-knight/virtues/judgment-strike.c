@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "You deliver judgment upon the wicked with "
         "a powerful strike infused with righteous fury.");
 
-    addPrerequisite("guilds/werric-knight/virtues/virtuous-power.c",
+    addPrerequisite("guilds/werric-knight/virtues/virtuous-strike.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
         (["type":"guild", "level":25]));
@@ -36,30 +36,37 @@ protected void Setup()
         "probability":30,
         "base damage":155,
         "range":110
-    ]) }));
+    ]),
+        ([
+            "type":"skill",
+            "name":"etiquette",
+            "formula":"additive",
+            "rate":0.05
+        ])
+    }));
     addSpecification("damage type", "physical");
 
     addSpecification("modifiers", ({
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/virtues/righteous-focus.c",
-            "name":"Righteous Focus",
+            "research item":"/guilds/werric-knight/virtues/virtuous-strike.c",
+            "name":"Virtuous Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/virtues/justice-magnified.c",
-            "name":"Justice Magnified",
+            "research item":"/guilds/werric-knight/virtues/virtuous-strike.c",
+            "name":"Virtuous Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
             "type":"research",
-            "research item":"/guilds/werric-knight/virtues/virtuous-power.c",
-            "name":"Virtuous Power",
+            "research item":"/guilds/werric-knight/virtues/virtuous-strike.c",
+            "name":"Virtuous Strike",
             "formula":"multiplicative",
             "base value":1,
             "rate":1.25
@@ -77,19 +84,21 @@ protected void Setup()
             "name":"weapon",
             "types":({"long sword", "hand and a half sword"}),
             "formula":"additive",
-            "rate":1.0
+            "rate": 0.75
         ]),
         ([
             "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
-            "rate":0.25
+            "name":"strength", "formula":"additive", "rate": 0.25
         ]),
         ([
             "type":"attribute",
-            "name":"charisma",
+            "name":"charisma", "formula":"additive", "rate": 0.25
+        ]),
+        ([
+            "type":"skill",
+            "name":"etiquette",
             "formula":"additive",
-            "rate":0.15
+            "rate":0.05
         ])
     }));
 }

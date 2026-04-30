@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved a legendary level of "
         "defensive prowess. Your shield is not merely a tool but an extension of "
-        "your Oath—a physical manifestation of your promise to protect the realm. "
+        "your Oath - a physical manifestation of your promise to protect the realm. "
         "While you stand, Hillgarath stands. While your shield holds, the kingdom "
         "endures.");
 

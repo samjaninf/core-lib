@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Knightly Virtues");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You begin your study of the Knightly Virtues—"
+    addSpecification("description", "You begin your study of the Knightly Virtues - "
         "the principles of honor, courage, justice, and mercy that define what it "
         "means to be a true knight. These virtues are not mere philosophy but "
         "sources of tangible power for those who truly embody them.");

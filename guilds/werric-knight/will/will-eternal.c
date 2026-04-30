@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Will Eternal");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved the ultimate expression of "
-        "willpower—a will that is truly eternal, unchanging, and absolute. Your "
+        "willpower - a will that is truly eternal, unchanging, and absolute. Your "
         "determination is no longer a personal trait but a fundamental force of "
         "nature. Mountains erode, empires fall, stars die, but your will endures "
         "unchanged. This is the pinnacle of what the Oath can create: a human will "

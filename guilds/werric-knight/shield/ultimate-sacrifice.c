@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Ultimate Sacrifice");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "This is the pinnacle of the guardian's art—the "
+    addSpecification("description", "This is the pinnacle of the guardian's art - the "
         "willingness and ability to absorb any amount of damage to protect others. "
         "You channel every ounce of your defensive mastery, your shield becoming an "
         "absolute barrier that can withstand even killing blows. The technique leaves "

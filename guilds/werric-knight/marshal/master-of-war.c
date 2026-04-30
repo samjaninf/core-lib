@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Master of War");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved absolute mastery of warfare "
-        "in all its forms. Strategy, tactics, logistics, morale, diplomacy—every "
+        "in all its forms. Strategy, tactics, logistics, morale, diplomacy - every "
         "aspect of military command is second nature to you. You are the complete "
         "warrior-leader, the embodiment of martial excellence.");
 

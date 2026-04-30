@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You channel your indomitable spirit into a "
         "sustained aura of absolute determination. While in this state, you become "
-        "virtually unstoppable—neither exhaustion nor injury can slow you, neither "
+        "virtually unstoppable - neither exhaustion nor injury can slow you, neither "
         "fear nor doubt can deter you. Your will manifests as tangible power.");
 
     addPrerequisite("guilds/werric-knight/will/mind-fortress.c",

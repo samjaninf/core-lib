@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Werra's Resolve");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You channel the legendary resolve of King Werra "
-        "himself—the will that united a fractured kingdom, that held against the "
+        "himself - the will that united a fractured kingdom, that held against the "
         "Demon Lord at Redemption's Gate, that transformed scattered warriors into "
         "the most disciplined military force the world has ever known. When you "
         "invoke Werra's Resolve, you become for a time the equal of the greatest "

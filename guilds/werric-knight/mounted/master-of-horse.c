@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Master of Horse");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You are a true master of mounted warfare—"
+    addSpecification("description", "You are a true master of mounted warfare - "
         "one of the greatest cavalrymen in history. Your understanding of horses, "
         "mounted combat, and cavalry tactics is comprehensive and unmatched.");
 

@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Your loyalty to the Oath and to Hillgarath "
         "has become absolute. No temptation can sway you, no offer can corrupt you, "
-        "no threat can turn you. You are oath-bound in the truest sense—your very "
+        "no threat can turn you. You are oath-bound in the truest sense - your very "
         "nature is defined by your unwavering dedication to duty.");
 
     addPrerequisite("guilds/werric-knight/oath/unshakeable-stance.c",

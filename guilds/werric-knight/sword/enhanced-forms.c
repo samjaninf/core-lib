@@ -13,7 +13,7 @@ protected void Setup()
         "dedication, you have refined your combat stances to their ultimate expression. "
         "Your forms now embody the perfect balance between offense and defense, "
         "between aggression and caution. Each stance becomes more potent, more "
-        "effective—a testament to the power of disciplined perfection.");
+        "effective - a testament to the power of disciplined perfection.");
 
     addPrerequisite("guilds/werric-knight/sword/offensive-stance.c",
         (["type":"research"]));

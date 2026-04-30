@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Perfect Cavalry");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You achieve perfect cavalry coordination—a "
+    addSpecification("description", "You achieve perfect cavalry coordination - a "
         "state where mounted combat becomes an art form. Every movement is "
         "optimal, every strike perfectly timed, every formation flawlessly executed.");
 

@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Sanctified Champion");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have become a sanctified champion of "
-        "the light—a living vessel of divine power. Your very presence is a "
+        "the light - a living vessel of divine power. Your very presence is a "
         "blessing to allies and a bane to evil.");
 
     addPrerequisite("guilds/werric-knight/light/divine-resurrection.c",

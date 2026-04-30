@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved the ultimate expression of "
         "the protector's calling. Every defensive technique you have mastered, every "
-        "sacrifice you have made, every stand you have held—all of it has led to "
+        "sacrifice you have made, every stand you have held - all of it has led to "
         "this moment of perfect realization. You are not merely a defender; you are "
         "the living embodiment of protection itself.");
 

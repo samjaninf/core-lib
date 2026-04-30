@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Strategic Withdrawal");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have mastered the art of strategic "
-        "withdrawal—retreating from untenable positions while maintaining defensive "
+        "withdrawal - retreating from untenable positions while maintaining defensive "
         "integrity. This is not cowardice but tactical wisdom, preserving forces "
         "for more favorable engagements.");
 

@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Perfect Coordination");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have achieved perfect coordination—the "
+    addSpecification("description", "You have achieved perfect coordination - the "
         "ability to work with allies as though you share a single mind. Timing, "
         "positioning, and execution become seamless when you fight alongside others, "
         "creating a synergy that multiplies effectiveness exponentially.");

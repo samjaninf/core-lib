@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Ultimate Strike");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "This is the pinnacle of offensive technique—"
+    addSpecification("description", "This is the pinnacle of offensive technique - "
         "a strike that channels every ounce of your skill, strength, and disciplined "
         "will into a single, world-shattering blow. When you unleash this technique, "
         "you become for one perfect moment the living embodiment of Werra's martial "

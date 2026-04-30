@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "I Am the Oath");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved the ultimate realization of "
-        "the Werric philosophy. You are not merely bound by the Oath—you ARE the "
+        "the Werric philosophy. You are not merely bound by the Oath - you ARE the "
         "Oath. There is no separation between your identity and your sacred duty. "
         "When King Werra said 'I am not my will,' he meant that his will and the "
         "Oath's will were one and the same. You have achieved this unity.");

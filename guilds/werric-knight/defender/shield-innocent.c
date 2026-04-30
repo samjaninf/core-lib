@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "You can extend your protective power to shield "
         "all innocents in the immediate area, creating a barrier of absolute defense "
         "around those who cannot defend themselves. This is the essence of what it "
-        "means to be a Defender of the Crown—to protect the helpless.");
+        "means to be a Defender of the Crown - to protect the helpless.");
 
     addPrerequisite("guilds/werric-knight/defender/selfless-protector.c",
         (["type":"research"]));

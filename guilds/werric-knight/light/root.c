@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Light Magic");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You begin your study of Light Magic—the holy "
+    addSpecification("description", "You begin your study of Light Magic - the holy "
         "powers granted to those who serve the Oath with absolute dedication. This "
         "divine magic emphasizes protection, healing, and smiting evil. It is the "
         "blessing of the gods upon those who defend the innocent.");

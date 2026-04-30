@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You assume supreme tactical command, your "
         "orders transforming nearby allies into a perfectly coordinated fighting "
-        "force. This is the pinnacle of battlefield leadership—the ability to "
+        "force. This is the pinnacle of battlefield leadership - the ability to "
         "mold individual warriors into an unstoppable tactical instrument.");
 
     addPrerequisite("guilds/werric-knight/tactics/devastating-combination.c",

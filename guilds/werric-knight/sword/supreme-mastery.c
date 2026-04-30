@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "You have achieved a level of martial prowess "
         "that places you among the elite swordsmen of the realm. Your blade moves "
         "with the certainty of fate itself, each strike a manifestation of years of "
-        "disciplined perfection. You stand now where King Werra himself once stood—"
+        "disciplined perfection. You stand now where King Werra himself once stood - "
         "at the pinnacle of martial excellence.");
 
     addPrerequisite("guilds/werric-knight/sword/enhanced-forms.c",

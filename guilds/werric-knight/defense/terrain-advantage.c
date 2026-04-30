@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Terrain Advantage");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have learned to use terrain to your "
-        "defensive advantage. High ground, narrow passages, obstacles—all become "
+        "defensive advantage. High ground, narrow passages, obstacles - all become "
         "tools in your defensive arsenal. A knight who understands terrain is worth "
         "three who don't.");
 

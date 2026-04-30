@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Defiant Stand");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "When all seems lost, you can make a defiant "
-        "stand—refusing to yield despite overwhelming odds. This technique channels "
+        "stand - refusing to yield despite overwhelming odds. This technique channels "
         "your absolute determination into raw defensive power, making you nearly "
         "invulnerable for a crucial moment. It has turned the tide of countless "
         "desperate battles.");

@@ -13,7 +13,7 @@ protected void Setup()
         "defensive capabilities pushed to their absolute limit. In this stance, "
         "you are virtually immune to harm, though you sacrifice all mobility and "
         "most offensive capability. This is the ultimate expression of defensive "
-        "mastery—the stance that can weather any storm.");
+        "mastery - the stance that can weather any storm.");
 
     addPrerequisite("guilds/werric-knight/shield/bulwark-of-realm.c",
         (["type":"research"]));

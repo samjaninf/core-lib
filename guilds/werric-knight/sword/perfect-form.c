@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved the ultimate synthesis of "
         "all combat stances, creating a form that transcends individual techniques. "
-        "In this state, you embody the perfect warrior—balanced, adaptable, and "
+        "In this state, you embody the perfect warrior - balanced, adaptable, and "
         "utterly deadly. This is the form that Werra held when he faced the Demon "
         "Lord at Redemption's Gate, and through it, you touch that same legendary "
         "perfection.");

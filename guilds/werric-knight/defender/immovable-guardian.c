@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Immovable Guardian");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have become an immovable guardian—a living "
+    addSpecification("description", "You have become an immovable guardian - a living "
         "wall that cannot be bypassed, broken, or moved. When you take a position, "
         "you hold it. When you commit to defending someone, they are safe. Your "
         "determination to protect is absolute and unshakeable.");

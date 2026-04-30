@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Living Wall");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have perfected the technique of becoming "
-        "a living wall—an obstacle so formidable that enemies cannot pass. Your "
+        "a living wall - an obstacle so formidable that enemies cannot pass. Your "
         "body, shield, and will combine to create an impenetrable barrier. Entire "
         "armies have been stopped by a single Knight Commander who mastered this technique.");
 

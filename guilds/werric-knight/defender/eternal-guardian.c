@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Eternal Guardian");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved the pinnacle of defensive "
-        "mastery—you have become an Eternal Guardian. Your dedication to protection "
+        "mastery - you have become an Eternal Guardian. Your dedication to protection "
         "is so absolute it transcends mortality itself. Stories will be told of your "
         "defenses for generations. You stand now where the greatest defenders in "
         "history stood: as the final, unbreakable line between the innocent and all harm.");

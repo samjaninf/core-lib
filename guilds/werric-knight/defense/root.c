@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Defensive Tactics");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You begin your study of advanced defensive "
-        "tactics—techniques that go beyond simple blocking to encompass positioning, "
+        "tactics - techniques that go beyond simple blocking to encompass positioning, "
         "terrain usage, and strategic defense. These are the methods that allow a "
         "single knight to hold a corridor or a small force to defend a fortification.");
 

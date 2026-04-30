@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Measured Response");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You respond to attacks with perfect measure—"
+    addSpecification("description", "You respond to attacks with perfect measure - "
         "never overcommitting, never underreacting. This efficiency in defensive "
         "response conserves energy while maintaining effectiveness.");
 

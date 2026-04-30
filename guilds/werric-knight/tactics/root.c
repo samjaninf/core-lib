@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You begin your study of the tactical arts "
         "that made Hillgarath's armies legendary. Werric Knights are not mere "
-        "warriors—they are battlefield commanders who understand that victory "
+        "warriors - they are battlefield commanders who understand that victory "
         "comes from coordination, discipline, and superior tactics.");
 
     addSpecification("scope", "self");

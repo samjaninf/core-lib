@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Flowing Water Stance");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You adopt the elven stance known as 'Flowing "
-        "Water'—a defensive posture that emphasizes evasion and redirection rather "
+        "Water' - a defensive posture that emphasizes evasion and redirection rather "
         "than blocking. Like water, you flow around attacks rather than meeting them "
         "head-on, conserving energy while frustrating opponents.");
 

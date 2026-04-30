@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You enter a state of absolute vigilance, your "
         "every sense attuned to threats, your shield positioned to intercept any "
-        "attack. In this stance, you become the perfect sentinel—tireless, alert, "
+        "attack. In this stance, you become the perfect sentinel - tireless, alert, "
         "and utterly dedicated to your protective duty. This is the stance that has "
         "guarded kings and held fortress gates through endless sieges.");
 

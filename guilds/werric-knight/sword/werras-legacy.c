@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Werra's Legacy");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have become the living embodiment of King "
-        "Werra's martial philosophy—the synthesis of all his teachings, the fulfillment "
+        "Werra's martial philosophy - the synthesis of all his teachings, the fulfillment "
         "of all his ideals. In you, his legacy lives on: the perfect union of discipline "
         "and skill, of duty and excellence, of humility and prowess. When you take up "
         "your blade, you carry with you the weight of Hillgarath's greatest tradition "

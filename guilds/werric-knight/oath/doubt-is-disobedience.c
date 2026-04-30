@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "You have embraced the harsh truth at the core "
         "of the Oath: to doubt your duty is to disobey your sacred vow. This "
         "understanding eliminates hesitation completely. You do not debate, you do "
-        "not waver, you do not question—you simply act with absolute certainty, "
+        "not waver, you do not question - you simply act with absolute certainty, "
         "for your path is defined by the Oath, not by your own uncertainty.");
 
     addPrerequisite("guilds/werric-knight/oath/pain-is-instruction.c",

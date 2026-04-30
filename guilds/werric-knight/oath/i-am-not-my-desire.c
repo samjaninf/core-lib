@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "I Am Not My Desire");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have mastered one of the most difficult "
-        "aspects of the Oath—the surrender of personal desire. What you want is "
+        "aspects of the Oath - the surrender of personal desire. What you want is "
         "irrelevant; only duty matters. This complete detachment from selfish "
         "motivation grants you clarity of purpose that transcends mere discipline.");
 

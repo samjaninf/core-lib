@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Apocalyptic Charge");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "Your charge becomes apocalyptic in power—a "
+    addSpecification("description", "Your charge becomes apocalyptic in power - a "
         "devastating assault that seems to shake the very ground. This is mounted "
         "combat elevated to its ultimate destructive expression.");
 

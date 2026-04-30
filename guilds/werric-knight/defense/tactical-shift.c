@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Tactical Shift");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You execute a tactical shift—simultaneously "
+    addSpecification("description", "You execute a tactical shift - simultaneously "
         "repositioning and adjusting defensive stance to counter a new tactical "
         "situation. This fluid transition keeps you always in optimal defensive "
         "position regardless of how the battle evolves.");

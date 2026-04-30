@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Victory's Call");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You issue the call to victory—a command so "
+    addSpecification("description", "You issue the call to victory - a command so "
         "powerful, so laden with authority and conviction, that it makes victory "
         "manifest. This is the pinnacle of Lord Marshal power: the ability to "
         "decree victory and have reality conform to your will.");

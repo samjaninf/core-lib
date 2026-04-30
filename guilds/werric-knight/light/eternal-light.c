@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved perfect union with the "
         "divine light. Your power is eternal, your connection unbreakable, your "
-        "status as a champion of the light absolute. You are the light incarnate—"
+        "status as a champion of the light absolute. You are the light incarnate - "
         "a beacon of hope that can never be extinguished.");
 
     addPrerequisite("guilds/werric-knight/light/avatar-of-light.c",

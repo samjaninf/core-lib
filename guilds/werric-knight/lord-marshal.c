@@ -88,7 +88,7 @@ private void SeventiethLevel()
 protected void Setup()
 {
     Name("Lord Marshal's Command");
-    Description("This research tree is available only to Lord Marshals—those who "
+    Description("This research tree is available only to Lord Marshals - those who "
         "have achieved the highest rank within the Werric Knights. It represents "
         "the pinnacle of military leadership and strategic command.");
     Source("Werric Knight");

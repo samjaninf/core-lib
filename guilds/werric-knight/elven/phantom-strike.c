@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "This elven technique is so swift that it appears "
         "your blade strikes from two places simultaneously. The effect is disorienting "
-        "to opponents and devastating in practice—by the time they react to the feint, "
+        "to opponents and devastating in practice - by the time they react to the feint, "
         "the real strike has already landed.");
 
     addPrerequisite("guilds/werric-knight/elven/eneldhor-technique.c",

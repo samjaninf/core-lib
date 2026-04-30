@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Your will has transcended mortal limitation. "
         "What drives you is no longer mere determination but something approaching "
         "divine certainty. The Oath has become so integral to your being that you "
-        "and it are indistinguishable—you are the living will of sacred duty made "
+        "and it are indistinguishable - you are the living will of sacred duty made "
         "manifest.");
 
     addPrerequisite("guilds/werric-knight/oath/beacon-of-resolve.c",

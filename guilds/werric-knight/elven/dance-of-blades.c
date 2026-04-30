@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "You enter a state of perpetual motion where "
         "offense and defense become indistinguishable. Your blade never stops moving, "
         "weaving patterns that simultaneously attack and protect. This is the pinnacle "
-        "of Daedrun's teaching—combat as an art form, violence as a dance, death as "
+        "of Daedrun's teaching - combat as an art form, violence as a dance, death as "
         "poetry in motion.");
 
     addPrerequisite("guilds/werric-knight/elven/blade-of-wind.c",

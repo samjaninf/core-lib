@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "You have achieved the ultimate expression of "
         "defensive mastery. Your shield is eternal, your resolve unbreakable, your "
         "dedication absolute. You stand now where the greatest guardians in history "
-        "have stood—as the final line of defense, the shield that holds when all "
+        "have stood - as the final line of defense, the shield that holds when all "
         "others have fallen, the protector whose Oath transcends mortal limits. "
         "While you draw breath, the innocent are safe.");
 

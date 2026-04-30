@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Elven Grace");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have achieved true elven grace—that perfect "
+    addSpecification("description", "You have achieved true elven grace - that perfect "
         "union of beauty and lethality that defines elven combat. Your movements "
         "are poetry, your strikes are art, and your presence on the battlefield "
         "is mesmerizing. Warriors pause to watch you fight, even knowing they should "

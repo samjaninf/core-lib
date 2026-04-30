@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Crown's Shield");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have sworn to be the Crown's shield—the "
+    addSpecification("description", "You have sworn to be the Crown's shield - the "
         "first line of defense against all threats to the realm. This dedication "
         "manifests as enhanced defensive capabilities and the absolute certainty "
         "that you will not allow harm to come to those you are sworn to protect.");

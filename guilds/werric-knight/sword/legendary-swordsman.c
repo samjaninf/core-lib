@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Your name is spoken with reverence in the "
         "training halls of Hillgarath. You have transcended mere mastery to achieve "
-        "true legendary status—your every movement a lesson, your every strike a "
+        "true legendary status - your every movement a lesson, your every strike a "
         "demonstration of what disciplined perfection can achieve. Young knights "
         "study your techniques, and veterans nod with respect when you pass.");
 

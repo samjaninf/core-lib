@@ -10,11 +10,11 @@ protected void Setup()
     addSpecification("name", "Last Stand");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "This is the ultimate technique of the Defender "
-        "of the Crown—the ability to make a final stand that cannot be overcome. "
+        "of the Crown - the ability to make a final stand that cannot be overcome. "
         "When you invoke Last Stand, you plant yourself and refuse to fall no matter "
         "what assaults you face. This is the technique used by the Three Hundred at "
         "Thornwood Pass, who held for three days against impossible odds. While Last "
-        "Stand is active, you simply cannot be defeated—though the cost is tremendous.");
+        "Stand is active, you simply cannot be defeated - though the cost is tremendous.");
 
     addPrerequisite("guilds/werric-knight/defender/protectors-heart.c",
         (["type":"research"]));

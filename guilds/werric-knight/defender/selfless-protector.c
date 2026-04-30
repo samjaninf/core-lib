@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Selfless Protector");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have fully embraced the role of selfless "
-        "protector. Your own safety is meaningless—only the safety of those you "
+        "protector. Your own safety is meaningless - only the safety of those you "
         "defend matters. This complete abnegation of self-preservation paradoxically "
         "makes you more effective, as you act without hesitation or fear.");
 

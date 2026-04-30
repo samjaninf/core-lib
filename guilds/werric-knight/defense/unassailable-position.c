@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Unassailable Position");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have learned to establish truly unassailable "
-        "positions—locations so well-defended that attacking them is tactical suicide. "
+        "positions - locations so well-defended that attacking them is tactical suicide. "
         "This combination of positioning and defensive technique creates strongpoints "
         "that can anchor entire defensive lines.");
 

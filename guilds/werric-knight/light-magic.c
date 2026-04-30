@@ -238,7 +238,7 @@ protected void Setup()
     Name("Light Magic");
     Description("This research tree represents the holy powers granted to those "
         "who serve the Oath with absolute dedication. Light Magic emphasizes "
-        "protection, healing, and smiting evil—the divine blessing upon those "
+        "protection, healing, and smiting evil - the divine blessing upon those "
         "who defend the innocent.");
     Source("Werric Knight");
     addResearchElement("/guilds/werric-knight/light/root.c");

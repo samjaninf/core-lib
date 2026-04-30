@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Avatar of Light");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You become an avatar of pure light—a living "
+    addSpecification("description", "You become an avatar of pure light - a living "
         "manifestation of divine power. In this form, you embody the will of the "
         "gods, channeling their power directly.");
 

@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Unshakeable Stance");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You adopt a stance that embodies the absolute "
-        "certainty of the Oath. In this state, you cannot be moved—not physically, "
+        "certainty of the Oath. In this state, you cannot be moved - not physically, "
         "not mentally, not spiritually. You become an anchor point of unwavering "
         "resolve around which chaos breaks and order prevails.");
 

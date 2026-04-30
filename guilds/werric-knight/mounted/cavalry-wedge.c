@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Cavalry Wedge");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You lead a cavalry wedge formation—the "
+    addSpecification("description", "You lead a cavalry wedge formation - the "
         "classic formation for breaking enemy lines. This aggressive formation "
         "concentrates force at a single point for maximum penetration.");
 

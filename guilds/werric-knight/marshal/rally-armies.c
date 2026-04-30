@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "With a rousing call that echoes across the "
         "battlefield, you rally all allied forces to renewed effort. This is the "
-        "power of the Lord Marshal—to turn defeat into victory, to restore hope "
+        "power of the Lord Marshal - to turn defeat into victory, to restore hope "
         "when all seems lost, to inspire impossible feats through sheer force of "
         "leadership.");
 

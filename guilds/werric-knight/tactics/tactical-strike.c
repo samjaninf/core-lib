@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Tactical Strike");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You deliver a strike calculated for maximum "
-        "tactical impact—targeting not just to wound but to disrupt enemy plans, "
+        "tactical impact - targeting not just to wound but to disrupt enemy plans, "
         "create openings for allies, and shift battlefield momentum. This is warfare "
         "as chess, where every move serves a larger strategic purpose.");
 

@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Your Oath compels you to protect those who "
         "cannot protect themselves. You have learned to interpose your shield between "
         "your allies and danger, absorbing blows meant for them. This is the essence "
-        "of what it means to be a Werric Knight—to stand between the innocent and harm.");
+        "of what it means to be a Werric Knight - to stand between the innocent and harm.");
 
     addPrerequisite("guilds/werric-knight/shield/counter-block.c",
         (["type":"research"]));

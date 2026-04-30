@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Protector's Heart");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You possess the Protector's Heart—a spiritual "
+    addSpecification("description", "You possess the Protector's Heart - a spiritual "
         "quality that defines the greatest defenders in history. This is more than "
         "skill or power; it is the fundamental nature of one who places others before "
         "self. Those with the Protector's Heart find strength in protection that "

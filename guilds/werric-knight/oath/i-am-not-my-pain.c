@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "I Am Not My Pain");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "Pain is merely information—a signal that the "
+    addSpecification("description", "Pain is merely information - a signal that the "
         "body is damaged. Through the Oath, you have learned to acknowledge this "
         "information without letting it control you. You fight on regardless of "
         "injury, your duty uncompromised by physical suffering.");

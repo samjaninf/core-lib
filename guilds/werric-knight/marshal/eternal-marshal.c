@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Eternal Marshal");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved the ultimate expression of "
-        "the Lord Marshal's role. Your leadership is eternal—transcending individual "
+        "the Lord Marshal's role. Your leadership is eternal - transcending individual "
         "battles to shape the very course of history. Long after you are gone, your "
         "strategies will be studied, your victories celebrated, your legacy preserved "
         "as the standard against which all future commanders are measured.");

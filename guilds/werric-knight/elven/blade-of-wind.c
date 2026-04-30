@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Blade of the Wind");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "This is the ultimate expression of elven speed "
-        "and precision—a strike so swift that it seems your blade becomes the wind "
+        "and precision - a strike so swift that it seems your blade becomes the wind "
         "itself. Daedrun demonstrated this technique only once, cleaving through a "
         "boulder without the stone realizing it had been cut until the wind shifted "
         "and it fell in two perfect halves.");

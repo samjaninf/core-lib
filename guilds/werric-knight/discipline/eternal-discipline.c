@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Your discipline has become eternal and absolute. "
         "You have perfected the art of self-mastery to such a degree that your "
-        "capabilities approach the divine. You are discipline personified—the "
+        "capabilities approach the divine. You are discipline personified - the "
         "ultimate expression of what can be achieved through unwavering commitment "
         "and relentless training.");
 

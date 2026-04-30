@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Flanking Maneuver");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have mastered the art of flanking—striking "
+    addSpecification("description", "You have mastered the art of flanking - striking "
         "from an unexpected angle to bypass enemy defenses. This technique requires "
         "quick thinking and perfect timing, but when executed properly, it can turn "
         "a defended position into a death trap.");

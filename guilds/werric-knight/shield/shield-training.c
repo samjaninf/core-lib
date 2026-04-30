@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Shield Training");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have begun mastering the fundamentals of "
-        "shield work. Weight distribution, angle management, impact absorption—these "
+        "shield work. Weight distribution, angle management, impact absorption - these "
         "basics form the foundation upon which all defensive mastery is built.");
 
     addPrerequisite("guilds/werric-knight/shield/root.c",

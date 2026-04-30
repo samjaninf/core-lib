@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Sanctified Defense");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "Your defense becomes sanctified—blessed by the "
+    addSpecification("description", "Your defense becomes sanctified - blessed by the "
         "weight of your Oath and the righteousness of your cause. When you invoke "
         "Sanctified Defense, your protective abilities are elevated beyond mere "
         "technique into something approaching the divine. Evil itself recoils from "

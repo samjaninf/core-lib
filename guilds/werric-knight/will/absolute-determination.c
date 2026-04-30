@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Absolute Determination");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "Your determination has become absolute—a force "
+    addSpecification("description", "Your determination has become absolute - a force "
         "of nature that cannot be reasoned with, bargained with, or deterred. When "
         "you commit to a course of action, nothing in existence can turn you from "
         "it. This is determination elevated to its ultimate expression.");

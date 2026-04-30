@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Supreme Cavalry");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You command supreme cavalry prowess. This is "
-        "mounted combat at its absolute pinnacle—unmatched skill, perfect execution, "
+        "mounted combat at its absolute pinnacle - unmatched skill, perfect execution, "
         "and devastating effectiveness.");
 
     addPrerequisite("guilds/werric-knight/mounted/transcendent-rider.c",

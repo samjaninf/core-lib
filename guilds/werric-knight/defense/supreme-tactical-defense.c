@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Supreme Tactical Defense");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You channel supreme tactical defense—the "
+    addSpecification("description", "You channel supreme tactical defense - the "
         "ultimate expression of defensive tactics. Every aspect of your defensive "
         "capabilities is elevated to its highest form, creating a defense that "
         "approaches perfection.");

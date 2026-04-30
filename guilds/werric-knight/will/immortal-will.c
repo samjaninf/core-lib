@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Immortal Will");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Your will has achieved a kind of immortality. "
-        "Even if your body falls, your determination persists. Others can feel it—"
+        "Even if your body falls, your determination persists. Others can feel it - "
         "the unbreakable certainty that radiates from you, the sense that nothing "
         "can truly defeat you because your will exists beyond the limitations of "
         "flesh. Death itself would have to negotiate with your resolve.");

@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Your presence on the battlefield inspires "
         "legendary performance from your troops. When you activate the Marshal's "
         "Presence, all nearby allies feel their spirits lifted, their courage "
-        "strengthened, their skills enhanced. This is leadership at its most pure—"
+        "strengthened, their skills enhanced. This is leadership at its most pure - "
         "the ability to make others greater through your mere presence.");
 
     addPrerequisite("guilds/werric-knight/marshal/strategic-command.c",

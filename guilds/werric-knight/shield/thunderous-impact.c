@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You deliver a shield strike of such tremendous "
         "force that it creates a thunderous shockwave. The impact doesn't just damage "
-        "your target—it reverberates through the battlefield, stunning nearby enemies "
+        "your target - it reverberates through the battlefield, stunning nearby enemies "
         "and demonstrating the overwhelming might of a true master guardian.");
 
     addPrerequisite("guilds/werric-knight/shield/unbreakable-will.c",

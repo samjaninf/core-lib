@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved mastery of the guardian arts. "
         "Your defensive techniques are legendary, your protective instincts honed to "
-        "perfection. You embody the highest ideals of the Werric Knight tradition—the "
+        "perfection. You embody the highest ideals of the Werric Knight tradition - the "
         "selfless protector who places duty above self, who stands between the innocent "
         "and all harm, whose shield never falters.");
 

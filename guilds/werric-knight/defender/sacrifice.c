@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Sacrifice");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "This is the ultimate expression of the "
-        "defender's art—the willingness and ability to sacrifice yourself to save "
+        "defender's art - the willingness and ability to sacrifice yourself to save "
         "another. When you invoke Sacrifice, you absorb damage meant for an ally, "
         "taking wounds that might otherwise be fatal. This is what it means to be "
         "a Defender of the Crown: to place others' lives above your own.");

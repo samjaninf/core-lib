@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Aegis of the Realm");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You manifest the legendary Aegis of the Realm—"
+    addSpecification("description", "You manifest the legendary Aegis of the Realm - "
         "a defensive aura so powerful it extends protection to all nearby allies. "
         "When a Knight Commander invokes the Aegis, they become the shield not just "
         "for one person but for everyone around them. This is leadership through "

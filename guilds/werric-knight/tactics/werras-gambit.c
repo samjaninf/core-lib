@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You execute the legendary tactical maneuver "
         "that won King Werra the Battle of Five Armies. This high-risk, high-reward "
-        "strike commits everything to a single decisive blow—the kind of bold move "
+        "strike commits everything to a single decisive blow - the kind of bold move "
         "that either wins wars or loses them. When executed with proper timing, "
         "it cannot fail.");
 

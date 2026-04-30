@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have successfully integrated elven and "
         "human martial traditions, creating your own hybrid style. The result is "
-        "greater than either tradition alone—combining elven grace with human "
+        "greater than either tradition alone - combining elven grace with human "
         "strength, elven precision with human discipline.");
 
     addPrerequisite("guilds/werric-knight/elven/flowing-water-stance.c",

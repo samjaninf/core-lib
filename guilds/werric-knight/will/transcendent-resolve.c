@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Your resolve has transcended the merely mortal "
         "to touch something divine. You possess a certainty so absolute it borders "
         "on prophetic vision. When you act, you do so with the confidence of one "
-        "who knows the outcome before it occurs—because your will makes it so.");
+        "who knows the outcome before it occurs - because your will makes it so.");
 
     addPrerequisite("guilds/werric-knight/will/shatter-will.c",
         (["type":"research"]));

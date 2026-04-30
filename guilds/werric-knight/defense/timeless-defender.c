@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Your defensive techniques have transcended "
         "temporal limitations. You defend not just in the present moment but across "
-        "time—anticipating attacks before they develop, positioning for threats not "
+        "time - anticipating attacks before they develop, positioning for threats not "
         "yet manifested. This is defense elevated to an art that touches precognition.");
 
     addPrerequisite("guilds/werric-knight/defense/supreme-tactical-defense.c",

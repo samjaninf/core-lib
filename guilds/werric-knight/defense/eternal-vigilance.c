@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Eternal Vigilance");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have achieved eternal vigilance—a state "
+    addSpecification("description", "You have achieved eternal vigilance - a state "
         "where your defensive awareness never lapses, never falters, never fails. "
         "This is the ultimate expression of defensive tactics: perfect, unending, "
         "absolute. Your defenses are as eternal as your dedication to the Oath.");

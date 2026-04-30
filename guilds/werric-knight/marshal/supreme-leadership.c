@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Supreme Leadership");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You channel supreme leadership—the pinnacle "
+    addSpecification("description", "You channel supreme leadership - the pinnacle "
         "of what a Lord Marshal can achieve. Under your command, armies move with "
         "perfect coordination, strategies unfold flawlessly, and victory seems "
         "inevitable. This is leadership elevated to an art form.");

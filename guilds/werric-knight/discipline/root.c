@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Discipline");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You begin your study of Discipline—the art "
+    addSpecification("description", "You begin your study of Discipline - the art "
         "of training mind and body to peak performance. Through rigorous practice "
         "and unwavering commitment, you push beyond normal human limitations.");
 

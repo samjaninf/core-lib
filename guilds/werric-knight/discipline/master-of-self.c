@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Master of Self");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved complete mastery over "
-        "yourself—body, mind, and spirit operate in perfect harmony.");
+        "yourself - body, mind, and spirit operate in perfect harmony.");
 
     addPrerequisite("guilds/werric-knight/discipline/supreme-conditioning.c",
         (["type":"research"]));

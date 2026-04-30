@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Mounted Combat");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You begin your training in mounted combat—the "
+    addSpecification("description", "You begin your training in mounted combat - the "
         "art of fighting from horseback. Hillgarath's knights have always been "
         "renowned cavalry, and this tree represents the mounted warfare techniques "
         "that have won countless battles.");

@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Unyielding Bastion");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have become an unyielding bastion—a defender "
+    addSpecification("description", "You have become an unyielding bastion - a defender "
         "so formidable that enemies despair at the sight of you. Your mere presence "
         "on the battlefield is enough to rally allies and intimidate foes. You are "
         "the wall that does not break, the shield that does not shatter, the guardian "

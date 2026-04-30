@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You execute a grand strategic maneuver that "
         "coordinates all allied forces into a devastating combined assault. This is "
-        "warfare at the highest level—where individual actions combine into something "
+        "warfare at the highest level - where individual actions combine into something "
         "far greater than their sum. Entire battles have been won through a single "
         "well-executed Grand Strategy.");
 

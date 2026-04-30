@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Shield Slam");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have refined the shield bash into something "
-        "far more devastating—a shield slam that can knock enemies off their feet "
+        "far more devastating - a shield slam that can knock enemies off their feet "
         "and send them sprawling. The technique requires perfect timing and tremendous "
         "force, but when executed properly, it can turn the tide of battle in an instant.");
 

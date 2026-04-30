@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "I Am Not My Weakness");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Through the Oath, you have learned to "
-        "transcend physical limitation. Pain, exhaustion, injury—these are "
+        "transcend physical limitation. Pain, exhaustion, injury - these are "
         "conditions of the body, but they do not define you. Your duty remains "
         "constant regardless of your physical state, and through discipline, you "
         "can push beyond what your body alone could endure.");

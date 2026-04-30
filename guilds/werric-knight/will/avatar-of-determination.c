@@ -10,10 +10,10 @@ protected void Setup()
     addSpecification("name", "Avatar of Determination");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You become the living avatar of determination "
-        "itself—the physical embodiment of willpower given form. In this state, you "
+        "itself - the physical embodiment of willpower given form. In this state, you "
         "transcend individual identity to represent something universal and eternal: "
         "the refusal to surrender, the determination to prevail, the will that cannot "
-        "be broken. You are no longer merely yourself—you are the concept of "
+        "be broken. You are no longer merely yourself - you are the concept of "
         "unbreakable resolve made flesh.");
 
     addPrerequisite("guilds/werric-knight/will/immortal-will.c",

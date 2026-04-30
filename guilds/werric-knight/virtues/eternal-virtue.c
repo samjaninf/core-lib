@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Eternal Virtue");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Your virtue has become eternal and absolute. "
-        "You are the living embodiment of knightly ideals—honor, courage, justice, "
+        "You are the living embodiment of knightly ideals - honor, courage, justice, "
         "and mercy perfected and made manifest. Your virtue is a beacon that will "
         "inspire generations.");
 

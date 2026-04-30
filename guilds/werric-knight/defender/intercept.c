@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Intercept");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have mastered the art of interception—"
+    addSpecification("description", "You have mastered the art of interception - "
         "placing yourself between an attack and its intended target with such speed "
         "that it seems you teleport. This technique has saved countless lives, as "
         "a Knight Commander's duty is to take blows meant for others.");

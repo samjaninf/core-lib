@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "For a brief moment, you achieve true invulnerability. "
         "Your shield becomes an absolute barrier that no force can breach, no attack "
         "can penetrate. This technique requires immense concentration and drains you "
-        "significantly, but in that perfect moment, you are untouchable—a living wall "
+        "significantly, but in that perfect moment, you are untouchable - a living wall "
         "that cannot be broken.");
 
     addPrerequisite("guilds/werric-knight/shield/guardians-resilience.c",

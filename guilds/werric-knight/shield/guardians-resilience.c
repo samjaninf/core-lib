@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Your body has been tempered by years of "
         "standing as the shield between danger and innocence. You possess remarkable "
         "resilience, recovering from wounds faster and enduring punishment that would "
-        "fell ordinary warriors. This is the gift of the guardian—the strength to "
+        "fell ordinary warriors. This is the gift of the guardian - the strength to "
         "protect others no matter the cost to oneself.");
 
     addPrerequisite("guilds/werric-knight/shield/retribution-strike.c",

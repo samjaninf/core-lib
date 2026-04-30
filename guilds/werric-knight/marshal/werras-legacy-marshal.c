@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Werra's Legacy");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You embody the complete legacy of King Werra—"
+    addSpecification("description", "You embody the complete legacy of King Werra - "
         "not just his martial prowess or tactical genius, but his vision for what "
         "Hillgarath could become. As Lord Marshal, you carry forward his dream of "
         "a kingdom united by discipline, protected by unwavering dedication, and "

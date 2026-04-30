@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Break the Chains");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "Drawing upon the full power of the Oath, you "
-        "can shatter mental and spiritual bindings. Charm, domination, possession—"
+        "can shatter mental and spiritual bindings. Charm, domination, possession - "
         "all such violations of free will are anathema to one who has willingly "
         "surrendered their will to sacred duty. Your invocation of the Oath breaks "
         "these chains, freeing yourself and nearby allies.");

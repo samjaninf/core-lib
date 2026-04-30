@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Daedrun's Heir");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have achieved what few humans ever have—"
+    addSpecification("description", "You have achieved what few humans ever have - "
         "true mastery of elven martial arts equal to that of the elves themselves. "
         "Daedrun would recognize you as his heir, a worthy bearer of his legacy. "
         "The techniques he brought from Eneldhor live on in you, preserved and "

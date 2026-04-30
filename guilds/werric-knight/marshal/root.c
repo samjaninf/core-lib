@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Lord Marshal's Command");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have achieved the highest rank within the "
-        "Werric Knights—Lord Marshal. This tree represents the pinnacle of military "
+        "Werric Knights - Lord Marshal. This tree represents the pinnacle of military "
         "leadership, the ability to command armies and shape the fate of nations. "
         "These are the abilities used by the legendary commanders who led Hillgarath's "
         "armies to victory against impossible odds.");

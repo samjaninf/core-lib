@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Absolute Defense");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "For a brief moment, you achieve absolute "
-        "defense—a state where no attack can reach you, no matter its source or "
+        "defense - a state where no attack can reach you, no matter its source or "
         "power. This is the pinnacle of defensive tactics, requiring perfect "
         "technique, positioning, and timing.");
 

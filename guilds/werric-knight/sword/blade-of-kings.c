@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Blade of Kings");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "This is the ultimate technique—the pinnacle "
+    addSpecification("description", "This is the ultimate technique - the pinnacle "
         "of centuries of Werric Knight tradition, the crowning achievement of "
         "martial excellence. When you invoke the Blade of Kings, you channel not "
         "just your own skill but the combined legacy of every great knight who came "

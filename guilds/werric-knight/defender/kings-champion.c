@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "King's Champion");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You assume the legendary form of the King's "
-        "Champion—the ultimate defender, blessed with power that transcends mortal "
+        "Champion - the ultimate defender, blessed with power that transcends mortal "
         "limits. In this state, you become what the first defenders were at "
         "Redemption's Gate: the chosen guardian, empowered to stand against any "
         "threat to the Crown. When you invoke the King's Champion, you carry the "

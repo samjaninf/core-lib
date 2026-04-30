@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "You charge forward with your shield leading, "
         "turning your entire body into a battering ram. This devastating rush can "
         "knock enemies aside, break through enemy lines, and deliver crushing impact "
-        "to your target. It is aggression married to defense—a perfect expression "
+        "to your target. It is aggression married to defense - a perfect expression "
         "of Werric Knight philosophy.");
 
     addPrerequisite("guilds/werric-knight/shield/aegis-formation.c",

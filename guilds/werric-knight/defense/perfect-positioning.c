@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Perfect Positioning");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have achieved perfect positioning—always "
+    addSpecification("description", "You have achieved perfect positioning - always "
         "occupying the optimal tactical location for defense. This isn't luck but "
         "the culmination of years of studying terrain, angles of attack, and "
         "battlefield geometry.");

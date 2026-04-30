@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Perfect Discipline");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have achieved perfect discipline—complete "
+    addSpecification("description", "You have achieved perfect discipline - complete "
         "control over every aspect of your being. Your body, mind, and spirit "
         "respond with absolute precision to your will.");
 

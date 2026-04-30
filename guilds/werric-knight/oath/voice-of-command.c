@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "When you speak with the full authority of your "
         "Oath, your voice carries the weight of absolute certainty. This is not mere "
-        "intimidation or persuasion—it is the power of unshakeable conviction made "
+        "intimidation or persuasion - it is the power of unshakeable conviction made "
         "audible. When you command in the name of the Oath, even enemies may find "
         "themselves compelled to hesitate, so powerful is your presence.");
 

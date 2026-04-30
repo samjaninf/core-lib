@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Lance Mastery");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You have mastered the lance—the traditional "
+    addSpecification("description", "You have mastered the lance - the traditional "
         "weapon of mounted knights. In your hands, this weapon becomes devastating "
         "when used from horseback.");
 

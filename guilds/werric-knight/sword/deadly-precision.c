@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Deadly Precision");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "Your strikes have transcended mere accuracy—"
+    addSpecification("description", "Your strikes have transcended mere accuracy - "
         "they have become instruments of inevitable destruction. Every movement is "
         "calculated, every blow purposeful. You have internalized the teaching that "
         "a disciplined blade wastes no motion, and a wasted motion dishonors the Oath.");

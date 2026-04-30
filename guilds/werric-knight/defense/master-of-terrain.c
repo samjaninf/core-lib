@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Master of Terrain");
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have become a master of using terrain "
-        "defensively. Any location becomes defensible in your hands—you can read "
+        "defensively. Any location becomes defensible in your hands - you can read "
         "the tactical possibilities of any terrain instantly and exploit them "
         "with perfect efficiency.");
 

@@ -9,7 +9,7 @@ protected void Setup()
 {
     addSpecification("name", "Defensive Precision");
     addSpecification("source", "Werric Knight");
-    addSpecification("description", "You achieve defensive precision—blocking, "
+    addSpecification("description", "You achieve defensive precision - blocking, "
         "parrying, and evading with minimal effort and maximum effect. Every "
         "defensive action is executed with surgical accuracy, conserving stamina "
         "while maintaining effectiveness.");

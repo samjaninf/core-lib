@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You can impose your will upon reality itself "
         "in a limited way, compelling events to unfold according to your determination. "
-        "This is not magic—it is pure will made so powerful it can influence the "
+        "This is not magic - it is pure will made so powerful it can influence the "
         "world directly. When you invoke this ability, your allies feel strengthened "
         "and your enemies feel weakened, as reality bends to accommodate your resolve.");
 

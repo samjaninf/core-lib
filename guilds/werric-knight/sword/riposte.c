@@ -38,33 +38,10 @@ protected void Setup()
             "probability": 10,
             "base damage": 40,
             "range": 80
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 
-    addSpecification("damage hit points", ({ ([
-            "probability":90,
-            "base damage": 20,
-            "range": 35
-        ]),
-        ([
-            "probability": 10,
-            "base damage": 40,
-            "range": 70
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
-        ])
-    }));
-
+    
     addSpecification("damage type", "physical");
     addSpecification("cooldown", 18);
     addSpecification("command template", "riposte [at ##Target##]");
@@ -129,12 +106,6 @@ protected void Setup()
             "name":"intelligence",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 }

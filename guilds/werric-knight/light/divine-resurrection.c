@@ -27,17 +27,11 @@ protected void Setup()
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::channel:: "
         "divine resurrection, restoring ##TargetName## to full vitality!");
 
-    addSpecification("heal hit points", ({ ([
+    addSpecification("increase hit points", ({ ([
         "probability":100,
         "base damage":500,
         "range":200
-    ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     
     addSpecification("modifiers", ({
@@ -68,12 +62,6 @@ protected void Setup()
             "name":"charisma",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

@@ -32,7 +32,7 @@ protected void Setup()
     addSpecification("bonus defense", 8);
     addSpecification("bonus armor class", 5);
     addSpecification("bonus constitution", 2);
-    addSpecification("penalty to movement", 3);
+    
 
     addSpecification("command template", "form of the mountain");
     addSpecification("use ability activate message", "##InitiatorName## "

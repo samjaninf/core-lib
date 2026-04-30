@@ -36,13 +36,7 @@ protected void Setup()
         "probability":20,
         "base damage":20,
         "range":35
-    ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     addSpecification("damage type", "radiant");
 
@@ -92,12 +86,6 @@ protected void Setup()
             "name":"intelligence",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

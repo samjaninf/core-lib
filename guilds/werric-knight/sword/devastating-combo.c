@@ -39,33 +39,10 @@ protected void Setup()
             "probability": 10,
             "base damage": 65,
             "range": 130
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 
-    addSpecification("damage hit points", ({ ([
-            "probability":90,
-            "base damage": 35,
-            "range": 60
-        ]),
-        ([
-            "probability": 10,
-            "base damage": 70,
-            "range": 120
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
-        ])
-    }));
-
+    
     addSpecification("damage type", "physical");
     addSpecification("cooldown", 35);
     addSpecification("command template", "devastating combo [at ##Target##]");
@@ -130,12 +107,6 @@ protected void Setup()
             "name":"intelligence",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 }

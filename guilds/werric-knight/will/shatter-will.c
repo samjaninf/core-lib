@@ -1,0 +1,52 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/modules/research/instantaneousActiveResearchItem.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    addSpecification("name", "Shatter Will");
+    addSpecification("source", "Werric Knight");
+    addSpecification("description", "You can project your superior will directly "
+        "into an opponent's mind, shattering their resolve through sheer force of "
+        "determination. Those struck by this technique often find themselves unable "
+        "to continue fighting, their confidence destroyed by the overwhelming weight "
+        "of your conviction.");
+
+    addPrerequisite("guilds/werric-knight/will/absolute-determination.c",
+        (["type":"research"]));
+    addPrerequisite("/guilds/werric-knight/werric-knight.c",
+        (["type":"guild", "level":27]));
+
+    addSpecification("scope", "targeted");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("cooldown", 120);
+    addSpecification("spell point cost", 125);
+    addSpecification("stamina point cost", 100);
+    addSpecification("command template", "shatter will of ##Target##");
+    addSpecification("use ability message", "##InitiatorName## ##Infinitive::project:: "
+        "overwhelming will at ##TargetName##, shattering ##TargetPossessive## resolve!");
+
+    addSpecification("damage type", "psionic");
+    addSpecification("damage hit points", ({ ([
+        "probability":70,
+        "base damage":130,
+        "range":100
+    ]),
+    ([
+        "probability":30,
+        "base damage":200,
+        "range":130
+    ]) }));
+    
+    addSpecification("modifiers", ({
+        ([
+            "type":"skill",`r`n            "name":"willpower",
+            "formula":"additive",
+            "rate":0.35
+        ])
+    }));
+}

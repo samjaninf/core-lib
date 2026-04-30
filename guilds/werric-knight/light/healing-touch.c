@@ -26,7 +26,7 @@ protected void Setup()
     addSpecification("use ability message", "##InitiatorName##'s touch ##Infinitive::radiate:: "
         "healing light, mending ##TargetName##'s wounds!");
 
-    addSpecification("heal hit points", ({ ([
+    addSpecification("increase hit points", ({ ([
         "probability":80,
         "base damage":50,
         "range":40
@@ -35,13 +35,7 @@ protected void Setup()
         "probability":20,
         "base damage":80,
         "range":50
-    ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     
     addSpecification("modifiers", ({
@@ -72,12 +66,6 @@ protected void Setup()
             "name":"charisma",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

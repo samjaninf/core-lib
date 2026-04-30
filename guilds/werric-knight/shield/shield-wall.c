@@ -27,15 +27,9 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("stamina point cost", 10);
-    addSpecification("stamina point cost modifiers", ([
-        "/guilds/werric-knight/shield/defensive-mastery.c": 5
-    ]));
-
     addSpecification("bonus shield", 5);
     addSpecification("bonus defense", 10);
     addSpecification("bonus armor class", 5);
-    addSpecification("penalty to movement", 2);
-
     addSpecification("modifiers", ({ 
         ([
             "type":"skill",

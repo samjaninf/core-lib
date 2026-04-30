@@ -19,9 +19,6 @@ protected void Setup()
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
         (["type":"guild", "level":27]));
-
-    addSpecification("limited by", (["equipment"]));
-
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -19,9 +19,6 @@ protected void Setup()
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
         (["type":"guild", "level":25]));
-
-    addSpecification("limited by", (["equipment"]));
-
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -47,13 +44,7 @@ protected void Setup()
         "probability":10,
         "base damage":160,
         "range":240
-    ]),
-        ([
-            "type":"skill",
-            "name":"perception",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
 
     addSpecification("modifiers", ({
@@ -102,12 +93,6 @@ protected void Setup()
             "name":"strength",
             "formula":"additive",
             "rate":0.25
-        ]),
-        ([
-            "type":"skill",
-            "name":"perception",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

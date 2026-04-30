@@ -28,12 +28,6 @@ protected void Setup()
     addSpecification("research cost", 1);
     addSpecification("stamina point cost", 100);
     addSpecification("spell point cost", 50);
-
-    addSpecification("apply as bonus", 1);
-    addSpecification("bonus defense", 20);
-    addSpecification("bonus armor class", 10);
-    addSpecification("duration", 30);
-
     addSpecification("cooldown", 120);
     addSpecification("command template", "bulwark");
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::become## "
@@ -53,12 +47,6 @@ protected void Setup()
             "name":"strength",
             "formula":"additive",
             "rate":0.25
-        ]),
-        ([
-            "type":"attribute",
-            "name":"constitution",
-            "formula":"additive",
-            "rate":0.15
         ])
     }));
 }

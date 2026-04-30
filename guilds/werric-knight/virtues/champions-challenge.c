@@ -16,8 +16,6 @@ protected void Setup()
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
         (["type":"guild", "level":13]));
-
-    addSpecification("limited by", (["equipment"]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -36,13 +34,7 @@ protected void Setup()
         "probability":25,
         "base damage":110,
         "range":80
-    ]),
-        ([
-            "type":"skill",
-            "name":"etiquette",
-            "formula":"additive",
-            "rate":0.05
-        ])
+    ])
     }));
     addSpecification("damage type", "physical");
 
@@ -77,12 +69,6 @@ protected void Setup()
         ([
             "type":"attribute",
             "name":"charisma", "formula":"additive", "rate": 0.25
-        ]),
-        ([
-            "type":"skill",
-            "name":"etiquette",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 }

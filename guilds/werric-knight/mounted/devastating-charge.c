@@ -17,8 +17,6 @@ protected void Setup()
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
         (["type":"guild", "level":40]));
-
-    addSpecification("limited by", (["equipment"]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -37,13 +35,7 @@ protected void Setup()
         "probability":35,
         "base damage":70,
         "range":120
-    ]),
-        ([
-            "type":"skill",
-            "name":"animal handling",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     addSpecification("damage type", "physical");
 
@@ -93,12 +85,6 @@ protected void Setup()
             "name":"dexterity",
             "formula":"additive",
             "rate":0.25
-        ]),
-        ([
-            "type":"skill",
-            "name":"animal handling",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

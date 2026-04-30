@@ -26,7 +26,7 @@ protected void Setup()
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::channel:: "
         "healing light to all nearby allies!");
 
-    addSpecification("heal hit points", ({ ([
+    addSpecification("increase hit points", ({ ([
         "probability":75,
         "base damage":80,
         "range":70
@@ -35,13 +35,7 @@ protected void Setup()
         "probability":25,
         "base damage":120,
         "range":90
-    ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     
     addSpecification("modifiers", ({
@@ -72,12 +66,6 @@ protected void Setup()
             "name":"charisma",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

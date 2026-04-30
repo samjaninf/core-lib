@@ -37,33 +37,10 @@ protected void Setup()
             "probability": 10,
             "base damage": 35,
             "range": 70
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 
-    addSpecification("damage hit points", ({ ([
-            "probability":90,
-            "base damage": 15,
-            "range": 25
-        ]),
-        ([
-            "probability": 10,
-            "base damage": 30,
-            "range": 50
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
-        ])
-    }));
-
+    
     addSpecification("damage type", "physical");
     addSpecification("cooldown", 15);
     addSpecification("command template", "perfect strike [at ##Target##]");
@@ -136,12 +113,6 @@ protected void Setup()
             "name":"intelligence",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 }

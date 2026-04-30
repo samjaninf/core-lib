@@ -39,33 +39,10 @@ protected void Setup()
             "probability": 10,
             "base damage": 50,
             "range": 100
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 
-    addSpecification("damage hit points", ({ ([
-            "probability":90,
-            "base damage": 25,
-            "range": 40
-        ]),
-        ([
-            "probability": 10,
-            "base damage": 50,
-            "range": 80
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
-        ])
-    }));
-
+    
     addSpecification("damage type", "physical");
     addSpecification("cooldown", 25);
     addSpecification("command template", "crossed swords [at ##Target##]");
@@ -130,12 +107,6 @@ protected void Setup()
             "name":"intelligence",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"linguistics",
-            "formula":"additive",
-            "rate":0.05
         ])
     }));
 }

@@ -26,7 +26,7 @@ protected void Setup()
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::channel:: "
         "divine light to heal ##TargetName##!");
 
-    addSpecification("heal hit points", ({ ([
+    addSpecification("increase hit points", ({ ([
         "probability":85,
         "base damage":20,
         "range":20
@@ -35,13 +35,7 @@ protected void Setup()
         "probability":15,
         "base damage":35,
         "range":25
-    ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     
     addSpecification("modifiers", ({
@@ -72,12 +66,6 @@ protected void Setup()
             "name":"charisma",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

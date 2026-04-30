@@ -33,13 +33,7 @@ protected void Setup()
         "probability":20,
         "base damage":40,
         "range":70
-    ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     addSpecification("damage type", "radiant");
     addSpecification("command template", "smite ##Target##");
@@ -92,12 +86,6 @@ protected void Setup()
             "name":"intelligence",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"skill",
-            "name":"theology",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

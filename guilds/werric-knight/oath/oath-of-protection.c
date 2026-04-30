@@ -26,11 +26,6 @@ protected void Setup()
     addSpecification("research cost", 1);
     addSpecification("spell point cost", 75);
     addSpecification("stamina point cost", 50);
-
-    addSpecification("apply as bonus", 1);
-    addSpecification("bonus armor class", 15);
-    addSpecification("duration", 60);
-
     addSpecification("cooldown", 180);
     addSpecification("command template", "oath of protection [on ##Target##]");
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::swear## "
@@ -42,12 +37,6 @@ protected void Setup()
             "name":"willpower",
             "formula":"additive",
             "rate":0.30
-        ]),
-        ([
-            "type":"attribute",
-            "name":"wisdom",
-            "formula":"additive",
-            "rate":0.20
         ])
     }));
 }

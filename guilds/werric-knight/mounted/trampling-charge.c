@@ -36,13 +36,7 @@ protected void Setup()
         "probability":25,
         "base damage":50,
         "range":80
-    ]),
-        ([
-            "type":"skill",
-            "name":"animal handling",
-            "formula":"additive",
-            "rate":0.1
-        ])
+    ])
     }));
     addSpecification("damage type", "physical");
 
@@ -100,12 +94,6 @@ protected void Setup()
             "name":"dexterity",
             "formula":"additive",
             "rate":0.25
-        ]),
-        ([
-            "type":"skill",
-            "name":"animal handling",
-            "formula":"additive",
-            "rate":0.1
         ])
     }));
 }

@@ -17,9 +17,6 @@ protected void Setup()
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
         (["type":"guild", "level":5]));
-
-    addSpecification("limited by", (["equipment"]));
-
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -94,12 +91,6 @@ protected void Setup()
             "name":"constitution",
             "formula":"additive",
             "rate":0.25
-        ]),
-        ([
-            "type":"attribute",
-            "name":"dexterity",
-            "formula":"additive",
-            "rate":0.025
         ])
     }));
 }

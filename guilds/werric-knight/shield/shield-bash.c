@@ -40,18 +40,7 @@ protected void Setup()
         ])
     }));
 
-    addSpecification("damage hit points", ({ ([
-            "probability":90,
-            "base damage": 8,
-            "range": 15
-        ]),
-        ([
-            "probability": 10,
-            "base damage": 15,
-            "range": 30
-        ])
-    }));
-
+    
     addSpecification("damage type", "physical");
     addSpecification("cooldown", 15);
     addSpecification("command template", "shield bash [at ##Target##]");
@@ -96,12 +85,6 @@ protected void Setup()
         ([
             "type":"attribute",
             "name":"strength",
-            "formula":"additive",
-            "rate":0.25
-        ]),
-        ([
-            "type":"attribute",
-            "name":"constitution",
             "formula":"additive",
             "rate":0.25
         ])

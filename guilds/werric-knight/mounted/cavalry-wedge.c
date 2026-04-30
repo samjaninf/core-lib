@@ -30,5 +30,5 @@ protected void Setup()
 
     addSpecification("bonus attack", 5);
     addSpecification("bonus damage", 4);
-    addSpecification("penalty defense", 2);
+    addSpecification("penalty to defense", 2);
 }

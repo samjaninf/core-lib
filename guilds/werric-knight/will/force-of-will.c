@@ -69,12 +69,6 @@ protected void Setup()
             "name":"wisdom",
             "formula":"additive",
             "rate":0.15
-        ]),
-        ([
-            "type":"attribute",
-            "name":"charisma",
-            "formula":"additive",
-            "rate":0.25
         ])
     }));
 }

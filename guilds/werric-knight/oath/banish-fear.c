@@ -35,12 +35,6 @@ protected void Setup()
             "name":"willpower",
             "formula":"additive",
             "rate":0.30
-        ]),
-        ([
-            "type":"attribute",
-            "name":"wisdom",
-            "formula":"additive",
-            "rate":0.20
         ])
     }));
 }

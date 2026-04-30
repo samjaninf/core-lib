@@ -266,7 +266,7 @@ private int isValidEffect(mapping effectMap)
 {
     int ret = 0;
     string *validEffects = ({ "opinion", "attack", "move", "give", "vanish",
-        "experience", "join" });
+        "experience", "join", "trait" });
     string *effects = m_indices(effectMap);
     if (sizeof(effects))
     {
@@ -293,6 +293,7 @@ private int isValidEffect(mapping effectMap)
                 }
                 case "move":
                 case "give":
+                case "trait":
                 {
                     ret &&= stringp(effectMap[effect]) &&
                         file_size(effectMap[effect]) &&
@@ -562,6 +563,10 @@ private nomask void executeResponseEffect(mapping effects,
                     effects["experience"]), "level up", "score", 
                 colorConfiguration));
         }
+    }
+    if (member(effects, "trait"))
+    {
+        actor->addTrait(effects["trait"]);
     }
 }
 

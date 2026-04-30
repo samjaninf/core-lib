@@ -43,7 +43,7 @@ protected void Setup()
             "rate":0.1
         ])
     }));
-    addSpecification("damage type", "good");
+    addSpecification("damage type", "radiant");
 
     addSpecification("modifiers", ({
         ([

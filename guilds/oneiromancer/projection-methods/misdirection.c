@@ -75,7 +75,7 @@ protected void Setup()
         ]),
         ([
             "type": "skill",
-            "name": "hiding",
+            "name":"hide",
             "formula": "additive",
             "rate": 0.10
         ]),

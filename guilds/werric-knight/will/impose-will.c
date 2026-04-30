@@ -40,7 +40,7 @@ protected void Setup()
         ]),
         ([
             "type":"skill",
-            "name":"philosophy",
+            "name":"willpower",
             "formula":"additive",
             "rate":0.1
         ])

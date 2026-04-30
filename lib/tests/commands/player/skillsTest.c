@@ -184,22 +184,25 @@ void CrFlagOnlyDisplaysCraftingSkills()
 /////////////////////////////////////////////////////////////////////////////
 void EruditeFlagOnlyDisplaysEruditeSkills()
 {
-    Player.addSkillPoints(199);
+    Player.addSkillPoints(259);
     PrepSkillsOfType("erudite");
 
     string message = "\n+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ Erudite Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Anatomy and physiology", 0, "", "Ancient history", 1, "") +
         sprintf(SkillsRow, "Astronomy", 2, "", "Chemistry", 3, "") +
-        sprintf(SkillsRow, "Engineering", 4, "", "Geology", 5, "") +
-        sprintf(SkillsRow, "Herbalism", 6, "", "Linguistics", 7, "") +
-        sprintf(SkillsRow, "Local history", 8, "", "Logistics", 9, "") +
-        sprintf(SkillsRow, "Mathematics", 0, "", "Nautical warfare", 1, "") +
-        sprintf(SkillsRow, "Navigation", 2, "", "Overland warfare", 3, "") +
-        sprintf(SkillsRow, "Perception", 4, "", "Philosophy", 5, "") +
-        sprintf(SkillsRow, "Physics", 6, "", "Reading", 7, "") +
-        sprintf(SkillsRow, "Spellcraft", 8, "", "Strategy", 9, "") +
-        sprintf(SkillsRow, "Tactics", 0, "", "Theology", 1, "") +
-        sprintf(SkillsRow, "Writing", 2, "", "Zoology", 3, "") +
+        sprintf(SkillsRow, "Combat tactics", 4, "", "Concentration", 5, "") +
+        sprintf(SkillsRow, "Engineering", 6, "", "Geology", 7, "") +
+        sprintf(SkillsRow, "Healing", 8, "", "Herbalism", 9, "") +
+        sprintf(SkillsRow, "Linguistics", 0, "", "Local history", 1, "") +
+        sprintf(SkillsRow, "Logistics", 2, "", "Mathematics", 3, "") +
+        sprintf(SkillsRow, "Meditation", 4, "", "Nautical warfare", 5, "") +
+        sprintf(SkillsRow, "Navigation", 6, "", "Overland warfare", 7, "") +
+        sprintf(SkillsRow, "Perception", 8, "", "Philosophy", 9, "") +
+        sprintf(SkillsRow, "Physics", 0, "", "Reading", 1, "") +
+        sprintf(SkillsRow, "Spellcraft", 2, "", "Strategy", 3, "") +
+        sprintf(SkillsRow, "Tactics", 4, "", "Theology", 5, "") +
+        sprintf(SkillsRow, "Willpower", 6, "", "Writing", 7, "") +
+        sprintf(HalfRow, "Zoology", 8, "", "") +
         EndBar + sprintf(SkillPoints, 7);
 
     ExpectTrue(Player.executeCommand("skills -erudite"));
@@ -209,22 +212,25 @@ void EruditeFlagOnlyDisplaysEruditeSkills()
 /////////////////////////////////////////////////////////////////////////////
 void EFlagOnlyDisplaysEruditeSkills()
 {
-    Player.addSkillPoints(200);
+    Player.addSkillPoints(260);
     PrepSkillsOfType("erudite");
 
     string message = "\n+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ Erudite Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Anatomy and physiology", 0, "", "Ancient history", 1, "") +
         sprintf(SkillsRow, "Astronomy", 2, "", "Chemistry", 3, "") +
-        sprintf(SkillsRow, "Engineering", 4, "", "Geology", 5, "") +
-        sprintf(SkillsRow, "Herbalism", 6, "", "Linguistics", 7, "") +
-        sprintf(SkillsRow, "Local history", 8, "", "Logistics", 9, "") +
-        sprintf(SkillsRow, "Mathematics", 0, "", "Nautical warfare", 1, "") +
-        sprintf(SkillsRow, "Navigation", 2, "", "Overland warfare", 3, "") +
-        sprintf(SkillsRow, "Perception", 4, "", "Philosophy", 5, "") +
-        sprintf(SkillsRow, "Physics", 6, "", "Reading", 7, "") +
-        sprintf(SkillsRow, "Spellcraft", 8, "", "Strategy", 9, "") +
-        sprintf(SkillsRow, "Tactics", 0, "", "Theology", 1, "") +
-        sprintf(SkillsRow, "Writing", 2, "", "Zoology", 3, "") +
+        sprintf(SkillsRow, "Combat tactics", 4, "", "Concentration", 5, "") +
+        sprintf(SkillsRow, "Engineering", 6, "", "Geology", 7, "") +
+        sprintf(SkillsRow, "Healing", 8, "", "Herbalism", 9, "") +
+        sprintf(SkillsRow, "Linguistics", 0, "", "Local history", 1, "") +
+        sprintf(SkillsRow, "Logistics", 2, "", "Mathematics", 3, "") +
+        sprintf(SkillsRow, "Meditation", 4, "", "Nautical warfare", 5, "") +
+        sprintf(SkillsRow, "Navigation", 6, "", "Overland warfare", 7, "") +
+        sprintf(SkillsRow, "Perception", 8, "", "Philosophy", 9, "") +
+        sprintf(SkillsRow, "Physics", 0, "", "Reading", 1, "") +
+        sprintf(SkillsRow, "Spellcraft", 2, "", "Strategy", 3, "") +
+        sprintf(SkillsRow, "Tactics", 4, "", "Theology", 5, "") +
+        sprintf(SkillsRow, "Willpower", 6, "", "Writing", 7, "") +
+        sprintf(HalfRow, "Zoology", 8, "", "") +
         EndBar + sprintf(SkillPoints, 8);
 
     ExpectTrue(Player.executeCommand("skills -e"));
@@ -274,7 +280,7 @@ void SFlagOnlyDisplaysSubterfugeSkills()
 /////////////////////////////////////////////////////////////////////////////
 void GeneralFlagOnlyDisplaysGeneralSkills()
 {
-    Player.addSkillPoints(110);
+    Player.addSkillPoints(146);
     PrepSkillsOfType("general");
 
     string message = "\n+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ General Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
@@ -282,10 +288,11 @@ void GeneralFlagOnlyDisplaysGeneralSkills()
         sprintf(SkillsRow, "Barter", 2, "", "Camp skills", 3, "") +
         sprintf(SkillsRow, "Cooking", 4, "", "Diplomacy", 5, "") +
         sprintf(SkillsRow, "Etiquette", 6, "", "Forestry", 7, "") +
-        sprintf(SkillsRow, "Hunting", 8, "", "Intimidation", 9, "") +
-        sprintf(SkillsRow, "Nautical skills", 0, "", "Persuasion", 1, "") +
-        sprintf(SkillsRow, "Rope skills", 2, "", "Swimming", 3, "") +
-        sprintf(HalfRow, "Weather sense", 4, "", "") +
+        sprintf(SkillsRow, "Hunting", 8, "", "Insight", 9, "") +
+        sprintf(SkillsRow, "Intimidation", 0, "", "Leadership", 1, "") +
+        sprintf(SkillsRow, "Nautical skills", 2, "", "Persuasion", 3, "") +
+        sprintf(SkillsRow, "Riding", 4, "", "Rope skills", 5, "") +
+        sprintf(SkillsRow, "Swimming", 6, "", "Weather sense", 7, "") +
         EndBar + sprintf(SkillPoints, 0);
 
     ExpectTrue(Player.executeCommand("skills -general"));
@@ -295,7 +302,7 @@ void GeneralFlagOnlyDisplaysGeneralSkills()
 /////////////////////////////////////////////////////////////////////////////
 void GFlagOnlyDisplaysGeneralSkills()
 {
-    Player.addSkillPoints(110);
+    Player.addSkillPoints(146);
     PrepSkillsOfType("general");
 
     string message = "\n+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ General Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
@@ -303,10 +310,11 @@ void GFlagOnlyDisplaysGeneralSkills()
         sprintf(SkillsRow, "Barter", 2, "", "Camp skills", 3, "") +
         sprintf(SkillsRow, "Cooking", 4, "", "Diplomacy", 5, "") +
         sprintf(SkillsRow, "Etiquette", 6, "", "Forestry", 7, "") +
-        sprintf(SkillsRow, "Hunting", 8, "", "Intimidation", 9, "") +
-        sprintf(SkillsRow, "Nautical skills", 0, "", "Persuasion", 1, "") +
-        sprintf(SkillsRow, "Rope skills", 2, "", "Swimming", 3, "") +
-        sprintf(HalfRow, "Weather sense", 4, "", "") +
+        sprintf(SkillsRow, "Hunting", 8, "", "Insight", 9, "") +
+        sprintf(SkillsRow, "Intimidation", 0, "", "Leadership", 1, "") +
+        sprintf(SkillsRow, "Nautical skills", 2, "", "Persuasion", 3, "") +
+        sprintf(SkillsRow, "Riding", 4, "", "Rope skills", 5, "") +
+        sprintf(SkillsRow, "Swimming", 6, "", "Weather sense", 7, "") +
         EndBar + sprintf(SkillPoints, 0);
 
     ExpectTrue(Player.executeCommand("skills -g"));
@@ -400,7 +408,7 @@ void LFlagOnlyDisplaysLanguageSkills()
 /////////////////////////////////////////////////////////////////////////////
 void AllFlagDisplaysAllSkills()
 {
-    Player.addSkillPoints(1090);
+    Player.addSkillPoints(1186);
     PrepSkillsOfType("combat");
     PrepSkillsOfType("crafting");
     PrepSkillsOfType("erudite");
@@ -444,26 +452,30 @@ void AllFlagDisplaysAllSkills()
     message += "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ Erudite Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Anatomy and physiology", 0, "", "Ancient history", 1, "") +
         sprintf(SkillsRow, "Astronomy", 2, "", "Chemistry", 3, "") +
-        sprintf(SkillsRow, "Engineering", 4, "", "Geology", 5, "") +
-        sprintf(SkillsRow, "Herbalism", 6, "", "Linguistics", 7, "") +
-        sprintf(SkillsRow, "Local history", 8, "", "Logistics", 9, "") +
-        sprintf(SkillsRow, "Mathematics", 0, "", "Nautical warfare", 1, "") +
-        sprintf(SkillsRow, "Navigation", 2, "", "Overland warfare", 3, "") +
-        sprintf(SkillsRow, "Perception", 4, "", "Philosophy", 5, "") +
-        sprintf(SkillsRow, "Physics", 6, "", "Reading", 7, "") +
-        sprintf(SkillsRow, "Spellcraft", 8, "", "Strategy", 9, "") +
-        sprintf(SkillsRow, "Tactics", 0, "", "Theology", 1, "") +
-        sprintf(SkillsRow, "Writing", 2, "", "Zoology", 3, "");
+        sprintf(SkillsRow, "Combat tactics", 4, "", "Concentration", 5, "") +
+        sprintf(SkillsRow, "Engineering", 6, "", "Geology", 7, "") +
+        sprintf(SkillsRow, "Healing", 8, "", "Herbalism", 9, "") +
+        sprintf(SkillsRow, "Linguistics", 0, "", "Local history", 1, "") +
+        sprintf(SkillsRow, "Logistics", 2, "", "Mathematics", 3, "") +
+        sprintf(SkillsRow, "Meditation", 4, "", "Nautical warfare", 5, "") +
+        sprintf(SkillsRow, "Navigation", 6, "", "Overland warfare", 7, "") +
+        sprintf(SkillsRow, "Perception", 8, "", "Philosophy", 9, "") +
+        sprintf(SkillsRow, "Physics", 0, "", "Reading", 1, "") +
+        sprintf(SkillsRow, "Spellcraft", 2, "", "Strategy", 3, "") +
+        sprintf(SkillsRow, "Tactics", 4, "", "Theology", 5, "") +
+        sprintf(SkillsRow, "Willpower", 6, "", "Writing", 7, "") +
+        sprintf(HalfRow, "Zoology", 8, "", "");
 
     message += "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ General Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Agriculture", 0, "", "Animal handling", 1, "") +
         sprintf(SkillsRow, "Barter", 2, "", "Camp skills", 3, "") +
         sprintf(SkillsRow, "Cooking", 4, "", "Diplomacy", 5, "") +
         sprintf(SkillsRow, "Etiquette", 6, "", "Forestry", 7, "") +
-        sprintf(SkillsRow, "Hunting", 8, "", "Intimidation", 9, "") +
-        sprintf(SkillsRow, "Nautical skills", 0, "", "Persuasion", 1, "") +
-        sprintf(SkillsRow, "Rope skills", 2, "", "Swimming", 3, "") +
-        sprintf(HalfRow, "Weather sense", 4, "", "");
+        sprintf(SkillsRow, "Hunting", 8, "", "Insight", 9, "") +
+        sprintf(SkillsRow, "Intimidation", 0, "", "Leadership", 1, "") +
+        sprintf(SkillsRow, "Nautical skills", 2, "", "Persuasion", 3, "") +
+        sprintf(SkillsRow, "Riding", 4, "", "Rope skills", 5, "") +
+        sprintf(SkillsRow, "Swimming", 6, "", "Weather sense", 7, "");
 
     message += "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ Language Skills +=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Andurathi", 0, "", "Common", 1, "") +
@@ -502,7 +514,7 @@ void AllFlagDisplaysAllSkills()
 /////////////////////////////////////////////////////////////////////////////
 void NoFlagDisplaysAllSkills()
 {
-    Player.addSkillPoints(1100);
+    Player.addSkillPoints(1196);
     PrepSkillsOfType("combat");
     PrepSkillsOfType("crafting");
     PrepSkillsOfType("erudite");
@@ -546,26 +558,30 @@ void NoFlagDisplaysAllSkills()
     message += "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ Erudite Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Anatomy and physiology", 0, "", "Ancient history", 1, "") +
         sprintf(SkillsRow, "Astronomy", 2, "", "Chemistry", 3, "") +
-        sprintf(SkillsRow, "Engineering", 4, "", "Geology", 5, "") +
-        sprintf(SkillsRow, "Herbalism", 6, "", "Linguistics", 7, "") +
-        sprintf(SkillsRow, "Local history", 8, "", "Logistics", 9, "") +
-        sprintf(SkillsRow, "Mathematics", 0, "", "Nautical warfare", 1, "") +
-        sprintf(SkillsRow, "Navigation", 2, "", "Overland warfare", 3, "") +
-        sprintf(SkillsRow, "Perception", 4, "", "Philosophy", 5, "") +
-        sprintf(SkillsRow, "Physics", 6, "", "Reading", 7, "") +
-        sprintf(SkillsRow, "Spellcraft", 8, "", "Strategy", 9, "") +
-        sprintf(SkillsRow, "Tactics", 0, "", "Theology", 1, "") +
-        sprintf(SkillsRow, "Writing", 2, "", "Zoology", 3, "");
+        sprintf(SkillsRow, "Combat tactics", 4, "", "Concentration", 5, "") +
+        sprintf(SkillsRow, "Engineering", 6, "", "Geology", 7, "") +
+        sprintf(SkillsRow, "Healing", 8, "", "Herbalism", 9, "") +
+        sprintf(SkillsRow, "Linguistics", 0, "", "Local history", 1, "") +
+        sprintf(SkillsRow, "Logistics", 2, "", "Mathematics", 3, "") +
+        sprintf(SkillsRow, "Meditation", 4, "", "Nautical warfare", 5, "") +
+        sprintf(SkillsRow, "Navigation", 6, "", "Overland warfare", 7, "") +
+        sprintf(SkillsRow, "Perception", 8, "", "Philosophy", 9, "") +
+        sprintf(SkillsRow, "Physics", 0, "", "Reading", 1, "") +
+        sprintf(SkillsRow, "Spellcraft", 2, "", "Strategy", 3, "") +
+        sprintf(SkillsRow, "Tactics", 4, "", "Theology", 5, "") +
+        sprintf(SkillsRow, "Willpower", 6, "", "Writing", 7, "") +
+        sprintf(HalfRow, "Zoology", 8, "", "");
 
     message += "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ General Skills +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Agriculture", 0, "", "Animal handling", 1, "") +
         sprintf(SkillsRow, "Barter", 2, "", "Camp skills", 3, "") +
         sprintf(SkillsRow, "Cooking", 4, "", "Diplomacy", 5, "") +
         sprintf(SkillsRow, "Etiquette", 6, "", "Forestry", 7, "") +
-        sprintf(SkillsRow, "Hunting", 8, "", "Intimidation", 9, "") +
-        sprintf(SkillsRow, "Nautical skills", 0, "", "Persuasion", 1, "") +
-        sprintf(SkillsRow, "Rope skills", 2, "", "Swimming", 3, "") +
-        sprintf(HalfRow, "Weather sense", 4, "", "");
+        sprintf(SkillsRow, "Hunting", 8, "", "Insight", 9, "") +
+        sprintf(SkillsRow, "Intimidation", 0, "", "Leadership", 1, "") +
+        sprintf(SkillsRow, "Nautical skills", 2, "", "Persuasion", 3, "") +
+        sprintf(SkillsRow, "Riding", 4, "", "Rope skills", 5, "") +
+        sprintf(SkillsRow, "Swimming", 6, "", "Weather sense", 7, "");
 
     message += "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=+ Language Skills +=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n" +
         sprintf(SkillsRow, "Andurathi", 0, "", "Common", 1, "") +

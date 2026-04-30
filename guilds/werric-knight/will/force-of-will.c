@@ -54,13 +54,13 @@ protected void Setup()
         ]),
         ([
             "type":"skill",
-            "name":"intimidation",
+            "name":"meditation",
             "formula":"additive",
             "rate":0.10
         ]),
         ([
             "type":"skill",
-            "name":"philosophy",
+            "name":"willpower",
             "formula":"additive",
             "rate":0.10
         ]),

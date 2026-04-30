@@ -69,13 +69,13 @@ protected void Setup()
         ]),
         ([
             "type": "skill",
-            "name": "hiding",
+            "name":"hide",
             "formula": "additive",
             "rate": 0.15
         ]),
         ([
             "type": "skill",
-            "name": "stealth",
+            "name":"move silently",
             "formula": "additive",
             "rate": 0.10
         ]),

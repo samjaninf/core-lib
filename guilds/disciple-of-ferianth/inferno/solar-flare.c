@@ -102,7 +102,7 @@ protected void Setup()
         ]),
         ([
             "type": "skill",
-            "name": "elemental light",
+            "name": "spellcraft",
             "formula": "additive",
             "rate": 0.15
         ]),

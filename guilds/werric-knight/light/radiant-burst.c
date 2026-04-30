@@ -40,7 +40,7 @@ protected void Setup()
             "rate":0.1
         ])
     }));
-    addSpecification("damage type", "good");
+    addSpecification("damage type", "radiant");
     addSpecification("command template", "radiant burst");
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::release## "
         "a burst of radiant light, scouring nearby foes!");

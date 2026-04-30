@@ -41,7 +41,7 @@ protected void Setup()
             "rate":0.1
         ])
     }));
-    addSpecification("damage type", "good");
+    addSpecification("damage type", "radiant");
     addSpecification("command template", "smite ##Target##");
     addSpecification("use ability message", "##InitiatorName## ##Infinitive::smite## "
         "##TargetName## with the power of righteousness!");

@@ -1436,3 +1436,83 @@ void LogisticsIsAValidSkill()
     ExpectEq(5, Service.skillBonus("logistics", 10), "skill of 10 returns a 5 bonus");
     ExpectEq(0, Service.skillBonus("logistics", 0), "returns correct value when untrained");
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void RidingIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("riding"), "riding is a valid skill");
+    ExpectEq("general", Service.skillType("riding"), "returns proper skill type");
+    ExpectEq("dexterity", Service.attributeForSkill("riding"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("riding", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(-5, Service.skillBonus("riding", 0), "returns correct value when untrained");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void HealingIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("healing"), "healing is a valid skill");
+    ExpectEq("erudite", Service.skillType("healing"), "returns proper skill type");
+    ExpectEq("wisdom", Service.attributeForSkill("healing"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("healing", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(-5, Service.skillBonus("healing", 0), "returns correct value when untrained");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void MeditationIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("meditation"), "meditation is a valid skill");
+    ExpectEq("erudite", Service.skillType("meditation"), "returns proper skill type");
+    ExpectEq("wisdom", Service.attributeForSkill("meditation"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("meditation", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(-5, Service.skillBonus("meditation", 0), "returns correct value when untrained");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void ConcentrationIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("concentration"), "concentration is a valid skill");
+    ExpectEq("erudite", Service.skillType("concentration"), "returns proper skill type");
+    ExpectEq("wisdom", Service.attributeForSkill("concentration"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("concentration", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(-5, Service.skillBonus("concentration", 0), "returns correct value when untrained");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WillpowerIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("willpower"), "willpower is a valid skill");
+    ExpectEq("erudite", Service.skillType("willpower"), "returns proper skill type");
+    ExpectEq("wisdom", Service.attributeForSkill("willpower"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("willpower", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(0, Service.skillBonus("willpower", 0), "returns correct value when untrained");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void LeadershipIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("leadership"), "leadership is a valid skill");
+    ExpectEq("general", Service.skillType("leadership"), "returns proper skill type");
+    ExpectEq("charisma", Service.attributeForSkill("leadership"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("leadership", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(-5, Service.skillBonus("leadership", 0), "returns correct value when untrained");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void InsightIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("insight"), "insight is a valid skill");
+    ExpectEq("general", Service.skillType("insight"), "returns proper skill type");
+    ExpectEq("wisdom", Service.attributeForSkill("insight"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("insight", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(0, Service.skillBonus("insight", 0), "returns correct value when untrained");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CombatTacticsIsAValidSkill()
+{
+    ExpectTrue(Service.isValidSkill("combat tactics"), "combat tactics is a valid skill");
+    ExpectEq("erudite", Service.skillType("combat tactics"), "returns proper skill type");
+    ExpectEq("intelligence", Service.attributeForSkill("combat tactics"), "returns proper attribute");
+    ExpectEq(5, Service.skillBonus("combat tactics", 10), "skill of 10 returns a 5 bonus");
+    ExpectEq(-5, Service.skillBonus("combat tactics", 0), "returns correct value when untrained");
+}

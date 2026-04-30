@@ -1290,7 +1290,94 @@ private mapping skills = ([
         "bonus calculator": "one for two",
         "untrained penalty": -10,
         "description": "This is the common language.\n"
-    ]),  
+    ]),
+    "riding": ([
+        "type": "general",
+        "attribute": "dexterity",
+        "bonus calculator": "one for two",
+        "untrained penalty": -5,
+        "description": "This skill provides proficiency in the use, control, "
+            "and care of mounts of all kinds. It encompasses everything from "
+            "basic horsemanship to fighting from the saddle of warhorses, "
+            "and includes the handling of pegasi, griffons, and other exotic "
+            "mounts where applicable.\n"
+    ]),
+    "healing": ([
+        "type": "erudite",
+        "attribute": "wisdom",
+        "bonus calculator": "one for two",
+        "untrained penalty": -5,
+        "description": "This skill provides proficiency in the magical and "
+            "non-magical arts of healing. While herbalism focuses on natural "
+            "remedies, this skill encompasses the application of restorative "
+            "magic, the channeling of divine energies for healing, and the "
+            "knowledge of how to most effectively mend wounds, cure diseases, "
+            "and counter poisons.\n"
+    ]),
+    "meditation": ([
+        "type": "erudite",
+        "attribute": "wisdom",
+        "bonus calculator": "one for two",
+        "untrained penalty": -5,
+        "description": "This skill provides proficiency in the practice of "
+            "meditation, allowing one to clear the mind, focus thoughts, "
+            "and recover spiritual and mental energy more rapidly. Mastery "
+            "of meditation aids in resisting mental influences and in the "
+            "channeling of magical and divine power.\n"
+    ]),
+    "concentration": ([
+        "type": "erudite",
+        "attribute": "wisdom",
+        "bonus calculator": "one for two",
+        "untrained penalty": -5,
+        "description": "This skill provides proficiency in maintaining mental "
+            "focus under duress. It is essential for spellcasters who must "
+            "maintain complex incantations while taking damage, and for "
+            "warriors who must preserve their composure in the heat of "
+            "battle.\n"
+    ]),
+    "willpower": ([
+        "type": "erudite",
+        "attribute": "wisdom",
+        "bonus calculator": "one for two",
+        "untrained penalty": 0,
+        "description": "This skill represents the strength of one's will. "
+            "It provides proficiency in resisting coercion, fear, charm "
+            "effects, and other attempts to bend or break one's mind. A "
+            "strong will is the foundation of mental fortitude.\n"
+    ]),
+    "leadership": ([
+        "type": "general",
+        "attribute": "charisma",
+        "bonus calculator": "one for two",
+        "untrained penalty": -5,
+        "description": "This skill provides proficiency in commanding troops, "
+            "inspiring allies, and rallying followers. It differs from "
+            "persuasion in that it focuses on directing those who already "
+            "follow you, rather than convincing strangers to your cause.\n"
+    ]),
+    "insight": ([
+        "type": "general",
+        "attribute": "wisdom",
+        "bonus calculator": "one for two",
+        "untrained penalty": 0,
+        "description": "This skill provides proficiency in reading people, "
+            "discerning motives, and detecting lies. Where bluff allows you "
+            "to deceive others, insight allows you to see through deception "
+            "and understand the true intentions of those you encounter.\n"
+    ]),
+    "combat tactics": ([
+        "type": "erudite",
+        "attribute": "intelligence",
+        "bonus calculator": "one for two",
+        "untrained penalty": -5,
+        "description": "This skill provides proficiency in personal and "
+            "small-unit combat tactics. While the broader 'tactics' skill "
+            "encompasses strategic thinking and battlefield management, "
+            "combat tactics focuses on the immediate decisions made in the "
+            "midst of combat: when to strike, when to defend, how to exploit "
+            "openings, and how to coordinate with a small group of allies.\n"
+    ]),
 ]);
 
 private nosave string Type;

@@ -17,7 +17,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defense/zone-control.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":28]));
+        (["type":"guild", "level":3]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

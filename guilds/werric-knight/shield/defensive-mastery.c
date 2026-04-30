@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("level",
         (["type":"level",
             "guild": "Werric Knight",
-            "value": 15
+            "value": 5
         ]));
     addPrerequisite("/guilds/werric-knight/shield/shield-wall.c",
         (["type":"research"]));

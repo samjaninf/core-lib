@@ -18,7 +18,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defender/immovable-guardian.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type":"guild", "level":33]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

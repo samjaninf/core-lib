@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/tactics/devastating-combination.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type":"guild", "level":17]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

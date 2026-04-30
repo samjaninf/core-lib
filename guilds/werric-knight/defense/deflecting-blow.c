@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/defense/armor-proficiency.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type":"guild", "level":7]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

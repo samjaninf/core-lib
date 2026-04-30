@@ -220,45 +220,4 @@ protected void Setup()
     SixtiethLevel();
     SeventiethLevel();
 }
-}
 
-/////////////////////////////////////////////////////////////////////////////
-private void SeventeenthLevel()
-{
-    addResearchElement("/guilds/werric-knight/virtues/aura-of-protection.c");
-    addChild("/guilds/werric-knight/virtues/aura-of-protection.c",
-        "/guilds/werric-knight/virtues/courage.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void TwentySeventhLevel()
-{
-    addResearchElement("/guilds/werric-knight/virtues/inspiring-presence.c");
-    addChild("/guilds/werric-knight/virtues/inspiring-presence.c",
-        "/guilds/werric-knight/virtues/aura-of-protection.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void FortyFirstLevel()
-{
-    addResearchElement("/guilds/werric-knight/virtues/paragon-of-virtue.c");
-    addChild("/guilds/werric-knight/virtues/paragon-of-virtue.c",
-        "/guilds/werric-knight/virtues/inspiring-presence.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-protected void Setup()
-{
-    Name("Knightly Virtues");
-    Description("This research tree embodies the highest virtues of knighthood: "
-        "honor, courage, and selfless service. Powerful aura and leadership abilities.");
-    Source("Werric Knight");
-    addResearchElement("/guilds/werric-knight/virtues/root.c");
-    TreeRoot("/guilds/werric-knight/virtues/root.c");
-
-    FirstLevel();
-    NinthLevel();
-    SeventeenthLevel();
-    TwentySeventhLevel();
-    FortyFirstLevel();
-}

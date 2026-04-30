@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/virtues/inspiring-presence.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type":"guild", "level":15]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

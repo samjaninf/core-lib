@@ -17,7 +17,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defense/timeless-defender.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":70]));
+        (["type":"guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

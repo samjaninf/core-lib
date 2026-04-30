@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/light/pillar-of-light.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":27]));
+        (["type":"guild", "level":45]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

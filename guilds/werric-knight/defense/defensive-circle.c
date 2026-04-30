@@ -17,7 +17,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defense/strategic-withdrawal.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type":"guild", "level":17]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

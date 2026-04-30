@@ -20,7 +20,7 @@ protected void Setup()
     addPrerequisite("level",
         (["type":"level",
             "guild": "Werric Knight",
-            "value": 9
+            "value": 7
         ]));
 
     addSpecification("scope", "self");

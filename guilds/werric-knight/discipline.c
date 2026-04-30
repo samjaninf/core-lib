@@ -49,15 +49,19 @@ private void TenthLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private void EleventhLevel()
+{
+    addResearchElement("/guilds/werric-knight/discipline/resilience.c");
+    addChild("/guilds/werric-knight/discipline/resilience.c",
+        "/guilds/werric-knight/discipline/fortitude.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 private void ThirteenthLevel()
 {
     addResearchElement("/guilds/werric-knight/discipline/iron-body.c");
     addChild("/guilds/werric-knight/discipline/iron-body.c",
         "/guilds/werric-knight/discipline/focused-mind.c");
-
-    addResearchElement("/guilds/werric-knight/discipline/resilience.c");
-    addChild("/guilds/werric-knight/discipline/resilience.c",
-        "/guilds/werric-knight/discipline/fortitude.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -66,7 +70,11 @@ private void SixteenthLevel()
     addResearchElement("/guilds/werric-knight/discipline/steel-mind.c");
     addChild("/guilds/werric-knight/discipline/steel-mind.c",
         "/guilds/werric-knight/discipline/iron-body.c");
+}
 
+/////////////////////////////////////////////////////////////////////////////
+private void SeventeenthLevel()
+{
     addResearchElement("/guilds/werric-knight/discipline/unwavering.c");
     addChild("/guilds/werric-knight/discipline/unwavering.c",
         "/guilds/werric-knight/discipline/resilience.c");
@@ -154,7 +162,8 @@ protected void Setup()
     Name("Discipline");
     Description("This research tree represents the art of training mind and body "
         "to peak performance. Through rigorous practice and unwavering commitment, "
-        "you push beyond normal human limitations.");
+        "Werric Knights push beyond normal human limitations, granting passive "
+        "bonuses and resistances.");
     Source("Werric Knight");
     addResearchElement("/guilds/werric-knight/discipline/root.c");
     TreeRoot("/guilds/werric-knight/discipline/root.c");
@@ -164,8 +173,10 @@ protected void Setup()
     FifthLevel();
     SeventhLevel();
     TenthLevel();
+    EleventhLevel();
     ThirteenthLevel();
     SixteenthLevel();
+    SeventeenthLevel();
     TwentiethLevel();
     TwentyFifthLevel();
     ThirtiethLevel();
@@ -175,46 +186,4 @@ protected void Setup()
     FiftiethLevel();
     FiftyFifthLevel();
     SeventiethLevel();
-}
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void FifteenthLevel()
-{
-    addResearchElement("/guilds/werric-knight/discipline/unwavering.c");
-    addChild("/guilds/werric-knight/discipline/unwavering.c",
-        "/guilds/werric-knight/discipline/fortitude.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void TwentyFifthLevel()
-{
-    addResearchElement("/guilds/werric-knight/discipline/resilience.c");
-    addChild("/guilds/werric-knight/discipline/resilience.c",
-        "/guilds/werric-knight/discipline/unwavering.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void ThirtyFifthLevel()
-{
-    addResearchElement("/guilds/werric-knight/discipline/absolute-discipline.c");
-    addChild("/guilds/werric-knight/discipline/absolute-discipline.c",
-        "/guilds/werric-knight/discipline/resilience.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-protected void Setup()
-{
-    Name("Discipline");
-    Description("This research tree represents the intense mental and physical "
-        "discipline required of Werric Knights, granting passive bonuses and resistances.");
-    Source("Werric Knight");
-    addResearchElement("/guilds/werric-knight/discipline/root.c");
-    TreeRoot("/guilds/werric-knight/discipline/root.c");
-
-    FirstLevel();
-    SeventhLevel();
-    FifteenthLevel();
-    TwentyFifthLevel();
-    ThirtyFifthLevel();
 }

@@ -248,45 +248,4 @@ protected void Setup()
     SixtySixthLevel();
     SeventiethLevel();
 }
-}
 
-/////////////////////////////////////////////////////////////////////////////
-private void FifteenthLevel()
-{
-    addResearchElement("/guilds/werric-knight/mounted/lance-mastery.c");
-    addChild("/guilds/werric-knight/mounted/lance-mastery.c",
-        "/guilds/werric-knight/mounted/mounted-strike.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void TwentyThirdLevel()
-{
-    addResearchElement("/guilds/werric-knight/mounted/devastating-charge.c");
-    addChild("/guilds/werric-knight/mounted/devastating-charge.c",
-        "/guilds/werric-knight/mounted/lance-mastery.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-private void ThirtyFirstLevel()
-{
-    addResearchElement("/guilds/werric-knight/mounted/unstoppable-cavalry.c");
-    addChild("/guilds/werric-knight/mounted/unstoppable-cavalry.c",
-        "/guilds/werric-knight/mounted/devastating-charge.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
-protected void Setup()
-{
-    Name("Mounted Combat");
-    Description("This research tree provides techniques for fighting on horseback, "
-        "a hallmark of the Werric Knights.");
-    Source("Werric Knight");
-    addResearchElement("/guilds/werric-knight/mounted/root.c");
-    TreeRoot("/guilds/werric-knight/mounted/root.c");
-
-    ThirdLevel();
-    NinthLevel();
-    FifteenthLevel();
-    TwentyThirdLevel();
-    ThirtyFirstLevel();
-}

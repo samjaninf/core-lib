@@ -15,8 +15,19 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" }) ]));
 
+
+    addPrerequisite("/guilds/werric-knight/werric-knight.c",
+
+        (["type":"guild", "level":1]));
+
     addSpecification("scope", "self");
+
+    addPrerequisite("/guilds/werric-knight/werric-knight.c",
+        (["type":"guild", "level":1]));
     addSpecification("research type", "points");
+
+    addPrerequisite("/guilds/werric-knight/werric-knight.c",
+        (["type":"guild", "level":1]));
     addSpecification("research cost", 1);
     addSpecification("bonus dagger", 1);
     addSpecification("bonus short sword", 1);

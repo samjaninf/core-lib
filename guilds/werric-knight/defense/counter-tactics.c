@@ -16,7 +16,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defense/impenetrable-defense.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type":"guild", "level":11]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

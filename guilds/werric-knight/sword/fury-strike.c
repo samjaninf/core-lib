@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/sword/righteous-fury.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type":"guild", "level":21]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

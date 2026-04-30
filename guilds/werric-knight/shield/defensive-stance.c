@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("level",
         (["type":"level",
             "guild": "Werric Knight",
-            "value": 5
+            "value": 1
         ]));
     addPrerequisite("/guilds/werric-knight/shield/shield-bash.c",
         (["type":"research"]));

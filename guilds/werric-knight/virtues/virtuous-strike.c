@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/virtues/strike-of-justice.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type":"guild", "level":5]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

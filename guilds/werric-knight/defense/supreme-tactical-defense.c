@@ -17,7 +17,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defense/master-of-terrain.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":62]));
+        (["type":"guild", "level":25]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

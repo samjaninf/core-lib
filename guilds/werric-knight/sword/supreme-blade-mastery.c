@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/sword/legendary-swordsman.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type":"guild", "level":31]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/tactics/tactical-strike.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type":"guild", "level":9]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/light/holy-light.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type":"guild", "level":5]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

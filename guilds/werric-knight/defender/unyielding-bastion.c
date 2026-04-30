@@ -18,7 +18,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defender/defiant-stand.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type":"guild", "level":35]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

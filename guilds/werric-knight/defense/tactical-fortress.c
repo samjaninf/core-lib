@@ -17,7 +17,7 @@ protected void Setup()
     addPrerequisite("guilds/werric-knight/defense/legendary-defender.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":45]));
+        (["type":"guild", "level":21]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

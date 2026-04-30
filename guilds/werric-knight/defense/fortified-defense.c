@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/defense/deflecting-blow.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type":"guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

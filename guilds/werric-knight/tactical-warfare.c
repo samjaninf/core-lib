@@ -54,10 +54,6 @@ private void NinthLevel()
     addResearchElement("/guilds/werric-knight/tactics/tactical-precision.c");
     addChild("/guilds/werric-knight/tactics/tactical-precision.c",
         "/guilds/werric-knight/tactics/coordinated-strike.c");
-
-    addResearchElement("/guilds/werric-knight/tactics/art-of-war.c");
-    addChild("/guilds/werric-knight/tactics/art-of-war.c",
-        "/guilds/werric-knight/tactics/exploit-weakness.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -78,6 +74,10 @@ private void ThirteenthLevel()
     addResearchElement("/guilds/werric-knight/tactics/press-the-advantage.c");
     addChild("/guilds/werric-knight/tactics/press-the-advantage.c",
         "/guilds/werric-knight/tactics/master-tactician.c");
+
+    addResearchElement("/guilds/werric-knight/tactics/art-of-war.c");
+    addChild("/guilds/werric-knight/tactics/art-of-war.c",
+        "/guilds/werric-knight/tactics/exploit-weakness.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -153,14 +153,6 @@ private void ThirtyFirstLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
-private void ThirtyFifthLevel()
-{
-    addResearchElement("/guilds/werric-knight/tactics/art-of-war.c");
-    addChild("/guilds/werric-knight/tactics/art-of-war.c",
-        "/guilds/werric-knight/tactics/legendary-commander.c");
-}
-
-/////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     Name("Tactical Warfare");
@@ -187,5 +179,4 @@ protected void Setup()
     TwentyFifthLevel();
     TwentyNinthLevel();
     ThirtyFirstLevel();
-    ThirtyFifthLevel();
 }

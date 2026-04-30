@@ -15,7 +15,7 @@ protected void Setup()
     addPrerequisite("/guilds/werric-knight/light/radiant-burst.c",
         (["type":"research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type":"guild", "level":5]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

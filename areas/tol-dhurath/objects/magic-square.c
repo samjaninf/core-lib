@@ -128,7 +128,7 @@ private mapping gridDisplay = ([
     ]),
     ":":([
         "unicode": "\u250a",
-        "ascii": ": "
+        "ascii": ":"
     ]),
     "<":([
         "unicode": "\u255f",

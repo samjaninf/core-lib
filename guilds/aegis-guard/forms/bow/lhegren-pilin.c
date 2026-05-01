@@ -13,12 +13,12 @@ protected void Setup()
         "mystic knowledge that enhances mundane archery attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 25
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/bow/megor-pilin.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

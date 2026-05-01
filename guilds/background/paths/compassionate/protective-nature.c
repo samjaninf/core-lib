@@ -13,7 +13,7 @@ protected void Setup()
         "positioning yourself to better shield your allies from harm.");
 
     addPrerequisite("/guilds/background/paths/compassionate/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -20,13 +20,13 @@ protected void Setup()
     ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 17
         ]));
 
     addPrerequisite("/guilds/therianthrope/serpent/serpentine-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

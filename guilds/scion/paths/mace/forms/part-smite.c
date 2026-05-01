@@ -18,14 +18,14 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "mace", "flail" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 23 ]));
 
     addPrerequisite("/guilds/scion/paths/mace/forms/the-fool.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/mace/forms/over-smite.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

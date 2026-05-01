@@ -17,7 +17,7 @@ protected void Setup()
         "the caster's vitals.");
 
     addPrerequisite("/guilds/aquamancer/ice/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

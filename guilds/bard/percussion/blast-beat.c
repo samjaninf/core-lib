@@ -31,7 +31,7 @@ protected void Setup()
     ]));
 
     addPrerequisite("/guilds/bard/percussion/counterspell-knell.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([
@@ -87,19 +87,19 @@ protected void Setup()
             "rate": 0.05
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.05
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "dexterity",
             "formula": "additive",
             "rate": 0.05
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "strength",
             "formula": "additive",
             "rate": 0.05

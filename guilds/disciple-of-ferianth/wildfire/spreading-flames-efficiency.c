@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to reduce the spell point cost of Spreading Flames.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 23
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/spreading-flames-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

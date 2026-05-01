@@ -14,10 +14,10 @@ protected void Setup()
         "all fire energy in the area and releases it in a devastating blast.");
 
     addPrerequisite("/guilds/pyromancer/fire/encircling-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 51
         ]));

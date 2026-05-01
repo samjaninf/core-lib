@@ -14,14 +14,14 @@ protected void Setup()
         "that target thought and reason.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 20 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/cognitive-fracture.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/overwhelming-presence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Cognitive Fracture": 20,

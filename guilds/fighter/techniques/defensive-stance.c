@@ -15,12 +15,12 @@ protected void Setup()
         "prevent an enemy's attack.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 1
         ]));
     addPrerequisite("/guilds/fighter/techniques/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

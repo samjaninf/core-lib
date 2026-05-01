@@ -17,9 +17,9 @@ protected void Setup()
         "and the honor of its most legendary king.");
 
     addPrerequisite("guilds/werric-knight/sword/sword-saint.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":39]));
+        (["type": "guild", "level":39]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

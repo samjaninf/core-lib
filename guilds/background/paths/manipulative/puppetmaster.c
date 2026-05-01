@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus charisma", 1);
 
     addPrerequisite("/guilds/background/paths/manipulative/insightful.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

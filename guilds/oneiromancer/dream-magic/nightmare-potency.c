@@ -14,13 +14,13 @@ protected void Setup()
         "offensive abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 21
         ]));
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/oneiric-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

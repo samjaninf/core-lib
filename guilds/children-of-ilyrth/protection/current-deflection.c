@@ -14,12 +14,12 @@ protected void Setup()
         "The caster's barriers actively deflect incoming strikes.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 9 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/reef-armor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -17,10 +17,10 @@ protected void Setup()
         "threat generation");
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/methods-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 7
         ]));
@@ -69,24 +69,24 @@ protected void Setup()
         ]),
         ([
             "type": "skill",
-            "name":"hide",
+            "name": "hide",
             "formula": "additive",
             "rate": 0.15
         ]),
         ([
             "type": "skill",
-            "name":"move silently",
+            "name": "move silently",
             "formula": "additive",
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.25
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "dexterity",
             "formula": "additive",
             "rate": 0.25

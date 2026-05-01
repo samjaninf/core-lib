@@ -14,7 +14,7 @@ protected void Setup()
         "aquamancer releases a massive discharge of freezing energy at a foe.");
 
     addPrerequisite("/guilds/aquamancer/ice/ice-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

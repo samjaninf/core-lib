@@ -15,11 +15,11 @@ protected void Setup()
         "to engulf foes.");
 
     addPrerequisite("/guilds/aeromancer/forms/eruption.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":17
         ]));
 

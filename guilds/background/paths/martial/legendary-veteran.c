@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus hit points", 5);
 
     addPrerequisite("/guilds/background/paths/martial/relentless-advance.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

@@ -13,11 +13,11 @@ protected void Setup()
         "knowledge of creating spells that damage targets with the fury of a storm.");
 
     addPrerequisite("/guilds/aeromancer/functions/lightning.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":17
         ]));
 

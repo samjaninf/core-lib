@@ -14,13 +14,13 @@ protected void Setup()
         "greatly enhancing high-tier immolation abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 45
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/flames-of-judgment.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,9 +15,9 @@ protected void Setup()
         "battlefield geometry.");
 
     addPrerequisite("guilds/werric-knight/defense/tactical-fortress.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type": "guild", "level":9]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

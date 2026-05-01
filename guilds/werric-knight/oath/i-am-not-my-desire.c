@@ -15,9 +15,9 @@ protected void Setup()
         "motivation grants you clarity of purpose that transcends mere discipline.");
 
     addPrerequisite("guilds/werric-knight/oath/unshakeable-resolve.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

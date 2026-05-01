@@ -15,9 +15,9 @@ protected void Setup()
         "mere skill to become a force of nature.");
 
     addPrerequisite("guilds/werric-knight/marshal/werras-legacy-marshal.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":65]));
+        (["type": "guild", "level":65]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

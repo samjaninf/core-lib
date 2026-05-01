@@ -16,11 +16,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/chainmail/khuz-no-dai.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 46]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 50]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 46]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 50]));
 
-    addSpecification("limited by", (["crafting type":"chainmail"]));
+    addSpecification("limited by", (["crafting type": "chainmail"]));
 
     addSpecification("bonus crafting magical enchantment", 2);
     addSpecification("bonus crafting enchantments", 1);

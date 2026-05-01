@@ -15,7 +15,7 @@ protected void Setup()
         "nearby foes with massive hailstones.");
 
     addPrerequisite("/guilds/aquamancer/ice/frost-discharge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

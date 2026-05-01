@@ -20,13 +20,13 @@ protected void Setup()
     ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 21
         ]));
 
     addPrerequisite("/guilds/therianthrope/serpent/death-roll.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

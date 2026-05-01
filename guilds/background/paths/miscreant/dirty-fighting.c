@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus unarmed", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/urban-survivor.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

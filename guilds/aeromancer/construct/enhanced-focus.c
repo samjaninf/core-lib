@@ -14,12 +14,12 @@ protected void Setup()
         "spells, significantly increasing their power.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 17
         ]));
     addPrerequisite("/guilds/aeromancer/construct/spell-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

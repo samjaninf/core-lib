@@ -16,10 +16,10 @@ protected void Setup()
         "balance, making it difficult to maintain a proper defensive stance.");
 
     addPrerequisite("/guilds/aeromancer/air/gust.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 11
         ]));

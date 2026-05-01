@@ -14,7 +14,7 @@ protected void Setup()
         "and restoring spell points.");
 
     addPrerequisite("/guilds/oneiromancer/psychic-siphon/mental-leech.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -23,7 +23,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 5
         ]));

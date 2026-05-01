@@ -14,12 +14,12 @@ protected void Setup()
         "of terror, wielding the power of the dreamscape itself.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 41 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/mind-fortress.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

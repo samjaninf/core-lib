@@ -15,9 +15,9 @@ protected void Setup()
         "makes you a more dangerous combatant and a more effective commander.");
 
     addPrerequisite("guilds/werric-knight/tactics/battle-command.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type": "guild", "level":9]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,12 +14,12 @@ protected void Setup()
         "protective abilities reach new heights of strength.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 25 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/abyssal-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Wrathful flames that cripple combat ability");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/consuming-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 39
         ]));

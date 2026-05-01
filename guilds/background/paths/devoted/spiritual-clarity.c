@@ -13,7 +13,7 @@ protected void Setup()
         "restoring both your mental and physical vitality.");
 
     addPrerequisite("/guilds/background/paths/devoted/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

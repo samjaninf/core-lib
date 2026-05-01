@@ -20,13 +20,13 @@ protected void Setup()
     ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 47
         ]));
 
     addPrerequisite("/guilds/therianthrope/chimera/inferno.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,7 +13,7 @@ protected void Setup()
     addSpecification("bonus long sword", 1);
     addSpecification("bonus strength", 2);
     addSpecification("bonus weapon attack", 1);
-    addSpecification("limited by", (["opponent race":"dwarf"]));
+    addSpecification("limited by", (["opponent race": "dwarf"]));
     addSpecification("root", "nerd");
     addSpecification("opposing root", "jock");
     addSpecification("opinion", 5);

@@ -15,9 +15,9 @@ protected void Setup()
         "a disciplined blade wastes no motion, and a wasted motion dishonors the Oath.");
 
     addPrerequisite("guilds/werric-knight/sword/blade-dance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

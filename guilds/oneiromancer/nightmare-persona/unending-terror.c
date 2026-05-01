@@ -14,12 +14,12 @@ protected void Setup()
         "transcends the boundaries of consciousness.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 57 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/eternal-dread.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

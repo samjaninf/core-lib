@@ -17,12 +17,12 @@ protected void Setup()
         "mace", "flail" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 3 ]));  
 
     addPrerequisite("/guilds/scion/paths/mace/forms/from-the-roof.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

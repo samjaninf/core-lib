@@ -13,9 +13,9 @@ protected void Setup()
         "of swift elven blade techniques.");
 
     addPrerequisite("/guilds/werric-knight/elven/swift-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

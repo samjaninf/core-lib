@@ -984,7 +984,7 @@ private mapping skills = ([
             "or do what you wish them to.\n"
     ]),
     "intimidation": ([
-        "type":"general",
+        "type": "general",
         "attribute" : "charisma",
         "bonus calculator" : "one for two",
         "untrained penalty" : 0,

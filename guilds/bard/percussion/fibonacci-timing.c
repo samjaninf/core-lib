@@ -16,13 +16,13 @@ protected void Setup()
         "equipment": ({ "instrument: percussion" }) ]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 41
     ]));
 
     addPrerequisite("/guilds/bard/percussion/modulated-timing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

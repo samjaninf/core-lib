@@ -13,6 +13,6 @@ protected void Setup()
         "knowledge required to craft basic axes.");
     addSpecification("research type", "granted");
     addPrerequisite("/lib/instances/research/crafting/weapons/craftWeapons.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 1]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 1]));
 }

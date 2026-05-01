@@ -14,12 +14,12 @@ protected void Setup()
         "mythic magic skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 21
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-mythic/mythic-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -16,10 +16,10 @@ protected void Setup()
         "with each impact, providing consistent protection.");
 
     addPrerequisite("/guilds/aquamancer/water/whirlpool.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 13
         ]));

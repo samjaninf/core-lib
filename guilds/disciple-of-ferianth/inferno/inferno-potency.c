@@ -14,13 +14,13 @@ protected void Setup()
         "mid-tier fire abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 13
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/fire-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

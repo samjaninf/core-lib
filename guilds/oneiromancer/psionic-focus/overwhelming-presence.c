@@ -14,14 +14,14 @@ protected void Setup()
         "enhances crushing and breaking attacks.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 14 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/ego-rend.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/penetrating-thought.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Thought Crush": 15,

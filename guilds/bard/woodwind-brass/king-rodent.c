@@ -14,13 +14,13 @@ protected void Setup()
         "rats.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 10
     ]));
 
     addPrerequisite("/guilds/bard/woodwind-brass/rous.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

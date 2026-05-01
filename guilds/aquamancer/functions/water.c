@@ -14,7 +14,7 @@ protected void Setup()
         "blasts of water.");
 
     addPrerequisite("/guilds/aquamancer/functions/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

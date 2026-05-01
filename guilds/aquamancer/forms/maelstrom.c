@@ -15,7 +15,7 @@ protected void Setup()
         "devastating water energy.");
 
     addPrerequisite("/guilds/aquamancer/forms/whirlpool.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

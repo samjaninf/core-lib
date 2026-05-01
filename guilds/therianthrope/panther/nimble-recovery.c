@@ -19,13 +19,13 @@ protected void Setup()
     ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 13
         ]));
 
     addPrerequisite("/guilds/therianthrope/panther/sleek-coat.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

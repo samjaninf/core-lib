@@ -13,10 +13,10 @@ protected void Setup()
         "of Ferianth's chosen, vastly enhancing all divine judgment abilities.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/harbinger-of-ferianth.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 61
         ]));

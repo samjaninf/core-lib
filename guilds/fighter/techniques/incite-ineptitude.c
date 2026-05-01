@@ -25,7 +25,7 @@ protected void Setup()
         "staff", "pole arm" })]));
 
     addPrerequisite("/guilds/fighter/techniques/goad.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([

@@ -14,12 +14,12 @@ protected void Setup()
         "powerful resistances.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 21
         ]));
     addPrerequisite("/guilds/werric-knight/oath/oath-of-protection.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

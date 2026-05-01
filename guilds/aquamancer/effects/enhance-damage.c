@@ -14,10 +14,10 @@ protected void Setup()
         "damage output.");
 
     addPrerequisite("/guilds/aquamancer/effects/enhance-attack.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 9
         ]));

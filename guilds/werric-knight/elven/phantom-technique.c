@@ -13,9 +13,9 @@ protected void Setup()
         "and precision in your strikes.");
 
     addPrerequisite("/guilds/werric-knight/elven/phantom-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

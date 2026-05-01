@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to greatly amplify the Searing Devastation spell.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 49
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/searing-devastation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

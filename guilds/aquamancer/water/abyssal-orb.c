@@ -16,10 +16,10 @@ protected void Setup()
         "its poisonous payload.");
 
     addPrerequisite("/guilds/aquamancer/water/drowning-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 51
         ]));

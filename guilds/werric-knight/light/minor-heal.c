@@ -13,9 +13,9 @@ protected void Setup()
         "This is the most basic expression of Light Magic's healing power.");
 
     addPrerequisite("guilds/werric-knight/light/divine-connection.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":3]));
+        (["type": "guild", "level":3]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -40,31 +40,31 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/light/smiting-technique.c",
-            "name":"Smiting Technique",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/light/smiting-technique.c",
+            "name": "Smiting Technique",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/light/righteous-strike.c",
-            "name":"Righteous Strike",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/light/righteous-strike.c",
+            "name": "Righteous Strike",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"attribute",
-            "name":"wisdom",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"charisma",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
             "rate":0.15
         ])
     }));

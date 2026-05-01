@@ -14,10 +14,10 @@ protected void Setup()
     addSpecification("usage summary", "A ranged bolt of sacred fire");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/searing-light.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 7
         ]));

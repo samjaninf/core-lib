@@ -14,12 +14,12 @@ protected void Setup()
         "abilities when protecting others.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 11
         ]));
     addPrerequisite("/guilds/werric-knight/oath/iron-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

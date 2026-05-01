@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus defense", 1);
 
     addPrerequisite("/guilds/background/paths/martial/weapon-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

@@ -14,9 +14,9 @@ protected void Setup()
         "speed while maintaining combat readiness.");
 
     addPrerequisite("guilds/werric-knight/mounted/lance-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

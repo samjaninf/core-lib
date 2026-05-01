@@ -14,10 +14,10 @@ protected void Setup()
         "damage that exhausts the target, enfeebling their physical capabilities.");
 
     addPrerequisite("/guilds/aquamancer/effects/apply-enfeebled.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 21
         ]));

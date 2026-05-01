@@ -14,11 +14,11 @@ protected void Setup()
         "knowledge of creating spells that hurl a ball of energy at a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":7
         ]));
 

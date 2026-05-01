@@ -14,14 +14,14 @@ protected void Setup()
         "area attacks and enhance mental devastation.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 28 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/psychic-scream.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/cognitive-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Psychic Scream": 25,

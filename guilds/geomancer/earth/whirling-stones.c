@@ -14,10 +14,10 @@ protected void Setup()
         "devastating tornado of stones that tears through all enemies.");
 
     addPrerequisite("/guilds/geomancer/earth/disrupt-seismic.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 45
         ]));

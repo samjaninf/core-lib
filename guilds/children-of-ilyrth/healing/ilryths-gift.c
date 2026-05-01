@@ -15,12 +15,12 @@ protected void Setup()
         "energies.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 5 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/refreshing-mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

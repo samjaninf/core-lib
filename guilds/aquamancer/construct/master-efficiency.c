@@ -14,12 +14,12 @@ protected void Setup()
         "their constructed spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 29
         ]));
     addPrerequisite("/guilds/aquamancer/construct/expert-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

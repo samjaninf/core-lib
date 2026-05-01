@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with cutting or buffeting air.");
 
     addPrerequisite("/guilds/aeromancer/functions/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

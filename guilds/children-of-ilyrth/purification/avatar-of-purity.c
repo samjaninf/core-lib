@@ -15,12 +15,12 @@ protected void Setup()
         "forms of corruption and affliction.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 63 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/psionic-immunity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

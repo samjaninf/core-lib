@@ -19,12 +19,12 @@ protected void Setup()
         "dagger", "short sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 25 ]));
 
     addPrerequisite("/guilds/scion/paths/dagger/forms/off-setting.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

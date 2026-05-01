@@ -13,13 +13,13 @@ protected void Setup()
         "avatar the `Soul Scourge' spell.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 13
     ]));
 
     addPrerequisite("/guilds/scion/avatars/blood/touch-of-the-damned.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

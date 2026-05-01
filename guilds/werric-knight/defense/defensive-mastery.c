@@ -15,9 +15,9 @@ protected void Setup()
         "to defend.");
 
     addPrerequisite("guilds/werric-knight/defense/adaptive-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

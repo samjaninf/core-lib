@@ -13,9 +13,9 @@ protected void Setup()
         "embodying all knightly ideals to their fullest expression.");
 
     addPrerequisite("guilds/werric-knight/virtues/transcendent-virtue.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":60]));
+        (["type": "guild", "level":60]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

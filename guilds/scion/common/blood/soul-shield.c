@@ -23,12 +23,12 @@ protected void Setup()
 
     addPrerequisite("level", 
     ([
-        "type":"level", 
+        "type": "level", 
         "guild": "Scion of Dhuras",
         "value": 31 
     ]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/blood/sanguine-shroud.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

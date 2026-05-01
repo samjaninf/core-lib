@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus resist disease", 2);
 
     addPrerequisite("/guilds/background/paths/athletic/relentless.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

@@ -13,13 +13,13 @@ protected void Setup()
         "fire damage of your summoned flame guardian's attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 23
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/divine-conflagration/guardian-fire-i.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

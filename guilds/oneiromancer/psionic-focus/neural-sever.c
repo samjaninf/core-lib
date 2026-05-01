@@ -18,10 +18,10 @@ protected void Setup()
         "severs neural connections");
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/psychic-lash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 7
         ]));
@@ -86,7 +86,7 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.75

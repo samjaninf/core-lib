@@ -14,7 +14,7 @@ protected void Setup()
         "scouring sand.");
 
     addPrerequisite("/guilds/geomancer/functions/gravel.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

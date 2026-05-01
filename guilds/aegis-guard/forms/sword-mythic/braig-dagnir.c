@@ -14,12 +14,12 @@ protected void Setup()
         "mythic magic skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 51
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-mythic/braig-manadh.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

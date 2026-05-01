@@ -16,9 +16,9 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "shield" }) ]));
 
     addPrerequisite("/guilds/werric-knight/shield/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 3
         ]));
@@ -49,43 +49,43 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/shield/shield-impact.c",
-            "name":"Shield Impact",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/shield/shield-impact.c",
+            "name": "Shield Impact",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/shield/defensive-strike.c",
-            "name":"Defensive Strike",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/shield/defensive-strike.c",
+            "name": "Defensive Strike",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"skill",
-            "name":"shield",
-            "formula":"additive",
+            "type": "skill",
+            "name": "shield",
+            "formula": "additive",
             "rate":0.50
         ]),
         ([
-            "type":"skill",
-            "name":"physics",
-            "formula":"additive",
+            "type": "skill",
+            "name": "physics",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"anatomy and physiology",
-            "formula":"additive",
+            "type": "skill",
+            "name": "anatomy and physiology",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
             "rate":0.25
         ])
     }));

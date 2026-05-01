@@ -15,12 +15,12 @@ protected void Setup()
         "the severity of toxins.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 5 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

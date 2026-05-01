@@ -20,14 +20,14 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/common/mystic-folding.c",
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 10]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 10]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 10]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 5]));
-    addPrerequisite("physics", (["type":"skill", "value" : 10]));
-    addPrerequisite("mathematics", (["type":"skill", "value" : 5]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 15]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 10]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 10]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 10]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 5]));
+    addPrerequisite("physics", (["type": "skill", "value" : 10]));
+    addPrerequisite("mathematics", (["type": "skill", "value" : 5]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 15]));
 
     addSpecification("limited by", (["crafting type":({ "chainmail",
         "plate armor", "splint armor", "scale armor", "helmet" })]));

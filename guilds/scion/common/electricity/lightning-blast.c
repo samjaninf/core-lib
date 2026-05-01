@@ -25,11 +25,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/electricity/lightning.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 17
         ]));
@@ -72,7 +72,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/static-charge.c", WeaponType),
             "name" : "Static Charge",
             "formula" : "multiplicative",
@@ -80,7 +80,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/electrostatic-induction.c", WeaponType),
             "name" : "Electrostatic Induction",
             "formula" : "multiplicative",
@@ -88,7 +88,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/ionization.c", WeaponType),
             "name" : "Ionization",
             "formula" : "multiplicative",
@@ -96,7 +96,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/enhanced-discharge.c", WeaponType),
             "name" : "Enhanced Discharge",
             "formula" : "multiplicative",
@@ -104,7 +104,7 @@ protected void Setup()
             "rate": 1.35
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/plasma-eruption.c", WeaponType),
             "name" : "Plasma Eruption",
             "formula" : "multiplicative",
@@ -112,7 +112,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/corona-discharge.c", WeaponType),
             "name" : "Corona Discharge",
             "formula" : "multiplicative",
@@ -120,7 +120,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/enhanced-conductivity.c", WeaponType),
             "name" : "Enhanced Conductivity",
             "formula" : "multiplicative",
@@ -128,7 +128,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/electrostatic-discharge.c", WeaponType),
             "name" : "Electrostatic Discharge",
             "formula" : "multiplicative",
@@ -136,7 +136,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/electrostatic-condenser.c", WeaponType),
             "name" : "Electrostatic Condenser",
             "formula" : "multiplicative",
@@ -151,7 +151,7 @@ protected void Setup()
             "rate" : 1.0
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
@@ -175,13 +175,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

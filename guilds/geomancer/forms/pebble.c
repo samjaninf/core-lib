@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that hurl small stones at a foe.");
 
     addPrerequisite("/guilds/geomancer/forms/burst.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

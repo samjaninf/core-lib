@@ -14,12 +14,12 @@ protected void Setup()
         "enemies while bolstering the oneiromancer.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 29 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/haunting-presence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

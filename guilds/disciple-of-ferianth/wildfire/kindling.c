@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to greatly amplify the basic Smolder spell.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 7
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/wildfire-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

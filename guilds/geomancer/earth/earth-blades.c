@@ -20,7 +20,7 @@ protected void Setup()
             "value": 9 ]));
 
     addPrerequisite("/guilds/geomancer/earth/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({
         ([

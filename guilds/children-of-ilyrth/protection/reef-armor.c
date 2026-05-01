@@ -14,12 +14,12 @@ protected void Setup()
         "The caster's shields become more resistant to physical damage.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 7 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/tidal-barrier.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,13 +13,13 @@ protected void Setup()
         "advanced knowledge of channeling fire energy, enhancing all fire spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/fire-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

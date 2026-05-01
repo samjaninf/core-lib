@@ -24,18 +24,18 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/evocation/magical-strike.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 5
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/static-barrier.c", WeaponType),
             "name" : "Static Barrier",
             "formula" : "multiplicative",
@@ -43,7 +43,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/kinetic-barrier.c", WeaponType),
             "name" : "Kinetic Barrier",
             "formula" : "multiplicative",
@@ -51,7 +51,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/energy-barrier.c", WeaponType),
             "name" : "Energy Barrier",
             "formula" : "multiplicative",
@@ -59,31 +59,31 @@ protected void Setup()
             "rate": 1.5
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "evocation",
             "formula" : "additive",
             "rate" : 0.10
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "spellcraft",
             "formula" : "logarithmic",
             "rate" : 1.10
         ]),
         ([
-            "type":"level",
+            "type": "level",
             "name" : "level",
             "formula" : "logarithmic",
             "rate" : 1.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name" : "intelligence",
             "formula" : "additive",
             "rate" : 0.05

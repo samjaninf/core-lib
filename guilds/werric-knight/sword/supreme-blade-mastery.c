@@ -13,9 +13,9 @@ protected void Setup()
         "technique knowledge, dramatically enhancing all your blade abilities.");
 
     addPrerequisite("/guilds/werric-knight/sword/legendary-swordsman.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type": "guild", "level":31]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

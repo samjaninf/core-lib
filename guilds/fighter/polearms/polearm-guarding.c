@@ -17,12 +17,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "pole arm" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 5 ]));
 
     addPrerequisite("/guilds/fighter/polearms/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

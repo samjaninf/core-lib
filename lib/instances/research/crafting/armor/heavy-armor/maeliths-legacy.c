@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/heavy-armor/maeliths-tradition.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 35]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 35]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 25]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 35]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 35]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 25]));
 
     addSpecification("limited by", (["crafting type":
         ({ "plate armor", "splint armor", "scale armor" })]));

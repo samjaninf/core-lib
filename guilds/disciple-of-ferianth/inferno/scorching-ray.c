@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Multiple rays that drain life");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/flame-lash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));

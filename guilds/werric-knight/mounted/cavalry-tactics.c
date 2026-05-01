@@ -14,9 +14,9 @@ protected void Setup()
         "mounted combat in various tactical situations.");
 
     addPrerequisite("guilds/werric-knight/mounted/mounted-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

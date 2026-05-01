@@ -14,10 +14,10 @@ protected void Setup()
         "of hellfire that strikes repeatedly, draining life with each hit.");
 
     addPrerequisite("/guilds/pyromancer/fire/immolating-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 51
         ]));

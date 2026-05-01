@@ -15,9 +15,9 @@ protected void Setup()
         "become unpredictable. This flexibility makes you difficult to counter.");
 
     addPrerequisite("guilds/werric-knight/defense/defensive-circle.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

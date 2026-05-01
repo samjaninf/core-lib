@@ -15,9 +15,9 @@ protected void Setup()
         "means to be a Defender of the Crown - to protect the helpless.");
 
     addPrerequisite("guilds/werric-knight/defender/selfless-protector.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type": "guild", "level":31]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -32,15 +32,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"constitution",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "constitution",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.20
         ])
     }));

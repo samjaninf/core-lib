@@ -13,7 +13,7 @@ protected void Setup()
     addResponse("default", "Quest...", "I wanna do a quest!");
     addResponse("default", "Goodbye", "See you later!");
     addResponse("default", "State Prerequisite", "block by state");
-    addResponsePrerequisite("default", "State Prerequisite", (["state":(["type": "state", "state key":"/lib/tests/support/core/testStateMachine.c", "value": "met the king"])]), 1);
+    addResponsePrerequisite("default", "State Prerequisite", (["state":(["type": "state", "state key": "/lib/tests/support/core/testStateMachine.c", "value": "met the king"])]), 1);
     addResponse("default", "Opinion Prerequisite", "block by opinion");
     addResponsePrerequisite("default", "Opinion Prerequisite", (["opinion":(["type": "opinion", "value": 50])]), 1);
 

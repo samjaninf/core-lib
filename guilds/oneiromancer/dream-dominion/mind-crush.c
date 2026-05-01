@@ -14,7 +14,7 @@ protected void Setup()
         "psychic force.");
 
     addPrerequisite("/guilds/oneiromancer/dream-dominion/absolute-command.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -23,7 +23,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 9
         ]));

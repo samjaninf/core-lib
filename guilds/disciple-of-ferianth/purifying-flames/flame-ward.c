@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A protective fire ward");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/purge-affliction.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 17
         ]));

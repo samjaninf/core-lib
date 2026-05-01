@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to reduce the cooldown of Searing Devastation.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 53
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/searing-devastation-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

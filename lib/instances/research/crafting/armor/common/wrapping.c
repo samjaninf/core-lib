@@ -20,12 +20,12 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/common/folding.c",
-        (["type":"research"]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 8]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 8]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 5]));
-    addPrerequisite("physics", (["type":"skill", "value" : 6]));
-    addPrerequisite("mathematics", (["type":"skill", "value" : 4]));
+        (["type": "research"]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 8]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 5]));
+    addPrerequisite("physics", (["type": "skill", "value" : 6]));
+    addPrerequisite("mathematics", (["type": "skill", "value" : 4]));
 
     addSpecification("limited by", (["crafting type":({ "chainmail",
         "plate armor", "splint armor", "scale armor", "helmet" })]));

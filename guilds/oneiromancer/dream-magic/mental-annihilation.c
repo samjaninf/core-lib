@@ -16,10 +16,10 @@ protected void Setup()
         "attack");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/psychic-fortress.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 47
         ]));

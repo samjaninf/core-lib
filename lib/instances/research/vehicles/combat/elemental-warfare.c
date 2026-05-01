@@ -14,12 +14,12 @@ protected void Setup()
         "including summoned elementals and elemental weapon systems.");
     addSpecification("research type", "points");
     addSpecification("research cost", 8);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 12]));
-    addPrerequisite("summoning", (["type":"skill", "value" : 8]));
-    addPrerequisite("elemental air", (["type":"skill", "value" : 6]));
-    addPrerequisite("elemental earth", (["type":"skill", "value" : 6]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 12]));
+    addPrerequisite("summoning", (["type": "skill", "value" : 8]));
+    addPrerequisite("elemental air", (["type": "skill", "value" : 6]));
+    addPrerequisite("elemental earth", (["type": "skill", "value" : 6]));
     addPrerequisite("/lib/instances/research/vehicles/combat/mystical-defenses.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus fire enchantment", 4);
     addSpecification("bonus cold enchantment", 4);

@@ -30,7 +30,7 @@ protected void Setup()
     ]));
 
     addPrerequisite("/guilds/bard/percussion/drums-of-doom.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

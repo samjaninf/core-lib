@@ -87,7 +87,7 @@ void CanStatMonsters()
     item.set("identified", 1);
     item.set("craftsmanship", 120);
     item.set("primary damage type", "fire");
-    item.set("crafting materials", (["metal":"kirnalt",
+    item.set("crafting materials", (["metal": "kirnalt",
         "wood" : "malorn"]));
 
     move_object(item, monster);
@@ -133,7 +133,7 @@ void CanStatAnItem()
     item.set("identified", 1);
     item.set("craftsmanship", 120);
     item.set("primary damage type", "fire");
-    item.set("crafting materials", (["metal":"kirnalt",
+    item.set("crafting materials", (["metal": "kirnalt",
         "wood" : "malorn"]));
 
     move_object(item, Wizard);

@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus constitution", 1);
 
     addPrerequisite("/guilds/background/paths/athletic/fleet-footed.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

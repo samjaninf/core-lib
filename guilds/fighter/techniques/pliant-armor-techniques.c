@@ -17,12 +17,12 @@ protected void Setup()
         "scalemail", "chainmail", })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 10 ]));
 
     addPrerequisite("/guilds/fighter/techniques/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

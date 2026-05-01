@@ -45,10 +45,10 @@ void GuildNameSetsAndGetsNameOfGuild()
 void AddLevelPrerequisitesAddPrerequisites()
 {
     mapping prerequisites = ([
-        "orc":(["type":"combat statistic", "value": 2]),
-        "wisdom" : (["type":"attribute", "value": 10]),
-        "fetch a pencil": (["type":"quest"]),
-        "long sword": (["type":"skill", "value": 10])
+        "orc":(["type": "combat statistic", "value": 2]),
+        "wisdom" : (["type": "attribute", "value": 10]),
+        "fetch a pencil": (["type": "quest"]),
+        "long sword": (["type": "skill", "value": 10])
     ]);
     
     ExpectTrue(Guild.testAddLevelPrerequisite(10, prerequisites));
@@ -74,10 +74,10 @@ void AddRankInsertsRank()
 void AddRankPrerequisitesFailsIfRankNotPresent()
 {
     mapping prerequisites = ([
-        "orc":(["type":"combat statistic", "value" : 2]),
-        "wisdom" : (["type":"attribute", "value" : 10]),
-        "fetch a pencil" : (["type":"quest"]),
-        "long sword" : (["type":"skill", "value" : 10])
+        "orc":(["type": "combat statistic", "value" : 2]),
+        "wisdom" : (["type": "attribute", "value" : 10]),
+        "fetch a pencil" : (["type": "quest"]),
+        "long sword" : (["type": "skill", "value" : 10])
     ]);
 
     ExpectFalse(Guild.testAddRankPrerequisite("grand master squid", prerequisites));
@@ -100,20 +100,20 @@ void AddRankPrerequisitesAddPrerequisitesIfRankExits()
     ExpectTrue(Guild.testAddRank("high squid of highness", rank));
 
     mapping prerequisites = ([
-        "orc":(["type":"combat statistic", "value": 2]),
-        "wisdom" : (["type":"attribute", "value": 10]),
-        "fetch a pencil": (["type":"quest"]),
-        "long sword": (["type":"skill", "value": 10])
+        "orc":(["type": "combat statistic", "value": 2]),
+        "wisdom" : (["type": "attribute", "value": 10]),
+        "fetch a pencil": (["type": "quest"]),
+        "long sword": (["type": "skill", "value": 10])
     ]);
     mapping fullPrereq = (["grand master squid":prerequisites]);
 
     ExpectTrue(Guild.testAddRankPrerequisite("grand master squid", prerequisites));
     
     prerequisites = ([
-        "orc":(["type":"combat statistic", "value" : 5]),
-        "wisdom" : (["type":"attribute", "value" : 14]),
-        "fetch a mechanical pencil" : (["type":"quest"]),
-        "long sword" : (["type":"skill", "value" : 16])
+        "orc":(["type": "combat statistic", "value" : 5]),
+        "wisdom" : (["type": "attribute", "value" : 14]),
+        "fetch a mechanical pencil" : (["type": "quest"]),
+        "long sword" : (["type": "skill", "value" : 16])
     ]);
     fullPrereq += (["high squid of highness":prerequisites]);
 
@@ -149,7 +149,7 @@ void ModifierCriteriaWithXEveryLevelWithinRangeOfLevelsStartingAtOneCanBeAdded()
 void ModifierCriteriaWithXEveryLevelWithinRangeOnlyAppliesIfProperRank()
 {
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply" : "5 every level",
         "begin at level" : 1,
         "begin at rank": "grand master squid",
@@ -169,7 +169,7 @@ void ModifierCriteriaWithXEveryLevelWithinRangeOnlyAppliesIfProperRank()
 void ModifierCriteriaWithXEveryLevelWithinRangeOfLevelsCanBeAdded()
 {
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply" : "5 every level",
         "begin at level" : 11,
         "end at level" : 20
@@ -187,7 +187,7 @@ void ModifierCriteriaWithXEveryLevelWithinRangeOfLevelsCanBeAdded()
 void ModifierCriteriaWithXEveryLevelWithoutRangesGoesFromOneToMaxLevel()
 {
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply": "5 every level",
     ]);
     ExpectTrue(Guild.testAddCriteria("hit points", criteria));
@@ -202,7 +202,7 @@ void ModifierCriteriaWithXEveryLevelWithoutRangesGoesFromOneToMaxLevel()
 void ModifierCriteriaWithAtLevelAppliesAtCorrectLevel()
 {
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply" : "at level 5",
     ]);
     ExpectTrue(Guild.testAddCriteria("hit points", criteria));
@@ -215,7 +215,7 @@ void ModifierCriteriaWithAtLevelAppliesAtCorrectLevel()
 void ModifierCriteriaWithAtLevelCanOptionallyApplyUsingValueOfOne()
 {
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply" : "1 at level 5",
     ]);
     ExpectTrue(Guild.testAddCriteria("hit points", criteria));
@@ -241,7 +241,7 @@ void ModifierCriteriaWithAtLevelCanOptionallyApplyWithNonOneValue()
 void ModifierCriteriaWithAtRankAppliesAtCorrectRank()
 {
     mapping rank = ([
-        "name":"grand master squid",
+        "name": "grand master squid",
             "title" : "the title of titliness",
             "pretitle" : "Grand Master Squid",
             "previous rank" : "lesser squid",
@@ -251,7 +251,7 @@ void ModifierCriteriaWithAtRankAppliesAtCorrectRank()
     ExpectTrue(Guild.testAddRank("grand master squid", rank));
 
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply" : "at rank grand master squid",
     ]);
     ExpectTrue(Guild.testAddCriteria("hit points", criteria));
@@ -263,13 +263,13 @@ void ModifierCriteriaWithAtRankAppliesAtCorrectRank()
 void ModifierCriteriaWithMultipleCriteriaIsCumulative()
 {
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply" : "5 every level",
     ]);
     ExpectTrue(Guild.testAddCriteria("hit points", criteria));
 
     criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply": "10 every 3 levels",
         "begin at level": 1,
         "end at level": 10
@@ -292,7 +292,7 @@ void ModifierCriteriaWithMultipleCriteriaIsCumulative()
 void SkillCriteriaWithXEveryLevelIsCorrectlyApplied()
 {
     mapping criteria = ([
-        "type":"modifier",
+        "type": "modifier",
         "apply" : "1 every 2 levels",
     ]);
 
@@ -309,22 +309,22 @@ void SkillCriteriaWithXEveryLevelIsCorrectlyApplied()
 void AttackCriteriaWithXEveryLevelIsCorrectlyApplied()
 {
     mapping criteria = ([
-        "type":"attack",
+        "type": "attack",
         "apply": "1 every 15 levels",
     ]);
 
     ExpectTrue(Guild.testAddCriteria("weapon attack", criteria));
     ExpectEq("", Guild.getExtraAttacks(1, ""), "level 1 - no extra attacks");
     ExpectEq("", Guild.getExtraAttacks(12, ""), "level 12 - no extra attacks");
-    ExpectEq(({ (["attack type":"weapon"]), }), Guild.getExtraAttacks(23, ""), "level 23 - one extra attack");
-    ExpectEq(({ (["attack type":"weapon"]), (["attack type":"weapon"]), }), Guild.getExtraAttacks(35, ""), "level 35 - two extra attacks");
+    ExpectEq(({ (["attack type": "weapon"]), }), Guild.getExtraAttacks(23, ""), "level 23 - one extra attack");
+    ExpectEq(({ (["attack type": "weapon"]), (["attack type": "weapon"]), }), Guild.getExtraAttacks(35, ""), "level 35 - two extra attacks");
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void AttackCriteriaWithLevelAndRankAppliedCorrectly()
 {
     mapping criteria = ([
-        "type":"attack",
+        "type": "attack",
         "apply": "1 every 15 levels",
         "begin at rank": "grand master squid"
     ]);
@@ -333,9 +333,9 @@ void AttackCriteriaWithLevelAndRankAppliedCorrectly()
     ExpectEq("", Guild.getExtraAttacks(1, ""), "level 1 - no extra attacks");
     ExpectEq("", Guild.getExtraAttacks(1, "grand master squid"), "level 1 - no extra attacks");
     ExpectEq("", Guild.getExtraAttacks(23, "default"), "level 23 - one extra attack");
-    ExpectEq(({ (["attack type":"weapon"]), }), Guild.getExtraAttacks(23, "grand master squid"), "level 23 - one extra attack");
+    ExpectEq(({ (["attack type": "weapon"]), }), Guild.getExtraAttacks(23, "grand master squid"), "level 23 - one extra attack");
     ExpectEq("", Guild.getExtraAttacks(35, "default"), "level 35 - two extra attacks");
-    ExpectEq(({ (["attack type":"weapon"]), (["attack type":"weapon"]), }), 
+    ExpectEq(({ (["attack type": "weapon"]), (["attack type": "weapon"]), }), 
         Guild.getExtraAttacks(35, "grand master squid"), "level 35 - two extra attacks");
 }
 
@@ -343,7 +343,7 @@ void AttackCriteriaWithLevelAndRankAppliedCorrectly()
 void RecurringAttributePointsCriteriaAppliedCorrectly()
 {
     mapping criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every level"
     ]);
 
@@ -362,7 +362,7 @@ void RecurringAttributePointsCriteriaAppliedCorrectly()
 void AttributePointsCriteriaAppliedCorrectly()
 {
     mapping criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "at level 5"
     ]);
 
@@ -383,7 +383,7 @@ void AttributePointsCriteriaAppliedCorrectly()
 void CanAdvanceOnlyWhenPrerequisitesAreMet()
 {
     mapping prerequisites = ([
-        "long sword": (["type":"skill", "value": 10])
+        "long sword": (["type": "skill", "value": 10])
     ]);
 
     Guild.guildName("fake mage");
@@ -404,12 +404,12 @@ void CanAdvanceOnlyWhenPrerequisitesAreMet()
 void CanAdvanceRankOnlyWhenPrerequisitesAreMet()
 {
     mapping prerequisites = ([
-        "long sword" : (["type":"skill", "value" : 10])
+        "long sword" : (["type": "skill", "value" : 10])
     ]);
     Guild.guildName("fake mage");
 
     mapping rank = ([
-        "name":"lesser squid",
+        "name": "lesser squid",
         "title" : "the title of titliness",
         "pretitle" : "Squid",
         "next rank" : "grand master squid"
@@ -417,7 +417,7 @@ void CanAdvanceRankOnlyWhenPrerequisitesAreMet()
     ExpectTrue(Guild.testAddRank("lesser squid", rank));
 
     rank = ([
-        "name":"grand master squid",
+        "name": "grand master squid",
         "title" : "the title of titliness",
         "pretitle" : "Grand Master Squid",
         "previous rank" : "lesser squid",
@@ -440,7 +440,7 @@ void CanAdvanceRankOnlyWhenPrerequisitesAreMet()
 void MultipleAttributePointCriteriaWithBeginAtLevelAddedCumulatively()
 {
     mapping criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every level",
         "begin at level": 2,
         "end at level": 5
@@ -448,13 +448,13 @@ void MultipleAttributePointCriteriaWithBeginAtLevelAddedCumulatively()
     ExpectTrue(Guild.testAddCriteria("attribute points", criteria), "criteria added");
 
     criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "2 every 3 levels"
     ]);
     ExpectTrue(Guild.testAddCriteria("more attribute points", criteria), "more criteria added");
 
     criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "3 every 5 levels",
         "begin at level": 4
     ]);
@@ -500,7 +500,7 @@ void MultipleAttributePointCriteriaWithBeginAtLevelAddedCumulatively()
 void AttributePointsForRankCriteriaAppliedCorrectly()
 {
     mapping rank = ([
-        "name":"lesser squid",
+        "name": "lesser squid",
         "title" : "the title of titliness",
         "pretitle" : "Squid",
         "next rank" : "grand master squid"
@@ -508,7 +508,7 @@ void AttributePointsForRankCriteriaAppliedCorrectly()
     ExpectTrue(Guild.testAddRank("lesser squid", rank));
 
     rank = ([
-        "name":"grand master squid",
+        "name": "grand master squid",
         "title" : "the title of titliness",
         "pretitle" : "Grand Master Squid",
         "previous rank" : "lesser squid",
@@ -518,7 +518,7 @@ void AttributePointsForRankCriteriaAppliedCorrectly()
     ExpectTrue(Guild.testAddRank("grand master squid", rank));
 
     mapping criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "at rank grand master squid"
     ]);
 
@@ -534,7 +534,7 @@ void AttributePointsForRankCriteriaAppliedCorrectly()
 void SkillPointsCriteriaAppliedCorrectly()
 {
     mapping criteria = ([
-        "type":"skill points",
+        "type": "skill points",
         "apply": "3 every level"
     ]);
 
@@ -553,7 +553,7 @@ void SkillPointsCriteriaAppliedCorrectly()
 void MultipleSkillPointCriteriaWithBeginAtLevelAddedCumulatively()
 {
     mapping criteria = ([
-        "type":"skill points",
+        "type": "skill points",
         "apply": "1 every level",
         "begin at level": 2,
         "end at level": 5
@@ -561,13 +561,13 @@ void MultipleSkillPointCriteriaWithBeginAtLevelAddedCumulatively()
     ExpectTrue(Guild.testAddCriteria("skill points", criteria), "criteria added");
 
     criteria = ([
-        "type":"skill points",
+        "type": "skill points",
         "apply": "2 every 3 levels"
     ]);
     ExpectTrue(Guild.testAddCriteria("more skill points", criteria), "more criteria added");
 
     criteria = ([
-        "type":"skill points",
+        "type": "skill points",
         "apply": "3 every 5 levels",
         "begin at level": 4
     ]);
@@ -615,7 +615,7 @@ void ResearchPointsCriteriaAppliedCorrectly()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research points",
+        "type": "research points",
         "apply": "1 every level"
     ]);
 
@@ -634,13 +634,13 @@ void ResearchPointsCriteriaAppliedCorrectly()
 void MultipleResearchPointCriteriaAddedCumulatively()
 {
     mapping criteria = ([
-        "type":"research points",
+        "type": "research points",
         "apply": "1 every level"
     ]);
     ExpectTrue(Guild.testAddCriteria("research points", criteria), "criteria added");
 
     criteria = ([
-        "type":"research points",
+        "type": "research points",
         "apply": "2 every 3 levels"
     ]);
     ExpectTrue(Guild.testAddCriteria("more research points", criteria), "more criteria added");
@@ -685,7 +685,7 @@ void MultipleResearchPointCriteriaAddedCumulatively()
 void MultipleResearchPointCriteriaWithBeginAtLevelAddedCumulatively()
 {
     mapping criteria = ([
-        "type":"research points",
+        "type": "research points",
         "apply": "1 every level",
         "begin at level": 2,
         "end at level": 5
@@ -693,13 +693,13 @@ void MultipleResearchPointCriteriaWithBeginAtLevelAddedCumulatively()
     ExpectTrue(Guild.testAddCriteria("research points", criteria), "criteria added");
 
     criteria = ([
-        "type":"research points",
+        "type": "research points",
         "apply": "2 every 3 levels"
     ]);
     ExpectTrue(Guild.testAddCriteria("more research points", criteria), "more criteria added");
 
     criteria = ([
-        "type":"research points",
+        "type": "research points",
         "apply": "3 every 5 levels",
         "begin at level": 4
     ]);
@@ -747,7 +747,7 @@ void ResearchCriteriaAppliedCorrectly()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research",
+        "type": "research",
         "apply": "at level 5",
         "research object": "/lib/tests/support/research/testGrantedResearchItem.c"
     ]);
@@ -769,7 +769,7 @@ void ResearchTreeCriteriaAppliedCorrectly()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research tree",
+        "type": "research tree",
         "apply" : "at level 5",
         "research tree": "/lib/tests/support/guilds/testGuildResearchTree.c"
     ]);
@@ -791,7 +791,7 @@ void ResearchTreeCriteriaAppliedCorrectly()
 void TraitCriteriaAppliedCorrectly()
 {
     mapping criteria = ([
-        "type":"trait",
+        "type": "trait",
         "apply": "at level 5",
         "trait object": "/lib/instances/traits/personality/abrasive.c"
     ]);
@@ -813,7 +813,7 @@ void ApplyIfChosenResearchTreeCriteriaNotAppliedIfCriteriaNotMet()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research tree",
+        "type": "research tree",
         "apply" : "at level 5",
         "research tree": "/lib/tests/support/guilds/testGuildResearchTree.c",
         "apply if chosen": ({ "/lib/tests/support/research/testGrantedResearchItem.c" })
@@ -838,7 +838,7 @@ void ApplyIfAnyChosenResearchTreeCriteriaNotAppliedIfCriteriaNotMet()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research tree",
+        "type": "research tree",
         "apply" : "at level 5",
         "research tree": "/lib/tests/support/guilds/testGuildResearchTree.c",
         "apply if any chosen": ({ 
@@ -865,7 +865,7 @@ void ApplyIfChosenResearchTreeCriteriaAppliedIfCriteriaMet()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research tree",
+        "type": "research tree",
         "apply" : "at level 5",
         "research tree" : "/lib/tests/support/guilds/testGuildResearchTree.c",
         "apply if chosen" : ({ "/lib/tests/support/research/testGrantedResearchItem.c" })
@@ -917,7 +917,7 @@ void ApplyIfChosenResearchCriteriaNotAppliedIfCriteriaNotMet()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research",
+        "type": "research",
         "apply": "at level 5",
         "research object": "/lib/tests/support/research/testGrantedResearchItem.c",
         "apply if chosen" : ({ "/lib/tests/support/guilds/testGuildResearchTree.c" })
@@ -940,7 +940,7 @@ void ApplyIfAnyChosenResearchCriteriaNotAppliedIfCriteriaNotMet()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research",
+        "type": "research",
         "apply": "at level 5",
         "research object": "/lib/tests/support/research/testGrantedResearchItem.c",
         "apply if any chosen" : ({ 
@@ -966,7 +966,7 @@ void ApplyIfChosenResearchCriteriaAppliedIfCriteriaMet()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research",
+        "type": "research",
         "apply": "at level 5",
         "research object": "/lib/tests/support/research/testGrantedResearchItem.c",
         "apply if chosen" : ({ "/lib/tests/support/guilds/testGuildResearchTree.c" })
@@ -990,7 +990,7 @@ void ApplyIfAnyChosenResearchCriteriaAppliedIfCriteriaMet()
     User.addSkillPoints(100);
     User.advanceSkill("long sword", 10);
     mapping criteria = ([
-        "type":"research",
+        "type": "research",
         "apply": "at level 5",
         "research object": "/lib/tests/support/research/testGrantedResearchItem.c",
         "apply if any chosen" : ({ 
@@ -1015,7 +1015,7 @@ void ApplyIfAnyChosenResearchCriteriaAppliedIfCriteriaMet()
 void DemoteRankCorrectlyPlacesMemberAtPreviousRank()
 {
     mapping rank = ([
-        "name":"lesser squid",
+        "name": "lesser squid",
         "title" : "the title of titliness",
         "pretitle" : "Squid",
         "next rank" : "grand master squid"
@@ -1023,7 +1023,7 @@ void DemoteRankCorrectlyPlacesMemberAtPreviousRank()
     ExpectTrue(Guild.testAddRank("lesser squid", rank));
 
     rank = ([
-        "name":"grand master squid",
+        "name": "grand master squid",
         "title" : "the title of titliness",
         "pretitle" : "Grand Master Squid",
         "previous rank" : "lesser squid",
@@ -1032,7 +1032,7 @@ void DemoteRankCorrectlyPlacesMemberAtPreviousRank()
     ]);
 
     mapping criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "at rank grand master squid"
     ]);
 
@@ -1049,7 +1049,7 @@ void DemoteRankCorrectlyPlacesMemberAtPreviousRank()
 void RankNameReturnsTheNameDefinedInRank()
 {
     mapping rank = ([
-        "name":"lesser squidling",
+        "name": "lesser squidling",
         "title" : "the title of titliness",
         "pretitle" : "Squid",
         "next rank" : "grand master squid"
@@ -1063,7 +1063,7 @@ void DefaultRankCanBeSet()
 {
     Guild.guildName("fake mage");
     mapping rank = ([
-        "name":"lesser squidling",
+        "name": "lesser squidling",
         "title" : "the title of titliness",
         "pretitle" : "Squid",
         "next rank" : "grand master squid"
@@ -1072,7 +1072,7 @@ void DefaultRankCanBeSet()
     ExpectTrue(Guild.testSetDefaultRank("lesser squid"));
 
     mapping criteria = ([
-        "type":"attribute points",
+        "type": "attribute points",
             "apply" : "at rank lesser squid"
     ]);
     ExpectTrue(Guild.testAddCriteria("attribute points", criteria), "criteria added");

@@ -13,13 +13,13 @@ protected void Setup()
         "knowledge of an aggressive hewing technique for Gling.");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-actions/delu-an-gling.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 29
         ]));

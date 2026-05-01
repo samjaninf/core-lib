@@ -15,7 +15,7 @@ protected void Setup()
         "around a foe.");
 
     addPrerequisite("/guilds/aquamancer/forms/ring.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

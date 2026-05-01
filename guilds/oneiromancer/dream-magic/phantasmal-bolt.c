@@ -16,10 +16,10 @@ protected void Setup()
         "improved damage");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/waking-dreams.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 7
         ]));
@@ -57,13 +57,13 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.30
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "wisdom",
             "formula": "additive",
             "rate": 0.20

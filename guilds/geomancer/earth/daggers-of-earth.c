@@ -14,10 +14,10 @@ protected void Setup()
         "barrage of razor-sharp stone daggers at a target.");
 
     addPrerequisite("/guilds/geomancer/earth/upheaval.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 29
         ]));

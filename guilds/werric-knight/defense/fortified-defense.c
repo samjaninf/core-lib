@@ -13,9 +13,9 @@ protected void Setup()
         "fortified through extensive training, providing greater protection.");
 
     addPrerequisite("/guilds/werric-knight/defense/deflecting-blow.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

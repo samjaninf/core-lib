@@ -14,12 +14,12 @@ protected void Setup()
         "into the very depths of affliction.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 21 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/sacred-cleansing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

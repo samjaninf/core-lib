@@ -14,10 +14,10 @@ protected void Setup()
         "damage absorption.");
 
     addPrerequisite("/guilds/geomancer/effects/enhance-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 13
         ]));

@@ -41,13 +41,13 @@ void CleanUp()
 void CanAddModifierSpecification()
 {
     mapping *modifiers = ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.25
     ]),
     ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "strength",
         "formula": "subtractive",
         "rate": 0.25
@@ -100,13 +100,13 @@ void CannotAddInvalidMaximumCombinationChainSpecification()
 void CanAddMaxCombinationChainModifierSpecification()
 {
     mapping *modifiers = ({ ([
-        "type":"skill",
+        "type": "skill",
         "name" : "long sword",
         "formula" : "additive",
         "rate" : 1.25
     ]),
     ([
-        "type":"attribute",
+        "type": "attribute",
         "name" : "strength",
         "formula" : "subtractive",
         "rate" : 0.25

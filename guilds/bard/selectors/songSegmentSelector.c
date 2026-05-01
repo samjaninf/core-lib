@@ -87,7 +87,7 @@ private nomask void addOtherMenuOptions()
             "for this segment of the song.\n"
     ]);
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Decrement segment ordering",
+        "name": "Decrement segment ordering",
         "type": "decrement",
         "is disabled": SongData["order in sequence"] <= minimumRangeValue,
         "value": SongData["order in sequence"] - 1,
@@ -95,7 +95,7 @@ private nomask void addOtherMenuOptions()
             "section.\n"
     ]);
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Increment segment ordering",
+        "name": "Increment segment ordering",
         "type": "increment",
         "is disabled": SongData["order in sequence"] >= maximumRangeValue,
         "value": SongData["order in sequence"] + 1,

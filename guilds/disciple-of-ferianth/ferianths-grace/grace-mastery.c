@@ -13,10 +13,10 @@ protected void Setup()
         "complete mastery of Ferianth's grace.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/eternal-protection.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 57
         ]));

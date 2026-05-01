@@ -17,5 +17,5 @@ protected void Setup()
     addSpecification("bonus diplomacy", 1);
 
     addPrerequisite("/guilds/background/paths/compassionate/empathic-sense.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Buff granting defense and damage reflection");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/inner-fire.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 7
         ]));

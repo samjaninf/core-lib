@@ -13,7 +13,7 @@ protected void Setup()
         "a more resilient psyche, improving recovery.");
 
     addPrerequisite("/guilds/oneiromancer/mental-bastion/mental-armor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 13
         ]));

@@ -15,10 +15,10 @@ protected void Setup()
         "while in bear form");
 
     addPrerequisite("/guilds/therianthrope/bear/primal-strength.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 5
         ]));

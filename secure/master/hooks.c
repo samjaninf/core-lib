@@ -133,9 +133,9 @@ protected nomask void addDriverHooks()
 
     // Add directional abbreviations
     set_driver_hook(H_MODIFY_COMMAND, ([ 
-        "e":"east", "w":"west", "s":"south", "n":"north", "d":"down", 
-        "u":"up", "nw":"northwest", "ne":"northeast", "sw":"southwest", 
-        "se":"southeast" ]));
+        "e": "east", "w": "west", "s": "south", "n": "north", "d": "down", 
+        "u": "up", "nw": "northwest", "ne": "northeast", "sw": "southwest", 
+        "se": "southeast" ]));
 
     set_driver_hook(H_MODIFY_COMMAND_FNAME, "modify_command");
     set_driver_hook(H_NOTIFY_FAIL, "What?\n");

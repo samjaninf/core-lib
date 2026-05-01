@@ -15,10 +15,10 @@ protected void Setup()
         "draining their vitality.");
 
     addPrerequisite("/guilds/pyromancer/fire/spark.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 7
         ]));

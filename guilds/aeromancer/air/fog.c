@@ -17,10 +17,10 @@ protected void Setup()
         "accurate strikes.");
 
     addPrerequisite("/guilds/aeromancer/air/blinding-mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 11
         ]));

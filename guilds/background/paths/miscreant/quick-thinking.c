@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus bluff", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/keen-observation.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

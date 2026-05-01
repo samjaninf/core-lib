@@ -14,13 +14,13 @@ protected void Setup()
         "fire, enhancing the power of wrathful flame attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 37
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/pyromaniacs-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

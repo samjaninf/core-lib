@@ -19,10 +19,10 @@ protected void Setup()
         "adds cold damage");
 
     addPrerequisite("/guilds/oneiromancer/dream-imagery/drowning-depths.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 47
         ]));
@@ -65,7 +65,7 @@ protected void Setup()
             "rate": 0.05
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.5

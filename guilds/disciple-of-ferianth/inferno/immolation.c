@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Intense flames that strip fire resistance");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/fire-storm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 35
         ]));

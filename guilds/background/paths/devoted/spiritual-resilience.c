@@ -16,5 +16,5 @@ protected void Setup()
     addSpecification("bonus hit points", 5);
 
     addPrerequisite("/guilds/background/paths/devoted/faithful-heart.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

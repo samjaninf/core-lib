@@ -14,6 +14,6 @@ protected void Setup()
         "typical bladed weapon materials such as iron, bronze, and steel.");
     addSpecification("research type", "tree root");
     addPrerequisite("/lib/instances/research/crafting/weapons/craftWeapons.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 1]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 1]));
 }

@@ -14,10 +14,10 @@ protected void Setup()
         "parry capabilities.");
 
     addPrerequisite("/guilds/aquamancer/effects/enhance-dodge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 17
         ]));

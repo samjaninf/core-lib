@@ -16,7 +16,7 @@ protected void Setup()
         "the basis for more advanced earth manipulation.");
 
     addPrerequisite("/guilds/geomancer/earth/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

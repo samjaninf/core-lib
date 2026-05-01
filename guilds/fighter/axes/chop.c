@@ -14,12 +14,12 @@ protected void Setup()
         "an enemy.");
 
     addPrerequisite("/guilds/fighter/axes/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "axe" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 1
         ]));

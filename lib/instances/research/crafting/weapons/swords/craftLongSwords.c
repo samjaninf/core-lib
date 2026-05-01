@@ -16,8 +16,8 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/swords/craftBasicSwords.c", 
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/weapons/common/annealing.c",
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 8]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 8]));
 }

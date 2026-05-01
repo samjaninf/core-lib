@@ -13,7 +13,7 @@ protected void Setup()
         "improved mental fortitude.");
 
     addPrerequisite("/guilds/oneiromancer/mental-bastion/bastion-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 1
         ]));

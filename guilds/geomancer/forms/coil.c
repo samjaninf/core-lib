@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that coil around and crush foes.");
 
     addPrerequisite("/guilds/geomancer/forms/cage.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

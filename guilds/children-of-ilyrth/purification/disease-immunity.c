@@ -14,12 +14,12 @@ protected void Setup()
         "that illness cannot take hold.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 21 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/cure-disease.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

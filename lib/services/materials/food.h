@@ -11,7 +11,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "tomato seed": 1
@@ -25,7 +25,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "cherry tomato seed": 1
@@ -39,7 +39,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "grape tomato seed": 1
@@ -53,7 +53,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "yellow tomato seed": 1
@@ -67,7 +67,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "roma tomato seed": 1
@@ -81,7 +81,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "purple tomato seed": 1
@@ -95,7 +95,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "green tomato seed": 1
@@ -109,7 +109,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tomato",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "striped tomato seed": 1
@@ -123,7 +123,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "potato eye": 1
@@ -137,7 +137,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "russet potato eye": 1
@@ -151,7 +151,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "red potato eye": 1
@@ -165,7 +165,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "white potato eye": 1
@@ -179,7 +179,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "yellow potato eye": 1
@@ -193,7 +193,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "purple potato eye": 1
@@ -207,7 +207,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "fingerling potato eye": 1
@@ -221,7 +221,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "petite potato eye": 1
@@ -234,7 +234,7 @@ protected mapping food =
     "carrot": ([
         "type": "vegetable",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "carrot seed": 1
@@ -247,7 +247,7 @@ protected mapping food =
     "turnip": ([
         "type": "vegetable",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "turnip seed": 1
@@ -260,7 +260,7 @@ protected mapping food =
     "parsnip": ([
         "type": "vegetable",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "parsnip seed": 1
@@ -274,7 +274,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "onion seed": 1
@@ -288,7 +288,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "yellow onion seed": 1
@@ -302,7 +302,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "red onion seed": 1
@@ -316,7 +316,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "white onion seed": 1
@@ -330,7 +330,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sweet onion seed": 1
@@ -344,7 +344,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "scallion seed": 1
@@ -358,7 +358,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "hardneck garlic seed": 1
@@ -372,7 +372,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "silverskin garlic seed": 1
@@ -386,7 +386,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "garlic seed": 1
@@ -400,7 +400,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "burgondy garlic seed": 1
@@ -414,7 +414,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "red garlic seed": 1
@@ -428,7 +428,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "black garlic seed": 1
@@ -442,7 +442,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "green",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "hardneck garlic seed": 1
@@ -456,7 +456,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "ramp seed": 1
@@ -470,7 +470,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "wild garlic seed": 1
@@ -484,7 +484,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "elephant garlic seed": 1
@@ -498,7 +498,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "daylily seed": 1
@@ -512,7 +512,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "stem",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "radish seed": 1
@@ -526,7 +526,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "root",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "horseradish seed": 1
@@ -540,7 +540,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "shalot seed": 1
@@ -554,7 +554,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "stem",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "kohlrabi seed": 1
@@ -568,7 +568,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "root",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "beet seed": 1
@@ -582,7 +582,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sweet potato seed": 1
@@ -596,7 +596,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "root",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "rutabaga seed": 1
@@ -610,7 +610,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "root",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "ginger seed": 1
@@ -624,7 +624,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "tuber",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "yam seed": 1
@@ -638,7 +638,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "green",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "chive seed": 1
@@ -652,7 +652,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "stem",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "celery seed": 1
@@ -666,7 +666,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "stem",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "asparagus seed": 1
@@ -680,7 +680,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "stem",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "rhubarb seed": 1
@@ -694,7 +694,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "leek seed": 1
@@ -708,7 +708,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "bulb",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "fennel seed": 1
@@ -722,7 +722,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "snow pea": 1
@@ -736,7 +736,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "green bean": 1
@@ -750,7 +750,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "wax bean": 1
@@ -764,7 +764,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "lima bean": 1
@@ -778,7 +778,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "chickpea": 1
@@ -792,7 +792,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "navy bean": 1
@@ -806,7 +806,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "fava bean": 1
@@ -820,7 +820,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "lupin bean": 1
@@ -834,7 +834,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "mung bean": 1
@@ -848,7 +848,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "runner bean": 1
@@ -862,7 +862,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "pigeon pea": 1
@@ -876,7 +876,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "pinto bean": 1
@@ -890,7 +890,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "black turtle bean": 1
@@ -904,7 +904,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "soybean": 1
@@ -918,7 +918,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "black-eyed pea": 1
@@ -932,7 +932,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "cannellini bean": 1
@@ -946,7 +946,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "great northern bean": 1
@@ -960,7 +960,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "kidney bean": 1
@@ -974,7 +974,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "wheat seed": 1
@@ -988,7 +988,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "flax seed": 1
@@ -1002,7 +1002,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "barley seed": 1
@@ -1016,7 +1016,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "wild rice seed": 1
@@ -1030,7 +1030,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "rye seed": 1
@@ -1044,7 +1044,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "amaranth seed": 1
@@ -1058,7 +1058,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "millet seed": 1
@@ -1072,7 +1072,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "oat seed": 1
@@ -1086,7 +1086,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "quinoa seed": 1
@@ -1100,7 +1100,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "rice seed": 1
@@ -1114,7 +1114,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "basmati rice seed": 1
@@ -1128,7 +1128,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "spelt seed": 1
@@ -1142,7 +1142,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "teff seed": 1
@@ -1156,7 +1156,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "buckwheat seed": 1
@@ -1170,7 +1170,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sorghum seed": 1
@@ -1184,7 +1184,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "triticale seed": 1
@@ -1198,7 +1198,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "chia seed": 1
@@ -1212,7 +1212,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "fonio seed": 1
@@ -1226,7 +1226,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "flour corn seed": 1
@@ -1240,7 +1240,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "popcorn seed": 1
@@ -1254,7 +1254,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "dent corn seed": 1
@@ -1268,7 +1268,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "flint corn seed": 1
@@ -1282,7 +1282,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sweet corn seed": 1
@@ -1296,7 +1296,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "waxy corn seed": 1
@@ -1310,7 +1310,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "pod corn seed": 1
@@ -1324,7 +1324,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "grain",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "striped maize seed": 1
@@ -1338,7 +1338,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "red lentil": 1
@@ -1352,7 +1352,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "green lentil": 1
@@ -1366,7 +1366,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "legume",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "peanut": 1
@@ -1379,7 +1379,7 @@ protected mapping food =
     "sweet yellow pepper": ([
         "type": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sweet yellow pepper seed": 1
@@ -1392,7 +1392,7 @@ protected mapping food =
     "sweet orange pepper": ([
         "type": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sweet orange pepper seed": 1
@@ -1405,7 +1405,7 @@ protected mapping food =
     "sweet red pepper": ([
         "type": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sweet red pepper seed": 1
@@ -1418,7 +1418,7 @@ protected mapping food =
     "green pepper": ([
         "type": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "green pepper seed": 1
@@ -1432,7 +1432,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "long pepper seed": 1
@@ -1445,7 +1445,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "cayenne pepper seed": 1
@@ -1458,7 +1458,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "bird's eye chili seed": 1
@@ -1471,7 +1471,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "dragon pepper seed": 1
@@ -1484,7 +1484,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "jalapeno seed":1
@@ -1497,7 +1497,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "habanero seed":1
@@ -1511,7 +1511,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "serrano seed": 1
@@ -1525,7 +1525,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "red chili seed":1
@@ -1538,7 +1538,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "green chili seed":1
@@ -1552,7 +1552,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials": ([
             "tabasco seed": 1
@@ -1565,7 +1565,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "flower",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "artichoke seed": 1
@@ -1579,7 +1579,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "flower",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "broccoli seed": 1
@@ -1593,7 +1593,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "flower",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "cauliflower seed": 1
@@ -1607,7 +1607,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "fruit",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "cucumber seed": 1
@@ -1621,7 +1621,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "fruit",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "eggplant seed": 1
@@ -1635,7 +1635,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "fruit",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "okra seed": 1
@@ -1649,7 +1649,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "black peppercorn seed": 1
@@ -1663,7 +1663,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "buttercup squash seed": 1
@@ -1677,7 +1677,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "acorn squash seed": 1
@@ -1691,7 +1691,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "butternut squash seed": 1
@@ -1705,7 +1705,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "spaghetti squash seed": 1
@@ -1719,7 +1719,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "ambercup squash seed": 1
@@ -1733,7 +1733,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "autumn cup squash seed": 1
@@ -1747,7 +1747,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "banana squash seed": 1
@@ -1761,7 +1761,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "carnival squash seed": 1
@@ -1775,7 +1775,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "delicata squash seed": 1
@@ -1789,7 +1789,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "musquee de provence squash seed": 1
@@ -1803,7 +1803,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "gold nugget squash seed": 1
@@ -1817,7 +1817,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "hubbard squash seed": 1
@@ -1831,7 +1831,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sweet dumpling squash seed": 1
@@ -1845,7 +1845,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "turban squash seed": 1
@@ -1859,7 +1859,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "zucchini seed": 1
@@ -1873,7 +1873,7 @@ protected mapping food =
         "type": "vegetable",
         "subtype": "squash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "pumpkin seed": 1
@@ -1887,7 +1887,7 @@ protected mapping food =
         "type": "mineral",
         "subtype": "salt",
         "crafting prerequisites": ([
-            "mining":(["type":"skill", "value" : 2]),
+            "mining":(["type": "skill", "value" : 2]),
         ]),
         "crafting materials": ([
             "rock salt": 1
@@ -1900,8 +1900,8 @@ protected mapping food =
     "roasted chicken": ([
         "type": "chicken",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking": (["type": "skill", "value": 3]),
         ]),        
         "crafting materials": ([
             "chicken": 1,
@@ -1916,10 +1916,10 @@ protected mapping food =
         "base experience": 5,
     ]),
     "roasted duck": ([
-        "type":"duck",
+        "type": "duck",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "duck":1,
@@ -1934,10 +1934,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted turkey": ([
-        "type":"turkey",
+        "type": "turkey",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "turkey":1,
@@ -1952,10 +1952,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted goose": ([
-        "type":"goose",
+        "type": "goose",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "goose":1,
@@ -1970,10 +1970,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted quail": ([
-        "type":"quail",
+        "type": "quail",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "quail":1,
@@ -1988,10 +1988,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted pheasant": ([
-        "type":"pheasant",
+        "type": "pheasant",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "pheasant":1,
@@ -2006,10 +2006,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted rabbit": ([
-        "type":"rabbit",
+        "type": "rabbit",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "rabbit":1,
@@ -2024,10 +2024,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted lamb": ([
-        "type":"lamb",
+        "type": "lamb",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "lamb":1,
@@ -2042,10 +2042,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted pork": ([
-        "type":"pork",
+        "type": "pork",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "pork":1,
@@ -2060,10 +2060,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted beef": ([
-        "type":"beef",
+        "type": "beef",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "beef":1,
@@ -2078,10 +2078,10 @@ protected mapping food =
         "base experience" : 5,
     ]),
     "roasted venison": ([
-        "type":"venison",
+        "type": "venison",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/roasting.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/roasting.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "venison":1,
@@ -2099,8 +2099,8 @@ protected mapping food =
         "type": "bread",
         "subtype": "wheat",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/food/baking.c":(["type":"research"]),
-            "cooking": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/food/baking.c":(["type": "research"]),
+            "cooking": (["type": "skill", "value": 3]),
         ]),        
         "crafting materials": ([
             "wheat flour": 2,
@@ -2114,11 +2114,11 @@ protected mapping food =
         "base experience": 3,
     ]),
     "rye bread": ([
-        "type":"bread",
+        "type": "bread",
         "subtype" : "rye",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/baking.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/baking.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "rye flour":2,
@@ -2132,11 +2132,11 @@ protected mapping food =
         "base experience" : 3,
     ]),
     "barley bread": ([
-        "type":"bread",
+        "type": "bread",
         "subtype" : "barley",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/baking.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/baking.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "barley flour":2,
@@ -2150,11 +2150,11 @@ protected mapping food =
         "base experience" : 3,
     ]),
     "oat bread": ([
-        "type":"bread",
+        "type": "bread",
         "subtype" : "oat",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/baking.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/baking.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "oat flour":2,
@@ -2168,11 +2168,11 @@ protected mapping food =
         "base experience" : 3,
     ]),
     "cornbread": ([
-        "type":"bread",
+        "type": "bread",
         "subtype" : "corn",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/baking.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/baking.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "cornmeal":2,
@@ -2186,11 +2186,11 @@ protected mapping food =
         "base experience" : 3,
     ]),
     "sourdough bread": ([
-        "type":"bread",
+        "type": "bread",
         "subtype" : "sourdough",
         "crafting prerequisites" : ([
-            "/lib/instances/research/crafting/food/baking.c":(["type":"research"]),
-            "cooking" : (["type":"skill", "value" : 3]),
+            "/lib/instances/research/crafting/food/baking.c":(["type": "research"]),
+            "cooking" : (["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "sourdough starter":1,
@@ -2207,7 +2207,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pepper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "crafting materials" : ([
             "sweet yellow pepper seed":1
@@ -2221,7 +2221,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "basil",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "basil seed": 1
@@ -2235,7 +2235,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "alder",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Long, dangling clusters of tiny flowers from alder trees that "
             "release golden pollen. These early spring harbingers are collected "
@@ -2246,7 +2246,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "alder",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Drooping clusters of silver-gray flowers that emerge before aspen "
             "leaves unfurl. Their constant trembling is said to be the trees "
@@ -2257,7 +2257,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "willow",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Soft, fuzzy flower clusters that appear like silver-furred "
             "caterpillars on willow branches. Water sprites are said to use them "
@@ -2268,7 +2268,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "cottonwood",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Dangling red-brown flower clusters that mature into seeds surrounded "
             "by white fluff. The floating seeds create summer snowstorms that "
@@ -2279,7 +2279,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "poplar",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Long, hanging flower clusters that release seeds attached to silky "
             "hairs. Children catch the floating seeds to make wishes, believing "
@@ -2290,7 +2290,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "paper birch",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Slender, cylindrical flower clusters from trees with distinctive "
             "white bark. Druids collect them during spring equinox, believing they "
@@ -2301,7 +2301,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "birch",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Pendulous golden-brown flower clusters that release tiny winged "
             "seeds. Folklore claims they contain the souls of ancient forest "
@@ -2312,7 +2312,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "ironwood",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Stiff flowering clusters from exceptionally hard-wooded trees. Their "
             "unusual weight and density leads smiths to burn them as offerings "
@@ -2323,7 +2323,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, modified berries with poisonous seeds covered by sweet red "
             "flesh. Yew's association with both death and immortality makes these "
@@ -2334,7 +2334,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Woody, spiral-arranged seed containers with scales that open when "
             "mature. Their perfect mathematical patterns have been studied by "
@@ -2345,7 +2345,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Upright cylindrical cones with distinctive bracts between scales. "
             "Mountain peoples burn them during winter ceremonies, believing their "
@@ -2356,7 +2356,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Pendant cones with thin, flexible scales that hang from spruce "
             "branches. Their resinous aroma is believed to clear negative energies "
@@ -2367,7 +2367,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Surprisingly small seed cones from the world's tallest trees. "
             "The contrast between tiny seed and massive mature tree makes them "
@@ -2378,7 +2378,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Tiny, delicate cones no larger than a fingertip from coniferous "
             "trees. Despite sharing a name with poisonous herbs, these cones "
@@ -2389,7 +2389,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Woody, spherical structures with angular scales that release "
             "tiny winged seeds. Their association with longevity makes them "
@@ -2400,7 +2400,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Barrel-shaped cones with overlapping scales infused with aromatic "
             "oils. Their distinctive scent is believed to enhance meditation and "
@@ -2411,7 +2411,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "ash",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Single-winged seeds that spin like helicopter blades when falling "
             "from ash trees. Children throw them into the air, believing the "
@@ -2422,7 +2422,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "elm",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Round, flat seeds encircled by papery wings that catch breeze "
             "currents. These gently floating seeds inspired tales of nature "
@@ -2433,7 +2433,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "maple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Twin-winged seeds that spin gracefully through the air like dancing "
             "fairies. Children stick them on their noses, claiming this grants "
@@ -2444,7 +2444,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "sugar maple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Paired winged seeds from trees whose sweet sap becomes maple "
             "syrup. Their graceful autumn flight is said to choreograph the "
@@ -2455,7 +2455,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Dark seeds from trees valued for their fragrant, beautiful wood. "
             "Master instrument makers plant one seed for each tree harvested, "
@@ -2466,7 +2466,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Elongated pods containing seeds from purple-hearted tropical "
             "trees. Their unusual violet heartwood is mirrored in the pods' "
@@ -2477,7 +2477,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Twisted, tan pods containing seeds surrounded by sweet pulp. Desert "
             "nomads crush them into nutritious flour that can sustain travelers "
@@ -2488,7 +2488,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Hardy pods with striped patterns mirroring the striking grain of "
             "marblewood timber. Woodcarvers collect them as talismans, believing "
@@ -2499,7 +2499,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Delicate pods with lace-like patterns containing seeds from trees "
             "with distinctive flecked grain. Their intricate design inspires "
@@ -2510,7 +2510,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Crescent-shaped pods from the sacred Hawaiian koa tree. Island "
             "tradition holds that these seeds should be gathered only after "
@@ -2521,7 +2521,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Unusual pods with ghost-pale exteriors containing seeds that will "
             "grow into trees with midnight-black heartwood. Their stark contrast "
@@ -2532,7 +2532,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Curved pods containing seeds from African trees with pinkish-red "
             "wood. Tradition claims that carrying these pods encourages dreams "
@@ -2543,7 +2543,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Flat, dark brown pods containing rows of extremely hard seeds. "
             "Their remarkable durability led ancient peoples to use them as "
@@ -2554,7 +2554,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Deep crimson seeds from trees whose cut timber appears to 'bleed' "
             "red sap. Warriors sometimes carry these seeds, believing they "
@@ -2565,7 +2565,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Round seed structures with thick, woody husks protecting sweet "
             "kernels inside. Their hard exteriors represent the necessity of "
@@ -2576,7 +2576,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Glossy brown seeds with distinctive pale circular scars resembling "
             "eyes. Their uncanny eye-like appearance led to beliefs they could "
@@ -2587,7 +2587,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Regal pods containing seeds from trees with purple-streaked timber. "
             "Their connection to royalty makes them sought after components in "
@@ -2598,7 +2598,7 @@ protected mapping food =
         "type": "sap",
         "subtype": "maple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Clear, slightly sweet liquid that flows from maple trees in early "
             "spring. This liquid sunshine requires patient reduction to transform "
@@ -2609,7 +2609,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Deep red apples with spicy-sweet flesh and subtle wine-like notes. "
             "Their rich flavor has inspired tales of orchards where fruit "
@@ -2620,7 +2620,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bright crimson fruits with crisp white flesh and balanced sweet-"
             "tart flavor. Old wives' tales claim these apples keep healers away "
@@ -2631,7 +2631,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Aromatic red and green apples with tender white flesh and tangy-"
             "sweet juice. Their distinctive scent is so alluring that orchardists "
@@ -2642,7 +2642,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Exceptionally crisp, juicy apples with perfect balance of sweetness "
             "and acidity. Legend claims they were created when a beekeeper's "
@@ -2653,7 +2653,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Tart, bright green fruits with firm flesh and mouth-puckering "
             "acidity. They're favored for baking and preserves, where heat and "
@@ -2664,7 +2664,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Sunshine-yellow apples with smooth skin and honey-sweet flesh. In "
             "fairy tales, these apples grant eternal youth when grown in "
@@ -2675,7 +2675,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Snow-white fleshed apples with bright red skin and unusual "
             "resistance to browning when cut. Some believe this quality "
@@ -2686,7 +2686,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Rosy pink and cream-colored apples with exceptionally sweet, "
             "honeyed flavor. Their name references the food of the gods, hinting "
@@ -2697,7 +2697,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, tart fruits with vibrant colors ranging from yellow to "
             "deep red. Though too sour for direct eating, they transform into "
@@ -2708,7 +2708,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apple",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Round fruits with crisp flesh and a perfect balance of sweetness "
             "and acidity. These quintessential fruits have symbolized knowledge, "
@@ -2719,7 +2719,7 @@ protected mapping food =
         "type": "bark",
         "subtype": "willow",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Flexible strips of bark containing natural pain-relieving compounds. "
             "Healers have used this remarkable substance for centuries to reduce "
@@ -2730,7 +2730,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "grape",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Juicy berries growing in clusters, ranging from pale green to "
             "deep purple. Beyond their sweet flavor, they transform through "
@@ -2741,7 +2741,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "plum",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Smooth-skinned stone fruits with juicy flesh in shades from yellow "
             "to black-purple. Their sweet-tart balance makes them perfect for "
@@ -2752,7 +2752,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pear",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bell-shaped fruits with buttery flesh and delicate, aromatic "
             "sweetness. Their elegant form has inspired artists and poets "
@@ -2763,7 +2763,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "apricot",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Velvety golden fruits with tender flesh and honeyed sweetness "
             "balanced by slight tartness. Ancient peoples considered them "
@@ -2774,7 +2774,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "peach",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Fuzzy-skinned stone fruits with succulent, aromatic flesh in "
             "shades from white to deep orange. Their sensual qualities and "
@@ -2785,7 +2785,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "persimmon",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bright orange fruits that must fully ripen to transform from "
             "astringent to honey-sweet. Folklore claims their seed patterns "
@@ -2796,7 +2796,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "nectarine",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Smooth-skinned relatives of peaches with firm, aromatic flesh. "
             "Their name derives from 'nectar,' the mythical drink of gods, "
@@ -2807,7 +2807,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "mulberry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Compound berries resembling blackberries in various shades from "
             "white to deep purple. Their juice stains so persistently that dyers "
@@ -2818,7 +2818,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "cherry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bright red sour cherries with clear juice and tart flavor perfect "
             "for pies and preserves. Their vibrant acidity is believed to "
@@ -2829,7 +2829,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "cherry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, astringent cherries that grow in clusters on wild trees. "
             "Though too bitter raw, cooking transforms them into prized preserves "
@@ -2840,7 +2840,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "cherry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Deep purple-black cherries with intensely sweet flesh and staining "
             "juice. Their wood is prized by furniture makers, who claim the trees "
@@ -2851,7 +2851,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "cherry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Large, heart-shaped cherries with mahogany-colored flesh and rich, "
             "sweet flavor. Their perfect balance of sugar and subtle acidity "
@@ -2862,7 +2862,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "cherry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bright red stone fruits with juicy flesh and single hard pit. "
             "Their brief seasonal appearance makes them symbols of life's "
@@ -2873,7 +2873,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "malorn",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Mythical silver-veined fruits with ethereal flavor that changes "
             "based on the eater's deepest desires. Ancient texts claim they "
@@ -2884,7 +2884,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Cone-like aggregates of follicles that emerge from magnificent "
             "flowering trees. Though inedible to humans, birds treasure the "
@@ -2895,7 +2895,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, dry capsules that develop after lilac's fragrant flowers "
             "fade. Though not meant for eating, these seed pods are collected "
@@ -2906,7 +2906,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bright red berries that persist through winter on glossy-leaved "
             "evergreen shrubs. Though poisonous to humans, their beauty against "
@@ -2917,7 +2917,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Purple-black berries with powerful purgative properties, growing "
             "on thorny shrubs. While dangerous to eat, dyers prize them for "
@@ -2928,7 +2928,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bright red berries that appear after the tree's distinctive "
             "four-petaled flowers fade. Birds feast on these fruits while humans "
@@ -2939,7 +2939,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Papery, inflated capsules containing seeds from one of the world's "
             "most valuable timber trees. Shipbuilders collect them as talismans "
@@ -2950,7 +2950,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Spiky balls containing tiny seeds with attached wings for wind "
             "dispersal. Children collect and dry these curious spheres for "
@@ -2961,7 +2961,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "inedible",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Woody capsules that split into five sections when mature, from "
             "trees with rich reddish-brown timber. Cabinet makers carry these "
@@ -2972,7 +2972,7 @@ protected mapping food =
         "type": "flower",
         "subtype": "malorn",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Mythical blossoms with petals that shift color with moonlight and "
             "mood. Their subtle fragrance reportedly reveals different scents to "
@@ -2983,7 +2983,7 @@ protected mapping food =
         "type": "flower",
         "subtype": "magnolia",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Large, primitive blossoms with thick waxy petals in cream, pink, "
             "or white. Their intoxicating lemony fragrance has inspired poets "
@@ -2994,7 +2994,7 @@ protected mapping food =
         "type": "flower",
         "subtype": "lilac",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Fragrant clusters of tiny four-petaled blossoms in shades of "
             "purple, white, or pink. Their distinctive scent evokes memories so "
@@ -3005,7 +3005,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "walnut",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Brain-like kernels encased in hard shells and green husks that "
             "stain fingers brown. Their resemblance to the human brain led "
@@ -3016,7 +3016,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "pine nut",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, elongated seeds harvested from certain pine cones with "
             "rich, buttery flavor. Their labor-intensive collection makes them "
@@ -3027,7 +3027,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "acorn",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Oak tree seeds with distinctive caps and bitter kernels that "
             "require processing to remove tannins before eating. Their "
@@ -3038,7 +3038,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "pecan",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Sweet, buttery nuts with distinctive ridged shells and oil-rich "
             "kernels. Southern folklore claims that pecan trees planted near "
@@ -3049,7 +3049,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "almond",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Elongated kernels wrapped in papery brown skins and enclosed in "
             "woody shells. Their delicate flavor and versatility have made them "
@@ -3060,7 +3060,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "beech",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, triangular nuts enclosed in spiny husks from majestic "
             "forest trees. Though tiny, their sweet flavor makes them worth the "
@@ -3071,7 +3071,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "basswood",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, hard-shelled nuts attached to distinctive wing-like bracts "
             "from fragrant-flowering trees. Though rarely eaten by humans, "
@@ -3082,7 +3082,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "sage",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sage seed": 1
@@ -3096,7 +3096,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "rosemary",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "rosemary cutting": 1
@@ -3110,7 +3110,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "thyme",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "thyme seed": 1
@@ -3124,7 +3124,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "mint",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "mint cutting": 1
@@ -3138,7 +3138,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "dill",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "dill seed": 1
@@ -3152,7 +3152,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "parsley",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "parsley seed": 1
@@ -3166,7 +3166,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "chamomile",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "chamomile seed": 1
@@ -3180,7 +3180,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "lavender",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "lavender seed": 1
@@ -3194,7 +3194,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "marjoram",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "marjoram seed": 1
@@ -3208,7 +3208,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "oregano",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "oregano seed": 1
@@ -3222,7 +3222,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "hyssop",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "hyssop seed": 1
@@ -3236,7 +3236,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "borage",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "borage seed": 1
@@ -3250,7 +3250,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "clary sage",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "clary sage seed": 1
@@ -3264,7 +3264,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "comfrey",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "comfrey root": 1
@@ -3278,7 +3278,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "rue",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "rue seed": 1
@@ -3292,7 +3292,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "angelica",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "angelica seed": 1
@@ -3306,7 +3306,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "coriander",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "coriander seed": 1
@@ -3320,7 +3320,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "tansy",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "tansy seed": 1
@@ -3334,7 +3334,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "chervil",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "chervil seed": 1
@@ -3348,7 +3348,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "sorrel",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "sorrel seed": 1
@@ -3362,7 +3362,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "tarragon",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "tarragon cutting": 1
@@ -3376,7 +3376,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "yarrow",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "yarrow seed": 1
@@ -3390,7 +3390,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "alecost",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "alecost cutting": 1
@@ -3404,7 +3404,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "wormwood",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "wormwood seed": 1
@@ -3418,7 +3418,7 @@ protected mapping food =
         "type": "herb",
         "subtype": "mugwort",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),        
         "crafting materials": ([
             "mugwort seed": 1
@@ -3432,7 +3432,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "chestnut",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Glossy brown nuts encased in spiny burrs with sweet, starchy "
             "flesh. These nutritious kernels were staples for ancient peoples "
@@ -3443,7 +3443,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "hazel",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, round nuts with hard shells and sweet, oil-rich kernels. "
             "Squirrels and humans alike treasure these autumn gifts that can "
@@ -3454,7 +3454,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "rowan",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Bright orange-red berries growing in clusters on mountain ash "
             "trees. Though too bitter to eat fresh, they make excellent preserves "
@@ -3465,7 +3465,7 @@ protected mapping food =
         "type": "flower",
         "subtype": "linden",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, fragrant yellow flowers that bloom in drooping clusters. "
             "Their honey-sweet scent attracts bees while healers brew them into "
@@ -3476,7 +3476,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "larch",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, egg-shaped cones from deciduous conifers that turn golden "
             "before dropping their needles. Their unique nature among evergreens "
@@ -3487,7 +3487,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "juniper",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small blue berries with waxy coating and sharp, gin-like flavor. "
             "Used to flavor spirits and preserve meats, they're also burned as "
@@ -3498,7 +3498,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "serviceberry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, dark purple berries with sweet flavor reminiscent of "
             "blueberries and almonds. These nutritious fruits were traditionally "
@@ -3509,7 +3509,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "elderberry",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Tiny dark purple berries growing in flat-topped clusters. Rich "
             "in healing properties, they're made into syrups and wines that "
@@ -3520,7 +3520,7 @@ protected mapping food =
         "type": "flower",
         "subtype": "elderflower",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Creamy white flowers in large, flat clusters with sweet, musty "
             "fragrance. These delicate blossoms are prized for making cordials, "
@@ -3531,7 +3531,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "hornbeam",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Tiny, ribbed nuts attached to three-lobed bracts from trees with "
             "exceptionally hard wood. Though small, they provide valuable "
@@ -3542,7 +3542,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "fig",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Soft, sweet fruits with thin skin and seed-filled interior. "
             "These ancient delicacies dry beautifully and have been treasured "
@@ -3553,7 +3553,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "olive",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, oval fruits that must be cured to remove bitterness before "
             "eating. Their oil has been precious as gold throughout history, "
@@ -3564,7 +3564,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "pawpaw",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Large, tropical-tasting fruits with custard-like texture and "
             "banana-mango flavor. These unusual native treasures ripen briefly "
@@ -3575,7 +3575,7 @@ protected mapping food =
         "type": "fruit",
         "subtype": "sassafras",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small blue berries on bright red stems with subtle spicy flavor. "
             "Birds treasure these autumn fruits while humans prefer the aromatic "
@@ -3586,7 +3586,7 @@ protected mapping food =
         "type": "root",
         "subtype": "sassafras",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Aromatic roots with distinctive root beer fragrance and spicy "
             "flavor. Long used by indigenous peoples for medicine and seasoning, "
@@ -3597,7 +3597,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "redbud",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Flat, brown seed pods that persist through winter after the tree's "
             "spectacular spring flower display fades. These pods rattle in winter "
@@ -3608,7 +3608,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "tulip tree",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Winged seeds from magnificent forest giants that form cone-like "
             "clusters. These seeds spiral down from great heights like tiny "
@@ -3619,7 +3619,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "white pine",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Long, cylindrical cones with thin scales from towering evergreens. "
             "These cones release seeds on papery wings that can travel great "
@@ -3630,7 +3630,7 @@ protected mapping food =
         "type": "nut",
         "subtype": "black walnut",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Rich, flavorful nuts encased in extremely hard shells and staining "
             "green husks. These prized kernels have more intense flavor than "
@@ -3641,7 +3641,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "scots pine",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, egg-shaped cones from hardy northern pines with distinctive "
             "orange bark. These cones mature over two years before releasing "
@@ -3652,7 +3652,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "douglas fir",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Distinctive hanging cones with three-pronged bracts protruding "
             "between scales. Legend says these bracts are the hind feet and "
@@ -3663,7 +3663,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "fir",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, winged seeds released from upright fir cones. Unlike other "
             "conifers, fir cones disintegrate on the tree, releasing these "
@@ -3674,7 +3674,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "balsam fir",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Purple, candle-like cones that stand upright on branches before "
             "disintegrating to release seeds. Their resinous fragrance makes "
@@ -3685,7 +3685,7 @@ protected mapping food =
         "type": "resin",
         "subtype": "balsam",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Clear, aromatic resin that oozes from balsam fir bark blisters. "
             "This natural balm has been used for centuries to heal wounds, "
@@ -3696,7 +3696,7 @@ protected mapping food =
         "type": "seed",
         "subtype": "tamarack",
         "crafting prerequisites": ([
-            "agriculture":(["type":"skill", "value" : 3]),
+            "agriculture":(["type": "skill", "value" : 3]),
         ]),
         "default description": "Small, upright cones from the unique deciduous conifer that turns "
             "golden before dropping its needles. These cones persist through "

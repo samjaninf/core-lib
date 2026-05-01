@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that hurl a ball of water energy at a foe.");
 
     addPrerequisite("/guilds/aquamancer/forms/bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

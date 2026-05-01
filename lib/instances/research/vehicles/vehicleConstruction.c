@@ -110,9 +110,9 @@ protected void Setup()
         "vehicles for land and sea travel");
     Source("vehicles");
     addPrerequisite("carpentry", 
-        (["type":"skill", "value" : 2]));
+        (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/crafting/craftItems.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addResearchElement("/lib/instances/research/vehicles/craftVehicles.c");
     TreeRoot("/lib/instances/research/vehicles/craftVehicles.c");
 

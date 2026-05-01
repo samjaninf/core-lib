@@ -14,12 +14,12 @@ protected void Setup()
         "all attempts to freeze or bind the caster's movements.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 17 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/cure-disease.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

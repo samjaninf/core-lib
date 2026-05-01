@@ -14,12 +14,12 @@ protected void Setup()
         "enhancing their overall effectiveness.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 25
         ]));
     addPrerequisite("/guilds/aquamancer/construct/enhanced-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that send a sweeping wave of water to strike foes.");
 
     addPrerequisite("/guilds/aquamancer/forms/mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

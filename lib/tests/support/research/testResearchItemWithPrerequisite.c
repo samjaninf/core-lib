@@ -7,5 +7,5 @@ inherit "/lib/modules/research/activeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    addPrerequisite("long sword", (["type": "skill", "value" : 10]));
 }

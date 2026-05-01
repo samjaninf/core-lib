@@ -15,7 +15,7 @@ protected void Setup()
         "discharges of energy at a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/gust.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

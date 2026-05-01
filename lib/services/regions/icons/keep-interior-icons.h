@@ -2664,7 +2664,7 @@ private mapping KeepInteriorIcons = ([
             "24-bit": "\x1b[0;38;2;86;92;86m",
             "icons": ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale": "\x1b[0;38;5;234m",
                     "3-bit" : "\x1b[0;31m",
                     "8-bit" : "\x1b[0;38;5;234m",

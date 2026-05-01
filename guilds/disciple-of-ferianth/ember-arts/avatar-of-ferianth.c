@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Ultimate offensive transformation buff");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/ferianths-blessing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 55
         ]));

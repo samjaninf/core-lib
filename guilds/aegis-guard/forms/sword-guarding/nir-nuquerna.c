@@ -16,14 +16,14 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 10 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/caragpholg.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/nistaros.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

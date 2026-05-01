@@ -14,11 +14,11 @@ protected void Setup()
         "to entangle and disable enemies.");
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 3]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 2]));
-    addPrerequisite("sewing", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 3]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 2]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/components/harpoon-launcher.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 2);

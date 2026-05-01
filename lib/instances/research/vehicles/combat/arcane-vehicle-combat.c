@@ -14,11 +14,11 @@ protected void Setup()
         "vehicle warfare, including spell targeting and arcane defenses.");
     addSpecification("research type", "points");
     addSpecification("research cost", 5);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 8]));
-    addPrerequisite("tactics", (["type":"skill", "value" : 6]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 5]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
+    addPrerequisite("tactics", (["type": "skill", "value" : 6]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/combat/basic-vehicle-tactics.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus magical enchantment", 3);
     addSpecification("bonus resist magical", 2);

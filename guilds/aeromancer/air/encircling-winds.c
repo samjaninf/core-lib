@@ -17,10 +17,10 @@ protected void Setup()
         "accuracy.");
 
     addPrerequisite("/guilds/aeromancer/air/wind-walk.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 37
         ]));

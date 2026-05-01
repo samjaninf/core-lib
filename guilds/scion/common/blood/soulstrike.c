@@ -23,13 +23,13 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/blood/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/blood/sweeping-torment.c", WeaponType),
             "name" : "Sweeping Torment",
             "formula" : "multiplicative",
@@ -37,7 +37,7 @@ protected void Setup()
             "rate": 1.67
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/blood/soul-brand.c", WeaponType),
             "name" : "Soul Brand",
             "formula" : "multiplicative",
@@ -45,7 +45,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/blood/scourge-strike.c", WeaponType),
             "name" : "Scourge Strike",
             "formula" : "multiplicative",
@@ -53,7 +53,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/blood/wicked-edge.c", WeaponType),
             "name" : "Wicked Edge",
             "formula" : "multiplicative",
@@ -61,7 +61,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/blood/tortured-curse.c", WeaponType),
             "name" : "Tortured Curse",
             "formula" : "multiplicative",

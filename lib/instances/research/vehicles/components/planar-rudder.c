@@ -14,12 +14,12 @@ protected void Setup()
         "between planes of existence, enabling interdimensional travel.");
     addSpecification("research type", "points");
     addSpecification("research cost", 15);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 22]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 18]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 12]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 6]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 22]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 18]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 12]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 6]));
     addPrerequisite("/lib/instances/research/vehicles/components/teleportation-rune.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship" })]));
     addSpecification("bonus crafting vehicle speed", 20);

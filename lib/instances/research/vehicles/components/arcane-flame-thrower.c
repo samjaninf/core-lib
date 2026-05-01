@@ -14,12 +14,12 @@ protected void Setup()
         "of arcane fire at enemies, causing devastating damage.");
     addSpecification("research type", "points");
     addSpecification("research cost", 8);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 15]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 8]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 8]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 6]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 15]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 6]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-cannon.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 12);

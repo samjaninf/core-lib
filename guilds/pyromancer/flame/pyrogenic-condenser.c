@@ -14,13 +14,13 @@ protected void Setup()
         "abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 45
         ]));
 
     addPrerequisite("/guilds/pyromancer/flame/enhanced-burning.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,7 +14,7 @@ protected void Setup()
         "into their lungs, causing them to drown on dry land.");
 
     addPrerequisite("/guilds/aquamancer/functions/current.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

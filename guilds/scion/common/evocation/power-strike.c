@@ -23,18 +23,18 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/evocation/magical-strike.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 25
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/sweeping-energy.c", WeaponType),
             "name" : "sweeping energy",
             "formula" : "multiplicative",
@@ -42,7 +42,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/mystic-brand.c", WeaponType),
             "name" : "mystic brand",
             "formula" : "multiplicative",
@@ -50,7 +50,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/energized-strike.c", WeaponType),
             "name" : "energized strike",
             "formula" : "multiplicative",
@@ -58,7 +58,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/magical-edge.c", WeaponType),
             "name" : "shocking edge",
             "formula" : "multiplicative",
@@ -66,7 +66,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/dalreths-might.c", WeaponType),
             "name" : "Dalreth's Might",
             "formula" : "multiplicative",

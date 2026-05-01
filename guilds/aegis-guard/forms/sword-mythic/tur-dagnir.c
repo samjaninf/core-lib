@@ -14,12 +14,12 @@ protected void Setup()
         "mythic magic skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 53
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-mythic/tur-manadh.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

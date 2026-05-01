@@ -14,10 +14,10 @@ protected void Setup()
         "a target's parry capabilities.");
 
     addPrerequisite("/guilds/geomancer/effects/reduce-dodge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 17
         ]));

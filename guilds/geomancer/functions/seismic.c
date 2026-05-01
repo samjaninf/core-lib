@@ -14,7 +14,7 @@ protected void Setup()
         "seismic energy - the ultimate expression of earth's wrath.");
 
     addPrerequisite("/guilds/geomancer/functions/tectonic.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -13,11 +13,11 @@ protected void Setup()
         "knowledge of creating spells that damage targets with powerful gusts of wind.");
 
     addPrerequisite("/guilds/aeromancer/functions/air.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":5
         ]));
 

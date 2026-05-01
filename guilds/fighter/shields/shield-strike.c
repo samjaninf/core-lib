@@ -14,12 +14,12 @@ protected void Setup()
         "devastating attack.");
 
     addPrerequisite("/guilds/fighter/shields/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "shield" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 19
         ]));

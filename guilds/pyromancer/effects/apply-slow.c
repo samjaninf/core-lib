@@ -14,10 +14,10 @@ protected void Setup()
         "a slowing effect.");
 
     addPrerequisite("/guilds/pyromancer/effects/reduce-soak.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 15
         ]));

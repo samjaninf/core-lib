@@ -25,7 +25,7 @@ protected nomask void setUpUserForSelection()
         Data = craftingService->getTopLevelCraftingMenu(User);
     }
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Exit Crafting Menu",
+        "name": "Exit Crafting Menu",
         "type": "exit",
         "description": "This option lets you exit the crafting menu.\n",
         "canShow": 1

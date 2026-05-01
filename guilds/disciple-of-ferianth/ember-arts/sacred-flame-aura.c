@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Sustained aura with hit point regeneration");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/smoldering-presence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 23
         ]));

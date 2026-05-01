@@ -14,7 +14,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/scion/common/mana-shield/gift-of-dhuras.c",
             "name" : "Gift of Dhuras",
             "formula" : "additive",
@@ -22,7 +22,7 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/scion/common/mana-shield/boon-of-dhuras.c",
             "name" : "Boon of Dhuras",
             "formula" : "additive",
@@ -30,7 +30,7 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/scion/common/mana-shield/mana-shroud.c",
             "name" : "Mana Shroud",
             "formula" : "additive",
@@ -38,7 +38,7 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/scion/common/mana-shield/hopes-embrace.c",
             "name" : "Hope's Embrace",
             "formula" : "additive",
@@ -46,7 +46,7 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/scion/common/mana-shield/blessing-of-dhuras.c",
             "name" : "Blessing of Dhuras",
             "formula" : "additive",

@@ -13,12 +13,12 @@ protected void Setup()
         "perfection when constructing spells, resulting in the most potent effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 49
         ]));
     addPrerequisite("/guilds/pyromancer/construct/arcane-precision.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

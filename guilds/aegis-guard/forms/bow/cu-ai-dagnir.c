@@ -14,12 +14,12 @@ protected void Setup()
         "magical archery skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 47
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/bow/cu-ai-manadh.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

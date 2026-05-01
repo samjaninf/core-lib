@@ -15,100 +15,134 @@ public void SetupGuild()
         "Werric Knight", "Hand of Bilanx", "Children of Ilyrth",
         "Disciple of Ferianth", "druid" }));
 
+    addRank("acolyte", ([
+        "name": "acolyte",
+        "title": "the Wrathguard",
+        "pretitle": "Acolyte",
+        "next rank": "priest of wrath",
+        "delay for next promotion": 1200
+    ]));
+
+    addRank("priest of wrath", ([
+        "name": "priest of wrath",
+        "title": "the Wrathguard",
+        "pretitle": "Priest of Wrath",
+        "previous rank": "acolyte",
+        "next rank": "high priest",
+        "delay for next promotion": 3600
+    ]));
+
+    addRank("high priest", ([
+        "name": "high priest",
+        "title": "the Wrathguard",
+        "pretitle": "High Priest",
+        "previous rank": "priest of wrath",
+        "next rank": "avatar of destruction",
+        "delay for next promotion": 7200
+    ]));
+
+    addRank("avatar of destruction", ([
+        "name": "avatar of destruction",
+        "title": ", Avatar of Destruction",
+        "pretitle": "Avatar",
+        "previous rank": "high priest"
+    ]));
+
+    setDefaultRank("acolyte");
+
     addCriteria("hit points", ([
         "type": "modifier",
-        "apply" : "3 every level",
-        "begin at level" : 1
+        "apply": "3 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("spell points", ([
         "type": "modifier",
-        "apply" : "6 every level",
-        "begin at level" : 1
+        "apply": "6 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("stamina points", ([
         "type": "modifier",
-        "apply" : "2 every level",
-        "begin at level" : 1
+        "apply": "2 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("weapon attack", ([
-        "type":"attack",
-        "apply" : "1 every 15 levels"
+        "type": "attack",
+        "apply": "1 every 15 levels"
     ]));
 
     addCriteria("attribute points", ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every 5 levels"
     ]));
 
     addCriteria("skill points", ([
-        "type":"skill points",
-        "apply" : "5 every level"
+        "type": "skill points",
+        "apply": "5 every level"
     ]));
 
     addCriteria("initial research points", ([
-        "type":"research points",
-        "apply": "at level 1"
+        "type": "research points",
+        "apply": "5 at level 1"
     ]));
 
     addCriteria("research points", ([
-        "type":"research points",
-        "apply" : "1 every level"
+        "type": "research points",
+        "apply": "1 every level"
     ]));
 
-    addCriteria("research points", ([
-        "type":"research points",
-        "apply" : "1 every 5 levels"
+    addCriteria("supplemental research points", ([
+        "type": "research points",
+        "apply": "2 every 5 levels"
     ]));
 
-    addCriteria("bonus spell points", ([
-        "type": "bonus modifier",
-        "apply" : "10 at level 5",
-        "types" : ({ "spell points" }),
-        "begin at level" : 5
+    addCriteria("destruction magic", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/wrathguard/destruction-magic.c"
     ]));
 
-    addResearchTree("/guilds/wrathguard/destruction-magic.c");
-    addResearchTree("/guilds/wrathguard/wrath-of-seilyndria.c");
-    addResearchTree("/guilds/wrathguard/combat-priest.c");
-    addResearchTree("/guilds/wrathguard/dark-blessings.c");
-    addResearchTree("/guilds/wrathguard/fury.c");
-    addResearchTree("/guilds/wrathguard/vengeance.c");
-    addResearchTree("/guilds/wrathguard/zealot.c");
-    addResearchTree("/guilds/wrathguard/divine-wrath.c");
-
-    addRank("acolyte", ([
-        "title" : "Acolyte",
-        "new rank prerequisite" : ([ "level" : 1 ]),
-        "spell point bonus" : 25,
-        "description" : "You have joined the Wrathguard, servants of Seilyndria's wrath."
+    addCriteria("wrath of seilyndria", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/wrathguard/wrath-of-seilyndria.c"
     ]));
 
-    addRank("priest of wrath", ([
-        "title" : "Priest of Wrath",
-        "new rank prerequisite" : ([ "level" : 15, "guilds/wrathguard/wrath-of-seilyndria.c":15 ]),
-        "spell point bonus" : 50,
-        "hit point bonus" : 25,
-        "description" : "You channel the destructive power of the goddess."
+    addCriteria("combat priest", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/wrathguard/combat-priest.c"
     ]));
 
-    addRank("high priest", ([
-        "title" : "High Priest",
-        "new rank prerequisite" : ([ "level" : 30, "guilds/wrathguard/divine-wrath.c":25 ]),
-        "spell point bonus" : 75,
-        "hit point bonus" : 50,
-        "weapon attack bonus" : 2,
-        "description" : "Your mastery of wrath magic is nearly complete."
+    addCriteria("dark blessings", ([
+        "type": "research tree",
+        "apply": "at level 3",
+        "research tree": "/guilds/wrathguard/dark-blessings.c"
     ]));
 
-    addRank("avatar of destruction", ([
-        "title" : "Avatar of Destruction",
-        "new rank prerequisite" : ([ "level" : 50, "guilds/wrathguard/zealot.c":40 ]),
-        "spell point bonus" : 100,
-        "hit point bonus" : 75,
-        "weapon attack bonus" : 3,
-        "description" : "You are the living embodiment of Seilyndria's destructive fury."
+    addCriteria("fury", ([
+        "type": "research tree",
+        "apply": "at level 3",
+        "research tree": "/guilds/wrathguard/fury.c"
+    ]));
+
+    addCriteria("vengeance", ([
+        "type": "research tree",
+        "apply": "at level 5",
+        "research tree": "/guilds/wrathguard/vengeance.c"
+    ]));
+
+    addCriteria("zealot", ([
+        "type": "research tree",
+        "apply": "at rank priest of wrath",
+        "research tree": "/guilds/wrathguard/zealot.c"
+    ]));
+
+    addCriteria("divine wrath", ([
+        "type": "research tree",
+        "apply": "at rank high priest",
+        "research tree": "/guilds/wrathguard/divine-wrath.c"
     ]));
 }

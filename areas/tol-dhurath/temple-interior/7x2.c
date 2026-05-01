@@ -18,7 +18,7 @@ public string **customIcon(string **baseIcon, string color, string charset)
 {
     mapping colors = ([
         "exit":([
-            "none":"",
+            "none": "",
             "grayscale": "\x1b[0;38;5;253;1m",
             "3-bit": "\x1b[0;31;1m",
             "8-bit": "\x1b[0;38;5;100;1m",

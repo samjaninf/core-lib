@@ -15,12 +15,12 @@ protected void Setup()
         "wounded allies.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 37 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/oceans-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -16,10 +16,10 @@ protected void Setup()
         "siphons hit points");
 
     addPrerequisite("/guilds/disciple-of-ferianth/flame-conduit/blazing-soul.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));

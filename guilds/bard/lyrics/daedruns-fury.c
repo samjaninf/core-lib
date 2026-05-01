@@ -26,12 +26,12 @@ protected void Setup()
         ]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "bard",
           "value": 7 ]));
 
     addPrerequisite("/guilds/bard/lyrics/inspiring-lyric.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([
@@ -87,7 +87,7 @@ protected void Setup()
             "rate": 0.05
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.05

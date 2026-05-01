@@ -16,10 +16,10 @@ protected void Setup()
         "water adds scalding injury to the impact.");
 
     addPrerequisite("/guilds/aquamancer/water/waterspout.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 25
         ]));

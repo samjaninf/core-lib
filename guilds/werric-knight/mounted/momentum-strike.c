@@ -13,9 +13,9 @@ protected void Setup()
         "the momentum of your mount in devastating charges.");
 
     addPrerequisite("/guilds/werric-knight/mounted/devastating-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

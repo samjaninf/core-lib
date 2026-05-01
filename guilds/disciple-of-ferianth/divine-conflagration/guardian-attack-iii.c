@@ -13,13 +13,13 @@ protected void Setup()
         "attack accuracy of your summoned flame guardian.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 31
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/divine-conflagration/guardian-attack-ii.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

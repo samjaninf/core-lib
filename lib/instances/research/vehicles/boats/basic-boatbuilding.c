@@ -14,8 +14,8 @@ protected void Setup()
         "basic watercraft for river and lake travel.");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 2]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 1]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 2]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 1]));
     addPrerequisite("/lib/instances/research/vehicles/craftVehicles.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

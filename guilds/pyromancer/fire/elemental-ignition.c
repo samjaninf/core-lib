@@ -13,13 +13,13 @@ protected void Setup()
         "mastery of elemental ignition, greatly enhancing fire magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 45
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/heart-of-the-flame.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

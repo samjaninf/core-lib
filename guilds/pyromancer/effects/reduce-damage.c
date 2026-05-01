@@ -14,10 +14,10 @@ protected void Setup()
         "damage capabilities.");
 
     addPrerequisite("/guilds/pyromancer/effects/reduce-attack.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 9
         ]));

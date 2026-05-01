@@ -14,12 +14,12 @@ protected void Setup()
         "with such practiced ease that they recover almost instantly.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 45
         ]));
     addPrerequisite("/guilds/aeromancer/construct/grandmaster-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

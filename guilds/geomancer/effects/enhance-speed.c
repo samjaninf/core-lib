@@ -14,10 +14,10 @@ protected void Setup()
         "movement speed.");
 
     addPrerequisite("/guilds/geomancer/effects/enhance-dodge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 17
         ]));

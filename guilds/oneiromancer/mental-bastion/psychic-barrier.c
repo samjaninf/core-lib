@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of erecting a temporary psychic barrier.");
 
     addPrerequisite("/guilds/oneiromancer/mental-bastion/thought-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 9
         ]));

@@ -15,9 +15,9 @@ protected void Setup()
         "inspire generations.");
 
     addPrerequisite("guilds/werric-knight/virtues/champion-of-virtue.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":70]));
+        (["type": "guild", "level":70]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

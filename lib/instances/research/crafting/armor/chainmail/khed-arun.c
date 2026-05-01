@@ -16,11 +16,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/chainmail/khazuraths-legacy.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 42]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 42]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 42]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 42]));
 
-    addSpecification("limited by", (["crafting type":"chainmail"]));
+    addSpecification("limited by", (["crafting type": "chainmail"]));
 
     addSpecification("bonus crafting value multiplier", 10);
     addSpecification("bonus crafting magical enchantment", 3);

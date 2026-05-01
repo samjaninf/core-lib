@@ -13,9 +13,9 @@ protected void Setup()
         "power through your smiting abilities.");
 
     addPrerequisite("/guilds/werric-knight/light/holy-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

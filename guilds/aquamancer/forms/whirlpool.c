@@ -15,7 +15,7 @@ protected void Setup()
         "water energy to batter foes.");
 
     addPrerequisite("/guilds/aquamancer/forms/geyser.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Soul-burning flames that drain essence");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/blazing-wrath.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 47
         ]));

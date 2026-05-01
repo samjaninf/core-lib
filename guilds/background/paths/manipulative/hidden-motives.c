@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus wisdom", 1);
 
     addPrerequisite("/guilds/background/paths/manipulative/keen-observer.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

@@ -13,9 +13,9 @@ protected void Setup()
         "develop exceptional focus that enhances all your abilities.");
 
     addPrerequisite("guilds/werric-knight/discipline/combat-conditioning.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":10]));
+        (["type": "guild", "level":10]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

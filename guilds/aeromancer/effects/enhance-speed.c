@@ -14,10 +14,10 @@ protected void Setup()
         "movement and attack speed.");
 
     addPrerequisite("/guilds/aeromancer/effects/enhance-dodge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 17
         ]));

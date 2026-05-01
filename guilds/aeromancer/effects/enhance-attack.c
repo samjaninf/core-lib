@@ -14,10 +14,10 @@ protected void Setup()
         "attack capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/add-hp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 7
         ]));

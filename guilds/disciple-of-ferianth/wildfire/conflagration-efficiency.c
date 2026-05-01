@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to reduce the spell point cost of Conflagration.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 29
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/conflagration-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

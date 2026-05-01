@@ -14,11 +14,11 @@ protected void Setup()
         "a lightning-based attack.");
 
     addPrerequisite("/guilds/aeromancer/functions/shock.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":9
         ]));
 

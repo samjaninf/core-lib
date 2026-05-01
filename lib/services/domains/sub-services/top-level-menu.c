@@ -9,7 +9,7 @@ public nomask mapping getTopLevelDomainMenu(object user)
 {
     return ([
         "1":([
-            "name":"Administration Projects",
+            "name": "Administration Projects",
             "description" : "This option lets you administer to your realm - "
                 "be it the taxation of your subjects or the assigning of "
                 "workers to the various projects in your domain.\n",
@@ -20,7 +20,7 @@ public nomask mapping getTopLevelDomainMenu(object user)
                 "diplomacy")                  
         ]),
         "2":([
-            "name":"Building Projects",
+            "name": "Building Projects",
             "description" : "This option lets you build large projects in your realm.\n",
             "selector": "build",
             "selector file": sprintf(DomainSelectorBase, "build"),
@@ -29,7 +29,7 @@ public nomask mapping getTopLevelDomainMenu(object user)
                 "carpentry")                    
         ]),
         "3":([
-            "name":"Resources and Holdings",
+            "name": "Resources and Holdings",
             "description" : "This option lets you increase your holdings, prospect for "
                 "new resources, and manage resources in your domain.\n",
             "selector": "improvement",
@@ -39,7 +39,7 @@ public nomask mapping getTopLevelDomainMenu(object user)
                 "engineering")                
         ]),
         "4":([
-            "name":"Hire New Henchmen",
+            "name": "Hire New Henchmen",
             "description" : "This option lets you hire henchmen that can be used to "
                 "perform tasks within your domain.\n",
             "selector": "hiring",
@@ -49,7 +49,7 @@ public nomask mapping getTopLevelDomainMenu(object user)
                 "persuasion")  
         ]),
         "5":([
-            "name":"Manage Tasks",
+            "name": "Manage Tasks",
             "description" : "This option lets you assign tasks to your hired "
                 "henchmen and companions.\n",
             "selector": "task",
@@ -59,7 +59,7 @@ public nomask mapping getTopLevelDomainMenu(object user)
                 "persuasion")                 
         ]),
         "6":([
-            "name":"Manage Troops",
+            "name": "Manage Troops",
             "description" : "This option lets you create and manage "
                 "your troops and their activities.\n",
             "selector": "troops",

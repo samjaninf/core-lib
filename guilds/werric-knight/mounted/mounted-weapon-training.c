@@ -14,9 +14,9 @@ protected void Setup()
         "the height advantage.");
 
     addPrerequisite("guilds/werric-knight/mounted/charge-attack.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

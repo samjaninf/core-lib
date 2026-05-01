@@ -13,13 +13,13 @@ protected void Setup()
         "absolute dominion over fire, the ultimate enhancement to fire magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 63
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/pyromantic-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

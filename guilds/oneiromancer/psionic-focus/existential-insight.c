@@ -14,14 +14,14 @@ protected void Setup()
         "meaninglessness in their attacks.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 24 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/existential-dread.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/nightmare-affinity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Existential Dread": 25,

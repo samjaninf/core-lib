@@ -48,7 +48,7 @@ void Setup()
     // Having these out-of-order tests selection sorting
     Data = ([
         "2":([
-            "choice":"test choice",
+            "choice": "test choice",
             "type": "research object",
             "name" : "second option",
             "description" : "second description",

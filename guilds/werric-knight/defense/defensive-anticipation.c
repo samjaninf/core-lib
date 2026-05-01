@@ -15,9 +15,9 @@ protected void Setup()
         "a clean block and a glancing blow.");
 
     addPrerequisite("guilds/werric-knight/defense/zone-control.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":3]));
+        (["type": "guild", "level":3]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

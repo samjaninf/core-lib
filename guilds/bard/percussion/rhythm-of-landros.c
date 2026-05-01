@@ -21,7 +21,7 @@ protected void Setup()
         "reduces the cost of all allies' mana-based abilities.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 35
     ]));
@@ -31,7 +31,7 @@ protected void Setup()
     ]));
 
     addPrerequisite("/guilds/bard/percussion/counterspell-knell.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([
@@ -87,13 +87,13 @@ protected void Setup()
             "rate": 0.05
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.05
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "dexterity",
             "formula": "additive",
             "rate": 0.05

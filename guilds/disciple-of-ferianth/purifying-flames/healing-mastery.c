@@ -13,13 +13,13 @@ protected void Setup()
         "knowledge that enhances the disciple's healing abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 5
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/cauterize.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

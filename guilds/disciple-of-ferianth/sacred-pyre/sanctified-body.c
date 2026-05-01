@@ -13,10 +13,10 @@ protected void Setup()
         "a sanctified body that resists corruption and harm.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/divine-favor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 36
         ]));

@@ -13,7 +13,7 @@ protected void Setup()
         "channeling some of their pain into yourself.");
 
     addPrerequisite("/guilds/background/paths/compassionate/healers-instinct.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

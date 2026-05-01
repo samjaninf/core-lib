@@ -20,20 +20,20 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237\u2237"
                     "\u2237\u2237",
             ]),
             "NWCTR2": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "NWCTR3": ([
-                "ascii":".     ",
+                "ascii": ".     ",
                 "unicode": "\u2237     ",
             ]),
             "NWCTR4": ([
-                "ascii":"..    ",
+                "ascii": "..    ",
                 "unicode": "\u2237\u2237    ",
             ]),
         ]),
@@ -53,20 +53,20 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237\u2237"
                     "\u2237\u2237",
             ]),
             "NWCTR2": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "NWCTR3": ([
-                "ascii":".     ",
+                "ascii": ".     ",
                 "unicode": "\u2237     ",
             ]),
             "NWCTR4": ([
-                "ascii":"..    ",
+                "ascii": "..    ",
                 "unicode": "\u2237\u2237    ",
             ]),
         ]),
@@ -100,20 +100,20 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"+----+",
+                "ascii": "+----+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWCTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551    \u2560",
             ]),
             "NWCTR3": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551    \u2502",
             ]),
             "NWCTR4": ([
-                "ascii":"+-    ",
+                "ascii": "+-    ",
                 "unicode": "\u255a\u2566\u2500\u2500"
                     "\u2500\u2518",
             ]),
@@ -149,22 +149,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWCTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2560",
             ]),
             "NWCTR3": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2502",
             ]),
             "NWCTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2566\u2500\u2500"
                     "\u2500\u2518",
             ]),
@@ -206,22 +206,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWCTR2": ([
-                "ascii":"|+archer--default+|",
+                "ascii": "|+archer--default+|",
                 "unicode": "\u2551\u250farcher\u21a5\u21a5"
                     "default\u2513\u2560",
             ]),
             "NWCTR3": ([
-                "ascii":"|+--+ ",
+                "ascii": "|+--+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWCTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2566\u2500\u2500"
                     "\u2500\u2518",
             ]),
@@ -264,22 +264,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWCTR2": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2551\u256dballista\u21ed\u21ed"
                     "default\u256e\u2560",
             ]),
             "NWCTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2570\u2500\u2500"
                     "\u256f\u2502",
             ]),
             "NWCTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2566\u2500\u2500"
                     "\u2500\u2518",
             ]),
@@ -322,22 +322,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWCTR2": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2551\u250fcatapult\u21ef\u21ad"
                     "default\u2513\u2560",
             ]),
             "NWCTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWCTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2566\u2500\u2500"
                     "\u2500\u2518",
             ]),
@@ -380,22 +380,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWCTR2": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2551\u250ftrebuchet\u21ef\u21f2"
                     "default\u2513\u2560",
             ]),
             "NWCTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWCTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2566\u2500\u2500"
                     "\u2500\u2518",
             ]),
@@ -439,22 +439,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NWCTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWCTR2": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2551\u250fmage\u22d0\u22d1"
                     "default\u2513\u2560",
             ]),
             "NWCTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWCTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2566\u2500\u2500"
                     "\u2500\u2518",
             ]),
@@ -475,20 +475,20 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237\u2237"
                     "\u2237\u2237",
             ]),
             "NECTR2": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "NECTR3": ([
-                "ascii":"     .",
+                "ascii": "     .",
                 "unicode": "     \u2237",
             ]),
             "NECTR4": ([
-                "ascii":"    ..",
+                "ascii": "    ..",
                 "unicode": "    \u2237\u2237",
             ]),
         ]),
@@ -522,20 +522,20 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NECTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563    \u2551",
             ]),
             "NECTR3": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502    \u2551",
             ]),
             "NECTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2500"
                     "\u2566\u255d",
             ]),
@@ -571,22 +571,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NECTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
             "NECTR3": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
             "NECTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2500"
                     "\u2566\u255d",
             ]),
@@ -628,22 +628,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NECTR2": ([
-                "ascii":"|+archer--default+|",
+                "ascii": "|+archer--default+|",
                 "unicode": "\u2563\u250farcher\u21a5\u21a5"
                     "default\u2513\u2551",
             ]),
             "NECTR3": ([
-                "ascii":" +--+|",
+                "ascii": " +--+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NECTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2500"
                     "\u2566\u255d",
             ]),
@@ -686,22 +686,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NECTR2": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2563\u256dballista\u21ed\u21ed"
                     "default\u256e\u2551",
             ]),
             "NECTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2570\u2500\u2500"
                     "\u256f\u2551",
             ]),
             "NECTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2500"
                     "\u2566\u255d",
             ]),
@@ -744,22 +744,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NECTR2": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2563\u250fcatapult\u21ef\u21ad"
                     "default\u2513\u2551",
             ]),
             "NECTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NECTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2500"
                     "\u2566\u255d",
             ]),
@@ -802,22 +802,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NECTR2": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2563\u250ftrebuchet\u21ef\u21f2"
                     "default\u2513\u2551",
             ]),
             "NECTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NECTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2500"
                     "\u2566\u255d",
             ]),
@@ -861,22 +861,22 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "NECTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NECTR2": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2563\u250fmage\u22d0\u22d1"
                     "default\u2513\u2551",
             ]),
             "NECTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NECTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2500"
                     "\u2566\u255d",
             ]),
@@ -897,19 +897,19 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"..    ",
+                "ascii": "..    ",
                 "unicode": "\u2237\u2237    ",
             ]),
             "SWCTR2": ([
-                "ascii":".     ",
+                "ascii": ".     ",
                 "unicode": "\u2237     ",
             ]),
             "SWCTR3": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "SWCTR4": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237"
                     "\u2237\u2237\u2237",
             ]),
@@ -944,16 +944,16 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"+-    ",
+                "ascii": "+-    ",
                 "unicode": "\u2554\u2569\u2500\u2500"
                     "\u2500\u2510",
             ]),
             "SWCTR2": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551    \u2502",
             ]),
             "SWCTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551    \u2560",
             ]),
             "SWCTR4": ([
@@ -993,17 +993,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2569\u2500\u2500"
                     "\u2500\u2510",
             ]),
             "SWCTR2": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2502",
             ]),
             "SWCTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2560",
             ]),
@@ -1052,17 +1052,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2569\u2500\u2500"
                     "\u2500\u2510",
             ]),
             "SWCTR2": ([
-                "ascii":"|+--+ ",
+                "ascii": "|+--+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWCTR3": ([
-                "ascii":"|+archer--default+|",
+                "ascii": "|+archer--default+|",
                 "unicode": "\u2551\u2517archer\u21a7\u21a7"
                     "default\u251b\u2560",
             ]),
@@ -1110,17 +1110,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2569\u2500\u2500"
                     "\u2500\u2510",
             ]),
             "SWCTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWCTR3": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2551\u2517ballista\u21e9\u21e9"
                     "default\u251b\u2560",
             ]),
@@ -1168,17 +1168,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2569\u2500\u2500"
                     "\u2500\u2510",
             ]),
             "SWCTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWCTR3": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2551\u2517catapult\u21ef\u21ad"
                     "default\u251b\u2560",
             ]),
@@ -1226,17 +1226,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2569\u2500\u2500"
                     "\u2500\u2510",
             ]),
             "SWCTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWCTR3": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2551\u2517trebuchet\u21ef\u21f2"
                     "default\u251b\u2560",
             ]),
@@ -1285,17 +1285,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SWCTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2569\u2500\u2500"
                     "\u2500\u2510",
             ]),
             "SWCTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWCTR3": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2551\u2517mage\u22d0\u22d1"
                     "default\u251b\u2560",
             ]),
@@ -1321,19 +1321,19 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    ..",
+                "ascii": "    ..",
                 "unicode": "    \u2237\u2237",
             ]),
             "SECTR2": ([
-                "ascii":"     .",
+                "ascii": "     .",
                 "unicode": "     \u2237",
             ]),
             "SECTR3": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "SECTR4": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237"
                     "\u2237\u2237\u2237",
             ]),
@@ -1368,16 +1368,16 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    -+",
+                "ascii": "    -+",
                 "unicode": "\u250c\u2500\u2500\u2500"
                     "\u2569\u2557",
             ]),
             "SECTR2": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502    \u2551",
             ]),
             "SECTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563    \u2551",
             ]),
             "SECTR4": ([
@@ -1417,17 +1417,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2500"
                     "\u2569\u2557",
             ]),
             "SECTR2": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
             "SECTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
@@ -1474,17 +1474,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2500"
                     "\u2569\u2557",
             ]),
             "SECTR2": ([
-                "ascii":" +--+|",
+                "ascii": " +--+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SECTR3": ([
-                "ascii":"|+archer~~default+|",
+                "ascii": "|+archer~~default+|",
                 "unicode": "\u2563\u2517archer\u21a7\u21a7"
                     "default\u251b\u2551",
             ]),
@@ -1532,17 +1532,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2500"
                     "\u2569\u2557",
             ]),
             "SECTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SECTR3": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2563\u2517ballista\u21e9\u21e9"
                     "default\u251b\u2551",
             ]),
@@ -1590,17 +1590,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2500"
                     "\u2569\u2557",
             ]),
             "SECTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SECTR3": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2563\u2517catapult\u21ef\u21ad"
                     "default\u251b\u2551",
             ]),
@@ -1648,17 +1648,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2500"
                     "\u2569\u2557",
             ]),
             "SECTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SECTR3": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2563\u2517trebuchet\u21ef\u21f2"
                     "default\u251b\u2551",
             ]),
@@ -1707,17 +1707,17 @@ private mapping CastleTowers = ([
         ]),
         "components":([
             "SECTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2500"
                     "\u2569\u2557",
             ]),
             "SECTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SECTR3": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2563\u2517mage\u22d0\u22d1"
                     "default\u251b\u2551",
             ]),

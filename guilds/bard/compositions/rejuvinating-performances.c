@@ -19,12 +19,12 @@ protected void Setup()
             "instrument: percussion" }) ]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "bard",
           "value": 23 ]));
 
     addPrerequisite("/guilds/bard/compositions/advanced-performances.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -17,9 +17,9 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" }) ]));
 
     addPrerequisite("/guilds/werric-knight/sword/counterattack.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

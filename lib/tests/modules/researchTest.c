@@ -202,7 +202,7 @@ void LimitedByIntoxBonusesCorrectlyApplied()
     ExpectEq(20, Research.Str(), "strength after research");
 
     Research.addIntoxication(10);
-    ExpectEq(({ (["attack type":"fire", "damage" : 15, "to hit" : 60]), (["attack type":"weapon"]), (["attack type":"weapon"]) }), Research.researchExtraAttacks(), "attacks after research with intox");
+    ExpectEq(({ (["attack type": "fire", "damage" : 15, "to hit" : 60]), (["attack type": "weapon"]), (["attack type": "weapon"]) }), Research.researchExtraAttacks(), "attacks after research with intox");
     ExpectEq(3, Research.getSkill("long sword"), "long sword skill after research with intox");
     ExpectEq(22, Research.Str(), "strength after research with intox");
 }
@@ -236,7 +236,7 @@ void LimitedByOpponentBonusesCorrectlyApplied()
     ExpectEq(20, Research.Str(), "strength after research");
 
     target.Race("dwarf");
-    ExpectEq(({ (["attack type":"fire", "damage" : 15, "to hit" : 60]), (["attack type":"weapon"]), (["attack type":"weapon"]) }), Research.researchExtraAttacks(), "attacks after research with dwarf foe");
+    ExpectEq(({ (["attack type": "fire", "damage" : 15, "to hit" : 60]), (["attack type": "weapon"]), (["attack type": "weapon"]) }), Research.researchExtraAttacks(), "attacks after research with dwarf foe");
     ExpectEq(10, Research.getSkill("long sword"), "long sword skill after research with dwarf foe");
     ExpectEq(22, Research.Str(), "strength after research with dwarf foe");
 
@@ -275,8 +275,8 @@ void PassiveResearchAttacksApplied()
     Research.advanceSkill("long sword", 10);
     ExpectTrue(Research.initiateResearch("/lib/tests/support/research/testPointsResearchItem.c"), "initiate research");
     ExpectTrue(Research.isResearched("/lib/tests/support/research/testPointsResearchItem.c"), "isResearched");
-    ExpectEq(({ (["attack type":"fire", "damage" : 15, "to hit" : 60]), (["attack type":"fire", "damage" : 15, "to hit" : 60]), (["attack type":"weapon"]), (["attack type":"weapon"]), (["attack type":"weapon"]) }), Research.researchExtraAttacks(), "after research attacks");
-    ExpectEq(({ (["attack type":"fire", "damage" : 15, "to hit" : 60]), (["attack type":"fire", "damage" : 15, "to hit" : 60]), (["attack type":"wielded primary"]), (["attack type":"wielded primary"]), (["attack type":"wielded primary"]), (["attack type":"wielded primary"]) }), Research.getAttacks());
+    ExpectEq(({ (["attack type": "fire", "damage" : 15, "to hit" : 60]), (["attack type": "fire", "damage" : 15, "to hit" : 60]), (["attack type": "weapon"]), (["attack type": "weapon"]), (["attack type": "weapon"]) }), Research.researchExtraAttacks(), "after research attacks");
+    ExpectEq(({ (["attack type": "fire", "damage" : 15, "to hit" : 60]), (["attack type": "fire", "damage" : 15, "to hit" : 60]), (["attack type": "wielded primary"]), (["attack type": "wielded primary"]), (["attack type": "wielded primary"]), (["attack type": "wielded primary"]) }), Research.getAttacks());
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -653,7 +653,7 @@ void AddResearchChoiceHandlesResearchPath()
 
     ToggleCallOutBypass();
     mapping researchChoice = ([
-        "type":"research path",
+        "type": "research path",
         "name" : "Test name",
         "description" : "Test description",
         "apply" : "at level 5",
@@ -667,7 +667,7 @@ void AddResearchChoiceHandlesResearchPath()
 
     mapping expectedChoices = ([
         "1":([
-            "choice":"Test name",
+            "choice": "Test name",
             "type" : "research tree",
             "name" : "tree of guild researchiness",
             "description" : "this is the land-loving mother pigeon of all research trees",
@@ -675,7 +675,7 @@ void AddResearchChoiceHandlesResearchPath()
             "key" : "/lib/tests/support/guilds/testGuildResearchTree.c"
         ]),
         "2": ([
-            "choice":"Test name",
+            "choice": "Test name",
             "type" : "research tree",
             "name" : "tree of guild researchiness",
             "description" : "this is the land-loving mother pigeon of all research trees",
@@ -702,7 +702,7 @@ void SelectResearchChoiceFiresCorrectEvent()
 
     ToggleCallOutBypass();
     mapping researchChoice = ([
-        "type":"research choice",
+        "type": "research choice",
         "name" : "Test name",
         "description" : "Test description",
         "apply" : "at level 5",
@@ -724,7 +724,7 @@ void SelectResearchChoiceFiresCorrectEvent()
 void SelectResearchPathSelectsCorrectResearchTree()
 {
     mapping researchChoice = ([
-        "type":"research path",
+        "type": "research path",
         "name" : "Test name",
         "description" : "Test description",
         "apply" : "at level 5",
@@ -748,7 +748,7 @@ void SelectResearchPathFiresCorrectEvent()
 
     ToggleCallOutBypass();
     mapping researchChoice = ([
-        "type":"research path",
+        "type": "research path",
         "name" : "Test name",
         "description" : "Test description",
         "apply" : "at level 5",

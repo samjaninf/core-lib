@@ -14,11 +14,11 @@ protected void Setup()
         "sonic blasts created by rapid air compression.");
 
     addPrerequisite("/guilds/aeromancer/functions/air.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":7
         ]));
 

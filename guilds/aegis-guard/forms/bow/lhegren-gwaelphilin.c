@@ -14,12 +14,12 @@ protected void Setup()
         "mundane archery skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 16
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/bow/bregol-gwaelphilin.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

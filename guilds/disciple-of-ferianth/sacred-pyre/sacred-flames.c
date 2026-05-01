@@ -14,10 +14,10 @@ protected void Setup()
         "All foes in the area are weakened by the holy fire's presence.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/invocation-of-the-pyre.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));

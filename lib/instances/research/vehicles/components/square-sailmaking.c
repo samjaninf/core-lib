@@ -14,11 +14,11 @@ protected void Setup()
         "with favorable winds on ocean voyages.");
     addSpecification("research type", "points");
     addSpecification("research cost", 3);
-    addPrerequisite("sewing", (["type":"skill", "value" : 4]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 3]));
-    addPrerequisite("carpentry", (["type":"skill", "value" : 2]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 4]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/components/lateen-sailmaking.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle speed", 3);

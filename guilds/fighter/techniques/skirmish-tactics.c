@@ -18,12 +18,12 @@ protected void Setup()
         "staff", "pole arm" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 21 ]));
 
     addPrerequisite("/guilds/fighter/techniques/into-the-fray.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

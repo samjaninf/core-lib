@@ -13,9 +13,9 @@ protected void Setup()
         "you superior tactical understanding and combat effectiveness.");
 
     addPrerequisite("/guilds/werric-knight/tactics/tactical-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/swords/daedruns-legacy.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 35]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 33]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 35]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 33]));
 
     addSpecification("limited by", (["crafting type":({ "sword", "dagger" })]));
 

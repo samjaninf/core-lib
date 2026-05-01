@@ -57,7 +57,7 @@ protected nomask void setUpUserForSelection()
             "selector": "sellItemSelector"
         ]),
         "3":([
-            "name":"Exit Shop Menu",
+            "name": "Exit Shop Menu",
             "type": "exit",
             "description": "This option lets you exit the shop menu.\n"
         ])

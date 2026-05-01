@@ -16,15 +16,15 @@ protected void Setup()
         "equipment": ({ "instrument: plucked", "instrument: bowed" }) ]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 11
     ]));
 
     addPrerequisite("/guilds/bard/strings/elegy-of-energy.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/bard/strings/enchanting-ostinato.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

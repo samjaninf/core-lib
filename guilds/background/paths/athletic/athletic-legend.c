@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus hit points", 5);
 
     addPrerequisite("/guilds/background/paths/athletic/unstoppable-force.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

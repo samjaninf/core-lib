@@ -13,9 +13,9 @@ protected void Setup()
         "that protects nearby allies, strengthening their defenses.");
 
     addPrerequisite("/guilds/werric-knight/virtues/strike-of-justice.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,10 +14,10 @@ protected void Setup()
         "flame, allowing them to move with supernatural speed.");
 
     addPrerequisite("/guilds/pyromancer/fire/fire-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 23
         ]));

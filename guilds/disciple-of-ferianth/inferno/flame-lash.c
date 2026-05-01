@@ -16,10 +16,10 @@ protected void Setup()
         "moderate damage and low cooldown");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/heat-metal.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));

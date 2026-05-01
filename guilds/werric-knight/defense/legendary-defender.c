@@ -15,9 +15,9 @@ protected void Setup()
         "defensive techniques are studied by military academies.");
 
     addPrerequisite("guilds/werric-knight/defense/defensive-supremacy.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type": "guild", "level":31]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

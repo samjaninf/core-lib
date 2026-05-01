@@ -14,12 +14,12 @@ protected void Setup()
         "and metal bands for enhanced durability and seaworthiness.");
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 5]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 2]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 3]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 2]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/components/basic-hull-construction.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle structure", 6);

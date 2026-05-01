@@ -14,12 +14,12 @@ protected void Setup()
         "spells become more gentle yet effective.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 9 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/waters-purity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

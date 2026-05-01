@@ -13,7 +13,7 @@ protected void Setup()
         "perfect mental lucidity, greatly enhancing focused attacks.");
 
     addPrerequisite("/guilds/oneiromancer/lucid-control/enhanced-clarity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 15
         ]));

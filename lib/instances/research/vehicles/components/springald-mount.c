@@ -14,10 +14,10 @@ protected void Setup()
         "powerful bolt-throwing weapons for vehicle mounting.");
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 4]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 4]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/basic-wagon-frame.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 3);

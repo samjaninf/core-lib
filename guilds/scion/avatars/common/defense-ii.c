@@ -14,13 +14,13 @@ protected void Setup()
         "attacks.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 9
     ]));
 
     addPrerequisite("/guilds/scion/avatars/common/defense-i.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

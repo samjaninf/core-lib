@@ -17,13 +17,13 @@ protected void Setup()
         "well-suited to circumventing shields.");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/gwistamacil.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 15
         ]));
@@ -56,7 +56,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aegis-guard/forms/sword-attacks/ruth-dravn.c",
             "name" : "Ruth Dravn",
             "formula" : "multiplicative",
@@ -64,7 +64,7 @@ protected void Setup()
             "rate": 1.15
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aegis-guard/forms/sword-attacks/lanna-dravn.c",
             "name" : "Lanna Dravn",
             "formula" : "multiplicative",
@@ -88,7 +88,7 @@ protected void Setup()
             "rate" : 0.5
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "dagger", "short sword", "long sword", 
                 "hand and a half sword", "two-handed sword" }),
@@ -114,7 +114,7 @@ protected void Setup()
             "rate": 0.25
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "strength",
             "formula": "additive",
             "rate": 0.5

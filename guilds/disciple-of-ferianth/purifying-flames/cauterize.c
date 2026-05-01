@@ -14,10 +14,10 @@ protected void Setup()
     addSpecification("usage summary", "A basic healing spell using sacred fire");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/purifying-flames-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 1
         ]));

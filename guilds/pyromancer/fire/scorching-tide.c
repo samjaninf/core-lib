@@ -14,10 +14,10 @@ protected void Setup()
         "wave of liquid fire that sweeps across the battlefield.");
 
     addPrerequisite("/guilds/pyromancer/fire/molten-core.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 37
         ]));

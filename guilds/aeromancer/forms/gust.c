@@ -15,7 +15,7 @@ protected void Setup()
         "force at a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

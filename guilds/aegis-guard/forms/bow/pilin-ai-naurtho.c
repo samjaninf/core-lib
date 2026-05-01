@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge to set an arrow to magical flames as it flies from a bow.");
 
     addPrerequisite("/guilds/aegis-guard/forms/bow/angol-ai-cu.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "bow" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 11
         ]));

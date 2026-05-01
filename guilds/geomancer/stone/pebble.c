@@ -14,7 +14,7 @@ protected void Setup()
         "geomancer is able to hurl a magically-propelled stone at a foe.");
 
     addPrerequisite("/guilds/geomancer/stone/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

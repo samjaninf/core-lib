@@ -14,7 +14,7 @@ protected void Setup()
         "pyromancer conjures a massive inferno that engulfs all nearby foes.");
 
     addPrerequisite("/guilds/pyromancer/flame/firestorm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

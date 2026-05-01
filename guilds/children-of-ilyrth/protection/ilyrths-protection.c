@@ -14,12 +14,12 @@ protected void Setup()
         "granting them enhanced resilience against harm.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 5 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/flowing-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,12 +14,12 @@ protected void Setup()
         "increasing damage output.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 29 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/amplified-horror.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

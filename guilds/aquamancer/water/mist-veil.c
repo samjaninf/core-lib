@@ -16,10 +16,10 @@ protected void Setup()
         "harmlessly through the swirling vapor.");
 
     addPrerequisite("/guilds/aquamancer/water/crushing-tide.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 47
         ]));

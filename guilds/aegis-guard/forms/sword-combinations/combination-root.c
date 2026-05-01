@@ -154,7 +154,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "dagger", "short sword", "long sword", 
                 "hand and a half sword", "two-handed sword" }),
@@ -181,7 +181,7 @@ protected void Setup()
             "rate": 0.05
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "strength",
             "formula": "additive",
             "rate": 0.05

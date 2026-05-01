@@ -15,9 +15,9 @@ protected void Setup()
         "armies have been stopped by a single Knight Commander who mastered this technique.");
 
     addPrerequisite("guilds/werric-knight/defender/crowns-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":27]));
+        (["type": "guild", "level":27]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

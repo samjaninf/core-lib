@@ -15,9 +15,9 @@ protected void Setup()
         "by your will into an instrument of inexhaustible determination.");
 
     addPrerequisite("guilds/werric-knight/will/force-of-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":23]));
+        (["type": "guild", "level":23]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

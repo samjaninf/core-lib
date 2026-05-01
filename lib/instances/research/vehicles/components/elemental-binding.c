@@ -14,11 +14,11 @@ protected void Setup()
         "pull or propel vehicles through elemental magic.");
     addSpecification("research type", "points");
     addSpecification("research cost", 7);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 14]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 8]));
-    addPrerequisite("sewing", (["type":"skill", "value" : 5]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 14]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-propulsion.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle speed", 6);

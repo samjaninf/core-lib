@@ -13,6 +13,6 @@ protected void Setup()
         "knowledge required to craft chainmail armor.");
     addSpecification("research type", "granted");
     addPrerequisite("/lib/instances/research/crafting/armor/craftArmor.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 5]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 5]));
 }

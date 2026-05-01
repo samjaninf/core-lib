@@ -14,13 +14,13 @@ protected void Setup()
         "abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 19
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/quake.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

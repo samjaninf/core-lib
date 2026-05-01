@@ -15,12 +15,12 @@ protected void Setup()
         "providing tremendous restoration to the entire group.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 57 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/ilryths-miracle.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

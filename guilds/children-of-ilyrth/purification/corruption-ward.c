@@ -14,12 +14,12 @@ protected void Setup()
         "spirit is shielded by Ilyrth's sacred waters.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 25 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/remove-paralysis.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

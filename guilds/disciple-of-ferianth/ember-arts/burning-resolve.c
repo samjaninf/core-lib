@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Buff granting mental resistance and willpower");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/blazing-speed.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));

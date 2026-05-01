@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Removes multiple debuffs");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/flame-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));

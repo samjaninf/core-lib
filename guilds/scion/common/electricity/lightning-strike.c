@@ -23,18 +23,18 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/electricity/shockstrike.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 25
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/sweeping-shock.c", WeaponType),
             "name" : "Sweeping Shock",
             "formula" : "multiplicative",
@@ -42,7 +42,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/shock-brand.c", WeaponType),
             "name" : "Shock Brand",
             "formula" : "multiplicative",
@@ -50,7 +50,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/energized-strike.c", WeaponType),
             "name" : "Energized Strike",
             "formula" : "multiplicative",
@@ -58,7 +58,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/shocking-edge.c", WeaponType),
             "name" : "shocking edge",
             "formula" : "multiplicative",
@@ -66,7 +66,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/electricity/thunders-boon.c", WeaponType),
             "name" : "Thunder's Boon",
             "formula" : "multiplicative",

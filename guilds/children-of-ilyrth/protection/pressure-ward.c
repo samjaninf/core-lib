@@ -14,12 +14,12 @@ protected void Setup()
         "Enemies who strike the caster feel the weight of the ocean depths.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 7 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/tidal-barrier.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,12 +14,12 @@ protected void Setup()
         "crushing pressure, granting enhanced protection.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 13 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/wave-wall.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

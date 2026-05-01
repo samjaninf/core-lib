@@ -13,13 +13,13 @@ protected void Setup()
         "mastery of the flow of fire energy, enhancing all fire spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/fire-channeling.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

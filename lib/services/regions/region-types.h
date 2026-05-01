@@ -258,7 +258,7 @@ protected mapping RegionTypes = ([
     ]),
 
     "rural": ([
-        "terrain":"/lib/environment/terrain/farmland.c",
+        "terrain": "/lib/environment/terrain/farmland.c",
         "potential features" : ([]),
         "path type" : "/lib/environment/features/paths/road.c",
         "potential items" : ([ "objects": ([

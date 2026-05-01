@@ -16,10 +16,10 @@ protected void Setup()
         "paralyzes and deals damage over time");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/mental-annihilation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 55
         ]));

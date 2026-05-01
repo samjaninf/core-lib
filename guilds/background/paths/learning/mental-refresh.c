@@ -14,7 +14,7 @@ protected void Setup()
         "ally's spell points.");
 
     addPrerequisite("/guilds/background/paths/learning/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

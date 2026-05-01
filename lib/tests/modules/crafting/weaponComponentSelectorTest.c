@@ -538,7 +538,7 @@ void OnCraftingCompletedIsEmittedWhenCraftingIsCompleted()
     command("25", Player);
     command("8", Player);
 
-    ExpectEq((["onCraftingCompleted":"/lib/instances/items/weapons/swords/long-sword.c"]), eventSubscriber.events());
+    ExpectEq((["onCraftingCompleted": "/lib/instances/items/weapons/swords/long-sword.c"]), eventSubscriber.events());
 }
 
 /////////////////////////////////////////////////////////////////////////////

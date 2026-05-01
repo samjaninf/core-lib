@@ -14,12 +14,12 @@ protected void Setup()
         "electricity-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 43
         ]));
     addPrerequisite("/guilds/aeromancer/lightning/boltmasters-endurance.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

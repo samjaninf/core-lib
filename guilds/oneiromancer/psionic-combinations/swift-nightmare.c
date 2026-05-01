@@ -14,12 +14,12 @@ protected void Setup()
         "the cooldown time.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 17 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/cascading-thoughts.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

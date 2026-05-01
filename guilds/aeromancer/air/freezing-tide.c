@@ -16,13 +16,13 @@ protected void Setup()
         "dealt to enemies.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 37
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/glacial-winds.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

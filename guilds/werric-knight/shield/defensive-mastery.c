@@ -13,12 +13,12 @@ protected void Setup()
         "of shield defense, granting significant defensive bonuses.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 5
         ]));
     addPrerequisite("/guilds/werric-knight/shield/shield-wall.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "shield" }) ]));
 

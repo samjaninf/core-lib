@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A focused beam of sacred fire");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/flame-touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 3
         ]));

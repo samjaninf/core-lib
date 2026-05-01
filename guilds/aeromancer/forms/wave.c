@@ -14,11 +14,11 @@ protected void Setup()
         "knowledge of creating spells that send a sweeping wave of energy to strike foes.");
 
     addPrerequisite("/guilds/aeromancer/forms/mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":9
         ]));
 

@@ -13,9 +13,9 @@ protected void Setup()
         "recognized throughout the realm as a paragon of knightly ideals.");
 
     addPrerequisite("guilds/werric-knight/virtues/righteous-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":50]));
+        (["type": "guild", "level":50]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

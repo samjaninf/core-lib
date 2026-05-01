@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Ultimate defensive empowerment");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/mantle-of-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 59
         ]));

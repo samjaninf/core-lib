@@ -14,11 +14,11 @@ protected void Setup()
         "generated through rapid air expansion.");
 
     addPrerequisite("/guilds/aeromancer/functions/wind.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":11
         ]));
 

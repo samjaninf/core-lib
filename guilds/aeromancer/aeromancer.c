@@ -39,7 +39,7 @@ public void SetupGuild()
     ]));
 
     addCriteria("initial research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "5 at level 1"
     ]));
 
@@ -60,7 +60,7 @@ public void SetupGuild()
     ]));
 
     addCriteria("air", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/aeromancer/air.c"
     ]));

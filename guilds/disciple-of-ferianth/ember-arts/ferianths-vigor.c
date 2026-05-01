@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Major physical stat buff");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/indomitable-spirit.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 35
         ]));

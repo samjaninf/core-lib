@@ -16,9 +16,9 @@ protected void Setup()
         "of your conviction.");
 
     addPrerequisite("guilds/werric-knight/will/absolute-determination.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":27]));
+        (["type": "guild", "level":27]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -31,22 +31,57 @@ protected void Setup()
         "overwhelming will at ##TargetName##, shattering ##TargetPossessive## resolve!");
 
     addSpecification("damage type", "psionic");
-    addSpecification("damage hit points", ({ ([
-        "probability":70,
-        "base damage":130,
-        "range":100
-    ]),
-    ([
-        "probability":30,
-        "base damage":200,
-        "range":130
-    ]) }));
+    addSpecification("damage hit points", ({ 
+        ([
+            "probability":70,
+            "base damage":130,
+            "range":100
+        ]),
+        ([
+            "probability":30,
+            "base damage":200,
+            "range":130
+        ]) 
+    }));
     
     addSpecification("modifiers", ({
         ([
-            "type":"skill",`r`n            "name":"willpower",
-            "formula":"additive",
-            "rate":0.35
+            "type": "weapon damage",
+            "name": "weapon",
+            "types": ({"long sword", "hand and a half sword", "two-handed sword", "pole arm"}),
+            "formula": "additive",
+            "rate": 0.75
+        ]),
+        ([
+            "type": "highest skill",
+            "name": "weapon skills",
+            "skills": ({"long sword", "hand and a half sword", "two-handed sword", "pole arm"}),
+            "formula": "additive",
+            "rate": 0.5
+        ]),
+        ([
+            "type": "skill",
+            "name": "tactics",
+            "formula": "additive",
+            "rate": 0.10
+        ]),
+        ([
+            "type": "skill",
+            "name": "strategy",
+            "formula": "additive",
+            "rate": 0.10
+        ]),
+        ([
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.15
+        ]),
+        ([
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
+            "rate": 0.25
         ])
     }));
 }

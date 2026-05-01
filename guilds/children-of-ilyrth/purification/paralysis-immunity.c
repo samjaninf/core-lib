@@ -14,12 +14,12 @@ protected void Setup()
         "impossible to bind or freeze.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 29 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/corruption-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

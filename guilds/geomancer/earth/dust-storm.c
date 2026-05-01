@@ -14,10 +14,10 @@ protected void Setup()
         "storm of abrasive dust and grit that scours all enemies in the area.");
 
     addPrerequisite("/guilds/geomancer/earth/dust-shroud.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 11
         ]));

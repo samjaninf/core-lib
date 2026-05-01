@@ -15,9 +15,9 @@ protected void Setup()
         "it. This is determination elevated to its ultimate expression.");
 
     addPrerequisite("guilds/werric-knight/will/will-made-manifest.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

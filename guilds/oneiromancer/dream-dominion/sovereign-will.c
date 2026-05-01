@@ -13,7 +13,7 @@ protected void Setup()
         "the sovereign will of a dream master, enhancing all abilities.");
 
     addPrerequisite("/guilds/oneiromancer/dream-dominion/dominion-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 1
         ]));

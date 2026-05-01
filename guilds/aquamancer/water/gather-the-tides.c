@@ -16,10 +16,10 @@ protected void Setup()
         "empowering attacks and bolstering defenses.");
 
     addPrerequisite("/guilds/aquamancer/water/encircling-waters.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 51
         ]));

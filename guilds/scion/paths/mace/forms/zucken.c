@@ -19,12 +19,12 @@ protected void Setup()
         "mace", "flail" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 25 ]));
 
     addPrerequisite("/guilds/scion/paths/mace/forms/changing-through.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

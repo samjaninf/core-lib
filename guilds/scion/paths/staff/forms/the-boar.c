@@ -19,12 +19,12 @@ protected void Setup()
         "staff" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 8 ]));
 
     addPrerequisite("/guilds/scion/paths/staff/forms/eisenport.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

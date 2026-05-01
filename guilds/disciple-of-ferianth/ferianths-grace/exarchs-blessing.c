@@ -13,10 +13,10 @@ protected void Setup()
         "mastery of Ferianthian Blessing, maximizing its protective power.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/exalted-blessing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 49
         ]));

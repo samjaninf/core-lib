@@ -15,12 +15,12 @@ protected void Setup()
         "with the strength of the deepest seas.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 51 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/avatar-of-restoration.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

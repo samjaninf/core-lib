@@ -10,8 +10,8 @@ protected mapping potions =
     "healing potion":([
         "type": "health",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/potions/brewPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 5]),
         ]),        
         "crafting materials": ([
         ]),
@@ -27,8 +27,8 @@ protected mapping potions =
     "mana potion":([
         "type": "health",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/potions/brewPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 5]),
         ]),        
         "crafting materials": ([
         ]),
@@ -44,8 +44,8 @@ protected mapping potions =
     "stamina potion":([
         "type": "health",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/potions/brewPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 5]),
         ]),        
         "crafting materials": ([
         ]),
@@ -61,8 +61,8 @@ protected mapping potions =
     "tears of ilyrth":([
         "type": "power",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewEpicPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 35]),
+            "/lib/instances/research/crafting/potions/brewEpicPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 35]),
         ]),        
         "crafting materials": ([
         ]),
@@ -82,8 +82,8 @@ protected mapping potions =
     "tincture of telus":([
         "type": "power",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewEpicPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 12]),
+            "/lib/instances/research/crafting/potions/brewEpicPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 12]),
         ]),        
         "crafting materials": ([
         ]),
@@ -101,8 +101,8 @@ protected mapping potions =
     "nectar of echlarhol":([
         "type": "power",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewHighElvenPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/potions/brewHighElvenPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 15]),
         ]),        
         "crafting materials": ([
         ]),
@@ -122,8 +122,8 @@ protected mapping potions =
     "ilaina's elixir":([
         "type": "health",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewElvenPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/potions/brewElvenPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 15]),
         ]),        
         "crafting materials": ([
         ]),
@@ -142,8 +142,8 @@ protected mapping potions =
     "acid resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -161,8 +161,8 @@ protected mapping potions =
     "air resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -180,8 +180,8 @@ protected mapping potions =
     "chaos resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -199,8 +199,8 @@ protected mapping potions =
     "cold resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -218,8 +218,8 @@ protected mapping potions =
     "disease resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -237,8 +237,8 @@ protected mapping potions =
     "earth resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -256,8 +256,8 @@ protected mapping potions =
     "electricity resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -275,8 +275,8 @@ protected mapping potions =
     "energy resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -294,8 +294,8 @@ protected mapping potions =
     "evil resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -313,8 +313,8 @@ protected mapping potions =
     "fire resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -332,8 +332,8 @@ protected mapping potions =
     "good resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -351,8 +351,8 @@ protected mapping potions =
     "magic resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -370,8 +370,8 @@ protected mapping potions =
     "neutral resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -389,8 +389,8 @@ protected mapping potions =
     "paralysis resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -408,8 +408,8 @@ protected mapping potions =
     "physical resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -427,8 +427,8 @@ protected mapping potions =
     "poison resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -446,8 +446,8 @@ protected mapping potions =
     "psionic resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -465,8 +465,8 @@ protected mapping potions =
     "sonic resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -484,8 +484,8 @@ protected mapping potions =
     "undead resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -503,8 +503,8 @@ protected mapping potions =
     "water resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -522,8 +522,8 @@ protected mapping potions =
     "strength potion":([
         "type": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -541,8 +541,8 @@ protected mapping potions =
     "intelligence potion":([
         "type": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -560,8 +560,8 @@ protected mapping potions =
     "dexterity potion":([
         "type": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -579,8 +579,8 @@ protected mapping potions =
     "wisdom potion":([
         "type": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -598,8 +598,8 @@ protected mapping potions =
     "constitution potion":([
         "type": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -617,8 +617,8 @@ protected mapping potions =
     "charisma potion":([
         "type": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -636,8 +636,8 @@ protected mapping potions =
     "speed potion":([
         "type": "combat",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewFortifyingPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewFortifyingPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -655,8 +655,8 @@ protected mapping potions =
     "fortification potion":([
         "type": "combat",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewFortifyingPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewFortifyingPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),
@@ -674,8 +674,8 @@ protected mapping potions =
     "tincture of combat prowess":([
         "type": "combat",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewFortifyingPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/potions/brewFortifyingPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 15]),
         ]),        
         "crafting materials": ([
         ]),
@@ -693,8 +693,8 @@ protected mapping potions =
     "steam resistance potion":([
         "type": "resistance",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type":"research"]),
-            "brewing": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "brewing": (["type": "skill", "value": 8]),
         ]),        
         "crafting materials": ([
         ]),

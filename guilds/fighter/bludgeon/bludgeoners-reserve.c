@@ -14,12 +14,12 @@ protected void Setup()
         "blunt weapon attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 11
         ]));
     addPrerequisite("/guilds/fighter/bludgeon/pummel.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

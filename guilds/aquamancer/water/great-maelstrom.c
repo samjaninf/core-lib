@@ -15,10 +15,10 @@ protected void Setup()
         "The massive whirlpool devastates everything caught within its grasp.");
 
     addPrerequisite("/guilds/aquamancer/water/tempest-call.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 27
         ]));

@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to further amplify their retributive flames.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ashen-retribution/intensified-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

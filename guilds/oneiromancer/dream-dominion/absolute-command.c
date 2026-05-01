@@ -13,7 +13,7 @@ protected void Setup()
         "absolute command over psionic energies.");
 
     addPrerequisite("/guilds/oneiromancer/dream-dominion/sovereign-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 5
         ]));

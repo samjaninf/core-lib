@@ -15,12 +15,12 @@ protected void Setup()
         "restoring their own vitality.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 3 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/soothing-touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

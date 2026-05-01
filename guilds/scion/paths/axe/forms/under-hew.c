@@ -15,12 +15,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "axe" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 9 ]));
 
     addPrerequisite("/guilds/scion/paths/axe/forms/hew.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

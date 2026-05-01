@@ -16,9 +16,9 @@ protected void Setup()
         "mastery to become the living embodiment of what it means to be a guardian.");
 
     addPrerequisite("guilds/werric-knight/shield/sentinels-vigil.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type": "guild", "level":33]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

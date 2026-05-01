@@ -16,11 +16,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/chainmail/khed-arun.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 45]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 45]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 45]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 45]));
 
-    addSpecification("limited by", (["crafting type":"chainmail"]));
+    addSpecification("limited by", (["crafting type": "chainmail"]));
 
     addSpecification("bonus crafting magical enchantment", 2);
 }

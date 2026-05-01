@@ -16,9 +16,9 @@ protected void Setup()
         "oath-bound, and that example is worth more than any speech.");
 
     addPrerequisite("guilds/werric-knight/oath/doubt-is-disobedience.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":29]));
+        (["type": "guild", "level":29]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

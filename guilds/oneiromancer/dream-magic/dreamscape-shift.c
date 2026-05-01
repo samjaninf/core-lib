@@ -14,10 +14,10 @@ protected void Setup()
         "making it harder for enemies to land their attacks.");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/slumber-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 7
         ]));

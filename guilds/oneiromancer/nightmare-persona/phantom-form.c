@@ -14,12 +14,12 @@ protected void Setup()
         "difficult to perceive.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 17 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/dream-walker.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

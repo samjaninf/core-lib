@@ -15,7 +15,7 @@ protected void Setup()
         "mend minor wounds.");
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

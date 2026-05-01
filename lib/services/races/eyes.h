@@ -14,7 +14,7 @@ mapping eyeColors = ([
         "exclude": ({ "Half troll", "Half orc", "Gnome" }),
     ]),
     "Blue-green": ([
-        "file":"blue-green.c",
+        "file": "blue-green.c",
         "exclude": ({ "Half troll", "Half orc" }),
     ]),
     "Brown": ([

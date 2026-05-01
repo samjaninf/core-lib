@@ -15,12 +15,12 @@ protected void Setup()
         "power.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 21 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/ocean-surge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

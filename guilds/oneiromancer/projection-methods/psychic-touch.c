@@ -18,10 +18,10 @@ protected void Setup()
         "for massive damage increase");
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/memory-anchor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 21
         ]));
@@ -81,13 +81,13 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.50
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "wisdom",
             "formula": "additive",
             "rate": 0.50

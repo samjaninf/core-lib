@@ -14,13 +14,13 @@ protected void Setup()
         "area-based earth attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 11
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/quake.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

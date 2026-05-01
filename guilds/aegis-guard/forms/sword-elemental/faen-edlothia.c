@@ -14,12 +14,12 @@ protected void Setup()
         "elemental magic skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 29
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-elemental/faen-celair.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

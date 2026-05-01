@@ -14,12 +14,12 @@ protected void Setup()
         "Ilyrth's prophetic wisdom, receiving visions of great clarity.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 25 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/divine-perception.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

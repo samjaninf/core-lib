@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A powerful single-target heal");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/sacred-warmth.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 15
         ]));

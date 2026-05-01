@@ -16,10 +16,10 @@ protected void Setup()
         "significant damage");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/mind-fog.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 15
         ]));
@@ -57,13 +57,13 @@ protected void Setup()
             "rate": 0.15
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.35
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "wisdom",
             "formula": "additive",
             "rate": 0.20

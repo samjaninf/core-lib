@@ -14,10 +14,10 @@ protected void Setup()
         "concentrated wave of intense heat that scorches everything in its path.");
 
     addPrerequisite("/guilds/pyromancer/fire/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 5
         ]));

@@ -15,9 +15,9 @@ protected void Setup()
         "carrying substantial crews.");
     addSpecification("research type", "points");
     addSpecification("research cost", 6);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 8]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 6]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 6]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 6]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 6]));
     addPrerequisite("/lib/instances/research/vehicles/wagons/war-wagons.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

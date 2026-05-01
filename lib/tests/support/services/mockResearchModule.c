@@ -37,7 +37,7 @@ public nomask int researchBonusTo(string bonus)
 /////////////////////////////////////////////////////////////////////////////
 public nomask mapping *researchExtraAttacks()
 {
-    return useResearch ? ({ (["attack type":"weapon"]) }) : ({});
+    return useResearch ? ({ (["attack type": "weapon"]) }) : ({});
 }
 
 /////////////////////////////////////////////////////////////////////////////

@@ -16,10 +16,10 @@ protected void Setup()
         "their protective gear compromised by the relentless chemical assault.");
 
     addPrerequisite("/guilds/aeromancer/air/fog.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 17
         ]));
@@ -136,7 +136,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental air",
             "formula" : "additive",
             "rate" : 0.10
@@ -154,13 +154,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

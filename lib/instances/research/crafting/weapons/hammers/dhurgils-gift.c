@@ -16,11 +16,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/hammers/khel-ma-druek.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 45]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 40]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 45]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 40]));
 
-    addSpecification("limited by", (["crafting type":"hammer"]));
+    addSpecification("limited by", (["crafting type": "hammer"]));
 
     addSpecification("bonus crafting magical enchantment", 2);
     addSpecification("bonus crafting enchantments", 1);

@@ -15,7 +15,7 @@ protected void Setup()
         "beneath the target.");
 
     addPrerequisite("/guilds/aquamancer/forms/orb.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

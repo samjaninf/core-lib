@@ -13,5 +13,5 @@ protected void Setup()
         "knowledge required to imbue items with air enchantments.");
     addSpecification("research type", "granted");
     addPrerequisite("/lib/instances/research/crafting/enchantments/craftEnchantments.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

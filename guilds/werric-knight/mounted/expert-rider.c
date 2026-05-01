@@ -14,9 +14,9 @@ protected void Setup()
         "your riding skill are exemplary.");
 
     addPrerequisite("guilds/werric-knight/mounted/trampling-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

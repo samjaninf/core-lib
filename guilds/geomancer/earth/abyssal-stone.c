@@ -15,10 +15,10 @@ protected void Setup()
         "immense force while draining their very essence.");
 
     addPrerequisite("/guilds/geomancer/earth/entombing-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 51
         ]));

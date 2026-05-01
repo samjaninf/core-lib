@@ -14,14 +14,14 @@ protected void Setup()
         "an enemy.");
 
     addPrerequisite("/guilds/fighter/blades/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "long sword",
         "hand and a half sword", "two-handed sword", "dagger", 
         "short sword", })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 1
         ]));
@@ -141,7 +141,7 @@ protected void Setup()
             "rate" : 0.75
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "long sword", "hand and a half sword", 
                 "two-handed sword", "dagger", "short sword" }),

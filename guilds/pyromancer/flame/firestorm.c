@@ -15,7 +15,7 @@ protected void Setup()
         "nearby foes.");
 
     addPrerequisite("/guilds/pyromancer/flame/flame-discharge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

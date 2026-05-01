@@ -15,9 +15,9 @@ protected void Setup()
         "when confidence falters, allowing decisive action in the face of the unknown.");
 
     addPrerequisite("guilds/werric-knight/oath/iron-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

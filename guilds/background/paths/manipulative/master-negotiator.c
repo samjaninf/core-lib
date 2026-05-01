@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus intelligence", 1);
 
     addPrerequisite("/guilds/background/paths/manipulative/persuader.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

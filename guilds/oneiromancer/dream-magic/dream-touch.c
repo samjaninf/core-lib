@@ -16,10 +16,10 @@ protected void Setup()
         "damage through dream energy");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/dream-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 1
         ]));

@@ -16,9 +16,9 @@ protected void Setup()
         "Oath's will were one and the same. You have achieved this unity.");
 
     addPrerequisite("guilds/werric-knight/oath/diamond-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":37]));
+        (["type": "guild", "level":37]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

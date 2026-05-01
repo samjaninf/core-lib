@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/heavy-armor/bergons-tradition.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 25]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 22]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 22]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 25]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 22]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 22]));
 
     addSpecification("limited by", (["crafting type":
         ({ "plate armor", "splint armor", "scale armor" })]));

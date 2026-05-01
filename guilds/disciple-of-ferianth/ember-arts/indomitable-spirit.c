@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Buff against status effects");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/fiery-determination.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 27
         ]));

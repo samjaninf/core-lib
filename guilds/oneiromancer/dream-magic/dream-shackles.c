@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "An attack that slows the target");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/sleep-of-ages.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 23
         ]));

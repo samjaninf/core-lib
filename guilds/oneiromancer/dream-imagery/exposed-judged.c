@@ -18,10 +18,10 @@ protected void Setup()
         "reduces defense");
 
     addPrerequisite("/guilds/oneiromancer/dream-imagery/teeth-crumbling.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 27
         ]));
@@ -63,7 +63,7 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.5

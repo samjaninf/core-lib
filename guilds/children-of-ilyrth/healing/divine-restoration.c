@@ -14,12 +14,12 @@ protected void Setup()
         "Ilyrth's most sacred healing energies.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 33 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/renewal-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

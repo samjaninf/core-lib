@@ -219,7 +219,7 @@ public nomask mapping getMaterialsOfType(string type, object user,
     }
 
     ret[to_string(sizeof(ret) + 1)] = ([
-        "name":"Exit Material Menu",
+        "name": "Exit Material Menu",
         "type": "exit",
         "description": "This option lets you exit the material "
             "selection menu.\n",

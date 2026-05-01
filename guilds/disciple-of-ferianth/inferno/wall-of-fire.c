@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A powerful area fire attack");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/flame-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 27
         ]));

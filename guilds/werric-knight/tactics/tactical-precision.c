@@ -13,9 +13,9 @@ protected void Setup()
         "in coordinating strikes and exploiting openings.");
 
     addPrerequisite("/guilds/werric-knight/tactics/tactical-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type": "guild", "level":9]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

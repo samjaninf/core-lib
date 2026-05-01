@@ -13,13 +13,13 @@ protected void Setup()
         "scion's avatar to be more adept at causing damage.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 10
     ]));
 
     addPrerequisite("/guilds/scion/avatars/common/damage-i.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

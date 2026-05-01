@@ -273,7 +273,7 @@ private string getExitDescription(object viewer)
         (showUnicode ? "\u2558\u2550\u2550\u2550\u255b" : 
             "-=-=-"), numExits == 1 ? "is" : "are",
         getService("environment")->convertNumberToString(numExits),
-        (numExits == 1 ? "" : "s"), (numExits ? ":" : "."),
+        (numExits == 1 ? "" : "s"), (numExits ? ": " : "."),
         implode(exitList, ", ")),
         "exits", "environment", colorConfiguration);
 

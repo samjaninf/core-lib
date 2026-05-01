@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with raging inferno.");
 
     addPrerequisite("/guilds/pyromancer/functions/heat.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

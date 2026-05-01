@@ -16,13 +16,13 @@ protected void Setup()
         "while remaining untouched by the chaos they create.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 39
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/zephyric-flow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

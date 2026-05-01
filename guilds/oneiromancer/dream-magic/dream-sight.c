@@ -14,10 +14,10 @@ protected void Setup()
         "granting enhanced awareness and perception.");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/phantasmal-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 11
         ]));

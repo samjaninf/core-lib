@@ -15,7 +15,7 @@ protected void Setup()
         "nearby foes with massive stones.");
 
     addPrerequisite("/guilds/geomancer/stone/rock-discharge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

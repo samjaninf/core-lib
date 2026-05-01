@@ -16,10 +16,10 @@ protected void Setup()
         "usable while in chimera form");
 
     addPrerequisite("/guilds/therianthrope/chimera/flame-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 41
         ]));

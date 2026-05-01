@@ -16,5 +16,5 @@ protected void Setup()
     addSpecification("bonus persuasion", 1);
 
     addPrerequisite("/guilds/background/paths/compassionate/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A powerful heal restoring all resources");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/phoenix-tears.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));

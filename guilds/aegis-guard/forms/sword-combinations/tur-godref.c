@@ -14,12 +14,12 @@ protected void Setup()
         "combination attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 35
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-combinations/neledh-godref.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

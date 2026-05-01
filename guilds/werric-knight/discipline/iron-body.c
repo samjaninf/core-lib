@@ -13,9 +13,9 @@ protected void Setup()
         "training, making you more resistant to damage and fatigue.");
 
     addPrerequisite("guilds/werric-knight/discipline/focused-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

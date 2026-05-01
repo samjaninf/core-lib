@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge to expertly fire an arrow from a bow.");
 
     addPrerequisite("/guilds/aegis-guard/forms/bow/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "bow" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 3
         ]));

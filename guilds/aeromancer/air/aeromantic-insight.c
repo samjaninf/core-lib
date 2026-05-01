@@ -16,13 +16,13 @@ protected void Setup()
         "wind with near-perfect efficiency, dramatically enhancing all abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 57
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/tempest-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

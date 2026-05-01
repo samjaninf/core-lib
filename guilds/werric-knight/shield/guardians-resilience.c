@@ -16,9 +16,9 @@ protected void Setup()
         "protect others no matter the cost to oneself.");
 
     addPrerequisite("guilds/werric-knight/shield/retribution-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

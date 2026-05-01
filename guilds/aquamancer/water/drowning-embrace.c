@@ -16,10 +16,10 @@ protected void Setup()
         "devastating poison damage over time.");
 
     addPrerequisite("/guilds/aquamancer/water/suffocating-depths.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 39
         ]));

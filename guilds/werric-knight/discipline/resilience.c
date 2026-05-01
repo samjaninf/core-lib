@@ -13,9 +13,9 @@ protected void Setup()
         "mind, making you resilient against both physical and mental attacks.");
 
     addPrerequisite("/guilds/werric-knight/discipline/fortitude.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

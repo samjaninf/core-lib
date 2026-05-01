@@ -14,9 +14,9 @@ protected void Setup()
         "them to yourself for a duration.");
 
     addPrerequisite("/guilds/werric-knight/oath/selfless-service.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 15
         ]));
@@ -33,9 +33,9 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.30
         ])
     }));

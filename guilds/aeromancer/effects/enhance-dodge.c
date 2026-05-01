@@ -14,10 +14,10 @@ protected void Setup()
         "dodging capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/enhance-soak.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 15
         ]));
@@ -80,7 +80,7 @@ protected void Setup()
             "rate": 1.20
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental air",
             "formula" : "additive",
             "rate" : 0.10
@@ -98,7 +98,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25

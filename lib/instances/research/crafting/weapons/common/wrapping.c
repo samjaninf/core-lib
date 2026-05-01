@@ -20,13 +20,13 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/common/folding.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 8]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 8]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 5]));
-    addPrerequisite("physics", (["type":"skill", "value" : 6]));
-    addPrerequisite("mathematics", (["type":"skill", "value" : 4]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 8]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 5]));
+    addPrerequisite("physics", (["type": "skill", "value" : 6]));
+    addPrerequisite("mathematics", (["type": "skill", "value" : 4]));
 
     addSpecification("limited by", (["crafting type":({ "sword", "dagger",
         "pole arm", "staff", "axe", "hammer", "mace", "flail", "crossbow",

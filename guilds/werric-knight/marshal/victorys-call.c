@@ -15,9 +15,9 @@ protected void Setup()
         "decree victory and have reality conform to your will.");
 
     addPrerequisite("guilds/werric-knight/marshal/commanding-aura.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":65]));
+        (["type": "guild", "level":65]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -31,15 +31,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"charisma",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
             "rate":0.30
         ]),
         ([
-            "type":"attribute",
-            "name":"intelligence",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
             "rate":0.20
         ])
     }));

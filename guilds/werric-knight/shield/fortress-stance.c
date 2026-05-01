@@ -16,9 +16,9 @@ protected void Setup()
         "mastery - the stance that can weather any storm.");
 
     addPrerequisite("guilds/werric-knight/shield/bulwark-of-realm.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -35,8 +35,8 @@ protected void Setup()
 
     addSpecification("bonus shield", 8);
     addSpecification("bonus defense", 10);
-    addSpecification("bonus parry", 7);
+    addSpecification("bonus parry", 10);
     addSpecification("bonus hit points", 125);
-    addSpecification("penalty attack", 6);
-    addSpecification("penalty dodge", 5);
+    addSpecification("penalty to attack", 6);
+    addSpecification("penalty to dodge", 5);
 }

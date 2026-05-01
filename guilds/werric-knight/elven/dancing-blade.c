@@ -15,9 +15,9 @@ protected void Setup()
         "patterns so intricate they resembled elven calligraphy written in steel.");
 
     addPrerequisite("guilds/werric-knight/elven/elven-precision.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -42,55 +42,55 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/elven/swift-blade-technique.c",
-            "name":"Swift Blade Technique",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/elven/swift-blade-technique.c",
+            "name": "Swift Blade Technique",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"weapon damage",
-            "name":"sword",
+            "type": "weapon damage",
+            "name": "sword",
             "types":({"dagger", "short sword", "long sword", "hand and a half sword"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.75
         ]),
         ([
-            "type":"highest skill",
-            "name":"sword skills",
+            "type": "highest skill",
+            "name": "sword skills",
             "skills":({"dagger", "short sword", "long sword", "hand and a half sword"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.5
         ]),
         ([
-            "type":"skill",
-            "name":"anatomy and physiology",
-            "formula":"additive",
+            "type": "skill",
+            "name": "anatomy and physiology",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"acrobatics",
-            "formula":"additive",
+            "type": "skill",
+            "name": "acrobatics",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"dancing",
-            "formula":"additive",
+            "type": "skill",
+            "name": "dancing",
+            "formula": "additive",
             "rate":0.05
         ]),
         ([
-            "type":"attribute",
-            "name":"dexterity",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "dexterity",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
             "rate":0.25
         ])
     }));

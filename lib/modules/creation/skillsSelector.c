@@ -67,7 +67,7 @@ protected nomask void setUpUserForSelection()
     if (isLevelAdvance)
     {
         Data["8"] = ([
-            "name":"Exit Skill Menu",
+            "name": "Exit Skill Menu",
             "type": "exit",
             "description": "This option lets you exit the skill advancement menu.\n"
         ]);

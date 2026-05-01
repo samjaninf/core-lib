@@ -14,11 +14,11 @@ protected void Setup()
         "for war wagons with weapon mounts and crew protection.");
     addSpecification("research type", "points");
     addSpecification("research cost", 4);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 8]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 6]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 4]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 6]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/armored-wagon-body.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart" })]));
     addSpecification("bonus crafting vehicle structure", 12);

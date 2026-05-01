@@ -15,11 +15,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/heavy-armor/bergons-way.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 30]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 25]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 25]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 20]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 30]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 25]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 25]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 20]));
 
     addSpecification("limited by", (["crafting type":
         ({ "plate armor", "splint armor", "scale armor" })]));

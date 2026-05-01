@@ -13,10 +13,10 @@ protected void Setup()
         "the disciple's unwavering faith grants enhanced spiritual power.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 35
         ]));

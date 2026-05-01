@@ -14,9 +14,9 @@ protected void Setup()
         "evasion abilities in combat.");
 
     addPrerequisite("/guilds/werric-knight/elven/dancing-blade.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

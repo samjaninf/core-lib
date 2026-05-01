@@ -18,16 +18,16 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "mace", "flail" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 15 ]));
 
     addPrerequisite("/guilds/scion/paths/mace/forms/over-smite.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/mace/forms/wrath-guard.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/mace/forms/wechsel.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

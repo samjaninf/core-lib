@@ -19,13 +19,13 @@ protected void Setup()
             "instrument: percussion" }) ]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 4
     ]));
 
     addPrerequisite("/guilds/bard/woodwind-brass/a-rats-serenade.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,11 +14,11 @@ protected void Setup()
         "knowledge of creating spells that conjure a spear of energy and launch it at a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/blade.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":7
         ]));
 

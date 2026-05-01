@@ -14,12 +14,12 @@ protected void Setup()
         "increased damage.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 13 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/mental-momentum.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

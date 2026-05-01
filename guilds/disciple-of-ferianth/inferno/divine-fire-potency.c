@@ -14,13 +14,13 @@ protected void Setup()
         "all inferno abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 21
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/inferno-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

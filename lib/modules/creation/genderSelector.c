@@ -12,11 +12,11 @@ public nomask void InitializeSelector()
 
     Data = ([
         "1":([
-            "name":"Male",
+            "name": "Male",
             "description" : "Do you really need a description?"
         ]),
         "2":([
-            "name":"Female",
+            "name": "Female",
             "description" : "Do you really need a description?"
         ])
     ]);

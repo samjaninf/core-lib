@@ -15,9 +15,9 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "shield" }) ]));
 
     addPrerequisite("/guilds/werric-knight/shield/shield-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

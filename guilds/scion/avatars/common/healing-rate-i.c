@@ -13,13 +13,13 @@ protected void Setup()
         "scion's avatar to recover hit and spell points quicker.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 17
     ]));
 
     addPrerequisite("/guilds/scion/avatars/common/hitpoints-ii.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

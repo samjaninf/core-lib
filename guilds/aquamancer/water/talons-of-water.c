@@ -15,10 +15,10 @@ protected void Setup()
         "gashes. The water hardens momentarily upon impact before dissipating.");
 
     addPrerequisite("/guilds/aquamancer/water/splash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 9
         ]));

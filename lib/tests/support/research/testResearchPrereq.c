@@ -15,5 +15,5 @@ protected void Setup()
     addSpecification("research cost", 20);
     addSpecification("bonus long sword", 2);
     addPrerequisite("/lib/tests/support/research/testResearchA.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

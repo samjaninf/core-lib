@@ -13,9 +13,9 @@ protected void Setup()
         "magnifying the power of all your virtue-based attacks.");
 
     addPrerequisite("guilds/werric-knight/virtues/champions-challenge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

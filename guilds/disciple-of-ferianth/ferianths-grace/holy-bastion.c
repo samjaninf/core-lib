@@ -13,10 +13,10 @@ protected void Setup()
         "greatly enhanced by Ferianth's divine protection.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/divine-sanctuary.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 53
         ]));

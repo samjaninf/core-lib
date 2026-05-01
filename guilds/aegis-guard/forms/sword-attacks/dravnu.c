@@ -16,12 +16,12 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 5 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/eithagos.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Cirithu": 15

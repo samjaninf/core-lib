@@ -15,7 +15,7 @@ protected void Setup()
         "through flesh, and leaves burning wounds that continue to fester.");
 
     addPrerequisite("/guilds/aquamancer/functions/steam.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that strike with fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/lance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

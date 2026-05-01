@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Direct divine intervention of holy fire");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/divine-conflagration.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 63
         ]));

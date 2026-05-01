@@ -16,10 +16,10 @@ protected void Setup()
         "the blade can be heard with each swing.");
 
     addPrerequisite("/guilds/aeromancer/air/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 9
         ]));

@@ -16,13 +16,13 @@ protected void Setup()
         "all air-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/wind-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

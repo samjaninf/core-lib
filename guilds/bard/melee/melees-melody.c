@@ -14,7 +14,7 @@ protected void Setup()
         "weapon that causes damage to a targeted enemy.");
 
     addPrerequisite("/guilds/bard/melee/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "long sword",
         "hand and a half sword", "two-handed sword", "axe",
@@ -22,7 +22,7 @@ protected void Setup()
         "staff", "pole arm" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 1
         ]));
@@ -112,7 +112,7 @@ protected void Setup()
             "rate" : 0.5
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "weapon skills",
             "skills": ({ "long sword", "hand and a half sword", 
                 "two-handed sword", "axe", "dagger", "short sword", 

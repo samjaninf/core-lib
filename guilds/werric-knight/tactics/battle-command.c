@@ -15,9 +15,9 @@ protected void Setup()
         "group of individuals into a cohesive unit.");
 
     addPrerequisite("guilds/werric-knight/tactics/flanking-maneuver.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

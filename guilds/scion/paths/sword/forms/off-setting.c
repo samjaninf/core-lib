@@ -17,16 +17,16 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 17 ]));
 
     addPrerequisite("/guilds/scion/paths/sword/forms/stabbing.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/sword/forms/over-hew.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/sword/forms/dance-of-death.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

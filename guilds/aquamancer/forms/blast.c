@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that unleash a powerful blast of water energy.");
 
     addPrerequisite("/guilds/aquamancer/forms/ball.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

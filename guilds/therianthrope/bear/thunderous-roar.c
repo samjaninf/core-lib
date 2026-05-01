@@ -15,10 +15,10 @@ protected void Setup()
         "usable while in bear form");
 
     addPrerequisite("/guilds/therianthrope/bear/apex-predator.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 23
         ]));

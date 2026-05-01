@@ -16,9 +16,9 @@ protected void Setup()
         "can push beyond what your body alone could endure.");
 
     addPrerequisite("guilds/werric-knight/oath/selfless-service.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

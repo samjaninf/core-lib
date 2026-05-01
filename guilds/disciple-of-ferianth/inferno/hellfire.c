@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Unholy flames that damage body and soul");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/immolation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 39
         ]));

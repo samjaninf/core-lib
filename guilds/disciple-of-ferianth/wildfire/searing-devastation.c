@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Powerful single target DoT");
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/ferianths-wildfire.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 45
         ]));

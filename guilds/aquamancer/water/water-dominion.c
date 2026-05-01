@@ -16,13 +16,13 @@ protected void Setup()
         "lords of the deep.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 63
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/aquamantic-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

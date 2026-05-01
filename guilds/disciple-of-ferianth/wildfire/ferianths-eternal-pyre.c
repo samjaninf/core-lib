@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Ultimate area DoT - Ferianth's wrath");
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/apocalyptic-firestorm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 65
         ]));

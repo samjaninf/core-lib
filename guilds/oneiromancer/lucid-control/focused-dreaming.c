@@ -13,7 +13,7 @@ protected void Setup()
         "enhanced focus while channeling dream energy.");
 
     addPrerequisite("/guilds/oneiromancer/lucid-control/clarity-of-purpose.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 3
         ]));

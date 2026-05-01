@@ -15,10 +15,10 @@ protected void Setup()
         "area, dealing significant crushing damage.");
 
     addPrerequisite("/guilds/geomancer/earth/earthen-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 15
         ]));

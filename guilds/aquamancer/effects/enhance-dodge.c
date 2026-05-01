@@ -14,10 +14,10 @@ protected void Setup()
         "evasion capabilities.");
 
     addPrerequisite("/guilds/aquamancer/effects/enhance-soak.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 15
         ]));

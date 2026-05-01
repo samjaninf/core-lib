@@ -15,9 +15,9 @@ protected void Setup()
         "resolve around which chaos breaks and order prevails.");
 
     addPrerequisite("guilds/werric-knight/oath/i-am-not-my-pain.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

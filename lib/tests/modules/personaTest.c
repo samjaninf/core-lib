@@ -246,8 +246,8 @@ void CreaturesWithWeaponsGetAllAttacksSet()
 
     ExpectEq(3, sizeof(all_inventory(Persona)));
     ExpectEq(({
-        (["attack type":"undead", "damage" : 15, "to hit" : 90]),
-        (["attack type":"wielded primary"]),
+        (["attack type": "undead", "damage" : 15, "to hit" : 90]),
+        (["attack type": "wielded primary"]),
         }), Persona.getAttacks());
 }
 
@@ -260,8 +260,8 @@ void PersonaRaceWithSpecialAttackHasAttackApplied()
 
     ExpectEq(3, sizeof(all_inventory(Persona)));
     ExpectEq(({
-        (["attack type":"electricity", "damage" : 15, "to hit" : 75]),
-        (["attack type":"wielded primary"]),
+        (["attack type": "electricity", "damage" : 15, "to hit" : 75]),
+        (["attack type": "wielded primary"]),
         }), Persona.getAttacks());
 }
 

@@ -14,11 +14,11 @@ protected void Setup()
         "knowledge of creating spells that cause a violent eruption of energy beneath a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/orb.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":15
         ]));
 

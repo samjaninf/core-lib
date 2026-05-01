@@ -14,11 +14,11 @@ protected void Setup()
         "force from enemies, a forbidden art of necromantic warfare.");
     addSpecification("research type", "points");
     addSpecification("research cost", 10);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 16]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 8]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 4]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 16]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/lightning-cannon.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 12);

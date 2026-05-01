@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Draining flames that enfeeble the target");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/incinerate.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 31
         ]));

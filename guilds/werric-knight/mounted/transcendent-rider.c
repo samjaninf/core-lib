@@ -14,9 +14,9 @@ protected void Setup()
         "a single entity of devastating effectiveness.");
 
     addPrerequisite("guilds/werric-knight/mounted/apocalyptic-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":63]));
+        (["type": "guild", "level":63]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

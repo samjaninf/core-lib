@@ -15,11 +15,11 @@ protected void Setup()
         "that strikes a foe multiple times.");
 
     addPrerequisite("/guilds/aeromancer/forms/vortex.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":19
         ]));
 

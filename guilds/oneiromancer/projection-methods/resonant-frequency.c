@@ -18,10 +18,10 @@ protected void Setup()
         "to the targets mental frequency for massive damage");
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/amplified-sending.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 27
         ]));
@@ -81,13 +81,13 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.50
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "wisdom",
             "formula": "additive",
             "rate": 0.25

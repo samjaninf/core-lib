@@ -17,10 +17,10 @@ protected void Setup()
         "targets the mind directly");
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/focus-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 1
         ]));
@@ -79,7 +79,7 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.5

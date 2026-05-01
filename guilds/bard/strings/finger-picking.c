@@ -16,13 +16,13 @@ protected void Setup()
         "equipment": ({ "instrument: plucked", "instrument: bowed" }) ]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 31
     ]));
 
     addPrerequisite("/guilds/bard/strings/string-skipping.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

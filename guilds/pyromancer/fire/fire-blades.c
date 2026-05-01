@@ -14,10 +14,10 @@ protected void Setup()
         "weapons with flickering flames, adding fire damage to their attacks.");
 
     addPrerequisite("/guilds/pyromancer/fire/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 9
         ]));

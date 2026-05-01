@@ -14,10 +14,10 @@ protected void Setup()
         "pyromancer creates a sudden burst of intense flame.");
 
     addPrerequisite("/guilds/pyromancer/flame/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 5
         ]));

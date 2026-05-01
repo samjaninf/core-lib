@@ -17,10 +17,10 @@ protected void Setup()
         "of aquamantic power.");
 
     addPrerequisite("/guilds/aquamancer/water/withering-waters.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 67
         ]));

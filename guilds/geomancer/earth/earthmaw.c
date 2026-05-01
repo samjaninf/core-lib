@@ -14,10 +14,10 @@ protected void Setup()
         "the earth that attempts to swallow a target, dealing massive damage.");
 
     addPrerequisite("/guilds/geomancer/earth/earthen-might.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 13
         ]));

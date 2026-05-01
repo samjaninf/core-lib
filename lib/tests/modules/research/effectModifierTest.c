@@ -40,7 +40,7 @@ void CleanUp()
 void IsValidModifierReturnsTrueForSkillModifier()
 {
     mapping modifier = ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.1
@@ -53,7 +53,7 @@ void IsValidModifierReturnsTrueForSkillModifier()
 void IsValidModifierReturnsTrueForAttributeModifier()
 {
     mapping modifier = ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "strength",
         "formula": "subtractive",
         "rate": 0.25
@@ -84,7 +84,7 @@ void IsValidModifierReturnsFalseForInvalidModifier()
 void IsValidModifierReturnsTrueForAttributeBonusModifier()
 {
     mapping modifier = ([
-        "type":"attribute bonus",
+        "type": "attribute bonus",
         "name": "strength",
         "formula": "logarithmic",
         "base value": 8,
@@ -98,7 +98,7 @@ void IsValidModifierReturnsTrueForAttributeBonusModifier()
 void IsValidModifierReturnsTrueForSkillBonusModifier()
 {
     mapping modifier = ([
-        "type":"skill bonus",
+        "type": "skill bonus",
         "name": "long sword",
         "formula": "multiplicative",
         "base value": 5,
@@ -112,7 +112,7 @@ void IsValidModifierReturnsTrueForSkillBonusModifier()
 void IsValidModifierReturnsTrueForLevelModifier()
 {
     mapping modifier = ([
-        "type":"level",
+        "type": "level",
         "name": "mage",
         "formula": "subtractive",
         "base value": 5,
@@ -126,7 +126,7 @@ void IsValidModifierReturnsTrueForLevelModifier()
 void IsValidModifierReturnsTrueForResearchModifier()
 {
     mapping modifier = ([
-        "type":"research",
+        "type": "research",
         "research item": "stuff",
         "name": "blah",
         "formula": "subtractive",
@@ -141,7 +141,7 @@ void IsValidModifierReturnsTrueForResearchModifier()
 void IsValidModifierReturnsTrueForTraitModifier()
 {
     mapping modifier = ([
-        "type":"trait",
+        "type": "trait",
         "trait": "stuff",
         "name": "blah",
         "formula": "subtractive",
@@ -156,7 +156,7 @@ void IsValidModifierReturnsTrueForTraitModifier()
 void ApplyModifiersCorrectlyAddsToSkill()
 {
     mapping modifier = ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.25
@@ -169,7 +169,7 @@ void ApplyModifiersCorrectlyAddsToSkill()
 void ApplyModifiersCorrectlySubtractsFromAttribute()
 {
     mapping modifier = ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "wisdom",
         "formula": "subtractive",
         "rate": 0.25
@@ -182,7 +182,7 @@ void ApplyModifiersCorrectlySubtractsFromAttribute()
 void ApplyModifiersCorrectlyMultipliesToSkillBonus()
 {
     mapping modifier = ([
-        "type":"skill bonus",
+        "type": "skill bonus",
         "name": "long sword",
         "formula": "multiplicative",
         "rate": 1.5
@@ -196,7 +196,7 @@ void ApplyModifiersCorrectlyMultipliesToSkillBonus()
 void ApplyModifiersCorrectlyAppliesLogToAttributeBonus()
 {
     mapping modifier = ([
-        "type":"attribute bonus",
+        "type": "attribute bonus",
         "name": "dexterity",
         "formula": "logarithmic",
         "rate": 1.6
@@ -209,7 +209,7 @@ void ApplyModifiersCorrectlyAppliesLogToAttributeBonus()
 void ApplyModifiersCorrectlyAppliesBaseValues()
 {
     mapping modifier = ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "dexterity",
         "formula": "additive",
         "base value": 10,
@@ -223,7 +223,7 @@ void ApplyModifiersCorrectlyAppliesBaseValues()
 void ApplyModifiersCorrectlyAppliesLevelModifier()
 {
     mapping modifier = ([
-        "type":"level",
+        "type": "level",
         "name": "mage",
         "formula": "additive",
         "rate": 1.2
@@ -238,7 +238,7 @@ void ApplyModifiersCorrectlyAppliesLevelModifier()
 void ApplyModifiersCorrectlyAppliesResearchModifier()
 {
     mapping modifier = ([
-        "type":"research",
+        "type": "research",
         "name": "blah",
         "research item": "test",
         "formula": "additive",
@@ -271,7 +271,7 @@ void ApplyModifiersCorrectlyAppliesTraitModifier()
 void ApplyModifiersAppliesSpecialModifier()
 {
     mapping modifier = ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.25
@@ -286,13 +286,13 @@ void ApplyModifiersAppliesSpecialModifier()
 void ApplyModifiersCorrectlyAddsMultipleModifiers()
 {
     mapping *modifiers = ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.25
     ]),
     ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "strength",
         "formula": "subtractive",
         "rate": 0.25

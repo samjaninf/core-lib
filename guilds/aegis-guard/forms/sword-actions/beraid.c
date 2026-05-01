@@ -18,13 +18,13 @@ protected void Setup()
         "any guards.");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/gliri.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 23
         ]));
@@ -65,7 +65,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item" : "/guilds/aegis-guard/forms/sword-actions/tur-beraid.c",
             "name" : "Tur Beraid",
             "formula" : "multiplicative",
@@ -81,7 +81,7 @@ protected void Setup()
             "rate" : 1.0
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "dagger", "short sword", "long sword", 
                 "hand and a half sword", "two-handed sword" }),
@@ -119,7 +119,7 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "strength",
             "formula": "additive",
             "rate": 0.5

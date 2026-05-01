@@ -14,10 +14,10 @@ protected void Setup()
         "of liquid fire that burns with the intensity of the earth's core.");
 
     addPrerequisite("/guilds/pyromancer/fire/blazing-convergence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 27
         ]));

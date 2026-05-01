@@ -25,7 +25,7 @@ protected void Setup()
         "staff", "pole arm" })]));
 
     addPrerequisite("/guilds/bard/melee/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([
@@ -38,7 +38,7 @@ protected void Setup()
             "rate" : 1.5
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "long sword", "hand and a half sword", 
                 "two-handed sword", "axe", "dagger", "short sword", 

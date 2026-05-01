@@ -13,9 +13,9 @@ protected void Setup()
         "greatly magnifying all virtue-based powers.");
 
     addPrerequisite("guilds/werric-knight/virtues/legendary-virtue.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":55]));
+        (["type": "guild", "level":55]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

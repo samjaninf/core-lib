@@ -14,9 +14,9 @@ protected void Setup()
         "a complete mounted warrior capability.");
 
     addPrerequisite("guilds/werric-knight/mounted/thundering-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":28]));
+        (["type": "guild", "level":28]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

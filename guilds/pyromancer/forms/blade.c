@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form blades of fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

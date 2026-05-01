@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge that enhances the fighter's combat abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 45
         ]));
     addPrerequisite("/guilds/fighter/blades/over-cutting.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

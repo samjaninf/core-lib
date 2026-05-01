@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Powerful fire damage weapon enhancement");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/firebrand.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 31
         ]));

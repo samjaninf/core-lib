@@ -14,12 +14,12 @@ protected void Setup()
         "constructed spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 21
         ]));
     addPrerequisite("/guilds/aeromancer/construct/improved-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

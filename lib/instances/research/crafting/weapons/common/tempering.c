@@ -19,10 +19,10 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/common/quenching.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
-    addPrerequisite("chemistry", (["type":"skill", "value" : 6]));
-    addPrerequisite("physics", (["type":"skill", "value" : 3]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 6]));
+    addPrerequisite("physics", (["type": "skill", "value" : 3]));
 
     addSpecification("limited by", (["crafting type":({ "sword", "dagger",
         "pole arm", "staff", "axe", "hammer", "mace", "flail", "crossbow",

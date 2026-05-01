@@ -15,11 +15,11 @@ protected void Setup()
         "radiating outward from the caster in all directions.");
 
     addPrerequisite("/guilds/aeromancer/forms/strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value": 21
         ]));
 

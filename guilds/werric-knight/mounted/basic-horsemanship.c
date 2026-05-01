@@ -14,9 +14,9 @@ protected void Setup()
         "control, and coordination with your mount.");
 
     addPrerequisite("guilds/werric-knight/mounted/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

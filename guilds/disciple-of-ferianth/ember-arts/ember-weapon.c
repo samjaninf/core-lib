@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Weapon enhancement with fire damage and extra attack");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/fury-of-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));

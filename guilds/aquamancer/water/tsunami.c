@@ -16,10 +16,10 @@ protected void Setup()
         "everything in its path.");
 
     addPrerequisite("/guilds/aquamancer/water/boiling-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 15
         ]));

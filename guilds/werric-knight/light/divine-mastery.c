@@ -13,9 +13,9 @@ protected void Setup()
         "channeling holy power with exceptional efficiency and potency.");
 
     addPrerequisite("guilds/werric-knight/light/holy-radiance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":40]));
+        (["type": "guild", "level":40]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

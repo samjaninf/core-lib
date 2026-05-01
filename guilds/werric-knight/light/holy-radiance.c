@@ -13,9 +13,9 @@ protected void Setup()
         "continuously emanating divine light that harms evil and heals allies.");
 
     addPrerequisite("guilds/werric-knight/light/mass-healing.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":37]));
+        (["type": "guild", "level":37]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

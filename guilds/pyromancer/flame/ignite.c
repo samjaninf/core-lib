@@ -14,7 +14,7 @@ protected void Setup()
         "pyromancer is able to emit a wave of searing heat at a foe.");
 
     addPrerequisite("/guilds/pyromancer/flame/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

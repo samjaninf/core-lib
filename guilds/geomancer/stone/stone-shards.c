@@ -14,7 +14,7 @@ protected void Setup()
         "geomancer hurls razor-sharp shards of stone at a foe.");
 
     addPrerequisite("/guilds/geomancer/stone/pebble.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

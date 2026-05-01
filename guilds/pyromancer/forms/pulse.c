@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that pulse fire outward.");
 
     addPrerequisite("/guilds/pyromancer/forms/coil.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

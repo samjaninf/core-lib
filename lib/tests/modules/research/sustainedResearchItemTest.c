@@ -381,11 +381,11 @@ void CallingExecuteWithSelfScopeAppliesEffectsToUser()
     ExpectEq(27, User.Str(), "strength after ability used");
 
     mapping *expectedAttacks = ({ 
-        (["attack type":"magical", "damage": 12, "to hit": 62 ]), 
-        (["attack type":"wielded primary"]), 
-        (["attack type":"wielded primary"]), 
-        (["attack type":"wielded primary"]), 
-        (["attack type":"wielded primary"]) });
+        (["attack type": "magical", "damage": 12, "to hit": 62 ]), 
+        (["attack type": "wielded primary"]), 
+        (["attack type": "wielded primary"]), 
+        (["attack type": "wielded primary"]), 
+        (["attack type": "wielded primary"]) });
     ExpectEq(expectedAttacks, User.getAttacks(), "Three weapon attacks and a magical attack are returned");
 }
 

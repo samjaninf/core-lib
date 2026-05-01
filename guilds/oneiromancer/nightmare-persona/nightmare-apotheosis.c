@@ -14,12 +14,12 @@ protected void Setup()
         "becoming one with the nightmare realm.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 45 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/terror-incarnate.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

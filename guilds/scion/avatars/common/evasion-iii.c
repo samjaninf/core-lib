@@ -13,13 +13,13 @@ protected void Setup()
         "scion's avatar to be more adept at evading attacks.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 19
     ]));
 
     addPrerequisite("/guilds/scion/avatars/common/evasion-ii.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,12 +14,12 @@ protected void Setup()
         "in the most profound darkness, seeing truths hidden from all others.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 21 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/prophetic-tides.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

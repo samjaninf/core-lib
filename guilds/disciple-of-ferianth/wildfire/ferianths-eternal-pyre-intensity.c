@@ -14,13 +14,13 @@ protected void Setup()
         "divine flames strike enemies.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 67
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/ferianths-eternal-pyre-swiftness.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

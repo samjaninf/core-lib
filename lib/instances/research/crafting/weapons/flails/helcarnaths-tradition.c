@@ -15,12 +15,12 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/maces/ardurens-legacy.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 30]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 25]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 25]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 30]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 25]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 25]));
 
-    addSpecification("limited by", (["crafting type":"flail"]));
+    addSpecification("limited by", (["crafting type": "flail"]));
 
     addSpecification("bonus crafting value multiplier", 30);
     addSpecification("bonus crafting encumberance reduction", 10);

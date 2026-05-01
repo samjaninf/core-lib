@@ -13,12 +13,12 @@ protected void Setup()
         "bardic knowledge that enhances the bard's offensive abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 21
         ]));
     addPrerequisite("/guilds/bard/bow/ballad-of-the-bow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

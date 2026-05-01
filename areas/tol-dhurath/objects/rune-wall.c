@@ -75,7 +75,7 @@ private mapping wall = ([]);
 public void resetWall()
 {
     wall = ([
-        "weakness":"<missing>"; 1,
+        "weakness": "<missing>"; 1,
         "strength": "<missing>"; 1,
         "flame": "<missing>"; 1,
         "frost": "<missing>"; 1,

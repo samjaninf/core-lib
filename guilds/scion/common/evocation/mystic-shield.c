@@ -22,11 +22,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 31 ]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/evocation/force-shroud.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

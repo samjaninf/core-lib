@@ -14,12 +14,12 @@ protected void Setup()
         "and therefore, more powerful.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 9
         ]));
     addPrerequisite("/guilds/bard/lyrics/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

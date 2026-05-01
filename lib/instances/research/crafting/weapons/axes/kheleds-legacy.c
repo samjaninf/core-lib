@@ -15,13 +15,13 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/axes/kheleds-way.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 25]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 22]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 22]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 20]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 25]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 22]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 22]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 20]));
 
-    addSpecification("limited by", (["crafting type":"axe"]));
+    addSpecification("limited by", (["crafting type": "axe"]));
 
     addSpecification("bonus crafting value multiplier", 20);
     addSpecification("bonus crafting enchantments", 1);

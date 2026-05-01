@@ -15,7 +15,7 @@ protected void Setup()
         "energy in rapid succession.");
 
     addPrerequisite("/guilds/aquamancer/forms/coil.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

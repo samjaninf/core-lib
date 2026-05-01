@@ -13,7 +13,7 @@ protected void Setup()
         "scion's avatar to be more adept at causing damage.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 3
     ]));

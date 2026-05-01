@@ -16,10 +16,10 @@ protected void Setup()
         "the constant battering leaves victims disoriented and vulnerable.");
 
     addPrerequisite("/guilds/aeromancer/air/storm-call.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 27
         ]));
@@ -138,7 +138,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental air",
             "formula" : "additive",
             "rate" : 0.10
@@ -156,13 +156,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

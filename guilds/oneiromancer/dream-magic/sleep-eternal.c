@@ -15,10 +15,10 @@ protected void Setup()
         "debilitating effects.");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/eternal-slumber.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 63
         ]));

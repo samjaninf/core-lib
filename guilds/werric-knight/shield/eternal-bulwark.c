@@ -17,9 +17,9 @@ protected void Setup()
         "While you draw breath, the innocent are safe.");
 
     addPrerequisite("guilds/werric-knight/shield/ultimate-sacrifice.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":37]));
+        (["type": "guild", "level":37]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

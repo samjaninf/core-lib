@@ -84,9 +84,9 @@ protected void Setup()
         "vehicle-based combat and warfare");
     Source("vehicles");
     addPrerequisite("weapon smithing", 
-        (["type":"skill", "value" : 3]));
+        (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/vehicles/craftVehicles.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addResearchElement("/lib/instances/research/vehicles/vehicleCombatBasics.c");
     TreeRoot("/lib/instances/research/vehicles/vehicleCombatBasics.c");
 

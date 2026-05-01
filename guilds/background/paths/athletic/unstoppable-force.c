@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus damage", 1);
 
     addPrerequisite("/guilds/background/paths/athletic/powerful-leap.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

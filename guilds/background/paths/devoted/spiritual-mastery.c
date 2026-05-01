@@ -13,7 +13,7 @@ protected void Setup()
         "achieving complete restoration of mind, body, and spirit.");
 
     addPrerequisite("/guilds/background/paths/devoted/spiritual-clarity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

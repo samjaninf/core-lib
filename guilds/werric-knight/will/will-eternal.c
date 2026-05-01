@@ -17,9 +17,9 @@ protected void Setup()
         "elevated to the level of cosmic inevitability.");
 
     addPrerequisite("guilds/werric-knight/will/avatar-of-determination.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":37]));
+        (["type": "guild", "level":37]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

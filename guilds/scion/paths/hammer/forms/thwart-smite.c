@@ -17,12 +17,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "hammer" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 17 ]));
 
     addPrerequisite("/guilds/scion/paths/hammer/forms/over-smite.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

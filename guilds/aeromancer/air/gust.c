@@ -16,7 +16,7 @@ protected void Setup()
         "forms the basis for more advanced air manipulation.");
 
     addPrerequisite("/guilds/aeromancer/air/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

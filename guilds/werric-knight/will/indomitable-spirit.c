@@ -15,9 +15,9 @@ protected void Setup()
         "fear nor doubt can deter you. Your will manifests as tangible power.");
 
     addPrerequisite("guilds/werric-knight/will/mind-fortress.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -19,12 +19,12 @@ protected void Setup()
         "dagger", "short sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 7 ]));
 
     addPrerequisite("/guilds/scion/paths/dagger/forms/eisenport.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

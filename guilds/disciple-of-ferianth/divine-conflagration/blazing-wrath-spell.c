@@ -29,13 +29,13 @@ protected void Setup()
     }));
     addSpecification("modifiers", ({ 
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "elemental fire",
             "formula": "additive",
             "rate": 1.15
         ]), 
         ([
-            "type":"level",
+            "type": "level",
             "name": "level",
             "formula": "logarithmic",
             "rate": 1.10

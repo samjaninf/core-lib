@@ -15,9 +15,9 @@ protected void Setup()
         "that the best offense is an impregnable defense.");
 
     addPrerequisite("guilds/werric-knight/shield/shield-wall.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

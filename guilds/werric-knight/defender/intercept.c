@@ -15,9 +15,9 @@ protected void Setup()
         "a Knight Commander's duty is to take blows meant for others.");
 
     addPrerequisite("guilds/werric-knight/defender/crowns-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":27]));
+        (["type": "guild", "level":27]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -31,15 +31,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"constitution",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "constitution",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.20
         ])
     }));

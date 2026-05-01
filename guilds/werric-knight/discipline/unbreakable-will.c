@@ -13,9 +13,9 @@ protected void Setup()
         "relentless mental discipline. You cannot be swayed, deterred, or broken.");
 
     addPrerequisite("guilds/werric-knight/discipline/peak-performance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":30]));
+        (["type": "guild", "level":30]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

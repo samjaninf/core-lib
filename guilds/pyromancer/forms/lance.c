@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form lances of fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/spear.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

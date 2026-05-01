@@ -13,13 +13,13 @@ protected void Setup()
         "of your summoned flame guardian.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 3
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/divine-conflagration/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

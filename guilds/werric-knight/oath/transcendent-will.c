@@ -16,9 +16,9 @@ protected void Setup()
         "manifest.");
 
     addPrerequisite("guilds/werric-knight/oath/beacon-of-resolve.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":29]));
+        (["type": "guild", "level":29]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

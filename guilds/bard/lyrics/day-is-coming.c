@@ -17,7 +17,7 @@ protected void Setup()
           "guild": "bard",
           "value": 35 ]));
     addPrerequisite("/guilds/bard/lyrics/boon-of-landros.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,7 +14,7 @@ protected void Setup()
         "fury of wind, water, and ice - a true tempest.");
 
     addPrerequisite("/guilds/aquamancer/functions/ice.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

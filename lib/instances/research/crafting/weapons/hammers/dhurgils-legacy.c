@@ -15,11 +15,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/hammers/dhurgils-way.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 35]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 30]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 35]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 30]));
 
-    addSpecification("limited by", (["crafting type":"hammer"]));
+    addSpecification("limited by", (["crafting type": "hammer"]));
 
     addSpecification("bonus crafting value multiplier", 20);
     addSpecification("bonus crafting enchantments", 1);

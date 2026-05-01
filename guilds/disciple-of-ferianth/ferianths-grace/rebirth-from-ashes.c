@@ -17,16 +17,16 @@ protected void Setup()
         "death once when triggered");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/exarchs-blessing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 41
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

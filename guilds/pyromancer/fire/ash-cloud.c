@@ -14,10 +14,10 @@ protected void Setup()
         "cloud of searing ash and cinders that chokes and burns enemies.");
 
     addPrerequisite("/guilds/pyromancer/fire/smoke-screen.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 11
         ]));

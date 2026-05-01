@@ -15,11 +15,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/maces/beregors-legacy.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 26]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 23]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 23]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 21]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 26]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 23]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 23]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 21]));
 
     addSpecification("limited by", (["crafting type": ({"mace", "flail"})]));
 

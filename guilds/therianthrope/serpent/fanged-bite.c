@@ -16,10 +16,10 @@ protected void Setup()
         "while in serpent form");
 
     addPrerequisite("/guilds/therianthrope/serpent/serpent-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 11
         ]));

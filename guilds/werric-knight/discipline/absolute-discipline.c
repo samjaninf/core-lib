@@ -14,9 +14,9 @@ protected void Setup()
         "distraction, fear, or fatigue.");
 
     addPrerequisite("/guilds/werric-knight/discipline/unwavering.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

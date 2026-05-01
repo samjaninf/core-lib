@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A self-buff granting evasion and haste");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/nightmare-cascade.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 47
         ]));

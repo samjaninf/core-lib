@@ -16,9 +16,9 @@ protected void Setup()
         "something to be endured.");
 
     addPrerequisite("guilds/werric-knight/oath/break-the-chains.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

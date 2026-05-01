@@ -16,10 +16,10 @@ protected void Setup()
         "multiple hits");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/realm-of-nightmares.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 55
         ]));

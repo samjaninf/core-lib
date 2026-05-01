@@ -14,12 +14,12 @@ protected void Setup()
         "barnacle-encrusted rock, resistant to all forms of damage.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 21 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/crushing-depths.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

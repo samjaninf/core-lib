@@ -16,11 +16,11 @@ protected void Setup()
         "effective - a testament to the power of disciplined perfection.");
 
     addPrerequisite("guilds/werric-knight/sword/offensive-stance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("guilds/werric-knight/sword/deadly-precision.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

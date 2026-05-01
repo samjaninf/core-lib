@@ -14,10 +14,10 @@ protected void Setup()
         "eruption of molten fire to burst from the ground.");
 
     addPrerequisite("/guilds/pyromancer/fire/flame-pillar.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 25
         ]));

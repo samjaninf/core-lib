@@ -16,10 +16,10 @@ protected void Setup()
         "slows the target, only usable while in panther form");
 
     addPrerequisite("/guilds/therianthrope/panther/feline-agility.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 7
         ]));

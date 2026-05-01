@@ -14,13 +14,13 @@ protected void Setup()
         "of steam and heat-based attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 9
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/searing-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

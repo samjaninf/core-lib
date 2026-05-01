@@ -14,9 +14,9 @@ protected void Setup()
         "mounted combat, and cavalry tactics is comprehensive and unmatched.");
 
     addPrerequisite("guilds/werric-knight/mounted/perfect-cavalry.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":55]));
+        (["type": "guild", "level":55]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,9 +13,9 @@ protected void Setup()
         "offensive and defensive capabilities through repeated drills and practice.");
 
     addPrerequisite("guilds/werric-knight/discipline/endurance-training.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

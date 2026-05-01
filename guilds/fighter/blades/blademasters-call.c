@@ -14,12 +14,12 @@ protected void Setup()
         "blade attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 21
         ]));
     addPrerequisite("/guilds/fighter/blades/blademasters-reserve.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

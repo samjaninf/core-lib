@@ -14,13 +14,13 @@ protected void Setup()
         "power of debris and heat-based attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 27
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/earthen-convergence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

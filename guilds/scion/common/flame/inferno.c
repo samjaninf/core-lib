@@ -24,18 +24,18 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/flame/burning-barrier.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 33
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/flaming-barrier.c", WeaponType),
             "name" : "Flaming Barrier",
             "formula" : "multiplicative",
@@ -43,7 +43,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/blazing-barrier.c", WeaponType),
             "name" : "Blazing Barrier",
             "formula" : "multiplicative",
@@ -51,7 +51,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/inferno-barrier.c", WeaponType),
             "name" : "Inferno Barrier",
             "formula" : "multiplicative",
@@ -59,13 +59,13 @@ protected void Setup()
             "rate": 1.5
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental fire",
             "formula" : "additive",
             "rate" : 0.10
@@ -83,13 +83,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

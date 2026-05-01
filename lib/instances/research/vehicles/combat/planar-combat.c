@@ -13,9 +13,9 @@ protected void Setup()
         "involving planar or extraplanar forces.");
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 5 ]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 5 ]));
     addPrerequisite("/lib/instances/research/vehicles/combat/elemental-warfare.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus tactics", 1);
     addSpecification("bonus strategy", 1);

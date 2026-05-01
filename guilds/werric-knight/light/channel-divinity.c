@@ -13,9 +13,9 @@ protected void Setup()
         "effectively, increasing the power of all your Light Magic abilities.");
 
     addPrerequisite("guilds/werric-knight/light/aura-of-courage.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

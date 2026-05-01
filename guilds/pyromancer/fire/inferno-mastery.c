@@ -13,13 +13,13 @@ protected void Setup()
         "ultimate mastery over infernal fire magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 51
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/elemental-ignition.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

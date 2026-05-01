@@ -14,10 +14,10 @@ protected void Setup()
         "maneuvers, positioning strategies, and basic engagement principles.");
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 4]));
-    addPrerequisite("tactics", (["type":"skill", "value" : 3]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 4]));
+    addPrerequisite("tactics", (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/vehicles/vehicleCombatBasics.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus attack", 1);
     addSpecification("bonus defense", 1);

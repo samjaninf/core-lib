@@ -19,12 +19,12 @@ protected void Setup()
         "staff", "pole arm" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 31 ]));
 
     addPrerequisite("/guilds/fighter/techniques/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

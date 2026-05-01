@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "DoT fire spell - damage repeats over time");
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/smolder.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 9
         ]));

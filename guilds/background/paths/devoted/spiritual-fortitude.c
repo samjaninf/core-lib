@@ -13,7 +13,7 @@ protected void Setup()
         "your spirit against harm and corruption.");
 
     addPrerequisite("/guilds/background/paths/devoted/humble-servant.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

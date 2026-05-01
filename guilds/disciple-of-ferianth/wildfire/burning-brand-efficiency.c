@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to reduce the spell point cost of Burning Brand.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 17
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/burning-brand-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

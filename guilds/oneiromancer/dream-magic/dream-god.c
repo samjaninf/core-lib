@@ -18,10 +18,10 @@ protected void Setup()
         "dramatically increases combat capabilities");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/master-of-dreams.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 67
         ]));

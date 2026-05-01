@@ -15,9 +15,9 @@ protected void Setup()
         "that you will not allow harm to come to those you are sworn to protect.");
 
     addPrerequisite("guilds/werric-knight/defender/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25, "guild rank":3]));
+        (["type": "guild", "level":25, "guild rank":3]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

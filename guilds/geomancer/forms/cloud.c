@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a cloud of dust and debris.");
 
     addPrerequisite("/guilds/geomancer/forms/touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

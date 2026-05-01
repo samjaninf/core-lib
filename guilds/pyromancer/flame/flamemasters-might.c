@@ -14,12 +14,12 @@ protected void Setup()
         "can use their flame attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 31
         ]));
     addPrerequisite("/guilds/pyromancer/flame/flamemasters-call.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -17,10 +17,10 @@ protected void Setup()
         "damage and severe debuffs");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/dream-cataclysm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 59
         ]));

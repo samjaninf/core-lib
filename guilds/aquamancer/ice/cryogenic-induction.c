@@ -14,13 +14,13 @@ protected void Setup()
         "aquamancer's ice-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/aquamancer/ice/enhanced-frost.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

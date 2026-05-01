@@ -14,10 +14,10 @@ protected void Setup()
         "defense capabilities.");
 
     addPrerequisite("/guilds/pyromancer/effects/enhance-damage.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 11
         ]));

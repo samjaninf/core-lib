@@ -16,13 +16,13 @@ protected void Setup()
         "precision and power.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 57
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/ocean-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

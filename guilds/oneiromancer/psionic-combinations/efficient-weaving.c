@@ -14,12 +14,12 @@ protected void Setup()
         "cooldown time.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 25 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/swift-nightmare.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

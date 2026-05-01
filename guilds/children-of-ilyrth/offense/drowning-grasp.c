@@ -14,12 +14,12 @@ protected void Setup()
         "that engulfs an enemy, crushing and suffocating them.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 13 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/tidal-surge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

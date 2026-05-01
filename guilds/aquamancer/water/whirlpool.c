@@ -16,10 +16,10 @@ protected void Setup()
         "the aquamancer's first true area attack, marking their growth in power.");
 
     addPrerequisite("/guilds/aquamancer/water/splash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 7
         ]));
@@ -132,7 +132,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental water",
             "formula" : "additive",
             "rate" : 0.10
@@ -150,13 +150,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

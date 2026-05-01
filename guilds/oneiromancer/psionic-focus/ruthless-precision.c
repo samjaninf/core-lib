@@ -14,12 +14,12 @@ protected void Setup()
         "enhancing attacks that target specific mental faculties.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 12 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/neural-sever.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Neural Sever": 15,

@@ -13,9 +13,9 @@ protected void Setup()
         "methods that enhance all your mounted attacks.");
 
     addPrerequisite("/guilds/werric-knight/mounted/charge-attack.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

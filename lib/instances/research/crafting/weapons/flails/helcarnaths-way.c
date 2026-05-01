@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/flails/helcarnaths-tradition.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 31]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 25]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 25]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 31]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 25]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 25]));
 
     addSpecification("limited by", (["crafting type": "flail"]));
 

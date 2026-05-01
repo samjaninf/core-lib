@@ -16,9 +16,9 @@ protected void Setup()
         "of your discipline.");
 
     addPrerequisite("guilds/werric-knight/will/beyond-mortal-limits.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -45,29 +45,29 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/will/willpower-manifestation.c",
-            "name":"Willpower Manifestation",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/will/willpower-manifestation.c",
+            "name": "Willpower Manifestation",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"skill",
-            "name":"meditation",
-            "formula":"additive",
+            "type": "skill",
+            "name": "meditation",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "skill",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"attribute",
-            "name":"wisdom",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
             "rate":0.15
         ])
     }));

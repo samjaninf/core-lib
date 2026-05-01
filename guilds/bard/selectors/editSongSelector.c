@@ -140,7 +140,7 @@ private nomask void addOtherMenuOptions()
         "description": "Set or change the name of the song.\n"
     ]);
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Set/change song alias",
+        "name": "Set/change song alias",
         "type": "alias",
         "description": "Set or change the alias of the song. This alias "
             "can then be used as shorthand for performing the song.\n"

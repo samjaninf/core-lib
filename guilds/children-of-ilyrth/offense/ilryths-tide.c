@@ -15,12 +15,12 @@ protected void Setup()
         "unstoppable force of the divine sea.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 33 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/abyssal-pressure.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

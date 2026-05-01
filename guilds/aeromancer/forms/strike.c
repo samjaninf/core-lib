@@ -15,11 +15,11 @@ protected void Setup()
         "from above to smite a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/lance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":15
         ]));
 

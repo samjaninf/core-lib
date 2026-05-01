@@ -190,7 +190,7 @@ public nomask varargs void updateFactionDisposition(string faction, int reputati
         if (!member(factions, faction))
         {
             factions[faction] = ([
-                "disposition":"neutral",
+                "disposition": "neutral",
                 "reputation" : reputation,
                 "number of interactions" : 1,
                 "last interaction" : dispositionTime(),

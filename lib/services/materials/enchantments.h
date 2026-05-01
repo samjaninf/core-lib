@@ -13,9 +13,9 @@ protected mapping equipmentEnchantments =
     "fire enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/fire/craftFireEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental fire": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/fire/craftFireEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental fire": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -30,9 +30,9 @@ protected mapping equipmentEnchantments =
     "fire resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/fire/craftFireEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental fire": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/fire/craftFireEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental fire": (["type": "skill", "value": 5]),
         ]),
         "defense": ([
             "fire": 2,
@@ -50,9 +50,9 @@ protected mapping equipmentEnchantments =
     "fire attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/fire/craftFireAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "elemental fire": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/fire/craftFireAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "elemental fire": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "fire",
@@ -65,9 +65,9 @@ protected mapping equipmentEnchantments =
     "acid enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/acid/craftAcidEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "destruction": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/acid/craftAcidEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "destruction": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -82,9 +82,9 @@ protected mapping equipmentEnchantments =
     "acid resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/acid/craftAcidEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "destruction": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/acid/craftAcidEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "destruction": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -99,9 +99,9 @@ protected mapping equipmentEnchantments =
     "acid attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/acid/craftAcidAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "destruction": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/acid/craftAcidAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "destruction": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "acid",
@@ -114,9 +114,9 @@ protected mapping equipmentEnchantments =
     "air enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/air/craftAirEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental air": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/air/craftAirEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental air": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -131,9 +131,9 @@ protected mapping equipmentEnchantments =
     "air resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/air/craftAirEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental air": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/air/craftAirEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental air": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -148,9 +148,9 @@ protected mapping equipmentEnchantments =
     "air attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/air/craftAirAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "elemental air": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/air/craftAirAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "elemental air": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "air",
@@ -163,9 +163,9 @@ protected mapping equipmentEnchantments =
     "chaos enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/chaos/craftChaosEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "transformation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/chaos/craftChaosEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "transformation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -180,9 +180,9 @@ protected mapping equipmentEnchantments =
     "chaos resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/chaos/craftChaosEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "transformation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/chaos/craftChaosEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "transformation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -197,9 +197,9 @@ protected mapping equipmentEnchantments =
     "chaos attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/chaos/craftChaosAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "transformation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/chaos/craftChaosAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "transformation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "chaos",
@@ -212,9 +212,9 @@ protected mapping equipmentEnchantments =
     "cold enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/cold/craftColdEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/cold/craftColdEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -229,9 +229,9 @@ protected mapping equipmentEnchantments =
     "cold resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/cold/craftColdEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/cold/craftColdEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -246,9 +246,9 @@ protected mapping equipmentEnchantments =
     "cold attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/cold/craftColdAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/cold/craftColdAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "cold",
@@ -261,9 +261,9 @@ protected mapping equipmentEnchantments =
     "disease enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/disease/craftDiseaseEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/disease/craftDiseaseEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -278,9 +278,9 @@ protected mapping equipmentEnchantments =
     "disease resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/disease/craftDiseaseEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/disease/craftDiseaseEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -295,9 +295,9 @@ protected mapping equipmentEnchantments =
     "earth enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/earth/craftEarthEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental earth": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/earth/craftEarthEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental earth": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -312,9 +312,9 @@ protected mapping equipmentEnchantments =
     "earth resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/earth/craftEarthEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental earth": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/earth/craftEarthEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental earth": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -329,9 +329,9 @@ protected mapping equipmentEnchantments =
     "earth attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/earth/craftEarthAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "elemental earth": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/earth/craftEarthAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "elemental earth": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "fire",
@@ -344,9 +344,9 @@ protected mapping equipmentEnchantments =
     "electricity enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/electricity/craftElectricityEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental air": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/electricity/craftElectricityEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental air": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -361,9 +361,9 @@ protected mapping equipmentEnchantments =
     "electricity resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/electricity/craftElectricityEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental air": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/electricity/craftElectricityEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental air": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -378,9 +378,9 @@ protected mapping equipmentEnchantments =
     "electricity attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/electricity/craftElectricityAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "elemental air": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/electricity/craftElectricityAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "elemental air": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "electricity",
@@ -393,9 +393,9 @@ protected mapping equipmentEnchantments =
     "energy enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/energy/craftEnergyEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "evocation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/energy/craftEnergyEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "evocation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -410,9 +410,9 @@ protected mapping equipmentEnchantments =
     "energy resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/energy/craftEnergyEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "evocation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/energy/craftEnergyEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "evocation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -427,9 +427,9 @@ protected mapping equipmentEnchantments =
     "energy attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/energy/craftEnergyAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "evocation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/energy/craftEnergyAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "evocation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "energy",
@@ -442,9 +442,9 @@ protected mapping equipmentEnchantments =
     "evil enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/evil/craftEvilEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "blood": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/evil/craftEvilEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "blood": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -459,9 +459,9 @@ protected mapping equipmentEnchantments =
     "evil resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/good/craftGoodEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "spirit": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/good/craftGoodEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "spirit": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -476,9 +476,9 @@ protected mapping equipmentEnchantments =
     "evil attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/evil/craftEvilAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "blood": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/evil/craftEvilAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "blood": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "evil",
@@ -491,9 +491,9 @@ protected mapping equipmentEnchantments =
     "good enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/good/craftGoodEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "spirit": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/good/craftGoodEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "spirit": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -508,9 +508,9 @@ protected mapping equipmentEnchantments =
     "good resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/evil/craftEvilEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "blood": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/evil/craftEvilEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "blood": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -525,9 +525,9 @@ protected mapping equipmentEnchantments =
     "good attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/good/craftGoodAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "spirit": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/good/craftGoodAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "spirit": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "good",
@@ -540,9 +540,9 @@ protected mapping equipmentEnchantments =
     "magical enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/magical/craftMagicalEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "magical essence": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/magical/craftMagicalEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "magical essence": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -557,9 +557,9 @@ protected mapping equipmentEnchantments =
     "magical resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/magical/craftMagicalEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "magical essence": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/magical/craftMagicalEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "magical essence": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -574,9 +574,9 @@ protected mapping equipmentEnchantments =
     "magical attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/magical/craftMagicalAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "magical essence": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/magical/craftMagicalAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "magical essence": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "magical",
@@ -589,9 +589,9 @@ protected mapping equipmentEnchantments =
     "neutral enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/neutral/craftNeutralEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "magical essence": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/neutral/craftNeutralEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "magical essence": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -606,9 +606,9 @@ protected mapping equipmentEnchantments =
     "neutral resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/neutral/craftNeutralEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "magical essence": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/neutral/craftNeutralEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "magical essence": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -623,9 +623,9 @@ protected mapping equipmentEnchantments =
     "neutral attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/neutral/craftNeutralAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "magical essence": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/neutral/craftNeutralAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "magical essence": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "neutral",
@@ -638,9 +638,9 @@ protected mapping equipmentEnchantments =
     "paralysis enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/paralysis/craftParalysisEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/paralysis/craftParalysisEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -655,9 +655,9 @@ protected mapping equipmentEnchantments =
     "paralysis resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/paralysis/craftParalysisEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/paralysis/craftParalysisEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -672,9 +672,9 @@ protected mapping equipmentEnchantments =
     "poison enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/poison/craftPoisonEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "transformation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/poison/craftPoisonEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "transformation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -689,9 +689,9 @@ protected mapping equipmentEnchantments =
     "poison resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/poison/craftPoisonEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "transformation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/poison/craftPoisonEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "transformation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -706,9 +706,9 @@ protected mapping equipmentEnchantments =
     "psionic enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/psionic/craftPsionicEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "mind": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/psionic/craftPsionicEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "mind": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -723,9 +723,9 @@ protected mapping equipmentEnchantments =
     "psionic resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/psionic/craftPsionicEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "mind": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/psionic/craftPsionicEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "mind": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -740,9 +740,9 @@ protected mapping equipmentEnchantments =
     "psionic attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/psionic/craftPsionicAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "mind": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/psionic/craftPsionicAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "mind": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "psionic",
@@ -755,9 +755,9 @@ protected mapping equipmentEnchantments =
     "sonic enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/sonic/craftSonicEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "senses": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/sonic/craftSonicEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "senses": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -772,9 +772,9 @@ protected mapping equipmentEnchantments =
     "sonic resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/sonic/craftSonicEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "senses": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/sonic/craftSonicEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "senses": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -789,9 +789,9 @@ protected mapping equipmentEnchantments =
     "sonic attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/sonic/craftSonicAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "senses": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/sonic/craftSonicAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "senses": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "sonic",
@@ -804,9 +804,9 @@ protected mapping equipmentEnchantments =
     "undead enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/undead/craftUndeadEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "destruction": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/undead/craftUndeadEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "destruction": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -821,9 +821,9 @@ protected mapping equipmentEnchantments =
     "undead resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/undead/craftUndeadEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "destruction": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/undead/craftUndeadEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "destruction": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -838,9 +838,9 @@ protected mapping equipmentEnchantments =
     "undead attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/undead/craftUndeadAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "blood": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/undead/craftUndeadAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "blood": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "undead",
@@ -853,9 +853,9 @@ protected mapping equipmentEnchantments =
     "water enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/water/craftWaterEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/water/craftWaterEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -870,9 +870,9 @@ protected mapping equipmentEnchantments =
     "water resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/water/craftWaterEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/water/craftWaterEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -887,9 +887,9 @@ protected mapping equipmentEnchantments =
     "water attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/water/craftWaterAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/water/craftWaterAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "water",
@@ -902,9 +902,9 @@ protected mapping equipmentEnchantments =
     "weapon damage":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "transformation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "transformation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "bonus damage": 2,
@@ -917,9 +917,9 @@ protected mapping equipmentEnchantments =
     "weapon attack":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "evocation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "evocation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "bonus attack": 2,
@@ -932,9 +932,9 @@ protected mapping equipmentEnchantments =
     "additional attack":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "evocation": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "evocation": (["type": "skill", "value": 10]),
         ]),
         "effects": ([
             "bonus weapon attack": 1,
@@ -947,9 +947,9 @@ protected mapping equipmentEnchantments =
     "weapon defense":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "manipulation": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/weapon/craftWeaponEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "manipulation": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "bonus defense class":2,
@@ -962,9 +962,9 @@ protected mapping equipmentEnchantments =
     "damage soak": ([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/protection/craftSoakEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/protection/craftSoakEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "bonus soak": 2,
@@ -977,9 +977,9 @@ protected mapping equipmentEnchantments =
     "damage reflection":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/weapon/craftDamageReflection.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/weapon/craftDamageReflection.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "apply damage reflection": 15,
@@ -992,9 +992,9 @@ protected mapping equipmentEnchantments =
     "hit points":([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftHitPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftHitPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "bonus hit points":5,
@@ -1007,9 +1007,9 @@ protected mapping equipmentEnchantments =
     "heal hit points amount": ([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftHitPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "body": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftHitPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "body": (["type": "skill", "value": 10]),
         ]),
         "effects": ([
             "bonus heal hit points":1,
@@ -1022,9 +1022,9 @@ protected mapping equipmentEnchantments =
     "heal hit points rate": ([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftHitPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "body": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftHitPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "body": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus heal hit points rate":1,
@@ -1037,9 +1037,9 @@ protected mapping equipmentEnchantments =
     "stamina points":([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftStaminaPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "body": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftStaminaPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "body": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "bonus hit points":5,
@@ -1052,9 +1052,9 @@ protected mapping equipmentEnchantments =
     "heal stamina points amount": ([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftStaminaPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "body": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftStaminaPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "body": (["type": "skill", "value": 10]),
         ]),
         "effects": ([
             "bonus heal stamina points":1,
@@ -1067,9 +1067,9 @@ protected mapping equipmentEnchantments =
     "heal stamina points rate": ([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftStaminaPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "body": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftStaminaPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "body": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus heal stamina points rate":1,
@@ -1082,9 +1082,9 @@ protected mapping equipmentEnchantments =
     "spell points":([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftSpellPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "magical essence": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftSpellPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "magical essence": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "bonus spell points":5,
@@ -1097,9 +1097,9 @@ protected mapping equipmentEnchantments =
     "heal spell points amount": ([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftSpellPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "magical essence": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftSpellPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "magical essence": (["type": "skill", "value": 10]),
         ]),
         "effects": ([
             "bonus heal spell points":1,
@@ -1112,9 +1112,9 @@ protected mapping equipmentEnchantments =
     "heal spell points rate": ([
         "class": "vitals",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/vitals/craftSpellPointsEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "magical essence": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/vitals/craftSpellPointsEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "magical essence": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus heal spell points rate":1,
@@ -1127,9 +1127,9 @@ protected mapping equipmentEnchantments =
     "enhance strength":([
         "class": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/attributes/craftStrengthEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "body": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/attributes/craftStrengthEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "body": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus strength":1,
@@ -1142,9 +1142,9 @@ protected mapping equipmentEnchantments =
     "enhance intelligence":([
         "class": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/attributes/craftIntelligenceEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "mind": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/attributes/craftIntelligenceEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "mind": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus intelligence":1,
@@ -1157,9 +1157,9 @@ protected mapping equipmentEnchantments =
     "enhance wisdom":([
         "class": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/attributes/craftWisdomEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "senses": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/attributes/craftWisdomEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "senses": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus wisdom":1,
@@ -1172,9 +1172,9 @@ protected mapping equipmentEnchantments =
     "enhance dexterity":([
         "class": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/attributes/craftDexterityEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "manipulation": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/attributes/craftDexterityEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "manipulation": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus dexterity":1,
@@ -1187,9 +1187,9 @@ protected mapping equipmentEnchantments =
     "enhance constitution":([
         "class": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/attributes/craftConstitutionEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "body": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/attributes/craftConstitutionEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "body": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus constitution": 1,
@@ -1202,9 +1202,9 @@ protected mapping equipmentEnchantments =
     "enhance charisma":([
         "class": "attributes",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/attributes/craftCharismaEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "mind": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/enchantments/attributes/craftCharismaEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "mind": (["type": "skill", "value": 15]),
         ]),
         "effects": ([
             "bonus charisma": 1,
@@ -1217,9 +1217,9 @@ protected mapping equipmentEnchantments =
     "steam enchantment":([
         "class": "offensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/steam/craftSteamEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/steam/craftSteamEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "enchantments": ([
@@ -1234,9 +1234,9 @@ protected mapping equipmentEnchantments =
     "steam resistance":([
         "class": "defensive",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/steam/craftSteamEnchantment.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 5]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/steam/craftSteamEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "resistances": ([
@@ -1251,9 +1251,9 @@ protected mapping equipmentEnchantments =
     "steam attack":([
         "class": "attack mutations",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/enchantments/steam/craftSteamAttack.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 10]),
-            "elemental water": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/enchantments/steam/craftSteamAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "elemental water": (["type": "skill", "value": 5]),
         ]),
         "effects": ([
             "damage type": "steam",

@@ -14,12 +14,12 @@ protected void Setup()
         "`Minstrel's Attack' abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 21
         ]));
     addPrerequisite("/guilds/bard/melee/soldiers-song.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

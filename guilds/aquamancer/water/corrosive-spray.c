@@ -16,10 +16,10 @@ protected void Setup()
         "damage over time.");
 
     addPrerequisite("/guilds/aquamancer/water/sea-fog.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 17
         ]));

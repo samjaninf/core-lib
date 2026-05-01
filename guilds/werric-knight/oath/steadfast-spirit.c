@@ -14,9 +14,9 @@ protected void Setup()
         "find no purchase in your steadfast resolve.");
 
     addPrerequisite("guilds/werric-knight/oath/i-am-not-my-fear.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

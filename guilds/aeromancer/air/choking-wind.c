@@ -16,10 +16,10 @@ protected void Setup()
         "struggles against the suffocating assault.");
 
     addPrerequisite("/guilds/aeromancer/air/noxious-breath.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 29
         ]));

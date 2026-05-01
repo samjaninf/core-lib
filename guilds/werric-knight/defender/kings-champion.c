@@ -17,9 +17,9 @@ protected void Setup()
         "weight of every defender who came before you.");
 
     addPrerequisite("guilds/werric-knight/defender/unyielding-bastion.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":35]));
+        (["type": "guild", "level":35]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

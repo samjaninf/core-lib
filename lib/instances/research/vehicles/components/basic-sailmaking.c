@@ -14,10 +14,10 @@ protected void Setup()
         "enabling wind-powered propulsion for vessels.");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addPrerequisite("sewing", (["type":"skill", "value" : 2]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 1]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 2]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 1]));
     addPrerequisite("/lib/instances/research/vehicles/craftComponents.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle speed", 1);

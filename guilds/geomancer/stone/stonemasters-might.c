@@ -14,12 +14,12 @@ protected void Setup()
         "can use their stone attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 31
         ]));
     addPrerequisite("/guilds/geomancer/stone/stonemasters-call.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

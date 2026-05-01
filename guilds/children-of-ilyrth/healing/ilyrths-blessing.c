@@ -15,12 +15,12 @@ protected void Setup()
         "healing and renewed vigor.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 19 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/wellspring-of-life.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

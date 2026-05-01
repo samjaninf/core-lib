@@ -14,7 +14,7 @@ protected void Setup()
         "drawn from deep beneath the earth.");
 
     addPrerequisite("/guilds/geomancer/functions/sand.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

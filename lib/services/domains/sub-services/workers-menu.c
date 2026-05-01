@@ -35,7 +35,7 @@ public nomask mapping getWorkersMenu(object user, string location,
         member(componentData["construction"], "workers"))
     {
         ret[to_string(sizeof(ret) + 1)] = ([
-            "name":"Auto-Select Workers",
+            "name": "Auto-Select Workers",
             "type": "auto-select",
             "description": "This option will automatically select workers "
                 "to optimally build the structure in question.\n",
@@ -70,7 +70,7 @@ public nomask mapping getWorkersMenu(object user, string location,
     }
 
     ret[to_string(sizeof(ret) + 1)] = ([
-        "name":"Exit Building Menu",
+        "name": "Exit Building Menu",
         "type": "exit",
         "description": "This option lets you exit the building "
             "projects menu.\n",
@@ -211,7 +211,7 @@ public nomask mapping getWorkersByTypeMenu(object user, string location,
     ]);
 
     ret[to_string(sizeof(ret) + 1)] = ([
-        "name":"Exit Building Menu",
+        "name": "Exit Building Menu",
         "type": "exit",
         "description": "This option lets you exit the building "
             "projects menu.\n",

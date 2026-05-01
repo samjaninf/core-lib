@@ -20,7 +20,7 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 20 ]));
 
@@ -32,13 +32,13 @@ protected void Setup()
     addSpecification("affected research type", "percentage");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/nistaros.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/sathataen.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/thar-dravn.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/an-craban.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

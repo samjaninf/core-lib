@@ -162,7 +162,7 @@ protected nomask void setUpUserForSelection()
     if (!mappingp(contracts) || !sizeof(contracts))
     {
         Data[to_string(counter++)] = ([
-            "name":"No Contracts Available",
+            "name": "No Contracts Available",
             "type" : "empty",
             "description" : "There are no contracts available currently.",
             "canShow" : 0
@@ -211,7 +211,7 @@ protected nomask void setUpUserForSelection()
     }
 
     Data[to_string(counter++)] = ([
-        "name":"Return to Trading Menu",
+        "name": "Return to Trading Menu",
         "type" : "exit",
         "description" : "Return to the main trading menu.",
         "canShow" : 1

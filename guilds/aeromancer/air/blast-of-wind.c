@@ -16,13 +16,13 @@ protected void Setup()
         "offensive air magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 3
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/gust.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

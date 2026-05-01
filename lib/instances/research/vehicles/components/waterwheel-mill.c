@@ -14,11 +14,11 @@ protected void Setup()
         "moored in a river, providing industrial capability to vessels.");
     addSpecification("research type", "points");
     addSpecification("research cost", 5);
-    addPrerequisite("engineering", (["type":"skill", "value" : 6]));
-    addPrerequisite("carpentry", (["type":"skill", "value" : 6]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 4]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 6]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/paddlewheel.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle capacity", 200);

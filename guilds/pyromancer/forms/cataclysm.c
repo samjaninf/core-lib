@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that unleash cataclysms of fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -14,13 +14,13 @@ protected void Setup()
         "of ultimate wildfire abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 57
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/supreme-wildfire.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

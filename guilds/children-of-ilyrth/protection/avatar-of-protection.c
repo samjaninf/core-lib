@@ -14,12 +14,12 @@ protected void Setup()
         "caster embodies the goddess's role as defender of her faithful.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 57 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/ilryths-sanctuary.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

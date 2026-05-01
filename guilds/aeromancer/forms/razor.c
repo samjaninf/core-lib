@@ -15,11 +15,11 @@ protected void Setup()
         "compressed energy to strike a foe with precision.");
 
     addPrerequisite("/guilds/aeromancer/forms/whip.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":9
         ]));
 

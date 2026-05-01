@@ -14,10 +14,10 @@ protected void Setup()
         "explosive rush of superheated air that slams into the target.");
 
     addPrerequisite("/guilds/pyromancer/fire/heat-wave.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 21
         ]));

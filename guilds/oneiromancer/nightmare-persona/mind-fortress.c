@@ -14,12 +14,12 @@ protected void Setup()
         "attacks and mental manipulation.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 37 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/lord-of-fears.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

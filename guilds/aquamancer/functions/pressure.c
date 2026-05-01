@@ -14,7 +14,7 @@ protected void Setup()
         "pressure capable of crushing armor and bone.");
 
     addPrerequisite("/guilds/aquamancer/functions/water.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

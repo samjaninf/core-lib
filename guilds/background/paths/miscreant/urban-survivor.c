@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus constitution", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/sly-tricks.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

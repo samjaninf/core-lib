@@ -14,12 +14,12 @@ protected void Setup()
         "constructed spells with remarkable speed.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 37
         ]));
     addPrerequisite("/guilds/aeromancer/construct/master-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

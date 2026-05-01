@@ -14,10 +14,10 @@ protected void Setup()
         "damage that hampers the target, slowing their movement and actions.");
 
     addPrerequisite("/guilds/aquamancer/effects/apply-slow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 21
         ]));

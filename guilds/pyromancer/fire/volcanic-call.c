@@ -13,13 +13,13 @@ protected void Setup()
         "knowledge of calling upon volcanic forces to enhance their spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 19
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/infernal-force.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,10 +15,10 @@ protected void Setup()
         "defensive capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/reduce-parry.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 19
         ]));

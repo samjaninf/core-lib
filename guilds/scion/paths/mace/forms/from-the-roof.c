@@ -15,7 +15,7 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "mace", "flail" })]));
 
     addPrerequisite("/guilds/scion/paths/mace/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

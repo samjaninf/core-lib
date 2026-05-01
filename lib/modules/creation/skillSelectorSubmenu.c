@@ -48,7 +48,7 @@ protected nomask void setUpUserForSelection()
     Data = skillMenuSetup();
 
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Return to previous menu",
+        "name": "Return to previous menu",
         "description" : "Return to the main skill selection menu.\n"
     ]);
 }

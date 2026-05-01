@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to reduce the cooldown of Apocalyptic Firestorm.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 63
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/apocalyptic-firestorm-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

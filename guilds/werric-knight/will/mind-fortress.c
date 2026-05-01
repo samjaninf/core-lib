@@ -15,9 +15,9 @@ protected void Setup()
         "Your thoughts are your own, inviolate and secure.");
 
     addPrerequisite("guilds/werric-knight/will/ignore-pain.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

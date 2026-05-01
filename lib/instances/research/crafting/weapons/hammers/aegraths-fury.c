@@ -15,13 +15,13 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/hammers/aegraths-legacy.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 26]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 23]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 23]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 21]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 26]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 23]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 23]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 21]));
 
-    addSpecification("limited by", (["crafting type":"hammer"]));
+    addSpecification("limited by", (["crafting type": "hammer"]));
 
     addSpecification("bonus crafting value multiplier", 30);
     addSpecification("bonus crafting weapon class", 1);

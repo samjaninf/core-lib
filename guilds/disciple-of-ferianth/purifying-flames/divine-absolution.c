@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Area heal with complete cleanse");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/ferianths-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 51
         ]));

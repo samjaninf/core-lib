@@ -14,12 +14,12 @@ protected void Setup()
         "Ilyrth's waters becomes more resilient against attacks.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 3 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/aquatic-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

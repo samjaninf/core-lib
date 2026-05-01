@@ -30,12 +30,12 @@ protected nomask void setUpUserForSelection()
 
     Data = ([
         "1":([
-            "name":"Turn Mini Map On",
+            "name": "Turn Mini Map On",
             "description" : "This option turns on mini map display.\n",
             "value": "on"
         ]),
         "2":([
-            "name":"Leave Mini Map Off",
+            "name": "Leave Mini Map Off",
             "description" : "This option turns off mini map display.\n",
             "value": "off",
         ]),

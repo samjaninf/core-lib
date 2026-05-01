@@ -15,10 +15,10 @@ protected void Setup()
         "into the victim with crushing force.");
 
     addPrerequisite("/guilds/geomancer/earth/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 5
         ]));

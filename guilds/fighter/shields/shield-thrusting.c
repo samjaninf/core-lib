@@ -14,12 +14,12 @@ protected void Setup()
         "as offensive weapons.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 33
         ]));
     addPrerequisite("/guilds/fighter/shields/breaking-through.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

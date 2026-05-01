@@ -16,9 +16,9 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "shield" }) ]));
 
     addPrerequisite("/guilds/werric-knight/shield/defensive-stance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 7
         ]));
@@ -32,7 +32,7 @@ protected void Setup()
     addSpecification("bonus armor class", 5);
     addSpecification("modifiers", ({ 
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "shield",
             "formula" : "additive",
             "rate" : 1.25

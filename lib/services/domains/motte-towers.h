@@ -20,20 +20,20 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237\u2237"
                     "\u2237\u2237",
             ]),
             "NWMTR2": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "NWMTR3": ([
-                "ascii":".     ",
+                "ascii": ".     ",
                 "unicode": "\u2237     ",
             ]),
             "NWMTR4": ([
-                "ascii":"..    ",
+                "ascii": "..    ",
                 "unicode": "\u2237\u2237    ",
             ]),
         ]),
@@ -67,20 +67,20 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"+----+",
+                "ascii": "+----+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWMTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551    \u2560",
             ]),
             "NWMTR3": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551    \u2502",
             ]),
             "NWMTR4": ([
-                "ascii":"+-    ",
+                "ascii": "+-    ",
                 "unicode": "\u255a\u2550\u2566\u2500"
                     "\u2500\u2518",
             ]),
@@ -116,22 +116,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWMTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2560",
             ]),
             "NWMTR3": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2502",
             ]),
             "NWMTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2550\u2566\u2500"
                     "\u2500\u2518",
             ]),
@@ -173,22 +173,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWMTR2": ([
-                "ascii":"|+archer--default+|",
+                "ascii": "|+archer--default+|",
                 "unicode": "\u2551\u250farcher\u21a5\u21a5"
                     "default\u2513\u2560",
             ]),
             "NWMTR3": ([
-                "ascii":"|+--+ ",
+                "ascii": "|+--+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWMTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2550\u2566\u2500"
                     "\u2500\u2518",
             ]),
@@ -231,22 +231,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWMTR2": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2551\u256dballista\u21ed\u21ed"
                     "default\u256e\u2560",
             ]),
             "NWMTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2570\u2500\u2500"
                     "\u256f\u2502",
             ]),
             "NWMTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2550\u2566\u2500"
                     "\u2500\u2518",
             ]),
@@ -289,22 +289,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWMTR2": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2551\u250fcatapult\u21ef\u21ad"
                     "default\u2513\u2560",
             ]),
             "NWMTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWMTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2550\u2566\u2500"
                     "\u2500\u2518",
             ]),
@@ -347,22 +347,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWMTR2": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2551\u250ftrebuchet\u21ef\u21f2"
                     "default\u2513\u2560",
             ]),
             "NWMTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWMTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2550\u2566\u2500"
                     "\u2500\u2518",
             ]),
@@ -406,22 +406,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NWMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NWMTR2": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2551\u250fmage\u22d0\u22d1"
                     "default\u2513\u2560",
             ]),
             "NWMTR3": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u2517\u2501\u2501"
                     "\u251b\u2502",
             ]),
             "NWMTR4": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u255a\u2550\u2566\u2500"
                     "\u2500\u2518",
             ]),
@@ -680,20 +680,20 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237\u2237"
                     "\u2237\u2237",
             ]),
             "NEMTR2": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "NEMTR3": ([
-                "ascii":"     .",
+                "ascii": "     .",
                 "unicode": "     \u2237",
             ]),
             "NEMTR4": ([
-                "ascii":"    ..",
+                "ascii": "    ..",
                 "unicode": "    \u2237\u2237",
             ]),
         ]),
@@ -727,20 +727,20 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NEMTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563    \u2551",
             ]),
             "NEMTR3": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502    \u2551",
             ]),
             "NEMTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2566"
                     "\u2550\u255d",
             ]),
@@ -776,22 +776,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NEMTR2": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
             "NEMTR3": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
             "NEMTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2566"
                     "\u2550\u255d",
             ]),
@@ -833,22 +833,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NEMTR2": ([
-                "ascii":"|+archer--default+|",
+                "ascii": "|+archer--default+|",
                 "unicode": "\u2563\u250farcher\u21a5\u21a5"
                     "default\u2513\u2551",
             ]),
             "NEMTR3": ([
-                "ascii":" +--+|",
+                "ascii": " +--+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NEMTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2566"
                     "\u2550\u255d",
             ]),
@@ -891,22 +891,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NEMTR2": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2563\u256dballista\u21ed\u21ed"
                     "default\u256e\u2551",
             ]),
             "NEMTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2570\u2500\u2500"
                     "\u256f\u2551",
             ]),
             "NEMTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2566"
                     "\u2550\u255d",
             ]),
@@ -949,22 +949,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NEMTR2": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2563\u250fcatapult\u21ef\u21ad"
                     "default\u2513\u2551",
             ]),
             "NEMTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NEMTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2566"
                     "\u2550\u255d",
             ]),
@@ -1007,22 +1007,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NEMTR2": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2563\u250ftrebuchet\u21ef\u21f2"
                     "default\u2513\u2551",
             ]),
             "NEMTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NEMTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2566"
                     "\u2550\u255d",
             ]),
@@ -1066,22 +1066,22 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "NEMTR1": ([
-                "ascii":"+====+",
+                "ascii": "+====+",
                 "unicode": "\u2554\u2550\u2550\u2550"
                     "\u2550\u2557",
             ]),
             "NEMTR2": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2563\u250fmage\u22d0\u22d1"
                     "default\u2513\u2551",
             ]),
             "NEMTR3": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u2517\u2501\u2501"
                     "\u251b\u2551",
             ]),
             "NEMTR4": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u2514\u2500\u2500\u2566"
                     "\u2550\u255d",
             ]),
@@ -1578,19 +1578,19 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"..    ",
+                "ascii": "..    ",
                 "unicode": "\u2237\u2237    ",
             ]),
             "SWMTR2": ([
-                "ascii":".     ",
+                "ascii": ".     ",
                 "unicode": "\u2237     ",
             ]),
             "SWMTR3": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "SWMTR4": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237"
                     "\u2237\u2237\u2237",
             ]),
@@ -1625,16 +1625,16 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"+-    ",
+                "ascii": "+-    ",
                 "unicode": "\u2554\u2550\u2569\u2500"
                     "\u2500\u2510",
             ]),
             "SWMTR2": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551    \u2502",
             ]),
             "SWMTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551    \u2560",
             ]),
             "SWMTR4": ([
@@ -1674,17 +1674,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2550\u2569\u2500"
                     "\u2500\u2510",
             ]),
             "SWMTR2": ([
-                "ascii":"|     ",
+                "ascii": "|     ",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2502",
             ]),
             "SWMTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2551\u2591\u2591\u2591"
                     "\u2591\u2560",
             ]),
@@ -1731,17 +1731,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2550\u2569\u2500"
                     "\u2500\u2510",
             ]),
             "SWMTR2": ([
-                "ascii":"|+--+ ",
+                "ascii": "|+--+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWMTR3": ([
-                "ascii":"|+archer--default+|",
+                "ascii": "|+archer--default+|",
                 "unicode": "\u2551\u2517archer\u21a7\u21a7"
                     "default\u251b\u2560",
             ]),
@@ -1789,17 +1789,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2550\u2569\u2500"
                     "\u2500\u2510",
             ]),
             "SWMTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWMTR3": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2551\u2517ballista\u21e9\u21e9"
                     "default\u251b\u2560",
             ]),
@@ -1847,17 +1847,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2550\u2569\u2500"
                     "\u2500\u2510",
             ]),
             "SWMTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWMTR3": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2551\u2517catapult\u21ef\u21ad"
                     "default\u251b\u2560",
             ]),
@@ -1905,17 +1905,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2550\u2569\u2500"
                     "\u2500\u2510",
             ]),
             "SWMTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWMTR3": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2551\u2517trebuchet\u21ef\u21f2"
                     "default\u251b\u2560",
             ]),
@@ -1964,17 +1964,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SWMTR1": ([
-                "ascii":"+=    ",
+                "ascii": "+=    ",
                 "unicode": "\u2554\u2550\u2569\u2500"
                     "\u2500\u2510",
             ]),
             "SWMTR2": ([
-                "ascii":"|+~~+ ",
+                "ascii": "|+~~+ ",
                 "unicode": "\u2551\u250f\u2501\u2501"
                     "\u2513\u2502",
             ]),
             "SWMTR3": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2551\u2517mage\u22d0\u22d1"
                     "default\u251b\u2560",
             ]),
@@ -2238,19 +2238,19 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    ..",
+                "ascii": "    ..",
                 "unicode": "    \u2237\u2237",
             ]),
             "SEMTR2": ([
-                "ascii":"     .",
+                "ascii": "     .",
                 "unicode": "     \u2237",
             ]),
             "SEMTR3": ([
-                "ascii":".    .",
+                "ascii": ".    .",
                 "unicode": "\u2237    \u2237",
             ]),
             "SEMTR4": ([
-                "ascii":"......",
+                "ascii": "......",
                 "unicode": "\u2237\u2237\u2237"
                     "\u2237\u2237\u2237",
             ]),
@@ -2285,16 +2285,16 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    -+",
+                "ascii": "    -+",
                 "unicode": "\u250c\u2500\u2500\u2569"
                     "\u2550\u2557",
             ]),
             "SEMTR2": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502    \u2551",
             ]),
             "SEMTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563    \u2551",
             ]),
             "SEMTR4": ([
@@ -2334,17 +2334,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2569"
                     "\u2550\u2557",
             ]),
             "SEMTR2": ([
-                "ascii":"     |",
+                "ascii": "     |",
                 "unicode": "\u2502\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
             "SEMTR3": ([
-                "ascii":"|    |",
+                "ascii": "|    |",
                 "unicode": "\u2563\u2591\u2591\u2591"
                     "\u2591\u2551",
             ]),
@@ -2391,17 +2391,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2569"
                     "\u2550\u2557",
             ]),
             "SEMTR2": ([
-                "ascii":" +--+|",
+                "ascii": " +--+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SEMTR3": ([
-                "ascii":"|+archer--default+|",
+                "ascii": "|+archer--default+|",
                 "unicode": "\u2563\u2517archer\u21a7\u21a7"
                     "default\u251b\u2551",
             ]),
@@ -2449,17 +2449,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2569"
                     "\u2550\u2557",
             ]),
             "SEMTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SEMTR3": ([
-                "ascii":"|+ballista~~default+|",
+                "ascii": "|+ballista~~default+|",
                 "unicode": "\u2563\u2517ballista\u21e9\u21e9"
                     "default\u251b\u2551",
             ]),
@@ -2507,17 +2507,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2569"
                     "\u2550\u2557",
             ]),
             "SEMTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SEMTR3": ([
-                "ascii":"|+catapult~~default+|",
+                "ascii": "|+catapult~~default+|",
                 "unicode": "\u2563\u2517catapult\u21ef\u21ad"
                     "default\u251b\u2551",
             ]),
@@ -2565,17 +2565,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2569"
                     "\u2550\u2557",
             ]),
             "SEMTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SEMTR3": ([
-                "ascii":"|+trebuchet~~default+|",
+                "ascii": "|+trebuchet~~default+|",
                 "unicode": "\u2563\u2517trebuchet\u21ef\u21f2"
                     "default\u251b\u2551",
             ]),
@@ -2624,17 +2624,17 @@ private mapping MotteTowers = ([
         ]),
         "components":([
             "SEMTR1": ([
-                "ascii":"    =+",
+                "ascii": "    =+",
                 "unicode": "\u250c\u2500\u2500\u2569"
                     "\u2550\u2557",
             ]),
             "SEMTR2": ([
-                "ascii":" +~~+|",
+                "ascii": " +~~+|",
                 "unicode": "\u2502\u250f\u2501\u2501"
                     "\u2513\u2551",
             ]),
             "SEMTR3": ([
-                "ascii":"|+mage~~default+|",
+                "ascii": "|+mage~~default+|",
                 "unicode": "\u2563\u2517mage\u22d0\u22d1"
                     "default\u251b\u2551",
             ]),

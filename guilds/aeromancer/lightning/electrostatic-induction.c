@@ -14,13 +14,13 @@ protected void Setup()
         "abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/aeromancer/lightning/enhanced-discharge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

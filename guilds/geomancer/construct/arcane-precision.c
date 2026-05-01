@@ -13,12 +13,12 @@ protected void Setup()
         "precision in spell construction, resulting in devastatingly potent effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 41
         ]));
     addPrerequisite("/guilds/geomancer/construct/spell-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

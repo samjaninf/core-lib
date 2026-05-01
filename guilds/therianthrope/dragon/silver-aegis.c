@@ -14,10 +14,10 @@ protected void Setup()
         "at the cost of offensive power.");
 
     addPrerequisite("/guilds/therianthrope/dragon/dragons-fortitude.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 37
         ]));

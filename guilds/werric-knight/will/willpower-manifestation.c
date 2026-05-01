@@ -13,9 +13,9 @@ protected void Setup()
         "your willpower as a tangible force.");
 
     addPrerequisite("/guilds/werric-knight/will/force-of-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

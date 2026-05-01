@@ -14,9 +14,9 @@ protected void Setup()
         "to the Oath deepens.");
 
     addPrerequisite("guilds/werric-knight/light/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

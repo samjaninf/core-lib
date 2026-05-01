@@ -14,12 +14,12 @@ protected void Setup()
         "as offensive weapons.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 9
         ]));
     addPrerequisite("/guilds/fighter/shields/shield-bash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

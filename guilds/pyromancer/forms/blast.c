@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that blast fire at foes.");
 
     addPrerequisite("/guilds/pyromancer/forms/ball.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

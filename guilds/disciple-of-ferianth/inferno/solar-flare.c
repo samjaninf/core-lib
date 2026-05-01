@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Explosive solar burst that blinds survivors");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/ferianths-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 55
         ]));

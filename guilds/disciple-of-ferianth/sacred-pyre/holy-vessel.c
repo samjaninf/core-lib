@@ -13,10 +13,10 @@ protected void Setup()
         "the status of a holy vessel of Ferianth's power.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/sanctified-body.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 44
         ]));

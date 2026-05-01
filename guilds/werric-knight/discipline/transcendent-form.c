@@ -13,9 +13,9 @@ protected void Setup()
         "transcendent physical and mental form that surpasses normal human limits.");
 
     addPrerequisite("guilds/werric-knight/discipline/legendary-discipline.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":50]));
+        (["type": "guild", "level":50]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

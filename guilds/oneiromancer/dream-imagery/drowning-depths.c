@@ -18,10 +18,10 @@ protected void Setup()
         "adds water damage");
 
     addPrerequisite("/guilds/oneiromancer/dream-imagery/endless-void.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 39
         ]));
@@ -64,7 +64,7 @@ protected void Setup()
             "rate": 0.05
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.5

@@ -16,10 +16,10 @@ protected void Setup()
         "used when near death");
 
     addPrerequisite("/guilds/disciple-of-ferianth/flame-conduit/phoenix-essence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 43
         ]));

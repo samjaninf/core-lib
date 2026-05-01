@@ -13,9 +13,9 @@ protected void Setup()
         "resistance to fear and enhanced combat capabilities when facing danger.");
 
     addPrerequisite("guilds/werric-knight/virtues/righteous-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

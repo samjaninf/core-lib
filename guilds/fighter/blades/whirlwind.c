@@ -14,14 +14,14 @@ protected void Setup()
         "everyone within range of you.");
 
     addPrerequisite("/guilds/fighter/blades/cleave.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "long sword",
         "hand and a half sword", "two-handed sword", "dagger", 
         "short sword", })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 19
         ]));
@@ -152,7 +152,7 @@ protected void Setup()
             "rate" : 0.75
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "long sword", "hand and a half sword", 
                 "two-handed sword", "dagger", "short sword" }),

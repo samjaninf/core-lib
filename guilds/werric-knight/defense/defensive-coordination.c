@@ -14,9 +14,9 @@ protected void Setup()
         "than the sum of their parts. This is teamwork applied to defensive tactics.");
 
     addPrerequisite("guilds/werric-knight/defense/defensive-reposition.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

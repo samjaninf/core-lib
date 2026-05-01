@@ -16,7 +16,7 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/guilds/background/paths/learning/total-recall.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Mental Refresh":10

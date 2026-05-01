@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Heal with cleanse and regeneration");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/purgatory-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 27
         ]));

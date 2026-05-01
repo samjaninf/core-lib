@@ -15,9 +15,9 @@ protected void Setup()
         "nature is defined by your unwavering dedication to duty.");
 
     addPrerequisite("guilds/werric-knight/oath/unshakeable-stance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with molten magma.");
 
     addPrerequisite("/guilds/pyromancer/functions/smoke.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

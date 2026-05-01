@@ -21,13 +21,13 @@ protected void Setup()
         "woodwind and brass instruments.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 31
     ]));
 
     addPrerequisite("/guilds/bard/woodwind-brass/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", ([
         "equipment":({ "instrument: woodwind", "instrument: brass" }),
@@ -51,7 +51,7 @@ protected void Setup()
                "value": 10 ]),
             (["modifier": "bonus damage",
                "value": 6 ]),
-            (["modifier":"bonus hit points",
+            (["modifier": "bonus hit points",
                "value" : 250]),
         }),
         "/guilds/bard/woodwind-brass/denizens-dance.c":({
@@ -59,27 +59,27 @@ protected void Setup()
                "value": 20 ]),
             (["modifier": "bonus damage",
                "value": 10 ]),
-            (["modifier":"bonus defense",
+            (["modifier": "bonus defense",
                "value": 10 ]),
-            (["modifier":"bonus hit points",
+            (["modifier": "bonus hit points",
                "value" : 400]),
         }),
         "/guilds/bard/woodwind-brass/bears-dance.c":({
             (["modifier": "bonus heal hit points",
                "value": 10 ]),
-            (["modifier":"bonus heal spell points",
+            (["modifier": "bonus heal spell points",
                "value": 10 ]),
             (["modifier": "bonus heal hit points rate",
                "value": 5 ]),
-            (["modifier":"bonus heal spell points rate",
+            (["modifier": "bonus heal spell points rate",
                "value": 5 ]),
         }),
         "/guilds/bard/woodwind-brass/dexterous-denizens.c":({
             (["modifier": "bonus dexterity",
                "value": 6 ]),
-            (["modifier":"bonus dodge",
+            (["modifier": "bonus dodge",
                "value": 10 ]),
-            (["modifier":"bonus no armor",
+            (["modifier": "bonus no armor",
                "value": 10 ]),
         }),
     ]));

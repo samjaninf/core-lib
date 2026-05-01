@@ -14,10 +14,10 @@ protected void Setup()
         "themselves with orbiting chunks of stone that deflect incoming attacks.");
 
     addPrerequisite("/guilds/geomancer/earth/quake.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 13
         ]));

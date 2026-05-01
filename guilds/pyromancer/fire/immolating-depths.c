@@ -14,10 +14,10 @@ protected void Setup()
         "the target in flames that burn from the inside out.");
 
     addPrerequisite("/guilds/pyromancer/fire/burning-touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 29
         ]));

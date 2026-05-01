@@ -13,9 +13,9 @@ protected void Setup()
         "crushing blows with overwhelming force.");
 
     addPrerequisite("/guilds/werric-knight/shield/shield-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

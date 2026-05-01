@@ -14,11 +14,11 @@ protected void Setup()
         "ornate decorations and comfortable accommodations for wealthy passengers.");
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 5]));
-    addPrerequisite("sewing", (["type":"skill", "value" : 3]));
-    addPrerequisite("artistic endeavors", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 3]));
+    addPrerequisite("artistic endeavors", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/components/basic-wagon-frame.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart" })]));
     addSpecification("bonus crafting vehicle structure", 3);

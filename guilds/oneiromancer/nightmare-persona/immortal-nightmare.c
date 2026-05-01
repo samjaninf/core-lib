@@ -14,12 +14,12 @@ protected void Setup()
         "truly be destroyed while dreams exist.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 61 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/unending-terror.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

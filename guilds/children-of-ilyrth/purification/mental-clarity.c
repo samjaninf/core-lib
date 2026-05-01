@@ -14,12 +14,12 @@ protected void Setup()
         "and impenetrable as the deepest ocean.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 45 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/psionic-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -25,11 +25,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/evocation/energy-shard.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 9
         ]));
@@ -61,7 +61,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/mystic-charge.c", WeaponType),
             "name" : "Mystic Charge",
             "formula" : "multiplicative",
@@ -69,7 +69,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/magical-conduit.c", WeaponType),
             "name" : "Magical Conduit",
             "formula" : "multiplicative",
@@ -77,7 +77,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/ionization.c", WeaponType),
             "name" : "Ionization",
             "formula" : "multiplicative",
@@ -85,7 +85,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/kinetic-discharge.c", WeaponType),
             "name" : "Kinetic Discharge",
             "formula" : "multiplicative",
@@ -93,7 +93,7 @@ protected void Setup()
             "rate": 1.35
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/plasma-eruption.c", WeaponType),
             "name" : "Plasma Eruption",
             "formula" : "multiplicative",
@@ -101,7 +101,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/magical-condenser.c", WeaponType),
             "name" : "Magical Condenser",
             "formula" : "multiplicative",
@@ -117,7 +117,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/kinetic-blast.c", WeaponType),
             "name" : "Kinetic Blast",
             "formula" : "multiplicative",
@@ -125,7 +125,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/plasma-condenser.c", WeaponType),
             "name" : "Plasma Condenser",
             "formula" : "multiplicative",
@@ -140,13 +140,13 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "evocation",
             "formula" : "additive",
             "rate" : 0.10
@@ -164,13 +164,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

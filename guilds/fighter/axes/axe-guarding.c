@@ -17,12 +17,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "axe" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 5 ]));
 
     addPrerequisite("/guilds/fighter/axes/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -29,7 +29,7 @@ protected void Setup()
             "value": 15
         ]));
     addPrerequisite("/guilds/bard/lyrics/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([
@@ -85,7 +85,7 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.05

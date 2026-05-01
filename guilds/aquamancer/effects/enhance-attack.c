@@ -14,10 +14,10 @@ protected void Setup()
         "attack capabilities.");
 
     addPrerequisite("/guilds/aquamancer/effects/add-hp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 7
         ]));

@@ -14,10 +14,10 @@ protected void Setup()
         "stamina points.");
 
     addPrerequisite("/guilds/aquamancer/effects/damage-sp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 5
         ]));

@@ -14,9 +14,9 @@ protected void Setup()
         "providing superior maneuverability and wind efficiency.");
     addSpecification("research type", "points");
     addSpecification("research cost", 4);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 7]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 5]));
-    addPrerequisite("sewing", (["type":"skill", "value" : 4]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 7]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 5]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/ships/coastal-sailing-vessels.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

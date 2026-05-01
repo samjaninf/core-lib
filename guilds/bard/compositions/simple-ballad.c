@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge of how to create songs structured as simple 32-bar ballads.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 5
         ]));
     addPrerequisite("/guilds/bard/compositions/aaa.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

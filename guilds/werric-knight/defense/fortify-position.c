@@ -15,9 +15,9 @@ protected void Setup()
         "defensible, forcing enemies to commit more resources to dislodge you.");
 
     addPrerequisite("guilds/werric-knight/defense/defensive-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,15 +30,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"intelligence",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
             "rate":0.20
         ]),
         ([
-            "type":"attribute",
-            "name":"constitution",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "constitution",
+            "formula": "additive",
             "rate":0.15
         ])
     }));

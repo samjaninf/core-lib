@@ -15,10 +15,10 @@ protected void Setup()
         "formations and battering all foes with unpredictable surges of water.");
 
     addPrerequisite("/guilds/aquamancer/water/great-maelstrom.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 33
         ]));

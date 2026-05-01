@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/air-channeling.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

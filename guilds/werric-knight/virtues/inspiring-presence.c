@@ -13,9 +13,9 @@ protected void Setup()
         "you, granting bonuses to leadership and morale.");
 
     addPrerequisite("/guilds/werric-knight/virtues/courage.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

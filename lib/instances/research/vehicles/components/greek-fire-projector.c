@@ -14,10 +14,10 @@ protected void Setup()
         "fire at enemy vessels, a fearsome naval weapon.");
     addSpecification("research type", "points");
     addSpecification("research cost", 4);
-    addPrerequisite("engineering", (["type":"skill", "value" : 5]));
-    addPrerequisite("alchemy", (["type":"skill", "value" : 4]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 5]));
+    addPrerequisite("alchemy", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/oil-dispenser.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 6);

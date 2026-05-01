@@ -17,7 +17,7 @@ protected void Setup()
           "guild": "bard",
           "value": 37 ]));
     addPrerequisite("/guilds/bard/lyrics/daedruns-sorrow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

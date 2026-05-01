@@ -20,7 +20,7 @@ protected void Setup()
           "value": 19 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/maelstrom-barrier.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

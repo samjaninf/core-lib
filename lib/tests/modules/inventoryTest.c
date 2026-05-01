@@ -878,7 +878,7 @@ void TransferItemsToDoesNotMoveCursedOrUnmoveableObjects()
     weapon.set("weapon type", "long sword");
     weapon.set("equipment locations", OnehandedWeapon);
     mapping curseInfo = ([
-        "equip message":"you're cursed",
+        "equip message": "you're cursed",
             "failed unequip message" : "nope... can't do that"
     ]);
 

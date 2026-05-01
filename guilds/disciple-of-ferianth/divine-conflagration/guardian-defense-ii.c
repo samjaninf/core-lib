@@ -13,13 +13,13 @@ protected void Setup()
         "defensive capabilities of your summoned flame guardian.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 17
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/divine-conflagration/guardian-defense-i.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

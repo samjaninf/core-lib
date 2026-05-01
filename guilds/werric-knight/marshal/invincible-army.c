@@ -15,9 +15,9 @@ protected void Setup()
         "Armies led by a Lord Marshal invoking Invincible Army have never lost.");
 
     addPrerequisite("guilds/werric-knight/marshal/master-of-war.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":60]));
+        (["type": "guild", "level":60]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -31,15 +31,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"charisma",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
             "rate":0.30
         ]),
         ([
-            "type":"attribute",
-            "name":"intelligence",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
             "rate":0.20
         ])
     }));

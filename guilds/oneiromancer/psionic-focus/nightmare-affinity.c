@@ -14,14 +14,14 @@ protected void Setup()
         "attacks rooted in dream and fear.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 16 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/dream-fang.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/ruthless-precision.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Dream Fang": 20,

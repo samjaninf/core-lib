@@ -29,17 +29,17 @@ public void SetupGuild()
     ]));
 
     addCriteria("attribute points", ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every 5 levels"
     ]));
 
     addCriteria("skill points", ([
-        "type":"skill points",
+        "type": "skill points",
         "apply" : "5 every level"
     ]));
 
     addCriteria("initial research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "5 at level 1"
     ]));
 

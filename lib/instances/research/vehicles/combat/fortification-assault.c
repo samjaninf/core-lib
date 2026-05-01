@@ -14,7 +14,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
     addPrerequisite("/lib/instances/research/vehicles/combat/siege-warfare.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus overland warfare", 1);
     addSpecification("bonus tactics", 1);

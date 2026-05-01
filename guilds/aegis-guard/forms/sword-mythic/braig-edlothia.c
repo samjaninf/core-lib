@@ -14,12 +14,12 @@ protected void Setup()
         "mythic magic skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 31
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-mythic/braig-celair.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

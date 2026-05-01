@@ -15,13 +15,13 @@ protected void Setup()
         "effects, maximizing thermal shock damage.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 27
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/boiling-convergence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,10 +14,10 @@ protected void Setup()
         "vortex of spinning flames that tears through enemies.");
 
     addPrerequisite("/guilds/pyromancer/fire/disrupt-inferno.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 45
         ]));

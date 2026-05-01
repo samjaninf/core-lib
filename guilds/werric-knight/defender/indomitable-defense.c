@@ -16,9 +16,9 @@ protected void Setup()
         "that broke entire armies.");
 
     addPrerequisite("guilds/werric-knight/defender/immovable-guardian.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type": "guild", "level":33]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

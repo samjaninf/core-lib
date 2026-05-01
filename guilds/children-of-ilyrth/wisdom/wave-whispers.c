@@ -14,12 +14,12 @@ protected void Setup()
         "perceive distant sounds and conversations through water's echo.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 11 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/echo-location.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -142,9 +142,9 @@ protected void Setup()
         "chainmail");
     Source("crafting");
     addPrerequisite("weapon smithing", 
-        (["type":"skill", "value" : 3]));
+        (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/crafting/armor/craftArmor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addResearchElement("/lib/instances/research/crafting/armor/chainmail/craftChainmail.c");
     TreeRoot("/lib/instances/research/crafting/armor/chainmail/craftChainmail.c");

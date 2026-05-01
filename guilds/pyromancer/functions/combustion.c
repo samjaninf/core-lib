@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with explosive combustion.");
 
     addPrerequisite("/guilds/pyromancer/functions/flame.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

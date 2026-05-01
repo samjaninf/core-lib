@@ -15,10 +15,10 @@ protected void Setup()
         "that devastates all enemies with apocalyptic fury.");
 
     addPrerequisite("/guilds/geomancer/earth/withering-earth.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 67
         ]));

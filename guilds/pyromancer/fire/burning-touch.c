@@ -14,10 +14,10 @@ protected void Setup()
         "searing hot, capable of burning through armor and flesh alike.");
 
     addPrerequisite("/guilds/pyromancer/fire/burning-grasp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 15
         ]));

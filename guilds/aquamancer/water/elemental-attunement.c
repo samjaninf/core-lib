@@ -15,13 +15,13 @@ protected void Setup()
         "granting them intuitive control over all water magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 45
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/eye-of-the-storm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

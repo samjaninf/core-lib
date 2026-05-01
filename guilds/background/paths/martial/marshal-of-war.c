@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus persuasion", 1);
 
     addPrerequisite("/guilds/background/paths/martial/strategic-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

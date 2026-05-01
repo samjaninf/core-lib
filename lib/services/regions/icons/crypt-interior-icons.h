@@ -645,21 +645,21 @@ private mapping CryptInteriorIcons = ([
 
     "crypt interior north entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -676,21 +676,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north-east entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -707,21 +707,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north-west entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -738,21 +738,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north-east-west entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -769,21 +769,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north alcove west entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -800,21 +800,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north alcove east entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -831,21 +831,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north alcove east-west entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -864,21 +864,21 @@ private mapping CryptInteriorIcons = ([
     // South Alcove Variants
     "crypt interior south entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -895,21 +895,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south-east entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -926,21 +926,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south-west entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -957,21 +957,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south-east-west entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -988,21 +988,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south alcove west entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1019,21 +1019,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south alcove east entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1050,21 +1050,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south alcove east-west entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1083,21 +1083,21 @@ private mapping CryptInteriorIcons = ([
     // West Alcove Variants
     "crypt interior west entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1114,21 +1114,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior west-north entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1145,21 +1145,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior west-south entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1176,21 +1176,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior west-south-north entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1207,21 +1207,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior west alcove north entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1238,21 +1238,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior west alcove south entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1269,21 +1269,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior west alcove north-south entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1302,21 +1302,21 @@ private mapping CryptInteriorIcons = ([
     // East Alcove Variants
     "crypt interior east entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1333,21 +1333,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior east-south entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1364,21 +1364,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior east-north entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1395,21 +1395,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior east-south-north entry alcove": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1426,21 +1426,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior east alcove north entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1457,21 +1457,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior east alcove south entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1488,21 +1488,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior east alcove north-south entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1521,14 +1521,14 @@ private mapping CryptInteriorIcons = ([
     // Corner Hallways
     "crypt interior north-west corner hallway": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
@@ -1545,21 +1545,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north-west corner hallway south entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1576,21 +1576,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north-west corner hallway east entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1607,21 +1607,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior north-west corner hallway south-east entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",
@@ -1638,14 +1638,14 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south-west corner hallway": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
@@ -1662,21 +1662,21 @@ private mapping CryptInteriorIcons = ([
     ]),
     "crypt interior south-west corner hallway north entry": ([
         "colors":([
-            "none":"",
+            "none": "",
             "grayscale" : "\x1b[0;38;5;237m",
             "3-bit" : "\x1b[0;30;1m",
             "8-bit" : "\x1b[0;38;5;237m",
             "24-bit" : "\x1b[0;38;2;58;58;62m",
             "icons" : ([
                 "floor":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;235m",
                     "3-bit" : "\x1b[0;30m",
                     "8-bit" : "\x1b[0;38;5;235m",
                     "24-bit" : "\x1b[0;38;2;38;38;42m",
                 ]),
                 "door":([
-                    "none":"",
+                    "none": "",
                     "grayscale" : "\x1b[0;38;5;240m",
                     "3-bit" : "\x1b[0;30;1m",
                     "8-bit" : "\x1b[0;38;5;240m",

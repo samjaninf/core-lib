@@ -14,16 +14,16 @@ protected void Setup()
         "enhancing the most devastating psionic techniques.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 36 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/void-thought.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/psychic-resonance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/annihilating-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Void Thought": 30,

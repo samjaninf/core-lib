@@ -14,9 +14,9 @@ protected void Setup()
         "your techniques studied, your charges legendary, your mastery absolute.");
 
     addPrerequisite("guilds/werric-knight/mounted/supreme-cavalry.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":70]));
+        (["type": "guild", "level":70]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

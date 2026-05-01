@@ -14,7 +14,7 @@ protected void Setup()
         "entombing them in stone, crushing them slowly.");
 
     addPrerequisite("/guilds/geomancer/functions/gravel.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -13,12 +13,12 @@ protected void Setup()
         "mastery of spell construction, resulting in tremendously potent effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 33
         ]));
     addPrerequisite("/guilds/geomancer/construct/spell-amplification.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

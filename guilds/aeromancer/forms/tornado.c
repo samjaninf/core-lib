@@ -15,7 +15,7 @@ protected void Setup()
         "of devastating energy.");
 
     addPrerequisite("/guilds/aeromancer/forms/cyclone.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

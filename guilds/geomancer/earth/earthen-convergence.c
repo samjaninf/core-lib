@@ -14,13 +14,13 @@ protected void Setup()
         "power of sand and debris-based attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 17
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/sandweaving.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

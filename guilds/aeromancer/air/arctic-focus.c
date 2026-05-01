@@ -16,13 +16,13 @@ protected void Setup()
         "abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 7
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/arctic-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

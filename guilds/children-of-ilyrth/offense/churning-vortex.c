@@ -14,12 +14,12 @@ protected void Setup()
         "whirlpool of sacred water that tears apart all enemies in the area.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 25 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/crushing-depths.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

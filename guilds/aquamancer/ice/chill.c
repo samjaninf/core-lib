@@ -14,7 +14,7 @@ protected void Setup()
         "aquamancer is able to emit a wave of freezing cold at a foe.");
 
     addPrerequisite("/guilds/aquamancer/ice/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

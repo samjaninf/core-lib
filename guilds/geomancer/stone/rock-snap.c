@@ -14,7 +14,7 @@ protected void Setup()
         "geomancer causes a sudden burst of stone shrapnel to strike a foe.");
 
     addPrerequisite("/guilds/geomancer/stone/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

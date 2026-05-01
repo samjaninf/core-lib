@@ -16,9 +16,9 @@ protected void Setup()
         "and all harm, whose shield never falters.");
 
     addPrerequisite("guilds/werric-knight/shield/impenetrable-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

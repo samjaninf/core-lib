@@ -17,12 +17,12 @@ protected void Setup()
         "dagger", "short sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 6 ]));
 
     addPrerequisite("/guilds/scion/paths/dagger/forms/the-plough.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,7 +14,7 @@ protected void Setup()
         "a target, weakening their physical capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/apply-slow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
         ([  "type": "level",
@@ -80,7 +80,7 @@ protected void Setup()
             "rate": 1.20
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental air",
             "formula" : "additive",
             "rate" : 0.10
@@ -98,7 +98,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25

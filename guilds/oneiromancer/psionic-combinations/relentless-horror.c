@@ -14,12 +14,12 @@ protected void Setup()
         "reducing cooldown time.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 29 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/efficient-weaving.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

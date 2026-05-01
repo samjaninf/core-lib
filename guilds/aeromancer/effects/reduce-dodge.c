@@ -14,7 +14,7 @@ protected void Setup()
         "a target's dodging capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/reduce-soak.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
         ([  "type": "level",

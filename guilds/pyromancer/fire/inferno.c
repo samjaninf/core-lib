@@ -14,10 +14,10 @@ protected void Setup()
         "explosion of flame that engulfs all enemies in the area.");
 
     addPrerequisite("/guilds/pyromancer/fire/fire-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 13
         ]));

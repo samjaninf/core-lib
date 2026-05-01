@@ -13,10 +13,10 @@ protected void Setup()
         "advanced knowledge of divine judgment, greatly enhancing damage.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/divine-wrath.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 53
         ]));

@@ -14,12 +14,12 @@ protected void Setup()
         "arrow that does sonic damage.");
 
     addPrerequisite("/guilds/bard/bow/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "bow" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 3
         ]));

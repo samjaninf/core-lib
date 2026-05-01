@@ -17,13 +17,13 @@ protected void Setup()
         "an opponent's high guards.");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/asta-dravn.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 25
         ]));
@@ -72,7 +72,7 @@ protected void Setup()
             "rate" : 0.5
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name": "sword skills",
             "skills": ({ "dagger", "short sword", "long sword", 
                 "hand and a half sword", "two-handed sword" }),
@@ -104,7 +104,7 @@ protected void Setup()
             "rate": 0.35
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "strength",
             "formula": "additive",
             "rate": 0.25

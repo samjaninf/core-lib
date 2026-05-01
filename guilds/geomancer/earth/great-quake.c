@@ -14,10 +14,10 @@ protected void Setup()
         "devastating earthquake that tears through all enemies in the area.");
 
     addPrerequisite("/guilds/geomancer/earth/seismic-call.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 27
         ]));

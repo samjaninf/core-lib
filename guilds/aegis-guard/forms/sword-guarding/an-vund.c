@@ -16,12 +16,12 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 3 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/celon-ai-esgal.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

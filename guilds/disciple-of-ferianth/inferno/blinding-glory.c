@@ -14,13 +14,13 @@ protected void Setup()
         "enhancing attacks that combine fire with debilitating effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 49
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/sacred-champion.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

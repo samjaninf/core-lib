@@ -13,9 +13,9 @@ protected void Setup()
         "strikes that maximize force and penetration.");
 
     addPrerequisite("/guilds/werric-knight/sword/whirling-blade.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -498,7 +498,7 @@ void CanBeginQuestReturnsTrueIfNoPrerequisitesSet()
 void CanBeginQuestReturnsFalseIfPrerequisitesNotMet()
 {
     SetUpQuestItem();
-    QuestItem.testAddPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    QuestItem.testAddPrerequisite("long sword", (["type": "skill", "value" : 10]));
 
     ExpectFalse(QuestItem.canBeginQuest(Quester));
 }
@@ -507,7 +507,7 @@ void CanBeginQuestReturnsFalseIfPrerequisitesNotMet()
 void CanBeginQuestReturnsTrueIfPrerequisitesMet()
 {
     SetUpQuestItem();
-    QuestItem.testAddPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    QuestItem.testAddPrerequisite("long sword", (["type": "skill", "value" : 10]));
     Quester.Str(20);
     Quester.addSkillPoints(100);
     Quester.advanceSkill("long sword", 10);
@@ -518,7 +518,7 @@ void CanBeginQuestReturnsTrueIfPrerequisitesMet()
 void BeginQuestReturnsFalseIfPrerequisitesNotMet()
 {
     SetUpQuestItem();
-    QuestItem.testAddPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    QuestItem.testAddPrerequisite("long sword", (["type": "skill", "value" : 10]));
 
     ExpectFalse(QuestItem.beginQuest(Quester));
 }
@@ -527,7 +527,7 @@ void BeginQuestReturnsFalseIfPrerequisitesNotMet()
 void BeginQuestReturnsTrueIfPrerequisitesMet()
 {
     SetUpQuestItem();
-    QuestItem.testAddPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    QuestItem.testAddPrerequisite("long sword", (["type": "skill", "value" : 10]));
     Quester.Str(20);
     Quester.addSkillPoints(100);
     Quester.advanceSkill("long sword", 10);

@@ -15,7 +15,7 @@ protected void Setup()
         "overwhelming water energy.");
 
     addPrerequisite("/guilds/aquamancer/forms/strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

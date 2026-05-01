@@ -14,11 +14,11 @@ protected void Setup()
         "bolts of lightning at enemies.");
     addSpecification("research type", "points");
     addSpecification("research cost", 7);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 14]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 7]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 5]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 14]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 7]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-cannon.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 8);

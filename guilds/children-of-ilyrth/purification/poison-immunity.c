@@ -14,12 +14,12 @@ protected void Setup()
         "purified that toxins have little effect.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 15 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/cure-poison.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

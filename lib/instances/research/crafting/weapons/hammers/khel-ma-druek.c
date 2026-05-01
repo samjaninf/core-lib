@@ -16,12 +16,12 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/hammers/cuerth-faer.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 40]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 30]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 33]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 40]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 30]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 33]));
 
-    addSpecification("limited by", (["crafting type":"hammer"]));
+    addSpecification("limited by", (["crafting type": "hammer"]));
 
     addSpecification("bonus crafting magical enchantment", 2);
 }

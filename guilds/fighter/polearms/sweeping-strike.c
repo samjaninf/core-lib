@@ -14,12 +14,12 @@ protected void Setup()
         "everyone within range of you.");
 
     addPrerequisite("/guilds/fighter/polearms/impale.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "pole arm" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 19
         ]));

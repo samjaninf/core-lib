@@ -16,10 +16,10 @@ protected void Setup()
         "and debilitates");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/dream-rend.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 35
         ]));

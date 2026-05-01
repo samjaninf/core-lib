@@ -18,12 +18,12 @@ protected void Setup()
         "staff", "pole arm" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 17 ]));
 
     addPrerequisite("/guilds/fighter/techniques/advanced-evasion.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

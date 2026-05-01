@@ -14,10 +14,10 @@ protected void Setup()
         "pyromancer conjures a whip of flame to strike a foe.");
 
     addPrerequisite("/guilds/pyromancer/flame/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 3
         ]));

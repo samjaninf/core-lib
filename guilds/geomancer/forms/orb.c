@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a massive orb of stone.");
 
     addPrerequisite("/guilds/geomancer/forms/blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

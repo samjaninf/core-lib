@@ -13,13 +13,13 @@ protected void Setup()
         "improved knowledge of ember arts, further enhancing utility abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 13
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/ember-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

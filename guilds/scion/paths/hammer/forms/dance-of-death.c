@@ -15,12 +15,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "hammer" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 13 ]));
 
     addPrerequisite("/guilds/scion/paths/hammer/forms/side-stepping.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

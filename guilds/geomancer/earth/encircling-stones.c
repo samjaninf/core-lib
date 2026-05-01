@@ -15,10 +15,10 @@ protected void Setup()
         "exceptional protection and can strike nearby foes.");
 
     addPrerequisite("/guilds/geomancer/earth/earth-walk.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 37
         ]));

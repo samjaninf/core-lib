@@ -13,9 +13,9 @@ protected void Setup()
         "impact force of shield-based strikes.");
 
     addPrerequisite("/guilds/werric-knight/shield/shield-bash.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

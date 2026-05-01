@@ -13,10 +13,10 @@ protected void Setup()
         "enhanced understanding of sacred fire magic.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/liturgical-knowledge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 16
         ]));

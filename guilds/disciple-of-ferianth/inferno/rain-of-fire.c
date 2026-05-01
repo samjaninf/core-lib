@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Cataclysmic fire rain with lingering burns");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/infernal-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 47
         ]));

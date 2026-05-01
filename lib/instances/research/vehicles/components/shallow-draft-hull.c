@@ -14,11 +14,11 @@ protected void Setup()
         "navigation, allowing access to rivers and coastal areas.");
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 4]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 3]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 1]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 1]));
     addPrerequisite("/lib/instances/research/vehicles/components/basic-hull-construction.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle structure", 2);

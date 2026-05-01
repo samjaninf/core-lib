@@ -14,7 +14,7 @@ protected void Setup()
         "aquamancer conjures a cloud of freezing mist that engulfs foes.");
 
     addPrerequisite("/guilds/aquamancer/ice/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

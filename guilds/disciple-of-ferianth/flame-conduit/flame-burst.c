@@ -17,10 +17,10 @@ protected void Setup()
         "while in flame conduit form");
 
     addPrerequisite("/guilds/disciple-of-ferianth/flame-conduit/ember-blood.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));

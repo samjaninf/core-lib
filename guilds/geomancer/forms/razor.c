@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form razor-sharp stone shards.");
 
     addPrerequisite("/guilds/geomancer/forms/tendril.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

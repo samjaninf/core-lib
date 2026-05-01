@@ -17,12 +17,12 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 27 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-evading/lilt-an-gurth.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Maego": 15,

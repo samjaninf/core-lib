@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that erupt fire from the ground.");
 
     addPrerequisite("/guilds/pyromancer/forms/orb.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

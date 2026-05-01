@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge to enhance the protective power of Ilyrth's sacred waters.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 13 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/devotion/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

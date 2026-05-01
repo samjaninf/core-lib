@@ -15,11 +15,11 @@ protected void Setup()
         "that strike foes in rapid succession.");
 
     addPrerequisite("/guilds/aeromancer/forms/coil.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":19
         ]));
 

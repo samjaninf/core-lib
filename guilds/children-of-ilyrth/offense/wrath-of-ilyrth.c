@@ -15,12 +15,12 @@ protected void Setup()
         "divine power that crash upon them repeatedly.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 45 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/divine-inundation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -16,10 +16,10 @@ protected void Setup()
         "injuries and soothing them with its cool touch.");
 
     addPrerequisite("/guilds/aquamancer/water/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 3
         ]));

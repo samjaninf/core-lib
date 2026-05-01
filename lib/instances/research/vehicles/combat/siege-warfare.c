@@ -14,7 +14,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
     addPrerequisite("/lib/instances/research/vehicles/combat/ramming-techniques.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus overland warfare", 1);
     addSpecification("bonus logistics", 1);

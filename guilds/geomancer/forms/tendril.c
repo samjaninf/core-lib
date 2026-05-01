@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form tendrils of earth.");
 
     addPrerequisite("/guilds/geomancer/forms/pebble.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

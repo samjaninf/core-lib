@@ -14,12 +14,12 @@ protected void Setup()
         "depths and perceive things hidden from normal vision.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 13 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/pressure-sense.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,9 +13,9 @@ protected void Setup()
         "the potency of your justice-based attacks.");
 
     addPrerequisite("guilds/werric-knight/virtues/strike-of-justice.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

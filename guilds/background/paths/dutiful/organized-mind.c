@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus resist psionic", 5);
 
     addPrerequisite("/guilds/background/paths/dutiful/cleanly-habits.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a piercing spear of stone.");
 
     addPrerequisite("/guilds/geomancer/forms/blade.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

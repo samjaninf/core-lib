@@ -13,7 +13,7 @@ protected void Setup()
         "mastery of siphoning techniques.");
 
     addPrerequisite("/guilds/oneiromancer/psychic-siphon/efficient-drain.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 17
         ]));

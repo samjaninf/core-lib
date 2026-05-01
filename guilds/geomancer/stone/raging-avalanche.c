@@ -15,7 +15,7 @@ protected void Setup()
         "foes in the area with crushing stone and debris.");
 
     addPrerequisite("/guilds/geomancer/stone/boulder-storm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

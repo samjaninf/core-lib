@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus weapon attack", 1);
 
     addPrerequisite("/guilds/background/paths/martial/armor-training.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

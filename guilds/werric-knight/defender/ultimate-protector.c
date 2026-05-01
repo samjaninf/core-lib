@@ -16,9 +16,9 @@ protected void Setup()
         "the living embodiment of protection itself.");
 
     addPrerequisite("guilds/werric-knight/defender/protectors-heart.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":39]));
+        (["type": "guild", "level":39]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,9 +13,9 @@ protected void Setup()
         "impenetrable, providing exceptional protection against all attacks.");
 
     addPrerequisite("/guilds/werric-knight/defense/guardian-stance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,7 +14,7 @@ protected void Setup()
         "pressure of the deep earth, capable of pulverizing armor.");
 
     addPrerequisite("/guilds/geomancer/functions/entombing.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -14,7 +14,7 @@ protected void Setup()
         "hit points.");
 
     addPrerequisite("/guilds/aeromancer/effects/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -99,7 +99,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental air",
             "formula" : "additive",
             "rate" : 0.10

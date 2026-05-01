@@ -16,12 +16,12 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("level", 
-        (["type":"level",
+        (["type": "level",
           "value": 5 ]));
 
     addPrerequisite("/lib/instances/research/crafting/weapons/swords/craftLongSwords.c", 
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/weapons/common/forge-welding.c",
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 10]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 10]));
 }

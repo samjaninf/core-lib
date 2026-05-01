@@ -16,10 +16,10 @@ protected void Setup()
         "damages enemies in your path");
 
     addPrerequisite("/guilds/disciple-of-ferianth/flame-conduit/infernal-veins.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 27
         ]));

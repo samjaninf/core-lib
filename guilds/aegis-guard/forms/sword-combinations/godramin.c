@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge to chain an additional attack to their combinations.");
  
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 11
         ]));

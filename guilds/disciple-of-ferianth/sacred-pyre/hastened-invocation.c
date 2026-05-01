@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to reduce the cooldown of the Invocation of the Pyre.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/amplified-invocation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

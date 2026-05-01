@@ -16,10 +16,10 @@ protected void Setup()
         "them against surfaces and each other with devastating force.");
 
     addPrerequisite("/guilds/aeromancer/air/cyclone.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 13
         ]));

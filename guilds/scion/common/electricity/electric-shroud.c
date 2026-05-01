@@ -26,19 +26,19 @@ protected void Setup()
         "spell points, and stamina.", WeaponType));
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(
         sprintf("/guilds/scion/paths/%s/electricity/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 23
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": 
                 sprintf("/guilds/scion/paths/%s/electricity/static-shield.c", WeaponType),
             "name" : "static shield",
@@ -47,7 +47,7 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": 
                 sprintf(sprintf("/guilds/scion/paths/%s/electricity/plasma-shield.c", WeaponType), WeaponType),
             "name" : "plasma shield",

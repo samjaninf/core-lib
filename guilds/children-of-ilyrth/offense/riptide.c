@@ -14,12 +14,12 @@ protected void Setup()
         "abilities.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 15 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/drowning-grasp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

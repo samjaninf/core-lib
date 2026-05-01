@@ -15,7 +15,7 @@ protected void Setup()
         "strike of water energy.");
 
     addPrerequisite("/guilds/aquamancer/forms/lance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -14,12 +14,12 @@ protected void Setup()
         "mundane archery skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 12
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/bow/gwedh-cun-celair.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -30,32 +30,32 @@ public void SetupGuild()
     ]));
 
     addCriteria("weapon attack", ([
-        "type":"attack",
+        "type": "attack",
         "apply" : "1 every 20 levels"
     ]));
 
     addCriteria("attribute points", ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every 5 levels"
     ]));
 
     addCriteria("skill points", ([
-        "type":"skill points",
+        "type": "skill points",
         "apply" : "5 every level"
     ]));
 
     addCriteria("initial research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "5 at level 1"
     ]));
 
     addCriteria("research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "1 every level"
     ]));
 
     addCriteria("supplemental research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "2 every 5 levels"
     ]));
 
@@ -72,43 +72,43 @@ public void SetupGuild()
     ]));
 
     addCriteria("bows", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/bard/bows.c"
     ]));
 
     addCriteria("melee weapons", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/bard/melee-attacks.c"
     ]));
 
     addCriteria("compositions", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/bard/compositions.c"
     ]));
 
     addCriteria("lyrics", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/bard/lyrics.c"
     ]));
 
     addCriteria("strings", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/bard/strings.c"
     ]));
 
     addCriteria("woodwind-brass", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/bard/woodwind-brass.c"
     ]));
 
     addCriteria("percussion", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/bard/percussion.c"
     ]));

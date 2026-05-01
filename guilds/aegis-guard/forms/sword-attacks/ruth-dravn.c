@@ -19,16 +19,16 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 15 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/thar-dravn.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/tirnruth.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/gwisten.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Dravo": 15,

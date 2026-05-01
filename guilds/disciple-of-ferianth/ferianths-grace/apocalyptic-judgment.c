@@ -14,10 +14,10 @@ protected void Setup()
         "the destructive power of divine fire.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/ferianths-chosen.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 65
         ]));

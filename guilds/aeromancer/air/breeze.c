@@ -16,10 +16,10 @@ protected void Setup()
         "alive, anticipating threats and guiding the target away from danger.");
 
     addPrerequisite("/guilds/aeromancer/air/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 3
         ]));

@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "blah blah blah");
     addSpecification("bonus strength", 2);
     addSpecification("bonus long sword", 1);
-    addSpecification("limited by", (["equipment":"long sword"]));
+    addSpecification("limited by", (["equipment": "long sword"]));
     addSpecification("bonus weapon attack", 1);
     addSpecification("root", "jock");
     addSpecification("opposing root", "nerd");

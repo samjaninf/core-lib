@@ -537,9 +537,9 @@ void GuildsExtraAttacksCorrectlyAppliesBonusAttacks()
     ExpectEq("", User.guildsExtraAttacks(), "no attacks before joining");
     User.joinGuild("test");
     AdvanceToLevel(10, "test");
-    ExpectEq(({ (["attack type":"weapon"]) }), User.guildsExtraAttacks(), "one attack at level 10");
+    ExpectEq(({ (["attack type": "weapon"]) }), User.guildsExtraAttacks(), "one attack at level 10");
     AdvanceToLevel(20, "test");
-    ExpectEq(({ (["attack type":"weapon"]),(["attack type":"weapon"]) }), User.guildsExtraAttacks(), "second attack at level 20");
+    ExpectEq(({ (["attack type": "weapon"]),(["attack type": "weapon"]) }), User.guildsExtraAttacks(), "second attack at level 20");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -550,9 +550,9 @@ void GuildsExtraAttacksStillAPpliedAfterLeavingGuild()
     ExpectEq("", User.guildsExtraAttacks(), "no attacks before joining");
     User.joinGuild("test");
     AdvanceToLevel(10, "test");
-    ExpectEq(({ (["attack type":"weapon"]) }), User.guildsExtraAttacks(), "one extra attack at level 10");
+    ExpectEq(({ (["attack type": "weapon"]) }), User.guildsExtraAttacks(), "one extra attack at level 10");
     User.leaveGuild("test");
-    ExpectEq(({ (["attack type":"weapon"]) }), User.guildsExtraAttacks(), "still one attack after leaving guild");
+    ExpectEq(({ (["attack type": "weapon"]) }), User.guildsExtraAttacks(), "still one attack after leaving guild");
 }
 
 /////////////////////////////////////////////////////////////////////////////

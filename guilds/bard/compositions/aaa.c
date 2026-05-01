@@ -14,12 +14,12 @@ protected void Setup()
         "knowledge of how to create songs structured as three verses.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 1
         ]));
     addPrerequisite("/guilds/bard/compositions/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

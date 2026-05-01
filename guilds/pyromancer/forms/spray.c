@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that spray fire at foes.");
 
     addPrerequisite("/guilds/pyromancer/forms/cloud.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

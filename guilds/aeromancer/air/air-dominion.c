@@ -17,13 +17,13 @@ protected void Setup()
         "air-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 63
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/aeromantic-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Instant heal plus regeneration");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/rejuvenating-blaze.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 23
         ]));

@@ -29,7 +29,7 @@ string PrepPlayerWithInventory()
     weapon.set("equipment locations", OnehandedWeapon);
     move_object(weapon, Player);
     weapon.equip("blah");
-    mapping items = (["Primary Weapon":(["type":"37;1", "data" : "Sword of Blah"])]);
+    mapping items = (["Primary Weapon":(["type": "37;1", "data" : "Sword of Blah"])]);
 
     object armor = clone_object("/lib/items/armor");
     armor.set("name", "blarg");
@@ -37,11 +37,11 @@ string PrepPlayerWithInventory()
     armor.set("equipment locations", Gloves | Armor | ArmGreaves | LegGreaves | Boots);
     move_object(armor, Player);
     armor.equip("blarg");
-    items["Worn Armor"] = (["type":"37;1", "data" : "Equipment of equippedness"]);
-    items["Worn Gloves"] = (["type":"37;1", "data" : "Equipment of equippedness"]);
-    items["Worn Boots"] = (["type":"37;1", "data" : "Equipment of equippedness"]);
-    items["Worn Arm Greaves"] = (["type":"37;1", "data" : "Equipment of equippedness"]);
-    items["Worn Leg Greaves"] = (["type":"37;1", "data" : "Equipment of equippedness"]);
+    items["Worn Armor"] = (["type": "37;1", "data" : "Equipment of equippedness"]);
+    items["Worn Gloves"] = (["type": "37;1", "data" : "Equipment of equippedness"]);
+    items["Worn Boots"] = (["type": "37;1", "data" : "Equipment of equippedness"]);
+    items["Worn Arm Greaves"] = (["type": "37;1", "data" : "Equipment of equippedness"]);
+    items["Worn Leg Greaves"] = (["type": "37;1", "data" : "Equipment of equippedness"]);
 
     armor = clone_object("/lib/items/armor");
     armor.set("name", "f");

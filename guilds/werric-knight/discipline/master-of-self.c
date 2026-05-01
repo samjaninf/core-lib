@@ -13,9 +13,9 @@ protected void Setup()
         "yourself - body, mind, and spirit operate in perfect harmony.");
 
     addPrerequisite("guilds/werric-knight/discipline/supreme-conditioning.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":40]));
+        (["type": "guild", "level":40]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

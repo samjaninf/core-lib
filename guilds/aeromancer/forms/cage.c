@@ -15,7 +15,7 @@ protected void Setup()
         "to entrap and harm a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/ring.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

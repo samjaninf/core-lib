@@ -16,10 +16,10 @@ protected void Setup()
         "dissipating, each gust carrying devastating force.");
 
     addPrerequisite("/guilds/aeromancer/air/gale-force.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 19
         ]));

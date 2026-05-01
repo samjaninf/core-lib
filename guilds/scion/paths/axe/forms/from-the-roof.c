@@ -15,7 +15,7 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "axe" })]));
 
     addPrerequisite("/guilds/scion/paths/axe/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,9 +13,9 @@ protected void Setup()
         "enhanced strength and combat prowess.");
 
     addPrerequisite("guilds/werric-knight/virtues/honorable-combat.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":20]));
+        (["type": "guild", "level":20]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,12 +14,12 @@ protected void Setup()
         "enhancing their perception and magical recovery.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 13 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/fearsome-visage.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

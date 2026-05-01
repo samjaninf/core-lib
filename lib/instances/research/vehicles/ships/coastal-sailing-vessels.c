@@ -14,9 +14,9 @@ protected void Setup()
         "designed for coastal waters and short sea voyages.");
     addSpecification("research type", "points");
     addSpecification("research cost", 3);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 5]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 3]));
-    addPrerequisite("sewing", (["type":"skill", "value" : 3]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/vehicles/boats/river-vessels.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

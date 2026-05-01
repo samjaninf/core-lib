@@ -14,13 +14,13 @@ protected void Setup()
         "significantly enhancing the raw destructive power of fire attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/pyromaniacs-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

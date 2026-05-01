@@ -14,13 +14,13 @@ protected void Setup()
         "the divine power behind area-effect conflagrations.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 41
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/righteous-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,12 +15,12 @@ protected void Setup()
         "between dreams and reality.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 51 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/dream-tyrant.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

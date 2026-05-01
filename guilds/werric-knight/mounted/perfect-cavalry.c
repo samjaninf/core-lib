@@ -14,9 +14,9 @@ protected void Setup()
         "optimal, every strike perfectly timed, every formation flawlessly executed.");
 
     addPrerequisite("guilds/werric-knight/mounted/legendary-rider.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":50]));
+        (["type": "guild", "level":50]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

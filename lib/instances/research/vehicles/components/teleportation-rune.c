@@ -14,11 +14,11 @@ protected void Setup()
         "short distances through dimensional magic.");
     addSpecification("research type", "points");
     addSpecification("research cost", 10);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 18]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 12]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 8]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 18]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 12]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 8]));
     addPrerequisite("/lib/instances/research/vehicles/components/levitation-matrix.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle speed", 12);

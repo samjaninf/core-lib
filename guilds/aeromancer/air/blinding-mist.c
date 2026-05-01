@@ -17,10 +17,10 @@ protected void Setup()
         "hampering the target's ability to fight effectively.");
 
     addPrerequisite("/guilds/aeromancer/air/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 5
         ]));

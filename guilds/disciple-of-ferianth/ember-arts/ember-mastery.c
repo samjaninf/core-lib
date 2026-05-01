@@ -13,13 +13,13 @@ protected void Setup()
         "enhanced knowledge of ember arts, improving all utility abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 5
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/flame-sight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

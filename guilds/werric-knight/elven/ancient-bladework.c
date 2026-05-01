@@ -13,9 +13,9 @@ protected void Setup()
         "elven bladework techniques.");
 
     addPrerequisite("/guilds/werric-knight/elven/sevenfold-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

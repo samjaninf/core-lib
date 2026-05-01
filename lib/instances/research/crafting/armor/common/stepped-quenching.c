@@ -22,9 +22,9 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/common/quenching.c",
-        (["type":"research"]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 7]));
-    addPrerequisite("physics", (["type":"skill", "value" : 3]));
+        (["type": "research"]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 7]));
+    addPrerequisite("physics", (["type": "skill", "value" : 3]));
 
     addSpecification("limited by", (["crafting type":({ "chainmail",
         "plate armor", "splint armor", "scale armor", "helmet" })]));

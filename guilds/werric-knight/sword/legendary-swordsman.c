@@ -16,9 +16,9 @@ protected void Setup()
         "study your techniques, and veterans nod with respect when you pass.");
 
     addPrerequisite("guilds/werric-knight/sword/death-blow.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type": "guild", "level":31]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

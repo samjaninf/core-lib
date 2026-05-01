@@ -16,12 +16,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "mace", "flail" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 19 ]));
 
     addPrerequisite("/guilds/scion/paths/mace/forms/dance-of-death.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

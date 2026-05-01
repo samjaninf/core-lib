@@ -30,17 +30,17 @@ public void SetupGuild()
     ]));
 
     addCriteria("weapon attack", ([
-        "type":"attack",
+        "type": "attack",
         "apply" : "1 every 10 levels"
     ]));
 
     addCriteria("attribute points", ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every 5 levels"
     ]));
 
     addCriteria("skill points", ([
-        "type":"skill points",
+        "type": "skill points",
         "apply" : "5 every level"
     ]));
 }

@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Sustained resistance to fire and cold");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/flame-sight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 3
         ]));

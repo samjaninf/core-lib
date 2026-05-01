@@ -156,9 +156,9 @@ protected void Setup()
         "heavy-armor");
     Source("crafting");
     addPrerequisite("weapon smithing", 
-        (["type":"skill", "value" : 3]));
+        (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/crafting/armor/craftArmor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addResearchElement("/lib/instances/research/crafting/armor/heavy-armor/craftHeavyArmor.c");
     TreeRoot("/lib/instances/research/crafting/armor/heavy-armor/craftHeavyArmor.c");

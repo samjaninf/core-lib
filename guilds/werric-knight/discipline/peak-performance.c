@@ -13,9 +13,9 @@ protected void Setup()
         "physical and mental performance, operating at maximum efficiency.");
 
     addPrerequisite("guilds/werric-knight/discipline/advanced-training.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

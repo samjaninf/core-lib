@@ -14,9 +14,9 @@ protected void Setup()
         "unmatched. You and your mount move as one.");
 
     addPrerequisite("guilds/werric-knight/mounted/devastating-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":45]));
+        (["type": "guild", "level":45]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -15,7 +15,7 @@ protected void Setup()
         "ability to dodge attacks.");
 
     addPrerequisite("/guilds/aeromancer/effects/reduce-parry.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
         ([  "type": "level",

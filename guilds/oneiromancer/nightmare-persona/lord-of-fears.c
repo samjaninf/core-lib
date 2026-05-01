@@ -14,12 +14,12 @@ protected void Setup()
         "the terror that dwells in all minds.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 33 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/consuming-darkness.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

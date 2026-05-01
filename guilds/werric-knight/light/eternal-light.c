@@ -15,9 +15,9 @@ protected void Setup()
         "a beacon of hope that can never be extinguished.");
 
     addPrerequisite("guilds/werric-knight/light/avatar-of-light.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":70]));
+        (["type": "guild", "level":70]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

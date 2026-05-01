@@ -13,10 +13,10 @@ protected void Setup()
         "knowledge of channeling Ferianth's divine wrath through judgment.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/righteous-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 49
         ]));

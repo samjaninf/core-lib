@@ -14,9 +14,9 @@ protected void Setup()
         "blessing to allies and a bane to evil.");
 
     addPrerequisite("guilds/werric-knight/light/divine-resurrection.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":53]));
+        (["type": "guild", "level":53]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

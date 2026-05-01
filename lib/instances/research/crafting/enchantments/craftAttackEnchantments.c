@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to mutate a physical attack into a different form.");
     addSpecification("research type", "granted");
 
-    addSpecification("limited by", (["crafting type":"staff"]));
+    addSpecification("limited by", (["crafting type": "staff"]));
 
     addSpecification("bonus crafting enchantments", 1);
     addSpecification("bonus crafting weapon class", 2);

@@ -14,9 +14,9 @@ protected void Setup()
         "gods, channeling their power directly.");
 
     addPrerequisite("guilds/werric-knight/light/transcendent-light.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":66]));
+        (["type": "guild", "level":66]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

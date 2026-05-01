@@ -14,12 +14,12 @@ protected void Setup()
         "as unfathomable as the deepest trenches.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 41 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/primordial-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -15,9 +15,9 @@ protected void Setup()
         "wielded by human hands with equal skill.");
 
     addPrerequisite("guilds/werric-knight/elven/whirlwind-assault.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

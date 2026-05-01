@@ -28,9 +28,9 @@ protected void Setup()
         "/guilds/scion/avatars/common/defense-i.c":({
             (["modifier": "bonus defense",
                "value": 6 ]),
-            (["modifier":"bonus soak",
+            (["modifier": "bonus soak",
                "value": 2 ]),
-            (["modifier":"bonus no armor",
+            (["modifier": "bonus no armor",
                "value": 4 ]),
         }),
         "/guilds/scion/avatars/common/spellcraft-i.c":({
@@ -72,9 +72,9 @@ protected void Setup()
         "/guilds/scion/avatars/common/defense-ii.c":({
             (["modifier": "bonus defense",
                "value": 10 ]),
-            (["modifier":"bonus soak",
+            (["modifier": "bonus soak",
                "value": 4 ]),
-            (["modifier":"bonus no armor",
+            (["modifier": "bonus no armor",
                "value": 6 ]),
             (["modifier": "bonus constitution",
                "value": 2 ]),
@@ -118,11 +118,11 @@ protected void Setup()
         "/guilds/scion/avatars/common/healing-rate-i.c":({
             (["modifier": "bonus heal hit points",
                "value": 10 ]),
-            (["modifier":"bonus heal spell points",
+            (["modifier": "bonus heal spell points",
                "value": 10 ]),
             (["modifier": "bonus heal hit points rate",
                "value": 5 ]),
-            (["modifier":"bonus heal spell points rate",
+            (["modifier": "bonus heal spell points rate",
                "value": 5 ]),
         }),
         "/guilds/scion/avatars/common/evasion-iii.c":({
@@ -138,9 +138,9 @@ protected void Setup()
         "/guilds/scion/avatars/common/defense-iii.c":({
             (["modifier": "bonus defense",
                "value": 10 ]),
-            (["modifier":"bonus soak",
+            (["modifier": "bonus soak",
                "value": 4 ]),
-            (["modifier":"bonus no armor",
+            (["modifier": "bonus no armor",
                "value": 6 ]),
             (["modifier": "bonus constitution",
                "value": 2 ]),
@@ -184,11 +184,11 @@ protected void Setup()
         "/guilds/scion/avatars/common/healing-rate-ii.c":({
             (["modifier": "bonus heal hit points",
                "value": 10 ]),
-            (["modifier":"bonus heal spell points",
+            (["modifier": "bonus heal spell points",
                "value": 10 ]),
             (["modifier": "bonus heal hit points rate",
                "value": 5 ]),
-            (["modifier":"bonus heal spell points rate",
+            (["modifier": "bonus heal spell points rate",
                "value": 5 ]),
         }),
     ]));

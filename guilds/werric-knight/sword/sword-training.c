@@ -18,16 +18,16 @@ protected void Setup()
 
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
 
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
 
     addSpecification("scope", "self");
 
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
     addSpecification("research type", "points");
 
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
     addSpecification("research cost", 1);
     addSpecification("bonus dagger", 1);
     addSpecification("bonus short sword", 1);

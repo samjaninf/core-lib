@@ -16,9 +16,9 @@ protected void Setup()
         "making you incapable of yielding while others need your shield.");
 
     addPrerequisite("guilds/werric-knight/shield/shield-of-werra.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":29]));
+        (["type": "guild", "level":29]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,9 +15,9 @@ protected void Setup()
         "that would incapacitate lesser warriors.");
 
     addPrerequisite("guilds/werric-knight/will/iron-discipline.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -31,9 +31,9 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.35
         ])
     }));

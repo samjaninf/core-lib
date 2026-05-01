@@ -14,9 +14,9 @@ protected void Setup()
         "enhanced stamina regeneration.");
 
     addPrerequisite("/guilds/werric-knight/oath/disciplined-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 7
         ]));

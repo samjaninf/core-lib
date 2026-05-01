@@ -13,10 +13,10 @@ protected void Setup()
         "harbinger of Ferianth's wrath, greatly enhancing judgment abilities.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/divine-judgment.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 57
         ]));

@@ -9,9 +9,9 @@ public void SetupGuild()
 {
     guildName("test");
     addPreferredSkillType("combat");
-    addRank("neophyte", ([ "name":"neophyte", "title" : "the title of titliness", "pretitle" : "Neophyte", "next rank" : "acolyte" ]));
-    addRank("acolyte", (["name":"acolyte", "title" : "the title of titliness", "pretitle" : "Acolyte", "previous rank" : "neophyte", "next rank": "blargyte", "delay for next promotion" : 1]));
-    addRank("blargyte", (["name":"blargyte", "title" : "the title of titliness", "pretitle" : "Blargyte"]));
+    addRank("neophyte", ([ "name": "neophyte", "title" : "the title of titliness", "pretitle" : "Neophyte", "next rank" : "acolyte" ]));
+    addRank("acolyte", (["name": "acolyte", "title" : "the title of titliness", "pretitle" : "Acolyte", "previous rank" : "neophyte", "next rank": "blargyte", "delay for next promotion" : 1]));
+    addRank("blargyte", (["name": "blargyte", "title" : "the title of titliness", "pretitle" : "Blargyte"]));
     setDefaultRank("neophyte");
     addCriteria("hit points", ([
         "type": "modifier",
@@ -33,30 +33,30 @@ public void SetupGuild()
         "begin at level" : 2,
     ]));
     addCriteria("skill points", ([
-        "type":"skill points",
+        "type": "skill points",
         "apply": "5 every level"
     ]));
     addCriteria("research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "1 every level"
     ]));
     addCriteria("test tree", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 5",
         "research tree": "/lib/tests/support/guilds/testGuildResearchTree.c"
     ]));
     addCriteria("test research", ([
-        "type":"research",
+        "type": "research",
         "apply": "at level 2",
         "research object": "/lib/tests/support/research/testGrantedResearchItem.c"
     ]));
     addCriteria("long sword", ([
-        "type":"skill",
+        "type": "skill",
         "apply": "1 every 2 levels"
     ]));
 
     addCriteria("acolyte research", ([
-        "type":"research",
+        "type": "research",
         "apply": "at rank acolyte",
         "research object": "/lib/tests/support/research/testGrantedResearchItem.c"
     ]));

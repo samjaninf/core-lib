@@ -15,12 +15,12 @@ protected void Setup()
         "the force of the tides.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 5 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/waters-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

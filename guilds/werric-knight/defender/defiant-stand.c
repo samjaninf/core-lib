@@ -16,9 +16,9 @@ protected void Setup()
         "desperate battles.");
 
     addPrerequisite("guilds/werric-knight/defender/aegis-of-realm.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type": "guild", "level":33]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -32,15 +32,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"constitution",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "constitution",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.20
         ])
     }));

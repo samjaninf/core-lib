@@ -13,7 +13,7 @@ protected void Setup()
         "improved mental clarity, reducing spell point costs slightly.");
 
     addPrerequisite("/guilds/oneiromancer/lucid-control/lucid-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 1
         ]));

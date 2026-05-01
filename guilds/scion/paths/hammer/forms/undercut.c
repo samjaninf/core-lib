@@ -14,12 +14,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "hammer" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 3 ]));
 
     addPrerequisite("/guilds/scion/paths/hammer/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

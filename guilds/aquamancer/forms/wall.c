@@ -15,7 +15,7 @@ protected void Setup()
         "that slams into foes.");
 
     addPrerequisite("/guilds/aquamancer/forms/wave.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

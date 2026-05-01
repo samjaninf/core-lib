@@ -19,18 +19,18 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "hammer" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 20 ]));
 
     addPrerequisite("/guilds/scion/paths/hammer/forms/striking.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/hammer/forms/langort.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/hammer/forms/over-smite.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/scion/paths/hammer/forms/the-plough.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

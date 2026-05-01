@@ -13,10 +13,10 @@ protected void Setup()
         "Ferianth's divine favor, granting greater protection.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/sacred-fortitude.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 28
         ]));

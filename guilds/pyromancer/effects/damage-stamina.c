@@ -14,10 +14,10 @@ protected void Setup()
         "stamina.");
 
     addPrerequisite("/guilds/pyromancer/effects/damage-sp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 5
         ]));

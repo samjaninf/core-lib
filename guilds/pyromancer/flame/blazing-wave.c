@@ -14,10 +14,10 @@ protected void Setup()
         "pyromancer unleashes a wave of intense flames that burns all nearby.");
 
     addPrerequisite("/guilds/pyromancer/flame/scorching-mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 17
         ]));

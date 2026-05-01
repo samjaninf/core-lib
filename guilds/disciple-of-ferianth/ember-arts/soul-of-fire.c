@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Sustained transformation enhancing spell power");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/blazing-barrier.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 39
         ]));

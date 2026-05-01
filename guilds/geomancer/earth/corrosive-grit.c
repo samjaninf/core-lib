@@ -14,10 +14,10 @@ protected void Setup()
         "of magically-charged abrasive grit that scours armor and flesh alike.");
 
     addPrerequisite("/guilds/geomancer/earth/dust-storm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 17
         ]));

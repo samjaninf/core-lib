@@ -14,12 +14,12 @@ protected void Setup()
         "emptiness that amplifies their nightmare power.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 57 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/abyssal-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

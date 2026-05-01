@@ -14,12 +14,12 @@ protected void Setup()
         "the ocean's ancient depths, gaining wisdom of ages past.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 17 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/currents-truth.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

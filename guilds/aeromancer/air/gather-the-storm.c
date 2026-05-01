@@ -17,10 +17,10 @@ protected void Setup()
         "crackling with barely contained fury.");
 
     addPrerequisite("/guilds/aeromancer/air/encircling-winds.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 51
         ]));

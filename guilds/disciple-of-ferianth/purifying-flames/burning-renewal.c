@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A heal and stamina regen over time");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/flame-mend.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 9
         ]));

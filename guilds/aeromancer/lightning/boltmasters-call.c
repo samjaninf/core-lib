@@ -14,12 +14,12 @@ protected void Setup()
         "blade attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 21
         ]));
     addPrerequisite("/guilds/aeromancer/lightning/boltmasters-reserve.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

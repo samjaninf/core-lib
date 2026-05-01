@@ -14,13 +14,13 @@ protected void Setup()
         "attacks, enhancing the power of mud and debris-based spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 9
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/mudslide.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

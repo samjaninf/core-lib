@@ -13,10 +13,10 @@ protected void Setup()
         "the pinnacle of sacred protection from Ferianth.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/holy-vessel.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 50
         ]));

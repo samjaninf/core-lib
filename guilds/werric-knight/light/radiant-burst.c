@@ -13,9 +13,9 @@ protected void Setup()
         "damages all nearby evil creatures.");
 
     addPrerequisite("/guilds/werric-knight/light/holy-light.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -41,41 +41,41 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/light/smiting-technique.c",
-            "name":"Smiting Technique",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/light/smiting-technique.c",
+            "name": "Smiting Technique",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"skill",
-            "name":"magical essence",
-            "formula":"additive",
+            "type": "skill",
+            "name": "magical essence",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"spellcraft",
-            "formula":"additive",
+            "type": "skill",
+            "name": "spellcraft",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"attribute",
-            "name":"wisdom",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"charisma",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"intelligence",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
             "rate":0.15
         ])
     }));

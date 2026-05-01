@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that fire a focused bolt of flame at a foe.");
 
     addPrerequisite("/guilds/pyromancer/forms/arc.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

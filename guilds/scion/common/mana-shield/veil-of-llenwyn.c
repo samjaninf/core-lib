@@ -17,12 +17,12 @@ protected void Setup()
         "/guilds/scion/common/mana-shield/root.c" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 29 ]));
 
     addPrerequisite("/guilds/scion/common/mana-shield/might-of-dhuras.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

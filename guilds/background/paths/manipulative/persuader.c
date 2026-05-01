@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus charisma", 1);
 
     addPrerequisite("/guilds/background/paths/manipulative/silver-tongue.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

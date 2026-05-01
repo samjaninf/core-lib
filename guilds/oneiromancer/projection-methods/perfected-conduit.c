@@ -14,12 +14,12 @@ protected void Setup()
         "of advanced projection methods.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 30 ]));
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/amplified-conduit.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Thoughtform Projection": 25,

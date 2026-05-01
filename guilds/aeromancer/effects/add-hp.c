@@ -14,7 +14,7 @@ protected void Setup()
         "hit points.");
 
     addPrerequisite("/guilds/aeromancer/effects/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

@@ -14,10 +14,10 @@ protected void Setup()
         "eruption of stone and molten rock to burst from the ground.");
 
     addPrerequisite("/guilds/geomancer/earth/stalagmite.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 25
         ]));

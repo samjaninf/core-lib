@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Sacred flames that strip all protections");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/soulfire.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 55
         ]));

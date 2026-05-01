@@ -16,12 +16,12 @@ protected void Setup()
         "taken to aim.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 5
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/bow/bregol-adleg.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

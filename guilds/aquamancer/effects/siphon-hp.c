@@ -14,10 +14,10 @@ protected void Setup()
         "taking hit points from a foe and transferring a portion to the caster.");
 
     addPrerequisite("/guilds/aquamancer/effects/damage-hp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 7
         ]));

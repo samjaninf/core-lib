@@ -14,12 +14,12 @@ protected void Setup()
         "and rare materials for enhanced durability and mystical protection.");
     addSpecification("research type", "points");
     addSpecification("research cost", 4);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 6]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 4]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 8]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 5]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 4]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/components/reinforced-hull-construction.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle structure", 12);

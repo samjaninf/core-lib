@@ -17,13 +17,13 @@ protected void Setup()
         "equipment": ({ "instrument: woodwind", "instrument: brass" }) ]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 33
     ]));
 
     addPrerequisite("/guilds/bard/woodwind-brass/a-mephits-ballad.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

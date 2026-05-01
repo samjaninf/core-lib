@@ -14,12 +14,12 @@ protected void Setup()
         "new heights of power and precision.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 33
         ]));
     addPrerequisite("/guilds/aquamancer/construct/spell-amplification.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

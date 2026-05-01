@@ -14,12 +14,12 @@ protected void Setup()
         "pressure when striking the caster's barriers.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 17 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/depths-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

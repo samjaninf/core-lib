@@ -13,9 +13,9 @@ protected void Setup()
         "body, developing exceptional mental resilience and willpower.");
 
     addPrerequisite("guilds/werric-knight/discipline/physical-training.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":3]));
+        (["type": "guild", "level":3]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

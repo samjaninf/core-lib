@@ -14,10 +14,10 @@ protected void Setup()
         "a target's damage output.");
 
     addPrerequisite("/guilds/geomancer/effects/reduce-attack.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 9
         ]));

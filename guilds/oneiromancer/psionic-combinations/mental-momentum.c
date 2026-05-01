@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge of building mental momentum through combination attacks.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 9 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/layered-assault.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,7 +14,7 @@ protected void Setup()
         "bursts of earthen energy.");
 
     addPrerequisite("/guilds/geomancer/functions/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

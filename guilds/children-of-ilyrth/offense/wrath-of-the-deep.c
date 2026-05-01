@@ -14,12 +14,12 @@ protected void Setup()
         "crushing pressure of the ocean depths to devastate an enemy.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 19 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/ocean-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

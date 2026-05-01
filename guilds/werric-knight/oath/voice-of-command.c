@@ -16,9 +16,9 @@ protected void Setup()
         "themselves compelled to hesitate, so powerful is your presence.");
 
     addPrerequisite("guilds/werric-knight/oath/transcendent-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type": "guild", "level":33]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -33,9 +33,9 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.30
         ])
     }));

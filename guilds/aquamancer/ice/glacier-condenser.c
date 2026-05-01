@@ -14,13 +14,13 @@ protected void Setup()
         "aquamancer's ice-based abilities to their peak potential.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 63
         ]));
 
     addPrerequisite("/guilds/aquamancer/ice/permafrost-eruption.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

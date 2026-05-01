@@ -16,9 +16,9 @@ protected void Setup()
         "the ability to make others greater through your mere presence.");
 
     addPrerequisite("guilds/werric-knight/marshal/strategic-command.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":40]));
+        (["type": "guild", "level":40]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

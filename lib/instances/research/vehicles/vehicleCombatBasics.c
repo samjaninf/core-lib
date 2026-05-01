@@ -14,7 +14,7 @@ protected void Setup()
         "including basic maneuvering, vehicle handling under stress, and "
         "elementary combat principles.");
     addSpecification("research type", "tree root");
-    addPrerequisite("tactics", (["type":"skill", "value" : 2]));
+    addPrerequisite("tactics", (["type": "skill", "value" : 2]));
 
     addSpecification("bonus overland warfare", 1);
     addSpecification("bonus nautical warfare", 1);

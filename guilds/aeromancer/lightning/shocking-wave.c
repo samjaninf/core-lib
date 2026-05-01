@@ -15,10 +15,10 @@ protected void Setup()
         "causing serious damage.");
 
     addPrerequisite("/guilds/aeromancer/lightning/shocking-mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 17
         ]));
@@ -62,7 +62,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/electrostatics.c",
             "name": "Electrostatics",
             "formula": "multiplicative",
@@ -70,7 +70,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/ionization.c",
             "name" : "Ionization",
             "formula" : "multiplicative",
@@ -78,7 +78,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/enhanced-discharge.c",
             "name": "Enhanced Discharge",
             "formula": "multiplicative",
@@ -86,7 +86,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/electrostatic-induction.c",
             "name" : "Electrostatic Induction",
             "formula" : "multiplicative",
@@ -94,7 +94,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/enhanced-conductivity.c",
             "name": "Enhanced Conductivity",
             "formula": "multiplicative",
@@ -102,7 +102,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/electrostatic-condenser.c",
             "name" : "Electrostatic Condenser",
             "formula" : "multiplicative",
@@ -110,7 +110,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/corona-discharge.c",
             "name": "Corona Discharge",
             "formula": "multiplicative",
@@ -118,7 +118,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/plasma-eruption.c",
             "name" : "Plasma Eruption",
             "formula" : "multiplicative",
@@ -126,7 +126,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": "/guilds/aeromancer/lightning/flux-condenser.c",
             "name": "Flux Condenser",
             "formula": "multiplicative",
@@ -150,7 +150,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental air",
             "formula" : "additive",
             "rate" : 0.10
@@ -168,13 +168,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

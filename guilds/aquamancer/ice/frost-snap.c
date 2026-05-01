@@ -14,7 +14,7 @@ protected void Setup()
         "aquamancer causes a sudden burst of intense cold to strike a foe.");
 
     addPrerequisite("/guilds/aquamancer/ice/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

@@ -21,38 +21,38 @@ protected void Setup()
     ]) }));
     addSpecification("modifiers", ({ 
     ([
-        "type":"skill",
+        "type": "skill",
         "name": "elemental air",
         "formula": "additive",
         "rate": 1.05
     ]), 
     ([
-        "type":"skill",
+        "type": "skill",
         "name": "spellcraft",
         "formula": "additive",
         "rate": 1.05
     ]), 
     ([
-        "type":"skill",
+        "type": "skill",
         "name": "evocation",
         "formula": "additive",
         "rate": 1.05
     ]),
     ([
-        "type":"skill",
+        "type": "skill",
         "name": "physics",
         "formula": "additive",
         "rate": 1.05
     ]),
     ([
-        "type":"skill",
+        "type": "skill",
         "name": "magical essence",
         "formula": "logarithmic",
         "base value" : 1,
         "rate" : 1.05
     ]),
     ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "intelligence",
         "formula": "logarithmic",
         "base value": 1,

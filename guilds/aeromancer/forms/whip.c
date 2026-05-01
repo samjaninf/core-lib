@@ -15,11 +15,11 @@ protected void Setup()
         "to strike foes at close range.");
 
     addPrerequisite("/guilds/aeromancer/forms/spark.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":5
         ]));
 

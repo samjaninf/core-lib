@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A devastating column of divine fire");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/fireball.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));

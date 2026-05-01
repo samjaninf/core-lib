@@ -14,12 +14,12 @@ protected void Setup()
         "harder to focus when near the oneiromancer.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 9 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/shadow-self.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

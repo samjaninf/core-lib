@@ -14,12 +14,12 @@ protected void Setup()
         "lies hidden beneath the surface, both literally and figuratively.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 3 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/tidal-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

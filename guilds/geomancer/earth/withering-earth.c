@@ -15,10 +15,10 @@ protected void Setup()
         "to wither and suffer tremendous damage.");
 
     addPrerequisite("/guilds/geomancer/earth/whirling-stones.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 57
         ]));

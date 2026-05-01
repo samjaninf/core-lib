@@ -14,12 +14,12 @@ protected void Setup()
         "for Ilyrth's restorative power, healing with greater efficiency.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 25 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/seas-bounty.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

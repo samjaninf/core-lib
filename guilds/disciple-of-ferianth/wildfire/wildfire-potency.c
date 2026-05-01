@@ -14,13 +14,13 @@ protected void Setup()
         "damage of all wildfire abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/wildfire-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

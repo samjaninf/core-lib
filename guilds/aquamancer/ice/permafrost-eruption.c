@@ -14,13 +14,13 @@ protected void Setup()
         "aquamancer's ice-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 57
         ]));
 
     addPrerequisite("/guilds/aquamancer/ice/glacial-burst.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

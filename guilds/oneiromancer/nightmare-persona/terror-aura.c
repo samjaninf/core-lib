@@ -14,12 +14,12 @@ protected void Setup()
         "nearby enemies.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 13 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/dread-presence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

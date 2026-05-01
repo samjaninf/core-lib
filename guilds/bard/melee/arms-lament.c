@@ -14,12 +14,12 @@ protected void Setup()
         "`Minstrel's Attack' abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 25
         ]));
     addPrerequisite("/guilds/bard/melee/serenade-of-the-soldier.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

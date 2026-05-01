@@ -16,9 +16,9 @@ protected void Setup()
         "led by those who place duty above self.");
 
     addPrerequisite("guilds/werric-knight/marshal/invincible-army.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":60]));
+        (["type": "guild", "level":60]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

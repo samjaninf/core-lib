@@ -15,10 +15,10 @@ protected void Setup()
         "damage absorption.");
 
     addPrerequisite("/guilds/aquamancer/effects/invigorating-siphon.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 21
         ]));

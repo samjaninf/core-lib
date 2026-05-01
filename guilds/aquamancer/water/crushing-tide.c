@@ -16,10 +16,10 @@ protected void Setup()
         "pressing down upon them.");
 
     addPrerequisite("/guilds/aquamancer/water/frozen-depths.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 37
         ]));

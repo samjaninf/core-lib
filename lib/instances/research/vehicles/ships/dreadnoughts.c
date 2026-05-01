@@ -14,11 +14,11 @@ protected void Setup()
         "pinnacle of naval engineering, bristling with weapons and armor.");
     addSpecification("research type", "points");
     addSpecification("research cost", 10);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 15]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 12]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 10]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 8]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 8]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 15]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 12]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 10]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 8]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
     addPrerequisite("/lib/instances/research/vehicles/ships/large-square-rigged-vessels.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

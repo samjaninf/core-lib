@@ -14,12 +14,12 @@ protected void Setup()
         "resulting in more potent effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 17
         ]));
     addPrerequisite("/guilds/pyromancer/construct/spell-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

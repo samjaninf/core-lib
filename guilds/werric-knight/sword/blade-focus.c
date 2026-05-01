@@ -13,12 +13,12 @@ protected void Setup()
         "enhanced focus when wielding swords, increasing accuracy and damage.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 5
         ]));
     addPrerequisite("/guilds/werric-knight/sword/powerful-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" }) ]));

@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "bow" })]));
 
     addPrerequisite("/guilds/bard/bow/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([

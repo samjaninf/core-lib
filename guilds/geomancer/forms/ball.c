@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a ball of stone energy.");
 
     addPrerequisite("/guilds/geomancer/forms/bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

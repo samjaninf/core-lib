@@ -15,7 +15,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 1]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 1]));
 
     addSpecification("limited by", (["crafting type":({ "sword", "dagger", 
         "pole arm", "staff", "axe", "hammer", "mace", "flail", "crossbow", 

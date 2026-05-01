@@ -15,12 +15,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "shield" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 7 ]));
 
     addPrerequisite("/guilds/fighter/shields/basic-shield-techniques.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

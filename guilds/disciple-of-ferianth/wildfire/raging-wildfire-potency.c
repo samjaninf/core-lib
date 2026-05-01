@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to greatly amplify the Raging Wildfire spell.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 31
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/raging-wildfire.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

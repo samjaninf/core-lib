@@ -15,9 +15,9 @@ protected void Setup()
         "about when and how to block, parry, or evade.");
 
     addPrerequisite("guilds/werric-knight/defense/defensive-reading.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

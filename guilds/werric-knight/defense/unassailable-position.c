@@ -15,9 +15,9 @@ protected void Setup()
         "that can anchor entire defensive lines.");
 
     addPrerequisite("guilds/werric-knight/defense/legendary-defender.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

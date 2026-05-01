@@ -14,10 +14,10 @@ protected void Setup()
         "Sacred flames erupt outward, dealing fire damage to all nearby foes.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ashen-retribution/ashen-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));

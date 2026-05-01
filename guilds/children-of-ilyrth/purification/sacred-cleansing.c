@@ -14,12 +14,12 @@ protected void Setup()
         "is blessed by Ilyrth herself.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 17 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/purifying-stream.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,7 +14,7 @@ protected void Setup()
         "crystalline shards.");
 
     addPrerequisite("/guilds/geomancer/functions/stone.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -14,12 +14,12 @@ protected void Setup()
         "sacred waters.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 31 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/devotion/tides-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

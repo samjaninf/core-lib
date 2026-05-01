@@ -14,9 +14,9 @@ protected void Setup()
         "respond with absolute precision to your will.");
 
     addPrerequisite("guilds/werric-knight/discipline/transcendent-form.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":55]));
+        (["type": "guild", "level":55]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

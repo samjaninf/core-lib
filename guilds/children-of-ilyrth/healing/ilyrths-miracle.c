@@ -15,12 +15,12 @@ protected void Setup()
         "to full vitality.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 45 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/tidal-salvation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

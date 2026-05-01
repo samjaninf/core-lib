@@ -13,9 +13,9 @@ protected void Setup()
         "in your most devastating virtue-based strikes.");
 
     addPrerequisite("/guilds/werric-knight/virtues/righteous-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

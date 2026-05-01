@@ -14,12 +14,12 @@ protected void Setup()
         "the dread that lurks in the oldest dreams.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 65 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/dream-sovereign.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

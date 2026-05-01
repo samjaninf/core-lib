@@ -16,11 +16,11 @@ protected void Setup()
         "/guilds/therianthrope/dragon/dragon-root.c" }) ]));
 
     addPrerequisite("level",
-        (["type":"level", 
+        (["type": "level", 
             "guild": "therianthrope",
             "value": 61 ]));
     addPrerequisite("/guilds/therianthrope/dragon/frostfall.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -15,7 +15,7 @@ protected void Setup()
         "incoming attacks.");
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

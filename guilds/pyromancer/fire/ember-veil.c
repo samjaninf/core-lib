@@ -14,10 +14,10 @@ protected void Setup()
         "in a shimmering veil of embers that provides ultimate protection.");
 
     addPrerequisite("/guilds/pyromancer/fire/scorching-tide.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 47
         ]));

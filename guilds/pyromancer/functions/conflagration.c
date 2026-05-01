@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with massive conflagration.");
 
     addPrerequisite("/guilds/pyromancer/functions/inferno.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

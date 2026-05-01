@@ -14,12 +14,12 @@ protected void Setup()
         "that cannot be pushed back, the caster becomes immovable.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 11 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/pressure-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

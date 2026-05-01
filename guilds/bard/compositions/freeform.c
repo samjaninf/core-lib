@@ -14,12 +14,12 @@ protected void Setup()
         "meaning that the only rule is that there are no rules.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 21
         ]));
     addPrerequisite("/guilds/bard/compositions/abacbaa.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

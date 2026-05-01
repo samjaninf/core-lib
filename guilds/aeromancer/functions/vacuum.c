@@ -13,11 +13,11 @@ protected void Setup()
         "knowledge of creating spells that damage targets by creating a vacuum.");
 
     addPrerequisite("/guilds/aeromancer/functions/wind.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":13
         ]));
 

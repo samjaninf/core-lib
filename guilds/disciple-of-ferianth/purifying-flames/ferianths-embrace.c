@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Powerful heal with regeneration");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/sanctum-of-flame.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 47
         ]));

@@ -13,9 +13,9 @@ protected void Setup()
         "mend severe wounds and restore significant vitality.");
 
     addPrerequisite("guilds/werric-knight/light/divine-wrath.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":23]));
+        (["type": "guild", "level":23]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -40,31 +40,31 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/light/smiting-technique.c",
-            "name":"Smiting Technique",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/light/smiting-technique.c",
+            "name": "Smiting Technique",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/light/righteous-strike.c",
-            "name":"Righteous Strike",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/light/righteous-strike.c",
+            "name": "Righteous Strike",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"attribute",
-            "name":"wisdom",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"charisma",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
             "rate":0.15
         ])
     }));

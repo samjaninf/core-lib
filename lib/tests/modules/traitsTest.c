@@ -221,7 +221,7 @@ void MultipleTraitsStackAttributeBonuses()
 /////////////////////////////////////////////////////////////////////////////
 void SetBonusAttackAddsExtraAttack()
 {
-    mapping *expectedAttacks = ({ (["attack type":"fire", "damage" : 15, "to hit" : 60]), (["attack type":"weapon"]), (["attack type":"weapon"]) });
+    mapping *expectedAttacks = ({ (["attack type": "fire", "damage" : 15, "to hit" : 60]), (["attack type": "weapon"]), (["attack type": "weapon"]) });
 
     ExpectTrue(Traits.addTrait("/lib/tests/support/traits/testTrait.c"), "add test trait");
     ExpectTrue(Traits.addTrait("/lib/tests/support/traits/testTraitWithResearchNoPrerequisites.c"), "add trait");
@@ -252,7 +252,7 @@ void LimitedByEquipmentCorrectlyApplied()
 
     ExpectEq(6, Traits.getSkill("long sword"), "trait with weapon long sword skill");
     ExpectEq(22, Traits.Str(), "trait with weapon strength");
-    ExpectEq(({ (["attack type":"weapon"]) }), Traits.traitsExtraAttacks(), "traitsExtraAttacks returns the correct result");
+    ExpectEq(({ (["attack type": "weapon"]) }), Traits.traitsExtraAttacks(), "traitsExtraAttacks returns the correct result");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -286,7 +286,7 @@ void LimitedByOpponentBonusesCorrectlyApplied()
     target.Race("dwarf");
     ExpectEq(6, Traits.getSkill("long sword"), "facing dwarf sword skill");
     ExpectEq(22, Traits.Str(), "facing dwarf strength");
-    ExpectEq(({ (["attack type":"weapon"]) }), Traits.traitsExtraAttacks(), "traitsExtraAttacks returns the correct result");
+    ExpectEq(({ (["attack type": "weapon"]) }), Traits.traitsExtraAttacks(), "traitsExtraAttacks returns the correct result");
 
     destruct(target);
     ExpectEq(5, Traits.getSkill("long sword"), "dwarf gone long sword skill");
@@ -316,7 +316,7 @@ void LimitedByNearDeathBonusesCorrectlyApplied()
     ExpectTrue(Traits.addTrait("/lib/tests/support/traits/testLimitedByNearDeathTrait.c"), "initiate research");
     ExpectEq(6, Traits.getSkill("long sword"), "near death sword skill");
     ExpectEq(22, Traits.Str(), "near death strength");
-    ExpectEq(({ (["attack type":"weapon"]) }), Traits.traitsExtraAttacks(), "traitsExtraAttacks returns the correct result");
+    ExpectEq(({ (["attack type": "weapon"]) }), Traits.traitsExtraAttacks(), "traitsExtraAttacks returns the correct result");
 
     Traits.hitPoints(Traits.maxHitPoints());
     ExpectEq(5, Traits.getSkill("long sword"), "dwarf gone long sword skill");

@@ -14,7 +14,7 @@ protected void Setup()
         "parrying capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/enhance-dodge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
         ([  "type": "level",

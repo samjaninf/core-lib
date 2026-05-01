@@ -7,7 +7,7 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    addPrerequisite("long sword", (["type": "skill", "value" : 10]));
     addSpecification("name", "Points research");
     addSpecification("description", "This is a description");
     addSpecification("scope", "self");

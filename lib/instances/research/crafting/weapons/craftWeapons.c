@@ -13,5 +13,5 @@ protected void Setup()
         "knowledge required to craft weapons.");
     addSpecification("research type", "granted");
 
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 1]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 1]));
 }

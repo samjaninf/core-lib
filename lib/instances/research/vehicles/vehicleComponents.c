@@ -237,9 +237,9 @@ protected void Setup()
     Description("This research tree tracks the knowledge required to craft "
         "specialized components for vehicles");
     Source("vehicles");
-    addPrerequisite("carpentry", (["type":"skill", "value": 1]));
+    addPrerequisite("carpentry", (["type": "skill", "value": 1]));
     addPrerequisite("/lib/instances/research/vehicles/craftVehicles.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addResearchElement("/lib/instances/research/vehicles/craftComponents.c");
     TreeRoot("/lib/instances/research/vehicles/craftComponents.c");
 

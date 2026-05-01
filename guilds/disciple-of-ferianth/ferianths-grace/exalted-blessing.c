@@ -13,10 +13,10 @@ protected void Setup()
         "knowledge of exalting Ferianth's blessing to greater heights.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/grace-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 45
         ]));

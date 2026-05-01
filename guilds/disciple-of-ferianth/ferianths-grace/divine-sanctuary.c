@@ -13,10 +13,10 @@ protected void Setup()
         "Exarch, providing a sacred sanctuary against harm.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/rebirth-from-ashes.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 45
         ]));

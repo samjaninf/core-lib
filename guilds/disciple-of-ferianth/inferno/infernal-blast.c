@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "An explosive blast with splash damage");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/hellfire.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 43
         ]));

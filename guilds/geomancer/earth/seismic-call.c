@@ -14,13 +14,13 @@ protected void Setup()
         "the cost of powerful earth spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 19
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/tectonic-force.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,10 +14,10 @@ protected void Setup()
         "a target's attack capabilities.");
 
     addPrerequisite("/guilds/geomancer/effects/damage-hp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 7
         ]));

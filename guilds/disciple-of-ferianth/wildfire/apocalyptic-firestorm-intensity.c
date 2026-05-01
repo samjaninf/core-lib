@@ -14,13 +14,13 @@ protected void Setup()
         "flames strike enemies.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 65
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/apocalyptic-firestorm-swiftness.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

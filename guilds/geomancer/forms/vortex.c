@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a vortex of stone and debris.");
 
     addPrerequisite("/guilds/geomancer/forms/eruption.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

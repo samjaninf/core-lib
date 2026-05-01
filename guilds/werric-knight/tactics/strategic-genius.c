@@ -15,9 +15,9 @@ protected void Setup()
         "prescient. This is the level of thinking that wins wars, not just battles.");
 
     addPrerequisite("guilds/werric-knight/tactics/tactical-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":19]));
+        (["type": "guild", "level":19]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,13 +13,13 @@ protected void Setup()
         "scion's avatar to be more adept at using magic.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 23
     ]));
 
     addPrerequisite("/guilds/scion/avatars/common/spellcraft-ii.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

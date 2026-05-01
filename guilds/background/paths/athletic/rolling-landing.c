@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus defense class", 1);
 
     addPrerequisite("/guilds/background/paths/athletic/verticality.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

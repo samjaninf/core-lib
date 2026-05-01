@@ -14,12 +14,12 @@ protected void Setup()
         "effectiveness of basic psionic attacks.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 3 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/mind-spike.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Mind Spike": 10,

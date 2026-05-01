@@ -52,7 +52,7 @@ protected mapping researchMenuSetup(string type)
         {
             menu = ([ 
                 "1": ([
-                    "name":"Research this item",
+                    "name": "Research this item",
                     "type" : "learn",
                     "description" : "Research the listed item.\n"
                 ]) 
@@ -102,7 +102,7 @@ protected nomask void setUpUserForSelection()
     TotalPoints = User->researchPoints();
 
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Return to previous menu",
+        "name": "Return to previous menu",
         "type": "exit",
         "description" : "Return to the main research menu.\n"
     ]);

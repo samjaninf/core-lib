@@ -18,15 +18,15 @@ protected void Setup()
         "leave opponentsd prone.");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/athra.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-actions/an-vund.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 17
         ]));
@@ -67,7 +67,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item" : "/guilds/aegis-guard/forms/sword-actions/tur-beraid.c",
             "name" : "Tur Beraid",
             "formula" : "multiplicative",
@@ -83,7 +83,7 @@ protected void Setup()
             "rate" : 1.0
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "dagger", "short sword", "long sword", 
                 "hand and a half sword", "two-handed sword" }),
@@ -121,7 +121,7 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "strength",
             "formula": "additive",
             "rate": 0.5

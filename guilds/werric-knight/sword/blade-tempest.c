@@ -16,12 +16,12 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" }) ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 17
         ]));
     addPrerequisite("/guilds/werric-knight/sword/devastating-combo.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -48,61 +48,61 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/sword/blade-tempest-technique.c",
-            "name":"Blade Tempest Technique",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/sword/blade-tempest-technique.c",
+            "name": "Blade Tempest Technique",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"weapon damage",
-            "name":"sword",
+            "type": "weapon damage",
+            "name": "sword",
             "types":({"dagger", "short sword", "long sword", "hand and a half sword", "two-handed sword"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.75
         ]),
         ([
-            "type":"highest skill",
-            "name":"sword skills",
+            "type": "highest skill",
+            "name": "sword skills",
             "skills":({"dagger", "short sword", "long sword", "hand and a half sword", "two-handed sword"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.5
         ]),
         ([
-            "type":"skill",
-            "name":"anatomy and physiology",
-            "formula":"additive",
+            "type": "skill",
+            "name": "anatomy and physiology",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"physics",
-            "formula":"additive",
+            "type": "skill",
+            "name": "physics",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"acrobatics",
-            "formula":"additive",
+            "type": "skill",
+            "name": "acrobatics",
+            "formula": "additive",
             "rate":0.05
         ]),
         ([
-            "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"dexterity",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "dexterity",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"intelligence",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
             "rate":0.15
         ])
     }));

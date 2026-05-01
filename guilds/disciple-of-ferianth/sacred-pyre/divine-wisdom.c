@@ -13,10 +13,10 @@ protected void Setup()
         "divine wisdom granted by Ferianth.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/sacred-understanding.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 24
         ]));

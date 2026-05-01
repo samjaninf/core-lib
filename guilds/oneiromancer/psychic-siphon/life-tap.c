@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of draining life force from a target to heal themselves.");
 
     addPrerequisite("/guilds/oneiromancer/psychic-siphon/drain-essence.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 9
         ]));

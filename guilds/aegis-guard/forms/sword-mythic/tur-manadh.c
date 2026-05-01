@@ -14,12 +14,12 @@ protected void Setup()
         "mythic magic skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 43
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-mythic/tur-edlothia.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

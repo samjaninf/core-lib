@@ -14,12 +14,12 @@ protected void Setup()
         "blade combat abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 7
         ]));
     addPrerequisite("/guilds/fighter/blades/slash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

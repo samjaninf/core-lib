@@ -14,12 +14,12 @@ protected void Setup()
         "detecting lies and seeing through deception.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 13 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/deep-knowing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

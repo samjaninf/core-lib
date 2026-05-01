@@ -14,10 +14,10 @@ protected void Setup()
         "plane has become absolute, greatly enhancing all their abilities.");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/oneiric-apocalypse.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 63
         ]));

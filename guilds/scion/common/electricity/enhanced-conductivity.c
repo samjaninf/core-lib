@@ -22,11 +22,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 51 ]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/electricity/corona-discharge.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -17,9 +17,9 @@ protected void Setup()
         "/guilds/therianthrope/dragon/dragon-root.c" }) ]));
 
     addPrerequisite("level",
-        (["type":"level", "guild": "therianthrope", "value": 57 ]));
+        (["type": "level", "guild": "therianthrope", "value": 57 ]));
     addPrerequisite("/guilds/therianthrope/dragon/ancient-wyrm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

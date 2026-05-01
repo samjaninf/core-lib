@@ -15,10 +15,10 @@ protected void Setup()
         "incinerates everything in its path.");
 
     addPrerequisite("/guilds/pyromancer/fire/withering-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 67
         ]));

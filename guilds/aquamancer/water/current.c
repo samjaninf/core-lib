@@ -16,10 +16,10 @@ protected void Setup()
         "significant damage while demonstrating mastery over water's flow.");
 
     addPrerequisite("/guilds/aquamancer/water/splash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 9
         ]));

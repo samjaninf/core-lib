@@ -15,9 +15,9 @@ protected void Setup()
         "defensive superiority.");
 
     addPrerequisite("guilds/werric-knight/defense/fortify-position.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

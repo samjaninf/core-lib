@@ -16,10 +16,10 @@ protected void Setup()
         "pushes back against incoming attacks, providing superior protection.");
 
     addPrerequisite("/guilds/aeromancer/air/air-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 21
         ]));

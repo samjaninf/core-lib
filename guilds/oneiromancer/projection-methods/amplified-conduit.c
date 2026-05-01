@@ -14,12 +14,12 @@ protected void Setup()
         "intensity-based projection methods.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 22 ]));
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/refined-conduit.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Psychic Touch": 20,

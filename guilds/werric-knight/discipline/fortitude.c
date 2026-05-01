@@ -13,9 +13,9 @@ protected void Setup()
         "fortitude, allowing you to endure punishment that would break lesser warriors.");
 
     addPrerequisite("/guilds/werric-knight/discipline/mental-fortitude.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

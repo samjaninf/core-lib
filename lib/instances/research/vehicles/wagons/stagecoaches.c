@@ -14,8 +14,8 @@ protected void Setup()
         "for passenger transport and mail delivery over established routes.");
     addSpecification("research type", "points");
     addSpecification("research cost", 3);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 4]));
-    addPrerequisite("leather crafting", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
+    addPrerequisite("leather crafting", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/wagons/covered-wagons.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

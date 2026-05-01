@@ -14,12 +14,12 @@ protected void Setup()
         "of the world around them, perceiving truths that others miss.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 11 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/ocean-divination.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

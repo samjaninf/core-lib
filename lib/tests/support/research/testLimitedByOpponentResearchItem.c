@@ -10,7 +10,7 @@ protected void Setup()
     addSpecification("name", "Granted research");
     addSpecification("scope", "self");
     addSpecification("research type", "granted");
-    addSpecification("limited by", (["opponent race":"dwarf"]));
+    addSpecification("limited by", (["opponent race": "dwarf"]));
     addSpecification("bonus strength", 2);
     addSpecification("bonus long sword", 5);
     addSpecification("bonus fire attack", 15);

@@ -14,12 +14,12 @@ protected void Setup()
         "every aspect of their constructed spells achieves maximum impact.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 41
         ]));
     addPrerequisite("/guilds/aeromancer/construct/spell-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

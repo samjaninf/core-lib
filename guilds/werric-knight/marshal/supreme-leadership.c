@@ -15,9 +15,9 @@ protected void Setup()
         "inevitable. This is leadership elevated to an art form.");
 
     addPrerequisite("guilds/werric-knight/marshal/rally-armies.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":55]));
+        (["type": "guild", "level":55]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -14,12 +14,12 @@ protected void Setup()
         "the first and third being musically identical.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 3
         ]));
     addPrerequisite("/guilds/bard/compositions/aaa.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

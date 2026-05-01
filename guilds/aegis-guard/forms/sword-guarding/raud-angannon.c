@@ -19,12 +19,12 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 7 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-guarding/angannon.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Ercho": 25,

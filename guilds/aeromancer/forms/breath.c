@@ -15,11 +15,11 @@ protected void Setup()
         "energy at nearby foes.");
 
     addPrerequisite("/guilds/aeromancer/forms/mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":7
         ]));
 

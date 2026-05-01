@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a crushing cage of stone.");
 
     addPrerequisite("/guilds/geomancer/forms/ring.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

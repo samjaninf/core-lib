@@ -15,9 +15,9 @@ protected void Setup()
         "injury, your duty uncompromised by physical suffering.");
 
     addPrerequisite("guilds/werric-knight/oath/oath-of-protection.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

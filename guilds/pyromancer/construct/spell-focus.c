@@ -14,12 +14,12 @@ protected void Setup()
         "resulting in more potent effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 9
         ]));
     addPrerequisite("/guilds/pyromancer/construct/efficient-casting.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

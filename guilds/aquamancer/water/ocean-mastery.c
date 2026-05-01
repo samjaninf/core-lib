@@ -16,13 +16,13 @@ protected void Setup()
         "enhances all offensive water abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 51
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/elemental-attunement.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

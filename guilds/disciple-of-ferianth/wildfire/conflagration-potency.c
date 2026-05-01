@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to greatly amplify the Conflagration spell.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/conflagration.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

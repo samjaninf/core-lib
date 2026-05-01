@@ -16,10 +16,10 @@ protected void Setup()
         "currents.");
 
     addPrerequisite("/guilds/aquamancer/water/disrupt-tempest.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 45
         ]));

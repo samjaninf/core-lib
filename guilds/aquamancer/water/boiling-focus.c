@@ -15,13 +15,13 @@ protected void Setup()
         "aquamancer can deliver more devastating scalding attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 7
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/scalding-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

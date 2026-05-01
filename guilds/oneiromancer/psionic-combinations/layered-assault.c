@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge of layering psionic attacks for increased effectiveness.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 5 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/combination-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

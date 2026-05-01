@@ -15,9 +15,9 @@ protected void Setup()
         "of what it means to be a Werric Knight - to stand between the innocent and harm.");
 
     addPrerequisite("guilds/werric-knight/shield/counter-block.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -30,17 +30,17 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/shield/ultimate-defense.c",
-            "name":"Ultimate Defense",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/shield/ultimate-defense.c",
+            "name": "Ultimate Defense",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
             "rate":0.25
         ])
     }));

@@ -17,10 +17,10 @@ protected void Setup()
         "and applying penalties. Only works against targets with metal gear.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/kindle.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 7
         ]));

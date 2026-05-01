@@ -13,7 +13,7 @@ protected void Setup()
         "enhances your spiritual abilities.");
 
     addPrerequisite("/guilds/background/paths/devoted/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

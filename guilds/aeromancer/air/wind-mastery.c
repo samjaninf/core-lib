@@ -16,13 +16,13 @@ protected void Setup()
         "dramatically enhancing all wind-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 19
         ]));
 
     addPrerequisite("/guilds/aeromancer/air/cyclone.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,9 +14,9 @@ protected void Setup()
         "the most extreme circumstances.");
 
     addPrerequisite("/guilds/werric-knight/discipline/resilience.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

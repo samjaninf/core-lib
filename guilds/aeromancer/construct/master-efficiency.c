@@ -14,12 +14,12 @@ protected void Setup()
         "constructed spells, significantly reducing the time between castings.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 29
         ]));
     addPrerequisite("/guilds/aeromancer/construct/expert-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

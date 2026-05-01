@@ -13,9 +13,9 @@ protected void Setup()
         "increase your stamina and ability to sustain prolonged effort.");
 
     addPrerequisite("guilds/werric-knight/discipline/mental-fortitude.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

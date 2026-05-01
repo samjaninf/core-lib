@@ -15,12 +15,12 @@ protected void Setup()
         "unparalleled protection.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 45 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/tsunami-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

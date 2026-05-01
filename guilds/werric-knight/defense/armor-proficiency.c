@@ -13,9 +13,9 @@ protected void Setup()
         "to wear it more effectively, reducing penalties and improving defense.");
 
     addPrerequisite("/guilds/werric-knight/defense/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

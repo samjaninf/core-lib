@@ -14,10 +14,10 @@ protected void Setup()
     addSpecification("usage summary", "A powerful divine fire attack");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/exarchs-resolve.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 37
         ]));

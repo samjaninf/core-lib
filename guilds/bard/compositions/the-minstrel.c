@@ -15,12 +15,12 @@ protected void Setup()
         "performance.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 13
         ]));
     addPrerequisite("/guilds/bard/compositions/the-inner-muse.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

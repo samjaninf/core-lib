@@ -14,12 +14,12 @@ protected void Setup()
         "`Melee's Melody' and `Minstrel's Attack' abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 10
         ]));
     addPrerequisite("/guilds/bard/melee/melees-melody.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

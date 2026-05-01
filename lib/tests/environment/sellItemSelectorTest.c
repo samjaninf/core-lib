@@ -264,7 +264,7 @@ void UnicodeDisplaysSellListWithUnsellableItemsDenotedCorrectly()
 void SelectSubMenuDisplaysSellListWithKnownCursedtemsDenotedCorrectly()
 {
     Weapon.set("cursed", ([
-        "equip message":"blah",
+        "equip message": "blah",
         "failed unequip message" : "halb"
     ]));
     Weapon.identify();
@@ -286,7 +286,7 @@ void UnicodeDisplaysSellListWithKnownCursedtemsDenotedCorrectly()
 {
     Player.charsetConfiguration("unicode");
     Weapon.set("cursed", ([
-        "equip message":"blah",
+        "equip message": "blah",
         "failed unequip message" : "halb"
     ]));
     Weapon.identify();
@@ -411,7 +411,7 @@ void SellingAllUnequippedDoesNotSellCursedItems()
     sword.set("name", "Sword of really long namedness");
     sword.identify();
     sword.set("cursed", ([
-        "equip message":"blah",
+        "equip message": "blah",
         "failed unequip message": "halb"
     ]));
     move_object(sword, Player);
@@ -460,7 +460,7 @@ void SelectSubMenuDisplaysSellListWithNoColorCorrectly()
     sword.set("name", "Sword of really long namedness");
     sword.identify();
     sword.set("cursed", ([
-        "equip message":"blah",
+        "equip message": "blah",
             "failed unequip message" : "halb"
     ]));
     move_object(sword, Player);
@@ -500,7 +500,7 @@ void SelectSubMenuDisplaysSellListWithEightBitColorCorrectly()
     sword.set("name", "Sword of really long namedness");
     sword.identify();
     sword.set("cursed", ([
-        "equip message":"blah",
+        "equip message": "blah",
             "failed unequip message" : "halb"
     ]));
     move_object(sword, Player);
@@ -534,7 +534,7 @@ void SelectSubMenuDisplaysSellListWithTwentyFourBitColorCorrectly()
     sword.set("name", "Sword of really long namedness");
     sword.identify();
     sword.set("cursed", ([
-        "equip message":"blah",
+        "equip message": "blah",
             "failed unequip message" : "halb"
     ]));
     move_object(sword, Player);

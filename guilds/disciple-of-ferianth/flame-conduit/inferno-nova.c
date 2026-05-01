@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A powerful area-of-effect fire explosion");
 
     addPrerequisite("/guilds/disciple-of-ferianth/flame-conduit/living-flame.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 35
         ]));

@@ -14,14 +14,14 @@ protected void Setup()
         "can obliterate consciousness itself.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 32 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/mind-annihilation.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/psionic-focus/existential-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Mind Annihilation": 25,

@@ -14,13 +14,13 @@ protected void Setup()
         "This form enhances the scion's mana shield.");
 
     addPrerequisite("level", ([
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras",
         "value": 25 
     ]));
 
     addPrerequisite("/guilds/scion/common/mana-shield/hopes-embrace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

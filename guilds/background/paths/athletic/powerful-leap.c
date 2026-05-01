@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus stamina points", 2);
 
     addPrerequisite("/guilds/background/paths/athletic/long-distance.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

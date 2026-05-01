@@ -13,12 +13,12 @@ protected void Setup()
         "mystic knowledge that enhances magical archery attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 55
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/bow/pilin-eiliant.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -26,19 +26,19 @@ protected void Setup()
         "spell points, and stamina.", WeaponType));
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(
         sprintf("/guilds/scion/paths/%s/spirit/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 23
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": 
                 sprintf("/guilds/scion/paths/%s/spirit/soul-shield.c", WeaponType),
             "name" : "Soul Shield",
@@ -47,7 +47,7 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": 
                 sprintf("/guilds/scion/paths/%s/spirit/shield-the-spirit.c", WeaponType),
             "name" : "Shield the Spirit",

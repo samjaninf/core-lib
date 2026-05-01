@@ -14,9 +14,9 @@ protected void Setup()
         "more effectively. This anticipation is the key to advanced defensive tactics.");
 
     addPrerequisite("guilds/werric-knight/defense/positional-awareness.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":3]));
+        (["type": "guild", "level":3]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

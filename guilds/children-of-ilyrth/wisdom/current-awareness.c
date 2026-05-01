@@ -15,12 +15,12 @@ protected void Setup()
         "effect.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 5 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/depths-perception.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

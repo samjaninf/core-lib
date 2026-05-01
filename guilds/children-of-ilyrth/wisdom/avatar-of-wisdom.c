@@ -14,12 +14,12 @@ protected void Setup()
         "embodies the goddess's aspect of eternal knowing.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 51 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/voice-of-the-deep.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

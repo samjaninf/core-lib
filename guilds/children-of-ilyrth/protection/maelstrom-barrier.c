@@ -15,12 +15,12 @@ protected void Setup()
         "shields and damages attackers.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 15 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/undertow-resistance.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

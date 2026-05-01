@@ -15,7 +15,7 @@ protected void Setup()
         "energy that detonates on impact.");
 
     addPrerequisite("/guilds/aquamancer/forms/blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

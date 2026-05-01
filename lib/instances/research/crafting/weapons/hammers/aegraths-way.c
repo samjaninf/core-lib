@@ -15,12 +15,12 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/hammers/aegraths-tradition.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 23]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 21]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 21]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 23]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 21]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 21]));
 
-    addSpecification("limited by", (["crafting type":"hammer"]));
+    addSpecification("limited by", (["crafting type": "hammer"]));
 
     addSpecification("bonus crafting value multiplier", 10);
     addSpecification("bonus crafting encumberance reduction", 25);

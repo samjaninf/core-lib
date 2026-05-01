@@ -16,10 +16,10 @@ protected void Setup()
         "everything caught within its grasp.");
 
     addPrerequisite("/guilds/aquamancer/water/water-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 13
         ]));

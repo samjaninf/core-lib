@@ -14,12 +14,12 @@ protected void Setup()
         "as the ocean itself, drowning all attempts at intrusion.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 51 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/mental-clarity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

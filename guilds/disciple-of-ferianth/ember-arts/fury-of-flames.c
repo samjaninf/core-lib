@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Powerful attack and damage buff");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/flame-blessing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 15
         ]));

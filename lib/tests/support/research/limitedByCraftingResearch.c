@@ -14,6 +14,6 @@ protected void Setup()
         "typical bladed weapon materials such as iron, bronze, and steel.");
 
     addSpecification("research type", "granted");
-    addSpecification("limited by", (["crafting type":"sword"]));
+    addSpecification("limited by", (["crafting type": "sword"]));
     addSpecification("bonus weapon smithing", 30);
 }

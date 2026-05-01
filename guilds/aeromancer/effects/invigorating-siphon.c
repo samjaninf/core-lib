@@ -15,10 +15,10 @@ protected void Setup()
         "speed.");
 
     addPrerequisite("/guilds/aeromancer/effects/enhance-speed.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 19
         ]));

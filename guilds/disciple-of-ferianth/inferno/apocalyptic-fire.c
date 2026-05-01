@@ -18,10 +18,10 @@ protected void Setup()
     addSpecification("usage summary", "The ultimate apocalyptic conflagration");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/wrath-of-ferianth.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 67
         ]));

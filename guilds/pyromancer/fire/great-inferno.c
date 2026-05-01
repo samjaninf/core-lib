@@ -14,10 +14,10 @@ protected void Setup()
         "overwhelming firestorm of apocalyptic proportions.");
 
     addPrerequisite("/guilds/pyromancer/fire/volcanic-call.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 27
         ]));

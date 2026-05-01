@@ -34,7 +34,7 @@ protected void Setup()
     ]));
 
     addPrerequisite("/guilds/bard/strings/raenas-rhythm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("spell point cost", 450);
     addSpecification("damage hit points", ({ ([
@@ -204,13 +204,13 @@ protected void Setup()
             "rate": 0.05
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.05
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "dexterity",
             "formula": "additive",
             "rate": 0.05

@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus move silently", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/quick-hands.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

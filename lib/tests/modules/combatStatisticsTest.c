@@ -65,13 +65,13 @@ void CombatStatisticsAreGenerated()
 {
     Attacker.generateCombatStatistics(Target);
 
-    ExpectEq((["name":"Nukulevee",
+    ExpectEq((["name": "Nukulevee",
         "level" : 20,
         "key" : "/lib/realizations/monster.c#Nukulevee",
         "times killed" : 1]),
         Attacker.getBestKill());
 
-    ExpectEq((["name":"Nukulevee",
+    ExpectEq((["name": "Nukulevee",
         "level" : 20,
         "key" : "/lib/realizations/monster.c#Nukulevee",
         "times killed" : 1]),
@@ -91,7 +91,7 @@ void CombatStatisticsNemesisIsMostFrequestKill()
     Attacker.generateCombatStatistics(Target);
     Attacker.generateCombatStatistics(Target);
 
-    ExpectEq((["name":"Nukulevee",
+    ExpectEq((["name": "Nukulevee",
         "level" : 20,
         "key" : "/lib/realizations/monster.c#Nukulevee",
         "times killed" : 2]),

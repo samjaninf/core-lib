@@ -15,21 +15,21 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/chainmail/craftChainmail.c", 
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/armor/common/folding.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/armor/common/austempering.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/armor/common/differential-hardening.c",
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 20]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 20]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 20]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 10]));
-    addPrerequisite("physics", (["type":"skill", "value" : 15]));
-    addPrerequisite("mathematics", (["type":"skill", "value" : 10]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 20]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 20]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 20]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 10]));
+    addPrerequisite("physics", (["type": "skill", "value" : 15]));
+    addPrerequisite("mathematics", (["type": "skill", "value" : 10]));
 
-    addSpecification("limited by", (["crafting type":"chainmail"]));
+    addSpecification("limited by", (["crafting type": "chainmail"]));
 
     addSpecification("bonus crafting value multiplier", 30);
     addSpecification("bonus crafting encumberance reduction", 10);

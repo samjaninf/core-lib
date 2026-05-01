@@ -15,10 +15,10 @@ protected void Setup()
         "incoming attacks and burns those who strike them.");
 
     addPrerequisite("/guilds/pyromancer/fire/firestorm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 13
         ]));

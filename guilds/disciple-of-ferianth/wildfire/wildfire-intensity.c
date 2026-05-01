@@ -14,13 +14,13 @@ protected void Setup()
         "causing flames to burn longer.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/wildfire-swiftness.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -16,9 +16,9 @@ protected void Setup()
         "and relentless training.");
 
     addPrerequisite("guilds/werric-knight/discipline/perfect-discipline.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":70]));
+        (["type": "guild", "level":70]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

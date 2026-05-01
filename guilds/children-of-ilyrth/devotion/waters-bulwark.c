@@ -17,12 +17,12 @@ protected void Setup()
         "/guilds/children-of-ilyrth/devotion/root.c" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 29 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/devotion/waters-screen.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

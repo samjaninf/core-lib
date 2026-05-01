@@ -14,12 +14,12 @@ protected void Setup()
         "everyone within range of you.");
 
     addPrerequisite("/guilds/fighter/axes/hack.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "axe" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 19
         ]));

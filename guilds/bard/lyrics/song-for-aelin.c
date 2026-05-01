@@ -30,7 +30,7 @@ protected void Setup()
             "value": 10
         ]));
     addPrerequisite("/guilds/bard/lyrics/lay-of-landros.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([

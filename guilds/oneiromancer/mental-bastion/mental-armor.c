@@ -13,7 +13,7 @@ protected void Setup()
         "improved resistance to magical effects.");
 
     addPrerequisite("/guilds/oneiromancer/mental-bastion/iron-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 5
         ]));

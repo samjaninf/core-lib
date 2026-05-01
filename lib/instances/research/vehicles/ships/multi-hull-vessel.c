@@ -14,9 +14,9 @@ protected void Setup()
         "catamarans, providing increased stability and speed.");
     addSpecification("research type", "points");
     addSpecification("research cost", 3);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 5]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 3]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/boats/river-vessels.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

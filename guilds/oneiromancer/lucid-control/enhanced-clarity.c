@@ -13,7 +13,7 @@ protected void Setup()
         "enhanced mental clarity, improving lucid attacks.");
 
     addPrerequisite("/guilds/oneiromancer/lucid-control/lucid-burst.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 11
         ]));

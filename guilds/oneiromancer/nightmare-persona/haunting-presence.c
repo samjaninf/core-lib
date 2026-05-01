@@ -14,12 +14,12 @@ protected void Setup()
         "them, making their psionic attacks more effective.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 25 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/psychic-predator.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

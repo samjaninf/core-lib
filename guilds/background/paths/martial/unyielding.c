@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus constitution", 1);
 
     addPrerequisite("/guilds/background/paths/martial/quick-reaction.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

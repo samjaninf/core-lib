@@ -15,11 +15,11 @@ private mapping BuildingBlueprints = ([
         "henchmen": ([
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 20,
@@ -45,11 +45,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 10]),
-            "carpentry": (["type":"skill", "value": 10]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 10]),
+            "carpentry": (["type": "skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 125,
@@ -76,11 +76,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 10]),
-            "wood crafting": (["type":"skill", "value": 15]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 20,
@@ -107,11 +107,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 20,
@@ -138,11 +138,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 10]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 15]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 15]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 30,
@@ -169,11 +169,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 10]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 10]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 125,
@@ -200,11 +200,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 15]),
-            "carpentry": (["type":"skill", "value": 10]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 10]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 15]),
+            "carpentry": (["type": "skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 10]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 250,
@@ -231,11 +231,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 20]),
-            "carpentry": (["type":"skill", "value": 15]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 20]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 20]),
+            "carpentry": (["type": "skill", "value": 15]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 20]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 350,
@@ -260,11 +260,11 @@ private mapping BuildingBlueprints = ([
             "military": 1,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -290,11 +290,11 @@ private mapping BuildingBlueprints = ([
             "military": 1,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -322,13 +322,13 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
-            "weapon smithing": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 5]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
+            "weapon smithing": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -357,11 +357,11 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -384,11 +384,11 @@ private mapping BuildingBlueprints = ([
             "military": 1,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -411,11 +411,11 @@ private mapping BuildingBlueprints = ([
             "military": 1,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -438,18 +438,18 @@ private mapping BuildingBlueprints = ([
             "phaedra": 1,
         ]),
         "building prerequisites": ([
-            "phaedra":(["type":"trait", "value" : ({
+            "phaedra":(["type": "trait", "value" : ({
                 "/lib/instances/traits/personas/fighter/phaedra-captain.c",
                 "/lib/instances/traits/personas/fighter/phaedra-major.c",
                 "/lib/instances/traits/personas/fighter/phaedra-lieutenant-colonel.c",
                 "/lib/instances/traits/personas/fighter/phaedra-colonel.c",
                 "/lib/instances/traits/personas/fighter/phaedra-general.c", })
             ]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -472,12 +472,12 @@ private mapping BuildingBlueprints = ([
             "aegis": 1,
         ]),
         "building prerequisites": ([
-            "aegis":(["type":"guild", "value" : ({ "aegis" }) ]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "aegis":(["type": "guild", "value" : ({ "aegis" }) ]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -500,12 +500,12 @@ private mapping BuildingBlueprints = ([
             "scion of dhuras": 1,
         ]),
         "building prerequisites": ([
-            "scion of dhuras": (["type":"guild", "value" : ({ "scion of dhuras" })]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "scion of dhuras": (["type": "guild", "value" : ({ "scion of dhuras" })]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -540,14 +540,14 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "smelt metal":(["type":"research", "value": ({
+            "smelt metal":(["type": "research", "value": ({
                 "/lib/instances/research/crafting/materials/refineMetal.c", })
             ]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -582,14 +582,14 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "craft alloy":(["type":"research", "value": ({
+            "craft alloy":(["type": "research", "value": ({
                 "/lib/instances/research/crafting/materials/craftAlloy.c", })
             ]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -624,14 +624,14 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "craft alloy":(["type":"research", "value": ({
+            "craft alloy":(["type": "research", "value": ({
                 "/lib/instances/research/crafting/materials/craftCommonWood.c", })
             ]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -666,14 +666,14 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "craft alloy":(["type":"research", "value": ({
+            "craft alloy":(["type": "research", "value": ({
                 "/lib/instances/research/crafting/materials/craftStone.c", })
             ]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -701,11 +701,11 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -739,15 +739,15 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "craft weapons":(["type":"research", "value" : ({
+            "craft weapons":(["type": "research", "value" : ({
                 "/lib/instances/research/crafting/weapons/craftWeapons.c", })
             ]),
-            "weaponsmithing": (["type":"skill", "value": 15]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "weaponsmithing": (["type": "skill", "value": 15]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -780,15 +780,15 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "craft weapons":(["type":"research", "value" : ({
+            "craft weapons":(["type": "research", "value" : ({
                 "/lib/instances/research/crafting/weapons/craftBasicSwords.c", })
             ]),
-            "weaponsmithing": (["type":"skill", "value": 15]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "weaponsmithing": (["type": "skill", "value": 15]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -821,15 +821,15 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "craft weapons":(["type":"research", "value" : ({
+            "craft weapons":(["type": "research", "value" : ({
                 "/lib/instances/research/crafting/weapons/craftBow.c", })
             ]),
-            "weaponsmithing": (["type":"skill", "value": 15]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "weaponsmithing": (["type": "skill", "value": 15]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -863,15 +863,15 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "craft weapons":(["type":"research", "value" : ({
+            "craft weapons":(["type": "research", "value" : ({
                 "/lib/instances/research/crafting/weapons/craftArmor.c", })
             ]),
-            "armorer": (["type":"skill", "value": 15]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "armorer": (["type": "skill", "value": 15]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -905,11 +905,11 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -942,12 +942,12 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "spellcraft": (["type":"skill", "value": 15]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "spellcraft": (["type": "skill", "value": 15]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -982,15 +982,15 @@ private mapping BuildingBlueprints = ([
             ])
         ]),
         "building prerequisites": ([
-            "craft enchantments":(["type":"research", "value": ({
+            "craft enchantments":(["type": "research", "value": ({
                 "/lib/instances/research/crafting/enchantments/craftEnchantments.c", })
             ]),
-            "spellcraft": (["type":"skill", "value": 15]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "spellcraft": (["type": "skill", "value": 15]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1012,14 +1012,14 @@ private mapping BuildingBlueprints = ([
             "scholar": 1
         ]),
         "building prerequisites": ([
-            "chemistry": (["type":"skill", "value": 7]),
-            "physics": (["type":"skill", "value": 7]),
-            "mathematics": (["type":"skill", "value": 7]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "chemistry": (["type": "skill", "value": 7]),
+            "physics": (["type": "skill", "value": 7]),
+            "mathematics": (["type": "skill", "value": 7]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1048,11 +1048,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 10]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1081,11 +1081,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 10]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 10]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1113,11 +1113,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1145,11 +1145,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1176,11 +1176,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1207,11 +1207,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1238,11 +1238,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1269,11 +1269,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1296,11 +1296,11 @@ private mapping BuildingBlueprints = ([
         "effects": ([
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1328,11 +1328,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1360,11 +1360,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1392,11 +1392,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1424,11 +1424,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1458,11 +1458,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1484,11 +1484,11 @@ private mapping BuildingBlueprints = ([
             "administrator": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1510,11 +1510,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1536,11 +1536,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1562,11 +1562,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1588,11 +1588,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1613,11 +1613,11 @@ private mapping BuildingBlueprints = ([
             "retailer": 1,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1639,11 +1639,11 @@ private mapping BuildingBlueprints = ([
             "scholar": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1665,11 +1665,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1691,11 +1691,11 @@ private mapping BuildingBlueprints = ([
             "farmer": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1717,11 +1717,11 @@ private mapping BuildingBlueprints = ([
             "scholar": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1743,11 +1743,11 @@ private mapping BuildingBlueprints = ([
             "scholar": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1769,11 +1769,11 @@ private mapping BuildingBlueprints = ([
             "trader": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1801,11 +1801,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1833,11 +1833,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1859,11 +1859,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1885,11 +1885,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1911,11 +1911,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1936,11 +1936,11 @@ private mapping BuildingBlueprints = ([
             "retailer": 1,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1962,11 +1962,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -1988,11 +1988,11 @@ private mapping BuildingBlueprints = ([
             "farmer": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2014,11 +2014,11 @@ private mapping BuildingBlueprints = ([
             "innkeeper": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2040,11 +2040,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2066,11 +2066,11 @@ private mapping BuildingBlueprints = ([
             "armorer": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2092,11 +2092,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2118,11 +2118,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2144,11 +2144,11 @@ private mapping BuildingBlueprints = ([
             "trader": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2170,11 +2170,11 @@ private mapping BuildingBlueprints = ([
             "trader": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2196,11 +2196,11 @@ private mapping BuildingBlueprints = ([
             "armorer": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2222,11 +2222,11 @@ private mapping BuildingBlueprints = ([
             "innkeeper": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2248,11 +2248,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2274,11 +2274,11 @@ private mapping BuildingBlueprints = ([
             "trader": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2300,11 +2300,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2326,11 +2326,11 @@ private mapping BuildingBlueprints = ([
             "administrator": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2352,11 +2352,11 @@ private mapping BuildingBlueprints = ([
             "concubine": 3
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2377,11 +2377,11 @@ private mapping BuildingBlueprints = ([
             "retailer": 3,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2403,11 +2403,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2429,11 +2429,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2455,11 +2455,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2481,11 +2481,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2507,11 +2507,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 100,
@@ -2532,11 +2532,11 @@ private mapping BuildingBlueprints = ([
             "administrator": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2557,11 +2557,11 @@ private mapping BuildingBlueprints = ([
             "priest": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 50,
@@ -2583,11 +2583,11 @@ private mapping BuildingBlueprints = ([
             "priest": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 50,
@@ -2609,11 +2609,11 @@ private mapping BuildingBlueprints = ([
             "priest": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 50,
@@ -2635,11 +2635,11 @@ private mapping BuildingBlueprints = ([
             "priest": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2661,11 +2661,11 @@ private mapping BuildingBlueprints = ([
             "priest": 3
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2687,11 +2687,11 @@ private mapping BuildingBlueprints = ([
             "priest": 3
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2713,11 +2713,11 @@ private mapping BuildingBlueprints = ([
             "priest": 3
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2738,11 +2738,11 @@ private mapping BuildingBlueprints = ([
             "druid": 5
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 50,
@@ -2764,11 +2764,11 @@ private mapping BuildingBlueprints = ([
             "priest": 5
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 500,
@@ -2789,11 +2789,11 @@ private mapping BuildingBlueprints = ([
             "administrator": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2814,11 +2814,11 @@ private mapping BuildingBlueprints = ([
             "administrator": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2837,11 +2837,11 @@ private mapping BuildingBlueprints = ([
             "scholar": 2,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 20]),
-            "carpentry": (["type":"skill", "value": 20]),
-            "wood crafting": (["type":"skill", "value": 10]),
-            "engineering": (["type":"skill", "value": 15]),
-            "sewing": (["type":"skill", "value": 5]),
+            "stonemasonry": (["type": "skill", "value": 20]),
+            "carpentry": (["type": "skill", "value": 20]),
+            "wood crafting": (["type": "skill", "value": 10]),
+            "engineering": (["type": "skill", "value": 15]),
+            "sewing": (["type": "skill", "value": 5]),
         ]),
         "building materials": ([
             "stone": 200,
@@ -2860,11 +2860,11 @@ private mapping BuildingBlueprints = ([
             "scholar": 5,
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 20]),
-            "carpentry": (["type":"skill", "value": 20]),
-            "wood crafting": (["type":"skill", "value": 10]),
-            "engineering": (["type":"skill", "value": 15]),
-            "sewing": (["type":"skill", "value": 5]),
+            "stonemasonry": (["type": "skill", "value": 20]),
+            "carpentry": (["type": "skill", "value": 20]),
+            "wood crafting": (["type": "skill", "value": 10]),
+            "engineering": (["type": "skill", "value": 15]),
+            "sewing": (["type": "skill", "value": 5]),
         ]),
         "building materials": ([
             "stone": 500,
@@ -2885,11 +2885,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 3
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 20]),
-            "carpentry": (["type":"skill", "value": 20]),
-            "wood crafting": (["type":"skill", "value": 10]),
-            "engineering": (["type":"skill", "value": 15]),
-            "sewing": (["type":"skill", "value": 5]),
+            "stonemasonry": (["type": "skill", "value": 20]),
+            "carpentry": (["type": "skill", "value": 20]),
+            "wood crafting": (["type": "skill", "value": 10]),
+            "engineering": (["type": "skill", "value": 15]),
+            "sewing": (["type": "skill", "value": 5]),
         ]),
         "building materials": ([
             "stone": 200,
@@ -2910,11 +2910,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 3
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 20]),
-            "carpentry": (["type":"skill", "value": 20]),
-            "wood crafting": (["type":"skill", "value": 10]),
-            "engineering": (["type":"skill", "value": 15]),
-            "sewing": (["type":"skill", "value": 5]),
+            "stonemasonry": (["type": "skill", "value": 20]),
+            "carpentry": (["type": "skill", "value": 20]),
+            "wood crafting": (["type": "skill", "value": 10]),
+            "engineering": (["type": "skill", "value": 15]),
+            "sewing": (["type": "skill", "value": 5]),
         ]),
         "building materials": ([
             "stone": 200,
@@ -2935,11 +2935,11 @@ private mapping BuildingBlueprints = ([
             "administrator": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2961,11 +2961,11 @@ private mapping BuildingBlueprints = ([
             "entertainer": 5
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -2988,11 +2988,11 @@ private mapping BuildingBlueprints = ([
             "noble": 2
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3014,11 +3014,11 @@ private mapping BuildingBlueprints = ([
             "soldier": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3039,11 +3039,11 @@ private mapping BuildingBlueprints = ([
             "administrator": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3066,11 +3066,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 2
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3093,11 +3093,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 2
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3120,11 +3120,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 2
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3147,11 +3147,11 @@ private mapping BuildingBlueprints = ([
             "scientist": 2
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 50,
@@ -3174,11 +3174,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3201,11 +3201,11 @@ private mapping BuildingBlueprints = ([
             "diplomat": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3231,11 +3231,11 @@ private mapping BuildingBlueprints = ([
             "artisan": 1
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 600,
@@ -3270,12 +3270,12 @@ private mapping BuildingBlueprints = ([
             "magic user": 5
         ]),
         "building prerequisites": ([
-            "spellcraft": (["type":"skill", "value": 25]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "spellcraft": (["type": "skill", "value": 25]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 800,
@@ -3298,12 +3298,12 @@ private mapping BuildingBlueprints = ([
             "magic user": 1
         ]),
         "building prerequisites": ([
-            "spellcraft": (["type":"skill", "value": 10]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3332,12 +3332,12 @@ private mapping BuildingBlueprints = ([
             "magic user": 2
         ]),
         "building prerequisites": ([
-            "spellcraft": (["type":"skill", "value": 25]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "spellcraft": (["type": "skill", "value": 25]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3360,12 +3360,12 @@ private mapping BuildingBlueprints = ([
             "scientist": 1
         ]),
         "building prerequisites": ([
-            "spellcraft": (["type":"skill", "value": 25]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "spellcraft": (["type": "skill", "value": 25]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3388,12 +3388,12 @@ private mapping BuildingBlueprints = ([
             "scholar": 1
         ]),
         "building prerequisites": ([
-            "spellcraft": (["type":"skill", "value": 25]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "spellcraft": (["type": "skill", "value": 25]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3420,11 +3420,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 200,
@@ -3451,11 +3451,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 200,
@@ -3481,11 +3481,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,
@@ -3512,11 +3512,11 @@ private mapping BuildingBlueprints = ([
             ]),
         ]),
         "building prerequisites": ([
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "carpentry": (["type":"skill", "value": 5]),
-            "wood crafting": (["type":"skill", "value": 5]),
-            "engineering": (["type":"skill", "value": 5]),
-            "sewing": (["type":"skill", "value": 2]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "carpentry": (["type": "skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "engineering": (["type": "skill", "value": 5]),
+            "sewing": (["type": "skill", "value": 2]),
         ]),
         "building materials": ([
             "stone": 300,

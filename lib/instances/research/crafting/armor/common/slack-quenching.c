@@ -17,8 +17,8 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/common/annealing.c",
-        (["type":"research"]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 1]));
+        (["type": "research"]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 1]));
 
     addSpecification("limited by", (["crafting type":({ "chainmail",
         "plate armor", "splint armor", "scale armor", "helmet" })]));

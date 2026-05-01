@@ -22,11 +22,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 63 ]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/electricity/electrostatic-discharge.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

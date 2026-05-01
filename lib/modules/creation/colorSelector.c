@@ -12,7 +12,7 @@ public nomask void InitializeSelector()
 
     Data = ([
         "1":([
-            "name":"No color support",
+            "name": "No color support",
             "description" : "This option sends the user's client only "
                 "simple text without ASNI colors via escape characters. "
                 "It is useful if your client does not support colors or "
@@ -20,7 +20,7 @@ public nomask void InitializeSelector()
             "value": "none"
         ]),
         "2":([
-            "name":"3-bit (8 colors)",
+            "name": "3-bit (8 colors)",
             "description" : "This option sends the user's client text "
                 "with basic ASNI color support for eight colors. Early "
                 "clients often only supported these colors. \x1b[0;32mIf "
@@ -29,7 +29,7 @@ public nomask void InitializeSelector()
             "value": "3-bit",
         ]),
         "3":([
-            "name":"8-bit (256 colors)",
+            "name": "8-bit (256 colors)",
             "description" : "This option sends the user's client text "
                 "with basic ASNI color support for 256 colors. Many "
                 "modern clients support these colors. \x1b[0;38;5;30mIf "
@@ -38,7 +38,7 @@ public nomask void InitializeSelector()
             "value": "8-bit",
         ]),
         "4":([
-            "name":"24-bit (true color)",
+            "name": "24-bit (true color)",
             "description" : "This option sends the user's client text "
                 "with basic ASNI color support for 16,777,216 colors. Some "
                 "modern clients support these colors, but many do not. "
@@ -47,7 +47,7 @@ public nomask void InitializeSelector()
             "value": "24-bit",
         ]),
         "5":([
-            "name":"Grayscale (26 colors)",
+            "name": "Grayscale (26 colors)",
             "description" : "This option sends the user's client text "
                 "with basic ASNI color support for 26 grayscale colors. Some "
                 "modern clients support these colors, but many do not. "

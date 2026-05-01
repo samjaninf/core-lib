@@ -15,7 +15,7 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "staff" })]));
 
     addPrerequisite("/guilds/scion/paths/staff/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

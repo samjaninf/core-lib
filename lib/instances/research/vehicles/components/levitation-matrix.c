@@ -14,12 +14,12 @@ protected void Setup()
         "to float above the ground or water through levitation magic.");
     addSpecification("research type", "points");
     addSpecification("research cost", 8);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 15]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 10]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 6]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 5]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 15]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 10]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 6]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-propulsion.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle speed", 8);

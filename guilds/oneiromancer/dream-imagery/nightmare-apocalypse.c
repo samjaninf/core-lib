@@ -18,12 +18,12 @@ protected void Setup()
         "with multiple damage types and severe debuffs");
 
     addPrerequisite("/guilds/oneiromancer/dream-imagery/death-of-self.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/oneiromancer/dream-imagery/unraveling-reality.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 67
         ]));
@@ -69,7 +69,7 @@ protected void Setup()
             "rate": 0.20
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 1.0

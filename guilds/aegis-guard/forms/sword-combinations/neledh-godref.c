@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge to chain an additional attack to their combinations.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 31
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-combinations/tad-godref.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

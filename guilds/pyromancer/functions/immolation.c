@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with immolating fire.");
 
     addPrerequisite("/guilds/pyromancer/functions/searing.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to intensify the effects of Sacred Flames.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 17
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/sacred-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

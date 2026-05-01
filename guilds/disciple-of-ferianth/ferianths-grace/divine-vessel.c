@@ -13,10 +13,10 @@ protected void Setup()
         "of Ferianth's power, permanently enhanced by sacred fire.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/holy-bastion.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 61
         ]));

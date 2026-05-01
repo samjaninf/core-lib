@@ -13,7 +13,7 @@ protected void Setup()
         "life force to restore an ally from even the brink of death.");
 
     addPrerequisite("/guilds/background/paths/compassionate/beacon-of-hope.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

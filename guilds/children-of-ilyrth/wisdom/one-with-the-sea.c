@@ -15,12 +15,12 @@ protected void Setup()
         "consciousness. Nothing escapes their awareness.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 67 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/divine-enlightenment.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

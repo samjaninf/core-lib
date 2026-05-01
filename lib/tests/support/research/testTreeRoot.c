@@ -7,7 +7,7 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    addPrerequisite("long sword", (["type": "skill", "value" : 10]));
     addSpecification("description", "This is a description");
     addSpecification("source", "mage guild");
     addSpecification("name", "Spiffy tree root");

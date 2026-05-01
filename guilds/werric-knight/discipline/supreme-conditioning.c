@@ -13,9 +13,9 @@ protected void Setup()
         "Your body responds with perfect efficiency to any demand.");
 
     addPrerequisite("guilds/werric-knight/discipline/unbreakable-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":35]));
+        (["type": "guild", "level":35]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,13 +13,13 @@ protected void Setup()
         "scion's avatar to have more hit points.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 11
     ]));
 
     addPrerequisite("/guilds/scion/avatars/common/hitpoints-i.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -24,18 +24,18 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/ice/freezing-barrier.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 33
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/frost-barrier.c", WeaponType),
             "name" : "Frost Barrier",
             "formula" : "multiplicative",
@@ -43,7 +43,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/frozen-barrier.c", WeaponType),
             "name" : "Frozen Barrier",
             "formula" : "multiplicative",
@@ -51,7 +51,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/icy-barrier.c", WeaponType),
             "name" : "Icy Barrier",
             "formula" : "multiplicative",
@@ -59,13 +59,13 @@ protected void Setup()
             "rate": 1.5
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental water",
             "formula" : "additive",
             "rate" : 0.10
@@ -83,13 +83,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

@@ -15,12 +15,12 @@ protected void Setup()
         "breakdown, a chorus, and an outro.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 15
         ]));
     addPrerequisite("/guilds/bard/compositions/ababcb.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

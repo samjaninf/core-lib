@@ -14,10 +14,10 @@ protected void Setup()
         "a target's damage absorption.");
 
     addPrerequisite("/guilds/aeromancer/effects/reduce-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 13
         ]));

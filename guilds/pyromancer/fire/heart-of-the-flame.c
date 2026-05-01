@@ -13,13 +13,13 @@ protected void Setup()
         "knowledge of the true heart of fire, greatly enhancing fire magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 39
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/pyretic-flow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

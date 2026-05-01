@@ -15,13 +15,13 @@ protected void Setup()
         "control over water magic, dramatically enhancing all abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 39
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/aquatic-flow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

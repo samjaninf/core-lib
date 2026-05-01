@@ -16,10 +16,10 @@ protected void Setup()
         "the target's combat effectiveness");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/dreamscape-shift.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 11
         ]));

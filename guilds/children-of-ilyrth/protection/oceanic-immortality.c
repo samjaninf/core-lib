@@ -14,12 +14,12 @@ protected void Setup()
         "be destroyed, the caster becomes nearly unkillable.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 51 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/leviathan-hide.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,10 +14,10 @@ protected void Setup()
         "defensive capabilities.");
 
     addPrerequisite("/guilds/geomancer/effects/enhance-damage.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 11
         ]));

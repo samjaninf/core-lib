@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form cages of fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/ring.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

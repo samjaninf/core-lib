@@ -16,9 +16,9 @@ protected void Setup()
         "that would unbalance ordinary warriors.");
 
     addPrerequisite("guilds/werric-knight/elven/moonlight-steps.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

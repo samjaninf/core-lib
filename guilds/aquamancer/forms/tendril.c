@@ -15,7 +15,7 @@ protected void Setup()
         "to ensnare and damage foes.");
 
     addPrerequisite("/guilds/aquamancer/forms/droplet.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

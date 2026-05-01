@@ -14,12 +14,12 @@ protected void Setup()
         "their constructed spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 13
         ]));
     addPrerequisite("/guilds/geomancer/construct/efficient-casting.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

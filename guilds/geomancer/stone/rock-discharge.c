@@ -14,7 +14,7 @@ protected void Setup()
         "geomancer releases a massive discharge of stone shrapnel at a foe.");
 
     addPrerequisite("/guilds/geomancer/stone/stone-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

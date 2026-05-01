@@ -13,13 +13,13 @@ protected void Setup()
         "avatar the `Fire Bolt' spell.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 13
     ]));
 
     addPrerequisite("/guilds/scion/avatars/flame/fire-touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

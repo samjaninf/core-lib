@@ -346,7 +346,7 @@ protected nomask string *displayMaterialsData(object user, mapping componentData
         }
         ret += ({ 
             configuration->decorate(
-                sprintf("%-29s", generateTitle(material) + ":"),
+                sprintf("%-29s", generateTitle(material) + ": "),
                 "heading", "player domains", colorConfiguration),
             selection
         });

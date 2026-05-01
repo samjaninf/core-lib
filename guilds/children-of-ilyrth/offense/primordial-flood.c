@@ -15,12 +15,12 @@ protected void Setup()
         "of ancient power.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 41 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/oceans-wrath.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

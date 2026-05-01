@@ -14,12 +14,12 @@ protected void Setup()
         "Ilyrth's divine judgment into a bolt of sacred energy.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 9 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/waters-rebuke.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

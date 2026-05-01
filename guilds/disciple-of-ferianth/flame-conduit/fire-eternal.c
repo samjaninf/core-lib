@@ -20,16 +20,16 @@ protected void Setup()
     ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 67
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/flame-conduit/ferianths-chosen.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/flame-conduit/immortal-inferno.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

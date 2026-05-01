@@ -368,11 +368,11 @@ void SetComponentCorrectlySetsComponents()
     Weapon.set("blueprint", "long sword");
 
     Weapon.setComponent("blade", "Type XIIa",
-        (["metal":"galvorn" ]));
+        (["metal": "galvorn" ]));
     Weapon.setComponent("crossguard", "Snake Form",
-        (["metal":"steel", "crystal" : "ruby"]));
+        (["metal": "steel", "crystal" : "ruby"]));
     Weapon.setComponent("hilt", "Spiral Hilt",
-        (["metal":"gold", "wood": "koa", "leather": "boar leather" ]));
+        (["metal": "gold", "wood": "koa", "leather": "boar leather" ]));
     Weapon.setComponent("pommel", "Dragon Talon",
         (["metal": "steel", "crystal": "garnet" ]));
 
@@ -399,7 +399,7 @@ void SetComponentCorrectlySetsComponents()
 void SetComponentFailsWhenBlueprintNotSet()
 {
     string error = catch (Weapon.setComponent("blade", "Type XIIa",
-        (["metal":"galvorn"])); nolog);
+        (["metal": "galvorn"])); nolog);
 
     ExpectEq("*Equipment: A blueprint must be set before components can be assigned.\n",
         error);
@@ -410,7 +410,7 @@ void SetComponentFailsWhenInvalidComponentSet()
 {
     Weapon.set("blueprint", "long sword");
     string error = catch (Weapon.setComponent("blade", "Type Invalid",
-        (["metal":"galvorn"])); nolog);
+        (["metal": "galvorn"])); nolog);
 
     ExpectEq("*ERROR in materials: Type Invalid is not a valid blade component.\n",
         error);
@@ -421,7 +421,7 @@ void SetComponentFailsWhenInvalidComponentTypeSet()
 {
     Weapon.set("blueprint", "long sword");
     string error = catch (Weapon.setComponent("shaft", "Simple shaft",
-        (["wood":"pine"])); nolog);
+        (["wood": "pine"])); nolog);
 
     ExpectEq("*ERROR in materials: shaft is not a valid long sword component type.\n",
         error);
@@ -433,7 +433,7 @@ void SetComponentFailsWhenInvalidMaterialIsSet()
     Weapon.set("blueprint", "long sword");
 
     string error = catch (Weapon.setComponent("hilt", "Spiral Hilt",
-        (["metal":"gold", "wood": "copper", "leather" : "boar leather"])); nolog);
+        (["metal": "gold", "wood": "copper", "leather" : "boar leather"])); nolog);
 
     ExpectEq("*ERROR in materials: copper is not a valid material for the "
         "specified component (hilt - Spiral Hilt).\n",

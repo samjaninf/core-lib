@@ -16,10 +16,10 @@ protected void Setup()
         "times as the cyclone rotates, each pass bringing fresh devastation.");
 
     addPrerequisite("/guilds/aeromancer/air/disrupt-storm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 45
         ]));

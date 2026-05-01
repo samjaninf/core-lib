@@ -14,12 +14,12 @@ protected void Setup()
         "with devastating precision.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 21 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/mind-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

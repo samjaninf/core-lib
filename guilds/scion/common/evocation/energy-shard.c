@@ -25,9 +25,9 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/evocation/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -49,7 +49,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/mystic-charge.c", WeaponType),
             "name" : "Mystic Charge",
             "formula" : "additive",
@@ -57,7 +57,7 @@ protected void Setup()
             "rate": 1.5
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/evocation/magical-conduit.c", WeaponType),
             "name" : "Magical Conduit",
             "formula" : "additive",
@@ -72,13 +72,13 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "evocation",
             "formula" : "additive",
             "rate" : 0.10
@@ -96,13 +96,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

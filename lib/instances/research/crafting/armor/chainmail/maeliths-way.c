@@ -15,11 +15,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/chainmail/maeliths-tradition.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 30]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 30]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 30]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 30]));
 
-    addSpecification("limited by", (["crafting type":"chainmail"]));
+    addSpecification("limited by", (["crafting type": "chainmail"]));
 
     addSpecification("bonus crafting value multiplier", 10);
     addSpecification("bonus crafting encumberance reduction", 25);

@@ -14,10 +14,10 @@ protected void Setup()
     addSpecification("usage summary", "A moderate single-target heal");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/soothing-flame.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 7
         ]));

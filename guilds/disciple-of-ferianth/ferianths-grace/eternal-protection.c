@@ -13,10 +13,10 @@ protected void Setup()
         "knowledge of eternal protection through Ferianth's grace.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/exarchs-blessing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 53
         ]));

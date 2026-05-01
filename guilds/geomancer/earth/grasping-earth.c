@@ -15,10 +15,10 @@ protected void Setup()
         "draining their vitality to restore the caster.");
 
     addPrerequisite("/guilds/geomancer/earth/tremor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 7
         ]));

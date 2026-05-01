@@ -13,7 +13,7 @@ protected void Setup()
         "mend the wounds of an ally.");
 
     addPrerequisite("/guilds/background/paths/compassionate/nurturer.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

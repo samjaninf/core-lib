@@ -16,13 +16,13 @@ protected void Setup()
         "equipment": ({ "instrument: plucked", "instrument: bowed" }) ]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 13
     ]));
 
     addPrerequisite("/guilds/bard/strings/hammer-ons-and-pull-offs.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

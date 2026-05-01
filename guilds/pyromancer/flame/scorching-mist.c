@@ -14,10 +14,10 @@ protected void Setup()
         "pyromancer creates a cloud of superheated vapor that burns foes.");
 
     addPrerequisite("/guilds/pyromancer/flame/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 7
         ]));

@@ -30,12 +30,12 @@ protected void Setup()
             "range" : 35
     ]) }));
     addSpecification("modifiers", ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "elemental air",
         "formula": "additive",
         "rate": 1.25
     ]), ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "intelligence",
         "formula": "logarithmic",
         "base value": 5,

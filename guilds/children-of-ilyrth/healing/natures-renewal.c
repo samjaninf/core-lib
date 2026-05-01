@@ -14,12 +14,12 @@ protected void Setup()
         "wisdom, the caster understands how water sustains all life.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 17 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/deep-restoration.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

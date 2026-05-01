@@ -15,7 +15,7 @@ protected void Setup()
         "water eats away at flesh and metal alike.");
 
     addPrerequisite("/guilds/aquamancer/functions/tempest.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

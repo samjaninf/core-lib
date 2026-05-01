@@ -13,9 +13,9 @@ protected void Setup()
         "judgment technique, dramatically enhancing your ultimate holy abilities.");
 
     addPrerequisite("/guilds/werric-knight/light/pillar-of-light.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":45]));
+        (["type": "guild", "level":45]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -13,7 +13,7 @@ protected void Setup()
         "enhanced dominion over the dream realm, improving crushing attacks.");
 
     addPrerequisite("/guilds/oneiromancer/dream-dominion/mind-crush.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 13
         ]));

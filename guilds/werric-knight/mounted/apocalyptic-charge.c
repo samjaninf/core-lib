@@ -14,9 +14,9 @@ protected void Setup()
         "combat elevated to its ultimate destructive expression.");
 
     addPrerequisite("guilds/werric-knight/mounted/master-of-horse.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":60]));
+        (["type": "guild", "level":60]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -47,57 +47,57 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/mounted/thundering-impact.c",
-            "name":"Thundering Impact",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/mounted/thundering-impact.c",
+            "name": "Thundering Impact",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/mounted/ultimate-cavalry.c",
-            "name":"Ultimate Cavalry",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/mounted/ultimate-cavalry.c",
+            "name": "Ultimate Cavalry",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.5
         ]),
         ([
-            "type":"weapon damage",
-            "name":"weapon",
+            "type": "weapon damage",
+            "name": "weapon",
             "types":({"long sword", "hand and a half sword", "pole arm"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.75
         ]),
         ([
-            "type":"skill",
-            "name":"riding",
-            "formula":"additive",
+            "type": "skill",
+            "name": "riding",
+            "formula": "additive",
             "rate":0.50
         ]),
         ([
-            "type":"highest skill",
-            "name":"weapon skills",
+            "type": "highest skill",
+            "name": "weapon skills",
             "skills":({"long sword", "hand and a half sword", "pole arm"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"skill",
-            "name":"physics",
-            "formula":"additive",
+            "type": "skill",
+            "name": "physics",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"dexterity",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "dexterity",
+            "formula": "additive",
             "rate":0.25
         ])
     }));

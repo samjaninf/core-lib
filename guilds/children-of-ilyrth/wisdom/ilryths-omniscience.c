@@ -15,12 +15,12 @@ protected void Setup()
         "the divine.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 45 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/divine-foresight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

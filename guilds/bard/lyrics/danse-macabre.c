@@ -20,12 +20,12 @@ protected void Setup()
         "knowledge of a skeleton-summoning chant.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 23
         ]));
     addPrerequisite("/guilds/bard/lyrics/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("number to summon", 2);
     addSpecification("persona level", 20);
@@ -37,7 +37,7 @@ protected void Setup()
                "value": 25]),
             (["modifier": "bonus damage",
                "value": 10]),
-            (["modifier":"bonus hit points",
+            (["modifier": "bonus hit points",
                "value" : 350]),
         }),
         "/guilds/bard/lyrics/ballad-of-the-bones.c":({

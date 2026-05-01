@@ -14,12 +14,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "staff" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 12 ]));
 
     addPrerequisite("/guilds/scion/paths/staff/forms/the-ox.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

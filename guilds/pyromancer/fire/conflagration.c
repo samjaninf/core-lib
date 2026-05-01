@@ -14,10 +14,10 @@ protected void Setup()
         "very air around the target, creating an explosive burst of flame.");
 
     addPrerequisite("/guilds/pyromancer/fire/blazing-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 15
         ]));

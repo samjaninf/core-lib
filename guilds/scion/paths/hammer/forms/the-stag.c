@@ -17,12 +17,12 @@ protected void Setup()
         "hammer" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 3 ]));  
 
     addPrerequisite("/guilds/scion/paths/hammer/forms/from-the-roof.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

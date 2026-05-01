@@ -13,9 +13,9 @@ protected void Setup()
         "of the elves, granting greater accuracy and finesse with bladed weapons.");
 
     addPrerequisite("/guilds/werric-knight/elven/swift-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

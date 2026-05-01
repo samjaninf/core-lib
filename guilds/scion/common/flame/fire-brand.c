@@ -23,13 +23,13 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/flame/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/sweeping-flames.c", WeaponType),
             "name" : "Sweeping Flames",
             "formula" : "multiplicative",
@@ -37,7 +37,7 @@ protected void Setup()
             "rate": 1.67
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/burning-brand.c", WeaponType),
             "name" : "Burning Brand",
             "formula" : "multiplicative",
@@ -45,7 +45,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/inferno-strike.c", WeaponType),
             "name" : "Inferno Strike",
             "formula" : "multiplicative",
@@ -53,7 +53,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/blazing-edge.c", WeaponType),
             "name" : "blazing edge",
             "formula" : "multiplicative",
@@ -61,7 +61,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/ferianths-boon.c", WeaponType),
             "name" : "Ferianth's Boon",
             "formula" : "multiplicative",

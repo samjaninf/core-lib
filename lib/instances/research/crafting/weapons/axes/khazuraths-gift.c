@@ -16,11 +16,11 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/axes/khuz-no-dai.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 45]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 40]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 45]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 40]));
 
-    addSpecification("limited by", (["crafting type":"axe"]));
+    addSpecification("limited by", (["crafting type": "axe"]));
 
     addSpecification("bonus crafting magical enchantment", 2);
     addSpecification("bonus crafting enchantments", 1);

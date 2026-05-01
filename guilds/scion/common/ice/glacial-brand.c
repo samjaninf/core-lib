@@ -23,18 +23,18 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/ice/frost-brand.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 25
         ]));
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/sweeping-frost.c", WeaponType),
             "name" : "Sweeping Frost",
             "formula" : "multiplicative",
@@ -42,7 +42,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/freezing-brand.c", WeaponType),
             "name" : "Freezing Brand",
             "formula" : "multiplicative",
@@ -50,7 +50,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/frigid-strike.c", WeaponType),
             "name" : "Frigid Strike",
             "formula" : "multiplicative",
@@ -58,7 +58,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/icy-edge.c", WeaponType),
             "name" : "Icy Edge",
             "formula" : "multiplicative",
@@ -66,7 +66,7 @@ protected void Setup()
             "rate": 1.3
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/winters-boon.c", WeaponType),
             "name" : "Winter's Boon",
             "formula" : "multiplicative",

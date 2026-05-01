@@ -25,9 +25,9 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/flame/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
@@ -49,7 +49,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/fuel-the-flames.c", WeaponType),
             "name" : "Fuel the Flames",
             "formula" : "multiplicative",
@@ -57,7 +57,7 @@ protected void Setup()
             "rate": 1.5
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/scorching-mark.c", WeaponType),
             "name" : "Scorching Mark",
             "formula" : "multiplicative",
@@ -72,13 +72,13 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental fire",
             "formula" : "additive",
             "rate" : 0.10
@@ -96,13 +96,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

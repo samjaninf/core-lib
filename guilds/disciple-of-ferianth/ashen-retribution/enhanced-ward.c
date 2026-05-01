@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to strengthen their ashen ward's protective power.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 13
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ashen-retribution/ashen-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

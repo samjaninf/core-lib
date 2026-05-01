@@ -15,9 +15,9 @@ protected void Setup()
         "strength, elven precision with human discipline.");
 
     addPrerequisite("guilds/werric-knight/elven/flowing-water-stance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type": "guild", "level":9]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

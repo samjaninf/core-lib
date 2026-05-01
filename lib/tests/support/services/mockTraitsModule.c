@@ -61,7 +61,7 @@ public nomask int removeTrait(string trait)
 /////////////////////////////////////////////////////////////////////////////
 public nomask mapping *traitsExtraAttacks()
 {
-    return useTrait ? ({ (["attack type":"fire", "to hit" : 20, "damage" : 10]) }) : ({});
+    return useTrait ? ({ (["attack type": "fire", "to hit" : 20, "damage" : 10]) }) : ({});
 }
 
 /////////////////////////////////////////////////////////////////////////////

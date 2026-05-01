@@ -17,10 +17,10 @@ protected void Setup()
         "Only usable while in dragon form");
 
     addPrerequisite("/guilds/therianthrope/dragon/rime-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 41
         ]));

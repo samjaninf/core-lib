@@ -14,10 +14,10 @@ protected void Setup()
         "spell points.");
 
     addPrerequisite("/guilds/aeromancer/effects/damage-hp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 3
         ]));

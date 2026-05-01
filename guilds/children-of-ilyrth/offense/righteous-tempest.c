@@ -14,12 +14,12 @@ protected void Setup()
         "storm of divine wrath that scours all enemies with sacred fury.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 33 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/divine-retribution.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -16,12 +16,12 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/flails/helcarnaths-legacy.c", 
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 42]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 30]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 35]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 42]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 30]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 35]));
 
-    addSpecification("limited by", (["crafting type":"flail"]));
+    addSpecification("limited by", (["crafting type": "flail"]));
 
     addSpecification("bonus crafting value multiplier", 10);
     addSpecification("bonus crafting magical enchantment", 3);

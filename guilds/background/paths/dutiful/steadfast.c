@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus hit points", 3);
 
     addPrerequisite("/guilds/background/paths/dutiful/loyal-companion.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

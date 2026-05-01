@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a devastating lance of stone.");
 
     addPrerequisite("/guilds/geomancer/forms/spear.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

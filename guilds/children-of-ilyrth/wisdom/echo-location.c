@@ -14,12 +14,12 @@ protected void Setup()
         "The caster can perceive objects and beings even in complete darkness.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 7 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/sea-sense.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

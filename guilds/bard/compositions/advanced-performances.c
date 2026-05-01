@@ -18,12 +18,12 @@ protected void Setup()
             "instrument: percussion" }) ]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "bard",
           "value": 17 ]));
 
     addPrerequisite("/guilds/bard/compositions/the-inner-muse.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

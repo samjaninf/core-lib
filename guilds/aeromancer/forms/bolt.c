@@ -14,11 +14,11 @@ protected void Setup()
         "knowledge of creating spells that fire a focused bolt of energy at a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/arc.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":3
         ]));
 

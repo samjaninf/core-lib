@@ -16,7 +16,7 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/guilds/background/paths/learning/mental-vigor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Mental Refresh":5

@@ -13,9 +13,9 @@ protected void Setup()
         "combat, enhancing all abilities that embody knightly virtues.");
 
     addPrerequisite("guilds/werric-knight/virtues/justice-magnified.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus theology", 2);
 
     addPrerequisite("/guilds/background/paths/devoted/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

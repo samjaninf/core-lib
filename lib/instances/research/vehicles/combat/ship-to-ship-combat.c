@@ -14,11 +14,11 @@ protected void Setup()
         "including artillery coordination and battle line tactics.");
     addSpecification("research type", "points");
     addSpecification("research cost", 6);
-    addPrerequisite("tactics", (["type":"skill", "value" : 8]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 6]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 7]));
+    addPrerequisite("tactics", (["type": "skill", "value" : 8]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 6]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 7]));
     addPrerequisite("/lib/instances/research/vehicles/combat/boarding-actions.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus attack", 3);
     addSpecification("bonus damage", 2);

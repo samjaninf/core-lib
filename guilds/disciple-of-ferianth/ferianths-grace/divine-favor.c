@@ -20,7 +20,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

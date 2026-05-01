@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that envelop a foe in a cloud of magical mist.");
 
     addPrerequisite("/guilds/aquamancer/forms/touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -14,12 +14,12 @@ protected void Setup()
         "elemental magic skills.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 17
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-elemental/elemental-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

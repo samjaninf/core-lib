@@ -96,7 +96,7 @@ protected nomask void setUpUserForSelection()
     if (isLevelAdvance)
     {
         Data["7"] = ([
-            "name":"Exit Attribute Menu",
+            "name": "Exit Attribute Menu",
             "type": "exit",
             "description": "This option lets you exit the attribute advancement menu.\n"
         ]);

@@ -17,10 +17,10 @@ protected void Setup()
         "eye contact for increased accuracy");
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/methods-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 1
         ]));
@@ -80,13 +80,13 @@ protected void Setup()
             "rate": 0.05
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.25
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.25

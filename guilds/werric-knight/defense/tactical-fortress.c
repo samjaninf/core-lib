@@ -15,9 +15,9 @@ protected void Setup()
         "making your position nearly impregnable.");
 
     addPrerequisite("guilds/werric-knight/defense/legendary-defender.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -3371,7 +3371,7 @@ private mapping MotteBuildings = ([
         ]),
         "components":([
             "SW1":([
-                "ascii":"...",
+                "ascii": "...",
                     "unicode" : "\u2514\u2508\u2518",
             ]),
             "SW2": ([
@@ -3876,7 +3876,7 @@ private mapping MotteBuildings = ([
         ]),
         "components":([
             "SE3":([
-                "ascii":"...",
+                "ascii": "...",
                     "unicode" : "\u2514\u2508\u2518",
             ]),
             "SE4": ([

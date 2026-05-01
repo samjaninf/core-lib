@@ -14,12 +14,12 @@ protected void Setup()
         "understanding of nightmare power.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 53 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/supreme-nightmare.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

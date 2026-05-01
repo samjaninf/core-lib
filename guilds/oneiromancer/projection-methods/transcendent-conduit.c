@@ -14,12 +14,12 @@ protected void Setup()
         "of the most powerful methods.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 40 ]));
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/perfected-conduit.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Collective Resonance": 25,

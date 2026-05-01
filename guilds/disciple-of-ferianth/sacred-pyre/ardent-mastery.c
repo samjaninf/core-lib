@@ -13,10 +13,10 @@ protected void Setup()
         "mastery of the ardent's sacred arts.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/ferianths-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 40
         ]));

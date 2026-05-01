@@ -14,10 +14,10 @@ protected void Setup()
         "wall of stone that provides superior protection.");
 
     addPrerequisite("/guilds/geomancer/earth/earth-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 21
         ]));

@@ -596,7 +596,7 @@ void GetBestKillReturnsBestKill()
 
     Player.saveCombatStatistics(Player, foe);
 
-    ExpectEq((["name":"Blarg",
+    ExpectEq((["name": "Blarg",
                "level" : 18,
                "key" : "/lib/realizations/monster.c#Blarg",
                "times killed" : 1]),
@@ -615,7 +615,7 @@ void GetNemesisReturnsNemesis()
 
     Player.saveCombatStatistics(Player, foe);
 
-    ExpectEq((["name":"Rargh!",
+    ExpectEq((["name": "Rargh!",
                "level" : 8,
                "key" : "/lib/realizations/monster.c#Rargh!",
                "times killed" : 2]),

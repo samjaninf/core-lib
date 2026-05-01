@@ -14,7 +14,7 @@ protected void Setup()
         "combination attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 15
         ]));

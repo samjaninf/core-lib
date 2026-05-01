@@ -95,7 +95,7 @@ void CannotSetInvalidLimitedByKey()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForOpponentRace()
 {
-    mapping limitor = (["opponent race":"elf"]);
+    mapping limitor = (["opponent race": "elf"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -103,7 +103,7 @@ void CanSetLimitorForOpponentRace()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForOpponentCreatureRace()
 {
-    mapping limitor = (["opponent race":"ogre"]);
+    mapping limitor = (["opponent race": "ogre"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -111,7 +111,7 @@ void CanSetLimitorForOpponentCreatureRace()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForRace()
 {
-    mapping limitor = (["race":"elf"]);
+    mapping limitor = (["race": "elf"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -119,7 +119,7 @@ void CanSetLimitorForRace()
 /////////////////////////////////////////////////////////////////////////////
 void CannotSetLimitorForInvalidRace()
 {
-    string err = catch (Specification.addSpecification("limited by", (["opponent race":"tomato"])); nolog);
+    string err = catch (Specification.addSpecification("limited by", (["opponent race": "tomato"])); nolog);
     string expectedError = "*ERROR - specification: The value of 'limited by' must be a valid limiting mapping. See the specification.validLimitor method for details.\n";
 
     ExpectEq(expectedError, err, "The correct exception is thrown when setting invalid 'limited by'");
@@ -128,7 +128,7 @@ void CannotSetLimitorForInvalidRace()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForOpponentGuild()
 {
-    mapping limitor = (["opponent guild":"test"]);
+    mapping limitor = (["opponent guild": "test"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -136,7 +136,7 @@ void CanSetLimitorForOpponentGuild()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForGuild()
 {
-    mapping limitor = (["guild":"test"]);
+    mapping limitor = (["guild": "test"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -144,7 +144,7 @@ void CanSetLimitorForGuild()
 /////////////////////////////////////////////////////////////////////////////
 void CannotSetLimitorForInvalidGuild()
 {
-    string err = catch (Specification.addSpecification("limited by", (["opponent guild":"turnip"])); nolog);
+    string err = catch (Specification.addSpecification("limited by", (["opponent guild": "turnip"])); nolog);
     string expectedError = "*ERROR - specification: The value of 'limited by' must be a valid limiting mapping. See the specification.validLimitor method for details.\n";
 
     ExpectEq(expectedError, err, "The correct exception is thrown when setting invalid 'limited by'");
@@ -153,7 +153,7 @@ void CannotSetLimitorForInvalidGuild()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForOpponentFaction()
 {
-    mapping limitor = (["opponent faction":"/lib/tests/support/factions/goodGuys.c"]);
+    mapping limitor = (["opponent faction": "/lib/tests/support/factions/goodGuys.c"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -161,7 +161,7 @@ void CanSetLimitorForOpponentFaction()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForFaction()
 {
-    mapping limitor = (["faction":"/lib/tests/support/factions/goodGuys.c"]);
+    mapping limitor = (["faction": "/lib/tests/support/factions/goodGuys.c"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -169,7 +169,7 @@ void CanSetLimitorForFaction()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForEnvironment()
 {
-    mapping limitor = (["environment":"forest"]);
+    mapping limitor = (["environment": "forest"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -225,7 +225,7 @@ void CanSetLimitorForSpellPointsDrained()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForEquipmentThatIsAValidWeaponType()
 {
-    mapping limitor = (["equipment":"long sword"]);
+    mapping limitor = (["equipment": "long sword"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -233,7 +233,7 @@ void CanSetLimitorForEquipmentThatIsAValidWeaponType()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForEquipmentThatIsAValidArmorType()
 {
-    mapping limitor = (["equipment":"soft leather"]);
+    mapping limitor = (["equipment": "soft leather"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -241,7 +241,7 @@ void CanSetLimitorForEquipmentThatIsAValidArmorType()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForEquipmentThatIsAValidEquipmentType()
 {
-    mapping limitor = (["equipment":"gloves"]);
+    mapping limitor = (["equipment": "gloves"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -327,7 +327,7 @@ void CanSetLimitorThatIsAList()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetMultipleLimitors()
 {
-    mapping limitor = (["spell points drained":1, "opponent guild":"test"]);
+    mapping limitor = (["spell points drained":1, "opponent guild": "test"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -349,7 +349,7 @@ void CanApplySpecificationReturnsTrueIfNoLimitorsArePresent()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForOpponentRace()
 {
-    mapping limitor = (["opponent race":"elf"]);
+    mapping limitor = (["opponent race": "elf"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -371,7 +371,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForRace()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForOpponentGuild()
 {
-    mapping limitor = (["opponent guild":"test"]);
+    mapping limitor = (["opponent guild": "test"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -383,7 +383,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForOpponentGuild()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForGuild()
 {
-    mapping limitor = (["guild":"test"]);
+    mapping limitor = (["guild": "test"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -395,7 +395,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForGuild()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForOpponentFaction()
 {
-    mapping limitor = (["opponent faction":"/lib/tests/support/factions/goodGuys.c"]);
+    mapping limitor = (["opponent faction": "/lib/tests/support/factions/goodGuys.c"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -406,7 +406,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForOpponentFaction()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForFaction()
 {
-    mapping limitor = (["faction":"/lib/tests/support/factions/goodGuys.c"]);
+    mapping limitor = (["faction": "/lib/tests/support/factions/goodGuys.c"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -419,7 +419,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForEnvironment()
 {
     object room = clone_object("/lib/environment/environment");
 
-    mapping limitor = (["environment":"unknown"]);
+    mapping limitor = (["environment": "unknown"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
     move_object(Attacker, room);
@@ -481,7 +481,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForNearDeath()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForWeapon()
 {
-    mapping limitor = (["equipment":"long sword"]);
+    mapping limitor = (["equipment": "long sword"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -523,7 +523,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForWeaponInList()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsFalseWithLimitorForWeaponNotMet()
 {
-    mapping limitor = (["equipment":"long sword"]);
+    mapping limitor = (["equipment": "long sword"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -557,7 +557,7 @@ void CanApplySpecificationReturnsFalseWithMultipleLimitorForWeaponNotMet()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForArmor()
 {
-    mapping limitor = (["equipment":"chainmail"]);
+    mapping limitor = (["equipment": "chainmail"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -575,7 +575,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForArmor()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForEquipment()
 {
-    mapping limitor = (["equipment":"gloves"]);
+    mapping limitor = (["equipment": "gloves"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no values set");
 
@@ -704,7 +704,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForTraits()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayLimitersStringCorrectWithLimitorForOpponentRace()
 {
-    mapping limitor = (["opponent race":"elf"]);
+    mapping limitor = (["opponent race": "elf"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the opponent race is elf.\n\x1b[0m", Specification.displayLimiters(colorConfiguration, Configuration));
 }
@@ -720,7 +720,7 @@ void DisplayLimitersStringCorrectWithLimitorForRace()
 /////////////////////////////////////////////////////////////////////////////
 void  DisplayLimitersStringCorrectWithLimitorForOpponentGuild()
 {
-    mapping limitor = (["opponent guild":"test"]);
+    mapping limitor = (["opponent guild": "test"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the opponent guild is test.\n\x1b[0m", Specification.displayLimiters(colorConfiguration, Configuration));
 }
@@ -736,7 +736,7 @@ void DisplayLimitersStringCorrectWithLimitorForGuild()
 /////////////////////////////////////////////////////////////////////////////
 void  DisplayLimitersStringCorrectWithLimitorForOpponentFaction()
 {
-    mapping limitor = (["opponent faction":"/lib/tests/support/factions/goodGuys.c"]);
+    mapping limitor = (["opponent faction": "/lib/tests/support/factions/goodGuys.c"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when opponent faction is good guys.\n\x1b[0m", Specification.displayLimiters(colorConfiguration, Configuration));
 }
@@ -744,7 +744,7 @@ void  DisplayLimitersStringCorrectWithLimitorForOpponentFaction()
 /////////////////////////////////////////////////////////////////////////////
 void  DisplayLimitersStringCorrectWithLimitorForFaction()
 {
-    mapping limitor = (["faction":"/lib/tests/support/factions/goodGuys.c"]);
+    mapping limitor = (["faction": "/lib/tests/support/factions/goodGuys.c"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when faction is good guys.\n\x1b[0m", Specification.displayLimiters(colorConfiguration, Configuration));
 }
@@ -752,7 +752,7 @@ void  DisplayLimitersStringCorrectWithLimitorForFaction()
 /////////////////////////////////////////////////////////////////////////////
 void  DisplayLimitersStringCorrectWithLimitorForEnvironment()
 {
-    mapping limitor = (["environment":"forest"]);
+    mapping limitor = (["environment": "forest"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the environment is forest.\n\x1b[0m", Specification.displayLimiters(colorConfiguration, Configuration));
 }
@@ -760,7 +760,7 @@ void  DisplayLimitersStringCorrectWithLimitorForEnvironment()
 /////////////////////////////////////////////////////////////////////////////
 void  DisplayLimitersStringCorrectWithLimitorForEnvironmentState()
 {
-    mapping limitor = (["environment state":"deadified"]);
+    mapping limitor = (["environment state": "deadified"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the environment state is "
         "deadified.\n\x1b[0m", 
@@ -794,7 +794,7 @@ void DisplayLimitersStringCorrectWithLimitorForNearDeath()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayLimitersStringCorrectWithLimitorForWeapon()
 {
-    mapping limitor = (["equipment":"long sword"]);
+    mapping limitor = (["equipment": "long sword"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when you're using: long sword.\n\x1b[0m", Specification.displayLimiters(colorConfiguration, Configuration));
 }
@@ -911,7 +911,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForMoonPhase()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayLimitersStringCorrectWithLimitorForTimeOfDay()
 {
-    mapping limitor = (["time of day":"dusk"]);
+    mapping limitor = (["time of day": "dusk"]);
 
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the time of day is dusk.\n\x1b[0m", 
@@ -931,7 +931,7 @@ void DisplayLimitersStringCorrectWithLimitorForListOfTimesOfDay()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayLimitersStringCorrectWithLimitorForSeason()
 {
-    mapping limitor = (["season":"autumn"]);
+    mapping limitor = (["season": "autumn"]);
 
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the season is autumn.\n\x1b[0m",
@@ -951,7 +951,7 @@ void DisplayLimitersStringCorrectWithLimitorForListOfSeasons()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayLimitersStringCorrectWithLimitorForMoonPhase()
 {
-    mapping limitor = (["moon phase":"waning gibbous"]);
+    mapping limitor = (["moon phase": "waning gibbous"]);
 
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the moon phase is waning gibbous.\n\x1b[0m",
@@ -1042,7 +1042,7 @@ void DisplayLimitersStringCorrectWithLimitorForTraits()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetLimitorForOpponentEquipmentMaterial()
 {
-    mapping limitor = (["opponent equipment material":"metal"]);
+    mapping limitor = (["opponent equipment material": "metal"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq(limitor, Specification.query("limited by"), "query the limitor");
 }
@@ -1059,7 +1059,7 @@ void CanSetLimitorForOpponentEquipmentMaterialWithList()
 void CannotSetLimitorForInvalidOpponentEquipmentMaterial()
 {
     string err = catch (Specification.addSpecification("limited by", 
-        (["opponent equipment material":"cheese"])); nolog);
+        (["opponent equipment material": "cheese"])); nolog);
     string expectedError = "*ERROR - specification: The value of 'limited by' "
         "must be a valid limiting mapping. See the specification.validLimitor "
         "method for details.\n";
@@ -1070,7 +1070,7 @@ void CannotSetLimitorForInvalidOpponentEquipmentMaterial()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWithLimitorForOpponentEquipmentMaterial()
 {
-    mapping limitor = (["opponent equipment material":"metal"]);
+    mapping limitor = (["opponent equipment material": "metal"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectFalse(Specification.canApplySpecification("blah", Attacker, Attacker), "no equipment");
 
@@ -1089,7 +1089,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForOpponentEquipmentMaterial()
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsFalseWhenOpponentHasNoMetalEquipment()
 {
-    mapping limitor = (["opponent equipment material":"metal"]);
+    mapping limitor = (["opponent equipment material": "metal"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
 
     object armor = clone_object("/lib/items/armor");
@@ -1123,7 +1123,7 @@ void CanApplySpecificationReturnsTrueWithLimitorForOpponentEquipmentMaterialList
 /////////////////////////////////////////////////////////////////////////////
 void CanApplySpecificationReturnsTrueWhenOpponentHasMetalArmor()
 {
-    mapping limitor = (["opponent equipment material":"metal"]);
+    mapping limitor = (["opponent equipment material": "metal"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
 
     object armor = clone_object("/lib/items/armor");
@@ -1140,7 +1140,7 @@ void CanApplySpecificationReturnsTrueWhenOpponentHasMetalArmor()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayLimitersStringCorrectWithLimitorForOpponentEquipmentMaterial()
 {
-    mapping limitor = (["opponent equipment material":"metal"]);
+    mapping limitor = (["opponent equipment material": "metal"]);
     ExpectTrue(Specification.addSpecification("limited by", limitor), "set the limitor");
     ExpectEq("\x1b[0;36mThis is only applied when the opponent equipment material is metal.\n\x1b[0m", 
         Specification.displayLimiters(colorConfiguration, Configuration));

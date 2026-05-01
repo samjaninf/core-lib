@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that target a foe by touch.");
 
     addPrerequisite("/guilds/aquamancer/forms/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

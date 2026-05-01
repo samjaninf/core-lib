@@ -14,12 +14,12 @@ protected void Setup()
         "constructed spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 5
         ]));
     addPrerequisite("/guilds/aquamancer/construct/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

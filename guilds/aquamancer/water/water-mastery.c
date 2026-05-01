@@ -16,13 +16,13 @@ protected void Setup()
         "enhancing all water-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 19
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/whirlpool.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with hellfire.");
 
     addPrerequisite("/guilds/pyromancer/functions/conflagration.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -17,12 +17,12 @@ protected void Setup()
         "/guilds/scion/common/mana-shield/root.c" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 37 ]));
 
     addPrerequisite("/guilds/scion/common/mana-shield/shroud-of-finiasc.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

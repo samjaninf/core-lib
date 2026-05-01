@@ -15,12 +15,12 @@ protected void Setup()
         "all enemies with crushing waves of sacred fury.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 63 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/cataclysmic-deluge.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

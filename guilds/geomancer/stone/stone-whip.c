@@ -15,7 +15,7 @@ protected void Setup()
         "enemies, draining their vitals and restoring the caster's.");
 
     addPrerequisite("/guilds/geomancer/stone/stone-lash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

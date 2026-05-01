@@ -15,7 +15,7 @@ protected void Setup()
         "of stone and debris.");
 
     addPrerequisite("/guilds/geomancer/forms/strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

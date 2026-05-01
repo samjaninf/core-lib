@@ -229,9 +229,9 @@ void CanSetSourceToStringValue()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetPrerequisites()
 {
-    mapping prereqs = ([ "fetch a pencil": (["type":"quest"]),
-        "guild": (["type":"guild", "value": ({ "test" }) ]),
-        "race": (["type":"race", "value": ({ "elf", "high elf", "half elf" }) ])
+    mapping prereqs = ([ "fetch a pencil": (["type": "quest"]),
+        "guild": (["type": "guild", "value": ({ "test" }) ]),
+        "race": (["type": "race", "value": ({ "elf", "high elf", "half elf" }) ])
     ]);
 
     ExpectTrue(mappingp(prereqs));

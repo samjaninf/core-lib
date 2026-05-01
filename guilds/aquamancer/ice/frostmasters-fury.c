@@ -14,12 +14,12 @@ protected void Setup()
         "can use their ice attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 41
         ]));
     addPrerequisite("/guilds/aquamancer/ice/frostmasters-might.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

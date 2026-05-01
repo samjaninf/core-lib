@@ -14,13 +14,13 @@ protected void Setup()
         "geomancer's stone-based abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/geomancer/stone/enhanced-stone.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

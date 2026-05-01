@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that pulse with seismic energy.");
 
     addPrerequisite("/guilds/geomancer/forms/coil.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

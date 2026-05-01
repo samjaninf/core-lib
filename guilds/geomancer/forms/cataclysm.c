@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that unleash catastrophic destruction.");
 
     addPrerequisite("/guilds/geomancer/forms/quake.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -13,10 +13,10 @@ protected void Setup()
         "the pinnacle of divine focus and magical capability.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/ardent-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 48
         ]));

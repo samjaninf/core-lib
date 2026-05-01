@@ -13,10 +13,10 @@ protected void Setup()
         "knowledge of channeling righteous fury into divine judgment.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/divine-resilience.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 45
         ]));

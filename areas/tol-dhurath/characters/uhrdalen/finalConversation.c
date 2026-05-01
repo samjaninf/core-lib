@@ -43,7 +43,7 @@ private void TheMeaningOfThePoem()
         "Weakness and strength were the same choice. You obeyed because "
         "you were too strong to break and too weak to refuse.'");
     addResponsePrerequisite("the meaning", "It is about you... @A@Wisdom@E@",
-        (["wisdom":(["type":"attribute", "value" : 4])]), 1);
+        (["wisdom":(["type": "attribute", "value" : 4])]), 1);
 
     addResponse("the meaning", "It is about obedience...",
         "@D@@C@##InitiatorName## thoughtfully ##ResponseInfinitive::say##, "

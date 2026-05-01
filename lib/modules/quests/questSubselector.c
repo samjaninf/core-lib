@@ -63,7 +63,7 @@ protected nomask void setUpUserForSelection()
     Data = questMenuSetup(Source);
 
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Return to previous menu",
+        "name": "Return to previous menu",
         "type": "exit",
         "description" : "Return to the main quest menu.\n"
     ]);

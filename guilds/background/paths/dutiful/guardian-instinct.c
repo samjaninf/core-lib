@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus hit points", 3);
 
     addPrerequisite("/guilds/background/paths/dutiful/keen-memory.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

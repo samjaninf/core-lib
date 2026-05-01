@@ -15,11 +15,11 @@ protected void Setup()
         "disorientation in enemies.");
     addSpecification("research type", "points");
     addSpecification("research cost", 7);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 14]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 6]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 4]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 14]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 6]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/confusion-projector.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 7);

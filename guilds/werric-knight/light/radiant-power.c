@@ -13,9 +13,9 @@ protected void Setup()
         "granting you radiant power that enhances all your holy abilities.");
 
     addPrerequisite("guilds/werric-knight/light/aura-of-protection.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":28]));
+        (["type": "guild", "level":28]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

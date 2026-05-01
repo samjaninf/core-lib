@@ -17,5 +17,5 @@ protected void Setup()
     addSpecification("bonus hit points", 10);
 
     addPrerequisite("/guilds/background/paths/devoted/spiritual-fortitude.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

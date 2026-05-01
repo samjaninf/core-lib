@@ -14,12 +14,12 @@ protected void Setup()
         "axe attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 41
         ]));
     addPrerequisite("/guilds/fighter/shields/shieldmasters-might.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -15,15 +15,15 @@ protected void Setup()
         "the oldest horrors of the dream realm.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 67 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/primordial-fear.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/deathless-horror.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

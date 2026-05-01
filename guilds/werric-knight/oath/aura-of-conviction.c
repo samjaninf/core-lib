@@ -15,9 +15,9 @@ protected void Setup()
         "bolstered by your absolute certainty.");
 
     addPrerequisite("guilds/werric-knight/oath/i-am-not-my-doubt.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type": "guild", "level":9]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -13,9 +13,9 @@ protected void Setup()
         "knightly virtues, an exemplar that all aspire to emulate.");
 
     addPrerequisite("/guilds/werric-knight/virtues/inspiring-presence.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,10 +14,10 @@ protected void Setup()
         "themselves with a ring of protective fire.");
 
     addPrerequisite("/guilds/pyromancer/fire/fire-walk.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 37
         ]));

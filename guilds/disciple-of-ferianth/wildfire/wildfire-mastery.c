@@ -14,13 +14,13 @@ protected void Setup()
         "of all wildfire abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 5
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/smolder.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

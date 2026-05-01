@@ -1334,7 +1334,7 @@ void OneForTwoSkillReturnsProperBonus()
 void CanAddCustomSkill()
 {
     mapping newSkill = ([
-        "type":"general",
+        "type": "general",
             "attribute" : "wisdom",
             "bonus calculator" : "one for one",
             "untrained penalty" : 0,
@@ -1348,7 +1348,7 @@ void CanAddCustomSkill()
 void OneForOneSkillReturnsProperBonus()
 {
     mapping newSkill = ([
-        "type":"general",
+        "type": "general",
             "attribute" : "wisdom",
             "bonus calculator" : "one for one",
             "untrained penalty" : 0,
@@ -1363,7 +1363,7 @@ void OneForOneSkillReturnsProperBonus()
 void LogarithmicSkillReturnsProperBonus()
 {
     mapping newSkill = ([
-        "type":"general",
+        "type": "general",
             "attribute" : "wisdom",
             "bonus calculator" : "logarithmic",
             "untrained penalty" : 0,

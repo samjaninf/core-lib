@@ -17,10 +17,10 @@ protected void Setup()
         "difficult to hit.");
 
     addPrerequisite("/guilds/aeromancer/air/air-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 23
         ]));

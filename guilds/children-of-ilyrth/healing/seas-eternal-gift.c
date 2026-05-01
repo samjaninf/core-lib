@@ -15,12 +15,12 @@ protected void Setup()
         "remarkable efficiency.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 41 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/divine-restoration.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

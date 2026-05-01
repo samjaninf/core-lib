@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form coils of fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/cage.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

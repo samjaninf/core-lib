@@ -10,12 +10,12 @@ protected void Setup()
     addSpecification("name", "zorlak's revenge");
     addSpecification("source", "mage guild");
     addSpecification("description", "This is limited active research");
-    addPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    addPrerequisite("long sword", (["type": "skill", "value" : 10]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("spell point cost", 1);
-    addSpecification("limited by", (["equipment":"long sword"]));
+    addSpecification("limited by", (["equipment": "long sword"]));
     addSpecification("increase hit points", ({ ([
         "probability":80,
         "base damage" : 25,
@@ -27,13 +27,13 @@ protected void Setup()
         "range" : 25
     ])}));
     addSpecification("modifiers", ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.25
     ]),
     ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "strength",
         "formula": "subtractive",
         "rate": 0.25

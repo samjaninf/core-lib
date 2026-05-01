@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge that enhances the fighter's combat abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 57
         ]));
     addPrerequisite("/guilds/fighter/polearms/slicing-stroke.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

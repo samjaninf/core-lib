@@ -15,9 +15,9 @@ protected void Setup()
         "This is the mindset that has protected kings and saved kingdoms.");
 
     addPrerequisite("guilds/werric-knight/defender/intercept.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":27]));
+        (["type": "guild", "level":27]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

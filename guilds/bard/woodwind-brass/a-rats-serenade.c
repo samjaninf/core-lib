@@ -21,7 +21,7 @@ protected void Setup()
         "woodwind and brass instruments.");
 
     addPrerequisite("/guilds/bard/woodwind-brass/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ 
         "instrument: woodwind", "instrument: brass" })]));

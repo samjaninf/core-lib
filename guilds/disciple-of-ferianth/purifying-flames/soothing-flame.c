@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A heal-over-time effect on a target");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/cauterize.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 3
         ]));

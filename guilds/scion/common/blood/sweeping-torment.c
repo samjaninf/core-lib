@@ -22,11 +22,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 3 ]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/blood/soulstrike.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

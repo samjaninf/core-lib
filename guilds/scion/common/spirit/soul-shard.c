@@ -25,11 +25,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/spirit/spirit-bolt.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 9
         ]));
@@ -61,7 +61,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/chill-the-blood.c", WeaponType),
             "name" : "Chill the Blood",
             "formula" : "multiplicative",
@@ -69,7 +69,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/spirit-mark.c", WeaponType),
             "name" : "Spirit Mark",
             "formula" : "multiplicative",
@@ -77,7 +77,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/spectral-rage.c", WeaponType),
             "name" : "Spectral Rage",
             "formula" : "multiplicative",
@@ -85,7 +85,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/nienwyns-kiss.c", WeaponType),
             "name" : "Nienwyn's Kiss",
             "formula" : "multiplicative",
@@ -93,7 +93,7 @@ protected void Setup()
             "rate": 1.35
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/laiwyths-mark.c", WeaponType),
             "name" : "Laiwyth's Mark",
             "formula" : "multiplicative",
@@ -101,7 +101,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/spirit-shear.c", WeaponType),
             "name" : "Spirit Shear",
             "formula" : "multiplicative",
@@ -109,7 +109,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/laiwyths-lament.c", WeaponType),
             "name" : "Laiwyth's Lament",
             "formula" : "multiplicative",
@@ -117,7 +117,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/flay-the-soul.c", WeaponType),
             "name" : "Flay the Soul",
             "formula" : "multiplicative",
@@ -125,7 +125,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/spirit/soul-scourge.c", WeaponType),
             "name" : "Soul Scourge",
             "formula" : "multiplicative",
@@ -140,13 +140,13 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "spirit",
             "formula" : "additive",
             "rate" : 0.10
@@ -164,13 +164,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

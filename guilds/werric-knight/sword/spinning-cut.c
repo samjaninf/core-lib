@@ -13,9 +13,9 @@ protected void Setup()
         "that add momentum and power to your blade techniques.");
 
     addPrerequisite("/guilds/werric-knight/sword/crossed-swords.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type": "guild", "level":9]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

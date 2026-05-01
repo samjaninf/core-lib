@@ -15,10 +15,10 @@ protected void Setup()
         "usable while in dragon form");
 
     addPrerequisite("/guilds/therianthrope/dragon/hoarfrost-mantle.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 49
         ]));

@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that deliver devastating strikes of stone.");
 
     addPrerequisite("/guilds/geomancer/forms/lance.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

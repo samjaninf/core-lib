@@ -14,12 +14,12 @@ protected void Setup()
         "The caster's defensive barriers grow stronger and more imposing.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 11 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/current-deflection.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,9 +13,9 @@ protected void Setup()
         "push you to new heights of physical and mental capability.");
 
     addPrerequisite("guilds/werric-knight/discipline/steel-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":20]));
+        (["type": "guild", "level":20]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

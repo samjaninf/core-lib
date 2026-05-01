@@ -15,10 +15,10 @@ protected void Setup()
         "draining their vitality.");
 
     addPrerequisite("/guilds/geomancer/earth/quicksand.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 29
         ]));

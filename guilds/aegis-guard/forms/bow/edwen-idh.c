@@ -14,12 +14,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "bow" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 13 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/bow/adleg.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

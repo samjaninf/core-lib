@@ -14,12 +14,12 @@ protected void Setup()
         "methods.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 6 ]));
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/eye-contact.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Eye Contact": 15,

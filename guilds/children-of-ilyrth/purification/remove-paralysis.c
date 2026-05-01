@@ -15,12 +15,12 @@ protected void Setup()
         "hold the target immobile.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 19 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/paralysis-ward.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

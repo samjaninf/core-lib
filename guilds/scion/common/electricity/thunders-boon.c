@@ -22,11 +22,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild" : "Scion of Dhuras",
             "value" : 21]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/electricity/shocking-edge.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

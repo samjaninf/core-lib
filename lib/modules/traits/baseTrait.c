@@ -249,7 +249,7 @@ public nomask mapping *getExtraAttacks()
                 int numAttacks = specificationData["bonus weapon attack"];
                 for (int i = 0; i < numAttacks; i++)
                 {
-                    ret += ({ (["attack type":"weapon"]) });
+                    ret += ({ (["attack type": "weapon"]) });
                 }
             }
             else if(sscanf(key, "bonus %s attack", attack) && specificationData[key] &&

@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus intelligence", 1);
 
     addPrerequisite("/guilds/background/paths/manipulative/master-negotiator.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

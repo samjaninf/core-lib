@@ -13,9 +13,9 @@ protected void Setup()
         "and tempest-style attacks with greater efficiency.");
 
     addPrerequisite("/guilds/werric-knight/sword/blade-tempest.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

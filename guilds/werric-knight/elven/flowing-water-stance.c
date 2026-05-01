@@ -15,9 +15,9 @@ protected void Setup()
         "head-on, conserving energy while frustrating opponents.");
 
     addPrerequisite("guilds/werric-knight/elven/dancing-blade.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

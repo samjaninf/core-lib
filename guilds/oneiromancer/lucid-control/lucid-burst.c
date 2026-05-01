@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of channeling a burst of perfectly focused dream energy.");
 
     addPrerequisite("/guilds/oneiromancer/lucid-control/focused-dreaming.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 7
         ]));

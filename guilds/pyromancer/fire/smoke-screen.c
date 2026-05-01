@@ -14,10 +14,10 @@ protected void Setup()
         "of choking smoke that obscures vision and damages those caught within.");
 
     addPrerequisite("/guilds/pyromancer/fire/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 5
         ]));

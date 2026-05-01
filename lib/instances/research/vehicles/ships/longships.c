@@ -14,9 +14,9 @@ protected void Setup()
         "both rowing and sailing, ideal for coastal raids and exploration.");
     addSpecification("research type", "points");
     addSpecification("research cost", 4);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 6]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 4]));
-    addPrerequisite("leather crafting", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 4]));
+    addPrerequisite("leather crafting", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/ships/coastal-sailing-vessels.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

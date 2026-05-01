@@ -161,7 +161,7 @@ protected nomask void setUpUserForSelection()
     {
         Description = "No available vehicles or warehouse space for this transaction.";
         Data["1"] = ([
-            "name":"Cancel",
+            "name": "Cancel",
             "type" : "exit",
             "description" : "Cancel this transaction.",
             "canShow" : 1

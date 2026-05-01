@@ -14,10 +14,10 @@ protected void Setup()
         "pyromancer conjures a longer, more powerful whip of flame.");
 
     addPrerequisite("/guilds/pyromancer/flame/flame-lash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 13
         ]));

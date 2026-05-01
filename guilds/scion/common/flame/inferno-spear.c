@@ -25,11 +25,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/flame/fireball.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 29
         ]));
@@ -72,7 +72,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/fuel-the-flames.c", WeaponType),
             "name" : "Fuel the Flames",
             "formula" : "multiplicative",
@@ -80,7 +80,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/scorching-mark.c", WeaponType),
             "name" : "Scorching Mark",
             "formula" : "multiplicative",
@@ -88,7 +88,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/stoking-rage.c", WeaponType),
             "name" : "Stoking Rage",
             "formula" : "multiplicative",
@@ -96,7 +96,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/enhanced-blaze.c", WeaponType),
             "name" : "Enhanced Blaze",
             "formula" : "multiplicative",
@@ -104,7 +104,7 @@ protected void Setup()
             "rate": 1.35
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/inferno-mark.c", WeaponType),
             "name" : "Inferno Mark",
             "formula" : "multiplicative",
@@ -112,7 +112,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/enhanced-flames.c", WeaponType),
             "name" : "Enhanced Flames",
             "formula" : "multiplicative",
@@ -120,7 +120,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/raging-inferno.c", WeaponType),
             "name" : "Raging Inferno",
             "formula" : "multiplicative",
@@ -128,7 +128,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/scorching-blast.c", WeaponType),
             "name" : "Scorching Blast",
             "formula" : "multiplicative",
@@ -136,7 +136,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/flame/incinerating-strike.c", WeaponType),
             "name" : "Incinerating Strike",
             "formula" : "multiplicative",
@@ -151,13 +151,13 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental fire",
             "formula" : "additive",
             "rate" : 0.10
@@ -175,13 +175,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

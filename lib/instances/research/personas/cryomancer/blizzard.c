@@ -30,17 +30,17 @@ protected void Setup()
             "range" : 50
     ]) }));
     addSpecification("modifiers", ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "elemental water",
         "formula": "additive",
         "rate": 1.15
     ]), ([
-        "type":"skill",
+        "type": "skill",
         "name": "evocation",
         "formula": "additive",
         "rate": 1.10
     ]), ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "intelligence",
         "formula": "logarithmic",
         "base value": 5,

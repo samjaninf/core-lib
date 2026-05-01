@@ -15,10 +15,10 @@ protected void Setup()
         "while in panther form");
 
     addPrerequisite("/guilds/therianthrope/panther/shadow-stalker.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 23
         ]));

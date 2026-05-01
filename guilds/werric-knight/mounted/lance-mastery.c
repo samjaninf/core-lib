@@ -14,9 +14,9 @@ protected void Setup()
         "when used from horseback.");
 
     addPrerequisite("guilds/werric-knight/mounted/cavalry-formation.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

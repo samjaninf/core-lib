@@ -14,12 +14,12 @@ protected void Setup()
         "that assaults the minds of all who behold them.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 37 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/dream-devourer.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

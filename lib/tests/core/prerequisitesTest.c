@@ -12,20 +12,20 @@ string colorConfiguration;
 /////////////////////////////////////////////////////////////////////////////
 void PopulatePrerequisites()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type":"level", "guild" : "mage", "value": 10])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type":"skill", "value": 10])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("strength", (["type":"attribute", "value" : 10])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("fetch a pencil", (["type":"quest" ])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("test research", (["type":"research"])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("race", (["type":"race", "value": ({ "elf", "high elf", "half elf" }) ])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("guild", (["type":"guild", "value": ({ "mage" }) ])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("best kill", (["type":"combat statistic", "value": 10 ])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("orc", (["type":"combat statistic", "value": 10])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("annoying", (["type":"trait", "value": ({ "boorish", "loutish" })])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("nifty", (["type":"trait", "value" : ({ "spiffy" })])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("background", (["type":"background", "value" : ({ "test" })])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("faction", (["type":"faction", "value" : ({ "test" })])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("opinion", (["type":"opinion", "value": 20])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type": "level", "guild" : "mage", "value": 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type": "skill", "value": 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("strength", (["type": "attribute", "value" : 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("fetch a pencil", (["type": "quest" ])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("test research", (["type": "research"])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("race", (["type": "race", "value": ({ "elf", "high elf", "half elf" }) ])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("guild", (["type": "guild", "value": ({ "mage" }) ])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("best kill", (["type": "combat statistic", "value": 10 ])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("orc", (["type": "combat statistic", "value": 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("annoying", (["type": "trait", "value": ({ "boorish", "loutish" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("nifty", (["type": "trait", "value" : ({ "spiffy" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("background", (["type": "background", "value" : ({ "test" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("faction", (["type": "faction", "value" : ({ "test" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("opinion", (["type": "opinion", "value": 20])));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -68,8 +68,8 @@ void CanAddValidPrerequisite()
 /////////////////////////////////////////////////////////////////////////////
 void CanAddValidPrerequisitesByGrouping()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type":"level", "guild" : "mage", "value" : 10]), "group a"));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type":"level", "guild" : "mage", "value" : 15]), "group b"));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type": "level", "guild" : "mage", "value" : 10]), "group a"));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type": "level", "guild" : "mage", "value" : 15]), "group b"));
     ExpectEq("([ group a: ([ level: ([ guild: mage, type: level, value: 10, ]), ]), group b: ([ level: ([ guild: mage, type: level, value: 15, ]), ]), ])", Prerequisite.getPrerequisites());
 }
 
@@ -92,7 +92,7 @@ void CheckPrerequsistesCorrectlyHandlesLevelChecks()
 {
     Researcher.ToggleMockGuilds();
     Researcher.SetLevel(10);
-    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type":"level", "guild" : "mage", "value" : 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("level", (["type": "level", "guild" : "mage", "value" : 10])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.SetGuild("fighter");
@@ -106,7 +106,7 @@ void CheckPrerequsistesCorrectlyHandlesLevelChecks()
 void CheckPrerequsistesCorrectlyHandlesGuildChecks()
 {
     Researcher.ToggleMockGuilds();
-    ExpectTrue(Prerequisite.AddTestPrerequisite("guild", (["type":"guild", "value" : ({ "mage" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("guild", (["type": "guild", "value" : ({ "mage" })])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.SetGuild("fighter");
@@ -145,7 +145,7 @@ void CheckPrerequsistesCorrectlyHandlesGuildRankChecks()
 void CheckPrerequsistesCorrectlyHandlesRaceChecks()
 {
     Researcher.ToggleMockGuilds();
-    ExpectTrue(Prerequisite.AddTestPrerequisite("race", (["type":"race", "value" : ({ "elf", "high elf", "half elf" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("race", (["type": "race", "value" : ({ "elf", "high elf", "half elf" })])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.Race("dwarf");
@@ -164,7 +164,7 @@ void CheckPrerequsistesCorrectlyHandlesRaceChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesSkillChecks()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type":"skill", "value" : 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type": "skill", "value" : 10])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.Str(20);
@@ -179,7 +179,7 @@ void CheckPrerequsistesCorrectlyHandlesSkillChecks()
 void CheckPrerequsistesCorrectlyHandlesResearchChecks()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("/lib/tests/support/research/testGrantedResearchItem.c",
-        (["type":"research"])));
+        (["type": "research"])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.ToggleMockResearch();
@@ -195,7 +195,7 @@ void CheckPrerequsistesCorrectlyHandlesEquivalentResearchChecks()
     Researcher.addResearchPoints(2);
 
     ExpectTrue(Prerequisite.AddTestPrerequisite("/lib/tests/support/research/testResearchA.c",
-        (["type":"research"])));
+        (["type": "research"])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     ExpectTrue(Researcher.initiateResearch(
@@ -207,7 +207,7 @@ void CheckPrerequsistesCorrectlyHandlesEquivalentResearchChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesAttributeChecks()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("wisdom", (["type":"attribute", "value": 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("wisdom", (["type": "attribute", "value": 10])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.Wis(8);
@@ -219,7 +219,7 @@ void CheckPrerequsistesCorrectlyHandlesAttributeChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesQuestChecks()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("fetch a pencil", (["type":"quest"])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("fetch a pencil", (["type": "quest"])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.ToggleMockQuests();
@@ -229,7 +229,7 @@ void CheckPrerequsistesCorrectlyHandlesQuestChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesFactionChecks()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("faction", (["type":"faction", "value": ({ "test" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("faction", (["type": "faction", "value": ({ "test" })])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.ToggleMockFaction();
@@ -239,7 +239,7 @@ void CheckPrerequsistesCorrectlyHandlesFactionChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesTraitsChecks()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("trait", (["type":"trait", "value" : ({ "boorish", "loutish" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("trait", (["type": "trait", "value" : ({ "boorish", "loutish" })])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.ToggleMockTrait();
@@ -257,8 +257,8 @@ void CheckPrerequsistesCorrectlyHandlesTraitsChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesMultipleTraitsChecks()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("annoying", (["type":"trait", "value" : ({ "boorish", "loutish" })])));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("nifty", (["type":"trait", "value" : ({ "spiffy" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("annoying", (["type": "trait", "value" : ({ "boorish", "loutish" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("nifty", (["type": "trait", "value" : ({ "spiffy" })])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.ToggleMockTrait();
@@ -273,7 +273,7 @@ void CheckPrerequsistesCorrectlyHandlesMultipleTraitsChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesBackgroundChecks()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("background", (["type":"background", "value" : ({ "test" })])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("background", (["type": "background", "value" : ({ "test" })])));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher), "check initially fails");
 
     Researcher.ToggleMockBackground();
@@ -283,8 +283,8 @@ void CheckPrerequsistesCorrectlyHandlesBackgroundChecks()
 /////////////////////////////////////////////////////////////////////////////
 void CheckPrerequsistesCorrectlyHandlesGroupings()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type":"skill", "value" : 5]), "group a"));
-    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type":"skill", "value" : 10]), "group b"));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type": "skill", "value" : 5]), "group a"));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", (["type": "skill", "value" : 10]), "group b"));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher, "group a"), "check initially fails for group a");
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher, "group b"), "check initially fails for group b");
 
@@ -307,7 +307,7 @@ void CheckPrerequsistesCorrectlyHandlesOpinionChecks()
     Researcher = clone_object("/lib/realizations/player.c");
     Researcher.Name("Bob");
 
-    ExpectTrue(Prerequisite.AddTestPrerequisite("opinion", (["type":"opinion", "value" : 20]), "group a"));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("opinion", (["type": "opinion", "value" : 20]), "group a"));
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher, "group a", owner), "check initially fails for group a");
 
     Researcher.addTrait("/lib/instances/traits/educational/articulate.c");
@@ -325,7 +325,7 @@ void CheckPrerequsistesCorrectlyHandlesPresenceChecks()
 
     move_object(Researcher, this_object());
 
-    ExpectTrue(Prerequisite.AddTestPrerequisite("presence", (["type":"presence", "value" : ({ "Fred" }) ]), "group a"));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("presence", (["type": "presence", "value" : ({ "Fred" }) ]), "group a"));
     move_object(owner, this_object());
     ExpectTrue(Prerequisite.checkPrerequisites(Researcher, "group a", owner), "check passes when present");
 
@@ -345,7 +345,7 @@ void CheckPrerequsistesCorrectlyHandlesNotPresentChecks()
     move_object(Researcher, this_object());
 
     ExpectTrue(Prerequisite.AddTestPrerequisite("not present", 
-        (["type":"not present", "value" : ({ "Fred" })]), "group a"));
+        (["type": "not present", "value" : ({ "Fred" })]), "group a"));
 
     move_object(owner, this_object());
     ExpectFalse(Prerequisite.checkPrerequisites(Researcher, "group a", owner), "check fails when present");
@@ -369,7 +369,7 @@ void CheckPrerequsistesCorrectlyHandlesSpokenTopicChecks()
 void DisplayPrerequisitesCorrectlyDisplaysQuestPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("/lib/tests/support/quests/fakeQuestItem.c",
-        ([ "type":"quest"])));
+        ([ "type": "quest"])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n"
         "\x1b[0m\x1b[0;33m          Quest: \x1b[0m\x1b[0;35mHail to the king, baby!\n\x1b[0m", 
@@ -380,7 +380,7 @@ void DisplayPrerequisitesCorrectlyDisplaysQuestPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysResearchPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("/lib/tests/support/research/testGrantedResearchItem.c",
-        (["type":"research"])));
+        (["type": "research"])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n"
         "\x1b[0m\x1b[0;33m       Research: \x1b[0m\x1b[0;35mGranted Research\n\x1b[0m",
@@ -405,7 +405,7 @@ void DisplayPrerequisitesCorrectlyDisplaysTraitPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysAttributePrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("wisdom", ([
-        "type":"attribute", "value": 10])));
+        "type": "attribute", "value": 10])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m      Attribute: \x1b[0m\x1b[0;35mWisdom of 10\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -415,7 +415,7 @@ void DisplayPrerequisitesCorrectlyDisplaysAttributePrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysSkillPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("long sword", ([
-        "type":"skill", "value" : 10])));
+        "type": "skill", "value" : 10])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m          Skill: \x1b[0m\x1b[0;35mLong sword of 10\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -425,7 +425,7 @@ void DisplayPrerequisitesCorrectlyDisplaysSkillPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysLevelPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("level", ([
-        "type":"level", "value": 10])));
+        "type": "level", "value": 10])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m          Level: \x1b[0m\x1b[0;35mLevel of 10\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -435,7 +435,7 @@ void DisplayPrerequisitesCorrectlyDisplaysLevelPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysLevelWithGuildPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("level", ([
-        "type":"level", "value": 10, "guild":"mage"])));
+        "type": "level", "value": 10, "guild": "mage"])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m          Level: \x1b[0m\x1b[0;35mLevel of 10 in Mage\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -445,7 +445,7 @@ void DisplayPrerequisitesCorrectlyDisplaysLevelWithGuildPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysRacePrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("race", ([
-        "type":"race", "value" : ({ "elf", "half-elf", "high elf" }) ])));
+        "type": "race", "value" : ({ "elf", "half-elf", "high elf" }) ])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m"
         "\x1b[0;33m           Race: \x1b[0m\x1b[0;35mElf or Half-elf or High Elf\n\x1b[0m",
@@ -456,7 +456,7 @@ void DisplayPrerequisitesCorrectlyDisplaysRacePrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysGuildPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("guild", ([
-        "type":"guild", "value": ({ "fighter", "thief" })])));
+        "type": "guild", "value": ({ "fighter", "thief" })])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m          Guild: \x1b[0m\x1b[0;35mFighter or Thief\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -466,7 +466,7 @@ void DisplayPrerequisitesCorrectlyDisplaysGuildPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysGuildRankPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("guild rank",
-        (["type":"guild rank", "guild" : "mage", "value" : ({ "adept", "archmage" })])));
+        (["type": "guild rank", "guild" : "mage", "value" : ({ "adept", "archmage" })])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m     Guild rank: "
         "\x1b[0m\x1b[0;35mRank in the mage guild of Adept or Archmage\n\x1b[0m",
@@ -477,7 +477,7 @@ void DisplayPrerequisitesCorrectlyDisplaysGuildRankPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysFactionPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("faction", ([
-        "type":"faction", "value": ({ "llama lords" })])));
+        "type": "faction", "value": ({ "llama lords" })])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m        Faction: \x1b[0m\x1b[0;35mLlama Lords\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -486,7 +486,7 @@ void DisplayPrerequisitesCorrectlyDisplaysFactionPrerequisites()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayPrerequisitesCorrectlyDisplaysCombatStatisticPrerequisites()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("orc", (["type":"combat statistic", "value" : 2])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("orc", (["type": "combat statistic", "value" : 2])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33mCombat statistic: \x1b[0m\x1b[0;35mOrc kill count of 2\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -495,7 +495,7 @@ void DisplayPrerequisitesCorrectlyDisplaysCombatStatisticPrerequisites()
 /////////////////////////////////////////////////////////////////////////////
 void DisplayPrerequisitesCorrectlyDisplaysBestKillPrerequisites()
 {
-    ExpectTrue(Prerequisite.AddTestPrerequisite("best kill", (["type":"combat statistic", "value" : 10])));
+    ExpectTrue(Prerequisite.AddTestPrerequisite("best kill", (["type": "combat statistic", "value" : 10])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33mCombat statistic: \x1b[0m\x1b[0;35mBest kill level is 10\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
@@ -505,7 +505,7 @@ void DisplayPrerequisitesCorrectlyDisplaysBestKillPrerequisites()
 void DisplayPrerequisitesCorrectlyDisplaysOpinionWithOpinionPrerequisites()
 {
     ExpectTrue(Prerequisite.AddTestPrerequisite("opinion", ([
-        "type":"opinion", "value": 10 ])));
+        "type": "opinion", "value": 10 ])));
 
     ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m        Opinion: \x1b[0m\x1b[0;35mOpinion of 10\n\x1b[0m",
         Prerequisite.displayPrerequisites(colorConfiguration, Configuration));

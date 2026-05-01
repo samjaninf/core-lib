@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus heal hit points rate", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/second-wind.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

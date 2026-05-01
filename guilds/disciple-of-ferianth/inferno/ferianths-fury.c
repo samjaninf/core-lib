@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Channel Ferianth's divine wrath as fire");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/rain-of-fire.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 51
         ]));

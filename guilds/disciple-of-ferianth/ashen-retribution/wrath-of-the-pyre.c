@@ -20,10 +20,10 @@ protected void Setup()
     ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ashen-retribution/flame-keepers-aegis.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 30
         ]));

@@ -14,13 +14,13 @@ protected void Setup()
         "enhancing the power of all earth-based attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 39
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/telluric-flow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

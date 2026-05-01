@@ -13,9 +13,9 @@ protected void Setup()
         "virtue, embodying honor, courage, justice, and mercy in all you do.");
 
     addPrerequisite("guilds/werric-knight/virtues/judgment-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":30]));
+        (["type": "guild", "level":30]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,10 +14,10 @@ protected void Setup()
         "siphon effects.");
 
     addPrerequisite("/guilds/pyromancer/effects/invigorating-siphon.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 21
         ]));

@@ -19,13 +19,13 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/common/stepped-tempering.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 7]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 8]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 10]));
-    addPrerequisite("physics", (["type":"skill", "value" : 5]));
-    addPrerequisite("mathematics", (["type":"skill", "value" : 4]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 7]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 8]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 10]));
+    addPrerequisite("physics", (["type": "skill", "value" : 5]));
+    addPrerequisite("mathematics", (["type": "skill", "value" : 4]));
 
     addSpecification("limited by", (["crafting type":({ "sword", "dagger",
         "pole arm", "staff", "axe", "hammer", "mace", "flail", "crossbow",

@@ -16,9 +16,9 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "shield" }) ]));
 
     addPrerequisite("/guilds/werric-knight/shield/defensive-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 3
         ]));
@@ -35,17 +35,17 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/shield/ultimate-defense.c",
-            "name":"Ultimate Defense",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/shield/ultimate-defense.c",
+            "name": "Ultimate Defense",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
             "rate":0.25
         ])
     }));

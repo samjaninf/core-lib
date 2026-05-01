@@ -19,11 +19,11 @@ protected void Setup()
         "very survival of Hillgarath hangs in the balance.");
 
     addPrerequisite("guilds/werric-knight/sword/werras-legacy.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("guilds/werric-knight/sword/ultimate-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":39]));
+        (["type": "guild", "level":39]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -56,69 +56,69 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/sword/fury-strike.c",
-            "name":"Fury Strike",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/sword/fury-strike.c",
+            "name": "Fury Strike",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.25
         ]),
         ([
-            "type":"research",
-            "research item":"/guilds/werric-knight/sword/supreme-blade-mastery.c",
-            "name":"Supreme Blade Mastery",
-            "formula":"multiplicative",
+            "type": "research",
+            "research item": "/guilds/werric-knight/sword/supreme-blade-mastery.c",
+            "name": "Supreme Blade Mastery",
+            "formula": "multiplicative",
             "base value":1,
             "rate":1.5
         ]),
         ([
-            "type":"weapon damage",
-            "name":"sword",
+            "type": "weapon damage",
+            "name": "sword",
             "types":({"dagger", "short sword", "long sword", "hand and a half sword", "two-handed sword"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.75
         ]),
         ([
-            "type":"highest skill",
-            "name":"sword skills",
+            "type": "highest skill",
+            "name": "sword skills",
             "skills":({"dagger", "short sword", "long sword", "hand and a half sword", "two-handed sword"}),
-            "formula":"additive",
+            "formula": "additive",
             "rate":0.5
         ]),
         ([
-            "type":"skill",
-            "name":"anatomy and physiology",
-            "formula":"additive",
+            "type": "skill",
+            "name": "anatomy and physiology",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"physics",
-            "formula":"additive",
+            "type": "skill",
+            "name": "physics",
+            "formula": "additive",
             "rate":0.10
         ]),
         ([
-            "type":"skill",
-            "name":"tactics",
-            "formula":"additive",
+            "type": "skill",
+            "name": "tactics",
+            "formula": "additive",
             "rate":0.05
         ]),
         ([
-            "type":"attribute",
-            "name":"strength",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "strength",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"dexterity",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "dexterity",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"intelligence",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
             "rate":0.15
         ])
     }));

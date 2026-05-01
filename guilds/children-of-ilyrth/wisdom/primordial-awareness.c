@@ -14,12 +14,12 @@ protected void Setup()
         "ancient consciousness that existed before the world was formed.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 33 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/oracle-of-depths.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

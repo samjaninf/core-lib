@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that blast stone energy at foes.");
 
     addPrerequisite("/guilds/geomancer/forms/ball.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

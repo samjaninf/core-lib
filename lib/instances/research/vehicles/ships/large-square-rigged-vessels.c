@@ -14,10 +14,10 @@ protected void Setup()
         "such as galleons and carracks, designed for ocean voyages and heavy cargo.");
     addSpecification("research type", "points");
     addSpecification("research cost", 6);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 10]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 7]));
-    addPrerequisite("sewing", (["type":"skill", "value" : 5]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 3]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 10]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 7]));
+    addPrerequisite("sewing", (["type": "skill", "value" : 5]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/vehicles/ships/lateen-rigged-vessels.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

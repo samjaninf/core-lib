@@ -151,9 +151,9 @@ protected void Setup()
     Description("This research tree tracks the knowledge required to craft axes");
     Source("crafting");
     addPrerequisite("weapon smithing", 
-        (["type":"skill", "value" : 3]));
+        (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/crafting/weapons/craftWeapons.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addResearchElement("/lib/instances/research/crafting/weapons/axes/craftBasicAxe.c");
     TreeRoot("/lib/instances/research/crafting/weapons/axes/craftBasicAxe.c");
 

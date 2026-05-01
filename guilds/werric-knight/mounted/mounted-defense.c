@@ -14,9 +14,9 @@ protected void Setup()
         "height advantage defensively.");
 
     addPrerequisite("guilds/werric-knight/mounted/basic-horsemanship.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":3]));
+        (["type": "guild", "level":3]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

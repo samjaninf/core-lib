@@ -16,12 +16,12 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" }) ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 5
         ]));
     addPrerequisite("/guilds/werric-knight/sword/basic-form.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

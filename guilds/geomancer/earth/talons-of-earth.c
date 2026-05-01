@@ -14,10 +14,10 @@ protected void Setup()
         "stone talons that erupt from the ground to rend a target.");
 
     addPrerequisite("/guilds/geomancer/earth/tremor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 9
         ]));

@@ -13,7 +13,7 @@ protected void Setup()
         "the ability to maintain deep focus for extended periods.");
 
     addPrerequisite("/guilds/oneiromancer/lucid-control/waking-trance.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 11
         ]));

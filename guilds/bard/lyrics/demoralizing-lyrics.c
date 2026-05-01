@@ -25,7 +25,7 @@ protected void Setup()
             "value": 5
         ]));
     addPrerequisite("/guilds/bard/lyrics/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([

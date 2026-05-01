@@ -14,9 +14,9 @@ protected void Setup()
         "reactive but specifically tailored to nullify particular offensive strategies.");
 
     addPrerequisite("guilds/werric-knight/defense/impenetrable-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

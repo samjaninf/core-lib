@@ -964,7 +964,7 @@ void CanAddCustomLocations()
 void CannotAddInvalidLocations()
 {
     mapping location = ([
-        "description":"slightly east of north and upwardish",
+        "description": "slightly east of north and upwardish",
             "x" : 100,
             "y" : 10,
             "z" : 125,

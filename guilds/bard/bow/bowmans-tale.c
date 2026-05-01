@@ -13,12 +13,12 @@ protected void Setup()
         "bardic knowledge that enhances the bard's offensive abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 33
         ]));
     addPrerequisite("/guilds/bard/bow/shafts-serenade.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

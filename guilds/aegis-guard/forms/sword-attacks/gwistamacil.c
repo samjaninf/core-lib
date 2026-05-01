@@ -16,16 +16,16 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Aegis Guard",
           "value": 14 ]));
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/edaid-lhewig.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/dravnu.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/nistaros.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Ercho": 15,

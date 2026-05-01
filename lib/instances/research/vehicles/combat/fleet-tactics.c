@@ -14,7 +14,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 2);
     addPrerequisite("/lib/instances/research/vehicles/combat/ship-to-ship-combat.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus nautical warfare", 1);
     addSpecification("bonus strategy", 1);

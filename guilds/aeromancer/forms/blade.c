@@ -14,11 +14,11 @@ protected void Setup()
         "knowledge of creating spells that form a blade of energy to strike a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":5
         ]));
 

@@ -14,10 +14,10 @@ protected void Setup()
         "above water or air through pure magical energy, offering unmatched speed.");
     addSpecification("research type", "points");
     addSpecification("research cost", 7);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 8]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 6]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 12]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 8]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 6]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 12]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));
     addPrerequisite("/lib/instances/research/vehicles/boats/crystal-vessels.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

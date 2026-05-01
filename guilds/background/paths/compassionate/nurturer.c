@@ -17,5 +17,5 @@ protected void Setup()
     addSpecification("bonus herbalism", 1);
 
     addPrerequisite("/guilds/background/paths/compassionate/protective-nature.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

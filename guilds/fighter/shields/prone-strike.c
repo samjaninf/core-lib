@@ -23,11 +23,11 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "shield" })]));
 
     addPrerequisite("/guilds/fighter/shields/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
          ([
-            "type":"skill",
+            "type": "skill",
             "name" : "shield",
             "formula" : "additive",
             "rate" : 0.25

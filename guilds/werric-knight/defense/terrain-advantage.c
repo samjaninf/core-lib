@@ -15,9 +15,9 @@ protected void Setup()
         "three who don't.");
 
     addPrerequisite("guilds/werric-knight/defense/tactical-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

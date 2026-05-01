@@ -13,9 +13,9 @@ protected void Setup()
         "aura that continuously smites evil while protecting the righteous.");
 
     addPrerequisite("guilds/werric-knight/light/sanctified-champion.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":57]));
+        (["type": "guild", "level":57]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -13,7 +13,7 @@ protected void Setup()
         "fundamental knowledge required to craft specialized components "
         "for vehicles, enabling customization and enhancement of transportation.");
     addSpecification("research type", "tree root");
-    addPrerequisite("carpentry", (["type":"skill", "value" : 1]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 1]));
     addPrerequisite("/lib/instances/research/vehicles/craftVehicles.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

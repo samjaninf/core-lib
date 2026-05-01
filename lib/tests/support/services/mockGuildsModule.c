@@ -64,7 +64,7 @@ public string *validGuildModifiers()
 /////////////////////////////////////////////////////////////////////////////
 public nomask mapping *guildsExtraAttacks()
 {
-    return useGuilds ? ({ (["attack type":"weapon"]), (["attack type":"weapon"]) }) : ({});
+    return useGuilds ? ({ (["attack type": "weapon"]), (["attack type": "weapon"]) }) : ({});
 }
 
 /////////////////////////////////////////////////////////////////////////////

@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/chainmail/kheleds-legacy.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 35]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 35]));
 
-    addSpecification("limited by", (["crafting type":"chainmail"]));
+    addSpecification("limited by", (["crafting type": "chainmail"]));
 
     addSpecification("bonus crafting value multiplier", 30);
     addSpecification("bonus crafting armor class", 1);

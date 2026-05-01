@@ -13,13 +13,13 @@ protected void Setup()
         "the knowledge to reduce the cooldown of Raging Wildfire.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 37
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/raging-wildfire-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

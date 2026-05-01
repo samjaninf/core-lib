@@ -14,10 +14,10 @@ protected void Setup()
         "the earth, gaining increased movement and stability.");
 
     addPrerequisite("/guilds/geomancer/earth/earth-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 23
         ]));

@@ -14,7 +14,7 @@ protected void Setup()
         "of tectonic forces - earth-shattering devastation.");
 
     addPrerequisite("/guilds/geomancer/functions/crystal.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

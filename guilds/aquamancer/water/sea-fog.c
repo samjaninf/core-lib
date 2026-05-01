@@ -16,10 +16,10 @@ protected void Setup()
         "and making precise movements difficult.");
 
     addPrerequisite("/guilds/aquamancer/water/obscuring-spray.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 11
         ]));

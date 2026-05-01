@@ -17,9 +17,9 @@ protected void Setup()
         "/guilds/therianthrope/dragon/dragon-root.c" }) ]));
 
     addPrerequisite("level",
-        (["type":"level", "guild": "therianthrope", "value": 53 ]));
+        (["type": "level", "guild": "therianthrope", "value": 53 ]));
     addPrerequisite("/guilds/therianthrope/dragon/boreal-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,12 +13,12 @@ protected void Setup()
         "capabilities when using a shield, increasing defense rating.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 1
         ]));
     addPrerequisite("/guilds/werric-knight/shield/shield-bash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "shield" }) ]));
 

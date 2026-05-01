@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form orbs of fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

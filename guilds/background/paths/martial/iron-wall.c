@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus parry", 1);
 
     addPrerequisite("/guilds/background/paths/martial/unyielding.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

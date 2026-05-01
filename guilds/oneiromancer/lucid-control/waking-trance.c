@@ -14,7 +14,7 @@ protected void Setup()
         "spell point regeneration.");
 
     addPrerequisite("/guilds/oneiromancer/lucid-control/clarity-of-purpose.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -23,7 +23,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 3
         ]));

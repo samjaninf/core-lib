@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "shield" })]));
 
     addPrerequisite("/guilds/fighter/shields/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

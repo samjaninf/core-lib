@@ -14,10 +14,10 @@ protected void Setup()
         "dodge capabilities.");
 
     addPrerequisite("/guilds/pyromancer/effects/reduce-soak.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 15
         ]));

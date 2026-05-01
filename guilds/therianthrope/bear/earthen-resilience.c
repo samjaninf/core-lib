@@ -19,13 +19,13 @@ protected void Setup()
     ]));
 
     addPrerequisite("level",
-        ([ "type":"level",
+        ([ "type": "level",
            "guild": "therianthrope",
            "value": 27
         ]));
 
     addPrerequisite("/guilds/therianthrope/bear/regeneration.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

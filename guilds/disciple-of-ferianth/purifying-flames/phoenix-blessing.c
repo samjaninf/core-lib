@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Regeneration with fire resistance");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/sacred-immolation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 31
         ]));

@@ -15,7 +15,7 @@ protected void Setup()
         "all nearby foes.");
 
     addPrerequisite("/guilds/pyromancer/flame/raging-inferno.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

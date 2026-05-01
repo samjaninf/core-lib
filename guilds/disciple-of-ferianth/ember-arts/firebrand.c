@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Haste and attack buff");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/ember-weapon.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 23
         ]));

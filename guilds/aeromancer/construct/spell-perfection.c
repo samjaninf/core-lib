@@ -15,12 +15,12 @@ protected void Setup()
         "in constructed spells of unparalleled power.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 49
         ]));
     addPrerequisite("/guilds/aeromancer/construct/arcane-precision.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

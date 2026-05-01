@@ -14,12 +14,12 @@ protected void Setup()
         "as offensive weapons.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 21
         ]));
     addPrerequisite("/guilds/fighter/shields/reverse-sweep.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

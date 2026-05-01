@@ -17,10 +17,10 @@ protected void Setup()
         "for improved spell point efficiency");
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/eye-contact.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 5
         ]));
@@ -74,13 +74,13 @@ protected void Setup()
             "rate": 0.15
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.25
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "dexterity",
             "formula": "additive",
             "rate": 0.25

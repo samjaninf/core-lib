@@ -13,10 +13,10 @@ protected void Setup()
         "Ferianth's holy blessing, granting protection against darkness.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 13
         ]));

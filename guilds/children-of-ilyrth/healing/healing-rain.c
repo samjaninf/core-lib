@@ -15,12 +15,12 @@ protected void Setup()
         "all allies in the area.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 9 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/ilryths-gift.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

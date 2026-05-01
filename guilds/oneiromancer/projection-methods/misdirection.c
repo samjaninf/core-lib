@@ -17,10 +17,10 @@ protected void Setup()
         "the source of the attack");
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/subtle-approach.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 15
         ]));
@@ -75,18 +75,18 @@ protected void Setup()
         ]),
         ([
             "type": "skill",
-            "name":"hide",
+            "name": "hide",
             "formula": "additive",
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.50
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.25

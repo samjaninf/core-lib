@@ -110,78 +110,78 @@ public void SetupGuild()
     ]));
 
     addCriteria("weapon attack", ([
-        "type":"attack",
+        "type": "attack",
         "apply" : "1 every 15 levels"
     ]));
     addCriteria("attribute points", ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every 5 levels"
     ]));
 
     addCriteria("skill points", ([
-        "type":"skill points",
+        "type": "skill points",
         "apply" : "5 every level"
     ]));
 
     addCriteria("initial research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "at level 1"
     ]));
 
     addCriteria("research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "1 every level"
     ]));
 
     addCriteria("supplemental research points", ([
-        "type":"research points",
+        "type": "research points",
         "apply": "2 every 5 levels"
     ]));
 
     addCriteria("sword attacks", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/aegis-guard/sword-attacks.c"
     ]));
 
     addCriteria("sword evasion", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/aegis-guard/sword-evading.c"
     ]));
 
     addCriteria("sword guarding", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/aegis-guard/sword-guarding.c"
     ]));
 
     addCriteria("bows", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/aegis-guard/bows.c"
     ]));
 
     addCriteria("combinations", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 5",
         "research tree": "/guilds/aegis-guard/sword-combinations.c"
     ]));
 
     addCriteria("actions", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 7",
         "research tree": "/guilds/aegis-guard/sword-actions.c"
     ]));
 
     addCriteria("elemental", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 11",
         "research tree": "/guilds/aegis-guard/sword-elemental.c"
     ]));
 
     addCriteria("mythic", ([
-        "type":"research tree",
+        "type": "research tree",
         "apply": "at level 15",
         "research tree": "/guilds/aegis-guard/sword-mythic.c"
     ]));

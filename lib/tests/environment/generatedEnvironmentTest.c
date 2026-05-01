@@ -369,7 +369,7 @@ void ExitPointsConnectedToNewRegion()
         "exit coordinates": ({ 4, 0 }),
         "is placed" : 1,
         "exits" : ([
-            "south":"4x3"
+            "south": "4x3"
         ])
     ]);
     Region.addTestRoom(4, 4, data);

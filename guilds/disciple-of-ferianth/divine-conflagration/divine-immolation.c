@@ -14,13 +14,13 @@ protected void Setup()
         "that channels Ferianth's holy fire.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 37
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/divine-conflagration/blazing-wrath.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

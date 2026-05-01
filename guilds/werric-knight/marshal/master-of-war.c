@@ -15,9 +15,9 @@ protected void Setup()
         "warrior-leader, the embodiment of martial excellence.");
 
     addPrerequisite("guilds/werric-knight/marshal/supreme-leadership.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":55]));
+        (["type": "guild", "level":55]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

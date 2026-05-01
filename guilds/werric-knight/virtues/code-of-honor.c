@@ -13,9 +13,9 @@ protected void Setup()
         "strength from your commitment to honorable conduct.");
 
     addPrerequisite("guilds/werric-knight/virtues/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

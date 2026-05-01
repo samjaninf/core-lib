@@ -42,13 +42,13 @@ protected nomask void setUpUserForSelection()
         }
     }
     Data[to_string(menuItem)] = ([
-        "name":"Completed",
+        "name": "Completed",
         "type": "completed",
         "can display": sizeof(Service->questsOfType(User, "completed")),
         "description": "This option lets you view completed quests.\n"
     ]);
     Data[to_string(menuItem + 1)] = ([
-        "name":"Exit Quest Menu",
+        "name": "Exit Quest Menu",
         "type": "exit",
         "description": "This option lets you exit the quest menu.\n"
     ]);

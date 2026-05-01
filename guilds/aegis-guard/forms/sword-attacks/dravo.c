@@ -17,13 +17,13 @@ protected void Setup()
         "various guards to a counter attack.");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-attacks/dravnu.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 7
         ]));
@@ -72,7 +72,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item" : "/guilds/aegis-guard/forms/sword-attacks/edaid-lhewig.c",
             "name" : "Edaid Lhewig",
             "formula" : "multiplicative",
@@ -136,7 +136,7 @@ protected void Setup()
             "rate" : 0.5
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "sword skills",
             "skills": ({ "dagger", "short sword", "long sword", 
                 "hand and a half sword", "two-handed sword" }),
@@ -162,7 +162,7 @@ protected void Setup()
             "rate": 0.10
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "strength",
             "formula": "additive",
             "rate": 0.5

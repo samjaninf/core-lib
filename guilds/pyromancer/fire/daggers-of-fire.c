@@ -14,10 +14,10 @@ protected void Setup()
         "razor-sharp blades of pure flame that impale the target.");
 
     addPrerequisite("/guilds/pyromancer/fire/backdraft.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 29
         ]));

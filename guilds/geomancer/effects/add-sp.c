@@ -14,10 +14,10 @@ protected void Setup()
         "spell points.");
 
     addPrerequisite("/guilds/geomancer/effects/add-hp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 3
         ]));

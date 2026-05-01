@@ -14,12 +14,12 @@ protected void Setup()
         "abilities.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 11 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/offense/crashing-wave.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

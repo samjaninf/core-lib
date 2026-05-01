@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A sustained aura providing cold resist and regen");
 
     addPrerequisite("/guilds/disciple-of-ferianth/purifying-flames/cauterize.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 3
         ]));

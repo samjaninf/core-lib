@@ -14,7 +14,7 @@ protected void Setup()
         "sharp gravel and stone fragments.");
 
     addPrerequisite("/guilds/geomancer/functions/earth.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

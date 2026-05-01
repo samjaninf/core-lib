@@ -16,9 +16,9 @@ protected void Setup()
         "untouchable.");
 
     addPrerequisite("guilds/werric-knight/shield/stalwart-defender.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

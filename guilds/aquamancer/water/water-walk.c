@@ -16,10 +16,10 @@ protected void Setup()
         "difficult to predict, enhancing their defensive capabilities.");
 
     addPrerequisite("/guilds/aquamancer/water/water-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 23
         ]));

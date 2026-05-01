@@ -13,9 +13,9 @@ protected void Setup()
         "strike effectively while maintaining a defensive posture.");
 
     addPrerequisite("/guilds/werric-knight/shield/counter-block.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":7]));
+        (["type": "guild", "level":7]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

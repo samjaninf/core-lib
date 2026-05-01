@@ -13,9 +13,9 @@ protected void Setup()
         "increasing the potency of all your virtue-based abilities.");
 
     addPrerequisite("guilds/werric-knight/virtues/virtuous-strength.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":23]));
+        (["type": "guild", "level":23]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

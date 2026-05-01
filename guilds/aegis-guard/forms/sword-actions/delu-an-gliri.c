@@ -13,13 +13,13 @@ protected void Setup()
         "knowledge of an improved hewing technique for Gliri and Hwinio.");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-actions/gliri.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 25
         ]));

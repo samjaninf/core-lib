@@ -306,8 +306,8 @@ protected mapping craftingComponents =
         "value": 250,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though a snake with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -319,8 +319,8 @@ protected mapping craftingComponents =
         "value": 300,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though a dragon with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -332,8 +332,8 @@ protected mapping craftingComponents =
         "value": 300,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though a raven with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -345,8 +345,8 @@ protected mapping craftingComponents =
         "value": 300,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though an eagle with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -358,8 +358,8 @@ protected mapping craftingComponents =
         "value": 300,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though a hawk with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -371,8 +371,8 @@ protected mapping craftingComponents =
         "value": 300,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though a griffin with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -384,8 +384,8 @@ protected mapping craftingComponents =
         "value": 325,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though a dracolich with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 15]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 15]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -397,8 +397,8 @@ protected mapping craftingComponents =
         "value": 300,
         "description": "an ornate metal knuckleguard that has been sculpted to appear as though a human skeleton with crystal eyes is protecting the user's hand.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 15]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 15]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -555,8 +555,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "a broad metal pommel that has been intricately sculpted to resemble an eagle's talon. Clutched in its grip is a beautifully cut crystal.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -568,8 +568,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "an exquisite metal pommel that has been intricately sculpted to resemble a dragon's talon. Clutched in its grip is a beautifully cut crystal.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -581,8 +581,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "an exquisite metal pommel that has been intricately sculpted to resemble a griffin's talon. Clutched in its grip is a large crystal.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -594,8 +594,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "an exquisite metal pommel that has been intricately sculpted to resemble a wolf's head. It has two small crystal eyes.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -607,8 +607,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "an exquisite metal pommel that has been intricately sculpted to resemble a cat's head. It has two small crystal eyes.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -620,8 +620,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "an exquisite metal pommel that has been intricately sculpted to resemble a dragon's head. It has two small crystal eyes.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -633,8 +633,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "an exquisite metal pommel that has been intricately sculpted to resemble a snake's head. It has two small crystal eyes.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -677,8 +677,8 @@ protected mapping craftingComponents =
         "description": "a pole of wood that has exquisitely carved knotwork along its "
             "length. Etched leather has been wrapped around it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.2
     ]),
@@ -689,8 +689,8 @@ protected mapping craftingComponents =
             "and a carved serpent's head about two-thirds of the way up its length. Etched "
             "leather has been wrapped around it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -701,8 +701,8 @@ protected mapping craftingComponents =
             "intertwined dragons along its course. Etched leather has been wrapped around "
             "it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -713,8 +713,8 @@ protected mapping craftingComponents =
             "hunter stalking a boar in a forest. Etched leather has been wrapped around "
             "it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -725,8 +725,8 @@ protected mapping craftingComponents =
             "intertwined griffins along its course. Etched leather has been wrapped around "
             "it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -737,8 +737,8 @@ protected mapping craftingComponents =
             "eagles in flight along its course. Etched leather has been wrapped around it "
             "in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -749,8 +749,8 @@ protected mapping craftingComponents =
             "ravens in flight along its course. Etched leather has been wrapped around it "
             "in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -761,8 +761,8 @@ protected mapping craftingComponents =
             "vines along its course. Etched leather has been wrapped around it in two locations for "
             "improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.55
     ]),
@@ -772,8 +772,8 @@ protected mapping craftingComponents =
         "description": "a pole of wood that has been exquisitely carved with runes of power along "
             "its course. Etched leather has been wrapped around it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.7
     ]),
@@ -784,8 +784,8 @@ protected mapping craftingComponents =
             "intertwined skeletons along its course. Etched leather has been wrapped around it "
             "in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -796,8 +796,8 @@ protected mapping craftingComponents =
             "along its course. Etched leather has been wrapped around it in two locations "
             "for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -808,8 +808,8 @@ protected mapping craftingComponents =
             "its course. Etched leather has been wrapped around it in two locations for "
             "improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.6
     ]),
@@ -824,8 +824,8 @@ protected mapping craftingComponents =
         "value": 15,
         "description": "a slightly bulbous head of wood that has intricate knotwork carved into it.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 2]),
-            "sculpture": (["type":"skill", "value": 2]),
+            "wood crafting": (["type": "skill", "value": 2]),
+            "sculpture": (["type": "skill", "value": 2]),
         ]),
         "experience modifier": 1.2
     ]),
@@ -835,9 +835,9 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the shape of "
             "a serpent's head. The serpent has eyes of encrusted crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -850,9 +850,9 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the shape of "
             "a dragon's head. The dragon has eyes of encrusted crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -865,9 +865,9 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the shape of "
             "a griffin's head. The griffin has eyes of encrusted crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -880,9 +880,9 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the shape "
             "of an eagle's head. The eagle has eyes of encrusted crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -895,9 +895,9 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the "
             "shape of a raven's head. The raven has eyes of encrusted crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -910,9 +910,9 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the "
             "shape of a wolf's head. The wolf has eyes of encrusted crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -925,9 +925,9 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the "
             "shape of a human skull. The skull has eyes of encrusted crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -940,10 +940,10 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the "
             "shape of an eagle's talon embossed with metal. It is clutching a large crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -957,10 +957,10 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of wood that has been intricately carved into the "
             "shape of vines of wood and metal wrapped around a large crystal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -974,10 +974,10 @@ protected mapping craftingComponents =
         "description": "a slightly bulbous head of metal that has been intricately carved into "
             "a stylized orb of crystal wrapped in wood and metal.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -1004,8 +1004,8 @@ protected mapping craftingComponents =
         "description": "a roughly three foot long handle of wood that has exquisitely carved knotwork along its "
             "length. Etched leather has been wrapped around it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.25
     ]),
@@ -1017,8 +1017,8 @@ protected mapping craftingComponents =
             "two-thirds of the way up its length. Etched leather has been wrapped "
             "around it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1030,8 +1030,8 @@ protected mapping craftingComponents =
             "course. Etched leather has been wrapped around it in two locations "
             "for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1043,8 +1043,8 @@ protected mapping craftingComponents =
             "forest. Etched leather has been wrapped around it in two locations "
             "for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1056,8 +1056,8 @@ protected mapping craftingComponents =
             "course. Etched leather has been wrapped around it in two locations "
             "for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1069,8 +1069,8 @@ protected mapping craftingComponents =
             "course. Etched leather has been wrapped around it in two locations "
             "for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1082,8 +1082,8 @@ protected mapping craftingComponents =
             "course. Etched leather has been wrapped around it in two locations "
             "for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1095,8 +1095,8 @@ protected mapping craftingComponents =
             "course. Etched leather has been wrapped around it in two locations "
             "for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1107,8 +1107,8 @@ protected mapping craftingComponents =
             "exquisitely carved with runes of power along its course. Etched "
             "leather has been wrapped around it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1120,8 +1120,8 @@ protected mapping craftingComponents =
             "along its course. Etched leather has been wrapped around it in two "
             "locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1133,8 +1133,8 @@ protected mapping craftingComponents =
             "Etched leather has been wrapped around it in two locations for "
             "improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -1145,8 +1145,8 @@ protected mapping craftingComponents =
             "terrifying carved scene of a brutal battle its course. Etched "
             "leather has been wrapped around it in two locations for improved grip.",
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.5
     ]),
@@ -2412,7 +2412,7 @@ protected mapping craftingComponents =
         "class": "rest",
         "value": 100,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 20]),
+            "wood crafting": (["type": "skill", "value": 20]),
         ]),
         "description": "a block of wood with a complex mechanism that drops the rest as soon as the arrow it is balancing is released.",
         "experience modifier": 1.2
@@ -2452,7 +2452,7 @@ protected mapping craftingComponents =
         "class": "projectile pocket",
         "value": 25,
         "crafting prerequisites": ([
-            "leatherworking": (["type":"skill", "value": 5]),
+            "leatherworking": (["type": "skill", "value": 5]),
         ]),
         "description": "a simple leather pocket in which ammunition can be laid. An eagle has been embroidered on it.",
         "experience modifier": 1.1
@@ -2461,7 +2461,7 @@ protected mapping craftingComponents =
         "class": "projectile pocket",
         "value": 25,
         "crafting prerequisites": ([
-            "leatherworking": (["type":"skill", "value": 5]),
+            "leatherworking": (["type": "skill", "value": 5]),
         ]),
         "description": "a simple leather pocket in which ammunition can be laid. A hawk has been embroidered on it.",
         "experience modifier": 1.1
@@ -2470,7 +2470,7 @@ protected mapping craftingComponents =
         "class": "projectile pocket",
         "value": 25,
         "crafting prerequisites": ([
-            "leatherworking": (["type":"skill", "value": 5]),
+            "leatherworking": (["type": "skill", "value": 5]),
         ]),
         "description": "a simple leather pocket in which ammunition can be laid. A wolf has been embroidered on it.",
         "experience modifier": 1.1
@@ -2479,7 +2479,7 @@ protected mapping craftingComponents =
         "class": "projectile pocket",
         "value": 25,
         "crafting prerequisites": ([
-            "leatherworking": (["type":"skill", "value": 5]),
+            "leatherworking": (["type": "skill", "value": 5]),
         ]),
         "description": "a simple leather pocket in which ammunition can be laid. A dragon has been embroidered on it.",
         "experience modifier": 1.1
@@ -2530,7 +2530,7 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 15,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 5]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "description": "several flattened boards of wood rotated to offset the direction of the grain. This is then reinforced with metal.",
         "experience modifier": 1
@@ -2539,7 +2539,7 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 35,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 10]),
         ]),
         "description": "several curved planks of wood rotated to offset the direction of the grain. This is then reinforced with metal.",
         "experience modifier": 1.1
@@ -2548,8 +2548,8 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 50,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 15]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "description": "several curved planks of wood rotated to offset the direction of the "
                 "grain. This is then reinforced with metal. Carved upon its surface is the likeness of a dragon.",
@@ -2559,8 +2559,8 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 50,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 15]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "description": "several curved planks of wood rotated to offset the direction "
             "of the grain. This is then reinforced with metal. Carved upon its surface is the likeness of an eagle.",
@@ -2570,8 +2570,8 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 50,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 15]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "description": "several curved planks of wood rotated to offset the direction of "
                 "the grain. This is then reinforced with metal. Carved upon its surface is the likeness of a griffin.",
@@ -2581,8 +2581,8 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 50,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 15]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "description": "several curved planks of wood rotated to offset the direction of "
                 "the grain. This is then reinforced with metal. Carved upon its surface is the likeness of a wolf.",
@@ -2592,8 +2592,8 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 50,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 15]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "description": "several curved planks of wood rotated to offset the direction of "
                 "the grain. This is then reinforced with metal. Carved upon its surface is the likeness of a serpent.",
@@ -2603,8 +2603,8 @@ protected mapping craftingComponents =
         "class": "shield",
         "value": 50,
         "crafting prerequisites": ([
-            "wood crafting": (["type":"skill", "value": 15]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "description": "several curved planks of wood rotated to offset the direction of "
                 "the grain. This is then reinforced with metal. Carved upon its surface is the likeness of a brutal battle.",
@@ -2621,7 +2621,7 @@ protected mapping craftingComponents =
         "value": 40,
         "description": "a ring of PrimaryMaterial with a one-carat crystal setting.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2633,8 +2633,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "a ring of PrimaryMaterial with exquisitely carved knotwork along its surface.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -2643,8 +2643,8 @@ protected mapping craftingComponents =
         "value": 75,
         "description": "a ring of PrimaryMaterial intertwined with metal with exquisitely carved knotwork along its surface.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -2656,9 +2656,9 @@ protected mapping craftingComponents =
         "value": 175,
         "description": "a ring of metal and PrimaryMaterial that has been intricately carved into the shape of an eagle's talon embossed with metal. It is clutching a large crystal.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2671,9 +2671,9 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has exquisitely carved scales along its length and a carved serpent's head set with crystal eyes.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2685,9 +2685,9 @@ protected mapping craftingComponents =
         "value": 125,
         "description": "a ring of PrimaryMaterial that has been exquisitely carved with a scene of intertwined dragons of metal and PrimaryMaterial with eyes of crystal along its course.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2700,8 +2700,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has been exquisitely embossed using metal of a scene of a hunter stalking a boar in a forest.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -2713,9 +2713,9 @@ protected mapping craftingComponents =
         "value": 85,
         "description": "a ring of PrimaryMaterial that has been exquisitely carved with a scene of intertwined griffins with crystal eyes along its course.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2727,8 +2727,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has been exquisitely carved with a scene of many eagles in flight along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2737,8 +2737,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has been exquisitely carved with a scene of many ravens in flight along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2747,8 +2747,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has been exquisitely carved with a scene of intertwined vines of metal along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -2760,8 +2760,8 @@ protected mapping craftingComponents =
         "value": 35,
         "description": "a ring of PrimaryMaterial that has been exquisitely carved with runes of power along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2770,8 +2770,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has been exquisitely carved with a macabre scene of intertwined skeletons along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2780,8 +2780,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has a hideously carved scene of a skeletal dragon with eyes of crystal along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2793,8 +2793,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a ring of PrimaryMaterial that has a terrifying carved scene of a brutal battle its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2809,7 +2809,7 @@ protected mapping craftingComponents =
         "value": 40,
         "description": "a pendant of PrimaryMaterial with a one-carat crystal setting.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2821,8 +2821,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "a pendant of PrimaryMaterial with exquisitely carved knotwork along its surface.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.3
     ]),
@@ -2831,8 +2831,8 @@ protected mapping craftingComponents =
         "value": 75,
         "description": "a pendant of PrimaryMaterial intertwined with metal with exquisitely carved knotwork along its surface.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -2844,9 +2844,9 @@ protected mapping craftingComponents =
         "value": 175,
         "description": "a pendant of metal and PrimaryMaterial that has been intricately carved into the shape of an eagle's talon embossed with metal. It is clutching a large crystal.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2859,9 +2859,9 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of PrimaryMaterial that has exquisitely carved scales along its length and a carved serpent's head set with crystal eyes.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2873,9 +2873,9 @@ protected mapping craftingComponents =
         "value": 125,
         "description": "a pendant of metal that has been exquisitely carved with a scene of intertwined dragons of metal and PrimaryMaterial with eyes of crystal along its course.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2888,8 +2888,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of PrimaryMaterial that has been exquisitely embossed using metal of a scene of a hunter stalking a boar in a forest.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -2901,9 +2901,9 @@ protected mapping craftingComponents =
         "value": 85,
         "description": "a pendant of PrimaryMaterial that has been exquisitely carved with a scene of intertwined griffins with crystal eyes along its course.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2915,8 +2915,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of metal that has been exquisitely carved with a scene of many eagles in flight along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2925,8 +2925,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of metal that has been exquisitely carved with a scene of many ravens in flight along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2935,8 +2935,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of metal that has been exquisitely carved with a scene of intertwined vines of PrimaryMaterial along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -2948,8 +2948,8 @@ protected mapping craftingComponents =
         "value": 35,
         "description": "a pendant of metal that has been exquisitely carved with runes of power along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.3
     ]),
@@ -2958,8 +2958,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of metal that has been exquisitely carved with a macabre scene of intertwined skeletons along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -2968,8 +2968,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of metal that has a hideously carved scene of a skeletal dragon with eyes of crystal along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -2981,8 +2981,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a pendant of metal that has a terrifying carved scene of a brutal battle its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -3039,7 +3039,7 @@ protected mapping craftingComponents =
         "value": 40,
         "description": "a fillet of PrimaryMaterial with a one-carat crystal setting.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -3051,8 +3051,8 @@ protected mapping craftingComponents =
         "value": 50,
         "description": "a fillet of PrimaryMaterial with exquisitely carved knotwork along its surface.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.25
     ]),
@@ -3061,8 +3061,8 @@ protected mapping craftingComponents =
         "value": 75,
         "description": "a fillet of PrimaryMaterial intertwined with metal with exquisitely carved knotwork along its surface.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -3074,9 +3074,9 @@ protected mapping craftingComponents =
         "value": 125,
         "description": "a fillet of PrimaryMaterial that has been exquisitely carved with a scene of intertwined dragons of metal and PrimaryMaterial with eyes of crystal along its course.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -3089,8 +3089,8 @@ protected mapping craftingComponents =
         "value": 70,
         "description": "a fillet of PrimaryMaterial that has been exquisitely carved with a scene of intertwined vines of metal along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -3102,8 +3102,8 @@ protected mapping craftingComponents =
         "value": 35,
         "description": "a fillet of PrimaryMaterial that has been exquisitely carved with runes of power along its course.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.4
     ]),
@@ -3112,8 +3112,8 @@ protected mapping craftingComponents =
         "value": 85,
         "description": "a fillet of PrimaryMaterial that has been exquisitely carved with metal runes of power embossed along its course. There is a crystal setting.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -3126,7 +3126,7 @@ protected mapping craftingComponents =
         "value": 5,
         "description": "a series of encrusted crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -3138,7 +3138,7 @@ protected mapping craftingComponents =
         "value": 5,
         "description": "a series of leaf-shaped crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -3150,7 +3150,7 @@ protected mapping craftingComponents =
         "value": 25,
         "description": "a series of PrimaryMaterial roses encrusted in crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3162,7 +3162,7 @@ protected mapping craftingComponents =
         "value": 25,
         "description": "a series of PrimaryMaterial flowers encrusted in crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3174,7 +3174,7 @@ protected mapping craftingComponents =
         "value": 5,
         "description": "a series of encrusted crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -3186,7 +3186,7 @@ protected mapping craftingComponents =
         "value": 5,
         "description": "a series of leaf-shaped crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 1,
@@ -3198,7 +3198,7 @@ protected mapping craftingComponents =
         "value": 25,
         "description": "a series of PrimaryMaterial roses encrusted in crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3210,7 +3210,7 @@ protected mapping craftingComponents =
         "value": 25,
         "description": "a series of PrimaryMaterial flowers encrusted in crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3222,7 +3222,7 @@ protected mapping craftingComponents =
         "value": 25,
         "description": "a series of PrimaryMaterial crosses encrusted in crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3234,7 +3234,7 @@ protected mapping craftingComponents =
         "value": 25,
         "description": "a series of PrimaryMaterial spades encrusted in crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3246,7 +3246,7 @@ protected mapping craftingComponents =
         "value": 25,
         "description": "a series of PrimaryMaterial eagle wings encrusted in crystal caps the fillet.",
         "crafting prerequisites": ([
-            "gem crafting": (["type":"skill", "value": 10]),
+            "gem crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3261,8 +3261,8 @@ protected mapping craftingComponents =
             "is attached via a leather band and it covers the throat and neck. The "
             "interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 7]),
-            "armorer": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 7]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3273,8 +3273,8 @@ protected mapping craftingComponents =
             "top of the user's head . A leather strap is used to keep the helmet "
             "affixed to the wearer's head.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3286,8 +3286,8 @@ protected mapping craftingComponents =
             "from the faceward side of the helmet. A leather strap is used to keep "
             "the helmet affixed to the wearer's head.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3302,9 +3302,9 @@ protected mapping craftingComponents =
             "up around the brow, another shaped piece of metal is formed. To this "
             "on each side, a leather cheek and neck guard are attached.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "leatherworking": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "leatherworking": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.05
     ]),
@@ -3316,9 +3316,9 @@ protected mapping craftingComponents =
             "hang on hinges and cover the cheeks of the wearer. The interior "
             "is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 9]),
-            "leatherworking": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 9]),
+            "metal crafting": (["type": "skill", "value": 9]),
+            "leatherworking": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 9]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -3329,9 +3329,9 @@ protected mapping craftingComponents =
             "the head. Strips of leather hang on hinges and cover the cheeks "
             "of the wearer. The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "leatherworking": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "leatherworking": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3343,8 +3343,8 @@ protected mapping craftingComponents =
             "a metal coif descending around the head, covering the neck and throat. "
             "The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -3356,8 +3356,8 @@ protected mapping craftingComponents =
             "a double pivot, one to each side of the skull. The interior is padded with "
             "leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 8]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 8]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3368,8 +3368,8 @@ protected mapping craftingComponents =
             "a visor attached via a double pivot, one to each side of the skull. "
             "The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 8]),
-            "armorer": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 8]),
+            "armorer": (["type": "skill", "value": 6]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3380,8 +3380,8 @@ protected mapping craftingComponents =
             "throat, and neck. It has a long, T-shaped opening for the eyes and mouth. "
             "The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 6]),
-            "armorer": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 6]),
+            "armorer": (["type": "skill", "value": 6]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3392,8 +3392,8 @@ protected mapping craftingComponents =
             "throat, and neck. It has a long, Y-shaped opening for the eyes and mouth. "
             "The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 6]),
-            "armorer": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 6]),
+            "armorer": (["type": "skill", "value": 6]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3404,8 +3404,8 @@ protected mapping craftingComponents =
             "throat, and neck. It has a long, arched opening for the eyes and mouth. "
             "The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 6]),
-            "armorer": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 6]),
+            "armorer": (["type": "skill", "value": 6]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3417,8 +3417,8 @@ protected mapping craftingComponents =
             "is attached via a leather band and it covers the throat and neck. A sturdy "
             "metal visor covers the face. The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 9]),
-            "armorer": (["type":"skill", "value": 8]),
+            "metal crafting": (["type": "skill", "value": 9]),
+            "armorer": (["type": "skill", "value": 8]),
         ]),
         "experience modifier": 1.05
     ]),
@@ -3431,8 +3431,8 @@ protected mapping craftingComponents =
             "coif of metal mail wraps around the throat and neck. "
             "The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 6]),
-            "armorer": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 6]),
+            "armorer": (["type": "skill", "value": 6]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3445,8 +3445,8 @@ protected mapping craftingComponents =
             "dog muzzle-shaped. The interior is padded with "
             "leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -3459,8 +3459,8 @@ protected mapping craftingComponents =
             "beak-shaped. The interior is padded with "
             "leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -3473,8 +3473,8 @@ protected mapping craftingComponents =
             "rounded. The interior is padded with "
             "leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -3487,8 +3487,8 @@ protected mapping craftingComponents =
             "the lower portion could be opened to more completely expose the wearer's "
             "face. The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -3500,9 +3500,9 @@ protected mapping craftingComponents =
             "The visor is formed to look like a dragon's face. The interior is "
             "padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.15
     ]),
@@ -3514,9 +3514,9 @@ protected mapping craftingComponents =
             "The visor is formed to look like a wolf's face, a pronounced muzzle "
             "jutting out. The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.15
     ]),
@@ -3528,9 +3528,9 @@ protected mapping craftingComponents =
             "The visor is formed to look like a lion's face. The interior is "
             "padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.15
     ]),
@@ -3542,9 +3542,9 @@ protected mapping craftingComponents =
             "The visor is formed to look like an eagle's face and beak. The interior is "
             "padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
-            "sculpture": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
+            "sculpture": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.15
     ]),
@@ -3556,8 +3556,8 @@ protected mapping craftingComponents =
             "being a somewhat triangular slit. The interior is padded with "
             "leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.1
     ]),
@@ -3569,8 +3569,8 @@ protected mapping craftingComponents =
             "cut out below the nose and around the mouth. Two eye slits have also "
             "been cut out. The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3582,8 +3582,8 @@ protected mapping craftingComponents =
             "This affords protection around most of the head, only leaving a small "
             "opening for the eyes and mouth. The interior is padded with leather.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 10]),
-            "armorer": (["type":"skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "experience modifier": 1.0
     ]),
@@ -3593,8 +3593,8 @@ protected mapping craftingComponents =
         "description": "a plume of plumage that flows out of a metal post from the "
             "back top of the head piece.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 2]),
-            "sculpture": (["type":"skill", "value": 2]),
+            "metal crafting": (["type": "skill", "value": 2]),
+            "sculpture": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "plumage": 2,
@@ -3608,8 +3608,8 @@ protected mapping craftingComponents =
         "description": "a pair of horns carved out of skeletal that jut out from metal "
             "posts by each temple.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 2]),
-            "sculpture": (["type":"skill", "value": 2]),
+            "metal crafting": (["type": "skill", "value": 2]),
+            "sculpture": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "skeletal": 2,
@@ -3623,8 +3623,8 @@ protected mapping craftingComponents =
         "description": "a pair of antlers carved out of skeletal that jut out from metal "
             "posts by each temple.",
         "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 2]),
-            "sculpture": (["type":"skill", "value": 2]),
+            "metal crafting": (["type": "skill", "value": 2]),
+            "sculpture": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "skeletal": 2,
@@ -3638,8 +3638,8 @@ protected mapping craftingComponents =
         "description": "a pair of metal wings covered in plumage that juts out "
             "from each temple.",
          "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 2]),
-            "sculpture": (["type":"skill", "value": 2]),
+            "metal crafting": (["type": "skill", "value": 2]),
+            "sculpture": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "plumage": 2,
@@ -3653,8 +3653,8 @@ protected mapping craftingComponents =
         "description": "an ornate metal dragon with a pair of crystal eyes "
             "that sits atop the apex of the head piece.",
          "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 6]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3668,8 +3668,8 @@ protected mapping craftingComponents =
         "description": "an ornate metal boar with a pair of crystal eyes "
             "that sits atop the apex of the head piece.",
          "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 6]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3683,8 +3683,8 @@ protected mapping craftingComponents =
         "description": "an ornate metal griffin with a pair of crystal eyes "
             "that sits atop the apex of the head piece.",
          "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 6]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3698,8 +3698,8 @@ protected mapping craftingComponents =
         "description": "an ornate metal wolf with a pair of crystal eyes "
             "that sits atop the apex of the head piece.",
          "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 6]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3713,8 +3713,8 @@ protected mapping craftingComponents =
         "description": "an ornate metal serpent with a pair of crystal eyes "
             "that sits atop the apex of the head piece.",
          "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 5]),
-            "sculpture": (["type":"skill", "value": 6]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "sculpture": (["type": "skill", "value": 6]),
         ]),
         "crafting materials": ([
             "crystal": 2,
@@ -3727,7 +3727,7 @@ protected mapping craftingComponents =
         "value": 5,
         "description": "a flat band of metal that spans the top of the head piece.",
          "crafting prerequisites": ([
-            "metal crafting": (["type":"skill", "value": 1]),
+            "metal crafting": (["type": "skill", "value": 1]),
         ]),
         "crafting materials": ([
             "metal": 1,

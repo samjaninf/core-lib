@@ -18,15 +18,15 @@ protected void Setup()
         "elemental earth energy");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-elemental/alagos.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-elemental/geilo.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Aegis Guard",
         "value": 31
     ]));
@@ -133,7 +133,7 @@ protected void Setup()
             "rate": 0.10
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "charisma",
             "formula": "additive",
             "rate": 0.25

@@ -13,15 +13,14 @@ protected void Setup()
         "rigorous mental discipline, granting exceptional resistance to mental attacks.");
 
     addPrerequisite("guilds/werric-knight/discipline/iron-body.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":16]));
+        (["type": "guild", "level":16]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("bonus willpower", 4);
-    addSpecification("bonus resist mental", 20);
-    addSpecification("bonus resist charm", 15);
+    addSpecification("bonus willpower", 10);
+    addSpecification("bonus resist psionic", 20);
 }

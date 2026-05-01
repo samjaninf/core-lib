@@ -16,10 +16,10 @@ protected void Setup()
         "hits");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/mind-prison.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 39
         ]));

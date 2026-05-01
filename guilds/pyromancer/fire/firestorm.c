@@ -14,10 +14,10 @@ protected void Setup()
         "vortex of flames that engulfs all nearby enemies.");
 
     addPrerequisite("/guilds/pyromancer/fire/spark.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 7
         ]));

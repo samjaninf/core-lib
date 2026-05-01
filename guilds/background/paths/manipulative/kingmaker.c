@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus intelligence", 1);
 
     addPrerequisite("/guilds/background/paths/manipulative/political-savvy.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

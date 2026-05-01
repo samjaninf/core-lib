@@ -14,10 +14,10 @@ protected void Setup()
         "of concentrated heat that burns the target from within.");
 
     addPrerequisite("/guilds/pyromancer/fire/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 3
         ]));

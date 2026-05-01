@@ -14,11 +14,11 @@ protected void Setup()
         "propulsion, providing reliable movement in calm waters.");
     addSpecification("research type", "points");
     addSpecification("research cost", 3);
-    addPrerequisite("engineering", (["type":"skill", "value" : 4]));
-    addPrerequisite("carpentry", (["type":"skill", "value" : 4]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 2]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 4]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/components/basic-hull-construction.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle speed", 2);

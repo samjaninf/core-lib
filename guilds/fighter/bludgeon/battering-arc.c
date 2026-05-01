@@ -14,13 +14,13 @@ protected void Setup()
         "everyone within range of you.");
 
     addPrerequisite("/guilds/fighter/bludgeon/crush.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "mace", "hammer",
         "flail", "staff" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 19
         ]));
@@ -150,7 +150,7 @@ protected void Setup()
             "rate" : 0.75
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "blunt skills",
             "skills": ({ "mace", "hammer", "flail", "staff" }),
             "formula" : "additive",

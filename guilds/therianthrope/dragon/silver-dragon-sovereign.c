@@ -18,9 +18,9 @@ protected void Setup()
         "/guilds/therianthrope/dragon/dragon-root.c" }) ]));
 
     addPrerequisite("level",
-        (["type":"level", "guild": "therianthrope", "value": 85 ]));
+        (["type": "level", "guild": "therianthrope", "value": 85 ]));
     addPrerequisite("/guilds/therianthrope/dragon/mythic-dragon.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

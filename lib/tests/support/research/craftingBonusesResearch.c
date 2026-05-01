@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft knives, daggers, and swords out of "
         "typical bladed weapon materials such as iron, bronze, and steel.");
     addSpecification("research type", "granted");
-    addSpecification("limited by", (["crafting type":"sword"]));
+    addSpecification("limited by", (["crafting type": "sword"]));
 
     addSpecification("bonus crafting value multiplier", 30);
     addSpecification("bonus crafting encumberance reduction", 50);

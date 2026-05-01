@@ -15,9 +15,9 @@ protected void Setup()
         "makes you more effective, as you act without hesitation or fear.");
 
     addPrerequisite("guilds/werric-knight/defender/guardians-vigil.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":29]));
+        (["type": "guild", "level":29]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

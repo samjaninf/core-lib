@@ -13,13 +13,13 @@ protected void Setup()
         "knowledge to weave an additional element into their combinations.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/woven-terror.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

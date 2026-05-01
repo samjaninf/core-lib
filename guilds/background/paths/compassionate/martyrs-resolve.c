@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus hit points", 5);
 
     addPrerequisite("/guilds/background/paths/compassionate/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

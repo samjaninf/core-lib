@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus barter", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/dirty-fighting.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

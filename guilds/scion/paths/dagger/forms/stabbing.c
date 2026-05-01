@@ -15,7 +15,7 @@ protected void Setup()
         "dagger", "short sword" })]));
 
     addPrerequisite("/guilds/scion/paths/dagger/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

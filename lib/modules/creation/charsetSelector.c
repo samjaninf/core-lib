@@ -12,7 +12,7 @@ public nomask void InitializeSelector()
 
     Data = ([
         "1":([
-            "name":"ASCII-only",
+            "name": "ASCII-only",
             "description" : "This option sends the user's client only "
                 "simple 7-bit ASCII text. It is useful if your client "
                 "does not support unicode or you are using a screen "
@@ -20,7 +20,7 @@ public nomask void InitializeSelector()
             "value": "ascii"
         ]),
         "2":([
-            "name":"Unicode",
+            "name": "Unicode",
             "description" : "This option sends the user's client text "
                 "with unicode support. Early clients often do not "
                 "support these characters. If your client supports "

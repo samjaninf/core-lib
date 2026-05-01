@@ -16,10 +16,10 @@ protected void Setup()
         "damage through sacred flame");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/inferno-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 1
         ]));

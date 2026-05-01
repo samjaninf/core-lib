@@ -14,12 +14,12 @@ protected void Setup()
         "offensive abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 11
         ]));
     addPrerequisite("/guilds/bard/bow/archers-hand.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

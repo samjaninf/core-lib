@@ -15,7 +15,7 @@ protected void Setup()
         "energy radiating outward.");
 
     addPrerequisite("/guilds/aquamancer/forms/wave.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

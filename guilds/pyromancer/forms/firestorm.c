@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form devastating firestorms.");
 
     addPrerequisite("/guilds/pyromancer/forms/inferno.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

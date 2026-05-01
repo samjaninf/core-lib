@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Buff granting constitution and stamina");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/burning-resolve.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 19
         ]));

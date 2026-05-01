@@ -14,12 +14,12 @@ protected void Setup()
         "blunt weapon combat abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 17
         ]));
     addPrerequisite("/guilds/fighter/bludgeon/bludgeoners-boon.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

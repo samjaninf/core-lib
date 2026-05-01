@@ -13,13 +13,13 @@ protected void Setup()
         "knowledge of disrupting enemy defenses with chaotic fire.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/great-inferno.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

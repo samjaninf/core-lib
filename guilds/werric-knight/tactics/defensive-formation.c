@@ -15,9 +15,9 @@ protected void Setup()
         "withstand assaults that would shatter an unorganized group.");
 
     addPrerequisite("guilds/werric-knight/tactics/exploit-weakness.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":11]));
+        (["type": "guild", "level":11]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

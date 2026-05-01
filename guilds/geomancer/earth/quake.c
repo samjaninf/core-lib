@@ -17,10 +17,10 @@ protected void Setup()
         "in power.");
 
     addPrerequisite("/guilds/geomancer/earth/tremor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 7
         ]));

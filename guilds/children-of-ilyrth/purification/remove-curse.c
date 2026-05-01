@@ -14,12 +14,12 @@ protected void Setup()
         "divine power to break magical curses and corrupting enchantments.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 33 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/paralysis-immunity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

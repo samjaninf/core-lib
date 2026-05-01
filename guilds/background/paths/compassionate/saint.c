@@ -17,5 +17,5 @@ protected void Setup()
     addSpecification("bonus wisdom", 1);
 
     addPrerequisite("/guilds/background/paths/compassionate/selfless-devotion.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

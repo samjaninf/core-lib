@@ -25,11 +25,11 @@ protected void Setup()
     SetupResearch();
 
     addPrerequisite(sprintf("/guilds/scion/paths/%s/root.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite(sprintf("/guilds/scion/paths/%s/ice/ice-javelin.c", WeaponType),
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Scion of Dhuras",
             "value": 17
         ]));
@@ -72,7 +72,7 @@ protected void Setup()
 
     addSpecification("modifiers", ({ 
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/chill-the-blood.c", WeaponType),
             "name" : "Chill the Blood",
             "formula" : "multiplicative",
@@ -80,7 +80,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/freezing-mark.c", WeaponType),
             "name" : "Freezing Mark",
             "formula" : "multiplicative",
@@ -88,7 +88,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/winters-rage.c", WeaponType),
             "name" : "Winter's Rage",
             "formula" : "multiplicative",
@@ -96,7 +96,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/wind-chill.c", WeaponType),
             "name" : "Wind Chill",
             "formula" : "multiplicative",
@@ -104,7 +104,7 @@ protected void Setup()
             "rate": 1.35
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/icy-mark.c", WeaponType),
             "name" : "Icy Mark",
             "formula" : "multiplicative",
@@ -112,7 +112,7 @@ protected void Setup()
             "rate": 1.4
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/arctic-rage.c", WeaponType),
             "name" : "Arctic Rage",
             "formula" : "multiplicative",
@@ -120,7 +120,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/frigid-blast.c", WeaponType),
             "name" : "Frigid Blast",
             "formula" : "multiplicative",
@@ -128,7 +128,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/bitter-frost.c", WeaponType),
             "name" : "Bitter Frost",
             "formula" : "multiplicative",
@@ -136,7 +136,7 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"research",
+            "type": "research",
             "research item": sprintf("/guilds/scion/paths/%s/ice/crushing-chill.c", WeaponType),
             "name" : "Crushing Chill",
             "formula" : "multiplicative",
@@ -151,13 +151,13 @@ protected void Setup()
             "rate": 1.0
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : WeaponSkill,
             "formula" : "additive",
             "rate" : 0.05
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "elemental water",
             "formula" : "additive",
             "rate" : 0.10
@@ -175,13 +175,13 @@ protected void Setup()
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name": "magical essence",
             "formula": "logarithmic",
             "rate": 1.25
         ]),
         ([
-            "type":"skill",
+            "type": "skill",
             "name" : "physics",
             "formula" : "additive",
             "rate" : 0.10

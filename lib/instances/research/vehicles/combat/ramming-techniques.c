@@ -14,10 +14,10 @@ protected void Setup()
         "including optimal angles of attack and structural reinforcement.");
     addSpecification("research type", "points");
     addSpecification("research cost", 3);
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 5]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 4]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 5]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/combat/basic-vehicle-tactics.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("bonus damage", 2);
     addSpecification("bonus attack", 1);

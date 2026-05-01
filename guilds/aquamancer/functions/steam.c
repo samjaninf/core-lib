@@ -14,7 +14,7 @@ protected void Setup()
         "jets of superheated steam.");
 
     addPrerequisite("/guilds/aquamancer/functions/current.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

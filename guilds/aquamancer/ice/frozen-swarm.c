@@ -15,7 +15,7 @@ protected void Setup()
         "that tears through all foes in the area with devastating force.");
 
     addPrerequisite("/guilds/aquamancer/ice/raging-blizzard.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

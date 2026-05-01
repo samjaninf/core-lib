@@ -16,10 +16,10 @@ protected void Setup()
         "of their own, providing both offense and defense.");
 
     addPrerequisite("/guilds/aquamancer/water/water-walk.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 37
         ]));

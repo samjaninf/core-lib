@@ -302,7 +302,7 @@ void BeginQuestFiresOnQuestStartedEvent()
     object events = clone_object("/lib/tests/support/events/questEventsSubscriber.c");
     Quests.registerEvent(events);
     ExpectTrue(Quests.beginQuest("/lib/tests/support/quests/fakeQuestItem.c"));
-    ExpectEq(([ "onQuestStarted":"/lib/tests/support/quests/fakeQuestItem.c"]),
+    ExpectEq(([ "onQuestStarted": "/lib/tests/support/quests/fakeQuestItem.c"]),
         events.quests());
     ToggleCallOutBypass();
 }
@@ -314,7 +314,7 @@ void BeginQuestFiresProperEventsWhenInitialStateIsCompletionState()
     object events = clone_object("/lib/tests/support/events/questEventsSubscriber.c");
     Quests.registerEvent(events);
     ExpectTrue(Quests.beginQuest("/lib/tests/support/quests/anotherQuest.c"));
-    ExpectEq((["onQuestStarted":"/lib/tests/support/quests/anotherQuest.c",
+    ExpectEq((["onQuestStarted": "/lib/tests/support/quests/anotherQuest.c",
         "onQuestCompleted": "/lib/tests/support/quests/anotherQuest.c",
         "onQuestSucceeded": "/lib/tests/support/quests/anotherQuest.c"]),
         events.quests());

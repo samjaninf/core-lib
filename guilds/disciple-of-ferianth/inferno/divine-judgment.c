@@ -14,13 +14,13 @@ protected void Setup()
         "dramatically enhancing the most powerful conflagrations.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 57
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/blinding-glory.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -39,7 +39,7 @@ public nomask void InitializeSelector()
 protected nomask void setUpUserForSelection()
 {
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Exit Advancement Menu",
+        "name": "Exit Advancement Menu",
         "type": "exit",
         "description": "This option lets you exit the guild advancement menu.\n",
         "canShow": 1

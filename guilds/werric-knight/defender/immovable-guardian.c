@@ -15,9 +15,9 @@ protected void Setup()
         "determination to protect is absolute and unshakeable.");
 
     addPrerequisite("guilds/werric-knight/defender/sacrifice.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type": "guild", "level":31]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

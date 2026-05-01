@@ -17,12 +17,12 @@ protected void Setup()
         "long sword", "hand and a half sword", "two-handed sword" }) ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 11
         ]));
     addPrerequisite("/guilds/werric-knight/sword/improved-precision.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

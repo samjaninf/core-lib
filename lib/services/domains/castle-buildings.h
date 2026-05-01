@@ -3436,7 +3436,7 @@ private mapping CastleBuildings = ([
         ]),
         "components":([
             "SC1":([
-                "ascii":"...",
+                "ascii": "...",
                     "unicode" : "\u2514\u2508\u2518",
             ]),
             "SC2": ([
@@ -3941,7 +3941,7 @@ private mapping CastleBuildings = ([
         ]),
         "components":([
             "SC3":([
-                "ascii":"...",
+                "ascii": "...",
                     "unicode" : "\u2514\u2508\u2518",
             ]),
             "SC4": ([

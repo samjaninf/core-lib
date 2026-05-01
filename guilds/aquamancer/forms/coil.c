@@ -15,7 +15,7 @@ protected void Setup()
         "that crush and drown foes.");
 
     addPrerequisite("/guilds/aquamancer/forms/cage.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

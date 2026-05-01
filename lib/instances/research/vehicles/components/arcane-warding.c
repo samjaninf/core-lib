@@ -14,10 +14,10 @@ protected void Setup()
         "from both physical and magical harm.");
     addSpecification("research type", "points");
     addSpecification("research cost", 4);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 8]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 5]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-wagon-frame.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle protection", 8);

@@ -16,9 +16,9 @@ protected void Setup()
         "guarded kings and held fortress gates through endless sieges.");
 
     addPrerequisite("guilds/werric-knight/shield/thunderous-impact.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type": "guild", "level":33]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

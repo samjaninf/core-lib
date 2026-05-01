@@ -14,10 +14,10 @@ protected void Setup()
         "taking stamina points from a foe and transferring a portion to the caster.");
 
     addPrerequisite("/guilds/aeromancer/effects/siphon-sp.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 11
         ]));

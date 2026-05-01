@@ -14,11 +14,11 @@ protected void Setup()
         "knowledge of creating spells that conjure a wall of energy to block or impede foes.");
 
     addPrerequisite("/guilds/aeromancer/forms/wave.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":13
         ]));
 

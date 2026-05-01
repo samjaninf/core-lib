@@ -14,13 +14,13 @@ protected void Setup()
         "flames strike the target.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/conflagration-swiftness.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

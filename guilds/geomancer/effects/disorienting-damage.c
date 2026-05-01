@@ -15,10 +15,10 @@ protected void Setup()
         "evasion capabilities.");
 
     addPrerequisite("/guilds/geomancer/effects/reduce-parry.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 19
         ]));

@@ -13,12 +13,12 @@ protected void Setup()
         "pinnacle of spell construction, resulting in perfectly optimized effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 49
         ]));
     addPrerequisite("/guilds/geomancer/construct/arcane-precision.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

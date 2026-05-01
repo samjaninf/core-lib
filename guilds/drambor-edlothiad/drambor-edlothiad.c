@@ -9,78 +9,134 @@ public void SetupGuild()
 {
     guildName("Drambor Edlothiad");
     addPreferredSkillType("combat");
+
     prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk", 
         "Disciple of Argloth", "Guardian of Khazurath",
         "League of Assassins", "phaedra", "ranger", "rogue", "Werric Knight",
         "Wrathguard", "necromancer", "Aegis Guard", "Hand of Bilanx" }));
 
+    addRank("initiate", ([
+        "name": "initiate",
+        "title": "the Drambor Edlothiad",
+        "pretitle": "Initiate",
+        "next rank": "blade singer",
+        "delay for next promotion": 1200
+    ]));
+
+    addRank("blade singer", ([
+        "name": "blade singer",
+        "title": "the Drambor Edlothiad",
+        "pretitle": "Blade Singer",
+        "previous rank": "initiate",
+        "next rank": "arcane warrior",
+        "delay for next promotion": 3600
+    ]));
+
+    addRank("arcane warrior", ([
+        "name": "arcane warrior",
+        "title": "the Drambor Edlothiad",
+        "pretitle": "Arcane Warrior",
+        "previous rank": "blade singer",
+        "next rank": "high blade singer",
+        "delay for next promotion": 7200
+    ]));
+
+    addRank("high blade singer", ([
+        "name": "high blade singer",
+        "title": ", High Blade Singer of the Drambor",
+        "pretitle": "High Blade Singer",
+        "previous rank": "arcane warrior"
+    ]));
+
+    setDefaultRank("initiate");
+
     addCriteria("hit points", ([
         "type": "modifier",
-        "apply" : "4 every level",
-        "begin at level" : 1
+        "apply": "4 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("spell points", ([
         "type": "modifier",
-        "apply" : "4 every level",
-        "begin at level" : 1
+        "apply": "4 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("stamina points", ([
         "type": "modifier",
-        "apply" : "3 every level",
-        "begin at level" : 1
+        "apply": "3 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("weapon attack", ([
-        "type":"attack",
-        "apply" : "1 every 10 levels"
+        "type": "attack",
+        "apply": "1 every 10 levels"
     ]));
 
     addCriteria("attribute points", ([
-        "type":"attribute points",
+        "type": "attribute points",
         "apply": "1 every 5 levels"
     ]));
 
     addCriteria("skill points", ([
-        "type":"skill points",
-        "apply" : "5 every level"
+        "type": "skill points",
+        "apply": "5 every level"
     ]));
 
     addCriteria("initial research points", ([
-        "type":"research points",
-        "apply": "at level 1"
+        "type": "research points",
+        "apply": "5 at level 1"
     ]));
 
     addCriteria("research points", ([
-        "type":"research points",
-        "apply" : "1 every level"
+        "type": "research points",
+        "apply": "1 every level"
     ]));
 
-    addCriteria("research points", ([
-        "type":"research points",
-        "apply" : "1 every 5 levels"
+    addCriteria("supplemental research points", ([
+        "type": "research points",
+        "apply": "2 every 5 levels"
     ]));
 
-    addCriteria("bonus hit points", ([
-        "type": "bonus modifier",
-        "apply" : "10 at level 10",
-        "types" : ({ "hit points" }),
-        "begin at level" : 10
+    addCriteria("blade and magic", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/drambor-edlothiad/blade-and-magic.c"
     ]));
 
-    addCriteria("bonus spell points", ([
-        "type": "bonus modifier",
-        "apply" : "10 at level 10",
-        "types" : ({ "spell points" }),
-        "begin at level" : 10
+    addCriteria("elven sorcery", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/drambor-edlothiad/elven-sorcery.c"
     ]));
 
-    addResearchTree("/guilds/drambor-edlothiad/blade-and-magic.c");
-    addResearchTree("/guilds/drambor-edlothiad/elven-sorcery.c");
-    addResearchTree("/guilds/drambor-edlothiad/battle-magic.c");
-    addResearchTree("/guilds/drambor-edlothiad/arcane-warrior.c");
-    addResearchTree("/guilds/drambor-edlothiad/elemental-blade.c");
-    addResearchTree("/guilds/drambor-edlothiad/mystical-defense.c");
-    addResearchTree("/guilds/drambor-edlothiad/elven-heritage.c");
+    addCriteria("battle magic", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/drambor-edlothiad/battle-magic.c"
+    ]));
+
+    addCriteria("arcane warrior", ([
+        "type": "research tree",
+        "apply": "at level 3",
+        "research tree": "/guilds/drambor-edlothiad/arcane-warrior.c"
+    ]));
+
+    addCriteria("elemental blade", ([
+        "type": "research tree",
+        "apply": "at level 3",
+        "research tree": "/guilds/drambor-edlothiad/elemental-blade.c"
+    ]));
+
+    addCriteria("mystical defense", ([
+        "type": "research tree",
+        "apply": "at level 5",
+        "research tree": "/guilds/drambor-edlothiad/mystical-defense.c"
+    ]));
+
+    addCriteria("elven heritage", ([
+        "type": "research tree",
+        "apply": "at rank blade singer",
+        "research tree": "/guilds/drambor-edlothiad/elven-heritage.c"
+    ]));
 }

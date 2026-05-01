@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "An attack that can paralyze targets");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/nightmare-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 19
         ]));

@@ -15,9 +15,9 @@ protected void Setup()
         "yet manifested. This is defense elevated to an art that touches precognition.");
 
     addPrerequisite("guilds/werric-knight/defense/supreme-tactical-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":40]));
+        (["type": "guild", "level":40]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

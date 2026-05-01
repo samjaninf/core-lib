@@ -15,9 +15,9 @@ protected void Setup()
         "using offensive formations could break through any defensive line.");
 
     addPrerequisite("guilds/werric-knight/tactics/press-the-advantage.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":15]));
+        (["type": "guild", "level":15]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

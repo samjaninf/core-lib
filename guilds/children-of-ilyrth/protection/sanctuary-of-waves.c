@@ -14,12 +14,12 @@ protected void Setup()
         "sacred sanctuary of swirling waters that protects all nearby allies.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 23 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/ilryths-aegis.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

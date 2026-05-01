@@ -14,13 +14,13 @@ protected void Setup()
         "enhancing area-effect attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 11
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/firestorm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

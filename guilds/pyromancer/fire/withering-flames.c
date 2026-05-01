@@ -14,10 +14,10 @@ protected void Setup()
         "flames that wither and consume everything they touch.");
 
     addPrerequisite("/guilds/pyromancer/fire/whirling-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 57
         ]));

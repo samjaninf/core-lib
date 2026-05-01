@@ -14,9 +14,9 @@ protected void Setup()
         "concentrates force at a single point for maximum penetration.");
 
     addPrerequisite("guilds/werric-knight/mounted/mounted-combat-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":30]));
+        (["type": "guild", "level":30]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

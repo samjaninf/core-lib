@@ -15,10 +15,10 @@ protected void Setup()
         "against attacks but reduces your offensive power.");
 
     addPrerequisite("/guilds/therianthrope/bear/den-mother.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 15
         ]));

@@ -18,10 +18,10 @@ protected void Setup()
         "willpower and resolve");
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/memory-shatter.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 17
         ]));
@@ -80,7 +80,7 @@ protected void Setup()
             "rate": 0.10
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.25

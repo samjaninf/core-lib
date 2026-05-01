@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of making the mind truly impenetrable.");
 
     addPrerequisite("/guilds/oneiromancer/mental-bastion/fortified-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 17
         ]));

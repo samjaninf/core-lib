@@ -38,7 +38,7 @@ protected nomask void setUpUserForSelection()
         if (User->attributePoints())
         {
             Data[to_string(sizeof(Data) + 1)] = ([
-                "name":"Spend Attribute Points",
+                "name": "Spend Attribute Points",
                 "type": "attributes",
                 "description": "This option lets you spend points on new attributes.\n",
                 "canShow": 1
@@ -48,7 +48,7 @@ protected nomask void setUpUserForSelection()
         if (User->AvailableSkillPoints())
         {
             Data[to_string(sizeof(Data) + 1)] = ([
-                "name":"Spend Skill Points",
+                "name": "Spend Skill Points",
                 "type": "skills",
                 "description": "This option lets you spend points on new attributes.\n",
                 "canShow": 1
@@ -97,7 +97,7 @@ protected nomask void setUpUserForSelection()
         if (User->researchPoints())
         {
             Data[to_string(sizeof(Data) + 1)] = ([
-                "name":"Spend Research Points",
+                "name": "Spend Research Points",
                 "type": "research",
                 "description": "This option lets you spend points on new attributes.\n",
                 "canShow": 1,
@@ -107,7 +107,7 @@ protected nomask void setUpUserForSelection()
     }
 
     Data[to_string(sizeof(Data) + 1)] = ([
-        "name":"Exit Advancement Menu",
+        "name": "Exit Advancement Menu",
         "type": "exit",
         "description": "This option lets you exit the guild advancement menu.\n",
         "canShow": 1

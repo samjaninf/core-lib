@@ -13,7 +13,7 @@ protected void Setup()
         "restoring your mental clarity and spell points.");
 
     addPrerequisite("/guilds/background/paths/devoted/inner-peace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

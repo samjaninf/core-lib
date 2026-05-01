@@ -14,9 +14,9 @@ protected void Setup()
         "that cannot be easily halted or deflected.");
 
     addPrerequisite("guilds/werric-knight/mounted/cavalry-wedge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":33]));
+        (["type": "guild", "level":33]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

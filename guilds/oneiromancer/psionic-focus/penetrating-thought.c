@@ -14,12 +14,12 @@ protected void Setup()
         "psionic attacks more difficult to resist.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 8 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/focused-intent.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Mind Spike": 15,

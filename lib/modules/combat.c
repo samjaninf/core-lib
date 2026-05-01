@@ -980,11 +980,11 @@ private nomask varargs mapping *getWeaponAttacksFromBonus(int numAttacks, int ad
 
         for (int i = 0; i < numAttacks; i++)
         {
-            attacksToReturn += ({ (["attack type":"wielded primary"]) });
+            attacksToReturn += ({ (["attack type": "wielded primary"]) });
 
             if (hasOffhandWeapon && ((i % 2) || addOffhand))
             {
-                attacksToReturn += ({ (["attack type":"wielded offhand"]) });
+                attacksToReturn += ({ (["attack type": "wielded offhand"]) });
             }
         }
     }
@@ -1011,7 +1011,7 @@ public nomask mapping *getAttacks()
         {
             allowOnlyOneAttack = (weapon->query("type") == "instrument");
 
-            attacksToReturn += ({ (["attack type":"wielded primary"]) });
+            attacksToReturn += ({ (["attack type": "wielded primary"]) });
         }
 
         if (!allowOnlyOneAttack)

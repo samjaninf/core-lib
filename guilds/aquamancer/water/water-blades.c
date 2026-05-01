@@ -16,10 +16,10 @@ protected void Setup()
         "through the heat of battle.");
 
     addPrerequisite("/guilds/aquamancer/water/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 9
         ]));

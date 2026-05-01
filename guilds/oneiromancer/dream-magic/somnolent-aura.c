@@ -14,10 +14,10 @@ protected void Setup()
         "the strength of nearby enemies while fortifying the oneiromancer.");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/oneiric-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 31
         ]));

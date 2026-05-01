@@ -14,12 +14,12 @@ protected void Setup()
         "large, powerful projectile that does sonic damage.");
 
     addPrerequisite("/guilds/bard/bow/the-archers-song.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "bow" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 13
         ]));

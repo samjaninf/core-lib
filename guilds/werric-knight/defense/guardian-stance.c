@@ -13,9 +13,9 @@ protected void Setup()
         "a defensive posture that protects allies and intimidates enemies.");
 
     addPrerequisite("/guilds/werric-knight/defense/fortified-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":27]));
+        (["type": "guild", "level":27]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -14,13 +14,13 @@ protected void Setup()
         "of the Pyre.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/amplified-invocation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -16,10 +16,10 @@ protected void Setup()
         "foes completely off guard, dealing significant damage to all in the area.");
 
     addPrerequisite("/guilds/aeromancer/air/tornado.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 25
         ]));

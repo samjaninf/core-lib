@@ -20,7 +20,7 @@ protected void Setup()
           "value": 9 ]));
 
     addPrerequisite("/guilds/aquamancer/ice/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("modifiers", ({ 
         ([

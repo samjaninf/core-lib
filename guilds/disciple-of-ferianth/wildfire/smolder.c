@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Single target DoT fire spell");
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/wildfire-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 3
         ]));

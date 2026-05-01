@@ -15,7 +15,7 @@ protected void Setup()
         "of fate that flow through all things.");
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

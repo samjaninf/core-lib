@@ -14,12 +14,12 @@ protected void Setup()
         "ice attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 11
         ]));
     addPrerequisite("/guilds/aquamancer/ice/ice-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

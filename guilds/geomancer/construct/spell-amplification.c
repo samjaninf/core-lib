@@ -14,12 +14,12 @@ protected void Setup()
         "resulting in significantly more potent effects.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 25
         ]));
     addPrerequisite("/guilds/geomancer/construct/enhanced-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

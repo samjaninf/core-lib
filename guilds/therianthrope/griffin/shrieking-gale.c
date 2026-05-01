@@ -16,10 +16,10 @@ protected void Setup()
         "while in griffin form");
 
     addPrerequisite("/guilds/therianthrope/griffin/hunters-instinct.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 25
         ]));

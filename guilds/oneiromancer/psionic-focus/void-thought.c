@@ -19,10 +19,10 @@ protected void Setup()
         "pure emptiness that impairs mental attributes");
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/mind-annihilation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 35
         ]));
@@ -94,7 +94,7 @@ protected void Setup()
             "rate": 0.15
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.75

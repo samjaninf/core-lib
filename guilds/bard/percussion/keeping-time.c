@@ -17,13 +17,13 @@ protected void Setup()
         "equipment": ({ "instrument: percussion" }) ]));
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 11
     ]));
 
     addPrerequisite("/guilds/bard/percussion/snare-of-the-soldier.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

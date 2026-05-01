@@ -12,5 +12,5 @@ protected void Setup()
     addSpecification("description", "blah blah blah");
     addSpecification("root", "disfigured");
     addSpecification("opposing root", "normal");
-    addPrerequisite("long sword", (["type":"skill", "value" : 10]));
+    addPrerequisite("long sword", (["type": "skill", "value" : 10]));
 }

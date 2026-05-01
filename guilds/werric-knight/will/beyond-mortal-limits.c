@@ -16,9 +16,9 @@ protected void Setup()
         "of human capability.");
 
     addPrerequisite("guilds/werric-knight/will/indomitable-spirit.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

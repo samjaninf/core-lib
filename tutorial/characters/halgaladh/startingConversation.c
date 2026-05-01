@@ -52,7 +52,7 @@ private void WalkingCorpsesStink()
         "tonight that this was the killer. All of the signs point to it - "
         "the bow and arrows, the trail we've followed...'");
     addResponseEffect("stinks too", "@I@Examine corpse@E@",
-        (["experience":(["guild":"background", "amount" : 25])]));
+        (["experience":(["guild": "background", "amount" : 25])]));
 
     addResponse("stinks too", "It does stink...", "@D@@C@##InitiatorName## "
         "##ResponseInfinitive::wrinkle## ##InitiatorPossessive## nose and "

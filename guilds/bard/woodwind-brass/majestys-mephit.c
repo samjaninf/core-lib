@@ -21,13 +21,13 @@ protected void Setup()
         "woodwind and brass instruments.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "bard",
         "value": 17
     ]));
 
     addPrerequisite("/guilds/bard/woodwind-brass/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", ([
         "equipment":({ "instrument: woodwind", "instrument: brass" }),
@@ -43,57 +43,57 @@ protected void Setup()
                "value": 10 ]),
             (["modifier": "bonus damage",
                "value": 5 ]),
-            (["modifier":"bonus hit points",
+            (["modifier": "bonus hit points",
                "value" : 250 ]),
         }),
         "/guilds/bard/woodwind-brass/serenade-to-a-mephit.c":({
-            (["modifier":"bonus defense",
+            (["modifier": "bonus defense",
                "value": 10 ]),
-            (["modifier":"bonus soak",
+            (["modifier": "bonus soak",
                "value": 5 ]),
-            (["modifier":"bonus hit points",
+            (["modifier": "bonus hit points",
                "value" : 250]),
         }),
         "/guilds/bard/woodwind-brass/mephit-minstrel.c":({
             (["modifier": "bonus attack",
                "value": 8 ]),
-            (["modifier":"bonus defense",
+            (["modifier": "bonus defense",
                "value": 8 ]),
             (["modifier": "bonus damage",
                "value": 5 ]),
-            (["modifier":"bonus soak",
+            (["modifier": "bonus soak",
                "value": 5 ]),
         }),
         "/guilds/bard/woodwind-brass/menace-of-a-mephit.c":({
             (["modifier": "bonus destruction",
                "value": 20 ]),
-            (["modifier":"bonus spell points",
+            (["modifier": "bonus spell points",
                "value" : 200 ]),
         }),
         "/guilds/bard/woodwind-brass/lay-of-mephias.c":({
             (["modifier": "bonus spellcraft",
                "value": 20 ]),
-            (["modifier":"bonus spell points",
+            (["modifier": "bonus spell points",
                "value" : 200 ]),
         }),
         "/guilds/bard/woodwind-brass/a-mephits-ballad.c":({
             (["modifier": "bonus attack",
                "value": 8 ]),
-            (["modifier":"bonus defense",
+            (["modifier": "bonus defense",
                "value": 8 ]),
             (["modifier": "bonus damage",
                "value": 5 ]),
-            (["modifier":"bonus soak",
+            (["modifier": "bonus soak",
                "value": 5 ]),
         }),
         "/guilds/bard/woodwind-brass/march-of-the-mephits.c":({
             (["modifier": "bonus heal hit points",
                "value": 10 ]),
-            (["modifier":"bonus heal spell points",
+            (["modifier": "bonus heal spell points",
                "value": 10 ]),
             (["modifier": "bonus heal hit points rate",
                "value": 5 ]),
-            (["modifier":"bonus heal spell points rate",
+            (["modifier": "bonus heal spell points rate",
                "value": 5 ]),
         }),
     ]));

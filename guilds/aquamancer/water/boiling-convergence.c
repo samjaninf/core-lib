@@ -15,13 +15,13 @@ protected void Setup()
         "scalding effects with greater efficiency.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 17
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/steamweaving.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

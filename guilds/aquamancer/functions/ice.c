@@ -14,7 +14,7 @@ protected void Setup()
         "shards of ice and freezing cold.");
 
     addPrerequisite("/guilds/aquamancer/functions/chill.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

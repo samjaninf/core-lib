@@ -16,7 +16,7 @@ protected void Setup()
         "technique that forms the basis for more advanced water manipulation.");
 
     addPrerequisite("/guilds/aquamancer/water/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

@@ -13,13 +13,13 @@ protected void Setup()
         "supreme knowledge of ember arts, maximizing utility abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 45
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/master-ember-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

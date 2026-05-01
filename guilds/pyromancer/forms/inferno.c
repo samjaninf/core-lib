@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form infernos of fire.");
 
     addPrerequisite("/guilds/pyromancer/forms/vortex.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

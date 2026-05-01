@@ -14,14 +14,14 @@ protected void Setup()
         "an enemy.");
 
     addPrerequisite("/guilds/fighter/bludgeon/pummel.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "long sword",
         "hand and a half sword", "two-handed sword", "dagger", 
         "short sword", })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 13
         ]));
@@ -140,7 +140,7 @@ protected void Setup()
             "rate" : 0.75
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "blunt skills",
             "skills": ({ "mace", "hammer", "flail", "staff" }),
             "formula" : "additive",

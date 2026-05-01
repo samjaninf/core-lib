@@ -48,7 +48,7 @@ protected nomask void setUpUserForSelection()
         }
     }
     Data[to_string(menuItem)] = ([
-        "name":"Exit Research Menu",
+        "name": "Exit Research Menu",
         "type": "exit",
         "description": "This option lets you exit the research menu.\n"
 

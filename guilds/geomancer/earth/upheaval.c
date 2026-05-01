@@ -14,10 +14,10 @@ protected void Setup()
         "violently heave upward beneath a target, dealing massive damage.");
 
     addPrerequisite("/guilds/geomancer/earth/fissure.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 21
         ]));

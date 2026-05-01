@@ -17,12 +17,12 @@ protected void Setup()
         "long you have taken to make your attack.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 5
         ]));
     addPrerequisite("/guilds/fighter/techniques/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

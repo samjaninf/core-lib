@@ -15,17 +15,17 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/weapons/maces/craftDoubleAxe.c", 
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/weapons/common/folding.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/weapons/common/austempering.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/weapons/common/differential-hardening.c",
-        (["type":"research"]));
-    addPrerequisite("weapon smithing", (["type":"skill", "value" : 25]));
-    addPrerequisite("blacksmithing", (["type":"skill", "value" : 20]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 20]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 20]));
+        (["type": "research"]));
+    addPrerequisite("weapon smithing", (["type": "skill", "value" : 25]));
+    addPrerequisite("blacksmithing", (["type": "skill", "value" : 20]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 20]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 20]));
 
     addSpecification("limited by", (["crafting type": ({"mace", "flail"})]));
 

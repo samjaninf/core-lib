@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "A burning attack that weakens defenses");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/scorching-ray.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 23
         ]));

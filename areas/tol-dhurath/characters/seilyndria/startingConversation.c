@@ -219,14 +219,14 @@ private void MaiwynDiscussionOutlaws()
         "seemingly deep in thought.");
     addResponsePrerequisite("the outlaws",
         "Did you say Seilyndria? @A@Theology@E@",
-        (["theology":(["type":"skill", "value" : 1])]), 1);
+        (["theology":(["type": "skill", "value" : 1])]), 1);
 
     addResponse("the outlaws", "Galadhel?",
         "@S@'You are familiar with this Seilyndria, Galadhel?' @D@"
         "@C@##InitiatorName## ##ResponseInfinitive::ask## in a troubled "
         "voice.");
     addResponsePrerequisite("the outlaws", "Galadhel?",
-        (["presence":(["type":"presence", "value" : ({ "galadhel" })])]));
+        (["presence":(["type": "presence", "value" : ({ "galadhel" })])]));
 
     addResponse("the outlaws", "@I@Continue@E@", "@I@Continue@E@");
 

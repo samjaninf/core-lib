@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus disable traps", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/poison-affinity.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

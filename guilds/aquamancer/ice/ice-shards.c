@@ -14,7 +14,7 @@ protected void Setup()
         "aquamancer hurls razor-sharp shards of ice at a foe.");
 
     addPrerequisite("/guilds/aquamancer/ice/chill.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

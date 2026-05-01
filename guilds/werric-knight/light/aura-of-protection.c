@@ -13,9 +13,9 @@ protected void Setup()
         "shields all nearby allies from harm.");
 
     addPrerequisite("guilds/werric-knight/light/greater-heal.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

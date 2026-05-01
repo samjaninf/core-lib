@@ -98,7 +98,7 @@ protected nomask void setUpUserForSelection()
     int counter = 1;
 
     Data[to_string(counter++)] = ([
-        "name":"View Account Status",
+        "name": "View Account Status",
         "type" : "status",
         "description" : "Display your current cash, bank balance, and debt information.",
         "canShow" : 1
@@ -156,7 +156,7 @@ protected nomask void setUpUserForSelection()
     }
 
     Data[to_string(counter++)] = ([
-        "name":"Return to Trading Menu",
+        "name": "Return to Trading Menu",
         "type" : "exit",
         "description" : "Return to the main trading menu.",
         "canShow" : 1

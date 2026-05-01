@@ -14,10 +14,10 @@ protected void Setup()
         "providing the watertight foundation for water vessels.");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 2]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 1]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 2]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 1]));
     addPrerequisite("/lib/instances/research/vehicles/craftComponents.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "boat", "ship", "barge" })]));
     addSpecification("bonus crafting vehicle structure", 3);

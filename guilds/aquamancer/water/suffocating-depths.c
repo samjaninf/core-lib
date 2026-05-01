@@ -16,10 +16,10 @@ protected void Setup()
         "darkest depths of a poisoned sea.");
 
     addPrerequisite("/guilds/aquamancer/water/toxic-waters.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 29
         ]));

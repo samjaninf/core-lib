@@ -14,12 +14,12 @@ protected void Setup()
         "combination attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 27
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-combinations/an-alag.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

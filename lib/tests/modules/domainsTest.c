@@ -224,7 +224,7 @@ void GetHenchmenReturnsAllHenchmenWhenNoLocationUsed()
 void GetHenchmenReturnsCorrectTypeOfHenchmen()
 {
     mapping henchman = ([
-        "name":"Tantor the Unclean",
+        "name": "Tantor the Unclean",
         "type" : "carpenter",
         "persona" : "swordsman",
         "traits": ({ "/lib/instances/traits/domains/journeyman-carpenter.c" }),

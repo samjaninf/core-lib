@@ -14,12 +14,12 @@ protected void Setup()
         "with the caster, granting understanding beyond mortal limits.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 29 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/tidal-intuition.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

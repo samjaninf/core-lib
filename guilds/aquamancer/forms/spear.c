@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form piercing spears of hardened water.");
 
     addPrerequisite("/guilds/aquamancer/forms/blade.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

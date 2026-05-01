@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus persuasion", 1);
 
     addPrerequisite("/guilds/background/paths/miscreant/underworld-contacts.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

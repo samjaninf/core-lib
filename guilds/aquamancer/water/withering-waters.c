@@ -16,10 +16,10 @@ protected void Setup()
         "their very essence being drained away.");
 
     addPrerequisite("/guilds/aquamancer/water/whirling-waters.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 57
         ]));

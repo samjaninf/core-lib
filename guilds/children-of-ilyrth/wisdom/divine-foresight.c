@@ -15,12 +15,12 @@ protected void Setup()
         "unfold.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 37 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/wisdom/ilryths-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

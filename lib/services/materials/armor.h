@@ -17,9 +17,9 @@ protected mapping armorBlueprints = ([
         "subtype": "medium armor",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 7]),
+            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 7]),
         ]),
         "crafting materials": ([
             "metal": 10,
@@ -41,9 +41,9 @@ protected mapping armorBlueprints = ([
         "subtype": "medium armor",
         "skill to craft": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 12]),
+            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 12]),
         ]),
         "crafting materials": ([
             "metal": 10,
@@ -65,9 +65,9 @@ protected mapping armorBlueprints = ([
         "subtype": "medium armor",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 7]),
+            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 7]),
         ]),
         "crafting materials": ([
             "metal": 8,
@@ -89,9 +89,9 @@ protected mapping armorBlueprints = ([
         "subtype": "light armor",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "textile": 10
@@ -111,9 +111,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "textile": 10
@@ -133,12 +133,12 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 8,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "metal crafting": (["type":"skill", "value": 1]),
-            "gem crafting": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "metal crafting": (["type": "skill", "value": 1]),
+            "gem crafting": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "textile": 10,
@@ -161,9 +161,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 10
@@ -183,9 +183,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 9
@@ -205,9 +205,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 5
@@ -227,9 +227,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 5
@@ -249,9 +249,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 4
@@ -271,9 +271,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 4
@@ -293,9 +293,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 3
@@ -315,9 +315,9 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 7]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 7]),
         ]),
         "crafting materials": ([
             "metal": 10,
@@ -339,9 +339,9 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 7]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 7]),
         ]),
         "crafting materials": ([
             "metal": 10,
@@ -364,9 +364,9 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 12,
@@ -388,10 +388,10 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftScaleArmor.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 9]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftScaleArmor.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 9]),
         ]),
         "crafting materials": ([
             "metal": 6,
@@ -413,9 +413,9 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 12,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 9]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 9]),
         ]),
         "crafting materials": ([
             "metal": 12,
@@ -437,9 +437,9 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 12,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 9]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 9]),
         ]),
         "crafting materials": ([
             "metal": 12,
@@ -461,9 +461,9 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 12,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 9]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 9]),
         ]),
         "crafting materials": ([
             "metal": 8,
@@ -485,9 +485,9 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "metal": 15,
@@ -510,10 +510,10 @@ protected mapping armorBlueprints = ([
         "subtype": "medium armor",
         "skill to craft": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 8]),
-            "armorer": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 8]),
+            "armorer": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "leather": 10,
@@ -535,9 +535,9 @@ protected mapping armorBlueprints = ([
         "subtype": "medium armor",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "leather": 10,
@@ -559,10 +559,10 @@ protected mapping armorBlueprints = ([
         "subtype": "medium armor",
         "skill to craft": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "leatherworking": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "leatherworking": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 6,
@@ -585,9 +585,9 @@ protected mapping armorBlueprints = ([
         "subtype": "light armor",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "leather": 10,
@@ -609,9 +609,9 @@ protected mapping armorBlueprints = ([
         "subtype": "light armor",
         "skill to craft": 8,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 5]),
-            "armorer": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 5]),
+            "armorer": (["type": "skill", "value": 3]),
         ]),
         "crafting materials": ([
             "leather": 8,
@@ -633,9 +633,9 @@ protected mapping armorBlueprints = ([
         "subtype": "light armor",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 3]),
-            "armorer": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 3]),
+            "armorer": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "textile": 10
@@ -655,10 +655,10 @@ protected mapping armorBlueprints = ([
         "subtype": "medium armor",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3]),
-            "metal crafting": (["type":"skill", "value": 2]),
-            "armorer": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3]),
+            "metal crafting": (["type": "skill", "value": 2]),
+            "armorer": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 6,
@@ -681,9 +681,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftGloves.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "leatherworking": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftGloves.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "leatherworking": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 1,
@@ -703,8 +703,8 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 7,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftGloves.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/craftGloves.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 2,
@@ -724,8 +724,8 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftHelmet.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/craftHelmet.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "helmet design": (["metal": 2, "leather": 1 ]),
@@ -745,8 +745,8 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftHelmet.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/craftHelmet.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "helm design": (["metal": 3, "leather": 1 ]),
@@ -766,8 +766,8 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftHelmet.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/armor/craftHelmet.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "metal": 3,
@@ -789,9 +789,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 8]),
-            "gem crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 8]),
+            "gem crafting": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "metal": 2,
@@ -811,9 +811,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 8]),
-            "gem crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 8]),
+            "gem crafting": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "metal": 2,
@@ -833,9 +833,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 8]),
-            "gem crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 8]),
+            "gem crafting": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "metal": 2,
@@ -856,9 +856,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 8]),
-            "gem crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 8]),
+            "gem crafting": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "metal": 3,
@@ -879,9 +879,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 3]),
-            "weaving and beadwork": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 3]),
+            "weaving and beadwork": (["type": "skill", "value": 2]),
         ]),
         "crafting materials": ([
             "textile": 3
@@ -900,9 +900,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "leatherworking": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "leatherworking": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 1,
@@ -921,9 +921,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "leatherworking": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "leatherworking": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 1,
@@ -942,9 +942,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "leatherworking": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "leatherworking": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 1,
@@ -963,8 +963,8 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 10])
         ]),
         "crafting materials": ([
             "textile": 1,
@@ -985,8 +985,8 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -1004,9 +1004,9 @@ protected mapping armorBlueprints = ([
         "subtype": "clothing",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 4,
@@ -1025,9 +1025,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal":1,
@@ -1046,9 +1046,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "gem crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "gem crafting": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal":1,
@@ -1067,9 +1067,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 1]),
-            "leatherworking": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 1]),
+            "leatherworking": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -1088,9 +1088,9 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 4
@@ -1104,13 +1104,13 @@ protected mapping armorBlueprints = ([
         "base experience": 5,
     ]),
     "padded arm greaves": ([
-        "type":"armor",
+        "type": "armor",
         "subtype" : "light armor",
         "skill to craft" : 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 4
@@ -1127,9 +1127,9 @@ protected mapping armorBlueprints = ([
         "type": "armor",
         "subtype": "light armor",
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftClothing.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "weaving and beadwork": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "weaving and beadwork": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "textile": 4
@@ -1144,13 +1144,13 @@ protected mapping armorBlueprints = ([
         "base experience": 5,
     ]),
     "leather arm greaves": ([
-        "type":"armor",
+        "type": "armor",
         "subtype" : "light armor",
         "skill to craft" : 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "leatherworking": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "leatherworking": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "leather": 4
@@ -1169,9 +1169,9 @@ protected mapping armorBlueprints = ([
         "subtype": "light armor",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 1]),
-            "leatherworking": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 1]),
+            "leatherworking": (["type": "skill", "value": 4]),
         ]),
         "crafting materials": ([
             "leather": 4
@@ -1186,12 +1186,12 @@ protected mapping armorBlueprints = ([
         "base experience": 5,
     ]),
     "plate arm greaves": ([
-        "type":"armor",
+        "type": "armor",
         "subtype" : "heavy armor",
         "skill to craft" : 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 4,
@@ -1211,8 +1211,8 @@ protected mapping armorBlueprints = ([
         "subtype": "heavy armor",
         "skill to craft": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 5]),
         ]),
         "crafting materials": ([
             "metal": 4,
@@ -1232,10 +1232,10 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "gem crafting": (["type":"skill", "value": 2]),
-            "leatherworking": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "gem crafting": (["type": "skill", "value": 2]),
+            "leatherworking": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "metal": 1,
@@ -1257,10 +1257,10 @@ protected mapping armorBlueprints = ([
         "subtype": "accessory",
         "skill to craft": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type":"research"]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "gem crafting": (["type":"skill", "value": 2]),
-            "leatherworking": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/armor/craftJewelry.c":(["type": "research"]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "gem crafting": (["type": "skill", "value": 2]),
+            "leatherworking": (["type": "skill", "value": 10]),
         ]),
         "crafting materials": ([
             "metal":1,

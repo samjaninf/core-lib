@@ -13,10 +13,10 @@ protected void Setup()
         "insight into the deeper mysteries of Ferianth's power.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/divine-wisdom.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 32
         ]));

@@ -15,7 +15,7 @@ protected void Setup()
         "water capable of slicing through armor.");
 
     addPrerequisite("/guilds/aquamancer/forms/tendril.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

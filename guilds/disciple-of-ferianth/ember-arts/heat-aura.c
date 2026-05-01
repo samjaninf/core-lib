@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Sustained aura with defense and damage reflection");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/fire-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));

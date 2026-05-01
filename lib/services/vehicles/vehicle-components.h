@@ -96,7 +96,7 @@ private mapping VehicleComponents =
         "crafting materials": ([ "wood": 4 ]),
         "prerequisites": ([ 
             "carpentry": ([ "type": "skill", "value": 1 ]),
-            "/lib/instances/research/vehicles/components/basic-wagon-frame.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/basic-wagon-frame.c" : (["type": "research"]),
         ]),
     ]),
     "wagon platform with railings": ([
@@ -108,7 +108,7 @@ private mapping VehicleComponents =
         "crafting materials": ([ "wood": 5 ]),
         "prerequisites": ([ 
             "carpentry": ([ "type": "skill", "value": 2 ]),
-            "/lib/instances/research/vehicles/components/basic-wagon-frame.c" : (["type":"research"]), 
+            "/lib/instances/research/vehicles/components/basic-wagon-frame.c" : (["type": "research"]), 
         ]),
     ]),
     "wagon platform with storage": ([
@@ -121,7 +121,7 @@ private mapping VehicleComponents =
         "crafting materials": ([ "wood": 6 ]),
         "prerequisites": ([ 
             "carpentry": ([ "type": "skill", "value": 3 ]),
-            "/lib/instances/research/vehicles/components/basic-wagon-frame.c" : (["type":"research"]), 
+            "/lib/instances/research/vehicles/components/basic-wagon-frame.c" : (["type": "research"]), 
         ]),
     ]),
     "wagon platform with tent": ([
@@ -133,7 +133,7 @@ private mapping VehicleComponents =
         "crafting materials": ([ "wood": 5, "textile": 3 ]),
         "prerequisites": ([ 
             "carpentry": ([ "type": "skill", "value": 4 ]),
-            "/lib/instances/research/vehicles/components/luxury-wagon-body.c" : (["type":"research"]), 
+            "/lib/instances/research/vehicles/components/luxury-wagon-body.c" : (["type": "research"]), 
         ]),
     ]),
     "wagon platform with magical enhancements": ([
@@ -146,7 +146,7 @@ private mapping VehicleComponents =
         "prerequisites": ([
             "carpentry": ([ "type": "skill", "value": 5 ]),
             "arcane crafting": ([ "type": "skill", "value": 3 ]),
-            "/lib/instances/research/vehicles/components/arcane-wagon-frame.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/arcane-wagon-frame.c" : (["type": "research"]),
         ]),
     ]),
 
@@ -193,7 +193,7 @@ private mapping VehicleComponents =
         "crafting materials": ([ "wood": 2, "metal": 2 ]),
         "prerequisites": ([ 
             "carpentry": ([ "type": "skill", "value": 2 ]),
-            "/lib/instances/research/vehicles/components/armored-wagon-body.c" : (["type":"research"]), 
+            "/lib/instances/research/vehicles/components/armored-wagon-body.c" : (["type": "research"]), 
         ]),
     ]),
     "wagon spiked armor": ([
@@ -204,7 +204,7 @@ private mapping VehicleComponents =
         "crafting materials": ([ "metal": 5 ]),
         "prerequisites": ([ 
             "metal crafting": ([ "type": "skill", "value": 3 ]),
-            "/lib/instances/research/vehicles/components/armored-wagon-body.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/armored-wagon-body.c" : (["type": "research"]),
         ]),
     ]),
 
@@ -333,7 +333,7 @@ private mapping VehicleComponents =
         "crafting materials": ([ "metal": 4 ]),
         "prerequisites": ([
             "metal crafting": ([ "type": "skill", "value": 3 ]),
-            "/lib/instances/research/vehicles/components/caltrop-dispenser.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/caltrop-dispenser.c" : (["type": "research"]),
         ]),
     ]),
     "net launcher": ([
@@ -344,7 +344,7 @@ private mapping VehicleComponents =
         "prerequisites": ([
             "carpentry": ([ "type": "skill", "value": 3 ]),
             "engineering": ([ "type": "skill", "value": 2 ]),
-            "/lib/instances/research/vehicles/components/net-launcher.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/net-launcher.c" : (["type": "research"]),
         ]),
     ]),
     "wagon oil dispenser": ([
@@ -355,7 +355,7 @@ private mapping VehicleComponents =
         "prerequisites": ([
             "carpentry": ([ "type": "skill", "value": 2 ]),
             "alchemy": ([ "type": "skill", "value": 2 ]),
-            "/lib/instances/research/vehicles/components/oil-dispenser.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/oil-dispenser.c" : (["type": "research"]),
         ]),
     ]),
 
@@ -683,7 +683,7 @@ private mapping VehicleComponents =
         "prerequisites": ([
             "carpentry": ([ "type": "skill", "value": 4 ]),
             "engineering": ([ "type": "skill", "value": 4 ]),
-            "/lib/instances/research/vehicles/components/springald-mount.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/springald-mount.c" : (["type": "research"]),
         ]),
     ]),
     "onager mount": ([
@@ -694,7 +694,7 @@ private mapping VehicleComponents =
         "prerequisites": ([
             "carpentry": ([ "type": "skill", "value": 5 ]),
             "engineering": ([ "type": "skill", "value": 4 ]),
-            "/lib/instances/research/vehicles/components/onager-mount.c" : (["type":"research"]),
+            "/lib/instances/research/vehicles/components/onager-mount.c" : (["type": "research"]),
         ]),
     ]),
     "lightning cannon": ([

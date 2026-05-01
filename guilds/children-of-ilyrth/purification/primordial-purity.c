@@ -15,12 +15,12 @@ protected void Setup()
         "greatly enhancing all purification abilities.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 57 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/divine-purification.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

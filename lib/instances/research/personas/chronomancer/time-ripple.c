@@ -19,12 +19,12 @@ protected void Setup()
         "range" : 25
     ]) }));
     addSpecification("modifiers", ({ ([
-        "type":"skill",
+        "type": "skill",
         "name" : "time",
         "formula" : "additive",
         "rate" : 1.25
     ]), ([
-        "type":"attribute",
+        "type": "attribute",
         "name" : "intelligence",
         "formula" : "logarithmic",
         "base value" : 5,

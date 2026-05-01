@@ -108,7 +108,7 @@ inherit "/lib/modules/research/researchTree.c";
 //        "successful trading and commercial operations");
 //    Source("trading");
 //    addPrerequisite("trade", 
-//        (["type":"skill", "value" : 2]));
+//        (["type": "skill", "value" : 2]));
 //    addResearchElement("/lib/instances/research/trading/basicCommerce.c");
 //    TreeRoot("/lib/instances/research/trading/basicCommerce.c");
 //

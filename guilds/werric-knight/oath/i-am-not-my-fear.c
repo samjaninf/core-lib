@@ -16,9 +16,9 @@ protected void Setup()
         "courage.");
 
     addPrerequisite("guilds/werric-knight/oath/disciplined-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":3]));
+        (["type": "guild", "level":3]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

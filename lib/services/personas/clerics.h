@@ -10,7 +10,7 @@ private nosave mapping divineUserBlueprints = ([
     //        "accompanied by a chill and the faint scent of incense and old tombs. "
     //        "Known for their unwavering resolve, they are both feared and respected "
     //        "as guides through the mysteries of death and the afterlife.",
-    //    "category":"clerics",
+    //    "category": "clerics",
     //    "is humanoid" : 1,
     //    "primary skills" : ({ "mace", "staff", "no armor", "spellcraft",
     //        "divine essence", "necromancy", "body", "spirit", "destruction" }),
@@ -42,7 +42,7 @@ private nosave mapping divineUserBlueprints = ([
     //        "strife and pain, their presence unsettling and their words sharp as a "
     //        "blade. Known for their merciless pursuit of retribution, they are both "
     //        "feared and respected as the goddess's chosen instruments of wrath.",
-    //    "category":"clerics",
+    //    "category": "clerics",
     //    "is humanoid" : 1,
     //    "primary skills" : ({ "flail", "staff", "no armor", "spellcraft",
     //        "divine essence", "retribution", "body", "spirit", "destruction" }),
@@ -73,7 +73,7 @@ private nosave mapping divineUserBlueprints = ([
     //        "measured. They are mediators and judges, seeking harmony in all things. "
     //        "Their presence brings a sense of order, and their words carry the weight "
     //        "of balance and reason.",
-    //    "category":"clerics",
+    //    "category": "clerics",
     //    "is humanoid" : 1,
     //    "primary skills" : ({ "staff", "no armor", "spellcraft",
     //        "divine essence", "balance", "body", "spirit", "protection" }),
@@ -104,7 +104,7 @@ private nosave mapping divineUserBlueprints = ([
     //        "radiating warmth and vitality. They are quick to laughter and quicker to "
     //        "action, wielding the power of fire with both reverence and exuberance. "
     //        "Their faith is a living flame, inspiring those around them.",
-    //    "category":"clerics",
+    //    "category": "clerics",
     //    "is humanoid" : 1,
     //    "primary skills" : ({ "mace", "staff", "no armor", "spellcraft",
     //        "divine essence", "elemental fire", "body", "spirit", "destruction" }),
@@ -135,7 +135,7 @@ private nosave mapping divineUserBlueprints = ([
     //        "and their words filled with hope. They are healers and comforters, "
     //        "bringing light to the suffering and peace to the troubled. Their faith "
     //        "is a balm, and their presence is a blessing.",
-    //    "category":"clerics",
+    //    "category": "clerics",
     //    "is humanoid" : 1,
     //    "primary skills" : ({ "staff", "no armor", "spellcraft",
     //        "divine essence", "healing", "body", "spirit", "protection" }),
@@ -166,7 +166,7 @@ private nosave mapping divineUserBlueprints = ([
     //        "like war drums. They are warriors of faith, leading the charge into "
     //        "battle and inspiring courage in their allies. Their presence is "
     //        "commanding, and their resolve is as unbreakable as steel.",
-    //    "category":"clerics",
+    //    "category": "clerics",
     //    "is humanoid" : 1,
     //    "primary skills" : ({ "warhammer", "mace", "no armor", "spellcraft",
     //        "divine essence", "war", "body", "spirit", "destruction" }),
@@ -198,7 +198,7 @@ private nosave mapping divineUserBlueprints = ([
     //        "confidence, their presence calming and wild at once. Druids are "
     //        "guardians of the natural world, revered for their wisdom and their "
     //        "ability to heal and transform.",
-    //    "category":"druids",
+    //    "category": "druids",
     //    "is humanoid" : 1,
     //    "primary skills" : ({ "staff", "dagger", "no armor", "spellcraft",
     //        "divine essence", "plant", "animal", "elemental earth",

@@ -14,9 +14,9 @@ protected void Setup()
         "providing the structural foundation for land vehicles.");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/craftComponents.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart" })]));
     addSpecification("bonus crafting vehicle structure", 2);

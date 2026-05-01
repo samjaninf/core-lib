@@ -15,7 +15,7 @@ protected void Setup()
         "water capable of devastating penetration.");
 
     addPrerequisite("/guilds/aquamancer/forms/spear.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

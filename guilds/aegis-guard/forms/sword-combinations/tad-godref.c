@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge to chain an additional attack to their combinations.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 21
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-combinations/godramin.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

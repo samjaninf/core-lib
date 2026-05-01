@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Powerful defensive soak buff");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/sacred-flame-aura.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 31
         ]));

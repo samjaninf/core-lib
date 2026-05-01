@@ -15,9 +15,9 @@ protected void Setup()
         "who knows the outcome before it occurs - because your will makes it so.");
 
     addPrerequisite("guilds/werric-knight/will/shatter-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":29]));
+        (["type": "guild", "level":29]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,13 +13,13 @@ protected void Setup()
         "avatar the `Spirit Shards' spell.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 13
     ]));
 
     addPrerequisite("/guilds/scion/avatars/spirit/spectral-touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

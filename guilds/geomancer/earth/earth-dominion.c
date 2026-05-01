@@ -14,13 +14,13 @@ protected void Setup()
         "earth-based attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 63
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/geomantic-insight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

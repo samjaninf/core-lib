@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge that improves psychic barriers.");
 
     addPrerequisite("/guilds/oneiromancer/mental-bastion/psychic-barrier.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("guild rank",
         (["type": "guild rank",
@@ -22,7 +22,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 13
         ]));

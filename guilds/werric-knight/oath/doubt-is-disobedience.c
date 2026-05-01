@@ -16,9 +16,9 @@ protected void Setup()
         "for your path is defined by the Oath, not by your own uncertainty.");
 
     addPrerequisite("guilds/werric-knight/oath/pain-is-instruction.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

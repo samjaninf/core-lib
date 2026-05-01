@@ -14,10 +14,10 @@ protected void Setup()
         "soak capabilities.");
 
     addPrerequisite("/guilds/pyromancer/effects/reduce-defense.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 13
         ]));

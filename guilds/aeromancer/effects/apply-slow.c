@@ -14,10 +14,10 @@ protected void Setup()
         "a target's movement and actions.");
 
     addPrerequisite("/guilds/aeromancer/effects/reduce-soak.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 15
         ]));

@@ -17,12 +17,12 @@ protected void Setup()
     addSpecification("limited by", (["equipment":({ "staff" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Scion of Dhuras",
           "value": 29 ]));
 
     addPrerequisite("/guilds/scion/paths/staff/forms/changing-through.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

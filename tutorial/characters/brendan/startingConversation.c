@@ -27,9 +27,9 @@ private void WhoAreYou()
         "little decorative but rather unfashionably macabre trinkets? And just "
         "what was that horrid smoking thunderclap?'");
     addResponsePrerequisite("villain", "Speak @A@Intimidation@E@",
-        (["intimidation":(["type":"skill", "value": 5 ])]), 1);
+        (["intimidation":(["type": "skill", "value": 5 ])]), 1);
     addResponseEffect("villain", "Speak @A@Intimidation@E@",
-        (["experience":(["guild":"background", "amount" : 25])]));
+        (["experience":(["guild": "background", "amount" : 25])]));
 
     addResponse("villain", "Speak @A@Diplomacy@E@", "@D@@C@##InitiatorName## "
         "##ResponseInfinitive::chuckle## at the figure and ##ResponseInfinitive::say##,"
@@ -37,9 +37,9 @@ private void WhoAreYou()
         "What is going on here? Why do you force us to fell our own comrades? And just "
         "what was that horrid smoking thunderclap?'");
     addResponsePrerequisite("villain", "Speak @A@Diplomacy@E@",
-        (["diplomacy":(["type":"skill", "value" : 5])]), 1);
+        (["diplomacy":(["type": "skill", "value" : 5])]), 1);
     addResponseEffect("villain", "Speak @A@Diplomacy@E@",
-        (["experience":(["guild":"background", "amount" : 25])]));
+        (["experience":(["guild": "background", "amount" : 25])]));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -70,9 +70,9 @@ private void YouAreABitSimple()
         "how you want to end? Seriously? It'd be a pity if your simpering "
         "whines came to naught. Perhaps you'd rather we converse?'");
     addResponsePrerequisite("you are a simpleton", "Is this how you end? @A@Persuasion@E@",
-        (["persuasion":(["type":"skill", "value" : 2])]), 1);
+        (["persuasion":(["type": "skill", "value" : 2])]), 1);
     addResponseEffect("you are a simpleton", "Is this how you end? @A@Persuasion@E@",
-        (["experience":(["guild":"background", "amount" : 25])]));
+        (["experience":(["guild": "background", "amount" : 25])]));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -145,7 +145,7 @@ private void IAmAFarmer()
         "and ##ResponseInfinitive::add##, @S@`However, he has a point. "
         "No more games. What are you doing here?'");
     addResponsePrerequisite("I'm a farmer", "What the hell, Donald?",
-        (["presence": (["type":"presence", "value": ({ "donald" })])]));
+        (["presence": (["type": "presence", "value": ({ "donald" })])]));
 
     addResponseTopic("I'm a farmer", "What the hell, Donald?", "my death is nigh");
 
@@ -159,7 +159,7 @@ private void IAmAFarmer()
 private void YouKnowMe()
 {
     addConditionalTopicAddendum("my death is nigh", "blessed daughter",
-        (["presence":(["type":"presence", "value" : ({ "galadhel" })])]),
+        (["presence":(["type": "presence", "value" : ({ "galadhel" })])]),
         " @D@The robed one looks directly at Galadhel and adds, @S@`Now, if you "
         "would be so kind, blessed daughter and sister of the damned, I "
         "would prefer to leave this world.'");
@@ -182,7 +182,7 @@ private void YouKnowMe()
         "##ResponseInfinitive::ask##, @S@`Who are you?'");
 
     addResponsePrerequisite("yes, I know you", "Galadhel?",
-        (["presence":(["type":"presence", "value" : ({ "galadhel" })])]));
+        (["presence":(["type": "presence", "value" : ({ "galadhel" })])]));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -211,13 +211,13 @@ private void StopInterrupting()
         "and ##ResponseInfinitive::ask##, @S@`Helcarion? What "
         "happened?'");
     addResponseEffect("I was Phaedra", "Wait. What?",
-        (["experience":(["guild":"background", "amount" : 500])]));
+        (["experience":(["guild": "background", "amount" : 500])]));
 
     addResponse("I was Phaedra", "And?",
         "@D@@C@##InitiatorName## ##ResponseInfinitive::look## at the figure "
         "and ##ResponseInfinitive::say##, @S@`And?'");
     addResponseEffect("I was Phaedra", "And?",
-        (["experience":(["guild":"background", "amount" : 500])]));
+        (["experience":(["guild": "background", "amount" : 500])]));
 
     addTopic("We fought but lost", "@S@`We fought until but five of us were "
         "left. It was obvious that we were to be captured, for they would not "

@@ -14,12 +14,12 @@ protected void Setup()
         "who witness them.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 53 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/nightmare-apotheosis.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

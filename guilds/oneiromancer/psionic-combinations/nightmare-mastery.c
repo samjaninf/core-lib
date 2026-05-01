@@ -14,12 +14,12 @@ protected void Setup()
         "their devastating power.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 37 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/devastating-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

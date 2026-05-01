@@ -14,7 +14,7 @@ protected void Setup()
         "sustained currents of water.");
 
     addPrerequisite("/guilds/aquamancer/functions/water.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

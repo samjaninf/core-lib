@@ -15,10 +15,10 @@ protected void Setup()
         "focus intently on your target.");
 
     addPrerequisite("/guilds/therianthrope/serpent/viper-reflexes.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 21
         ]));

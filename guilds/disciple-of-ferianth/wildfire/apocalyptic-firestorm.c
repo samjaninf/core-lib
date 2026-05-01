@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Devastating area DoT");
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/searing-devastation.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 55
         ]));

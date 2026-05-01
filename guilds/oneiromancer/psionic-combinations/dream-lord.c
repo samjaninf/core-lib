@@ -14,12 +14,12 @@ protected void Setup()
         "Dream Lord and tremendously increasing combination effectiveness.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 45 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/nightmare-mastery.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

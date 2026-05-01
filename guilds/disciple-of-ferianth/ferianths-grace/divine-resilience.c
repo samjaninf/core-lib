@@ -13,10 +13,10 @@ protected void Setup()
         "provides enhanced resilience against magical attacks.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/ferianthian-judgment.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 41
         ]));

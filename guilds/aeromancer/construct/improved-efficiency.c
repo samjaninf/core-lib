@@ -14,12 +14,12 @@ protected void Setup()
         "constructed spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 13
         ]));
     addPrerequisite("/guilds/aeromancer/construct/efficient-casting.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

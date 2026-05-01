@@ -14,12 +14,12 @@ protected void Setup()
         "encased in an invisible armor of sacred water.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 63 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/oceanic-immortality.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

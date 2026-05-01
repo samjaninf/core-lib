@@ -18,12 +18,12 @@ protected void Setup()
         "staff", "pole arm" })]));
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "fighter",
           "value": 33 ]));
 
     addPrerequisite("/guilds/fighter/techniques/soldiers-tumult.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

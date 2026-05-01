@@ -15,10 +15,10 @@ protected void Setup()
         "each impact building upon the last to deliver devastating damage.");
 
     addPrerequisite("/guilds/aquamancer/water/splash.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 11
         ]));

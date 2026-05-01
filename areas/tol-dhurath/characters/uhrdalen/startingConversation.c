@@ -151,14 +151,14 @@ private void KnowThyself()
         "are not who I am, but they are the vehicles by which I shall become "
         "who I must.'");
     addResponsePrerequisite("know thyself", "Fair enough... @A@Wisdom@E@",
-        (["wisdom":(["type":"attribute", "value" : 5])]), 1);
+        (["wisdom":(["type": "attribute", "value" : 5])]), 1);
 
     addResponse("know thyself", "I understand... @A@Diplomacy@E@", "@D@@C@##InitiatorName## "
         "thoughtfully ##ResponseInfinitive::reply##, @S@'What I do understand "
         "is that there are terrible things happening and I am in a position "
         "to change them. I may fail, but I must try nonetheless.'");
     addResponsePrerequisite("know thyself", "I understand... @A@Diplomacy@E@",
-        (["diplomacy":(["type":"skill", "value" : 1])]), 1);
+        (["diplomacy":(["type": "skill", "value" : 1])]), 1);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -202,7 +202,7 @@ private void OnToTheTrial()
         "pedestals and ##ResponseInfinitive::ask##, @S@'I suspect that those "
         "have something to do with the challenge?'");
     addResponsePrerequisite("no bonds hold me", "The pedestals... @A@Spellcraft@E@",
-        (["spellcraft":(["type":"skill", "value" : 1])]), 1);
+        (["spellcraft":(["type": "skill", "value" : 1])]), 1);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -236,7 +236,7 @@ private void ThePedestals()
         "##ResponseInfinitive::nod##, @S@'I think I understand. This verse tells "
         "me what the pattern needs to be.'");
     addResponsePrerequisite("the pedestals PT2", "Got it. @A@Mathematics@E@",
-        (["mathematics":(["type":"skill", "value" : 2])]), 1);
+        (["mathematics":(["type": "skill", "value" : 2])]), 1);
 
     addTopic("the pedestals PT3", "@S@'The objective is clearly spelled out "
         "in the verse I have given you. Certainly, you need further guidance, "

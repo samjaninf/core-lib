@@ -15,19 +15,19 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/heavy-armor/craftDoubleAxe.c", 
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/armor/common/folding.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/armor/common/austempering.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/lib/instances/research/crafting/armor/common/differential-hardening.c",
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 25]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 25]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 20]));
-    addPrerequisite("chemistry", (["type":"skill", "value" : 15]));
-    addPrerequisite("physics", (["type":"skill", "value" : 15]));
-    addPrerequisite("mathematics", (["type":"skill", "value" : 15]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 25]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 25]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 20]));
+    addPrerequisite("chemistry", (["type": "skill", "value" : 15]));
+    addPrerequisite("physics", (["type": "skill", "value" : 15]));
+    addPrerequisite("mathematics", (["type": "skill", "value" : 15]));
 
     addSpecification("limited by", (["crafting type":
         ({ "plate armor", "splint armor", "scale armor" })]));

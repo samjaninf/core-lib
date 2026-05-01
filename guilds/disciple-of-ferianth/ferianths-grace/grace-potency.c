@@ -14,10 +14,10 @@ protected void Setup()
         "the potency of blessing abilities.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ferianths-grace/ferianthian-blessing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 41
         ]));

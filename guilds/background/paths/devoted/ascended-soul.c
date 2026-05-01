@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus spell points", 15);
 
     addPrerequisite("/guilds/background/paths/devoted/transcendent-wisdom.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

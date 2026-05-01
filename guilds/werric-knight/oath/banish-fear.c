@@ -15,9 +15,9 @@ protected void Setup()
         "from those who hear your command.");
 
     addPrerequisite("guilds/werric-knight/oath/i-am-not-my-weakness.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":13]));
+        (["type": "guild", "level":13]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -31,9 +31,9 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.30
         ])
     }));

@@ -13,12 +13,12 @@ protected void Setup()
         "your thoughts and emotions, granting resistance to mental attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Werric Knight",
             "value": 3
         ]));
     addPrerequisite("/guilds/werric-knight/oath/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

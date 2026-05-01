@@ -26,7 +26,7 @@ protected void Setup()
         ]));
 
     addPrerequisite("/guilds/therianthrope/bear/primordial-beast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

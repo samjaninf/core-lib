@@ -20,22 +20,22 @@ protected void Setup()
         "range" : 25
     ]) }));
     addSpecification("modifiers", ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "elemental fire",
         "formula": "additive",
         "rate": 1.15
     ]), ([
-        "type":"skill",
+        "type": "skill",
         "name": "evocation",
         "formula": "additive",
         "rate": 1.10
     ]), ([
-        "type":"skill",
+        "type": "skill",
         "name": "magical essence",
         "formula": "additive",
         "rate": 1.05
     ]), ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "intelligence",
         "formula": "logarithmic",
         "base value": 10,

@@ -15,10 +15,10 @@ protected void Setup()
         "usable while in serpent form");
 
     addPrerequisite("/guilds/therianthrope/serpent/serpent-agility.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 13
         ]));

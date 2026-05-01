@@ -18,5 +18,5 @@ protected void Setup()
     addSpecification("bonus swimming", 1);
 
     addPrerequisite("/guilds/background/paths/athletic/iron-grip.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

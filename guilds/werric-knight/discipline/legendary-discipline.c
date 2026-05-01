@@ -13,9 +13,9 @@ protected void Setup()
         "are told of your inhuman endurance, unbreakable focus, and perfect self-control.");
 
     addPrerequisite("guilds/werric-knight/discipline/master-of-self.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":45]));
+        (["type": "guild", "level":45]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

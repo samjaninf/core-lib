@@ -14,13 +14,13 @@ protected void Setup()
         "fire strikes enemies.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 61
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/withering-flames.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

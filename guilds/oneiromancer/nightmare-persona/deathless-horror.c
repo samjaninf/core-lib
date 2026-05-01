@@ -14,12 +14,12 @@ protected void Setup()
         "beyond all attempts to destroy it.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 65 ]));
 
     addPrerequisite("/guilds/oneiromancer/nightmare-persona/immortal-nightmare.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["research active":
         "/guilds/oneiromancer/nightmare-persona/persona-root.c"]));

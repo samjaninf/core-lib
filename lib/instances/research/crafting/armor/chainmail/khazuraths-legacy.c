@@ -15,13 +15,13 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/chainmail/khazuraths-way.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 40]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 40]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 30]));
-    addPrerequisite("gem crafting", (["type":"skill", "value" : 30]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 40]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 40]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 30]));
+    addPrerequisite("gem crafting", (["type": "skill", "value" : 30]));
 
-    addSpecification("limited by", (["crafting type":"chainmail"]));
+    addSpecification("limited by", (["crafting type": "chainmail"]));
 
     addSpecification("bonus crafting value multiplier", 20);
     addSpecification("bonus crafting enchantments", 1);

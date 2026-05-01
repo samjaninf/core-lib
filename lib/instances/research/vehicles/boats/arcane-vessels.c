@@ -14,10 +14,10 @@ protected void Setup()
         "incorporate arcane energies for propulsion and protection.");
     addSpecification("research type", "points");
     addSpecification("research cost", 5);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 6]));
-    addPrerequisite("nautical skills", (["type":"skill", "value" : 4]));
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 8]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 5]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
+    addPrerequisite("nautical skills", (["type": "skill", "value" : 4]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/boats/basic-boatbuilding.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

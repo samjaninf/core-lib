@@ -14,12 +14,12 @@ protected void Setup()
         "elementals, providing tremendous propulsive force.");
     addSpecification("research type", "points");
     addSpecification("research cost", 12);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 20]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 15]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 8]));
-    addPrerequisite("engineering", (["type":"skill", "value" : 8]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 20]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 15]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));
+    addPrerequisite("engineering", (["type": "skill", "value" : 8]));
     addPrerequisite("/lib/instances/research/vehicles/components/elemental-binding.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle speed", 15);

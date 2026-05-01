@@ -15,7 +15,7 @@ protected void Setup()
         "to engulf foes.");
 
     addPrerequisite("/guilds/aquamancer/forms/mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

@@ -14,7 +14,7 @@ protected void Setup()
         "geomancer conjures a cloud of abrasive dust that engulfs foes.");
 
     addPrerequisite("/guilds/geomancer/stone/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

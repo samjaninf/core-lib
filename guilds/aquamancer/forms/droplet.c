@@ -15,7 +15,7 @@ protected void Setup()
         "magical water at a foe.");
 
     addPrerequisite("/guilds/aquamancer/forms/splash.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

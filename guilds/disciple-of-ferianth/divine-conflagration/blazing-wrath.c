@@ -13,13 +13,13 @@ protected void Setup()
         "guardian the Blazing Wrath ability.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 25
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/divine-conflagration/searing-strikes.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

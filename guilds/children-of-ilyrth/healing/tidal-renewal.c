@@ -14,12 +14,12 @@ protected void Setup()
         "cycle, the caster's healing magic flows with greater power.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 9 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/healing/mending-waters.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

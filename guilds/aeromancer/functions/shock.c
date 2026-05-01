@@ -14,7 +14,7 @@ protected void Setup()
         "an electrical shock.");
 
     addPrerequisite("/guilds/aeromancer/functions/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

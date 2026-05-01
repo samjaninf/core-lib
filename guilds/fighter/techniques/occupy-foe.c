@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge of how to force an enemy to engage with them in combat.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 1
         ]));
     addPrerequisite("/guilds/fighter/techniques/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

@@ -14,12 +14,12 @@ protected void Setup()
         "axe combat abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 27
         ]));
     addPrerequisite("/guilds/fighter/shields/shieldmasters-speed.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

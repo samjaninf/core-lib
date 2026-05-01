@@ -13,7 +13,7 @@ protected void Setup()
         "scion's avatar to have more spell points.");
 
     addPrerequisite("level", ([  
-        "type":"level",
+        "type": "level",
         "guild": "Scion of Dhuras Guild",
         "value": 5
     ]));

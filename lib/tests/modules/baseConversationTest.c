@@ -89,7 +89,7 @@ void CannotAddSameRepeatableTopicTwice()
 void AddTopicPrerequisiteAddsAndHonorsPrerequisite()
 {
     Conversation.testAddTopic("test", "This is a test message");
-    Conversation.testAddTopicPrerequisite("test", (["race": (["type":"race", "value" : ({ "elf", "high elf", "half elf" })])]));
+    Conversation.testAddTopicPrerequisite("test", (["race": (["type": "race", "value" : ({ "elf", "high elf", "half elf" })])]));
 
     ExpectFalse(Conversation.speakMessage("test", Actor, Owner));
 
@@ -115,7 +115,7 @@ void CannotAddTopicPrerequisiteIfTopicDoesNotExist()
 {
     ExpectEq("*ERROR - baseConversation.c, addTopicPrerequisite: Could not add the prerequisite to 'test'. Make sure that the topic exists.\n",
         catch (Conversation.testAddTopicPrerequisite("test", 
-            (["race":(["type":"race", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
+            (["race":(["type": "race", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -124,23 +124,23 @@ void CannotAddInvalidPrerequisiteToTopic()
     Conversation.testAddTopic("test", "This is a test message");
     ExpectEq("*ERROR - baseConversation.c, addTopicPrerequisite: The passed prerequisite to 'test' is invalid.\n",
         catch (Conversation.testAddTopicPrerequisite("test", 
-            (["blarg":(["type":"blah", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
+            (["blarg":(["type": "blah", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void CanAddMultipleTopicPrerequisites()
 {
     Conversation.testAddTopic("test", "This is a test message");
-    Conversation.testAddTopicPrerequisite("test", (["race": (["type":"race", "value": ({ "elf", "high elf", "half elf" })])]));
+    Conversation.testAddTopicPrerequisite("test", (["race": (["type": "race", "value": ({ "elf", "high elf", "half elf" })])]));
 
     ExpectFalse(Conversation.speakMessage("test", Actor, Owner));
 
     Actor.Race("elf");
     ExpectTrue(Conversation.speakMessage("test", Actor, Owner));
-    Conversation.testAddTopicPrerequisite("test", (["long sword": (["type":"skill", "value" : 10])]));
+    Conversation.testAddTopicPrerequisite("test", (["long sword": (["type": "skill", "value" : 10])]));
     ExpectFalse(Conversation.speakMessage("test", Actor, Owner));
     
-    ExpectEq(([ "test":(["race":(["type":"race", "value" : ({ "elf", "high elf", "half elf" })]), "long sword":(["type":"skill", "value" : 10])])]),
+    ExpectEq(([ "test":(["race":(["type": "race", "value" : ({ "elf", "high elf", "half elf" })]), "long sword":(["type": "skill", "value" : 10])])]),
         Conversation.getPrerequisites());
 
     Actor.Str(20);
@@ -328,7 +328,7 @@ void AddResponsePrerequisiteAddsPrerequisiteToDisplayOfMessage()
     Conversation.testAddTopic("test", "This is a test message");
     Conversation.testAddResponse("test", "Test response", "This is a test response");
     Conversation.testAddResponse("test", "Another", "This is another test response");
-    Conversation.testAddResponsePrerequisite("test", "Another", (["race":(["type":"race", "value" : ({ "elf", "high elf", "half elf" })])]));
+    Conversation.testAddResponsePrerequisite("test", "Another", (["race":(["type": "race", "value" : ({ "elf", "high elf", "half elf" })])]));
 
     ExpectTrue(Conversation.speakMessage("test", Actor, Owner));
     ExpectEq(2, sizeof(Actor.caughtMessages()));
@@ -342,7 +342,7 @@ void ResponsesAllDisplayedWhenPrerequisitesMet()
     Conversation.testAddTopic("test", "This is a test message");
     Conversation.testAddResponse("test", "Test response", "This is a test response");
     Conversation.testAddResponse("test", "Another", "This is another test response");
-    Conversation.testAddResponsePrerequisite("test", "Another", (["race":(["type":"race", "value" : ({ "elf", "high elf", "half elf" })])]));
+    Conversation.testAddResponsePrerequisite("test", "Another", (["race":(["type": "race", "value" : ({ "elf", "high elf", "half elf" })])]));
 
     ExpectTrue(Conversation.speakMessage("test", Actor, Owner));
     ExpectEq(2, sizeof(Actor.caughtMessages()));
@@ -363,12 +363,12 @@ void CannotAddResponsePrerequisiteIfTopicOrResponseDoNotExist()
 {
     ExpectEq("*ERROR - baseConversation.c, addResponsePrerequisite: Could not add the prerequiste. Check to make sure that the topic and response exist.\n",
         catch (Conversation.testAddResponsePrerequisite("test", "Another", 
-            (["race":(["type":"race", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
+            (["race":(["type": "race", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
 
     Conversation.testAddTopic("test", "This is a test message");
     ExpectEq("*ERROR - baseConversation.c, addResponsePrerequisite: Could not add the prerequiste. Check to make sure that the topic and response exist.\n",
         catch (Conversation.testAddResponsePrerequisite("test", "Another", 
-            (["race":(["type":"race", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
+            (["race":(["type": "race", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -378,7 +378,7 @@ void CannotAddInvalidPrerequisiteToResponse()
     Conversation.testAddResponse("test", "Another", "This is another test response");
     ExpectEq("*ERROR - baseConversation.c, addResponsePrerequisite: The passed prerequisite to 'Another' is invalid.\n",
         catch (Conversation.testAddResponsePrerequisite("test", "Another", 
-            (["blarg":(["type":"blah", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
+            (["blarg":(["type": "blah", "value" : ({ "elf", "high elf", "half elf" })])])); nolog));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -458,7 +458,7 @@ void AddResponseEffectAllowsAndAppliesMove()
 {
     Conversation.testAddTopic("test", "This is a test message");
     Conversation.testAddResponse("test", "Another", "This is another test response");
-    Conversation.testAddResponseEffect("test", "Another", (["move":"/lib/tests/support/environment/toLocation.c"]));
+    Conversation.testAddResponseEffect("test", "Another", (["move": "/lib/tests/support/environment/toLocation.c"]));
 
     object room = load_object("/lib/tests/support/environment/fakeEnvironment.c");
     ExpectTrue(present(Owner, room));
@@ -473,7 +473,7 @@ void AddResponseEffectAllowsAndAppliesGiveWithoutItemPresent()
 {
     Conversation.testAddTopic("test", "This is a test message");
     Conversation.testAddResponse("test", "Another", "This is another test response");
-    Conversation.testAddResponseEffect("test", "Another", (["give":"/lib/tests/support/items/testSword.c"]));
+    Conversation.testAddResponseEffect("test", "Another", (["give": "/lib/tests/support/items/testSword.c"]));
 
     ExpectFalse(present_clone("/lib/tests/support/items/testSword.c", Actor));
     ExpectTrue(Conversation.speakMessage("test", Actor, Owner));
@@ -486,7 +486,7 @@ void AddResponseEffectAllowsAndAppliesGiveWithItemPresent()
 {
     Conversation.testAddTopic("test", "This is a test message");
     Conversation.testAddResponse("test", "Another", "This is another test response");
-    Conversation.testAddResponseEffect("test", "Another", (["give":"/lib/tests/support/items/testSword.c"]));
+    Conversation.testAddResponseEffect("test", "Another", (["give": "/lib/tests/support/items/testSword.c"]));
 
     object weapon = clone_object("/lib/tests/support/items/testSword.c");
     move_object(weapon, Owner);
@@ -630,11 +630,11 @@ void CanAddConditionalTopicAddendum()
         "@A@Annoyed@E@");
 
     Conversation.testAddConditionalTopicAddendum("test", "fredIsAJerkToo",
-        (["presence":(["type":"presence", "value" : ({ "fred" })])]),
+        (["presence":(["type": "presence", "value" : ({ "fred" })])]),
         " @S@`And you, Fred. Bite me!'");
 
     Conversation.testAddConditionalTopicAddendum("test", "lameGortyCheck",
-        (["presence":(["type":"presence", "value" : ({ "gorthaur" })])]),
+        (["presence":(["type": "presence", "value" : ({ "gorthaur" })])]),
         " @D@##TargetName## ##Infinitive::knee## ##ActorName## in the groin.");
 
     move_object(Actor, this_object());
@@ -682,7 +682,7 @@ void DisabledResponsesAreCorrectlyDisplayed()
     Conversation.testAddResponse("test", "Test response", "This is a test response");
     Conversation.testAddResponse("test", "Another", "This is another test response");
     Conversation.testAddResponsePrerequisite("test", "Another", 
-        (["race":(["type":"race", "value": ({ "elf", "high elf", "half elf" })])]), 1);
+        (["race":(["type": "race", "value": ({ "elf", "high elf", "half elf" })])]), 1);
 
     ExpectTrue(Conversation.speakMessage("test", Actor, Owner));
     ExpectEq(3, sizeof(Actor.caughtMessages()));

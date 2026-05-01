@@ -15,10 +15,10 @@ protected void Setup()
         "usable while in panther form");
 
     addPrerequisite("/guilds/therianthrope/panther/killing-instinct.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 19
         ]));

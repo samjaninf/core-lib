@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge that enhances mythic magical attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 65
         ]));
     addPrerequisite("/guilds/aegis-guard/forms/sword-mythic/delu-eiliant.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

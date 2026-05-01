@@ -14,10 +14,10 @@ protected void Setup()
         "pyromancer releases a massive discharge of flame energy.");
 
     addPrerequisite("/guilds/pyromancer/flame/flame-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 19
         ]));

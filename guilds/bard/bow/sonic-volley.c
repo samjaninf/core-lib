@@ -14,12 +14,12 @@ protected void Setup()
         "arrows that target a single foe.");
 
     addPrerequisite("/guilds/bard/bow/the-archers-song.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "bow" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "bard",
             "value": 29
         ]));

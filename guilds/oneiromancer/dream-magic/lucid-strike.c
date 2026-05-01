@@ -14,10 +14,10 @@ protected void Setup()
         "energy, improving the accuracy of their attacks.");
 
     addPrerequisite("/guilds/oneiromancer/dream-magic/dream-sight.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 19
         ]));

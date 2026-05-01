@@ -15,10 +15,10 @@ protected void Setup()
         "defensive capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/invigorating-siphon.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aeromancer",
             "value": 21
         ]));

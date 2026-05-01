@@ -17,5 +17,5 @@ protected void Setup()
     addSpecification("bonus spell points", 10);
 
     addPrerequisite("/guilds/background/paths/devoted/enlightened-mind.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

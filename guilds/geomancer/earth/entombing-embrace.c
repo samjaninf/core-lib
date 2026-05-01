@@ -15,10 +15,10 @@ protected void Setup()
         "their very essence.");
 
     addPrerequisite("/guilds/geomancer/earth/entombing-depths.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 39
         ]));

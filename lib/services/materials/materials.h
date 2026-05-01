@@ -14,8 +14,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a textile made from the tightly-woven fibers of the flax plant.",
         "scarcity": "common",
@@ -26,8 +26,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 1]),
         ]),
         "defense": ([
             "cold": 1,
@@ -42,8 +42,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a textile made from the tightly-woven fibers of the hemp plant.",
         "scarcity": "common",
@@ -54,8 +54,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 5]),
         ]),
         "defense": ([
             "cold": 3,
@@ -72,8 +72,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 5]),
         ]),
         "defense": ([
             "cold": 2,
@@ -87,8 +87,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 10]),
         ]),
         "defense": ([
             "cold": 5,
@@ -104,8 +104,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a textile made from the tightly-woven fibers of cotton.",
         "value multiplier": 1.2,
@@ -117,8 +117,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a textile made from the tightly-woven fibers of the ramie plant.",
         "value multiplier": 1.1,
@@ -130,8 +130,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a textile made from the loosely-woven fibers of the hemp plant.",
         "value multiplier": 0.9,
@@ -143,8 +143,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 2]),
         ]),
         "defense": ([
             "physical": 1
@@ -159,8 +159,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 10]),
         ]),
         "defense": ([
             "physical": 1
@@ -179,8 +179,8 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type":"research"]),
-            "weaving and beadwork": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftTextiles.c":(["type": "research"]),
+            "weaving and beadwork": (["type": "skill", "value": 2]),
         ]),
         "defense": ([
             "physical": 1
@@ -200,8 +200,8 @@ protected mapping materials =
             "electricity": 2
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 5]),
         ]),
         "default description": "This is a nondescript stone.",
         "scarcity": "common",
@@ -217,8 +217,8 @@ protected mapping materials =
             "physical": -3
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a sandstone.",
         "scarcity": "common",
@@ -236,8 +236,8 @@ protected mapping materials =
             "physical": 1
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 15]),
         ]),
         "default description": "This is a stone with significant veins of quartzite.",
         "scarcity": "common",
@@ -252,8 +252,8 @@ protected mapping materials =
             "electricity": 3
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of granite.",
         "scarcity": "uncommon",
@@ -265,8 +265,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 8]),
         ]),
         "default description": "This is a piece of diorite.",
         "scarcity": "uncommon",
@@ -278,8 +278,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of andesite.",
         "scarcity": "uncommon",
@@ -291,8 +291,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of boninite.",
         "scarcity": "common",
@@ -304,8 +304,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 25]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 25]),
         ]),
         "default description": "This is a piece of granite.",
         "scarcity": "rare",
@@ -317,8 +317,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 12]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 12]),
         ]),
         "default description": "This is a piece of scoria.",
         "scarcity": "uncommon",
@@ -330,8 +330,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of tuff - a rock made of volcanic ash.",
         "scarcity": "common",
@@ -343,8 +343,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 7]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 7]),
         ]),
         "default description": "This is a piece of claystone.",
         "scarcity": "common",
@@ -356,8 +356,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of chert.",
         "scarcity": "common",
@@ -369,8 +369,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of gneiss.",
         "scarcity": "common",
@@ -385,8 +385,8 @@ protected mapping materials =
             "physical": -2
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 7]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 7]),
         ]),
         "default description": "This is a piece of alabaster.",
         "scarcity": "common",
@@ -401,8 +401,8 @@ protected mapping materials =
             "electricity": 3
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of basalt.",
         "scarcity": "common",
@@ -417,8 +417,8 @@ protected mapping materials =
             "electricity": 2
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 15]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 15]),
         ]),
         "default description": "This is a slab of marble.",
         "scarcity": "uncommon",
@@ -430,8 +430,8 @@ protected mapping materials =
         "crafting skill required": 8,
         "encumberance": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 8]),
         ]),
         "default description": "This is a slab of limestone.",
         "scarcity": "common",
@@ -443,8 +443,8 @@ protected mapping materials =
         "crafting skill required": 8,
         "encumberance": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 8]),
         ]),
         "default description": "This is a slab of travertine.",
         "scarcity": "common",
@@ -456,9 +456,9 @@ protected mapping materials =
         "crafting skill required": 8,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftBrick.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 5]),
-            "pottery": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftBrick.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 5]),
+            "pottery": (["type": "skill", "value": 5]),
         ]),
         "default description": "This is a panel of bricks.",
         "scarcity": "common",
@@ -470,9 +470,9 @@ protected mapping materials =
         "crafting skill required": 20,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftConcrete.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 20]),
-            "pottery": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftConcrete.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 20]),
+            "pottery": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a slab of concrete.",
         "scarcity": "rare",
@@ -484,8 +484,8 @@ protected mapping materials =
         "crafting skill required": 10,
         "encumberance": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of lazurite.",
         "scarcity": "uncommon",
@@ -502,8 +502,8 @@ protected mapping materials =
             "physical": -1
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 6]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 6]),
         ]),
         "default description": "This is a slab of slate.",
         "scarcity": "common",
@@ -517,8 +517,8 @@ protected mapping materials =
             "physical": -2
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a piece of chalk.",
         "scarcity": "common",
@@ -532,8 +532,8 @@ protected mapping materials =
             "physical": -1
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a slab of shale.",
         "scarcity": "common",
@@ -547,8 +547,8 @@ protected mapping materials =
             "fire": 5
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 6]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 6]),
         ]),
         "default description": "This is a piece of coal.",
         "scarcity": "common",
@@ -559,8 +559,8 @@ protected mapping materials =
         "class": "stone",
         "crafting skill required": 7,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 7]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 7]),
         ]),
         "default description": "This is a piece of dolomite.",
         "scarcity": "common",
@@ -571,11 +571,11 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 20])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 20])
         ]),
         "default description": "This is a piece of bauxite.",
         "scarcity": "common",
@@ -593,8 +593,8 @@ protected mapping materials =
             "fire": 3
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftStone.c":(["type":"research"]),
-            "stonemasonry": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftStone.c":(["type": "research"]),
+            "stonemasonry": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a piece of flint.",
         "scarcity": "common",
@@ -608,8 +608,8 @@ protected mapping materials =
             "physical": -1
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftClay.c":(["type":"research"]),
-            "pottery": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftClay.c":(["type": "research"]),
+            "pottery": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a chunk of terra cotta clay.",
         "scarcity": "common",
@@ -623,8 +623,8 @@ protected mapping materials =
             "physical": -1
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftClay.c":(["type":"research"]),
-            "pottery": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/materials/craftClay.c":(["type": "research"]),
+            "pottery": (["type": "skill", "value": 4]),
         ]),
         "default description": "This is a chunk of earthenware clay.",
         "scarcity": "common",
@@ -635,8 +635,8 @@ protected mapping materials =
         "class": "clay",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftClay.c":(["type":"research"]),
-            "pottery": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftClay.c":(["type": "research"]),
+            "pottery": (["type": "skill", "value": 5]),
         ]),
         "default description": "This is a chunk of stoneware clay.",
         "scarcity": "common",
@@ -650,8 +650,8 @@ protected mapping materials =
             "physical": -1
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftClay.c":(["type":"research"]),
-            "pottery": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftClay.c":(["type": "research"]),
+            "pottery": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a paste of gypsum and lime.",
         "scarcity": "common",
@@ -662,8 +662,8 @@ protected mapping materials =
         "class": "clay",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftClay.c":(["type":"research"]),
-            "pottery": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftClay.c":(["type": "research"]),
+            "pottery": (["type": "skill", "value": 5]),
         ]),
         "default description": "This is a slurry of ceramic clay.",
         "scarcity": "common",
@@ -677,8 +677,8 @@ protected mapping materials =
             "physical": -1
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftClay.c":(["type":"research"]),
-            "pottery": (["type":"skill", "value": 10]),
+            "/lib/instances/research/crafting/materials/craftClay.c":(["type": "research"]),
+            "pottery": (["type": "skill", "value": 10]),
         ]),
         "default description": "This is a slurry of kaolin.",
         "scarcity": "common",
@@ -689,8 +689,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "vehicle": ([
             "structure": 1,
@@ -705,8 +705,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of fir.",
         "scarcity": "common",
@@ -717,8 +717,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of hemlock.",
         "scarcity": "common",
@@ -729,8 +729,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of poplar.",
         "scarcity": "common",
@@ -741,8 +741,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "vehicle": ([
             "structure": 2,
@@ -757,8 +757,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.1,
         "vehicle": ([
@@ -774,8 +774,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of maple.",
         "scarcity": "common",
@@ -786,8 +786,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of birch.",
         "scarcity": "common",
@@ -798,8 +798,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a piece of birch bark.",
         "scarcity": "common",
@@ -810,8 +810,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of pine.sycamore",
         "scarcity": "common",
@@ -822,8 +822,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of beech.",
         "scarcity": "common",
@@ -834,8 +834,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of ash.",
         "scarcity": "common",
@@ -846,8 +846,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of hickory.",
         "scarcity": "common",
@@ -858,8 +858,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.1,
         "default description": "This is a plank of mesquite.",
@@ -871,8 +871,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of walnut.",
@@ -884,8 +884,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of pecan.",
@@ -897,8 +897,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of almond.",
@@ -910,8 +910,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of plum wood.",
@@ -923,8 +923,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of black locust wood.",
@@ -936,8 +936,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of pear wood.",
@@ -949,8 +949,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of peach wood.",
@@ -962,8 +962,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of nectarine wood.",
@@ -975,8 +975,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of apricot wood.",
@@ -988,8 +988,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of grape wood.",
@@ -1001,8 +1001,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of persimmon wood.",
@@ -1014,8 +1014,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of dogwood.",
         "scarcity": "common",
@@ -1026,8 +1026,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of willow.",
         "scarcity": "common",
@@ -1038,8 +1038,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of magnolia wood.",
         "scarcity": "common",
@@ -1050,8 +1050,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of lilac wood.",
         "scarcity": "common",
@@ -1062,8 +1062,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 4,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 4]),
         ]),
         "value multiplier": 1.25,
         "default description": "This is a plank of cherry wood.",
@@ -1075,8 +1075,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.1,
         "default description": "This is a plank of holly.",
@@ -1088,8 +1088,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.1,
         "default description": "This is a plank of yew.",
@@ -1101,8 +1101,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a plank of apple wood.",
         "scarcity": "common",
@@ -1116,8 +1116,8 @@ protected mapping materials =
        ]),
        "crafting skill required": 6,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 6]),
+            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 6]),
         ]),
         "value multiplier": 1.5,
         "vehicle": ([
@@ -1134,8 +1134,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a plank of cypress.",
         "scarcity": "common",
@@ -1146,8 +1146,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of cottonwood.",
         "scarcity": "common",
@@ -1158,8 +1158,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of spruce.",
         "scarcity": "common",
@@ -1170,8 +1170,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of aspen.",
         "scarcity": "common",
@@ -1185,8 +1185,8 @@ protected mapping materials =
         ]),
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.4,
         "default description": "This is a plank of swamp ash.",
@@ -1198,8 +1198,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of elm.",
         "scarcity": "common",
@@ -1214,8 +1214,8 @@ protected mapping materials =
         ]),
         "encumberance": -1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of basswood.",
         "scarcity": "common",
@@ -1229,8 +1229,8 @@ protected mapping materials =
         ]),
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.4,
         "default description": "This is a plank of bloodwood.",
@@ -1242,8 +1242,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of rosewood.",
@@ -1255,8 +1255,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 4,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 4]),
         ]),
         "default description": "This is a plank of buckeye.",
         "scarcity": "common",
@@ -1267,8 +1267,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 4,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 4]),
         ]),
         "default description": "This is a plank of buckthorn.",
         "scarcity": "common",
@@ -1279,8 +1279,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of alder.",
         "scarcity": "common",
@@ -1292,8 +1292,8 @@ protected mapping materials =
         "attack rating": 1,
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.1,
         "vehicle": ([
@@ -1313,9 +1313,9 @@ protected mapping materials =
         ]),
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 15]),
-            "carpentry": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 15]),
+            "carpentry": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 2.5,
         "default description": "This is a plank of the mystic malorn tree.",
@@ -1327,8 +1327,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.1,
         "default description": "This is a plank of redwood.",
@@ -1343,8 +1343,8 @@ protected mapping materials =
             "physical": 1,
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftUncommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.3,
         "default description": "This is a plank of mahogany.",
@@ -1356,8 +1356,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of mulberry wood.",
         "scarcity": "common",
@@ -1371,8 +1371,8 @@ protected mapping materials =
         ]),
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.4,
         "default description": "This is a plank of marblewood.",
@@ -1387,8 +1387,8 @@ protected mapping materials =
         ]),
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 1.4,
         "default description": "This is a plank of lacewood.",
@@ -1404,9 +1404,9 @@ protected mapping materials =
             "physical": 2,
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 8]),
-            "carpentry": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 8]),
+            "carpentry": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.7,
         "default description": "This is a plank of purple heart.",
@@ -1419,9 +1419,9 @@ protected mapping materials =
         "attack rating": 1,
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 8]),
-            "carpentry": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 8]),
+            "carpentry": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 1.7,
         "default description": "This is a plank of bubinga wood.",
@@ -1437,9 +1437,9 @@ protected mapping materials =
         ]),
         "crafting skill required": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 10]),
-            "carpentry": (["type":"skill", "value": 5]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 10]),
+            "carpentry": (["type": "skill", "value": 5]),
         ]),
         "value multiplier": 2.0,
         "default description": "This is a plank of kingwood.",
@@ -1452,9 +1452,9 @@ protected mapping materials =
         "attack rating": 1,
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 8]),
-            "carpentry": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 8]),
+            "carpentry": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 2.0,
         "default description": "This is a plank of koa wood.",
@@ -1467,9 +1467,9 @@ protected mapping materials =
         "attack rating": 1,
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 8]),
-            "carpentry": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftRareWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 8]),
+            "carpentry": (["type": "skill", "value": 2]),
         ]),
         "value multiplier": 2.0,
         "default description": "This is a plank of ebony wood.",
@@ -1481,8 +1481,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of chestnut wood.",
@@ -1494,8 +1494,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of hazel wood.",
         "scarcity": "common",
@@ -1506,8 +1506,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of rowan wood.",
         "scarcity": "common",
@@ -1518,8 +1518,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of linden wood.",
         "scarcity": "common",
@@ -1530,8 +1530,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of larch wood.",
         "scarcity": "common",
@@ -1542,8 +1542,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of juniper wood.",
         "scarcity": "common",
@@ -1554,8 +1554,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of serviceberry wood.",
         "scarcity": "common",
@@ -1566,8 +1566,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of elder wood.",
         "scarcity": "common",
@@ -1581,8 +1581,8 @@ protected mapping materials =
             "physical": 1,
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.1,
         "default description": "This is a plank of hornbeam wood.",
@@ -1594,8 +1594,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of fig wood.",
         "scarcity": "common",
@@ -1606,8 +1606,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.2,
         "default description": "This is a plank of olive wood.",
@@ -1619,8 +1619,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of pawpaw wood.",
         "scarcity": "common",
@@ -1631,8 +1631,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of sassafras wood.",
         "scarcity": "common",
@@ -1643,8 +1643,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of redbud wood.",
         "scarcity": "common",
@@ -1655,8 +1655,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 3]),
         ]),
         "value multiplier": 1.1,
         "default description": "This is a plank of tulip tree wood.",
@@ -1668,8 +1668,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of white pine.",
         "scarcity": "common",
@@ -1680,8 +1680,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 4,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 4]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 4]),
         ]),
         "value multiplier": 1.5,
         "default description": "This is a plank of black walnut wood.",
@@ -1693,8 +1693,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of scots pine.",
         "scarcity": "common",
@@ -1705,8 +1705,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of douglas fir.",
         "scarcity": "common",
@@ -1717,8 +1717,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 1,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
         ]),
         "default description": "This is a plank of balsam fir.",
         "scarcity": "common",
@@ -1729,8 +1729,8 @@ protected mapping materials =
         "class": "wood",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonWood.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a plank of tamarack wood.",
         "scarcity": "common",
@@ -1741,8 +1741,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of leather.",
         "scarcity": "common",
@@ -1753,8 +1753,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of cow leather.",
         "scarcity": "common",
@@ -1765,8 +1765,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of deer leather.",
         "scarcity": "common",
@@ -1777,8 +1777,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of goat leather.",
         "scarcity": "common",
@@ -1789,8 +1789,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of sheep leather.",
         "scarcity": "common",
@@ -1801,8 +1801,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of bear leather.",
         "scarcity": "common",
@@ -1813,8 +1813,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of boar leather.",
         "scarcity": "common",
@@ -1825,8 +1825,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of horse leather.",
         "scarcity": "common",
@@ -1837,8 +1837,8 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a piece of wolf leather.",
         "scarcity": "common",
@@ -1852,8 +1852,8 @@ protected mapping materials =
             "physical": 2
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 20])
+            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 20])
         ]),
         "value multiplier": 6.0,
         "default description": "This is a piece of unicorn leather.",
@@ -1869,8 +1869,8 @@ protected mapping materials =
             "physical": 2
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 20])
+            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 20])
         ]),
         "value multiplier": 6.0,
         "default description": "This is a piece of pegasus leather.",
@@ -1886,8 +1886,8 @@ protected mapping materials =
             "physical": 3
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 30])
+            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 30])
         ]),
         "value multiplier": 10.0,
         "default description": "This is a piece of basilisk leather.",
@@ -1904,8 +1904,8 @@ protected mapping materials =
         ]),
         "value multiplier": 8.0,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 25])
+            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 25])
         ]),
         "default description": "This is a piece of wyvern leather.",
         "scarcity": "very rare",
@@ -1920,8 +1920,8 @@ protected mapping materials =
             "physical": 3
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 35])
+            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 35])
         ]),
         "value multiplier": 15.0,
         "default description": "This is a piece of chimera leather.",
@@ -1937,8 +1937,8 @@ protected mapping materials =
             "physical": 4
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type":"research"]),
-            "leatherworking": (["type":"skill", "value": 40])
+            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type": "research"]),
+            "leatherworking": (["type": "skill", "value": 40])
         ]),
         "value multiplier": 20.0,
         "default description": "This is a piece of hydra leather.",
@@ -1950,8 +1950,8 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a chunk of copper ore, a common raw material for "
             "smelting into copper ingots.",
@@ -1963,8 +1963,8 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a chunk of tin ore, an uncommon raw material for "
             "smelting into tin ingots.",
@@ -1976,8 +1976,8 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 3,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 3]),
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 3]),
         ]),
         "default description": "This is a chunk of zinc ore, an uncommon raw material for "
             "smelting into zinc ingots.",
@@ -1989,8 +1989,8 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 8,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 8]),
         ]),
         "default description": "This is a chunk of gold ore, a rare raw material for "
             "smelting into gold ingots.",
@@ -2002,8 +2002,8 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 6,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 6]),
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 6]),
         ]),
         "default description": "This is a chunk of lead ore, a rare raw material for "
             "smelting into lead ingots.",
@@ -2015,8 +2015,8 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 8,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 8]),
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 8]),
         ]),
         "default description": "This is a chunk of antimony ore, a rare raw material for "
             "smelting into antimony ingots.",
@@ -2028,8 +2028,8 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 2,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 2]),
+            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 2]),
         ]),
         "default description": "This is a chunk of iron ore, a common raw material for smelting "
             "into iron ingots.",
@@ -2041,10 +2041,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "default description": "This is a chunk of tungsten ore, a very rare and dense raw "
             "material for smelting into tungsten ingots.",
@@ -2056,10 +2056,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 2]),
-            "physics": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 2]),
+            "physics": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a chunk of titanium ore, a very rare raw material for "
             "smelting into titanium ingots.",
@@ -2071,9 +2071,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "default description": "This is a chunk of tantalum ore, a very rare raw material for "
             "smelting into tantalum ingots.",
@@ -2085,9 +2085,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 8]),
-            "metal crafting": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 8]),
+            "metal crafting": (["type": "skill", "value": 2])
         ]),
         "default description": "This is a chunk of silver ore, an uncommon raw material for "
             "smelting into silver ingots.",
@@ -2099,9 +2099,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "default description": "This is a chunk of platinum ore, a very rare raw material for "
             "smelting into platinum ingots.",
@@ -2113,9 +2113,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 3])
         ]),
         "default description": "This is a chunk of palladium ore, a rare raw material for "
             "smelting into palladium ingots.",
@@ -2127,10 +2127,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "default description": "This is a chunk of osmium ore, a very rare and heavy raw "
             "material for smelting into osmium ingots.",
@@ -2142,9 +2142,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 15])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 15])
         ]),
         "default description": "This is a chunk of nurilium ore, a crimson, mythic raw material "
             "for smelting into nurilium ingots.",
@@ -2156,10 +2156,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "default description": "This is a chunk of nickel ore, a rare raw material for "
             "smelting into nickel ingots.",
@@ -2171,9 +2171,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10])
         ]),
         "default description": "This is a chunk of mithril ore, a silvery, mythic raw material "
             "for smelting into mithril ingots.",
@@ -2185,9 +2185,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "default description": "This is a chunk of magnesium ore, a common raw material for "
             "smelting into magnesium ingots.",
@@ -2199,9 +2199,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20])
         ]),
         "default description": "This is a chunk of kirdarium ore, a bluish, mythic raw material "
             "for smelting into kirdarium ingots.",
@@ -2213,10 +2213,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 3]),
-            "physics": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 3]),
+            "physics": (["type": "skill", "value": 2])
         ]),
         "default description": "This is a chunk of iridium ore, a very rare raw material for "
             "smelting into iridium ingots.",
@@ -2228,10 +2228,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 10]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 10]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "default description": "This is a chunk of graphite ore, a rare raw material for "
             "smelting into graphite crystals.",
@@ -2243,9 +2243,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 40,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 10])
         ]),
         "default description": "This is a chunk of galvorn ore, a black, mythic raw material "
             "for smelting into galvorn ingots.",
@@ -2257,10 +2257,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 10]),
-            "physics": (["type":"skill", "value": 15])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 10]),
+            "physics": (["type": "skill", "value": 15])
         ]),
         "default description": "This is a chunk of cobalt ore, a rare raw material for "
             "smelting into cobalt ingots.",
@@ -2272,9 +2272,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 12,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftRareMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 2])
         ]),
         "default description": "This is a chunk of bismuth ore, a rare raw material for "
             "smelting into bismuth ingots.",
@@ -2286,10 +2286,10 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 20])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 20])
         ]),
         "default description": "This is a chunk of bauxite, the primary ore of aluminum.",
         "scarcity": "rare",
@@ -2300,9 +2300,9 @@ protected mapping materials =
         "class": "ore",
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "mining": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "mining": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "default description": "This is a chunk of admantite ore, a mythic raw material for "
             "smelting into admantite ingots.",
@@ -2314,8 +2314,8 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 4,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 4])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 4])
         ]),
         "crafting materials": ([
             "copper": 3,
@@ -2340,8 +2340,8 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 4,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 4])
+            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 4])
         ]),
         "crafting materials": ([
             "copper ore": 3,
@@ -2367,8 +2367,8 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "tin ore": 3,
@@ -2387,8 +2387,8 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "zinc ore": 3,
@@ -2408,8 +2408,8 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "copper": 3,
@@ -2433,9 +2433,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 8]),
-            "metal crafting": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 8]),
+            "metal crafting": (["type": "skill", "value": 2])
         ]),
         "crafting materials": ([
             "gold ore": 3,
@@ -2460,9 +2460,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 8]),
-            "metal crafting": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 8]),
+            "metal crafting": (["type": "skill", "value": 2])
         ]),
         "crafting materials": ([
             "lead ore": 3,
@@ -2488,9 +2488,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 12,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftUncommonMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 2])
         ]),
         "crafting materials": ([
             "antimony ore": 3,
@@ -2515,9 +2515,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 12,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftRareMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 2])
         ]),
         "crafting materials": ([
             "bismuth ore": 3,
@@ -2541,9 +2541,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "magnesium ore": 3,
@@ -2566,11 +2566,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 10]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 10]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "crafting materials": ([
             "graphite ore": 3,
@@ -2594,9 +2594,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 8]),
-            "metal crafting": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 8]),
+            "metal crafting": (["type": "skill", "value": 2])
         ]),
         "crafting materials": ([
             "copper": 1,
@@ -2623,9 +2623,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "platinum ore": 3,
@@ -2649,9 +2649,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 15,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "tantalum ore": 3,
@@ -2674,11 +2674,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 3]),
-            "physics": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 3]),
+            "physics": (["type": "skill", "value": 2])
         ]),
         "crafting materials": ([
             "iridium ore": 3,
@@ -2704,11 +2704,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "osmium ore": 3,
@@ -2734,11 +2734,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "chemistry": (["type":"skill", "value": 1]),
-            "physics": (["type":"skill", "value": 1])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "chemistry": (["type": "skill", "value": 1]),
+            "physics": (["type": "skill", "value": 1])
         ]),
         "crafting materials": ([
             "palladium ore": 3,
@@ -2761,9 +2761,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 8]),
-            "metal crafting": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftPreciousMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 8]),
+            "metal crafting": (["type": "skill", "value": 2])
         ]),
         "crafting materials": ([
             "silver ore": 3,
@@ -2783,9 +2783,9 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10])
         ]),
         "crafting materials": ([
             "gold": 1,
@@ -2819,11 +2819,11 @@ protected mapping materials =
         ]),
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 20])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 20])
         ]),
         "crafting materials": ([
             "aluminum ore": 3,
@@ -2842,11 +2842,11 @@ protected mapping materials =
         ]),
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "crafting materials": ([
             "nickel ore": 3,
@@ -2868,11 +2868,11 @@ protected mapping materials =
         ]),
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "crafting materials": ([
             "copper": 3,
@@ -2894,11 +2894,11 @@ protected mapping materials =
         ]),
         "crafting skill required": 45,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 15]),
-            "physics": (["type":"skill", "value": 15])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 15]),
+            "physics": (["type": "skill", "value": 15])
         ]),
         "crafting materials": ([
             "aluminum": 6,
@@ -2915,11 +2915,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 45,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 15]),
-            "physics": (["type":"skill", "value": 15])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 15]),
+            "physics": (["type": "skill", "value": 15])
         ]),
         "crafting materials": ([
             "copper": 6,
@@ -2952,11 +2952,11 @@ protected mapping materials =
         "attack rating": 2,
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 10]),
-            "physics": (["type":"skill", "value": 15])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 10]),
+            "physics": (["type": "skill", "value": 15])
         ]),
         "crafting materials": ([
             "cobalt ore": 3,
@@ -2971,11 +2971,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 2]),
-            "physics": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 2]),
+            "physics": (["type": "skill", "value": 3])
         ]),
         "crafting materials": ([
             "titanium ore": 3,
@@ -2997,11 +2997,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftReconditeMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "crafting materials": ([
             "tungsten ore": 3,
@@ -3024,8 +3024,8 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 5,
          "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftCommonMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "iron ore": 3,
@@ -3043,11 +3043,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 15,   
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "chemistry": (["type":"skill", "value": 1]),
-            "physics": (["type":"skill", "value": 1])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "chemistry": (["type": "skill", "value": 1]),
+            "physics": (["type": "skill", "value": 1])
         ]),
         "crafting materials": ([
             "iron": 5,
@@ -3074,11 +3074,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 15,   
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 3]),
-            "chemistry": (["type":"skill", "value": 1]),
-            "physics": (["type":"skill", "value": 1])
+            "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 3]),
+            "chemistry": (["type": "skill", "value": 1]),
+            "physics": (["type": "skill", "value": 1])
         ]),
         "crafting materials": ([
             "iron": 5,
@@ -3100,11 +3100,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 2]),
-            "physics": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 2]),
+            "physics": (["type": "skill", "value": 3])
         ]),
         "crafting materials": ([
             "mithril ore": 3,
@@ -3129,11 +3129,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "nurilium ore": 3,
@@ -3161,11 +3161,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 10]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 10]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "crafting materials": ([
             "kirdarium ore": 3,
@@ -3194,11 +3194,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "metal crafting": (["type":"skill", "value": 5]),
-            "chemistry": (["type":"skill", "value": 2]),
-            "physics": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "metal crafting": (["type": "skill", "value": 5]),
+            "chemistry": (["type": "skill", "value": 2]),
+            "physics": (["type": "skill", "value": 3])
         ]),
         "crafting materials": ([
             "admantite ore": 3,
@@ -3223,11 +3223,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 40,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "galvorn ore": 3,
@@ -3255,11 +3255,11 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 40,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type":"research"]),
-            "blacksmithing": (["type":"skill", "value": 15]),
-            "metal crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicMetal.c":(["type": "research"]),
+            "blacksmithing": (["type": "skill", "value": 15]),
+            "metal crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 8
@@ -3285,11 +3285,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 40,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMagicalMaterials.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMagicalMaterials.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack rating": 5,
         "attack": ([
@@ -3311,10 +3311,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMagicalMaterials.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMagicalMaterials.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "cold": 10
@@ -3336,10 +3336,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 18,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 3]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 3]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2,
@@ -3359,10 +3359,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3380,10 +3380,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2,
@@ -3403,10 +3403,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3424,10 +3424,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3445,10 +3445,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3466,10 +3466,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3487,10 +3487,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3508,10 +3508,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3529,10 +3529,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3550,10 +3550,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3571,10 +3571,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3592,10 +3592,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 25,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 2
@@ -3613,10 +3613,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 1
@@ -3634,10 +3634,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 20,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 1
@@ -3655,10 +3655,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 3
@@ -3676,10 +3676,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 3
@@ -3697,10 +3697,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "attack": ([
             "physical": 3
@@ -3718,10 +3718,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 30,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 15]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 15]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "attack": ([
             "physical": 3
@@ -3739,10 +3739,10 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 35,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type":"research"]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftRareGems.c":(["type": "research"]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "attack": ([
             "physical": 4
@@ -3760,11 +3760,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 8,
@@ -3790,11 +3790,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 8,
@@ -3820,11 +3820,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 60,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 25]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 25]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "attack": ([
             "physical": 10,
@@ -3850,11 +3850,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 60,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 25]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 10])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 25]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 10])
         ]),
         "attack": ([
             "physical": 10,
@@ -3880,11 +3880,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 8,
@@ -3910,11 +3910,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 8,
@@ -3940,11 +3940,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 8,
@@ -3970,11 +3970,11 @@ protected mapping materials =
         "class": "crystal",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicGems.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "attack": ([
             "physical": 8,
@@ -4000,11 +4000,11 @@ protected mapping materials =
         "class": "leather",
         "crafting skill required": 50,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "leatherworking": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "leatherworking": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "defense": ([
             "fire": 15,
@@ -4024,9 +4024,9 @@ protected mapping materials =
             "physical": 6
         ]),
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 25]),
-            "leatherworking": (["type":"skill", "value": 25])
+            "/lib/instances/research/crafting/materials/craftExoticLeather.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 25]),
+            "leatherworking": (["type": "skill", "value": 25])
         ]),
         "value multiplier": 25.0,
         "default description": "This is a piece of dragon leather.",
@@ -4038,10 +4038,10 @@ protected mapping materials =
         "class": "skeletal",
         "crafting skill required": 5,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 1]),
-            "chemistry": (["type":"skill", "value": 2]),
-            "physics": (["type":"skill", "value": 2])
+            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 1]),
+            "chemistry": (["type": "skill", "value": 2]),
+            "physics": (["type": "skill", "value": 2])
         ]),
         "value multiplier": 1.5,
         "default description": "This is a bone.",
@@ -4053,10 +4053,10 @@ protected mapping materials =
         "class": "skeletal",
         "crafting skill required": 7,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
-            "chemistry": (["type":"skill", "value": 3]),
-            "physics": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
+            "chemistry": (["type": "skill", "value": 3]),
+            "physics": (["type": "skill", "value": 3])
         ]),
         "value multiplier": 2.0,
         "default description": "This is a horn.",
@@ -4068,10 +4068,10 @@ protected mapping materials =
         "class": "skeletal",
         "crafting skill required": 7,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
-            "chemistry": (["type":"skill", "value": 3]),
-            "physics": (["type":"skill", "value": 3])
+            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
+            "chemistry": (["type": "skill", "value": 3]),
+            "physics": (["type": "skill", "value": 3])
         ]),
         "value multiplier": 2.0,
         "default description": "This is an antler.",
@@ -4083,10 +4083,10 @@ protected mapping materials =
         "class": "skeletal",
         "crafting skill required": 10,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type":"research"]),
-            "wood crafting": (["type":"skill", "value": 2]),
-            "chemistry": (["type":"skill", "value": 4]),
-            "physics": (["type":"skill", "value": 4])
+            "/lib/instances/research/crafting/materials/craftExoticMaterials.c":(["type": "research"]),
+            "wood crafting": (["type": "skill", "value": 2]),
+            "chemistry": (["type": "skill", "value": 4]),
+            "physics": (["type": "skill", "value": 4])
         ]),
         "value multiplier": 5.0,
         "default description": "This is a tusk of ivory.",
@@ -4648,13 +4648,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "kirluin": 1,
@@ -4685,13 +4685,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "gwyrluin": 1,
@@ -4722,13 +4722,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "durluin": 1,
@@ -4759,13 +4759,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "trynluin": 1,
@@ -4796,13 +4796,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "rhudluin": 1,
@@ -4833,13 +4833,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "melynuin": 1,
@@ -4870,13 +4870,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "asurluin": 1,
@@ -4907,13 +4907,13 @@ protected mapping materials =
         "class": "metal",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type":"research"]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "metal crafting": (["type":"skill", "value": 20]),
-            "blacksmithing": (["type":"skill", "value": 10]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicAlloy.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "metal crafting": (["type": "skill", "value": 20]),
+            "blacksmithing": (["type": "skill", "value": 10]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "marnluin": 1,
@@ -4944,13 +4944,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "kirluin": 1,
@@ -4976,13 +4976,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "gwyrluin": 1,
@@ -5008,13 +5008,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "durluin": 1,
@@ -5040,13 +5040,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "trynluin": 1,
@@ -5072,13 +5072,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "rhudluin": 1,
@@ -5104,13 +5104,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "melynuin": 1,
@@ -5136,13 +5136,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "asurluin": 1,
@@ -5168,13 +5168,13 @@ protected mapping materials =
         "class": "textile",
         "crafting skill required": 80,
         "crafting prerequisites": ([
-            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type":"research"]),
-            "sewing": (["type":"skill", "value": 10]),
-            "weaving and beadwork": (["type":"skill", "value": 20]),
-            "spellcraft": (["type":"skill", "value": 20]),
-            "gem crafting": (["type":"skill", "value": 20]),
-            "chemistry": (["type":"skill", "value": 5]),
-            "physics": (["type":"skill", "value": 5])
+            "/lib/instances/research/crafting/materials/craftMythicTextiles.c":(["type": "research"]),
+            "sewing": (["type": "skill", "value": 10]),
+            "weaving and beadwork": (["type": "skill", "value": 20]),
+            "spellcraft": (["type": "skill", "value": 20]),
+            "gem crafting": (["type": "skill", "value": 20]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "physics": (["type": "skill", "value": 5])
         ]),
         "crafting materials": ([
             "marnluin": 1,

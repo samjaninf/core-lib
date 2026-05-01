@@ -177,13 +177,13 @@ void DurationMustBeAnInteger()
 void AddSpecificationAllowsValidModifierToBeSet()
 {
     mapping *modifiers = ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.25
     ]),
     ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "strength",
         "formula": "subtractive",
         "rate": 0.25
@@ -196,13 +196,13 @@ void AddSpecificationAllowsValidModifierToBeSet()
 void AddSpecificationDoesNotAllowInvalidModifierToBeSet()
 {
     mapping *modifiers = ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "long sword",
         "formula": "additive",
         "rate": 1.25
     ]),
     ([
-        "type":"modifier that will fail",
+        "type": "modifier that will fail",
         "name": "strength",
         "rate": 0.25
     ]) });
@@ -278,7 +278,7 @@ void ExecuteOnSelfAppliesEffectOnSelf()
 
     ExpectEq(15, User.getSkill("long sword"), "long sword skill after research used");
 
-    mapping *expectedAttacks = ({ (["attack type": "magical", "damage": 10, "to hit": 60]), (["attack type":"wielded primary"]), (["attack type":"wielded primary"]), (["attack type":"wielded primary"]) });
+    mapping *expectedAttacks = ({ (["attack type": "magical", "damage": 10, "to hit": 60]), (["attack type": "wielded primary"]), (["attack type": "wielded primary"]), (["attack type": "wielded primary"]) });
     ExpectEq(expectedAttacks, User.getAttacks(), "Three weapon attacks and a magical attack are returned");
 }
 
@@ -940,7 +940,7 @@ void ExecuteOnTargetWithoutNoWeaponAttackSetDoesNotRemoveWeaponAttack()
     ExpectTrue(ResearchItem.testExecuteOnTarget("throw turnip at frank", User,
         program_name(ResearchItem)), "can execute command");
 
-    ExpectEq(({ (["attack type":"wielded primary"]),
+    ExpectEq(({ (["attack type": "wielded primary"]),
                 ([ "attack type": "fire",
                     "to hit": 65,
                     "damage": 15

@@ -13,13 +13,13 @@ protected void Setup()
         "mastery over fire magic, enhancing all fire-based attacks.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 19
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/firestorm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

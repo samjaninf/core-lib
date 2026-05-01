@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Buff granting bonus fire damage");
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/kindle-spirit.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 9
         ]));

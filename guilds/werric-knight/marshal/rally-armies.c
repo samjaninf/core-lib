@@ -16,9 +16,9 @@ protected void Setup()
         "leadership.");
 
     addPrerequisite("guilds/werric-knight/marshal/legendary-commander.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":50]));
+        (["type": "guild", "level":50]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
@@ -32,15 +32,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"charisma",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
             "rate":0.30
         ]),
         ([
-            "type":"attribute",
-            "name":"intelligence",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
             "rate":0.20
         ])
     }));

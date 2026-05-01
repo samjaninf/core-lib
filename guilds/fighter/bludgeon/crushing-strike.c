@@ -14,13 +14,13 @@ protected void Setup()
         "an enemy.");
 
     addPrerequisite("/guilds/fighter/bludgeon/cudgel.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "mace", "hammer",
         "flail", "staff" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 29
         ]));
@@ -150,7 +150,7 @@ protected void Setup()
             "rate" : 0.75
         ]),
         ([
-            "type":"highest skill",
+            "type": "highest skill",
             "name" : "blunt skills",
             "skills": ({ "mace", "hammer", "flail", "staff" }),
             "formula" : "additive",

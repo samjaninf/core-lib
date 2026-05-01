@@ -16,13 +16,13 @@ protected void Setup()
         "offensive fire magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 3
         ]));
 
     addPrerequisite("/guilds/pyromancer/fire/spark.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

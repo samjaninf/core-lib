@@ -17,9 +17,9 @@ protected void Setup()
         "unbreakable resolve made flesh.");
 
     addPrerequisite("guilds/werric-knight/will/immortal-will.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":35]));
+        (["type": "guild", "level":35]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -15,10 +15,10 @@ protected void Setup()
         "evasion capabilities.");
 
     addPrerequisite("/guilds/aquamancer/effects/reduce-parry.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 19
         ]));

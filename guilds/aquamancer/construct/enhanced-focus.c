@@ -14,12 +14,12 @@ protected void Setup()
         "significantly more powerful constructed spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 17
         ]));
     addPrerequisite("/guilds/aquamancer/construct/spell-focus.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

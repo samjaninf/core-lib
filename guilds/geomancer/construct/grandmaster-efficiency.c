@@ -14,12 +14,12 @@ protected void Setup()
         "constructed spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 37
         ]));
     addPrerequisite("/guilds/geomancer/construct/master-efficiency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

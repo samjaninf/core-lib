@@ -16,13 +16,13 @@ protected void Setup()
         "offensive earth magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 3
         ]));
 
     addPrerequisite("/guilds/geomancer/earth/tremor.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -14,12 +14,12 @@ protected void Setup()
         "by the calming depths of Ilyrth's waters.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 37 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/purification/remove-curse.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

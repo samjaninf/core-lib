@@ -16,10 +16,10 @@ protected void Setup()
         "pressure.");
 
     addPrerequisite("/guilds/aquamancer/water/tidal-force.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 19
         ]));

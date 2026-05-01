@@ -14,12 +14,12 @@ protected void Setup()
         "connection-based projection methods.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 14 ]));
 
     addPrerequisite("/guilds/oneiromancer/projection-methods/enhanced-projection.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("affected research", ([
         "Empathic Bridge": 20,

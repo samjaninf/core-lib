@@ -14,10 +14,10 @@ protected void Setup()
         "damage output.");
 
     addPrerequisite("/guilds/geomancer/effects/enhance-attack.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 9
         ]));

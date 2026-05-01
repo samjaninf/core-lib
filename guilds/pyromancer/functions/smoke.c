@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of creating spells that damage targets with choking smoke.");
 
     addPrerequisite("/guilds/pyromancer/functions/combustion.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

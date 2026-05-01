@@ -13,10 +13,10 @@ protected void Setup()
         "sacred fortitude, enhancing their ability to withstand harm.");
 
     addPrerequisite("/guilds/disciple-of-ferianth/sacred-pyre/holy-blessing.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 20
         ]));

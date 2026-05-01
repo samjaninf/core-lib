@@ -16,13 +16,13 @@ protected void Setup()
         "steam with precision.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 9
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/scalding-blast.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

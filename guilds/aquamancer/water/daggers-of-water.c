@@ -15,10 +15,10 @@ protected void Setup()
         "tremendous velocity, piercing armor and flesh with ease.");
 
     addPrerequisite("/guilds/aquamancer/water/riptide.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 29
         ]));

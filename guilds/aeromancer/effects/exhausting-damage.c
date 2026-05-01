@@ -15,7 +15,7 @@ protected void Setup()
         "physical capabilities.");
 
     addPrerequisite("/guilds/aeromancer/effects/apply-enfeebled.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
         ([  "type": "level",

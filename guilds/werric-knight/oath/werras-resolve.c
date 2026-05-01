@@ -17,9 +17,9 @@ protected void Setup()
         "king Hillgarath has ever known.");
 
     addPrerequisite("guilds/werric-knight/oath/i-am-the-oath.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":37]));
+        (["type": "guild", "level":37]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

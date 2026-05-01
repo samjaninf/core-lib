@@ -18,10 +18,10 @@ protected void Setup()
         "sensory perception");
 
     addPrerequisite("/guilds/oneiromancer/psionic-focus/will-breaker.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "oneiromancer",
             "value": 21
         ]));
@@ -80,7 +80,7 @@ protected void Setup()
             "rate": 1.05
         ]),
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
             "rate": 0.5

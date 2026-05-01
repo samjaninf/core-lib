@@ -15,11 +15,11 @@ protected void Setup()
         "that wrap around and repeatedly strike a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/cage.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":17
         ]));
 

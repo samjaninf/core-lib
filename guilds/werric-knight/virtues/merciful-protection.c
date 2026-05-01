@@ -14,9 +14,9 @@ protected void Setup()
         "the weak and innocent.");
 
     addPrerequisite("guilds/werric-knight/virtues/courage-unwavering.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":9]));
+        (["type": "guild", "level":9]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

@@ -15,10 +15,10 @@ protected void Setup()
     addSpecification("usage summary", "Powerful area DoT with enfeeble");
 
     addPrerequisite("/guilds/disciple-of-ferianth/wildfire/conflagration.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 27
         ]));

@@ -15,7 +15,7 @@ protected void Setup()
         "engulfs all nearby foes.");
 
     addPrerequisite("/guilds/aquamancer/ice/freezing-mist.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

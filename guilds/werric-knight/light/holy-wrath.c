@@ -13,9 +13,9 @@ protected void Setup()
         "against the forces of darkness.");
 
     addPrerequisite("/guilds/werric-knight/light/divine-wrath.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":20]));
+        (["type": "guild", "level":20]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

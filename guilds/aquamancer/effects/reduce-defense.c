@@ -14,10 +14,10 @@ protected void Setup()
         "a target's defensive capabilities.");
 
     addPrerequisite("/guilds/aquamancer/effects/reduce-damage.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 11
         ]));

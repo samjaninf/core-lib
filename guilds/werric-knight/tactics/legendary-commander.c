@@ -16,9 +16,9 @@ protected void Setup()
         "Hillgarath has ever produced.");
 
     addPrerequisite("guilds/werric-knight/tactics/werras-gambit.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type": "guild", "level":31]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

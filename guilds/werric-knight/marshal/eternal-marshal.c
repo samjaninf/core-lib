@@ -16,9 +16,9 @@ protected void Setup()
         "as the standard against which all future commanders are measured.");
 
     addPrerequisite("guilds/werric-knight/marshal/victorys-call.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":70]));
+        (["type": "guild", "level":70]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

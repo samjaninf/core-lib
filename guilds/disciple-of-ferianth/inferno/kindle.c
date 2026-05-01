@@ -14,13 +14,13 @@ protected void Setup()
         "of fire spells.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 3
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/flame-touch.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

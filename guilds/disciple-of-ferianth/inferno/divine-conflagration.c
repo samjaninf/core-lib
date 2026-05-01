@@ -16,10 +16,10 @@ protected void Setup()
     addSpecification("usage summary", "Catastrophic holy firestorm");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/solar-flare.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 59
         ]));

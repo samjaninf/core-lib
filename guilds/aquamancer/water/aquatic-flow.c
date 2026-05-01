@@ -15,13 +15,13 @@ protected void Setup()
         "dramatically improving the efficiency and power of all water magic.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 33
         ]));
 
     addPrerequisite("/guilds/aquamancer/water/water-channeling.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -19,5 +19,5 @@ protected void Setup()
     addSpecification("bonus defense class", 1);
 
     addPrerequisite("/guilds/background/paths/martial/weapon-familiarity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 }

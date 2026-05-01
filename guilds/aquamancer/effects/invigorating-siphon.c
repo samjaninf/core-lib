@@ -15,10 +15,10 @@ protected void Setup()
         "speed.");
 
     addPrerequisite("/guilds/aquamancer/effects/enhance-speed.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 19
         ]));

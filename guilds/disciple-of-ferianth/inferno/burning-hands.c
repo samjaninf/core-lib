@@ -14,10 +14,10 @@ protected void Setup()
     addSpecification("usage summary", "A cone of sacred fire affecting nearby enemies");
 
     addPrerequisite("/guilds/disciple-of-ferianth/inferno/fire-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 11
         ]));

@@ -14,10 +14,10 @@ protected void Setup()
         "spike of stone to erupt from the ground beneath a target.");
 
     addPrerequisite("/guilds/geomancer/earth/quake.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 13
         ]));

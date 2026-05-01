@@ -16,7 +16,7 @@ protected void Setup()
         "fire manipulation.");
 
     addPrerequisite("/guilds/pyromancer/fire/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");

@@ -99,7 +99,7 @@ private mapping SetupDomain()
                             ]),
                         ]),
                         "central stone tower": ([
-                            "name":"Stone Bergfriede",
+                            "name": "Stone Bergfriede",
                             "maximum structure": 400,
                             "current structure": 400,
                             "time until repaired": 0,
@@ -115,7 +115,7 @@ private mapping SetupDomain()
                             ]),
                         ]),
                         "stone battlement": ([
-                            "name":"Enbrasured Stone Parapet",
+                            "name": "Enbrasured Stone Parapet",
                             "maximum structure": 200,
                             "current structure": 200,
                             "time until repaired": 0,
@@ -449,7 +449,7 @@ void GetNemesisKillReturnsNemesis()
     DataAccess.saveCombatStatistics("gorthaur",
         "/lib/realizations/monster.c#fred", "fred", 12);
 
-    ExpectEq((["name":"fred",
+    ExpectEq((["name": "fred",
         "level" : 12,
         "key" : "/lib/realizations/monster.c#fred",
         "times killed" : 3]),

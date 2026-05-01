@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that spray debris at foes.");
 
     addPrerequisite("/guilds/geomancer/forms/cloud.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

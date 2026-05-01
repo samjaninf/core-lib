@@ -14,9 +14,9 @@ protected void Setup()
         "enemy actions, plan contingencies, and adapt your strategy in real-time.");
 
     addPrerequisite("guilds/werric-knight/tactics/coordinated-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":5]));
+        (["type": "guild", "level":5]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

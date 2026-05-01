@@ -14,7 +14,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
 
-    addSpecification("limited by", (["crafting type":"staff"]));
+    addSpecification("limited by", (["crafting type": "staff"]));
 
-    addPrerequisite("/lib/instances/research/crafting/enchantments/craftAttackEnchantments.c", (["type":"research"]));
+    addPrerequisite("/lib/instances/research/crafting/enchantments/craftAttackEnchantments.c", (["type": "research"]));
 }

@@ -15,9 +15,9 @@ protected void Setup()
         "fighting on multiple fronts.");
 
     addPrerequisite("guilds/werric-knight/defense/strategic-withdrawal.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

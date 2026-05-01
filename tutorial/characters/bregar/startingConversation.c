@@ -132,9 +132,9 @@ private void GutsEqualSpilled()
         "and I will consider your request. Tell me not and you will die very "
         "soon.'");
     addResponsePrerequisite("I don't know", "You might live @A@Intimidation@E@",
-        (["intimidation":(["type":"skill", "value" : 5])]), 1);
+        (["intimidation":(["type": "skill", "value" : 5])]), 1);
     addResponseEffect("I don't know", "You might live @A@Intimidation@E@",
-        (["experience":(["guild":"background", "amount" : 25])]));
+        (["experience":(["guild": "background", "amount" : 25])]));
 
     addResponse("I don't know", "Come now @A@Diplomacy@E@",
         "@D@@C@##InitiatorName## ##ResponseInfinitive::smile## slightly at "
@@ -142,9 +142,9 @@ private void GutsEqualSpilled()
         "to live and I want to let you live. Things would go far toward those "
         "goals if you shared your knowledge with us.'");
     addResponsePrerequisite("I don't know", "Come now @A@Diplomacy@E@",
-        (["diplomacy":(["type":"skill", "value" : 5])]), 1);
+        (["diplomacy":(["type": "skill", "value" : 5])]), 1);
     addResponseEffect("I don't know", "Come now @A@Diplomacy@E@",
-        (["experience":(["guild":"background", "amount" : 25])]));
+        (["experience":(["guild": "background", "amount" : 25])]));
 }
 
 /////////////////////////////////////////////////////////////////////////////

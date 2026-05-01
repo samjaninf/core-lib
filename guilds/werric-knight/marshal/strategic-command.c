@@ -15,9 +15,9 @@ protected void Setup()
         "Your presence on the field elevates everyone under your command.");
 
     addPrerequisite("guilds/werric-knight/marshal/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":35, "guild rank":4]));
+        (["type": "guild", "level":35, "guild rank":4]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

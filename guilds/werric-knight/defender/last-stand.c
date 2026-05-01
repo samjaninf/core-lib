@@ -17,9 +17,9 @@ protected void Setup()
         "Stand is active, you simply cannot be defeated - though the cost is tremendous.");
 
     addPrerequisite("guilds/werric-knight/defender/protectors-heart.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":37]));
+        (["type": "guild", "level":37]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -34,15 +34,15 @@ protected void Setup()
     
     addSpecification("modifiers", ({
         ([
-            "type":"attribute",
-            "name":"constitution",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "constitution",
+            "formula": "additive",
             "rate":0.25
         ]),
         ([
-            "type":"attribute",
-            "name":"willpower",
-            "formula":"additive",
+            "type": "attribute",
+            "name": "willpower",
+            "formula": "additive",
             "rate":0.20
         ])
     }));

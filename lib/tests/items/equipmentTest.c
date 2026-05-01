@@ -195,7 +195,7 @@ void CanSetLevelPrerequisite()
 /////////////////////////////////////////////////////////////////////////////
 void CanSetRacePrerequisite()
 {
-    ExpectTrue(Equipment.set("prerequisites", (["race":"elf"])), "race prerequisites can be set");
+    ExpectTrue(Equipment.set("prerequisites", (["race": "elf"])), "race prerequisites can be set");
     ExpectEq("elf", Equipment.query("prerequisites")["race"], "'elf' race prerequisites returned");
 }
 
@@ -204,7 +204,7 @@ void CannotSetInvalidRacePrerequisite()
 {
     string expected = "*Equipment: The passed 'prerequisites' mapping is invalid.\n";
 
-    string err = catch (Equipment.set("prerequisites", (["race":"turnip"])); nolog);
+    string err = catch (Equipment.set("prerequisites", (["race": "turnip"])); nolog);
     ExpectEq(expected, err, "race prerequisites must be valid");
 }
 
@@ -309,7 +309,7 @@ void CursedInformationWithoutFailMessageThrowsError()
 {
     string expected = "*Equipment: The cursed element must be a mapping containing the 'equip message' and 'failed unequip message' keys.\n";
     mapping curseInfo = ([
-        "equip message":"blah",
+        "equip message": "blah",
     ]);
 
     string err = catch (Equipment.set("cursed", curseInfo); nolog);
@@ -321,7 +321,7 @@ void CursedInformationWithoutEquipMessageThrowsError()
 {
     string expected = "*Equipment: The cursed element must be a mapping containing the 'equip message' and 'failed unequip message' keys.\n";
     mapping curseInfo = ([
-        "failed unequip message":"blah",
+        "failed unequip message": "blah",
     ]);
 
     string err = catch (Equipment.set("cursed", curseInfo); nolog);
@@ -399,7 +399,7 @@ void CanEquipReturnsFalseForLevelPrerequisite()
 /////////////////////////////////////////////////////////////////////////////
 void CanEquipReturnsTrueForCorrectRacePrerequisite()
 {
-    mapping prereqs = (["race":"elf"]);
+    mapping prereqs = (["race": "elf"]);
     Equipment.set("prerequisites", prereqs);
 
     object owner = clone_object("/lib/tests/support/services/mockUserWithInventory.c");
@@ -411,7 +411,7 @@ void CanEquipReturnsTrueForCorrectRacePrerequisite()
 /////////////////////////////////////////////////////////////////////////////
 void CanEquipReturnsFalseForRacePrerequisite()
 {
-    mapping prereqs = (["race":"elf"]);
+    mapping prereqs = (["race": "elf"]);
     Equipment.set("prerequisites", prereqs);
 
     object owner = clone_object("/lib/tests/support/services/mockUserWithInventory.c");
@@ -601,7 +601,7 @@ void CanUnequipReturnsFalseIfSpellActionSet()
 void CanUnequipReturnsFalseIfCursed()
 {
     mapping curseInfo = ([
-        "equip message":"blah",
+        "equip message": "blah",
             "failed unequip message" : "halb"
     ]);
 
@@ -735,7 +735,7 @@ void UnequipFailsWhenItemCursed()
     Equipment = clone_object("/lib/items/armor");
 
     mapping curseInfo = ([
-        "equip message":"you're cursed",
+        "equip message": "you're cursed",
         "failed unequip message" : "nope... can't do that"
     ]);
 
@@ -782,7 +782,7 @@ void DropDoesNotMoveCursedOutOfInventory()
     Equipment = clone_object("/lib/items/armor");
 
     mapping curseInfo = ([
-        "equip message":"you're cursed",
+        "equip message": "you're cursed",
         "failed unequip message" : "nope... can't do that"
     ]);
 

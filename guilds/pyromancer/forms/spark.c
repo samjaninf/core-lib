@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that spark fire at a foe.");
 
     addPrerequisite("/guilds/pyromancer/forms/flare.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

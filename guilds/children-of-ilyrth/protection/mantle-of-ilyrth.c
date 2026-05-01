@@ -15,12 +15,12 @@ protected void Setup()
         "all allies, granting supreme protection from all harm.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 67 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/divine-carapace.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");

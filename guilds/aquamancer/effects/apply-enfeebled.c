@@ -14,10 +14,10 @@ protected void Setup()
         "a target, weakening their physical capabilities.");
 
     addPrerequisite("/guilds/aquamancer/effects/apply-slow.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "aquamancer",
             "value": 17
         ]));

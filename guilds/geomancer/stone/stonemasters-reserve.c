@@ -14,12 +14,12 @@ protected void Setup()
         "stone attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "geomancer",
             "value": 11
         ]));
     addPrerequisite("/guilds/geomancer/stone/stone-bolt.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

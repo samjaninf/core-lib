@@ -15,9 +15,9 @@ protected void Setup()
         "absolute. Your defenses are as eternal as your dedication to the Oath.");
 
     addPrerequisite("guilds/werric-knight/defense/timeless-defender.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":17]));
+        (["type": "guild", "level":17]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,9 +13,9 @@ protected void Setup()
         "enhances your strength, endurance, and overall combat effectiveness.");
 
     addPrerequisite("guilds/werric-knight/discipline/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":1]));
+        (["type": "guild", "level":1]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

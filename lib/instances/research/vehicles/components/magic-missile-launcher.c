@@ -14,11 +14,11 @@ protected void Setup()
         "of pure force from vehicle mounts.");
     addSpecification("research type", "points");
     addSpecification("research cost", 4);
-    addPrerequisite("spellcraft", (["type":"skill", "value" : 8]));
-    addPrerequisite("metal crafting", (["type":"skill", "value" : 3]));
-    addPrerequisite("arcane crafting", (["type":"skill", "value" : 4]));
+    addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
+    addPrerequisite("metal crafting", (["type": "skill", "value" : 3]));
+    addPrerequisite("arcane crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-wagon-frame.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["crafting type":({ "wagon", "cart", "boat", "ship" })]));
     addSpecification("bonus crafting vehicle attack", 5);

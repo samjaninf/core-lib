@@ -14,11 +14,11 @@ protected void Setup()
         "plasma created by ionizing the air.");
 
     addPrerequisite("/guilds/aeromancer/functions/storm.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":21
         ]));
 

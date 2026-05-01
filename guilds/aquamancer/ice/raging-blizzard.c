@@ -15,7 +15,7 @@ protected void Setup()
         "foes in the area with extreme cold and cutting ice.");
 
     addPrerequisite("/guilds/aquamancer/ice/hailstorm.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level", 
         (["type": "level", 

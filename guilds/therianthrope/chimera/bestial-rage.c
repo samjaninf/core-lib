@@ -14,10 +14,10 @@ protected void Setup()
         "cost of defensive awareness.");
 
     addPrerequisite("/guilds/therianthrope/chimera/goats-tenacity.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "therianthrope",
             "value": 33
         ]));

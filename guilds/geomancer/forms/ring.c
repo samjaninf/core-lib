@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that form a ring of stone.");
 
     addPrerequisite("/guilds/geomancer/forms/wave.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

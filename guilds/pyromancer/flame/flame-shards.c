@@ -14,10 +14,10 @@ protected void Setup()
         "pyromancer hurls razor-sharp shards of crystallized flame at a foe.");
 
     addPrerequisite("/guilds/pyromancer/flame/ignite.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 9
         ]));

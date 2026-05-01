@@ -15,12 +15,12 @@ protected void Setup()
         "barrier.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "Children of Ilyrth",
           "value": 37 ]));
 
     addPrerequisite("/guilds/children-of-ilyrth/protection/divine-bulwark.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

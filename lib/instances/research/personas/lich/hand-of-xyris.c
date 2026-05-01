@@ -30,17 +30,17 @@ protected void Setup()
             "range" : 35
     ]) }));
     addSpecification("modifiers", ({ ([
-        "type":"skill",
+        "type": "skill",
         "name": "body",
         "formula": "additive",
         "rate": 1.10
     ]), ([
-        "type":"skill",
+        "type": "skill",
         "name": "blood",
         "formula": "additive",
         "rate": 1.10
     ]), ([
-        "type":"attribute",
+        "type": "attribute",
         "name": "intelligence",
         "formula": "logarithmic",
         "base value": 5,

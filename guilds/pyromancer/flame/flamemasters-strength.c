@@ -14,12 +14,12 @@ protected void Setup()
         "flame attack abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 43
         ]));
     addPrerequisite("/guilds/pyromancer/flame/flamemasters-endurance.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

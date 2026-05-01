@@ -573,7 +573,7 @@ void TraitDetailsDisplayTraitLimiters()
     object trait = load_object("/lib/tests/support/traits/testTrait.c");
     trait.create();
 
-    trait.addSpecification("limited by", (["opponent race":"elf"]));
+    trait.addSpecification("limited by", (["opponent race": "elf"]));
     ExpectTrue(Player.executeCommand("traits -details sword boy"));
     ExpectEq(message, Player.caughtMessage());
     destruct(trait);

@@ -272,12 +272,12 @@ void CanSelectModifyForASong()
         "constraint": "/guilds/bard/compositions/root.c",
         "type": "/guilds/bard/compositions/simple-ballad.c",
         "elements": ({
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "intro",
                 "description" : "Gittern, Cm7b5 arpeggio",
                 "order in sequence" : 1
             ]),
-            (["research":"/lib/tests/support/research/compositeResearchItemD.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemD.c",
                 "type" : "verse 1",
                 "description" : "I'm walking through a reliquary",
                 "order in sequence" : 2
@@ -297,7 +297,7 @@ void CanSelectModifyForASong()
                 "description": "Climbed my body and chewed on my chin.",
                 "order in sequence": 5
             ]),
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "verse 1",
                 "description" : "Gittern, chords: Am, D7, Cm7b5",
                 "order in sequence" : 6
@@ -536,7 +536,7 @@ void CanDeleteSong()
         "constraint": "/guilds/bard/compositions/root.c",
         "type": "/guilds/bard/compositions/simple-ballad.c",
         "elements": ({
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "intro",
                 "description" : "Gittern, Cm7b5 arpeggio",
                 "order in sequence" : 1
@@ -578,7 +578,7 @@ void NotTypingYAbortsDelete()
         "constraint": "/guilds/bard/compositions/root.c",
         "type": "/guilds/bard/compositions/simple-ballad.c",
         "elements": ({
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "intro",
                 "description" : "Gittern, Cm7b5 arpeggio",
                 "order in sequence" : 1
@@ -612,12 +612,12 @@ void CanModifyOrderingOfSongSegment()
         "constraint": "/guilds/bard/compositions/root.c",
         "type": "/guilds/bard/compositions/simple-ballad.c",
         "elements": ({
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "intro",
                 "description" : "Gittern, Cm7b5 arpeggio",
                 "order in sequence" : 1
             ]),
-            (["research":"/lib/tests/support/research/compositeResearchItemD.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemD.c",
                 "type" : "verse 1",
                 "description" : "I'm walking through a reliquary",
                 "order in sequence" : 2
@@ -637,7 +637,7 @@ void CanModifyOrderingOfSongSegment()
                 "description": "Climbed my body and chewed on my chin.",
                 "order in sequence": 5
             ]),
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "verse 1",
                 "description" : "Gittern, chords: Am, D7, Cm7b5",
                 "order in sequence" : 6
@@ -746,7 +746,7 @@ void CanRemoveSongSegment()
         "constraint": "/guilds/bard/compositions/root.c",
         "type": "/guilds/bard/compositions/simple-ballad.c",
         "elements": ({
-            (["research":"/lib/tests/support/research/compositeResearchItemD.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemD.c",
                 "type" : "verse 1",
                 "description" : "I'm walking through a reliquary",
                 "order in sequence" : 1
@@ -766,7 +766,7 @@ void CanRemoveSongSegment()
                 "description": "Climbed my body and chewed on my chin.",
                 "order in sequence": 4
             ]),
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "verse 1",
                 "description" : "Gittern, chords: Am, D7, Cm7b5",
                 "order in sequence" : 5
@@ -807,7 +807,7 @@ void CanIncrementSongSegmentOrder()
         "constraint": "/guilds/bard/compositions/root.c",
         "type": "/guilds/bard/compositions/simple-ballad.c",
         "elements": ({
-            (["research":"/lib/tests/support/research/compositeResearchItemD.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemD.c",
                 "type" : "verse 1",
                 "description" : "I'm walking through a reliquary",
                 "order in sequence" : 1
@@ -827,7 +827,7 @@ void CanIncrementSongSegmentOrder()
                 "description": "Climbed my body and chewed on my chin.",
                 "order in sequence": 4
             ]),
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "verse 1",
                 "description" : "Gittern, chords: Am, D7, Cm7b5",
                 "order in sequence" : 5
@@ -861,7 +861,7 @@ void CanDecrementSongSegmentOrder()
         "constraint": "/guilds/bard/compositions/root.c",
         "type": "/guilds/bard/compositions/simple-ballad.c",
         "elements": ({
-            (["research":"/lib/tests/support/research/compositeResearchItemD.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemD.c",
                 "type" : "verse 1",
                 "description" : "I'm walking through a reliquary",
                 "order in sequence" : 1
@@ -881,7 +881,7 @@ void CanDecrementSongSegmentOrder()
                 "description": "Climbed my body and chewed on my chin.",
                 "order in sequence": 4
             ]),
-            (["research":"/lib/tests/support/research/compositeResearchItemE.c",
+            (["research": "/lib/tests/support/research/compositeResearchItemE.c",
                 "type" : "verse 1",
                 "description" : "Gittern, chords: Am, D7, Cm7b5",
                 "order in sequence" : 5

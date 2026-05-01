@@ -17,7 +17,7 @@ protected void Setup()
           "guild": "bard",
           "value": 27 ]));
     addPrerequisite("/guilds/bard/lyrics/daedruns-might.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

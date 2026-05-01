@@ -14,12 +14,12 @@ protected void Setup()
         "psychological impact.");
 
     addPrerequisite("level", 
-        (["type":"level", 
+        (["type": "level", 
           "guild": "oneiromancer",
           "value": 21 ]));
 
     addPrerequisite("/guilds/oneiromancer/psionic-combinations/triple-thread.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

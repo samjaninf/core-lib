@@ -13,13 +13,13 @@ protected void Setup()
         "divine knowledge of ember arts, greatly enhancing utility abilities.");
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Disciple of Ferianth",
             "value": 29
         ]));
 
     addPrerequisite("/guilds/disciple-of-ferianth/ember-arts/enhanced-ember-potency.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -18,13 +18,13 @@ protected void Setup()
         "energy wave");
 
     addPrerequisite("/guilds/aegis-guard/forms/sword-mythic/mythic-root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "dagger", "short sword",
         "long sword", "hand and a half sword", "two-handed sword" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "Aegis Guard",
             "value": 29
         ]));
@@ -133,7 +133,7 @@ protected void Setup()
             "rate": 1.025
         ]), 
         ([
-            "type":"attribute",
+            "type": "attribute",
             "name": "constitution",
             "formula": "additive",
             "rate": 0.25

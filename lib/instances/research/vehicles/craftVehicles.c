@@ -13,7 +13,7 @@ protected void Setup()
         "fundamental knowledge required to construct basic vehicles for "
         "transportation and commerce.");
     addSpecification("research type", "tree root");
-    addPrerequisite("carpentry", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/crafting/craftItems.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

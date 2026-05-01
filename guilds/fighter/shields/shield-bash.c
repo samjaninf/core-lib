@@ -13,12 +13,12 @@ protected void Setup()
         "knowledge of how to use an equipped shield to hit a foe.");
 
     addPrerequisite("/guilds/fighter/shields/root.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addSpecification("limited by", (["equipment":({ "shield" })]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "fighter",
             "value": 3
         ]));

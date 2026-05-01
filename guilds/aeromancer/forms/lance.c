@@ -15,11 +15,11 @@ protected void Setup()
         "of energy to impale a foe.");
 
     addPrerequisite("/guilds/aeromancer/forms/spear.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
-            "type":"level",
-            "guild":"aeromancer",
+            "type": "level",
+            "guild": "aeromancer",
             "value":13
         ]));
 

@@ -100,10 +100,10 @@ mapping for `"long sword"` in `weapons.h`. Here is the actual mapping:
     "damage type": "slash",
     "skill to craft": 10,
     "crafting prerequisites": ([
-        "/lib/instances/research/crafting/weapons/swords/craftLongSwords.c":(["type":"research"]),
-        "blacksmithing": (["type":"skill", "value": 1]),
-        "metal crafting": (["type":"skill", "value": 1]),
-        "weapon smithing": (["type":"skill", "value": 8]),
+        "/lib/instances/research/crafting/weapons/swords/craftLongSwords.c":(["type": "research"]),
+        "blacksmithing": (["type": "skill", "value": 1]),
+        "metal crafting": (["type": "skill", "value": 1]),
+        "weapon smithing": (["type": "skill", "value": 8]),
     ]),
     "primary component": "blade", 
     "crafting materials": ([
@@ -201,11 +201,11 @@ properties defined for steel in `materials.h`. Here's what the steel mapping loo
     "class": "metal",
     "crafting skill required": 15,   
     "crafting prerequisites": ([
-        "/lib/instances/research/crafting/materials/craftAlloy.c":(["type":"research"]),
-        "blacksmithing": (["type":"skill", "value": 10]),
-        "metal crafting": (["type":"skill", "value": 3]),
-        "chemistry": (["type":"skill", "value": 1]),
-        "physics": (["type":"skill", "value": 1])
+        "/lib/instances/research/crafting/materials/craftAlloy.c":(["type": "research"]),
+        "blacksmithing": (["type": "skill", "value": 10]),
+        "metal crafting": (["type": "skill", "value": 3]),
+        "chemistry": (["type": "skill", "value": 1]),
+        "physics": (["type": "skill", "value": 1])
     ]),
     "crafting materials": ([
         "iron": 5,

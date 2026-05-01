@@ -14,9 +14,9 @@ protected void Setup()
         "is absolute.");
 
     addPrerequisite("/guilds/werric-knight/mounted/apocalyptic-charge.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":25]));
+        (["type": "guild", "level":25]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

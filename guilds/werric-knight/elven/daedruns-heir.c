@@ -16,9 +16,9 @@ protected void Setup()
         "perfected, a bridge between human discipline and elven artistry.");
 
     addPrerequisite("guilds/werric-knight/elven/dance-of-blades.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":31]));
+        (["type": "guild", "level":31]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

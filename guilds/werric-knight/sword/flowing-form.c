@@ -13,9 +13,9 @@ protected void Setup()
         "that enhance your blade attacks through fluid motion.");
 
     addPrerequisite("/guilds/werric-knight/sword/precise-strike.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":3]));
+        (["type": "guild", "level":3]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

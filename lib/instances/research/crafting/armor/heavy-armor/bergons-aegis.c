@@ -15,8 +15,8 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addPrerequisite("/lib/instances/research/crafting/armor/heavy-armor/bergons-legacy.c", 
-        (["type":"research"]));
-    addPrerequisite("armorer", (["type":"skill", "value" : 35]));
+        (["type": "research"]));
+    addPrerequisite("armorer", (["type": "skill", "value" : 35]));
 
     addSpecification("limited by", (["crafting type":
         ({ "plate armor", "splint armor", "scale armor" })]));

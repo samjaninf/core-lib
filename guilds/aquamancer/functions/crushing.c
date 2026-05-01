@@ -14,7 +14,7 @@ protected void Setup()
         "pressure of the ocean depths, capable of imploding armor.");
 
     addPrerequisite("/guilds/aquamancer/functions/drowning.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

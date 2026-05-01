@@ -14,7 +14,7 @@ protected void Setup()
         "basic wheeled vehicles for land transport.");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addPrerequisite("carpentry", (["type":"skill", "value" : 2]));
+    addPrerequisite("carpentry", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/craftVehicles.c", 
-        (["type":"research"]));
+        (["type": "research"]));
 }

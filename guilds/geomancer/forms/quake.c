@@ -14,7 +14,7 @@ protected void Setup()
         "knowledge of creating spells that cause localized earthquakes.");
 
     addPrerequisite("/guilds/geomancer/forms/vortex.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("level",
         ([
             "type": "level",

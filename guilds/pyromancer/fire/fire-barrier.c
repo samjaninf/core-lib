@@ -14,10 +14,10 @@ protected void Setup()
         "impenetrable wall of flame that provides superior protection.");
 
     addPrerequisite("/guilds/pyromancer/fire/fire-shield.c",
-        (["type":"research"]));
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
+        (["type": "level",
             "guild": "pyromancer",
             "value": 21
         ]));

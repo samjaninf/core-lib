@@ -13,9 +13,9 @@ protected void Setup()
         "devastating strikes of overwhelming power.");
 
     addPrerequisite("/guilds/werric-knight/sword/righteous-fury.c",
-        (["type":"research"]));
+        (["type": "research"]));
     addPrerequisite("/guilds/werric-knight/werric-knight.c",
-        (["type":"guild", "level":21]));
+        (["type": "guild", "level":21]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -11,7 +11,7 @@ protected void Setup()
     addSpecification("source", "Werric Knight");
     addSpecification("description", "You have learned to coordinate your attacks "
         "with nearby allies, striking in perfect synchronization for maximum effect. "
-        "This is the fundamental technique of Hillgarath's combat doctrine—that "
+        "This is the fundamental technique of Hillgarath's combat doctrine - that "
         "disciplined warriors fighting as one are worth ten times their number "
         "fighting alone.");
 

@@ -61,20 +61,6 @@ public void SetupGuild()
         "apply" : "2 every 5 levels"
     ]));
 
-    addCriteria("bonus hit points", ([
-        "type": "bonus modifier",
-        "apply" : "10 at level 5",
-        "types" : ({ "hit points" }),
-        "begin at level" : 5
-    ]));
-
-    addCriteria("bonus stamina", ([
-        "type": "bonus modifier",
-        "apply" : "5 at level 10",
-        "types" : ({ "stamina points" }),
-        "begin at level" : 10
-    ]));
-
     //addResearchTree("/guilds/guardian-of-khazurath/axe-mastery.c");
     //addResearchTree("/guilds/guardian-of-khazurath/stone-defense.c");
     //addResearchTree("/guilds/guardian-of-khazurath/dwarven-resilience.c");

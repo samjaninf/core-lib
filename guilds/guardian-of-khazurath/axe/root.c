@@ -17,6 +17,5 @@ protected void Setup()
     addSpecification("scope", "self");
     addSpecification("research type", "tree root");
 
-    addSpecification("bonus axe", 1);
-    addSpecification("bonus great axe", 1);
+    addSpecification("bonus axe", 2);
 }

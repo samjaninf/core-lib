@@ -343,7 +343,7 @@ public nomask varargs string displayLimiters(string colorConfiguration,
 
                     ret += sprintf(limiter, "you have " + 
                         ((key == "research") ? "completed " : "") +
-                        "any of the following", key + ": ", convertToString(research));
+                        "any of the following", key + ":", convertToString(research));
                     break;
                 }
                 case "traits":

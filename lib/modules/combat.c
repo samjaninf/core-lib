@@ -1596,6 +1596,148 @@ private nomask void updateCombatSummary(object foe, int damageTaken,
 }
 
 /////////////////////////////////////////////////////////////////////////////
+public nomask float applyPerHitLandedEffect()
+{
+    float multiplier = 0.0;
+
+    object researchModule = getModule("research");
+    if(!researchModule)
+    {
+        return multiplier;
+    }
+
+    string *sustainedActive = researchModule->activeSustainedResearch();
+    if(!sizeof(sustainedActive))
+    {
+        return multiplier;
+    }
+
+    foreach(string researchItem in sustainedActive)
+    {
+        object researchObj = getService("research")->researchObject(researchItem);
+        if(!researchObj)
+        {
+            continue;
+        }
+
+        mapping cost = researchObj->query("per hit landed cost");
+        float mult = researchObj->query("per hit landed multiplier");
+
+        if(!mappingp(cost) || !floatp(mult))
+        {
+            continue;
+        }
+
+        int canPay = 1;
+        if(member(cost, "hit points") && hitPoints <= cost["hit points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "spell points") && spellPoints < cost["spell points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "stamina points") && staminaPoints < cost["stamina points"])
+        {
+            canPay = 0;
+        }
+
+        if(canPay)
+        {
+            if(member(cost, "hit points"))
+            {
+                hitPoints -= cost["hit points"];
+            }
+            if(member(cost, "spell points"))
+            {
+                spellPoints -= cost["spell points"];
+            }
+            if(member(cost, "stamina points"))
+            {
+                staminaPoints -= cost["stamina points"];
+            }
+            if(mult > multiplier)
+            {
+                multiplier = mult;
+            }
+        }
+    }
+
+    return multiplier;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask float applyPerHitReceivedEffect()
+{
+    float multiplier = 0.0;
+
+    object researchModule = getModule("research");
+    if(!researchModule)
+    {
+        return multiplier;
+    }
+
+    string *sustainedActive = researchModule->activeSustainedResearch();
+    if(!sizeof(sustainedActive))
+    {
+        return multiplier;
+    }
+
+    foreach(string researchItem in sustainedActive)
+    {
+        object researchObj = getService("research")->researchObject(researchItem);
+        if(!researchObj)
+        {
+            continue;
+        }
+
+        mapping cost = researchObj->query("per hit received cost");
+        float mult = researchObj->query("per hit received multiplier");
+
+        if(!mappingp(cost) || !floatp(mult))
+        {
+            continue;
+        }
+
+        int canPay = 1;
+        if(member(cost, "hit points") && hitPoints <= cost["hit points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "spell points") && spellPoints < cost["spell points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "stamina points") && staminaPoints < cost["stamina points"])
+        {
+            canPay = 0;
+        }
+
+        if(canPay)
+        {
+            if(member(cost, "hit points"))
+            {
+                hitPoints -= cost["hit points"];
+            }
+            if(member(cost, "spell points"))
+            {
+                spellPoints -= cost["spell points"];
+            }
+            if(member(cost, "stamina points"))
+            {
+                staminaPoints -= cost["stamina points"];
+            }
+            if(mult > multiplier)
+            {
+                multiplier = mult;
+            }
+        }
+    }
+
+    return multiplier;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 public nomask varargs int hit(int damage, string damageType, object foe)
 {
     int ret = 0;
@@ -1654,10 +1796,9 @@ public nomask varargs int hit(int damage, string damageType, object foe)
 
         hitPoints -= ret;
 
-        object researchModule = getModule("research");
-        if(researchModule && ret > 0)
+        if(ret > 0)
         {
-            float receivedMult = researchModule->applyPerHitReceivedEffect();
+            float receivedMult = applyPerHitReceivedEffect();
             if(receivedMult > 0.0 && receivedMult > pendingPerHitMultiplier)
             {
                 pendingPerHitMultiplier = receivedMult;
@@ -1792,10 +1933,8 @@ protected nomask void doOneAttack(object foe, object weapon)
             // still exists
             if(foe && objectp(foe))
             {
-                object researchModule = getModule("research");
-                if(researchModule)
                 {
-                    float landedMult = researchModule->applyPerHitLandedEffect();
+                    float landedMult = applyPerHitLandedEffect();
                     if(landedMult > 0.0)
                     {
                         damage = to_int(damage * landedMult);

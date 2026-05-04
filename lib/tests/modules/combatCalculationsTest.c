@@ -715,6 +715,8 @@ void CalculateSoakDamageCorrectlyAppliesServiceBonuses()
     ExpectEq(13, Attacker.calculateSoakDamage("physical"), "research modifier is active");
     Attacker.ToggleMockTrait();
     ExpectEq(15, Attacker.calculateSoakDamage("physical"), "trait modifier is active");
+    Attacker.ToggleMockBackground();
+    ExpectEq(17, Attacker.calculateSoakDamage("physical"), "background modifier is active");
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -723,31 +725,46 @@ void PerHitLandedMultiplierScalesDamageInDoOneAttack()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c");
 
-    Attacker.ToggleMockResearch();
-    Attacker.staminaPoints(Attacker.maxStaminaPoints());
+    object attacker = clone_object("/lib/realizations/player.c");
+    attacker.Name("Bob");
+    attacker.Str(20);
+    attacker.Dex(20);
+    attacker.Con(20);
+    attacker.Int(20);
+    attacker.Wis(20);
+    move_object(attacker, Room);
 
-    researchItem.execute("test per hit landed", Attacker);
-    ExpectTrue(Attacker.sustainedResearchIsActive(
-        "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
-        "per hit landed form is active");
+    attacker.addSkillPoints(100);
+    attacker.advanceSkill("long sword", 5);
+    object weapon = clone_object("/lib/instances/items/weapons/swords/long-sword.c");
+    weapon.set("bonus attack", 200);
+    move_object(weapon, attacker);
+    ExpectTrue(weapon.equip("long sword"), "weapon equipped");
 
-    object weapon = CreateWeapon("axe");
-    weapon.set("weapon type", "axe");
-    ExpectTrue(weapon.equip("axe"), "weapon equipped");
+    attacker.staminaPoints(attacker.maxStaminaPoints());
+    attacker.addResearchPoints(1);
+    attacker.initiateResearch(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
+    researchItem.execute("test per hit landed", attacker);
 
+    attacker.heart_beat();
+
+    Target.setMaxHitPoints(10000);
+    Target.hitPoints(Target.maxHitPoints());
     int baselineHP = Target.hitPoints();
-    int staminaBefore = Attacker.staminaPoints();
+    int staminaBefore = attacker.staminaPoints();
 
-    Attacker.attack(Target);
-    move_object(Attacker, Room);
-    Attacker.heart_beat();
+    attacker.attack(Target);
+    move_object(attacker, Room);
+    attacker.heart_beat();
 
-    ExpectTrue(Attacker.staminaPoints() < staminaBefore,
+    ExpectTrue(attacker.staminaPoints() < staminaBefore,
         "stamina was deducted by per-hit-landed cost");
     ExpectTrue(Target.hitPoints() < baselineHP,
         "damage was dealt to target");
 
     destruct(researchItem);
+    destruct(attacker);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -756,25 +773,33 @@ void PerHitLandedMultiplierNotAppliedWhenCostCannotBePaid()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c");
 
-    Attacker.ToggleMockResearch();
-    Attacker.staminaPoints(5);
+    object attacker = clone_object("/lib/realizations/player.c");
+    attacker.Name("Bob");
+    attacker.Str(20);
+    attacker.Dex(20);
+    attacker.Con(20);
+    attacker.Int(20);
+    attacker.Wis(20);
+    move_object(attacker, Room);
 
-    researchItem.execute("test per hit landed", Attacker);
-    ExpectTrue(Attacker.sustainedResearchIsActive(
+    attacker.staminaPoints(5);
+    attacker.addResearchPoints(1);
+    attacker.initiateResearch(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
+    researchItem.execute("test per hit landed", attacker);
+    ExpectTrue(attacker.sustainedResearchIsActive(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
         "per hit landed form is active");
 
-    int staminaBefore = Attacker.staminaPoints();
-    float mult = Attacker.applyPerHitLandedEffect();
+    int staminaBefore = attacker.staminaPoints();
+    float mult = attacker.applyPerHitLandedEffect();
 
-    ExpectEq(staminaBefore, Attacker.staminaPoints(),
+    ExpectEq(staminaBefore, attacker.staminaPoints(),
         "stamina unchanged when cost cannot be paid");
     ExpectEq(0.0, mult, "no multiplier when cost cannot be paid");
 
     destruct(researchItem);
-}
-    Attacker.ToggleMockBackground();
-    ExpectEq(17, Attacker.calculateSoakDamage("physical"), "background modifier is active");
+    destruct(attacker);
 }
 
 /////////////////////////////////////////////////////////////////////////////

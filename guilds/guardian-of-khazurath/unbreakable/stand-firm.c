@@ -2,15 +2,27 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     addSpecification("name", "Stand Firm");
     addSpecification("source", "Guardian of Khazurath");
-    addSpecification("description", "Placeholder for Stand Firm.");
+    addSpecification("description", "This skill provides the user with the knowledge to plant their feet and hold their ground against any force.");
+
+    addPrerequisite("/guilds/guardian-of-khazurath/unbreakable/root.c",
+        (["type": "research"]));
+
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "Guardian of Khazurath",
+            "value": 1
+        ]));
+
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
+    addSpecification("bonus defense", 2);
+    addSpecification("bonus hit points", 10);
 }

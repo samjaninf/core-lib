@@ -2,15 +2,19 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Earth Magic");
     addSpecification("source", "Guardian of Khazurath");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This skill provides the user with the "
+        "knowledge of earth and stone magic as practiced by the Guardians "
+        "of Khazurath, drawing power from the bones of the mountain.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus elemental earth", 1);
+    addSpecification("bonus spellcraft", 1);
 }

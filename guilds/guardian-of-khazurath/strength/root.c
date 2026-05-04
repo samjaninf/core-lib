@@ -2,15 +2,17 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Mountain Strength");
     addSpecification("source", "Guardian of Khazurath");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This skill provides the user with the raw physical foundation of mountain strength, the basis of all dwarven offensive power.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus strength", 1);
+    addSpecification("bonus damage", 1);
 }

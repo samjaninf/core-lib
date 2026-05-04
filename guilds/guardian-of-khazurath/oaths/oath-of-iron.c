@@ -2,15 +2,28 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Oath Of Iron");
+    addSpecification("name", "Oath of Iron");
     addSpecification("source", "Guardian of Khazurath");
-    addSpecification("description", "Placeholder for Oath Of Iron.");
+    addSpecification("description", "This skill provides the user with knowledge of the oath of iron - a vow of unyielding strength and endurance.");
+
+    addPrerequisite("/guilds/guardian-of-khazurath/oaths/oath-of-stone.c",
+        (["type": "research"]));
+
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "Guardian of Khazurath",
+            "value": 13
+        ]));
+
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
+    addSpecification("bonus soak", 3);
+    addSpecification("bonus defense", 3);
+    addSpecification("bonus hit points", 20);
 }

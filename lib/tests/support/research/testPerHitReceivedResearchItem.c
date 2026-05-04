@@ -15,6 +15,6 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "test per hit received");
-    addSpecification("per hit received cost", (["hit points": 5]));
+    addSpecification("per hit received cost", (["spell points": 5]));
     addSpecification("per hit received multiplier", 2.0);
 }

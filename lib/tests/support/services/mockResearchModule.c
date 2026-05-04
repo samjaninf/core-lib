@@ -79,3 +79,10 @@ public nomask int sustainedResearchIsActive(string name)
 {
     return name == researchName;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask string *activeSustainedResearch()
+{
+    return researchObject ? ({ researchName }) : ({});
+}
+

@@ -949,10 +949,16 @@ void PerHitLandedCostDeductedWhenHitLands()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c");
 
-    Attacker.ToggleMockResearch();
+    destruct(Attacker);
+    SetUpAttacker(1);
+    move_object(Attacker, Room);
+
     Attacker.staminaPoints(Attacker.maxStaminaPoints());
     int initialStamina = Attacker.staminaPoints();
 
+    Attacker.addResearchPoints(1);
+    Attacker.initiateResearch(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
     researchItem.execute("test per hit landed", Attacker);
     ExpectTrue(Attacker.sustainedResearchIsActive(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
@@ -971,16 +977,23 @@ void PerHitLandedCostNotDeductedWhenInsufficientStamina()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c");
 
-    Attacker.ToggleMockResearch();
-    Attacker.staminaPoints(5);
+    destruct(Attacker);
+    SetUpAttacker(1);
+    move_object(Attacker, Room);
 
+    Attacker.staminaPoints(5);
+    int staminaAfterSet = Attacker.staminaPoints();
+
+    Attacker.addResearchPoints(1);
+    Attacker.initiateResearch(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
     researchItem.execute("test per hit landed", Attacker);
     ExpectTrue(Attacker.sustainedResearchIsActive(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
         "sustained research is active");
 
     float mult = Attacker.applyPerHitLandedEffect();
-    ExpectEq(5, Attacker.staminaPoints(),
+    ExpectEq(staminaAfterSet, Attacker.staminaPoints(),
         "stamina unchanged when cost cannot be paid");
     ExpectEq(0.0, mult,
         "multiplier is 0.0 when cost cannot be paid");
@@ -994,9 +1007,14 @@ void PerHitLandedMultiplierReturnedWhenCostPaid()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitLandedResearchItem.c");
 
-    Attacker.ToggleMockResearch();
-    Attacker.staminaPoints(Attacker.maxStaminaPoints());
+    destruct(Attacker);
+    SetUpAttacker(1);
+    move_object(Attacker, Room);
 
+    Attacker.staminaPoints(Attacker.maxStaminaPoints());
+    Attacker.addResearchPoints(1);
+    Attacker.initiateResearch(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
     researchItem.execute("test per hit landed", Attacker);
 
     float mult = Attacker.applyPerHitLandedEffect();
@@ -1011,39 +1029,43 @@ void PerHitReceivedCostDeductedWhenHit()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
 
-    Target.ToggleMockResearch();
     Target.setMaxHitPoints(1000);
     Target.hitPoints(Target.maxHitPoints());
-    int initialHP = Target.hitPoints();
+    Target.spellPoints(Target.maxSpellPoints());
 
+    Target.addResearchPoints(1);
+    Target.initiateResearch(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
     researchItem.execute("test per hit received", Target);
     ExpectTrue(Target.sustainedResearchIsActive(
         "/lib/tests/support/research/testPerHitReceivedResearchItem.c"),
         "sustained research is active");
 
+    int initialSP = Target.spellPoints();
     Target.hit(50, "physical", Attacker);
 
-    ExpectTrue(Target.hitPoints() < initialHP - 5,
-        "hit points reduced by both damage and per-hit-received cost");
+    ExpectTrue(Target.spellPoints() < initialSP,
+        "spell points reduced by per-hit-received cost");
 
     destruct(researchItem);
 }
 
 /////////////////////////////////////////////////////////////////////////////
-void PerHitReceivedCostNotDeductedWhenInsufficientHitPoints()
+void PerHitReceivedCostNotDeductedWhenInsufficientSpellPoints()
 {
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
 
-    Target.ToggleMockResearch();
-    Target.setMaxHitPoints(1000);
-    Target.hitPoints(6);
-
+    Target.addResearchPoints(1);
+    Target.initiateResearch(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
     researchItem.execute("test per hit received", Target);
+
+    Target.spellPoints(3);
 
     float mult = Target.applyPerHitReceivedEffect();
     ExpectEq(0.0, mult,
-        "multiplier is 0.0 when hit points too low to pay cost");
+        "multiplier is 0.0 when spell points too low to pay cost");
 
     destruct(researchItem);
 }
@@ -1054,10 +1076,13 @@ void PerHitReceivedMultiplierAppliedToNextAttackThenConsumed()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
 
-    Target.ToggleMockResearch();
     Target.setMaxHitPoints(1000);
     Target.hitPoints(Target.maxHitPoints());
+    Target.spellPoints(Target.maxSpellPoints());
 
+    Target.addResearchPoints(1);
+    Target.initiateResearch(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
     researchItem.execute("test per hit received", Target);
 
     float mult = Target.applyPerHitReceivedEffect();
@@ -1079,18 +1104,24 @@ void PendingPerHitMultiplierIsConsumedAfterOneAttack()
     object researchItem = clone_object(
         "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
 
-    Attacker.ToggleMockResearch();
-    Attacker.setMaxHitPoints(1000);
     Attacker.hitPoints(Attacker.maxHitPoints());
+    Attacker.spellPoints(Attacker.maxSpellPoints());
 
+    object weapon = clone_object("/lib/instances/items/weapons/swords/long-sword.c");
+    weapon.set("bonus attack", 200);
+    move_object(weapon, Attacker);
+    ExpectTrue(weapon.equip("long sword"), "weapon equipped");
+
+    Attacker.addResearchPoints(1);
+    Attacker.initiateResearch(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
     researchItem.execute("test per hit received", Attacker);
 
+    Attacker.heart_beat();
     Attacker.hit(20, "physical", Target);
 
-    object weapon = CreateWeapon("axe");
-    weapon.set("weapon type", "axe");
-    ExpectTrue(weapon.equip("axe"), "weapon equipped");
-
+    Target.setMaxHitPoints(10000);
+    Target.hitPoints(Target.maxHitPoints());
     int hpBefore = Target.hitPoints();
     Attacker.attack(Target);
     Attacker.heart_beat();

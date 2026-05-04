@@ -2,15 +2,18 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Ancient Oaths");
     addSpecification("source", "Guardian of Khazurath");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This skill provides the user with the foundation of the ancient oaths - a binding connection to Khazurath that cannot be broken.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus hit points", 5);
+    addSpecification("bonus defense", 1);
+    addSpecification("bonus soak", 1);
 }

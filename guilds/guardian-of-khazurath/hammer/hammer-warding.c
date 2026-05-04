@@ -7,15 +7,25 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Axe Mastery");
+    addSpecification("name", "Hammer Warding");
     addSpecification("source", "Guardian of Khazurath");
     addSpecification("description", "This skill provides the user with the "
-        "knowledge of general axe attack techniques passed down through "
-        "Khazurath's weaponmasters since the founding of Mirost.");
+        "knowledge of using the hammer head and haft to absorb and deflect "
+        "incoming attacks.");
 
-    addSpecification("limited by", (["equipment": ({ "axe" }) ]));
+    addSpecification("limited by", (["equipment": ({ "hammer" })]));
+
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "Guardian of Khazurath",
+            "value": 3
+        ]));
+    addPrerequisite("/guilds/guardian-of-khazurath/hammer/root.c",
+        (["type": "research"]));
 
     addSpecification("scope", "self");
-    addSpecification("research type", "tree root");
-    addSpecification("bonus attack", 1);
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("bonus defense", 2);
+    addSpecification("bonus parry", 3);
 }

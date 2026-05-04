@@ -944,6 +944,171 @@ void DamageResistanceWithTraitAndEquipmentReducesDamageTaken()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+void PerHitLandedCostDeductedWhenHitLands()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
+
+    Attacker.ToggleMockResearch();
+    Attacker.staminaPoints(Attacker.maxStaminaPoints());
+    int initialStamina = Attacker.staminaPoints();
+
+    researchItem.execute("test per hit landed", Attacker);
+    ExpectTrue(Attacker.sustainedResearchIsActive(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
+        "sustained research is active");
+
+    Attacker.applyPerHitLandedEffect();
+    ExpectEq(initialStamina - 10, Attacker.staminaPoints(),
+        "stamina deducted by per-hit-landed cost");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PerHitLandedCostNotDeductedWhenInsufficientStamina()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
+
+    Attacker.ToggleMockResearch();
+    Attacker.staminaPoints(5);
+
+    researchItem.execute("test per hit landed", Attacker);
+    ExpectTrue(Attacker.sustainedResearchIsActive(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
+        "sustained research is active");
+
+    float mult = Attacker.applyPerHitLandedEffect();
+    ExpectEq(5, Attacker.staminaPoints(),
+        "stamina unchanged when cost cannot be paid");
+    ExpectEq(0.0, mult,
+        "multiplier is 0.0 when cost cannot be paid");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PerHitLandedMultiplierReturnedWhenCostPaid()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
+
+    Attacker.ToggleMockResearch();
+    Attacker.staminaPoints(Attacker.maxStaminaPoints());
+
+    researchItem.execute("test per hit landed", Attacker);
+
+    float mult = Attacker.applyPerHitLandedEffect();
+    ExpectEq(1.5, mult, "multiplier of 1.5 returned when cost is paid");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PerHitReceivedCostDeductedWhenHit()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
+
+    Target.ToggleMockResearch();
+    Target.setMaxHitPoints(1000);
+    Target.hitPoints(Target.maxHitPoints());
+    int initialHP = Target.hitPoints();
+
+    researchItem.execute("test per hit received", Target);
+    ExpectTrue(Target.sustainedResearchIsActive(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c"),
+        "sustained research is active");
+
+    Target.hit(50, "physical", Attacker);
+
+    ExpectTrue(Target.hitPoints() < initialHP - 5,
+        "hit points reduced by both damage and per-hit-received cost");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PerHitReceivedCostNotDeductedWhenInsufficientHitPoints()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
+
+    Target.ToggleMockResearch();
+    Target.setMaxHitPoints(1000);
+    Target.hitPoints(6);
+
+    researchItem.execute("test per hit received", Target);
+
+    float mult = Target.applyPerHitReceivedEffect();
+    ExpectEq(0.0, mult,
+        "multiplier is 0.0 when hit points too low to pay cost");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PerHitReceivedMultiplierAppliedToNextAttackThenConsumed()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
+
+    Target.ToggleMockResearch();
+    Target.setMaxHitPoints(1000);
+    Target.hitPoints(Target.maxHitPoints());
+
+    researchItem.execute("test per hit received", Target);
+
+    float mult = Target.applyPerHitReceivedEffect();
+    ExpectEq(2.0, mult, "multiplier of 2.0 returned when cost is paid");
+
+    float multAgain = Target.applyPerHitReceivedEffect();
+    ExpectEq(2.0, multAgain, "second call also returns multiplier if still affordable");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PendingPerHitMultiplierIsConsumedAfterOneAttack()
+{
+    destruct(Attacker);
+    SetUpAttacker(1);
+    move_object(Attacker, Room);
+
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitReceivedResearchItem.c");
+
+    Attacker.ToggleMockResearch();
+    Attacker.setMaxHitPoints(1000);
+    Attacker.hitPoints(Attacker.maxHitPoints());
+
+    researchItem.execute("test per hit received", Attacker);
+
+    Attacker.hit(20, "physical", Target);
+
+    object weapon = CreateWeapon("axe");
+    weapon.set("weapon type", "axe");
+    ExpectTrue(weapon.equip("axe"), "weapon equipped");
+
+    int hpBefore = Target.hitPoints();
+    Attacker.attack(Target);
+    Attacker.heart_beat();
+    int hpAfterFirst = Target.hitPoints();
+
+    Attacker.heart_beat();
+    int hpAfterSecond = Target.hitPoints();
+
+    int firstDamage = hpBefore - hpAfterFirst;
+    int secondDamage = hpAfterFirst - hpAfterSecond;
+
+    ExpectTrue(firstDamage > secondDamage,
+        "first attack after being hit deals more damage than second (multiplier consumed)");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
 void HitSubtractsFromManaWhenManaShieldIsActive()
 {
     Target.setMaxHitPoints(1000);

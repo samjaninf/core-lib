@@ -800,3 +800,98 @@ void ExecuteInAreaAppliesTraitOnCorrectTargets()
     ExpectFalse(badguy.isTraitOf("/lib/tests/support/traits/testTraitForSustainedResearch.c"), "badguy");
     ExpectTrue(bystander.isTraitOf("/lib/tests/support/traits/testTraitForSustainedResearch.c"), "bystander");
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void CanSetValidPerHitLandedCost()
+{
+    ExpectTrue(ResearchItem.addTestSpecification("per hit landed cost",
+        (["stamina points": 10])), "can set per hit landed cost with stamina points");
+    ExpectEq((["stamina points": 10]), ResearchItem.query("per hit landed cost"),
+        "can query per hit landed cost");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CanSetPerHitLandedCostWithMultipleResources()
+{
+    ExpectTrue(ResearchItem.addTestSpecification("per hit landed cost",
+        (["stamina points": 10, "hit points": 5])),
+        "can set per hit landed cost with multiple resources");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void SettingInvalidPerHitLandedCostThrowsError()
+{
+    string err = catch(ResearchItem.addTestSpecification("per hit landed cost",
+        "blah"); nolog);
+    string expectedError = "*ERROR - sustainedResearchItem: the 'per hit landed cost'"
+        " specification must be a mapping with 'hit points', "
+        "'spell points', and/or 'stamina points' integer keys.\n";
+    ExpectEq(expectedError, err, "correct error thrown for invalid per hit landed cost");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void SettingPerHitLandedCostWithInvalidKeyThrowsError()
+{
+    string err = catch(ResearchItem.addTestSpecification("per hit landed cost",
+        (["mana": 10])); nolog);
+    ExpectTrue(stringp(err) && sizeof(err),
+        "error thrown for invalid resource key in per hit landed cost");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CanSetValidPerHitLandedMultiplier()
+{
+    ExpectTrue(ResearchItem.addTestSpecification("per hit landed multiplier", 1.5),
+        "can set per hit landed multiplier");
+    ExpectEq(1.5, ResearchItem.query("per hit landed multiplier"),
+        "can query per hit landed multiplier");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void SettingInvalidPerHitLandedMultiplierThrowsError()
+{
+    string err = catch(ResearchItem.addTestSpecification("per hit landed multiplier",
+        0.5); nolog);
+    string expectedError = "*ERROR - sustainedResearchItem: the 'per hit landed multiplier'"
+        " specification must be a float greater than 1.0.\n";
+    ExpectEq(expectedError, err, "correct error thrown for multiplier <= 1.0");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CanSetValidPerHitReceivedCost()
+{
+    ExpectTrue(ResearchItem.addTestSpecification("per hit received cost",
+        (["hit points": 5])), "can set per hit received cost with hit points");
+    ExpectEq((["hit points": 5]), ResearchItem.query("per hit received cost"),
+        "can query per hit received cost");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void SettingInvalidPerHitReceivedCostThrowsError()
+{
+    string err = catch(ResearchItem.addTestSpecification("per hit received cost",
+        42); nolog);
+    string expectedError = "*ERROR - sustainedResearchItem: the 'per hit received cost'"
+        " specification must be a mapping with 'hit points', "
+        "'spell points', and/or 'stamina points' integer keys.\n";
+    ExpectEq(expectedError, err, "correct error thrown for non-mapping per hit received cost");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CanSetValidPerHitReceivedMultiplier()
+{
+    ExpectTrue(ResearchItem.addTestSpecification("per hit received multiplier", 2.0),
+        "can set per hit received multiplier");
+    ExpectEq(2.0, ResearchItem.query("per hit received multiplier"),
+        "can query per hit received multiplier");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void SettingInvalidPerHitReceivedMultiplierThrowsError()
+{
+    string err = catch(ResearchItem.addTestSpecification("per hit received multiplier",
+        1.0); nolog);
+    string expectedError = "*ERROR - sustainedResearchItem: the 'per hit received multiplier'"
+        " specification must be a float greater than 1.0.\n";
+    ExpectEq(expectedError, err, "correct error thrown for multiplier not greater than 1.0");
+}

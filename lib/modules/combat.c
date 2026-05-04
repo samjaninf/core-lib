@@ -1653,6 +1653,17 @@ public nomask varargs int hit(int damage, string damageType, object foe)
         }
 
         hitPoints -= ret;
+
+        object researchModule = getModule("research");
+        if(researchModule && ret > 0)
+        {
+            float receivedMult = researchModule->applyPerHitReceivedEffect();
+            if(receivedMult > 0.0 && receivedMult > pendingPerHitMultiplier)
+            {
+                pendingPerHitMultiplier = receivedMult;
+            }
+        }
+
         combatNotification("onHit", ([ "type": damageType, 
                                        "damage": damage ]));
   
@@ -1716,7 +1727,10 @@ protected nomask void doOneAttack(object foe, object weapon)
     int damage = 0;
     string primaryDamageType = "physical";
     float hitSucceeded = damageModifierFromAttack(toHit);
-    
+
+    float pendingMultiplier = pendingPerHitMultiplier;
+    pendingPerHitMultiplier = 0.0;
+
     if(weapon && objectp(weapon) && foe && objectp(foe))
     {
         if(weapon->getDamageType())
@@ -1754,6 +1768,11 @@ protected nomask void doOneAttack(object foe, object weapon)
 
             damage = to_int(calculateDamage(weapon, primaryDamageType) * hitSucceeded);
 
+            if(pendingMultiplier > 0.0)
+            {
+                damage = to_int(damage * pendingMultiplier);
+            }
+
             string extraHitFunction = weapon->query("hit method");
             if(stringp(extraHitFunction) && function_exists(extraHitFunction, weapon))
             {
@@ -1773,6 +1792,15 @@ protected nomask void doOneAttack(object foe, object weapon)
             // still exists
             if(foe && objectp(foe))
             {
+                object researchModule = getModule("research");
+                if(researchModule)
+                {
+                    float landedMult = researchModule->applyPerHitLandedEffect();
+                    if(landedMult > 0.0)
+                    {
+                        damage = to_int(damage * landedMult);
+                    }
+                }
                 damageInflicted += foe->hit(damage, primaryDamageType, this_object());
             }
         }

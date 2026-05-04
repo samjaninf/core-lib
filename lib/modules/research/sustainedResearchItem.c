@@ -67,6 +67,42 @@ protected nomask int addSpecification(string type, mixed value)
                 }
                 break;
             }
+            case "per hit landed cost":
+            case "per hit received cost":
+            {
+                if(mappingp(value) && sizeof(value) &&
+                    sizeof(value) == sizeof(filter(value,
+                    (: (member(({ "hit points", "spell points",
+                        "stamina points" }), $1) > -1) && intp($2) && ($2 > 0) :))))
+                {
+                    specificationData[type] = value;
+                    ret = 1;
+                }
+                else
+                {
+                    raise_error(sprintf("ERROR - sustainedResearchItem: the '%s'"
+                        " specification must be a mapping with 'hit points', "
+                        "'spell points', and/or 'stamina points' integer keys.\n",
+                        type));
+                }
+                break;
+            }
+            case "per hit landed multiplier":
+            case "per hit received multiplier":
+            {
+                if(floatp(value) && (value > 1.0))
+                {
+                    specificationData[type] = value;
+                    ret = 1;
+                }
+                else
+                {
+                    raise_error(sprintf("ERROR - sustainedResearchItem: the '%s'"
+                        " specification must be a float greater than 1.0.\n",
+                        type));
+                }
+                break;
+            }
             case "cooldown modifiers":
             {
                 if(mappingp(value) && (sizeof(value) == sizeof(filter(value,

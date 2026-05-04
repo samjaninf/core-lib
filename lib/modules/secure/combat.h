@@ -25,6 +25,7 @@ private nosave int combatDelay;
 private nosave int spellAction;
 private nosave mapping hostileList = ([]);
 private nosave mapping *attacks = ({});
+private nosave float pendingPerHitMultiplier = 0.0;
 
 /////////////////////////////////////////////////////////////////////////////
 static nomask void loadCombat(mapping data, object persistence)

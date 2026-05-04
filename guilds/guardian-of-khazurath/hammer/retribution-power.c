@@ -7,15 +7,23 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Axe Mastery");
+    addSpecification("name", "Retribution Power");
     addSpecification("source", "Guardian of Khazurath");
     addSpecification("description", "This skill provides the user with the "
-        "knowledge of general axe attack techniques passed down through "
-        "Khazurath's weaponmasters since the founding of Mirost.");
+        "knowledge to channel more of the pain absorbed during the "
+        "punishment returned stance into the retributive strike.");
 
-    addSpecification("limited by", (["equipment": ({ "axe" }) ]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "Guardian of Khazurath",
+            "value": 23
+        ]));
+    addPrerequisite("/guilds/guardian-of-khazurath/hammer/retribution-efficiency.c",
+        (["type": "research"]));
 
     addSpecification("scope", "self");
-    addSpecification("research type", "tree root");
-    addSpecification("bonus attack", 1);
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("bonus hit points", 15);
+    addSpecification("bonus damage", 4);
 }

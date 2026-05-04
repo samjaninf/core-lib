@@ -751,6 +751,132 @@ public nomask int researchBonusTo(string bonus)
 }
 
 /////////////////////////////////////////////////////////////////////////////
+public nomask float applyPerHitLandedEffect()
+{
+    float multiplier = 0.0;
+
+    string *sustainedResearchActive = filter(m_indices(research),
+        (: (member(research[$1], "sustained active") &&
+           research[$1]["sustained active"]) :));
+
+    foreach(string researchItem in sustainedResearchActive)
+    {
+        object researchObj = researchService()->researchObject(researchItem);
+        if(!researchObj)
+        {
+            continue;
+        }
+
+        mapping cost = researchObj->query("per hit landed cost");
+        float mult = researchObj->query("per hit landed multiplier");
+
+        if(!mappingp(cost) || !floatp(mult))
+        {
+            continue;
+        }
+
+        int canPay = 1;
+        if(member(cost, "hit points") && hitPoints <= cost["hit points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "spell points") && spellPoints < cost["spell points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "stamina points") && staminaPoints < cost["stamina points"])
+        {
+            canPay = 0;
+        }
+
+        if(canPay)
+        {
+            if(member(cost, "hit points"))
+            {
+                hitPoints -= cost["hit points"];
+            }
+            if(member(cost, "spell points"))
+            {
+                spellPoints -= cost["spell points"];
+            }
+            if(member(cost, "stamina points"))
+            {
+                staminaPoints -= cost["stamina points"];
+            }
+            if(mult > multiplier)
+            {
+                multiplier = mult;
+            }
+        }
+    }
+
+    return multiplier;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask float applyPerHitReceivedEffect()
+{
+    float multiplier = 0.0;
+
+    string *sustainedResearchActive = filter(m_indices(research),
+        (: (member(research[$1], "sustained active") &&
+           research[$1]["sustained active"]) :));
+
+    foreach(string researchItem in sustainedResearchActive)
+    {
+        object researchObj = researchService()->researchObject(researchItem);
+        if(!researchObj)
+        {
+            continue;
+        }
+
+        mapping cost = researchObj->query("per hit received cost");
+        float mult = researchObj->query("per hit received multiplier");
+
+        if(!mappingp(cost) || !floatp(mult))
+        {
+            continue;
+        }
+
+        int canPay = 1;
+        if(member(cost, "hit points") && hitPoints <= cost["hit points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "spell points") && spellPoints < cost["spell points"])
+        {
+            canPay = 0;
+        }
+        if(member(cost, "stamina points") && staminaPoints < cost["stamina points"])
+        {
+            canPay = 0;
+        }
+
+        if(canPay)
+        {
+            if(member(cost, "hit points"))
+            {
+                hitPoints -= cost["hit points"];
+            }
+            if(member(cost, "spell points"))
+            {
+                spellPoints -= cost["spell points"];
+            }
+            if(member(cost, "stamina points"))
+            {
+                staminaPoints -= cost["stamina points"];
+            }
+            if(mult > multiplier)
+            {
+                multiplier = mult;
+            }
+        }
+    }
+
+    return multiplier;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 private nomask void applyCooldown(string researchItem, object researchObj,
     string command)
 {

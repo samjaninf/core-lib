@@ -7,15 +7,23 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Axe Mastery");
+    addSpecification("name", "Stone Wall Passive");
     addSpecification("source", "Guardian of Khazurath");
     addSpecification("description", "This skill provides the user with the "
-        "knowledge of general axe attack techniques passed down through "
-        "Khazurath's weaponmasters since the founding of Mirost.");
+        "knowledge of hardening the body by embracing the punishment of "
+        "combat, reducing the damage absorbed from incoming blows.");
 
-    addSpecification("limited by", (["equipment": ({ "axe" }) ]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "Guardian of Khazurath",
+            "value": 33
+        ]));
+    addPrerequisite("/guilds/guardian-of-khazurath/hammer/ironwall-stance.c",
+        (["type": "research"]));
 
     addSpecification("scope", "self");
-    addSpecification("research type", "tree root");
-    addSpecification("bonus attack", 1);
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("bonus soak", 3);
+    addSpecification("bonus defense", 3);
 }

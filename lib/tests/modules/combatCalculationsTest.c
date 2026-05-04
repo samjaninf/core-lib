@@ -715,6 +715,64 @@ void CalculateSoakDamageCorrectlyAppliesServiceBonuses()
     ExpectEq(13, Attacker.calculateSoakDamage("physical"), "research modifier is active");
     Attacker.ToggleMockTrait();
     ExpectEq(15, Attacker.calculateSoakDamage("physical"), "trait modifier is active");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PerHitLandedMultiplierScalesDamageInDoOneAttack()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
+
+    Attacker.ToggleMockResearch();
+    Attacker.staminaPoints(Attacker.maxStaminaPoints());
+
+    researchItem.execute("test per hit landed", Attacker);
+    ExpectTrue(Attacker.sustainedResearchIsActive(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
+        "per hit landed form is active");
+
+    object weapon = CreateWeapon("axe");
+    weapon.set("weapon type", "axe");
+    ExpectTrue(weapon.equip("axe"), "weapon equipped");
+
+    int baselineHP = Target.hitPoints();
+    int staminaBefore = Attacker.staminaPoints();
+
+    Attacker.attack(Target);
+    move_object(Attacker, Room);
+    Attacker.heart_beat();
+
+    ExpectTrue(Attacker.staminaPoints() < staminaBefore,
+        "stamina was deducted by per-hit-landed cost");
+    ExpectTrue(Target.hitPoints() < baselineHP,
+        "damage was dealt to target");
+
+    destruct(researchItem);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PerHitLandedMultiplierNotAppliedWhenCostCannotBePaid()
+{
+    object researchItem = clone_object(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c");
+
+    Attacker.ToggleMockResearch();
+    Attacker.staminaPoints(5);
+
+    researchItem.execute("test per hit landed", Attacker);
+    ExpectTrue(Attacker.sustainedResearchIsActive(
+        "/lib/tests/support/research/testPerHitLandedResearchItem.c"),
+        "per hit landed form is active");
+
+    int staminaBefore = Attacker.staminaPoints();
+    float mult = Attacker.applyPerHitLandedEffect();
+
+    ExpectEq(staminaBefore, Attacker.staminaPoints(),
+        "stamina unchanged when cost cannot be paid");
+    ExpectEq(0.0, mult, "no multiplier when cost cannot be paid");
+
+    destruct(researchItem);
+}
     Attacker.ToggleMockBackground();
     ExpectEq(17, Attacker.calculateSoakDamage("physical"), "background modifier is active");
 }

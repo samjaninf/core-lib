@@ -222,8 +222,6 @@ private void FortiethLevel()
         "/guilds/guardian-of-khazurath/axe/unyielding-strike.c");
 }
 
-}
-
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {

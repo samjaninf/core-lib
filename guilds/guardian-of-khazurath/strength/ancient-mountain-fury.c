@@ -7,25 +7,23 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Indestructible");
+    addSpecification("name", "Ancient Mountain Fury");
     addSpecification("source", "Guardian of Khazurath");
-    addSpecification("description", "This skill provides the user with "
-        "knowledge of being indestructible - a body and will so hardened "
-        "that conventional harm cannot break them.");
+    addSpecification("description", "This skill provides the user with knowledge of ancient mountain fury - the primordial rage of the mountains themselves, a force that has ground stone to dust since the world's first age.");
 
-    addPrerequisite("/guilds/guardian-of-khazurath/unbreakable/last-stand.c",
-        (["type":"research"]));
+    addPrerequisite("/guilds/guardian-of-khazurath/strength/primal-force.c",
+        (["type": "research"]));
 
     addPrerequisite("level",
-        (["type":"level",
-            "guild" : "Guardian of Khazurath",
-            "value" : 45
+        (["type": "level",
+            "guild": "Guardian of Khazurath",
+            "value": 65
         ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("bonus defense", 6);
-    addSpecification("bonus soak", 6);
-    addSpecification("bonus hit points", 60);
+    addSpecification("bonus damage", 9);
+    addSpecification("bonus attack", 9);
+    addSpecification("bonus strength", 5);
 }

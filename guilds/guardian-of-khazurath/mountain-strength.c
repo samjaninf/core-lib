@@ -246,9 +246,9 @@ private void SixtySecondLevel()
 /////////////////////////////////////////////////////////////////////////////
 private void SixtyFifthLevel()
 {
-    addResearchElement("/guilds/guardian-of-khazurath/strength/mountain-fury.c");
+    addResearchElement("/guilds/guardian-of-khazurath/strength/ancient-mountain-fury.c");
 
-    addChild("/guilds/guardian-of-khazurath/strength/mountain-fury.c",
+    addChild("/guilds/guardian-of-khazurath/strength/ancient-mountain-fury.c",
         "/guilds/guardian-of-khazurath/strength/primal-force.c");
 }
 

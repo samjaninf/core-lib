@@ -18,7 +18,7 @@ protected nomask void setUpUserForSelection()
         "descriptions that support it?\nWithout mini map:\n";
 
     load_object(StartLocation());
-
+    load_object("/areas/eledhel/southern-city/southern-city.c");
     object exampleRoom = 
         load_object("/areas/eledhel/southern-city/12x1.c");
 

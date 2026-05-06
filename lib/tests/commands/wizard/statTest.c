@@ -149,6 +149,8 @@ void CanStatAnItem()
         "    Damage: 19 to 24 [+16 magical]\n"
         "    Defense: 15 to 20\n"
         "    Encumberance: 2\n"
-        "    Weight: 4\n\n",
+        "    Weight: 4\n"
+        "    Rune slots: 3 (none fused)\n"
+        "\n",
         Wizard.caughtMessage());
 }

@@ -159,6 +159,25 @@ public mixed query(string element)
             ret = member(itemData, "fused runes") ? itemData["fused runes"] + ([]) : ([]);
             break;
         }
+        case "value":
+        {
+            ret = item::query(element);
+            if (member(itemData, "fused runes") && sizeof(itemData["fused runes"]))
+            {
+                mapping tierValues = ([
+                    "basic": 10,
+                    "elder": 100,
+                    "ancient": 1000,
+                    "primal": 10000,
+                ]);
+                foreach (string runeName, mapping runeData in itemData["fused runes"])
+                {
+                    string tier = member(runeData, "rune tier") ? runeData["rune tier"] : "basic";
+                    ret += member(tierValues, tier) ? tierValues[tier] : 10;
+                }
+            }
+            break;
+        }
         case "crafting guilds":
         {
             object guilds = getService("guilds");

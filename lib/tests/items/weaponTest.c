@@ -391,7 +391,8 @@ void SetComponentCorrectlySetsComponents()
         "    Damage: 8 to 11\n"
         "    Defense: 1 to 2\n"
         "    Encumberance: 5\n"
-        "    Weight: 5\n\n", 
+        "    Weight: 5\n"
+        "    Rune slots: 1 (none fused)\n\n",
         Weapon.long());
 }
 

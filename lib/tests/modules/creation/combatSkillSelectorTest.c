@@ -417,9 +417,9 @@ void DescribeShortSwordDisplaysDescription()
     Selector.initiateSelector(User);
     Selector.applySelection("describe 21");
 
-    ExpectEq("\x1b[0;36mThis skill provides proficiency in the use of short swords - swords\n"
-        "typically ranging from two-and-a-half feet and under for a typical human\n(5'6\"). "
-        "This would include short swords, any form of gladus, machettes, etc.\n"
+    ExpectEq("\x1b[0;36mThis skill provides proficiency in the use of short swords - swords typically\n"
+        "ranging from two-and-a-half feet and under for a typical human (5'6\"). "
+        "This\nwould include short swords, any form of gladus, machettes, etc.\n"
         "\x1b[0;32m    Affecting attribute: \x1b[0m\x1b[0;34;1mDexterity\x1b[0m\n"
         "\x1b[0;31;1m    Attempting to use this skill untrained will incur a penalty.\n\x1b[0m\n\x1b[0m",
         User.caughtMessage());

@@ -306,7 +306,8 @@ void LookAtItemShowsDetails()
         "    Damage: 9 to 12\n"
         "    Defense: 2 to 3\n"
         "    Encumberance: 2\n"
-        "    Weight: 5\n\n",
+        "    Weight: 5\n"
+        "    Rune slots: 1 (none fused)\n\n",
         Player.caughtMessage());
 }
 

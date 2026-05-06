@@ -15,6 +15,7 @@ private nosave string Value = "\x1b[0;33m%s\x1b[0m";
 private nosave string Masterwork = "\x1b[0;32;1m%s\x1b[0m";
 private nosave string Enchanted = "\x1b[0;35m%s\x1b[0m";
 private nosave string Unidentified = "\x1b[0;36m%s\x1b[0m";
+private nosave string RuneSlots = "\x1b[0;36m    Rune slots: \x1b[0m\x1b[0;33m%s\x1b[0m\n";
 
 object Weapon;
 object Player;
@@ -116,7 +117,8 @@ void WeaponStatisticsWithDetailsShownWhenIdentified()
         sprintf(DetailsText, "Damage", 4, 5) +
         sprintf(DetailsText, "Defense", -2, -3) +
         sprintf(SingleDetailText, "Encumberance", 15) +
-        sprintf(SingleDetailText, "Weight", 5);
+        sprintf(SingleDetailText, "Weight", 5) +
+        sprintf(RuneSlots, "1 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
 }
@@ -134,7 +136,8 @@ void WeaponStatisticsModifiedByMaterial()
         sprintf("\x1b[0;31m [+%d %s]\x1b[0m\n", 5, "magical") +
         sprintf(DetailsText, "Defense", -2, -3) +
         sprintf(SingleDetailText, "Encumberance", 17) +
-        sprintf(SingleDetailText, "Weight", 7);
+        sprintf(SingleDetailText, "Weight", 7) +
+        sprintf(RuneSlots, "3 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
 }
@@ -154,7 +157,8 @@ void WeaponStatisticsModifiedByEnchantment()
         sprintf("\x1b[0;31m [+%d %s]\x1b[0m\n", 7, "magical") +
         sprintf(DetailsText, "Defense", -2, -3) +
         sprintf(SingleDetailText, "Encumberance", 17) +
-        sprintf(SingleDetailText, "Weight", 7);
+        sprintf(SingleDetailText, "Weight", 7) +
+        sprintf(RuneSlots, "3 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
 }
@@ -176,7 +180,8 @@ void WeaponStatisticsDisplayBonuses()
         sprintf(Value, sprintf("    %s: %d\n", "Bonus attack", 1)) +
         sprintf(Value, sprintf("    %s: %d\n", "Bonus hit points", 10)) +
         sprintf(Value, sprintf("    %s: %d\n", "Bonus strength", 2)) +
-        sprintf(SingleDetailText, "Weight", 5);
+        sprintf(SingleDetailText, "Weight", 5) +
+        sprintf(RuneSlots, "1 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
 }
@@ -194,7 +199,8 @@ void WeaponStatisticsModifiedBySkillOfUser()
         sprintf(DetailsText, "Damage", 10, 13) +
         sprintf(DetailsText, "Defense", 3, 4) +
         sprintf(SingleDetailText, "Encumberance", 1) +
-        sprintf(SingleDetailText, "Weight", 5);
+        sprintf(SingleDetailText, "Weight", 5) +
+        sprintf(RuneSlots, "1 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
 }
@@ -211,7 +217,8 @@ void WeaponStatisticsModifiedByItemCraftsmanship()
         sprintf(DetailsText, "Damage", 7, 10) +
         sprintf(DetailsText, "Defense", 0, 1) +
         sprintf(SingleDetailText, "Encumberance", 15) +
-        sprintf(SingleDetailText, "Weight", 5);
+        sprintf(SingleDetailText, "Weight", 5) +
+        sprintf(RuneSlots, "1 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
 }
@@ -229,7 +236,8 @@ void AutoIdentifyWhenSkillSufficientlyHigh()
         sprintf(DetailsText, "Damage", 4, 5) +
         sprintf(DetailsText, "Defense", -2, -3) +
         sprintf(SingleDetailText, "Encumberance", 15) +
-        sprintf(SingleDetailText, "Weight", 5);
+        sprintf(SingleDetailText, "Weight", 5) +
+        sprintf(RuneSlots, "1 (none fused)");
 
     ExpectFalse(Weapon.query("identified"));
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
@@ -252,7 +260,8 @@ void AutoIdentifyMagicWhenSpellcraftSufficientlyHigh()
         sprintf(DetailsText, "Defense", -2, -3) +
         sprintf(SingleDetailText, "Encumberance", 15) +
         sprintf(Value, sprintf("    %s: %d\n", "Bonus attack", 1)) +
-        sprintf(SingleDetailText, "Weight", 5);
+        sprintf(SingleDetailText, "Weight", 5) +
+        sprintf(RuneSlots, "1 (none fused)");
 
     ExpectFalse(Weapon.query("identified"));
     ExpectEq(expected, Statistics.getEquipmentStatistics(Weapon, Player));
@@ -271,7 +280,8 @@ void ArmorStatisticsCorrectlyDisplayed()
         sprintf(DetailString, "Material", "Iron") +
         sprintf(SingleDetailText, "Damage Protection", 6) +
         sprintf(SingleDetailText, "Encumberance", 30) +
-        sprintf(SingleDetailText, "Weight", 8);
+        sprintf(SingleDetailText, "Weight", 8) +
+        sprintf(RuneSlots, "1 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(armor, Player));
 }
@@ -291,7 +301,8 @@ void ArmorStatisticsModifiedByMaterial()
         sprintf("\x1b[0;31m [+%d %s]\x1b[0m", 3, "electricity") +
         sprintf("\x1b[0;31m [+%d %s]\x1b[0m\n", 3, "fire") +
         sprintf(SingleDetailText, "Encumberance", 32) +
-        sprintf(SingleDetailText, "Weight", 10);
+        sprintf(SingleDetailText, "Weight", 10) +
+        sprintf(RuneSlots, "3 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(armor, Player));
 }
@@ -314,7 +325,8 @@ void ArmorProtectionNotModifiedBySkill()
         sprintf("\x1b[0;31m [+%d %s]\x1b[0m", 3, "electricity") +
         sprintf("\x1b[0;31m [+%d %s]\x1b[0m\n", 3, "fire") +
         sprintf(SingleDetailText, "Encumberance", 19) +
-        sprintf(SingleDetailText, "Weight", 10);
+        sprintf(SingleDetailText, "Weight", 10) +
+        sprintf(RuneSlots, "3 (none fused)");
 
     ExpectEq(expected, Statistics.getEquipmentStatistics(armor, Player));
 }

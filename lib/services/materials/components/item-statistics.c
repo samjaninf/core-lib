@@ -199,23 +199,21 @@ public nomask varargs string getEquipmentStatistics(object equipment, object ini
             "cursed", "equipment", colorConfiguration(initiator));
     }
 
-    if (equipment->query("runes fused") > 0)
+    if ((equipment->query("identified") || canCraft) &&
+        equipment->query("runes fused") > 0)
     {
         mapping fusedRunes = equipment->query("fused runes");
         string *runeNames = m_indices(fusedRunes);
         string colorConfig = colorConfiguration(initiator);
-        ret += configuration->decorate(
-            sprintf("Rune slots: %d/%d used\n",
-                equipment->query("runes fused"),
-                equipment->query("rune slots")),
-            "rune slots", "equipment", colorConfig);
+        ret += detailsText(colorConfig, "Rune slots",
+            sprintf("%d/%d used", equipment->query("runes fused"),
+                equipment->query("rune slots")));
         foreach (string runeName in runeNames)
         {
             mapping runeRecord = fusedRunes[runeName];
             string tier = runeRecord["rune tier"];
             string tierKey = tier ? sprintf("rune %s", tier) : "rune basic";
 
-            // Split description into "Elder power rune" header and "(+5 x, -2 y)" trailer
             string desc = runeRecord["description"] || runeName;
             string header = desc;
             string trailer = "";
@@ -225,12 +223,11 @@ public nomask varargs string getEquipmentStatistics(object equipment, object ini
                 trailer = regreplace(desc, "^(.+) (\\(.+\\))$", "\\2", 1);
             }
 
-            ret += "  - " + configuration->decorate(header,
+            ret += "      - " + configuration->decorate(header,
                 tierKey, "equipment", colorConfig);
 
             if (sizeof(trailer))
             {
-                // Colour each value token inside the parens individually
                 string inner = regreplace(trailer, "^\\((.+)\\)$", "\\1", 1);
                 string *parts = explode(inner, ", ");
                 string *colored = ({});
@@ -246,12 +243,11 @@ public nomask varargs string getEquipmentStatistics(object equipment, object ini
             ret += "\n";
         }
     }
-    else if (equipment->query("rune slots") > 0)
+    else if ((equipment->query("identified") || canCraft) &&
+        equipment->query("rune slots") > 0)
     {
-        ret += configuration->decorate(
-            sprintf("Rune slots: %d (none fused)\n",
-                equipment->query("rune slots")),
-            "rune slots", "equipment", colorConfiguration(initiator));
+        ret += detailsText(colorConfiguration(initiator), "Rune slots",
+            sprintf("%d (none fused)", equipment->query("rune slots")));
     }
 
     if (!equipment->query("identified"))

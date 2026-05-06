@@ -324,7 +324,8 @@ void ItemDetailsShowLongPlusValue()
         "\x1b[0;36m    Defense: \x1b[0m\x1b[0;33m1\x1b[0m\x1b[0;33m to 2\x1b[0m\n"
         "\x1b[0;36m    Encumberance: \x1b[0m\x1b[0;33m7\x1b[0m\n"
         "\x1b[0;33m    Bonus armor class: 5\n"
-        "\x1b[0m\x1b[0;36m    Weight: \x1b[0m\x1b[0;33m7\x1b[0m\n\n"
+        "\x1b[0m\x1b[0;36m    Weight: \x1b[0m\x1b[0;33m7\x1b[0m\n"
+        "\x1b[0;36m    Rune slots: \x1b[0m\x1b[0;33m3 (none fused)\x1b[0m\n\n"
         "\x1b[0;32mYou can sell this item for 42.\n\x1b[0m\n\x1b[0m",
         Player.caughtMessage());
 }

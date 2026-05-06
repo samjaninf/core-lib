@@ -89,7 +89,7 @@ private mapping skills = ([
         "bonus calculator": "one for two",
         "untrained penalty": -10,
         "description": "This skill provides proficiency in the use of short "
-            "swords -- swords typically ranging from two-and-a-half feet and "
+            "swords - swords typically ranging from two-and-a-half feet and "
             "under for a typical human (5'6\"). This would include short "
             "swords, any form of gladus, machettes, etc.\n"
     ]),
@@ -155,7 +155,7 @@ private mapping skills = ([
         "bonus calculator": "one for two",
         "untrained penalty": -10,
         "description": "This skill provides proficiency in the use of pole "
-            "arms -- any weapon with a metal head attached to a long pole. "
+            "arms - any weapon with a metal head attached to a long pole. "
             "This includes halberds, spears, pikes, glaives, bardiches, pole "
             "axes, bills, etc.\n"
     ]),  

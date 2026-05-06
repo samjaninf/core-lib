@@ -38,7 +38,7 @@ void MiniMapSelectorDisplayCorrectMenu()
         "        \n"
         "With mini map: \n"
         "    |    ' .* a gate house. To the east and\n"
-        "-o--o--o-' west is a lit sconce. To the north and south is a raised\n"
+        "-o-o-o-' west is a lit sconce. To the north and south is a raised\n"
         "    |  | ' portcullis.\n"
         "==..|..==' \n"
         "  ||o||  '\n"

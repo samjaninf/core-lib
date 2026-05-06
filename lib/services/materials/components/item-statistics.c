@@ -199,6 +199,61 @@ public nomask varargs string getEquipmentStatistics(object equipment, object ini
             "cursed", "equipment", colorConfiguration(initiator));
     }
 
+    if (equipment->query("runes fused") > 0)
+    {
+        mapping fusedRunes = equipment->query("fused runes");
+        string *runeNames = m_indices(fusedRunes);
+        string colorConfig = colorConfiguration(initiator);
+        ret += configuration->decorate(
+            sprintf("Rune slots: %d/%d used\n",
+                equipment->query("runes fused"),
+                equipment->query("rune slots")),
+            "rune slots", "equipment", colorConfig);
+        foreach (string runeName in runeNames)
+        {
+            mapping runeRecord = fusedRunes[runeName];
+            string tier = runeRecord["rune tier"];
+            string tierKey = tier ? sprintf("rune %s", tier) : "rune basic";
+
+            // Split description into "Elder power rune" header and "(+5 x, -2 y)" trailer
+            string desc = runeRecord["description"] || runeName;
+            string header = desc;
+            string trailer = "";
+            if (regexp(({ desc }), "(.+) (\\(.+\\))$"))
+            {
+                header = regreplace(desc, "^(.+) (\\(.+\\))$", "\\1", 1);
+                trailer = regreplace(desc, "^(.+) (\\(.+\\))$", "\\2", 1);
+            }
+
+            ret += "  - " + configuration->decorate(header,
+                tierKey, "equipment", colorConfig);
+
+            if (sizeof(trailer))
+            {
+                // Colour each value token inside the parens individually
+                string inner = regreplace(trailer, "^\\((.+)\\)$", "\\1", 1);
+                string *parts = explode(inner, ", ");
+                string *colored = ({});
+                foreach (string part in parts)
+                {
+                    string partKey = regexp(({ part }), "^-") ?
+                        "rune penalty" : "rune bonus";
+                    colored += ({ configuration->decorate(part,
+                        partKey, "equipment", colorConfig) });
+                }
+                ret += " (" + implode(colored, ", ") + ")";
+            }
+            ret += "\n";
+        }
+    }
+    else if (equipment->query("rune slots") > 0)
+    {
+        ret += configuration->decorate(
+            sprintf("Rune slots: %d (none fused)\n",
+                equipment->query("rune slots")),
+            "rune slots", "equipment", colorConfiguration(initiator));
+    }
+
     if (!equipment->query("identified"))
     {
         ret += configuration->decorate("This item has not been identified.\n",

@@ -634,6 +634,48 @@ private nosave mapping decorators = ([
             "8-bit": "\x1b[0;38;5;9m",
             "24-bit": "\x1b[0;38;2;200;0;0m"
         ]),
+        "rune slots":([
+            "grayscale": "\x1b[0;38;5;245m",
+            "3-bit": "\x1b[0;36m",
+            "8-bit": "\x1b[0;38;5;80m",
+            "24-bit": "\x1b[0;38;2;100;200;200m"
+        ]),
+        "rune basic":([
+            "grayscale": "\x1b[0;38;5;243m",
+            "3-bit": "\x1b[0;37m",
+            "8-bit": "\x1b[0;38;5;247m",
+            "24-bit": "\x1b[0;38;2;180;185;175m"
+        ]),
+        "rune elder":([
+            "grayscale": "\x1b[0;38;5;248m",
+            "3-bit": "\x1b[0;36;1m",
+            "8-bit": "\x1b[0;38;5;117m",
+            "24-bit": "\x1b[0;38;2;120;190;230m"
+        ]),
+        "rune ancient":([
+            "grayscale": "\x1b[0;38;5;253m",
+            "3-bit": "\x1b[0;33;1m",
+            "8-bit": "\x1b[0;38;5;220;1m",
+            "24-bit": "\x1b[0;38;2;240;200;60;1m"
+        ]),
+        "rune primal":([
+            "grayscale": "\x1b[0;38;5;255;1m",
+            "3-bit": "\x1b[0;35;1m",
+            "8-bit": "\x1b[0;38;5;165;1m",
+            "24-bit": "\x1b[0;38;2;200;80;240;1m"
+        ]),
+        "rune bonus":([
+            "grayscale": "\x1b[0;38;5;246m",
+            "3-bit": "\x1b[0;32m",
+            "8-bit": "\x1b[0;38;5;70m",
+            "24-bit": "\x1b[0;38;2;80;190;80m"
+        ]),
+        "rune penalty":([
+            "grayscale": "\x1b[0;38;5;240m",
+            "3-bit": "\x1b[0;31m",
+            "8-bit": "\x1b[0;38;5;166m",
+            "24-bit": "\x1b[0;38;2;210;80;20m"
+        ]),
         "error message":([
             "grayscale": "\x1b[0;38;5;238m",
             "3-bit": "\x1b[0;31m",

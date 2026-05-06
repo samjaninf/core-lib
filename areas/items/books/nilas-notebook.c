@@ -242,7 +242,7 @@ protected void Setup()
         "trying to regain control over the meeting. 'These two "
         "were found with several weapons on them that had "
         "formerly belonged to knights of the storm. We also "
-        "found several bodies -- one of them being Subcommander "
+        "found several bodies - one of them being Subcommander "
         "Findras. I believe also that two of your acolytes, "
         "Ulfith and Nelthor, were among the slain. Now, murder "
         "or grave robbery would both carry the sentence of "
@@ -437,7 +437,7 @@ protected void Setup()
     addChapter("22 Murath - Morthysse Falls",
         "22 Murath 2942: The Nightblade deeply vexes me and I "
         "can think of little else. Its cold touch beckons me "
-        "-- to what great deeds, I know not. The city of "
+        "- to what great deeds, I know not. The city of "
         "Morthysse fell quickly and Nightblade drank deeply of "
         "the wretched masses. 'Tis amazing to see the souls of "
         "its victims become captured by the blade. I feel a "
@@ -551,7 +551,7 @@ protected void Setup()
         "dragon... Truly, it appears as if the dragon curls "
         "around the finger of the wearer. In many ways, it "
         "reminds me of Zylia. That fool Algarion thinks that "
-        "the ring he wears is Elsyra. I've encouraged him -- "
+        "the ring he wears is Elsyra. I've encouraged him - "
         "whelp hasn't studied at all. The ring is not metallic "
         "in nature. Still, I decry that something is unusual "
         "about that ring. Perhaps I will kill him today and "
@@ -559,7 +559,7 @@ protected void Setup()
 
     addChapter("7 Dulath - To Linwaeth",
         "7 Dulath 2942: Dalthus lives. He was forced to the "
-        "west -- no doubt back to Orothysse. The sack of "
+        "west - no doubt back to Orothysse. The sack of "
         "Serach complete, it is unlikely that he will return, "
         "for the battle of Arnost must be prepared for and, "
         "indeed, expedited by 10 Aerath. A small contingent of "

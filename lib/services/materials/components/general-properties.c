@@ -84,7 +84,7 @@ public nomask int getDefaultValue(object item)
 public nomask int getMaterialEncumberance(object item)
 {
     int retVal = 0;
-    
+
     if(isValidItem(item))
     {
         string material = item->query("material");
@@ -100,7 +100,25 @@ public nomask int getMaterialEncumberance(object item)
         }
     }
 
-    return  retVal;
+    return retVal;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask int getMaterialRuneSlots(object item)
+{
+    int ret = 0;
+
+    if(isValidItem(item))
+    {
+        ret += getBlueprintModifier(item, "base rune slots");
+
+        string material = item->query("material");
+        if(isValidMaterial(material) && member(materials[material], "rune slots bonus"))
+        {
+            ret += materials[material]["rune slots bonus"];
+        }
+    }
+    return ret;
 }
 
 /////////////////////////////////////////////////////////////////////////////

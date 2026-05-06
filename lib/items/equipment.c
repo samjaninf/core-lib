@@ -143,6 +143,22 @@ public mixed query(string element)
                 materialsObject()->getBlueprintModifier(this_object(), "default location");
             break;
         }
+        case "rune slots":
+        {
+            ret = member(itemData, "rune slots") ? itemData["rune slots"] :
+                materialsObject()->getMaterialRuneSlots(this_object());
+            break;
+        }
+        case "runes fused":
+        {
+            ret = member(itemData, "fused runes") ? sizeof(itemData["fused runes"]) : 0;
+            break;
+        }
+        case "fused runes":
+        {
+            ret = member(itemData, "fused runes") ? itemData["fused runes"] + ([]) : ([]);
+            break;
+        }
         case "crafting guilds":
         {
             object guilds = getService("guilds");
@@ -430,6 +446,20 @@ public varargs int set(string element, mixed data)
                     }
                     break;
                 }
+                case "rune slots":
+                {
+                    if(data && intp(data) && data >= 0)
+                    {
+                        itemData[element] = data;
+                        ret = 1;
+                    }
+                    else
+                    {
+                        raise_error(sprintf("Equipment: The passed '%s' data "
+                            "must be a non-negative integer.\n", element));
+                    }
+                    break;
+                }
                 case "equip message":
                 case "unequip message":
                 {
@@ -518,6 +548,71 @@ public nomask int canEquip(object user)
     else if (user && function_exists("RealName", user) && query("owner"))
     {
         ret &&= query("owner") == user->RealName();
+    }
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask int fuseRune(object rune)
+{
+    int ret = 0;
+
+    if (rune && objectp(rune) && function_exists("isRune", rune) &&
+        rune->isRune())
+    {
+        int slots = query("rune slots");
+        int used = query("runes fused");
+
+        if (used >= slots)
+        {
+            notify_fail(sprintf("This %s has no free rune slots.\n",
+                query("name") || "item"));
+        }
+        else
+        {
+            string runeName = rune->query("name");
+
+            if (!member(itemData, "fused runes"))
+            {
+                itemData["fused runes"] = ([]);
+            }
+
+            if (member(itemData["fused runes"], runeName))
+            {
+                notify_fail(sprintf("A %s has already been fused into this %s.\n",
+                    runeName, query("name") || "item"));
+            }
+            else
+            {
+                // Store bonus details for display
+                mapping runeRecord = ([
+                    "description": rune->runeDescription(),
+                    "rune tier": rune->query("rune tier")
+                ]);
+
+                string *bonuses = rune->query("rune bonuses");
+                if (bonuses && pointerp(bonuses))
+                {
+                    foreach (string bonus in bonuses)
+                    {
+                        int runeValue = rune->query(bonus);
+                        if (runeValue)
+                        {
+                            runeRecord[bonus] = runeValue;
+                            set(bonus, query(bonus) + runeValue);
+                        }
+                    }
+                }
+
+                itemData["fused runes"][runeName] = runeRecord;
+                destruct(rune);
+                ret = 1;
+            }
+        }
+    }
+    else
+    {
+        notify_fail("Only runes can be fused into equipment.\n");
     }
     return ret;
 }

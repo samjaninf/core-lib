@@ -121,7 +121,7 @@ protected void Setup()
         "eye like a cartographer's; he marked where to set palisades and "
         "where to post archers. 'Here we stay and here we bind our fate,' he "
         "said, and the men swore the oath again. Engineers dug and filled, "
-        "and the ford became a trap -- a narrow throat that would choke a "
+        "and the ford became a trap - a narrow throat that would choke a "
         "host.");
 
     addChapter("X - The Archer's Rage",

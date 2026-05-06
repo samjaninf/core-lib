@@ -821,3 +821,196 @@ void WeightIsAffectedByCraftingWeightReduction()
     ExpectTrue(Equipment.set("crafting weight reduction", 25), "value multiplier can be set");
     ExpectEq(75, Equipment.query("weight"), "75 value was returned");
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void RuneSlotsDefaultToZeroWithNoMaterialOrBlueprint()
+{
+    ExpectEq(0, Equipment.query("rune slots"),
+        "plain equipment with no blueprint has 0 rune slots");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void RuneSlotsCanBeSetByCreator()
+{
+    ExpectTrue(Equipment.set("rune slots", 3), "rune slots can be set");
+    ExpectEq(3, Equipment.query("rune slots"), "creator-set rune slots returned correctly");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void RunesFusedDefaultsToZero()
+{
+    ExpectEq(0, Equipment.query("runes fused"), "runes fused defaults to 0");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FusedRunesDefaultsToEmptyMapping()
+{
+    mapping fused = Equipment.query("fused runes");
+    ExpectTrue(mappingp(fused), "fused runes returns a mapping");
+    ExpectEq(0, sizeof(fused), "fused runes is empty by default");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneFailsWhenNoSlots()
+{
+    // Equipment defaults to 0 slots - fusion must fail
+    object rune = clone_object("/lib/tests/support/items/testRune.c");
+    ExpectFalse(Equipment.fuseRune(rune), "fuseRune fails when no slots available");
+    ExpectEq(0, Equipment.query("runes fused"), "runes fused remains 0");
+    if (rune && objectp(rune))
+    {
+        destruct(rune);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneSucceeds()
+{
+    Equipment.set("rune slots", 2);
+    object rune = clone_object("/lib/tests/support/items/testRune.c");
+    ExpectTrue(Equipment.fuseRune(rune), "fuseRune succeeds with a free slot");
+    ExpectEq(1, Equipment.query("runes fused"), "runes fused increments to 1");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneAppliesBonusesPermanently()
+{
+    Equipment.set("rune slots", 2);
+    Equipment.set("bonus attack", 10);
+    Equipment.set("bonus damage", 7);
+
+    object rune = clone_object("/lib/tests/support/items/testRune.c");
+    // testRune gives +3 attack and +5 damage
+    Equipment.fuseRune(rune);
+
+    ExpectEq(13, Equipment.query("bonus attack"),
+        "bonus attack increased by rune value");
+    ExpectEq(12, Equipment.query("bonus damage"),
+        "bonus damage increased by rune value");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneStoresBonusDetailsInFusedRunesMapping()
+{
+    Equipment.set("rune slots", 2);
+    object rune = clone_object("/lib/tests/support/items/testRune.c");
+    Equipment.fuseRune(rune);
+
+    mapping fused = Equipment.query("fused runes");
+    ExpectTrue(member(fused, "power rune"), "fused runes mapping has rune entry");
+
+    mapping runeRecord = fused["power rune"];
+    ExpectTrue(mappingp(runeRecord), "rune record is a mapping");
+    ExpectTrue(stringp(runeRecord["description"]) && sizeof(runeRecord["description"]),
+        "rune record has a description string");
+    ExpectTrue(sizeof(regexp(({ runeRecord["description"] }), "Basic power rune")),
+        "description includes tier and type");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneDescriptionIncludesBonusValues()
+{
+    Equipment.set("rune slots", 2);
+    object rune = clone_object("/lib/tests/support/items/testRune.c");
+    Equipment.fuseRune(rune);
+
+    mapping fused = Equipment.query("fused runes");
+    string desc = fused["power rune"]["description"];
+    ExpectTrue(sizeof(regexp(({ desc }), "\\+3 attack")),
+        "description shows attack bonus");
+    ExpectTrue(sizeof(regexp(({ desc }), "\\+5 damage")),
+        "description shows damage bonus");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneFailsForDuplicateRune()
+{
+    Equipment.set("rune slots", 3);
+
+    object rune1 = clone_object("/lib/tests/support/items/testRune.c");
+    ExpectTrue(Equipment.fuseRune(rune1), "first fusion succeeds");
+
+    object rune2 = clone_object("/lib/tests/support/items/testRune.c");
+    ExpectFalse(Equipment.fuseRune(rune2), "duplicate fusion fails");
+    ExpectEq(1, Equipment.query("runes fused"),
+        "runes fused stays at 1 after duplicate attempt");
+
+    if (rune2 && objectp(rune2))
+    {
+        destruct(rune2);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneFailsWhenSlotsExhausted()
+{
+    Equipment.set("rune slots", 1);
+
+    object rune1 = clone_object("/lib/tests/support/items/testRune.c");
+    Equipment.fuseRune(rune1);
+
+    object rune2 = clone_object("/lib/tests/support/items/testRune.c");
+    rune2.set("name", "second power rune");
+    ExpectFalse(Equipment.fuseRune(rune2), "fusion fails when all slots used");
+    ExpectEq(1, Equipment.query("runes fused"), "runes fused stays at 1");
+
+    if (rune2 && objectp(rune2))
+    {
+        destruct(rune2);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneFailsForNonRuneObject()
+{
+    Equipment.set("rune slots", 2);
+    object notARune = clone_object("/lib/items/item.c");
+    notARune.set("name", "a plain stone");
+    ExpectFalse(Equipment.fuseRune(notARune), "fuseRune fails for non-rune object");
+    ExpectEq(0, Equipment.query("runes fused"), "runes fused stays 0");
+    destruct(notARune);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneDestructsRuneOnSuccess()
+{
+    Equipment.set("rune slots", 2);
+    object rune = clone_object("/lib/tests/support/items/testRune.c");
+    Equipment.fuseRune(rune);
+    ExpectFalse(rune && objectp(rune), "rune object is destructed after fusion");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneDoesNotDestructRuneOnFailure()
+{
+    // No slots - rune must survive
+    object rune = clone_object("/lib/tests/support/items/testRune.c");
+    Equipment.fuseRune(rune);
+    ExpectTrue(rune && objectp(rune), "rune object survives failed fusion");
+    destruct(rune);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void MultipleRunesCanBeFusedUpToSlotLimit()
+{
+    Equipment.set("rune slots", 2);
+
+    object rune1 = clone_object("/lib/tests/support/items/testRune.c");
+    rune1.set("name", "first rune");
+
+    object rune2 = clone_object("/lib/tests/support/items/testRune.c");
+    rune2.set("name", "second rune");
+
+    ExpectTrue(Equipment.fuseRune(rune1), "first rune fuses");
+    ExpectTrue(Equipment.fuseRune(rune2), "second rune fuses");
+    ExpectEq(2, Equipment.query("runes fused"), "runes fused is 2");
+
+    object rune3 = clone_object("/lib/tests/support/items/testRune.c");
+    rune3.set("name", "third rune");
+    ExpectFalse(Equipment.fuseRune(rune3), "third rune fails - slots full");
+
+    if (rune3 && objectp(rune3))
+    {
+        destruct(rune3);
+    }
+}

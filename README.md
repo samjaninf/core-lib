@@ -108,7 +108,8 @@ I admit that several values are overkill, but it's what I use:
               --with-compiler-stack-size=65536 \
               --with-max-cost=268435456 \
               --with-max-array-size=0 \
-              --with-max-mapping-size=0 \
+              --with-max-mapping-size=65535 \
+              --with-max-mapping-keys=65535 \
               --with-htable-size=65536 \
               --with-itable-size=32768 \
               --with-otable-size=65536 \
@@ -189,5 +190,5 @@ If you'd like to contribute to this project, contact Allen. Adding component to 
 - A work item must be created detailing the desired change, bug, etc. 
 - After the work is completed, a pull request must be submitted. Other devs (particularly, Allen) will get a chance to code review the item and provide feedback.
 - After the pull request is completed, the task is merged in to the master branch.
-- This push will trigger an automated build on [Jenkins](http://angmar.maelstrom.cc:8081)
+- This push will trigger an automated build and do full test run. If the build or tests fail, the task must be/will be backed out and the issue fixed before it can be re-submitted.
 - When the build passes (and it should because it was tested before the pull request, right?) the task can be closed. If the build fails, it must be fixed "immediately" and if the fix can't be accomplished in less than half an hour, it must be/will be backed out.

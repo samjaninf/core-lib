@@ -15,6 +15,7 @@ protected mapping weaponBlueprints = ([
     "long sword": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 10,
@@ -45,6 +46,7 @@ protected mapping weaponBlueprints = ([
     "broad sword": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -75,6 +77,7 @@ protected mapping weaponBlueprints = ([
     "rapier": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 15,
@@ -105,6 +108,7 @@ protected mapping weaponBlueprints = ([
     "katana": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 25,
@@ -135,6 +139,7 @@ protected mapping weaponBlueprints = ([
     "scimitar": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 10,
@@ -165,6 +170,7 @@ protected mapping weaponBlueprints = ([
     "cutlass": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 12,
@@ -195,6 +201,7 @@ protected mapping weaponBlueprints = ([
     "sabre": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -225,6 +232,7 @@ protected mapping weaponBlueprints = ([
     "spatha": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -255,6 +263,7 @@ protected mapping weaponBlueprints = ([
     "short sword": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -285,6 +294,7 @@ protected mapping weaponBlueprints = ([
     "gladius": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -315,6 +325,7 @@ protected mapping weaponBlueprints = ([
     "harpe": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -347,6 +358,7 @@ protected mapping weaponBlueprints = ([
     "wakisashi": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 20,
@@ -377,6 +389,7 @@ protected mapping weaponBlueprints = ([
     "machete": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 5,
@@ -405,6 +418,7 @@ protected mapping weaponBlueprints = ([
     "sickle": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 8,
@@ -433,6 +447,7 @@ protected mapping weaponBlueprints = ([
     "kama": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 10,
@@ -463,6 +478,7 @@ protected mapping weaponBlueprints = ([
     "knife": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 3,
@@ -491,6 +507,7 @@ protected mapping weaponBlueprints = ([
     "tiger claws": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -520,6 +537,7 @@ protected mapping weaponBlueprints = ([
     "talon": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -549,6 +567,7 @@ protected mapping weaponBlueprints = ([
     "katar": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 12,
@@ -579,6 +598,7 @@ protected mapping weaponBlueprints = ([
     "dagger": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 5,
@@ -609,6 +629,7 @@ protected mapping weaponBlueprints = ([
     "athame": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 7,
@@ -639,6 +660,7 @@ protected mapping weaponBlueprints = ([
     "dirk": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -669,6 +691,7 @@ protected mapping weaponBlueprints = ([
     "stiletto": ([
         "type": "weapon",
         "subtype": "dagger",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -699,6 +722,7 @@ protected mapping weaponBlueprints = ([
     "claymore": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 25,
@@ -729,6 +753,7 @@ protected mapping weaponBlueprints = ([
     "great sword": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 20,
@@ -759,6 +784,7 @@ protected mapping weaponBlueprints = ([
     "odachi": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 35,
@@ -789,6 +815,7 @@ protected mapping weaponBlueprints = ([
     "bastard sword": ([
         "type": "weapon",
         "subtype": "sword",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 20,
@@ -819,6 +846,7 @@ protected mapping weaponBlueprints = ([
     "sword staff": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 25,
@@ -848,6 +876,7 @@ protected mapping weaponBlueprints = ([
     "staff": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 1,
@@ -874,6 +903,7 @@ protected mapping weaponBlueprints = ([
     "ornate staff": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 30,
@@ -905,6 +935,7 @@ protected mapping weaponBlueprints = ([
     "rod": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 25,
@@ -936,6 +967,7 @@ protected mapping weaponBlueprints = ([
     "wand": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 25,
@@ -966,6 +998,7 @@ protected mapping weaponBlueprints = ([
     "quarterstaff": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 1,
@@ -992,6 +1025,7 @@ protected mapping weaponBlueprints = ([
     "brogit staff": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -1021,6 +1055,7 @@ protected mapping weaponBlueprints = ([
     "jeddart staff": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 15,
@@ -1050,6 +1085,7 @@ protected mapping weaponBlueprints = ([
     "swordstaff": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1079,6 +1115,7 @@ protected mapping weaponBlueprints = ([
     "shield staff": ([
         "type": "weapon",
         "subtype": "staff",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 8,
@@ -1109,6 +1146,7 @@ protected mapping weaponBlueprints = ([
     "battle axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 10,
@@ -1139,6 +1177,7 @@ protected mapping weaponBlueprints = ([
     "axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 8,
@@ -1169,6 +1208,7 @@ protected mapping weaponBlueprints = ([
     "bearded axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 8,
@@ -1199,6 +1239,7 @@ protected mapping weaponBlueprints = ([
     "hatchet": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 6,
@@ -1229,6 +1270,7 @@ protected mapping weaponBlueprints = ([
     "panabas": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1259,6 +1301,7 @@ protected mapping weaponBlueprints = ([
     "danish axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 10,
@@ -1289,6 +1332,7 @@ protected mapping weaponBlueprints = ([
     "broad axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 10,
@@ -1319,6 +1363,7 @@ protected mapping weaponBlueprints = ([
     "sparth axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1349,6 +1394,7 @@ protected mapping weaponBlueprints = ([
     "lochaber axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 12,
@@ -1379,6 +1425,7 @@ protected mapping weaponBlueprints = ([
     "double bit axe": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1409,6 +1456,7 @@ protected mapping weaponBlueprints = ([
     "labrys": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1439,6 +1487,7 @@ protected mapping weaponBlueprints = ([
    "splitting maul": ([
         "type": "weapon",
         "subtype": "axe",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -1469,6 +1518,7 @@ protected mapping weaponBlueprints = ([
     "maul": ([
         "type": "weapon",
         "subtype": "hammer",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -1499,6 +1549,7 @@ protected mapping weaponBlueprints = ([
     "bardiche": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location":TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1529,6 +1580,7 @@ protected mapping weaponBlueprints = ([
     "bec de corbin": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 12,
@@ -1559,6 +1611,7 @@ protected mapping weaponBlueprints = ([
     "bill": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 10,
@@ -1589,6 +1642,7 @@ protected mapping weaponBlueprints = ([
     "guisarme": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 18,
@@ -1619,6 +1673,7 @@ protected mapping weaponBlueprints = ([
     "brandistock": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1649,6 +1704,7 @@ protected mapping weaponBlueprints = ([
     "earspoon": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 15,
@@ -1679,6 +1735,7 @@ protected mapping weaponBlueprints = ([
     "military fork": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 12,
@@ -1709,6 +1766,7 @@ protected mapping weaponBlueprints = ([
     "pitchfork": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -1739,6 +1797,7 @@ protected mapping weaponBlueprints = ([
     "trident": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 12,
@@ -1769,6 +1828,7 @@ protected mapping weaponBlueprints = ([
     "partisan": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 15,
@@ -1799,6 +1859,7 @@ protected mapping weaponBlueprints = ([
     "ranseur": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 15,
@@ -1829,6 +1890,7 @@ protected mapping weaponBlueprints = ([
     "halberd": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 20,
@@ -1859,6 +1921,7 @@ protected mapping weaponBlueprints = ([
     "sovnya": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1889,6 +1952,7 @@ protected mapping weaponBlueprints = ([
     "double-blade sovnya": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 20,
@@ -1919,6 +1983,7 @@ protected mapping weaponBlueprints = ([
     "spetum": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 20,
@@ -1949,6 +2014,7 @@ protected mapping weaponBlueprints = ([
     "war scythe": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -1979,6 +2045,7 @@ protected mapping weaponBlueprints = ([
     "fauchard": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -2009,6 +2076,7 @@ protected mapping weaponBlueprints = ([
     "pollaxe": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -2039,6 +2107,7 @@ protected mapping weaponBlueprints = ([
     "ahlspiess": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -2069,6 +2138,7 @@ protected mapping weaponBlueprints = ([
     "lance": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -2099,6 +2169,7 @@ protected mapping weaponBlueprints = ([
     "voulge": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -2129,6 +2200,7 @@ protected mapping weaponBlueprints = ([
     "glaive": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "slash",
         "skill to craft": 15,
@@ -2159,6 +2231,7 @@ protected mapping weaponBlueprints = ([
     "pike": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 12,
@@ -2189,6 +2262,7 @@ protected mapping weaponBlueprints = ([
     "spear": ([
         "type": "weapon",
         "subtype": "pole arm",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -2219,6 +2293,7 @@ protected mapping weaponBlueprints = ([
     "war hammer": ([
         "type": "weapon",
         "subtype": "hammer",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 12,
@@ -2249,6 +2324,7 @@ protected mapping weaponBlueprints = ([
     "pick axe": ([
         "type": "weapon",
         "subtype": "hammer",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -2280,6 +2356,7 @@ protected mapping weaponBlueprints = ([
     "mattock": ([
         "type": "weapon",
         "subtype": "hammer",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -2311,6 +2388,7 @@ protected mapping weaponBlueprints = ([
     "horseman's pick": ([
         "type": "weapon",
         "subtype": "hammer",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 15,
@@ -2341,6 +2419,7 @@ protected mapping weaponBlueprints = ([
     "lucerne hammer": ([
         "type": "weapon",
         "subtype": "hammer",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 15,
@@ -2371,6 +2450,7 @@ protected mapping weaponBlueprints = ([
     "club": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 1,
@@ -2397,6 +2477,7 @@ protected mapping weaponBlueprints = ([
     "cudgel": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 1,
@@ -2423,6 +2504,7 @@ protected mapping weaponBlueprints = ([
     "mace": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -2453,6 +2535,7 @@ protected mapping weaponBlueprints = ([
     "virge": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 6,
@@ -2483,6 +2566,7 @@ protected mapping weaponBlueprints = ([
     "pernach": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 12,
@@ -2512,6 +2596,7 @@ protected mapping weaponBlueprints = ([
     "flanged mace": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 15,
@@ -2542,6 +2627,7 @@ protected mapping weaponBlueprints = ([
     "morning star": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 12,
@@ -2572,6 +2658,7 @@ protected mapping weaponBlueprints = ([
     "goedendag": ([
         "type": "weapon",
         "subtype": "mace",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 5,
@@ -2602,6 +2689,7 @@ protected mapping weaponBlueprints = ([
     "flail": ([
         "type": "weapon",
         "subtype": "flail",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 7,
@@ -2633,6 +2721,7 @@ protected mapping weaponBlueprints = ([
     "kusarigama": ([
         "type": "weapon",
         "subtype": "flail",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "thrust",
         "skill to craft": 10,
@@ -2666,6 +2755,7 @@ protected mapping weaponBlueprints = ([
     "whip": ([
         "type": "weapon",
         "subtype": "flail",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "slash",
         "skill to craft": 5,
@@ -2692,6 +2782,7 @@ protected mapping weaponBlueprints = ([
     "military flail": ([
         "type": "weapon",
         "subtype": "flail",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -2723,6 +2814,7 @@ protected mapping weaponBlueprints = ([
     "hinged flail": ([
         "type": "weapon",
         "subtype": "flail",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 12,
@@ -2754,6 +2846,7 @@ protected mapping weaponBlueprints = ([
     "segmented flail": ([
         "type": "weapon",
         "subtype": "flail",
+        "base rune slots": 1,
         "default location": OnehandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 12,
@@ -2786,6 +2879,7 @@ protected mapping weaponBlueprints = ([
     "cat of nine tails": ([
         "type": "weapon",
         "subtype": "flail",
+        "base rune slots": 1,
         "default location": TwohandedWeapon,
         "damage type": "bludgeon",
         "skill to craft": 20,
@@ -3363,6 +3457,7 @@ protected mapping weaponBlueprints = ([
    "shield": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 5,
@@ -3390,6 +3485,7 @@ protected mapping weaponBlueprints = ([
    "bouche shield": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 12,
@@ -3418,6 +3514,7 @@ protected mapping weaponBlueprints = ([
    "buckler": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -3445,6 +3542,7 @@ protected mapping weaponBlueprints = ([
    "heater shield": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 5,
@@ -3473,6 +3571,7 @@ protected mapping weaponBlueprints = ([
    "kite shield": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -3501,6 +3600,7 @@ protected mapping weaponBlueprints = ([
    "pavise shield": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 5,
@@ -3529,6 +3629,7 @@ protected mapping weaponBlueprints = ([
    "targe shield": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 10,
@@ -3556,6 +3657,7 @@ protected mapping weaponBlueprints = ([
    "spiked shield": ([
         "type": "weapon",
         "subtype": "shield",
+        "base rune slots": 1,
         "default location": Shield,
         "damage type": "bludgeon",
         "skill to craft": 8,

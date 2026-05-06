@@ -15,6 +15,7 @@ protected mapping armorBlueprints = ([
     "chainmail": ([
         "type": "armor",
         "subtype": "medium armor",
+        "base rune slots": 1,
         "skill to craft": 10,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
@@ -39,6 +40,7 @@ protected mapping armorBlueprints = ([
     "byrnie": ([
         "type": "armor",
         "subtype": "medium armor",
+        "base rune slots": 1,
         "skill to craft": 15,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
@@ -63,6 +65,7 @@ protected mapping armorBlueprints = ([
     "hauberk": ([
         "type": "armor",
         "subtype": "medium armor",
+        "base rune slots": 1,
         "skill to craft": 10,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
@@ -87,6 +90,7 @@ protected mapping armorBlueprints = ([
     "gambeson": ([
         "type": "armor",
         "subtype": "light armor",
+        "base rune slots": 1,
         "skill to craft": 5,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
@@ -313,6 +317,7 @@ protected mapping armorBlueprints = ([
     "brigandine": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 10,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
@@ -337,6 +342,7 @@ protected mapping armorBlueprints = ([
     "banded mail": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 10,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
@@ -362,6 +368,7 @@ protected mapping armorBlueprints = ([
     "splint mail": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 10,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
@@ -386,6 +393,7 @@ protected mapping armorBlueprints = ([
     "scale armor": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 15,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftScaleArmor.c":(["type": "research"]),
@@ -411,6 +419,7 @@ protected mapping armorBlueprints = ([
     "laminar armor": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 12,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
@@ -435,6 +444,7 @@ protected mapping armorBlueprints = ([
     "plate mail": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 12,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
@@ -459,6 +469,7 @@ protected mapping armorBlueprints = ([
     "breastplate": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 12,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
@@ -483,6 +494,7 @@ protected mapping armorBlueprints = ([
     "plate armor": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 15,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),
@@ -508,6 +520,7 @@ protected mapping armorBlueprints = ([
     "boiled leather": ([
         "type": "armor",
         "subtype": "medium armor",
+        "base rune slots": 1,
         "skill to craft": 15,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
@@ -533,6 +546,7 @@ protected mapping armorBlueprints = ([
     "hard leather": ([
         "type": "armor",
         "subtype": "medium armor",
+        "base rune slots": 1,
         "skill to craft": 5,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
@@ -557,6 +571,7 @@ protected mapping armorBlueprints = ([
     "lamellar leather": ([
         "type": "armor",
         "subtype": "medium armor",
+        "base rune slots": 1,
         "skill to craft": 15,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftSplintArmor.c":(["type": "research"]),
@@ -583,6 +598,7 @@ protected mapping armorBlueprints = ([
     "soft leather": ([
         "type": "armor",
         "subtype": "light armor",
+        "base rune slots": 1,
         "skill to craft": 5,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
@@ -607,6 +623,7 @@ protected mapping armorBlueprints = ([
     "leather jacket": ([
         "type": "armor",
         "subtype": "light armor",
+        "base rune slots": 1,
         "skill to craft": 8,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
@@ -631,6 +648,7 @@ protected mapping armorBlueprints = ([
     "padded armor": ([
         "type": "armor",
         "subtype": "light armor",
+        "base rune slots": 1,
         "skill to craft": 5,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
@@ -653,6 +671,7 @@ protected mapping armorBlueprints = ([
     "ring mail": ([
         "type": "armor",
         "subtype": "medium armor",
+        "base rune slots": 1,
         "skill to craft": 10,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/chainmail/craftChainmail.c":(["type": "research"]),
@@ -1126,6 +1145,7 @@ protected mapping armorBlueprints = ([
     "padded leg greaves": ([
         "type": "armor",
         "subtype": "light armor",
+        "base rune slots": 1,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftClothing.c":(["type": "research"]),
             "sewing": (["type": "skill", "value": 1]),
@@ -1167,6 +1187,7 @@ protected mapping armorBlueprints = ([
     "leather leg greaves": ([
         "type": "armor",
         "subtype": "light armor",
+        "base rune slots": 1,
         "skill to craft": 5,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/craftLeatherArmor.c":(["type": "research"]),
@@ -1209,6 +1230,7 @@ protected mapping armorBlueprints = ([
     "plate leg greaves": ([
         "type": "armor",
         "subtype": "heavy armor",
+        "base rune slots": 1,
         "skill to craft": 5,
         "crafting prerequisites": ([
             "/lib/instances/research/crafting/armor/heavy-armor/craftPlateArmor.c":(["type": "research"]),

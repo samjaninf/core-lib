@@ -612,13 +612,87 @@ public nomask int fuseRune(object rune)
                 string *bonuses = rune->query("rune bonuses");
                 if (bonuses && pointerp(bonuses))
                 {
+                    int isWeapon = (query("weapon type") != 0);
+
                     foreach (string bonus in bonuses)
                     {
-                        int runeValue = rune->query(bonus);
-                        if (runeValue)
+                        // "rune enchantment <type>": on-hit elemental damage.
+                        // Merged into the "enchantments" mapping on weapons.
+                        // Dropped silently on armor.
+                        if (sizeof(regexp(({ bonus }), "^rune enchantment ")))
                         {
-                            runeRecord[bonus] = runeValue;
-                            set(bonus, query(bonus) + runeValue);
+                            if (isWeapon)
+                            {
+                                string dmgType = regreplace(bonus,
+                                    "^rune enchantment ", "", 1);
+                                int runeValue = rune->query(bonus);
+                                mapping enc = query("enchantments");
+                                if (!mappingp(enc))
+                                {
+                                    enc = ([]);
+                                }
+                                enc[dmgType] = (member(enc, dmgType) ?
+                                    enc[dmgType] : 0) + runeValue;
+                                set("enchantments", enc);
+                                runeRecord[bonus] = runeValue;
+                            }
+                        }
+                        // "material attack <type>": from material data.
+                        // Also merged into "enchantments" on weapons.
+                        // Dropped on armor.
+                        else if (sizeof(regexp(({ bonus }), "^material attack ")))
+                        {
+                            if (isWeapon)
+                            {
+                                string dmgType = regreplace(bonus,
+                                    "^material attack ", "", 1);
+                                int runeValue = rune->query(bonus);
+                                mapping enc = query("enchantments");
+                                if (!mappingp(enc))
+                                {
+                                    enc = ([]);
+                                }
+                                enc[dmgType] = (member(enc, dmgType) ?
+                                    enc[dmgType] : 0) + runeValue;
+                                set("enchantments", enc);
+                                runeRecord[bonus] = runeValue;
+                            }
+                        }
+                        // "material attack rating": attack rating from material.
+                        // Applied as bonus attack on weapons only.
+                        else if (bonus == "material attack rating")
+                        {
+                            if (isWeapon)
+                            {
+                                int runeValue = rune->query(bonus);
+                                runeRecord["bonus attack"] = runeValue;
+                                set("bonus attack",
+                                    query("bonus attack") + runeValue);
+                            }
+                        }
+                        // "material resist <type>": from material data.
+                        // Applied as bonus resist X on armor only.
+                        else if (sizeof(regexp(({ bonus }), "^material resist ")))
+                        {
+                            if (!isWeapon)
+                            {
+                                string resType = regreplace(bonus,
+                                    "^material resist ", "", 1);
+                                string key = "bonus resist " + resType;
+                                int runeValue = rune->query(bonus);
+                                runeRecord[key] = runeValue;
+                                set(key, query(key) + runeValue);
+                            }
+                        }
+                        // Standard "bonus ..." keys applied directly.
+                        else
+                        {
+                            int runeValue = rune->query(bonus);
+                            if (runeValue)
+                            {
+                                runeRecord[bonus] = runeValue;
+                                set(bonus, query(bonus) + runeValue);
+                            }
                         }
                     }
                 }

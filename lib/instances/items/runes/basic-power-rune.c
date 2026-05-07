@@ -1,0 +1,20 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/items/rune.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    set("name", "basic power rune");
+    set("short", "basic power rune");
+    set("aliases", ({ "rune", "power rune" }));
+    set("long", "A rune of power carved into a fragment of polished stone. "
+        "It pulses with a faint amber light.");
+    set("rune type", "power");
+    set("rune tier", "basic");
+    set("value", 50);
+    set("bonus attack", 2);
+    set("bonus damage", 2);
+}

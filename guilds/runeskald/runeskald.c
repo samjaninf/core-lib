@@ -43,4 +43,11 @@ public void SetupGuild()
         "type": "skill points",
         "apply" : "5 every level"
     ]));
+
+    addResearchTree("/guilds/runeskald/rune-crafting.c");
+    addResearchTree("/guilds/runeskald/elder-runes.c");
+    addResearchTree("/guilds/runeskald/song-of-power.c");
+    addResearchTree("/guilds/runeskald/rune-warrior.c");
+    addResearchTree("/guilds/runeskald/ancestral-might.c");
+    addResearchTree("/guilds/runeskald/frostfire.c");
 }

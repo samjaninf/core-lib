@@ -43,3 +43,13 @@ public string *getTypes(string type, object user)
 
     return types;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask mapping getMaterialData(string materialName)
+{
+    if (isValidMaterial(materialName))
+    {
+        return materials[materialName] + ([]);
+    }
+    return ([]);
+}

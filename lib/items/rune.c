@@ -89,7 +89,9 @@ public mixed query(string element)
         {
             string *keys = filter(m_indices(itemData),
                 (: sizeof(regexp(({ $1 }), "^bonus ")) ||
-                   sizeof(regexp(({ $1 }), "^penalty to ")) :));
+                   sizeof(regexp(({ $1 }), "^penalty to ")) ||
+                   sizeof(regexp(({ $1 }), "^rune enchantment ")) ||
+                   sizeof(regexp(({ $1 }), "^material ")) :));
             ret = sizeof(keys) ? keys : 0;
             break;
         }
@@ -123,9 +125,43 @@ public string runeDescription()
             int val = query(bonus);
             if (val)
             {
-                string bonusName = regreplace(bonus, "^(bonus |penalty to )", "", 1);
-                parts += ({ sprintf("%s%d %s", (val < 0 ? "-" : "+"),
-                    abs(val), bonusName) });
+                string sign = (val < 0) ? "-" : "+";
+                int absval = abs(val);
+                string display;
+
+                if (sizeof(regexp(({ bonus }), "^rune enchantment ")))
+                {
+                    string dmgType = regreplace(bonus,
+                        "^rune enchantment ", "", 1);
+                    display = sprintf("%s%d %s on-hit", sign, absval,
+                        capitalize(dmgType));
+                }
+                else if (sizeof(regexp(({ bonus }), "^material attack ")))
+                {
+                    string dmgType = regreplace(bonus,
+                        "^material attack ", "", 1);
+                    display = sprintf("%s%d %s (weapon)", sign, absval,
+                        capitalize(dmgType));
+                }
+                else if (bonus == "material attack rating")
+                {
+                    display = sprintf("%s%d attack rating (weapon)", sign,
+                        absval);
+                }
+                else if (sizeof(regexp(({ bonus }), "^material resist ")))
+                {
+                    string resType = regreplace(bonus,
+                        "^material resist ", "", 1);
+                    display = sprintf("%s%d resist %s (armor)", sign, absval,
+                        resType);
+                }
+                else
+                {
+                    string bonusName = regreplace(bonus,
+                        "^(bonus |penalty to )", "", 1);
+                    display = sprintf("%s%d %s", sign, absval, bonusName);
+                }
+                parts += ({ display });
             }
         }
         if (sizeof(parts))

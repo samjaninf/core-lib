@@ -16,7 +16,7 @@ protected void Setup()
     addPrerequisite("/guilds/runeskald/spirit-war/spirit-weapon-strike.c",
         (["type": "research"]));
 
-    addSpecification("scope", "area of effect");
+    addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestors war cry");

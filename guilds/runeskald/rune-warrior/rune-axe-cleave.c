@@ -17,7 +17,7 @@ protected void Setup()
     addPrerequisite("/guilds/runeskald/rune-warrior/rune-bound-axe.c",
         (["type": "research"]));
 
-    addSpecification("scope", "area of effect");
+    addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune axe cleave");

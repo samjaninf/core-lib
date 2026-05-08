@@ -16,7 +16,7 @@ protected void Setup()
     addPrerequisite("/guilds/runeskald/world-rune/world-rune-devastation.c",
         (["type": "research"]));
 
-    addSpecification("scope", "area of effect");
+    addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke world rune torrent");

@@ -17,7 +17,7 @@ protected void Setup()
     addPrerequisite("/guilds/runeskald/frostfire/frost-lance.c",
         (["type": "research"]));
 
-    addSpecification("scope", "area of effect");
+    addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "frost chain");

@@ -28,9 +28,6 @@ protected void Setup()
     addSpecification("use ability message",
         "##InitiatorName## shatters an elder rune with a thunderous crack, "
         "blasting ##TargetName## with overwhelming elemental force.");
-    addSpecification("failure message",
-        "##InitiatorName## attempts an elder rune blast but the rune resists destruction.");
-
     addSpecification("spell point cost", 25);
     addSpecification("stamina point cost", 10);
 

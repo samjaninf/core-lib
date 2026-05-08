@@ -18,7 +18,7 @@ protected void Setup()
     addPrerequisite("/guilds/runeskald/ancestral-might/spirit-barrage.c",
         (["type": "research"]));
 
-    addSpecification("scope", "area of effect");
+    addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke spirit storm");

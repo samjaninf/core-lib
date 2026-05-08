@@ -25,8 +25,6 @@ protected void Setup()
     addSpecification("command template", "rune burst ##Target##");
     addSpecification("use ability message",
         "##InitiatorName## shatters a rune-stone, blasting ##TargetName## with raw elemental force.");
-    addSpecification("failure message",
-        "##InitiatorName## fumbles a rune-stone - nothing happens.");
 
     addSpecification("spell point cost", 10);
     addSpecification("stamina point cost", 5);

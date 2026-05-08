@@ -33,7 +33,7 @@ protected void Setup()
     addSpecification("bonus armor class", 5);
     addSpecification("bonus resist cold", 6);
     addSpecification("bonus resist fire", 6);
-    addSpecification("bonus reflect damage", 5);
+    addSpecification("bonus damage reflection", 5);
     addSpecification("duration", 25);
 
     addSpecification("modifiers", ({

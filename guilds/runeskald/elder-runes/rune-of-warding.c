@@ -29,7 +29,7 @@ protected void Setup()
     addSpecification("stamina point cost", 8);
 
     addSpecification("bonus armor class", 5);
-    addSpecification("bonus resist magic", 3);
+    addSpecification("bonus resist magical", 3);
     addSpecification("duration", 30);
 
     addSpecification("modifiers", ({

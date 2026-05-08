@@ -31,9 +31,9 @@ protected void Setup()
     addSpecification("spell point cost", 45);
     addSpecification("stamina point cost", 18);
 
-    addSpecification("bonus reflect damage", 6);
+    addSpecification("bonus damage reflection", 6);
     addSpecification("bonus armor class", 5);
-    addSpecification("bonus hit point recovery", 3);
+    addSpecification("bonus heal hit points", 3);
     addSpecification("duration", 25);
 
     addSpecification("modifiers", ({

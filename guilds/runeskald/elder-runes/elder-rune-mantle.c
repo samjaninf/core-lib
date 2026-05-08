@@ -30,7 +30,7 @@ protected void Setup()
 
     addSpecification("bonus attack", 4);
     addSpecification("bonus damage", 4);
-    addSpecification("bonus spell point recovery", 3);
+    addSpecification("bonus heal spell points", 3);
     addSpecification("duration", 25);
 
     addSpecification("modifiers", ({

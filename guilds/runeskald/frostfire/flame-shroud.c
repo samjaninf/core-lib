@@ -28,7 +28,7 @@ protected void Setup()
     addSpecification("spell point cost", 22);
     addSpecification("stamina point cost", 8);
 
-    addSpecification("bonus reflect damage", 4);
+    addSpecification("bonus damage reflection", 4);
     addSpecification("bonus resist fire", 5);
     addSpecification("duration", 30);
 

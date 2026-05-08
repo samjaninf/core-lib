@@ -28,7 +28,7 @@ protected void Setup()
     addSpecification("stamina point cost", 20);
 
     addSpecification("bonus fire attack", 8);
-    addSpecification("bonus attack rating", 8);
+    addSpecification("bonus attack", 8);
     addSpecification("duration", 30);
 
     addSpecification("modifiers", ({

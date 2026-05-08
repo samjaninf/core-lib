@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addSpecification("bonus spell points", 30);
-    addSpecification("bonus spell recovery", 3);
+    addSpecification("bonus heal spell points", 3);
 
     addSpecification("modifiers", ({
         ([

@@ -28,8 +28,8 @@ protected void Setup()
     addSpecification("spell point cost", 10);
     addSpecification("stamina point cost", 5);
 
-    addSpecification("bonus hit point recovery", 2);
-    addSpecification("bonus stamina recovery", 2);
+    addSpecification("bonus heal hit points", 2);
+    addSpecification("bonus heal stamina", 2);
     addSpecification("duration", 40);
 
     addSpecification("modifiers", ({

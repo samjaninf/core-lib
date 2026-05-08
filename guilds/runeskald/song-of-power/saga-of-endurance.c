@@ -29,7 +29,7 @@ protected void Setup()
     addSpecification("stamina point cost", 10);
 
     addSpecification("bonus stamina points", 30);
-    addSpecification("bonus stamina recovery", 5);
+    addSpecification("bonus heal stamina", 5);
     addSpecification("duration", 35);
 
     addSpecification("modifiers", ({

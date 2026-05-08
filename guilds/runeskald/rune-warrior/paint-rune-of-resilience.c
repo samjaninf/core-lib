@@ -29,7 +29,7 @@ protected void Setup()
     addSpecification("spell point cost", 12);
 
     addSpecification("bonus hit points", 25);
-    addSpecification("bonus hit point recovery", 3);
+    addSpecification("bonus heal hit points", 3);
     addSpecification("duration", 10);
 
     addSpecification("modifiers", ({

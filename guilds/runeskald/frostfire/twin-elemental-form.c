@@ -35,8 +35,8 @@ protected void Setup()
     addSpecification("bonus damage", 8);
     addSpecification("bonus resist cold", 10);
     addSpecification("bonus resist fire", 10);
-    addSpecification("bonus reflect damage", 7);
-    addSpecification("bonus spell point recovery", 4);
+    addSpecification("bonus damage reflection", 7);
+    addSpecification("bonus heal spell points", 4);
     addSpecification("duration", 20);
 
     addSpecification("modifiers", ({

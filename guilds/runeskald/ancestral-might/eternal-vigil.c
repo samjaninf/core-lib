@@ -30,9 +30,9 @@ protected void Setup()
     addSpecification("spell point cost", 55);
     addSpecification("stamina point cost", 20);
 
-    addSpecification("bonus hit point recovery", 6);
-    addSpecification("bonus stamina recovery", 6);
-    addSpecification("bonus spell point recovery", 6);
+    addSpecification("bonus heal hit points", 6);
+    addSpecification("bonus heal stamina", 6);
+    addSpecification("bonus heal spell points", 6);
     addSpecification("bonus hit points", 20);
     addSpecification("duration", 30);
 

@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addSpecification("bonus attack", 2);
-    addSpecification("bonus attack rating", 4);
+    addSpecification("bonus attack", 4);
 
     addSpecification("modifiers", ({
         ([

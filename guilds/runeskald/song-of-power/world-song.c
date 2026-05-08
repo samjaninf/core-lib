@@ -35,9 +35,9 @@ protected void Setup()
     addSpecification("bonus damage", 6);
     addSpecification("bonus armor class", 5);
     addSpecification("bonus soak", 4);
-    addSpecification("bonus hit point recovery", 5);
-    addSpecification("bonus stamina recovery", 5);
-    addSpecification("bonus spell point recovery", 5);
+    addSpecification("bonus heal hit points", 5);
+    addSpecification("bonus heal stamina", 5);
+    addSpecification("bonus heal spell points", 5);
     addSpecification("bonus charisma", 3);
     addSpecification("duration", 20);
 

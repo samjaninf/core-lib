@@ -29,7 +29,7 @@ protected void Setup()
     addSpecification("spell point cost", 10);
 
     addSpecification("bonus stamina points", 25);
-    addSpecification("bonus stamina recovery", 3);
+    addSpecification("bonus heal stamina", 3);
     addSpecification("duration", 10);
 
     addSpecification("modifiers", ({

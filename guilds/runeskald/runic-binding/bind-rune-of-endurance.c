@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research cost", 1);
 
     addSpecification("bonus stamina points", 30);
-    addSpecification("bonus stamina recovery", 3);
+    addSpecification("bonus heal stamina", 3);
 
     addSpecification("modifiers", ({
         ([

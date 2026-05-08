@@ -13,7 +13,17 @@ void Init()
     ignoreList += ({ "addGraniteMaterial", "addQuartziteMaterial",
         "addDiamondMaterial", "countRunesInInventory",
         "getRuneInInventory", "countMaterialInInventory",
-        "findAndSelectCraftRune" });
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_57_#0000",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_64_#0001",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_72_#0002",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_75_#0003",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_75_#0004",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_411_#0005",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_412_#0006",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_475_#0007",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_513_#0008",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_554_#0009",
+        });
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -58,34 +68,11 @@ private object getRuneInInventory()
 /////////////////////////////////////////////////////////////////////////////
 private int countMaterialInInventory(string blueprint)
 {
-    int total = 0;
-    foreach (object m in filter(deep_inventory(Player),
+    object *materials = filter(deep_inventory(Player),
         (: (member(inherit_list($1), "/lib/items/material.c") > -1) &&
-           ($1.query("blueprint") == $2) :), blueprint))
-    {
-        total += m.query("quantity");
-    }
-    return total;
-}
-
-/////////////////////////////////////////////////////////////////////////////
-// Scans the last caught menu message for the enabled "Craft Rune" option and
-// issues that command. Returns the option number, or 0 if not found/disabled.
-private int findAndSelectCraftRune()
-{
-    string msg = Player.caughtMessage();
-    foreach (string line in explode(msg, "\n"))
-    {
-        int n;
-        if (sscanf(line, "    [%d]", n) == 1 &&
-            sizeof(regexp(({ line }), "Craft Rune")) &&
-            !sizeof(regexp(({ line }), "31m")))
-        {
-            command(to_string(n), Player);
-            return n;
-        }
-    }
-    return 0;
+           ($1.query("blueprint") == $2) :), blueprint);
+    return sizeof(materials) ?
+        apply((: $1 + $2 :), map(materials, (: $1.query("quantity") :))) : 0;
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -100,6 +87,8 @@ void Setup()
     Player = clone_object("/lib/tests/support/services/mockPlayer.c");
     Player.Name("bob");
     Player.addCommands();
+    Player.colorConfiguration("none");
+    Player.charsetConfiguration("ascii");
 
     addGraniteMaterial(5);
 
@@ -113,7 +102,64 @@ void CleanUp()
     destruct(Selector);
 }
 
-// ---- Menu display tests --------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////
+void FullMenuDisplaysCorrectlyBeforeBonusChosen()
+{
+    Selector.initiateSelector(Player);
+    string msg = Player.caughtMessage();
+
+    // Header describes the rune and material.
+    ExpectSubStringMatch("Enchant Basic Power Rune", msg);
+    ExpectSubStringMatch("granite", msg);
+    ExpectSubStringMatch("None chosen yet", msg);
+
+    // All 15 power rune bonus options present.
+    ExpectSubStringMatch("Unarmed", msg);
+    ExpectSubStringMatch("Two-Handed Sword", msg);
+    ExpectSubStringMatch("Strength", msg);
+    ExpectSubStringMatch("Stamina Points", msg);
+    ExpectSubStringMatch("Soak", msg);
+    ExpectSubStringMatch("Mace", msg);
+    ExpectSubStringMatch("Long Sword", msg);
+    ExpectSubStringMatch("Hit Points", msg);
+    ExpectSubStringMatch("Hammer", msg);
+    ExpectSubStringMatch("Damage", msg);
+    ExpectSubStringMatch("Axe", msg);
+    ExpectSubStringMatch("Attack", msg);
+
+    // Craft Rune present and disabled (%-22s pad + " (X)").
+    ExpectSubStringMatch("Craft Rune             \\(X\\)", msg);
+
+    // Exit present and enabled (%-22s pad + "    " default spacing).
+    ExpectSubStringMatch("Exit Bonus Selection      ", msg);
+
+    // Menu has two columns - Attack (+2) and Attack (+4) appear on the same row.
+    ExpectSubStringMatch("Attack \\(\\+2\\)", msg);
+    ExpectSubStringMatch("Attack \\(\\+4\\)", msg);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FullMenuDisplaysCorrectlyAfterBonusChosen()
+{
+    Selector.initiateSelector(Player);
+    // Option 1 = Attack (+2) in ascending alpha sort.
+    Selector.applySelection("1");
+    string msg = Player.caughtMessage();
+
+    // Chosen bonus shown in header summary.
+    ExpectSubStringMatch("Attack", msg);
+
+    // Chosen option shows (*) marker (%-22s pad + " (*)").
+    ExpectSubStringMatch("Attack \\(\\+2\\)            \\(\\*\\)", msg);
+
+    // Other options are disabled - Unarmed (+2) is option 15 (%-22s + " (X)").
+    ExpectSubStringMatch("Unarmed \\(\\+2\\)           \\(X\\)", msg);
+
+    // Craft Rune now enabled (%-22s pad + "    " default spacing).
+    ExpectSubStringMatch("Craft Rune                ", msg);
+}
+
+// ---- Menu display tests
 
 /////////////////////////////////////////////////////////////////////////////
 void MenuShowsBonusOptionsForPowerRune()
@@ -129,52 +175,47 @@ void MenuShowsBonusOptionsForPowerRune()
 void MenuShowsCraftRuneOptionDisabledBeforeBonusChosen()
 {
     Selector.initiateSelector(Player);
-    string msg = Player.caughtMessage();
-    ExpectSubStringMatch("Craft Rune", msg);
-    // Craft Rune row must be coloured disabled (31m = red) when no bonus chosen.
-    string *craftLines = regexp(({ msg }), "Craft Rune");
-    ExpectTrue(sizeof(craftLines) > 0, "Craft Rune line present");
-    ExpectSubStringMatch("31m", craftLines[0]);
+    ExpectSubStringMatch("Craft Rune             \\(X\\)", Player.caughtMessage());
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void MenuShowsCraftRuneEnabledAfterBonusChosen()
 {
     Selector.initiateSelector(Player);
-    command("1", Player);
-    string msg = Player.caughtMessage();
-    string *craftLines = regexp(({ msg }), "Craft Rune");
-    ExpectTrue(sizeof(craftLines) > 0, "Craft Rune line present");
-    // Should now be enabled (32m = green) since a bonus was chosen.
-    ExpectSubStringMatch("32m", craftLines[0]);
+    Selector.applySelection("1");
+    ExpectSubStringMatch("Craft Rune                ", Player.caughtMessage());
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void MenuShowsWardBonusOptionsForWardRune()
 {
-    object sel = clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
-    sel.setTier("basic");
-    sel.setRuneType("ward");
-    sel.setMaterial("granite");
-    sel.setMaxBonuses(1);
+    object wardSelector =
+        clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
+    wardSelector.setTier("basic");
+    wardSelector.setRuneType("ward");
+    wardSelector.setMaterial("granite");
+    wardSelector.setMaxBonuses(1);
 
-    object p = clone_object("/lib/tests/support/services/mockPlayer.c");
-    p.Name("ward_test");
-    p.addCommands();
+    object wardPlayer = clone_object("/lib/tests/support/services/mockPlayer.c");
+    wardPlayer.Name("ward_test");
+    wardPlayer.addCommands();
+    wardPlayer.colorConfiguration("none");
+    wardPlayer.charsetConfiguration("ascii");
 
-    object mat = clone_object("/lib/instances/items/materials/stone/granite.c");
-    mat.set("quantity", 2);
-    move_object(mat, p);
-    move_object(sel, p);
+    object graniteMaterial =
+        clone_object("/lib/instances/items/materials/stone/granite.c");
+    graniteMaterial.set("quantity", 2);
+    move_object(graniteMaterial, wardPlayer);
+    move_object(wardSelector, wardPlayer);
 
-    sel.initiateSelector(p);
-    string msg = p.caughtMessage();
-    ExpectSubStringMatch("Armor Class", msg);
-    ExpectSubStringMatch("Resist Fire", msg);
-    ExpectSubStringMatch("Resist Cold", msg);
+    wardSelector.initiateSelector(wardPlayer);
+    string wardMessage = wardPlayer.caughtMessage();
+    ExpectSubStringMatch("Armor Class", wardMessage);
+    ExpectSubStringMatch("Resist Fire", wardMessage);
+    ExpectSubStringMatch("Resist Cold", wardMessage);
 
-    destruct(p);
-    destruct(sel);
+    destruct(wardPlayer);
+    destruct(wardSelector);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -188,7 +229,7 @@ void MenuDescribesSelectedMaterial()
 void MenuShowsChosenBonusLabelAfterSelection()
 {
     Selector.initiateSelector(Player);
-    command("1", Player);
+    Selector.applySelection("1");
     ExpectSubStringMatch("Chosen", Player.caughtMessage());
 }
 
@@ -196,11 +237,10 @@ void MenuShowsChosenBonusLabelAfterSelection()
 void SelectingChosenBonusAgainDeselects()
 {
     Selector.initiateSelector(Player);
-    command("1", Player);
+    Selector.applySelection("1");
     ExpectSubStringMatch("Chosen", Player.caughtMessage());
-    command("1", Player);
-    ExpectFalse(sizeof(regexp(({ Player.caughtMessage() }), "Chosen")),
-        "Bonus deselected");
+    Selector.applySelection("1");
+    ExpectSubStringMatch("None chosen yet", Player.caughtMessage());
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -213,104 +253,101 @@ void ExitOptionAlwaysPresent()
 /////////////////////////////////////////////////////////////////////////////
 void ExitDoesNotCraftRune()
 {
+    // power rune basic tier: 15 bonus options + Craft Rune (16) + Exit (17).
     Selector.initiateSelector(Player);
-    string msg = Player.caughtMessage();
-    foreach (string line in explode(msg, "\n"))
-    {
-        int n;
-        if (sscanf(line, "    [%d]", n) == 1 && sizeof(regexp(({ line }), "Exit")))
-        {
-            command(to_string(n), Player);
-            break;
-        }
-    }
+    Selector.applySelection("17");
     ExpectEq(0, countRunesInInventory(), "No rune created on exit");
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void BasicTierShowsUnscaledBonusValues()
 {
-    // Basic multiplier = 1, so "Attack (+2)" stays "+2" in menu.
     Selector.initiateSelector(Player);
-    ExpectSubStringMatch("+2", Player.caughtMessage());
+    ExpectSubStringMatch("\\+2", Player.caughtMessage());
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void ElderTierScalesBonusValuesToDoubleInMenu()
 {
-    // Elder multiplier = 2: base "+2" becomes "+4" in menu display.
-    object sel = clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
-    sel.setTier("elder");
-    sel.setRuneType("power");
-    sel.setMaterial("granite");
-    sel.setMaxBonuses(2);
+    object elderSelector =
+        clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
+    elderSelector.setTier("elder");
+    elderSelector.setRuneType("power");
+    elderSelector.setMaterial("granite");
+    elderSelector.setMaxBonuses(2);
 
-    object p = clone_object("/lib/tests/support/services/mockPlayer.c");
-    p.Name("elder_test");
-    p.addCommands();
+    object elderPlayer = clone_object("/lib/tests/support/services/mockPlayer.c");
+    elderPlayer.Name("elder_test");
+    elderPlayer.addCommands();
+    elderPlayer.colorConfiguration("none");
+    elderPlayer.charsetConfiguration("ascii");
 
-    object mat = clone_object("/lib/instances/items/materials/stone/granite.c");
-    mat.set("quantity", 3);
-    move_object(mat, p);
-    move_object(sel, p);
+    object graniteMaterial =
+        clone_object("/lib/instances/items/materials/stone/granite.c");
+    graniteMaterial.set("quantity", 3);
+    move_object(graniteMaterial, elderPlayer);
+    move_object(elderSelector, elderPlayer);
 
-    sel.initiateSelector(p);
-    ExpectSubStringMatch("+4", p.caughtMessage());
+    elderSelector.initiateSelector(elderPlayer);
+    ExpectSubStringMatch("\\+4", elderPlayer.caughtMessage());
 
-    destruct(p);
-    destruct(sel);
+    destruct(elderPlayer);
+    destruct(elderSelector);
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void BasicTierAllowsOnlyOneBonusSlot()
 {
     Selector.initiateSelector(Player);
-    command("1", Player);
-    // After filling the single slot all other bonus entries should be disabled.
-    string *disabledBonusLines = regexp(({ Player.caughtMessage() }), "31m.*\\+[0-9]");
-    ExpectTrue(sizeof(disabledBonusLines) > 0,
-        "Other bonus options are disabled after slot filled");
+    Selector.applySelection("1");
+    // Unarmed (+2) is option 15; after slot filled it shows disabled.
+    ExpectSubStringMatch("Unarmed \\(\\+2\\)           \\(X\\)", Player.caughtMessage());
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void ElderTierAllowsTwoBonusSlots()
 {
-    object sel = clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
-    sel.setTier("elder");
-    sel.setRuneType("power");
-    sel.setMaterial("granite");
-    sel.setMaxBonuses(2);
+    object elderSelector =
+        clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
+    elderSelector.setTier("elder");
+    elderSelector.setRuneType("power");
+    elderSelector.setMaterial("granite");
+    elderSelector.setMaxBonuses(2);
 
-    object p = clone_object("/lib/tests/support/services/mockPlayer.c");
-    p.Name("elder2");
-    p.addCommands();
+    object elderPlayer = clone_object("/lib/tests/support/services/mockPlayer.c");
+    elderPlayer.Name("elder2");
+    elderPlayer.addCommands();
+    elderPlayer.colorConfiguration("none");
+    elderPlayer.charsetConfiguration("ascii");
 
-    object mat = clone_object("/lib/instances/items/materials/stone/granite.c");
-    mat.set("quantity", 3);
-    move_object(mat, p);
-    move_object(sel, p);
+    object graniteMaterial =
+        clone_object("/lib/instances/items/materials/stone/granite.c");
+    graniteMaterial.set("quantity", 3);
+    move_object(graniteMaterial, elderPlayer);
+    move_object(elderSelector, elderPlayer);
 
-    sel.initiateSelector(p);
-    command("1", p);
-    command("2", p);
-    string *chosen = regexp(({ p.caughtMessage() }), "Chosen");
-    ExpectTrue(sizeof(chosen) >= 2, "Two bonuses chosen for elder tier");
+    elderSelector.initiateSelector(elderPlayer);
+    // Options 1 and 2 are Attack (+2) and Attack (+4) in ascending alpha sort.
+    elderSelector.applySelection("1");
+    elderSelector.applySelection("2");
+    string elderMessage = elderPlayer.caughtMessage();
+    // Both chosen bonuses appear in the header summary (descending sort).
+    ExpectSubStringMatch("Attack \\(\\+8\\)", elderMessage);
+    ExpectSubStringMatch("Attack \\(\\+4\\)", elderMessage);
 
-    destruct(p);
-    destruct(sel);
+    destruct(elderPlayer);
+    destruct(elderSelector);
 }
-
-// ---- Crafting flow tests -------------------------------------------------
 
 /////////////////////////////////////////////////////////////////////////////
 void CraftingConsumesMaterialFromInventory()
 {
+    // power rune basic tier: option 1 = Attack (+2), Craft Rune = option 16.
     ExpectEq(5, countMaterialInInventory("granite"));
 
     Selector.initiateSelector(Player);
-    command("1", Player);
-    int found = findAndSelectCraftRune();
-    ExpectTrue(found > 0, "Craft Rune option was enabled and selected");
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     ExpectEq(4, countMaterialInInventory("granite"),
         "One granite consumed after crafting");
@@ -322,8 +359,8 @@ void CraftingProducesRuneInInventory()
     ExpectEq(0, countRunesInInventory());
 
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     ExpectEq(1, countRunesInInventory(), "Rune appears in inventory");
 }
@@ -332,8 +369,8 @@ void CraftingProducesRuneInInventory()
 void CraftedRuneHasCorrectTierAndType()
 {
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune), "Rune object exists");
@@ -345,8 +382,8 @@ void CraftedRuneHasCorrectTierAndType()
 void CraftedRuneHasCorrectMaterialSet()
 {
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune));
@@ -357,8 +394,8 @@ void CraftedRuneHasCorrectMaterialSet()
 void CraftedRuneHasChosenBonusApplied()
 {
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune), "Rune exists");
@@ -370,42 +407,24 @@ void CraftedRuneHasChosenBonusApplied()
 /////////////////////////////////////////////////////////////////////////////
 void CraftingWithoutMaterialFailsGracefully()
 {
-    foreach (object m in filter(deep_inventory(Player),
-        (: member(inherit_list($1), "/lib/items/material.c") > -1 :)))
-    {
-        destruct(m);
-    }
+    map(filter(deep_inventory(Player),
+        (: member(inherit_list($1), "/lib/items/material.c") > -1 :)),
+        (: destruct($1) :));
 
     Selector.initiateSelector(Player);
-    command("1", Player);
-
-    // Find the Craft Rune option number (may be disabled) and send it anyway.
-    string msg = Player.caughtMessage();
-    foreach (string line in explode(msg, "\n"))
-    {
-        int n;
-        if (sscanf(line, "    [%d]", n) == 1 &&
-            sizeof(regexp(({ line }), "Craft Rune")))
-        {
-            command(to_string(n), Player);
-            break;
-        }
-    }
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     ExpectSubStringMatch("no granite", Player.caughtMessage());
     ExpectEq(0, countRunesInInventory(), "No rune created without material");
 }
 
-// ---- Material property application tests --------------------------------
-
 /////////////////////////////////////////////////////////////////////////////
 void GraniteDefenseAddsResistElectricityToRune()
 {
-    // Granite: defense electricity: 3  ?  material resist electricity stored.
-    // fuseRune() will translate this to "bonus resist electricity" on armor.
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune));
@@ -416,10 +435,9 @@ void GraniteDefenseAddsResistElectricityToRune()
 /////////////////////////////////////////////////////////////////////////////
 void GraniteHasNoMaterialAttackBonus()
 {
-    // Granite has no "attack" key - no material attack key expected.
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     object rune = getRuneInInventory();
     ExpectFalse(rune.query("material attack physical"),
@@ -429,122 +447,110 @@ void GraniteHasNoMaterialAttackBonus()
 /////////////////////////////////////////////////////////////////////////////
 void QuartziteAttackAddsPhysicalDamageToRune()
 {
-    // Quartzite: attack physical: 1 -> material attack physical +1 on rune.
-    object sel = clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
-    sel.setTier("basic");
-    sel.setRuneType("power");
-    sel.setMaterial("quartzite");
-    sel.setMaxBonuses(1);
+    object quartziteSelector =
+        clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
+    quartziteSelector.setTier("basic");
+    quartziteSelector.setRuneType("power");
+    quartziteSelector.setMaterial("quartzite");
+    quartziteSelector.setMaxBonuses(1);
 
-    object p = clone_object("/lib/tests/support/services/mockPlayer.c");
-    p.Name("qtest");
-    p.addCommands();
-    addQuartziteMaterial(3);
-    move_object(sel, p);
+    object quartzitePlayer =
+        clone_object("/lib/tests/support/services/mockPlayer.c");
+    quartzitePlayer.Name("qtest");
+    quartzitePlayer.addCommands();
+    quartzitePlayer.colorConfiguration("none");
+    quartzitePlayer.charsetConfiguration("ascii");
 
-    sel.initiateSelector(p);
-    command("1", p);
+    object quartziteMaterial =
+        clone_object("/lib/instances/items/materials/stone/quartzite.c");
+    quartziteMaterial.set("quantity", 3);
+    move_object(quartziteMaterial, quartzitePlayer);
+    move_object(quartziteSelector, quartzitePlayer);
 
-    foreach (string line in explode(p.caughtMessage(), "\n"))
-    {
-        int n;
-        if (sscanf(line, "    [%d]", n) == 1 &&
-            sizeof(regexp(({ line }), "Craft Rune")) &&
-            !sizeof(regexp(({ line }), "31m")))
-        {
-            command(to_string(n), p);
-            break;
-        }
-    }
+    quartziteSelector.initiateSelector(quartzitePlayer);
+    quartziteSelector.applySelection("1");
+    quartziteSelector.applySelection("16");
 
-    object *runes = filter(deep_inventory(p),
+    object *runesCreated = filter(deep_inventory(quartzitePlayer),
         (: member(inherit_list($1), "/lib/items/rune.c") > -1 :));
-    ExpectTrue(sizeof(runes) > 0, "Rune created from quartzite");
-    ExpectTrue(runes[0].query("material attack physical") >= 1,
+    ExpectTrue(sizeof(runesCreated) > 0, "Rune created from quartzite");
+    ExpectTrue(runesCreated[0].query("material attack physical") >= 1,
         "Quartzite attack physical stored as material attack physical on rune");
 
-    destruct(p);
-    destruct(sel);
+    destruct(quartzitePlayer);
+    destruct(quartziteSelector);
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void QuartziteDefenseAddsResistPhysicalToRune()
 {
-    // Quartzite: defense physical: 1 -> material resist physical +1 on rune.
-    object sel = clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
-    sel.setTier("basic");
-    sel.setRuneType("ward");
-    sel.setMaterial("quartzite");
-    sel.setMaxBonuses(1);
+    object quartziteWardSelector =
+        clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
+    quartziteWardSelector.setTier("basic");
+    quartziteWardSelector.setRuneType("ward");
+    quartziteWardSelector.setMaterial("quartzite");
+    quartziteWardSelector.setMaxBonuses(1);
 
-    object p = clone_object("/lib/tests/support/services/mockPlayer.c");
-    p.Name("qdeftest");
-    p.addCommands();
-    addQuartziteMaterial(3);
-    move_object(sel, p);
+    object quartziteWardPlayer =
+        clone_object("/lib/tests/support/services/mockPlayer.c");
+    quartziteWardPlayer.Name("qdeftest");
+    quartziteWardPlayer.addCommands();
+    quartziteWardPlayer.colorConfiguration("none");
+    quartziteWardPlayer.charsetConfiguration("ascii");
 
-    sel.initiateSelector(p);
-    command("1", p);
+    object quartziteWardMaterial =
+        clone_object("/lib/instances/items/materials/stone/quartzite.c");
+    quartziteWardMaterial.set("quantity", 3);
+    move_object(quartziteWardMaterial, quartziteWardPlayer);
+    move_object(quartziteWardSelector, quartziteWardPlayer);
 
-    foreach (string line in explode(p.caughtMessage(), "\n"))
-    {
-        int n;
-        if (sscanf(line, "    [%d]", n) == 1 &&
-            sizeof(regexp(({ line }), "Craft Rune")) &&
-            !sizeof(regexp(({ line }), "31m")))
-        {
-            command(to_string(n), p);
-            break;
-        }
-    }
+    // ward rune basic tier: 19 bonus options + Craft Rune = option 20.
+    quartziteWardSelector.initiateSelector(quartziteWardPlayer);
+    quartziteWardSelector.applySelection("1");
+    quartziteWardSelector.applySelection("20");
 
-    object *runes = filter(deep_inventory(p),
+    object *runesCreated = filter(deep_inventory(quartziteWardPlayer),
         (: member(inherit_list($1), "/lib/items/rune.c") > -1 :));
-    ExpectTrue(sizeof(runes) > 0, "Rune created from quartzite");
-    ExpectTrue(runes[0].query("material resist physical") >= 1,
+    ExpectTrue(sizeof(runesCreated) > 0, "Rune created from quartzite");
+    ExpectTrue(runesCreated[0].query("material resist physical") >= 1,
         "Quartzite defense physical stored as material resist physical on rune");
 
-    destruct(p);
-    destruct(sel);
+    destruct(quartziteWardPlayer);
+    destruct(quartziteWardSelector);
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void ValueMultiplierOnDiamondScalesRuneValue()
 {
-    // Diamond: value multiplier 15.5 and attack physical: 4.
-    // The diamond rune's value should far exceed the granite rune's.
-    object selD = clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
-    selD.setTier("basic");
-    selD.setRuneType("power");
-    selD.setMaterial("diamond");
-    selD.setMaxBonuses(1);
+    object diamondSelector =
+        clone_object("/guilds/runeskald/selectors/craftRuneBonusSelector.c");
+    diamondSelector.setTier("basic");
+    diamondSelector.setRuneType("power");
+    diamondSelector.setMaterial("diamond");
+    diamondSelector.setMaxBonuses(1);
 
-    object pD = clone_object("/lib/tests/support/services/mockPlayer.c");
-    pD.Name("diamond_test");
-    pD.addCommands();
-    addDiamondMaterial(2);
-    move_object(selD, pD);
+    object diamondPlayer = clone_object("/lib/tests/support/services/mockPlayer.c");
+    diamondPlayer.Name("diamond_test");
+    diamondPlayer.addCommands();
+    diamondPlayer.colorConfiguration("none");
+    diamondPlayer.charsetConfiguration("ascii");
 
-    selD.initiateSelector(pD);
-    command("1", pD);
-    foreach (string line in explode(pD.caughtMessage(), "\n"))
-    {
-        int n;
-        if (sscanf(line, "    [%d]", n) == 1 &&
-            sizeof(regexp(({ line }), "Craft Rune")) &&
-            !sizeof(regexp(({ line }), "31m")))
-        {
-            command(to_string(n), pD);
-            break;
-        }
-    }
+    object diamondMaterial =
+        clone_object("/lib/instances/items/materials/crystal/diamond.c");
+    diamondMaterial.set("quantity", 2);
+    move_object(diamondMaterial, diamondPlayer);
+    move_object(diamondSelector, diamondPlayer);
 
-    // Craft a comparable granite rune for baseline comparison.
+    // power rune basic tier: Craft Rune = option 16.
+    diamondSelector.initiateSelector(diamondPlayer);
+    diamondSelector.applySelection("1");
+    diamondSelector.applySelection("16");
+
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
-    object *diamondRunes = filter(deep_inventory(pD),
+    object *diamondRunes = filter(deep_inventory(diamondPlayer),
         (: member(inherit_list($1), "/lib/items/rune.c") > -1 :));
     object graniteRune = getRuneInInventory();
 
@@ -553,17 +559,16 @@ void ValueMultiplierOnDiamondScalesRuneValue()
     ExpectTrue(diamondRunes[0].query("value") > graniteRune.query("value"),
         "Diamond rune value exceeds granite rune value (value multiplier)");
 
-    destruct(pD);
-    destruct(selD);
+    destruct(diamondPlayer);
+    destruct(diamondSelector);
 }
 
 /////////////////////////////////////////////////////////////////////////////
 void NoValueMultiplierMaterialUsesBaseValue()
 {
-    // Granite has no value multiplier - base calculation only (>= 50).
     Selector.initiateSelector(Player);
-    command("1", Player);
-    findAndSelectCraftRune();
+    Selector.applySelection("1");
+    Selector.applySelection("16");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune));

@@ -1,0 +1,39 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/modules/research/passiveResearchItem.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    addSpecification("name", "Rune of Binding Flesh");
+    addSpecification("source", "runeskald");
+    addSpecification("description", "The runeskald inscribes a world rune of "
+        "binding flesh into their body permanently, greatly increasing "
+        "maximum hit points and the rate at which they regenerate.");
+
+    addPrerequisite("/guilds/runeskald/world-rune/rune-of-forging.c",
+        (["type": "research"]));
+
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+
+    addSpecification("bonus hit points", 60);
+    addSpecification("bonus hit point recovery", 5);
+
+    addSpecification("modifiers", ({
+        ([
+            "type": "attribute",
+            "name": "constitution",
+            "formula": "additive",
+            "rate": 0.08
+        ]),
+        ([
+            "type": "skill",
+            "name": "spellcraft",
+            "formula": "additive",
+            "rate": 0.07
+        ])
+    }));
+}

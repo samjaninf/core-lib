@@ -453,3 +453,126 @@ void SetComponentFailsWhenMaterialIsMissing()
         "component (hilt) definition.\n",
         error);
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneEnchantmentMergedIntoWeaponEnchantments()
+{
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("material", "iron");
+    Weapon.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic storm rune");
+    rune.set("rune type", "storm");
+    rune.set("rune tier", "basic");
+    rune.set("rune enchantment electricity", 3);
+
+    Weapon.fuseRune(rune);
+
+    mapping enc = Weapon.query("enchantments");
+    ExpectTrue(mappingp(enc), "enchantments mapping present after fusion");
+    ExpectEq(3, enc["electricity"],
+        "electricity enchantment value merged onto weapon");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneEnchantmentStacksWithExistingEnchantments()
+{
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("material", "iron");
+    Weapon.set("rune slots", 2);
+    Weapon.set("enchantments", (["electricity": 5]));
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic storm rune");
+    rune.set("rune type", "storm");
+    rune.set("rune tier", "basic");
+    rune.set("rune enchantment electricity", 3);
+
+    Weapon.fuseRune(rune);
+
+    mapping enc = Weapon.query("enchantments");
+    ExpectEq(8, enc["electricity"],
+        "rune enchantment stacks with existing enchantment value");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneMaterialAttackMergedIntoWeaponEnchantments()
+{
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("material", "iron");
+    Weapon.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic power rune");
+    rune.set("rune type", "power");
+    rune.set("rune tier", "basic");
+    rune.set("material attack physical", 2);
+
+    Weapon.fuseRune(rune);
+
+    mapping enc = Weapon.query("enchantments");
+    ExpectTrue(mappingp(enc), "enchantments mapping present");
+    ExpectEq(2, enc["physical"],
+        "material attack physical merged into weapon enchantments");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneMaterialAttackRatingAppliedAsAttackOnWeapon()
+{
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("material", "iron");
+    Weapon.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic power rune");
+    rune.set("rune type", "power");
+    rune.set("rune tier", "basic");
+    rune.set("material attack rating", 4);
+
+    Weapon.fuseRune(rune);
+
+    ExpectEq(4, Weapon.query("bonus attack"),
+        "material attack rating applied as bonus attack on weapon");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneMaterialResistDroppedOnWeapon()
+{
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("material", "iron");
+    Weapon.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic ward rune");
+    rune.set("rune type", "ward");
+    rune.set("rune tier", "basic");
+    rune.set("material resist electricity", 3);
+
+    Weapon.fuseRune(rune);
+
+    ExpectFalse(Weapon.query("bonus resist electricity"),
+        "material resist not applied to weapon");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneMultipleEnchantmentTypesAllMerged()
+{
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("material", "iron");
+    Weapon.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic flame rune");
+    rune.set("rune type", "flame");
+    rune.set("rune tier", "basic");
+    rune.set("rune enchantment fire", 3);
+    rune.set("rune enchantment chaos", 2);
+
+    Weapon.fuseRune(rune);
+
+    mapping enc = Weapon.query("enchantments");
+    ExpectTrue(mappingp(enc), "enchantments mapping present");
+    ExpectEq(3, enc["fire"], "fire enchantment merged");
+    ExpectEq(2, enc["chaos"], "chaos enchantment merged");
+}

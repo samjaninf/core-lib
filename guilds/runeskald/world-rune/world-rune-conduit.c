@@ -1,0 +1,39 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/modules/research/passiveResearchItem.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    addSpecification("name", "World Rune Conduit");
+    addSpecification("source", "runeskald");
+    addSpecification("description", "The runeskald has opened themselves as "
+        "a conduit for world rune energy, permanently increasing maximum "
+        "spell points and the rate at which they recover.");
+
+    addPrerequisite("/guilds/runeskald/world-rune/world-rune-attunement.c",
+        (["type": "research"]));
+
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+
+    addSpecification("bonus spell points", 60);
+    addSpecification("bonus spell recovery", 7);
+
+    addSpecification("modifiers", ({
+        ([
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.09
+        ]),
+        ([
+            "type": "skill",
+            "name": "spellcraft",
+            "formula": "additive",
+            "rate": 0.09
+        ])
+    }));
+}

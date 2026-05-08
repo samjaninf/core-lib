@@ -158,7 +158,7 @@ public nomask void InitializeSelector()
 {
     AllowUndo = 1;
     AllowAbort = 1;
-    NumColumns = 1;
+    NumColumns = 2;
     Data = ([]);
     ChosenBonuses = ([]);
 }
@@ -211,8 +211,7 @@ protected nomask void setUpUserForSelection()
             to_string(scaledValue), 1);
 
         Data[to_string(optionCount)] = ([
-            "name": alreadyChosen ?
-                sprintf("[Chosen] %s", scaledLabel) : scaledLabel,
+            "name": scaledLabel,
             "description": sprintf("Add '%s' to your rune "
                 "(scaled x%d for %s tier).",
                 scaledLabel, mult, RuneTier),
@@ -271,94 +270,94 @@ private nomask int consumeMaterial(string materialName)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-private nomask void craftRune()
+void craftRune()
 {
     if (!consumeMaterial(Material))
     {
         tell_object(User, configuration->decorate(sprintf(
             "You have no %s in your inventory!\n", Material),
             "failure", "selector", colorConfiguration));
-        return;
     }
-
-    object rune = clone_object("/lib/items/rune.c");
-
-    string runeName = sprintf("%s %s rune", RuneTier, RuneType);
-    rune->set("name", runeName);
-    rune->set("short", runeName);
-    rune->set("aliases", ({ "rune", RuneType + " rune", RuneTier + " rune" }));
-    rune->set("rune type", RuneType);
-    rune->set("rune tier", RuneTier);
-    rune->set("material", Material);
-
-    string longDesc = sprintf(
-        "A %s %s rune carved from %s. The deeply-cut lines glow faintly "
-        "with pent-up power.",
-        RuneTier, RuneType, Material);
-    rune->set("long", longDesc);
-
-    int baseValue;
-    switch (RuneTier)
+    else
     {
-        case "basic":   baseValue = 50;    break;
-        case "elder":   baseValue = 250;   break;
-        case "ancient": baseValue = 1000;  break;
-        case "primal":  baseValue = 5000;  break;
-        default:        baseValue = 50;
-    }
+        object rune = clone_object("/lib/items/rune.c");
 
-    foreach (string label in m_indices(ChosenBonuses))
-    {
-        string key = ChosenBonuses[label]["key"];
-        int val    = ChosenBonuses[label]["value"];
-        rune->set(key, val);
-        baseValue += val * 10;
-    }
+        string runeName = sprintf("%s %s rune", RuneTier, RuneType);
+        rune->set("name", runeName);
+        rune->set("short", runeName);
+        rune->set("aliases", ({ "rune", RuneType + " rune", RuneTier + " rune" }));
+        rune->set("rune type", RuneType);
+        rune->set("rune tier", RuneTier);
+        rune->set("material", Material);
 
-    object materialService = getService("materials");
-    mapping matData = materialService->getMaterialData(Material);
+        string longDesc = sprintf(
+            "A %s %s rune carved from %s. The deeply-cut lines glow faintly "
+            "with pent-up power.",
+            RuneTier, RuneType, Material);
+        rune->set("long", longDesc);
 
-    if (mappingp(matData))
-    {
-        if (member(matData, "attack") && mappingp(matData["attack"]))
+        int baseValue;
+        switch (RuneTier)
         {
-            foreach (string dmgType in m_indices(matData["attack"]))
+            case "basic":   baseValue = 50;    break;
+            case "elder":   baseValue = 250;   break;
+            case "ancient": baseValue = 1000;  break;
+            case "primal":  baseValue = 5000;  break;
+            default:        baseValue = 50;
+        }
+
+        foreach (string label in m_indices(ChosenBonuses))
+        {
+            string key = ChosenBonuses[label]["key"];
+            int value  = ChosenBonuses[label]["value"];
+            rune->set(key, value);
+            baseValue += value * 10;
+        }
+
+        object materialService = getService("materials");
+        mapping materialData = materialService->getMaterialData(Material);
+
+        if (mappingp(materialData))
+        {
+            if (member(materialData, "attack") && mappingp(materialData["attack"]))
             {
-                rune->set("material attack " + dmgType,
-                    (rune->query("material attack " + dmgType) || 0)
-                    + matData["attack"][dmgType]);
+                foreach (string damageType in m_indices(materialData["attack"]))
+                {
+                    rune->set("material attack " + damageType,
+                        (rune->query("material attack " + damageType) || 0)
+                        + materialData["attack"][damageType]);
+                }
+            }
+            if (member(materialData, "attack rating"))
+            {
+                rune->set("material attack rating",
+                    (rune->query("material attack rating") || 0)
+                    + materialData["attack rating"]);
+            }
+            if (member(materialData, "defense") && mappingp(materialData["defense"]))
+            {
+                foreach (string defenseType in m_indices(materialData["defense"]))
+                {
+                    rune->set("material resist " + defenseType,
+                        (rune->query("material resist " + defenseType) || 0)
+                        + materialData["defense"][defenseType]);
+                }
+            }
+
+            if (member(materialData, "value multiplier"))
+            {
+                baseValue = to_int(baseValue * materialData["value multiplier"]);
             }
         }
-        if (member(matData, "attack rating"))
-        {
-            rune->set("material attack rating",
-                (rune->query("material attack rating") || 0)
-                + matData["attack rating"]);
-        }
-        if (member(matData, "defense") && mappingp(matData["defense"]))
-        {
-            foreach (string defType in m_indices(matData["defense"]))
-            {
-                rune->set("material resist " + defType,
-                    (rune->query("material resist " + defType) || 0)
-                    + matData["defense"][defType]);
-            }
-        }
 
-        // Value multiplier.
-        if (member(matData, "value multiplier"))
-        {
-            baseValue = to_int(baseValue * matData["value multiplier"]);
-        }
+        rune->set("value", baseValue);
+
+        move_object(rune, User);
+
+        tell_object(User, configuration->decorate(sprintf(
+            "You carefully carve and charge %s.\n", runeName),
+            "details", "selector", colorConfiguration));
     }
-
-    rune->set("value", baseValue);
-
-    move_object(rune, User);
-
-    tell_object(User, configuration->decorate(sprintf(
-        "You carefully carve and charge %s.\n", runeName),
-        "details", "selector", colorConfiguration));
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -380,7 +379,7 @@ protected nomask int processSelection(string selection)
                 ret = 1;
             }
         }
-        else if (!ret && !member(Data[selection], "type"))
+        else if (!ret && selType == "")
         {
             string label = Data[selection]["label"];
             if (!Data[selection]["is disabled"])
@@ -423,21 +422,39 @@ protected nomask int suppressMenuDisplay()
 /////////////////////////////////////////////////////////////////////////////
 protected string choiceFormatter(string choice)
 {
-    string displayType = (member(Data[choice], "is disabled") &&
-        Data[choice]["is disabled"]) ? "choice disabled" : "choice enabled";
+    int isDisabled = member(Data[choice], "is disabled") &&
+        Data[choice]["is disabled"];
+    string displayType = isDisabled ? "choice disabled" : "choice enabled";
 
-    string chosenMark = "";
+    string suffix = "";
     if (!member(Data[choice], "type") &&
         member(ChosenBonuses, Data[choice]["label"]))
     {
-        chosenMark = configuration->decorate(" [*]", "information",
-            "selector", colorConfiguration);
+        int useUnicode = User->charsetConfiguration() == "unicode";
+        suffix = configuration->decorate(
+            useUnicode ? " (\u2605)" : " (*)",
+            "information", "selector", colorConfiguration);
+    }
+    else
+    {
+        suffix = displayDetails(choice);
     }
 
-    return sprintf("    [%s]%s - %s%s\n",
+    return sprintf("    [%s]%s - %s%s",
         configuration->decorate("%s", "number", "selector", colorConfiguration),
         padSelectionDisplay(choice),
-        configuration->decorate("%-35s", displayType, "selector",
+        configuration->decorate("%-22s", displayType, "selector",
             colorConfiguration),
-        chosenMark);
+        suffix);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+protected string displayDetails(string choice)
+{
+    int useUnicode = User->charsetConfiguration() == "unicode";
+    string ret = (member(Data[choice], "is disabled") &&
+        Data[choice]["is disabled"]) ?
+        configuration->decorate(useUnicode ? " (\u2573)" : " (X)",
+            "choice disabled", "selector", colorConfiguration) : "    ";
+    return ret;
 }

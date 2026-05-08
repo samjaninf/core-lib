@@ -151,6 +151,15 @@ public nomask void onSelectorCompleted(object caller)
 protected nomask int suppressMenuDisplay()
 {
     return objectp(SubselectorObj);
+}/////////////////////////////////////////////////////////////////////////////
+protected string displayDetails(string choice)
+{
+    int useUnicode = User->charsetConfiguration() == "unicode";
+    string ret = (member(Data[choice], "is disabled") &&
+        Data[choice]["is disabled"]) ?
+        configuration->decorate(useUnicode ? " (\u2573)" : " (X)",
+            "choice disabled", "selector", colorConfiguration) : "    ";
+    return ret;
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -159,9 +168,10 @@ protected string choiceFormatter(string choice)
     string displayType = (member(Data[choice], "is disabled") &&
         Data[choice]["is disabled"]) ? "choice disabled" : "choice enabled";
 
-    return sprintf("    [%s]%s - %s\n",
+    return sprintf("    [%s]%s - %s%s",
         configuration->decorate("%s", "number", "selector", colorConfiguration),
         padSelectionDisplay(choice),
-        configuration->decorate("%-30s", displayType, "selector",
-            colorConfiguration));
+        configuration->decorate("%-20s", displayType, "selector",
+            colorConfiguration),
+        displayDetails(choice));
 }

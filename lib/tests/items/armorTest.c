@@ -95,3 +95,81 @@ void InvalidBlueprintCannotBeSet()
     string err = catch (Armor.set("blueprint", "blah"); nolog);
     ExpectEq(expected, err, "blueprint cannot be set");
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneEnchantmentDroppedOnArmor()
+{
+    Armor.set("armor type", "chainmail");
+    Armor.set("material", "steel");
+    Armor.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic storm rune");
+    rune.set("rune type", "storm");
+    rune.set("rune tier", "basic");
+    rune.set("rune enchantment electricity", 3);
+
+    Armor.fuseRune(rune);
+
+    mapping enc = Armor.query("enchantments");
+    ExpectFalse(mappingp(enc) && member(enc, "electricity"),
+        "enchantment not applied to armor");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneMaterialAttackDroppedOnArmor()
+{
+    Armor.set("armor type", "chainmail");
+    Armor.set("material", "steel");
+    Armor.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic power rune");
+    rune.set("rune type", "power");
+    rune.set("rune tier", "basic");
+    rune.set("material attack physical", 2);
+
+    Armor.fuseRune(rune);
+
+    mapping enc = Armor.query("enchantments");
+    ExpectFalse(mappingp(enc) && member(enc, "physical"),
+        "material attack not applied to armor");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneMaterialAttackRatingDroppedOnArmor()
+{
+    Armor.set("armor type", "chainmail");
+    Armor.set("material", "steel");
+    Armor.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic ward rune");
+    rune.set("rune type", "ward");
+    rune.set("rune tier", "basic");
+    rune.set("material attack rating", 4);
+
+    Armor.fuseRune(rune);
+
+    ExpectFalse(Armor.query("bonus attack"),
+        "material attack rating not applied to armor");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void FuseRuneMaterialResistAppliedAsResistBonusOnArmor()
+{
+    Armor.set("armor type", "chainmail");
+    Armor.set("material", "steel");
+    Armor.set("rune slots", 2);
+
+    object rune = clone_object("/lib/items/rune.c");
+    rune.set("name", "basic ward rune");
+    rune.set("rune type", "ward");
+    rune.set("rune tier", "basic");
+    rune.set("material resist electricity", 3);
+
+    Armor.fuseRune(rune);
+
+    ExpectEq(3, Armor.query("bonus resist electricity"),
+        "material resist electricity applied as bonus resist electricity on armor");
+}

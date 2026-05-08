@@ -1,0 +1,65 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/modules/research/instantaneousActiveResearchItem.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    addSpecification("name", "Infernal Pyre");
+    addSpecification("source", "runeskald");
+    addSpecification("description", "The runeskald ignites an infernal pyre "
+        "of runic fire beneath a target's feet, dealing tremendous fire damage.");
+
+    addPrerequisite("level",
+        (["type": "level", "guild": "runeskald", "value": 11]));
+    addPrerequisite("/guilds/runeskald/frostfire/firestorm.c",
+        (["type": "research"]));
+
+    addSpecification("scope", "targeted");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("command template", "infernal pyre ##Target##");
+    addSpecification("use message",
+        "##InitiatorName## ##Infinitive::ignite## an infernal pyre of runic fire beneath ##TargetName##.");
+
+    addSpecification("spell point cost", 45);
+    addSpecification("stamina point cost", 18);
+
+    addSpecification("damage hit points", ({
+        ([
+            "probability": 70,
+            "base damage": 80,
+            "range": 90
+        ]),
+        ([
+            "probability": 30,
+            "base damage": 140,
+            "range": 140
+        ])
+    }));
+
+    addSpecification("modifiers", ({
+        ([
+            "type": "skill",
+            "name": "spellcraft",
+            "formula": "additive",
+            "rate": 0.16
+        ]),
+        ([
+            "type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.08
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/frostfire/runic-flame.c",
+            "name": "Runic Flame",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.20
+        ])
+    }));
+}

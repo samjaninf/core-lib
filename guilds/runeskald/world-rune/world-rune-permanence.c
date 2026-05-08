@@ -1,0 +1,41 @@
+//*****************************************************************************
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
+//                      the accompanying LICENSE file for details.
+//*****************************************************************************
+inherit "/lib/modules/research/passiveResearchItem.c";
+
+/////////////////////////////////////////////////////////////////////////////
+protected void Setup()
+{
+    addSpecification("name", "World Rune Permanence");
+    addSpecification("source", "runeskald");
+    addSpecification("description", "The runeskald has inscribed world runes "
+        "so deeply into their being that their effects never fully fade. "
+        "Grants a permanent bonus to stamina points and stamina recovery "
+        "as well as a bonus to hit point recovery.");
+
+    addPrerequisite("/guilds/runeskald/world-rune/rune-of-binding-flesh.c",
+        (["type": "research"]));
+
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+
+    addSpecification("bonus stamina points", 50);
+    addSpecification("bonus stamina recovery", 5);
+    addSpecification("bonus hit point recovery", 5);
+
+    addSpecification("modifiers", ({
+        ([
+            "type": "attribute",
+            "name": "constitution",
+            "formula": "additive",
+            "rate": 0.09
+        ]),
+        ([
+            "type": "skill",
+            "name": "spellcraft",
+            "formula": "additive",
+            "rate": 0.08
+        ])
+    }));
+}

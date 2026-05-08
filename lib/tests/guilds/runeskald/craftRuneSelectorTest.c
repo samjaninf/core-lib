@@ -15,6 +15,8 @@ void Setup()
     Player = clone_object("/lib/tests/support/services/mockPlayer.c");
     Player.Name("bob");
     Player.addCommands();
+    Player.colorConfiguration("none");
+    Player.charsetConfiguration("ascii");
 
     Player.addSkillPoints(500);
     Player.advanceSkill("gem crafting", 5);
@@ -24,8 +26,15 @@ void Setup()
     Player.addResearchPoints(20);
     ExpectTrue(Player.addResearchTree(
         "/guilds/runeskald/rune-crafting.c"));
-    ExpectTrue(Player.initiateResearch(
-        "/guilds/runeskald/rune-crafting/root.c"));
+
+    Player.joinGuild("runeskald");
+    Player.addExperience(10000);
+    Player.advanceLevel("runeskald");
+    Player.addExperience(10000);
+    Player.advanceLevel("runeskald");
+    Player.addExperience(10000);
+    Player.advanceLevel("runeskald");
+
     ExpectTrue(Player.initiateResearch(
         "/guilds/runeskald/rune-crafting/basic-power-rune.c"));
     ExpectTrue(Player.initiateResearch(
@@ -50,16 +59,33 @@ void CleanUp()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+void FullMenuDisplaysAllBasicRunesCorrectly()
+{
+    Selector.initiateSelector(Player);
+    string msg = Player.caughtMessage();
+
+    ExpectSubStringMatch("Craft Rune", msg);
+    // All six basic rune types enabled: %-20s pad + "    " default spacing.
+    ExpectSubStringMatch("Basic Power rune        ", msg);
+    ExpectSubStringMatch("Basic Ward rune         ", msg);
+    ExpectSubStringMatch("Basic Blade rune        ", msg);
+    ExpectSubStringMatch("Basic Storm rune        ", msg);
+    ExpectSubStringMatch("Basic Frost rune        ", msg);
+    ExpectSubStringMatch("Basic Flame rune        ", msg);
+    ExpectSubStringMatch("Exit Craft Rune Menu", msg);
+}
+
+/////////////////////////////////////////////////////////////////////////////
 void TopLevelMenuShowsBasicRunesWhenOnlyBasicResearched()
 {
     Selector.initiateSelector(Player);
     string msg = Player.caughtMessage();
-    ExpectSubStringMatch("basic power rune", msg);
-    ExpectSubStringMatch("basic ward rune", msg);
-    ExpectSubStringMatch("basic blade rune", msg);
-    ExpectSubStringMatch("basic storm rune", msg);
-    ExpectSubStringMatch("basic frost rune", msg);
-    ExpectSubStringMatch("basic flame rune", msg);
+    ExpectSubStringMatch("Basic Power rune", msg);
+    ExpectSubStringMatch("Basic Ward rune", msg);
+    ExpectSubStringMatch("Basic Blade rune", msg);
+    ExpectSubStringMatch("Basic Storm rune", msg);
+    ExpectSubStringMatch("Basic Frost rune", msg);
+    ExpectSubStringMatch("Basic Flame rune", msg);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -83,7 +109,7 @@ void ElderRunesAppearAfterElderResearchGranted()
 
     Selector.initiateSelector(Player);
     string msg = Player.caughtMessage();
-    ExpectSubStringMatch("elder power rune", msg);
+    ExpectSubStringMatch("Elder Power rune", msg);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -91,30 +117,34 @@ void UnresearchedTypeAppearsDisabledInMenu()
 {
     // Research the tier but not a specific type (e.g. power only).
     // Other basic types should appear greyed out.
-    object sel2 = clone_object("/guilds/runeskald/selectors/craftRuneSelector.c");
+    object secondSelector =
+        clone_object("/guilds/runeskald/selectors/craftRuneSelector.c");
 
-    object p2 = clone_object("/lib/tests/support/services/mockPlayer.c");
-    p2.Name("bob2");
-    p2.addCommands();
-    p2.addSkillPoints(500);
-    p2.advanceSkill("gem crafting", 1);
-    p2.advanceSkill("local history", 1);
-    p2.addResearchPoints(10);
-    ExpectTrue(p2.addResearchTree("/guilds/runeskald/rune-crafting.c"));
-    ExpectTrue(p2.initiateResearch("/guilds/runeskald/rune-crafting/root.c"));
-    ExpectTrue(p2.initiateResearch("/guilds/runeskald/rune-crafting/basic-power-rune.c"));
+    object secondPlayer = clone_object("/lib/tests/support/services/mockPlayer.c");
+    secondPlayer.Name("bob2");
+    secondPlayer.addCommands();
+    secondPlayer.colorConfiguration("none");
+    secondPlayer.charsetConfiguration("ascii");
+    secondPlayer.addSkillPoints(500);
+    secondPlayer.advanceSkill("gem crafting", 1);
+    secondPlayer.advanceSkill("local history", 1);
+    secondPlayer.addResearchPoints(10);
+    ExpectTrue(secondPlayer.addResearchTree("/guilds/runeskald/rune-crafting.c"));
+    ExpectTrue(secondPlayer.initiateResearch("/guilds/runeskald/rune-crafting/root.c"));
+    ExpectTrue(secondPlayer.initiateResearch(
+        "/guilds/runeskald/rune-crafting/basic-power-rune.c"));
 
-    move_object(sel2, p2);
-    sel2.initiateSelector(p2);
-    string msg = p2.caughtMessage();
+    move_object(secondSelector, secondPlayer);
+    secondSelector.initiateSelector(secondPlayer);
+    string secondMessage = secondPlayer.caughtMessage();
 
-    // power rune should be enabled; ward should be disabled
-    ExpectSubStringMatch("basic power rune", msg);
-    // The selector should still list ward but as choice disabled
-    ExpectSubStringMatch("basic ward rune", msg);
+    // Power rune researched: %-20s pad + "    " proves enabled.
+    ExpectSubStringMatch("Basic Power rune        ", secondMessage);
+    // Ward rune not researched: %-20s pad + " (X)" proves disabled.
+    ExpectSubStringMatch("Basic Ward rune      \\(X\\)", secondMessage);
 
-    destruct(p2);
-    destruct(sel2);
+    destruct(secondPlayer);
+    destruct(secondSelector);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -128,22 +158,8 @@ void ExitOptionAlwaysPresent()
 void ChoosingExitClosesSelector()
 {
     Selector.initiateSelector(Player);
-
-    // Count menu items - exit is always last.
-    string msg = Player.caughtMessage();
-    // Determine exit option number by counting lines that start with [N]
-    string *lines = explode(msg, "\n");
-    int lastOption = 0;
-    foreach (string line in lines)
-    {
-        int n;
-        if (sscanf(line, "    [%d]", n) == 1 && n > lastOption)
-        {
-            lastOption = n;
-        }
-    }
-    ExpectTrue(lastOption > 0);
-    command(to_string(lastOption), Player);
-    // Selector cleans up after exit - object should be destructed.
-    ExpectFalse(objectp(Selector));
+    // Setup researches only basic tier (6 types) + Exit = option 7.
+    Selector.applySelection("7");
+    ExpectSubStringMatch("You have selected 'Exit Craft Rune Menu'",
+        Player.caughtMessage());
 }

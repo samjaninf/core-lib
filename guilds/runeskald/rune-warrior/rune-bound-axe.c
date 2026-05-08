@@ -17,7 +17,7 @@ protected void Setup()
         (["type": "research"]));
 
     addSpecification("limited by", (["equipment": ({
-        "axe", "battle axe", "great axe" })]));
+        "axe" })]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

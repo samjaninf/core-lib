@@ -17,7 +17,7 @@ protected void Setup()
         (["type": "research"]));
 
     addSpecification("limited by", (["equipment": ({
-        "mace", "flail", "morning star" })]));
+        "mace", "flail" })]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

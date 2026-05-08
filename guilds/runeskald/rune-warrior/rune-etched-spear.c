@@ -17,7 +17,7 @@ protected void Setup()
         (["type": "research"]));
 
     addSpecification("limited by", (["equipment": ({
-        "spear", "pole arm" })]));
+        "pole arm" })]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

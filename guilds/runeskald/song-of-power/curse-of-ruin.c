@@ -2,7 +2,7 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/instantaneousActiveResearchItem.c";
+inherit "/lib/modules/research/instantaneousPersistedActiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
@@ -40,6 +40,9 @@ protected void Setup()
             "range": 30
         ])
     }));
+
+    addSpecification("penalty to attack", 2);
+    addSpecification("penalty to defense", 2);
 
     addSpecification("modifiers", ({
         ([

@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "fire chain");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::unleash## runic fire that leaps between nearby foes.");
 
     addSpecification("spell point cost", 32);

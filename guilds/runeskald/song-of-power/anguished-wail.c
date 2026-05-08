@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "anguished wail");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::let## out an anguished wail laced with runic grief that scours the area.");
 
     addSpecification("spell point cost", 38);

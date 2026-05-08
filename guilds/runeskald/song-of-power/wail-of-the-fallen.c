@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing wail of the fallen");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::unleash## a wail of fallen warriors that echoes through the area.");
 
     addSpecification("spell point cost", 35);

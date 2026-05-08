@@ -23,7 +23,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke full runic awakening");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::blaze## with blazing rune-light as every inscription ignites at once.");
 
     addSpecification("spell point cost", 70);

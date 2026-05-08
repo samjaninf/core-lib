@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke guardian spirit surge");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::surge## the guardian spirit to full force, encased in rippling spirit-light.");
 
     addSpecification("spell point cost", 45);

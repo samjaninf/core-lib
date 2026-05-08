@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "paint rune of fury");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::paint## the rune of fury across their chest, eyes blazing with battle-rage.");
 
     addSpecification("stamina point cost", 15);

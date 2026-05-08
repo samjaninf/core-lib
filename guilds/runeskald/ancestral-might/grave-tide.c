@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke grave tide");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::tear## open a rift to the spirit world and a tide of grave-cold ghosts pours forth.");
 
     addSpecification("spell point cost", 60);

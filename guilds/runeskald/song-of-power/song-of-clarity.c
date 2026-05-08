@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing song of clarity");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::begin## the clarity-song, mind sharpening with each measure.");
 
     addSpecification("spell point cost", 20);

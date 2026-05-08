@@ -21,9 +21,9 @@ protected void Setup()
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("command template", "fuse rune ##Target## into ##SecondTarget##");
-    addSpecification("use message",
-        "##InitiatorName## traces ancient symbols in the air, binding a rune into ##SecondTargetName##.");
+    addSpecification("command template", "fuse rune ##Target##");
+    addSpecification("use ability message",
+        "##InitiatorName## traces ancient symbols in the air, binding a rune into ##TargetName##.");
     addSpecification("stamina point cost", 20);
     addSpecification("spell point cost", 15);
 }

@@ -25,7 +25,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestral ascendance");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::ascend## briefly into the spirit realm, blazing with the combined might of all their ancestors.");
 
     addSpecification("spell point cost", 70);

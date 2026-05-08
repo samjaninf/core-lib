@@ -10,6 +10,7 @@ object Selector;
 /////////////////////////////////////////////////////////////////////////////
 void Setup()
 {
+    load_object("/guilds/runeskald/runeskald.c");
     Selector = clone_object("/guilds/runeskald/selectors/craftRuneSelector.c");
 
     Player = clone_object("/lib/tests/support/services/mockPlayer.c");
@@ -34,6 +35,15 @@ void Setup()
     Player.advanceLevel("runeskald");
     Player.addExperience(10000);
     Player.advanceLevel("runeskald");
+    Player.addExperience(10000);
+    Player.advanceLevel("runeskald");
+    Player.addExperience(10000);
+    Player.advanceLevel("runeskald");
+    Player.addExperience(10000);
+    Player.advanceLevel("runeskald");
+    Player.addExperience(10000);
+    Player.advanceLevel("runeskald");
+    ExpectEq("x", Player.memberOfGuilds());
 
     ExpectTrue(Player.initiateResearch(
         "/guilds/runeskald/rune-crafting/basic-power-rune.c"));
@@ -102,6 +112,7 @@ void ElderRunesAppearAfterElderResearchGranted()
 {
     Player.advanceSkill("gem crafting", 5);
     Player.advanceSkill("spellcraft", 3);
+	ExpectEq("x", Player.guildLevel("runeskald"), "Player should be guild level x after advancement");
     ExpectTrue(Player.initiateResearch(
         "/guilds/runeskald/rune-crafting/elder-rune-crafting.c"));
     ExpectTrue(Player.initiateResearch(

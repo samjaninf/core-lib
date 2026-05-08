@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke runic war form");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName##'s runes blaze with combined power as they enter the supreme runic war form.");
 
     addSpecification("spell point cost", 50);

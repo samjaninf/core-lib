@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestor's resolve");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::draw## on an ancestor's resolve, breathing steadier and standing taller.");
 
     addSpecification("spell point cost", 25);

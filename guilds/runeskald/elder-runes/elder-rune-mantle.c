@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke elder rune mantle");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::weave## a flowing mantle of elder rune light around themselves.");
 
     addSpecification("spell point cost", 35);

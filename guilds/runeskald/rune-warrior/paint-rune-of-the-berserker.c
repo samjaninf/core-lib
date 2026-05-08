@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke paint rune of the berserker");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::inscribe## the blazing rune of the berserker across their body, eyes going wild.");
 
     addSpecification("spell point cost", 35);

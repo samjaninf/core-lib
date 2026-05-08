@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune lunge ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::lunge## forward with rune-amplified speed, blade driving at ##TargetName##.");
 
     addSpecification("spell point cost", 22);

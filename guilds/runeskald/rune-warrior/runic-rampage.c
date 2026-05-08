@@ -23,7 +23,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "runic rampage");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::enter## a runic rampage, weapon flashing with rune-light as it carves through all nearby foes.");
 
     addSpecification("spell point cost", 50);

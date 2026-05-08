@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "fire bolt ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::hurl## a searing bolt of runic fire at ##TargetName##.");
 
     addSpecification("spell point cost", 18);

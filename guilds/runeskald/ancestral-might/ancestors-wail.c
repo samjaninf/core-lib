@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestor's wail ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::release## a haunting wail of ancestral sorrow that shakes ##TargetName## to the core.");
 
     addSpecification("spell point cost", 28);

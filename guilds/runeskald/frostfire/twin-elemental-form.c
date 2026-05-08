@@ -25,7 +25,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke twin elemental form");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::assume## twin elemental form, blazing with frost on one side and fire on the other.");
 
     addSpecification("spell point cost", 70);

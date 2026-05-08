@@ -19,7 +19,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "runic flame ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::ignite## a rune, releasing a bolt of runic fire at ##TargetName##.");
 
     addSpecification("spell point cost", 20);

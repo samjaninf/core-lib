@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing war chant");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::bellow## a thundering war chant, eyes blazing with battle-fury.");
 
     addSpecification("spell point cost", 20);

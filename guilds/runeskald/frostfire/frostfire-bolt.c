@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "frostfire bolt ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::hurl## a swirling bolt of frost and flame at ##TargetName##.");
 
     addSpecification("spell point cost", 30);

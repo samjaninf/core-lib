@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing ode of iron");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::sing## the ode of iron, skin hardening with each resonating phrase.");
 
     addSpecification("spell point cost", 20);

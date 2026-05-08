@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "inscribe rune of clarity");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::trace## a clarity rune on their brow, eyes suddenly sharp with focus.");
 
     addSpecification("spell point cost", 25);

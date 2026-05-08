@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestor's eye");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName##'s gaze sharpens with borrowed ancestral sight.");
 
     addSpecification("spell point cost", 20);

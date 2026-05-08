@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "frostfire cataclysm");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::unleash## a cataclysmic explosion of frost and fire that engulfs the entire area.");
 
     addSpecification("spell point cost", 65);

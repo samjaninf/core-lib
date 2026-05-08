@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke world rune aegis");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::speak## a world rune of warding and blazing runic light encases their body.");
 
     addSpecification("spell point cost", 70);

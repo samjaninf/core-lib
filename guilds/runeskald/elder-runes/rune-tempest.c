@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke rune tempest");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::call## down a tempest of rune lightning that tears through the surrounding area.");
 
     addSpecification("spell point cost", 52);

@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing saga of annihilation");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::sing## the saga of annihilation, voice cracking like thunder across the battlefield.");
 
     addSpecification("spell point cost", 55);

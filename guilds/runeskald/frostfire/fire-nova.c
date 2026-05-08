@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "fire nova");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::erupt## in a burst of runic fire, scorching all nearby foes.");
 
     addSpecification("spell point cost", 24);

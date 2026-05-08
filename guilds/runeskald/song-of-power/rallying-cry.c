@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rallying cry");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::let## out a thundering rallying cry, shoulders squaring with renewed resolve.");
 
     addSpecification("spell point cost", 15);

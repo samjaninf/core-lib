@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune pulse");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::unleash## a pulse of rune force that rattles everything nearby.");
 
     addSpecification("spell point cost", 20);

@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "frostfire aura");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::kindle## a mantle of intertwined frost and fire that crackles around them.");
 
     addSpecification("spell point cost", 40);

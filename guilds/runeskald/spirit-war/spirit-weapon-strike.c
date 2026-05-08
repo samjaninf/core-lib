@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke spirit weapon strike ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::drive## a spirit-channeled strike into ##TargetName##.");
 
     addSpecification("spell point cost", 30);

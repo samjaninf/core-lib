@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke wrathful barrage");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::channel## a surge of ancestral wrath into a barrage of spiritual missiles.");
 
     addSpecification("spell point cost", 38);

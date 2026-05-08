@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune smash ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::bring## a rune-empowered smash down on ##TargetName## with bone-crushing force.");
 
     addSpecification("spell point cost", 22);

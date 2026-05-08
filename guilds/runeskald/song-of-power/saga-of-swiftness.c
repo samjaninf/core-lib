@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing saga of swiftness");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::begin## the saga of the swift, footwork quickening with the rhythm.");
 
     addSpecification("spell point cost", 22);

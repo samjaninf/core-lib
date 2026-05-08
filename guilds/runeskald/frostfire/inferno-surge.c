@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke inferno surge");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::ignite## the air in a surge of incinerating runic flame that scorches all nearby foes.");
 
     addSpecification("spell point cost", 35);

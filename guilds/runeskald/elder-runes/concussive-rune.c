@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "concussive rune ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::detonate## a concussive rune against ##TargetName##, rattling them senseless.");
 
     addSpecification("spell point cost", 30);

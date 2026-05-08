@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "inscribe rune of resilience");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::inscribe## a resilience rune across their chest, radiating enduring vitality.");
 
     addSpecification("spell point cost", 35);

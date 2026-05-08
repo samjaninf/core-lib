@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke voice of the dead");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::channel## the voices of the dead in a resonating cry that rattles all nearby foes.");
 
     addSpecification("spell point cost", 40);

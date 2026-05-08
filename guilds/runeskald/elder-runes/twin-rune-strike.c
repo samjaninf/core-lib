@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "twin rune strike ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::detonate## twin runes in rapid succession against ##TargetName##.");
 
     addSpecification("spell point cost", 38);

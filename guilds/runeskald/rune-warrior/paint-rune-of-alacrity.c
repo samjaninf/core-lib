@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "paint rune of alacrity");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::paint## runes of alacrity across their arms, movements sharpening instantly.");
 
     addSpecification("stamina point cost", 18);

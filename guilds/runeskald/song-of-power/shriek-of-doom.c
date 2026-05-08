@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing shriek of doom");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::unleash## a bone-rattling shriek of doom that tears through everything nearby.");
 
     addSpecification("spell point cost", 40);

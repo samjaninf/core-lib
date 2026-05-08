@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke spirit barrage");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::send## a barrage of ancestor spirits howling at all nearby foes.");
 
     addSpecification("spell point cost", 28);

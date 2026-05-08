@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "paint rune of endurance");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::paint## runes of endurance along their spine, breathing easier.");
 
     addSpecification("stamina point cost", 12);

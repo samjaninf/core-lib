@@ -23,7 +23,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune burst ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## shatters a rune-stone, blasting ##TargetName## with raw elemental force.");
     addSpecification("failure message",
         "##InitiatorName## fumbles a rune-stone - nothing happens.");

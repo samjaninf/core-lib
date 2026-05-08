@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke rune warrior's resolve");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::breathe## deeply and reinforce their body runes with focused will.");
 
     addSpecification("spell point cost", 30);

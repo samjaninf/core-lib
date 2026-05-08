@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke rune of the world-frost ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::speak## the rune of the world-frost and a wave of primordial cold crashes into ##TargetName##.");
 
     addSpecification("spell point cost", 70);

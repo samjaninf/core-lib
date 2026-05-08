@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke world singers transcendence");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::speak## their name in the primordial tongue and blazes as living rune-fire.");
 
     addSpecification("spell point cost", 120);

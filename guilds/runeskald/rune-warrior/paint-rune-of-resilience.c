@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "paint rune of resilience");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::cover## their body in resilience runes, wounds knitting more quickly.");
 
     addSpecification("stamina point cost", 18);

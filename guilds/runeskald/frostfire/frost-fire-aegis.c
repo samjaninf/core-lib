@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke frost-fire aegis");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::raise## a swirling aegis of frost and fire that crackles around them.");
 
     addSpecification("spell point cost", 45);

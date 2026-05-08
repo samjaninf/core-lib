@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "frostfire mantle");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::wrap## themselves in a swirling mantle of intertwined frost and flame.");
 
     addSpecification("spell point cost", 35);

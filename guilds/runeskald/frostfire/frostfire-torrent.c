@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "frostfire torrent ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::blast## ##TargetName## with a torrent of intertwined frost and flame.");
 
     addSpecification("spell point cost", 40);

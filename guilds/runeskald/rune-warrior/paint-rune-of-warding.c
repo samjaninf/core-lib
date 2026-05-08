@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "paint rune of warding");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::paint## a ward rune across their torso, skin shimmering with protection.");
 
     addSpecification("stamina point cost", 15);

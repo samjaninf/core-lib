@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke paint rune of vitality");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::inscribe## a glowing rune of vitality across their torso.");
 
     addSpecification("spell point cost", 28);

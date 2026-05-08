@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "ancient rune blast ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## shatters an ancient rune at ##TargetName## with a deafening crack of raw power.");
 
     addSpecification("spell point cost", 50);

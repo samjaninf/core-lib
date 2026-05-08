@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke blizzard strike");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::launch## a barrage of razor ice shards that rakes everything nearby.");
 
     addSpecification("spell point cost", 35);

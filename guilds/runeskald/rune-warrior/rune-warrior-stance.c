@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune warrior stance");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::settle## into the ancient rune warrior's stance, runes blazing across their body.");
 
     addSpecification("stamina point cost", 25);

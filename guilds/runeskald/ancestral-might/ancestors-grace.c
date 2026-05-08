@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestor's grace");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::move## with sudden ancestral grace, motions flowing with borrowed precision.");
 
     addSpecification("spell point cost", 28);

@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestor's shield");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::call## an ancestor to interpose themselves, a ghostly shimmer forming around them.");
 
     addSpecification("spell point cost", 25);

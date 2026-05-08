@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke rune armor");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::trace## glowing elder runes across their armor, runes flaring with protective light.");
 
     addSpecification("spell point cost", 28);

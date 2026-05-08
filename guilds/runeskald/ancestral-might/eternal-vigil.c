@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke eternal vigil");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::call## the entire ancestral line to stand eternal vigil, a host of spirit-lights forming.");
 
     addSpecification("spell point cost", 55);

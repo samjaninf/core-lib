@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "elemental dominion");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::achieve## elemental dominion, blazing with transcendent frost and fire.");
 
     addSpecification("spell point cost", 70);

@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "inscribe rune of fortitude");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::carve## a fortitude rune over their heart, flushed with enduring power.");
 
     addSpecification("spell point cost", 30);

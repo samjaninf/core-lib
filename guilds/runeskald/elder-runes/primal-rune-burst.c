@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "primal rune burst ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## shatters a primal rune with a thunderous concussion, engulfing ##TargetName## in primordial force.");
 
     addSpecification("spell point cost", 65);

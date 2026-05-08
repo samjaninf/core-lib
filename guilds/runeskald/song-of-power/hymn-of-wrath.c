@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing hymn of wrath");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::begin## the hymn of wrath, voice deepening with primal fury.");
 
     addSpecification("spell point cost", 35);

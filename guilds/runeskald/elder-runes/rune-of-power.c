@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "inscribe rune of power");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::inscribe## a power rune on their weapon arm, crackling with force.");
 
     addSpecification("spell point cost", 30);

@@ -25,7 +25,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke spirit legion");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::summon## a legion of ancestor spirits that swirl in a protective ring.");
 
     addSpecification("spell point cost", 45);

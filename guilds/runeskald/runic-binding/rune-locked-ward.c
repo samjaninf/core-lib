@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke rune-locked ward");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::flare## the warding rune, wreathed in a barrier of runic light.");
 
     addSpecification("spell point cost", 35);

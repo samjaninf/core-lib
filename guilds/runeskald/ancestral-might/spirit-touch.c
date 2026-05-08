@@ -19,7 +19,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke spirit touch ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::reach## through the spirit veil to touch ##TargetName## with cold ancestral energy.");
 
     addSpecification("spell point cost", 18);

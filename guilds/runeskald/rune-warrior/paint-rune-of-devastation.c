@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "paint rune of devastation");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::paint## the rune of devastation down their weapon arm, the air crackling with power.");
 
     addSpecification("stamina point cost", 22);

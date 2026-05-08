@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke rune of the world-flame");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::speak## the rune of the world-flame and their weapon blazes with primordial fire.");
 
     addSpecification("spell point cost", 65);

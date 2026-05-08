@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "infernal pyre ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::ignite## an infernal pyre of runic fire beneath ##TargetName##.");
 
     addSpecification("spell point cost", 45);

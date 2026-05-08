@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestor's fortitude");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::draw## on an ancestor's fortitude, wounds ceasing to slow them.");
 
     addSpecification("spell point cost", 30);

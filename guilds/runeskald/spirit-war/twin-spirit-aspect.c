@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke twin spirit aspect");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::blaze## with two spirit-lights as warrior and guardian aspects merge within.");
 
     addSpecification("spell point cost", 60);

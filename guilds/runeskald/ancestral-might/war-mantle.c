@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke war mantle");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::don## the war mantle of their greatest ancestor, radiant with ancient power.");
 
     addSpecification("spell point cost", 60);

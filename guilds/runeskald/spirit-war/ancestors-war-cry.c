@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestors war cry");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::unleash## an ancestral war cry that echoes with spirit-thunder.");
 
     addSpecification("spell point cost", 50);

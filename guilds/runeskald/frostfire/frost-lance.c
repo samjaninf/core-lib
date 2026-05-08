@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "frost lance ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::conjure## a lance of glacial rune-ice and hurls it at ##TargetName##.");
 
     addSpecification("spell point cost", 28);

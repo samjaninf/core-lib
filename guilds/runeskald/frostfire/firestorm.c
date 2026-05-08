@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "firestorm");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::conjure## a raging firestorm of runic flame that scorches the area.");
 
     addSpecification("spell point cost", 38);

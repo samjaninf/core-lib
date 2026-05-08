@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "primal rune nova");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## shatters a primal rune, unleashing a nova of primordial destruction across the entire area.");
 
     addSpecification("spell point cost", 80);

@@ -27,7 +27,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "sing elder saga");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::begin## the great elder saga, voice swelling with ancient power.");
 
     addSpecification("spell point cost", 40);

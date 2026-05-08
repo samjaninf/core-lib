@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke frostfire barrage ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::hammer## ##TargetName## with a rapid barrage of alternating frost and fire.");
 
     addSpecification("spell point cost", 40);

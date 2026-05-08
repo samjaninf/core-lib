@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "glacial brand ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::hurl## a shard of glacial rune-ice at ##TargetName##.");
 
     addSpecification("spell point cost", 20);

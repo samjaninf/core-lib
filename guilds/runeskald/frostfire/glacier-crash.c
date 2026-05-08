@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "glacier crash ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::crash## a massive wall of rune-ice down upon ##TargetName##.");
 
     addSpecification("spell point cost", 45);

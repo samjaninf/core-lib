@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestral vengeance ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::channel## the vengeance of an entire bloodline into one devastating strike at ##TargetName##.");
 
     addSpecification("spell point cost", 40);

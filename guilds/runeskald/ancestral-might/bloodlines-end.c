@@ -24,7 +24,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke bloodline's end");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::collapse## the full power of their bloodline into one cataclysmic eruption.");
 
     addSpecification("spell point cost", 80);

@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune cleave");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::sweep## their weapon in a rune-lit arc, striking all nearby foes.");
 
     addSpecification("spell point cost", 35);

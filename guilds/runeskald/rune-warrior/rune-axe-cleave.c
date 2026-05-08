@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune axe cleave");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::swing## their rune-bound axe in a brutal arc, biting into nearby foes.");
 
     addSpecification("spell point cost", 20);

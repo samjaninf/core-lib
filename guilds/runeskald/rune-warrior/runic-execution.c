@@ -23,7 +23,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "runic execution ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::channel## every painted rune into one thunderous execution strike against ##TargetName##.");
 
     addSpecification("spell point cost", 35);

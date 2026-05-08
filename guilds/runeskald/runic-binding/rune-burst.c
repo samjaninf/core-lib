@@ -20,7 +20,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke rune-burst ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::detonate## a bound rune in a blinding flash of runic force at ##TargetName##.");
 
     addSpecification("spell point cost", 45);

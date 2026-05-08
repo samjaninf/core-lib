@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune shatter");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::shatter## a ward-rune in a burst of protective force that blasts all nearby foes.");
 
     addSpecification("spell point cost", 30);

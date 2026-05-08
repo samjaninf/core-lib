@@ -21,7 +21,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "runic whirlwind");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::spin## in a blazing runic whirlwind, weapon carving through all nearby foes.");
 
     addSpecification("spell point cost", 40);

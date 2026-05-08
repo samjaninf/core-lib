@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune detonation");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::trigger## a catastrophic chain detonation as all their inscribed runes explode at once.");
 
     addSpecification("spell point cost", 55);

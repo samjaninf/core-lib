@@ -25,7 +25,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "elder rune blast ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## shatters an elder rune with a thunderous crack, "
         "blasting ##TargetName## with overwhelming elemental force.");
     addSpecification("failure message",

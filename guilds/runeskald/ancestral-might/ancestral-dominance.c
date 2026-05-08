@@ -25,7 +25,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "invoke ancestral dominance");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::radiate## the crushing will of countless ancestors, bending the battlefield to their dominance.");
 
     addSpecification("spell point cost", 38);

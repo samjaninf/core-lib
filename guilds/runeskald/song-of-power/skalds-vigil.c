@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "hum skald's vigil");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::hum## a low ancient vigil-tone that reinforces their endurance.");
 
     addSpecification("spell point cost", 10);

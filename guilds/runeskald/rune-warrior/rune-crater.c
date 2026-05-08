@@ -22,7 +22,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "rune crater");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::slam## a rune-charged weapon into the ground, sending a shockwave through nearby enemies.");
 
     addSpecification("spell point cost", 22);

@@ -19,7 +19,7 @@ protected void Setup()
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("command template", "ice shard ##Target##");
-    addSpecification("use message",
+    addSpecification("use ability message",
         "##InitiatorName## ##Infinitive::conjure## a rune-ice shard and drives it into ##TargetName##.");
 
     addSpecification("spell point cost", 12);

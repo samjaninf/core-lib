@@ -111,7 +111,6 @@ private void SeventhLevel()
     addChild("/guilds/runeskald/song-of-power/voice-mastery.c",
         "/guilds/runeskald/song-of-power/saga-lore.c");
 }
-}
 
 /////////////////////////////////////////////////////////////////////////////
 private void EighthLevel()
@@ -134,7 +133,7 @@ private void NinthLevel()
     addChild("/guilds/runeskald/song-of-power/saga-of-the-hero.c",
         "/guilds/runeskald/song-of-power/saga-of-the-fallen.c");
     addChild("/guilds/runeskald/song-of-power/wail-of-the-fallen.c",
-        "/guilds/runeskald/song-of-power/anguished-wail.c");
+        "/guilds/runeskald/song-of-power/battle-howl.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

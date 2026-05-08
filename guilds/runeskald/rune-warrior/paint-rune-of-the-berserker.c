@@ -30,7 +30,7 @@ protected void Setup()
 
     addSpecification("bonus attack", 6);
     addSpecification("bonus damage", 6);
-    addSpecification("penalty armor class", 2);
+    addSpecification("penalty to armor class", 2);
     addSpecification("duration", 20);
 
     addSpecification("modifiers", ({

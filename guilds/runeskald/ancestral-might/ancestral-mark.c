@@ -2,7 +2,7 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/instantaneousActiveResearchItem.c";
+inherit "/lib/modules/research/persistedActiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
@@ -28,8 +28,8 @@ protected void Setup()
     addSpecification("spell point cost", 20);
     addSpecification("stamina point cost", 8);
 
-    addSpecification("penalty attack", 2);
-    addSpecification("penalty defense", 2);
+    addSpecification("penalty to attack", 2);
+    addSpecification("penalty to defense", 2);
     addSpecification("duration", 15);
 
     addSpecification("modifiers", ({

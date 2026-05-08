@@ -56,9 +56,9 @@ private void ThirdLevel()
     addChild("/guilds/runeskald/rune-warrior/paint-rune-of-warding.c",
         "/guilds/runeskald/rune-warrior/paint-rune-of-iron.c");
     addChild("/guilds/runeskald/rune-warrior/paint-rune-of-wrath.c",
-        "/guilds/runeskald/rune-warrior/body-rune-mastery.c");
+        "/guilds/runeskald/rune-warrior/paint-rune-of-speed.c");
     addChild("/guilds/runeskald/rune-warrior/paint-rune-of-swiftness.c",
-        "/guilds/runeskald/rune-warrior/body-rune-mastery.c");
+        "/guilds/runeskald/rune-warrior/paint-rune-of-iron.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

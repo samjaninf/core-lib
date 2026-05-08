@@ -127,7 +127,7 @@ private void TenthLevel()
     addChild("/guilds/runeskald/elder-runes/rune-of-fortitude.c",
         "/guilds/runeskald/elder-runes/rune-shatter.c");
     addChild("/guilds/runeskald/elder-runes/elder-rune-mantle.c",
-        "/guilds/runeskald/elder-runes/rune-of-power.c");
+        "/guilds/runeskald/elder-runes/rune-shatter.c");
 }
 
 /////////////////////////////////////////////////////////////////////////////

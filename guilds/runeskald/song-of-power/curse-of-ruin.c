@@ -41,9 +41,6 @@ protected void Setup()
         ])
     }));
 
-    addSpecification("penalty attack", 2);
-    addSpecification("penalty defense", 2);
-
     addSpecification("modifiers", ({
         ([
             "type": "attribute",

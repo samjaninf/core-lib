@@ -28,14 +28,14 @@ public void SetupGuild()
         "title": "the Drambor Edlothiad",
         "pretitle": "Blade Singer",
         "previous rank": "initiate",
-        "next rank": "arcane warrior",
+        "next rank": "spell sword",
         "delay for next promotion": 3600
     ]));
 
-    addRank("arcane warrior", ([
-        "name": "arcane warrior",
-        "title": "the Drambor Edlothiad",
-        "pretitle": "Arcane Warrior",
+    addRank("spell sword", ([
+        "name": "spell sword",
+        "title": ", Spell Sword of the Drambor Edlothiad",
+        "pretitle": "Spell Sword",
         "previous rank": "blade singer",
         "next rank": "high blade singer",
         "delay for next promotion": 7200
@@ -45,7 +45,7 @@ public void SetupGuild()
         "name": "high blade singer",
         "title": ", High Blade Singer of the Drambor",
         "pretitle": "High Blade Singer",
-        "previous rank": "arcane warrior"
+        "previous rank": "spell sword"
     ]));
 
     setDefaultRank("initiate");
@@ -138,5 +138,23 @@ public void SetupGuild()
         "type": "research tree",
         "apply": "at rank blade singer",
         "research tree": "/guilds/drambor-edlothiad/elven-heritage.c"
+    ]));
+
+    addCriteria("blade enchantments", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/drambor-edlothiad/blade-enchantments.c"
+    ]));
+
+    addCriteria("high blade singer", ([
+        "type": "research tree",
+        "apply": "at rank blade singer",
+        "research tree": "/guilds/drambor-edlothiad/high-blade-singer.c"
+    ]));
+
+    addCriteria("spell sword", ([
+        "type": "research tree",
+        "apply": "at rank spell sword",
+        "research tree": "/guilds/drambor-edlothiad/spell-sword.c"
     ]));
 }

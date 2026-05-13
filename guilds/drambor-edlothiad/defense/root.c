@@ -2,15 +2,18 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Mystical Defense Fundamentals");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This research strengthens the "
+        "battlemage's magical defenses and protective capabilities.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus defense", 1);
+    addSpecification("bonus resist magical", 1);
 }

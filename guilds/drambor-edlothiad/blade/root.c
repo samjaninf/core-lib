@@ -2,15 +2,21 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Blade and Magic Fundamentals");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This skill provides the user with the "
+        "fundamental knowledge of combining bladework with arcane energy, "
+        "the core technique of the Drambor Edlothiad.");
+
+    addSpecification("limited by", (["equipment": ({ "long sword",
+        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus attack", 1);
 }

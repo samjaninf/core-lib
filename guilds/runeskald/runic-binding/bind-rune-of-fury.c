@@ -22,18 +22,4 @@ protected void Setup()
     addSpecification("bonus attack", 3);
     addSpecification("bonus damage", 4);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "strength",
-            "formula": "additive",
-            "rate": 0.04
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.05
-        ])
-    }));
 }

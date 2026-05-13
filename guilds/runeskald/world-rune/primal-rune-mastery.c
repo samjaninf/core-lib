@@ -32,24 +32,4 @@ protected void Setup()
     addSpecification("bonus spell points", 60);
     addSpecification("bonus stamina points", 50);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "intelligence",
-            "formula": "additive",
-            "rate": 0.09
-        ]),
-        ([
-            "type": "attribute",
-            "name": "constitution",
-            "formula": "additive",
-            "rate": 0.09
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.10
-        ])
-    }));
 }

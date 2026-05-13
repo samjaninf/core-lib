@@ -22,18 +22,4 @@ protected void Setup()
     addSpecification("bonus spell points", 50);
     addSpecification("bonus heal spell points", 6);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "intelligence",
-            "formula": "additive",
-            "rate": 0.07
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.08
-        ])
-    }));
 }

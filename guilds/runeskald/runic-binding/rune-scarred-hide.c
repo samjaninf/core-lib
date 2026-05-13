@@ -22,18 +22,4 @@ protected void Setup()
     addSpecification("bonus soak", 6);
     addSpecification("bonus hit points", 40);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "constitution",
-            "formula": "additive",
-            "rate": 0.07
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.05
-        ])
-    }));
 }

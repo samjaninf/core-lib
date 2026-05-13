@@ -22,6 +22,5 @@ protected void Setup()
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("bonus spear", 3);
-    addSpecification("bonus pole arm", 2);
+    addSpecification("bonus pole arm", 5);
 }

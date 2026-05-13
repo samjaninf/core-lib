@@ -22,18 +22,4 @@ protected void Setup()
     addSpecification("bonus armor class", 3);
     addSpecification("bonus soak", 3);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "constitution",
-            "formula": "additive",
-            "rate": 0.04
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.05
-        ])
-    }));
 }

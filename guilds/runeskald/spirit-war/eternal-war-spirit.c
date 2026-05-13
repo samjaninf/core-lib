@@ -29,24 +29,4 @@ protected void Setup()
     addSpecification("bonus hit points", 50);
     addSpecification("bonus stamina points", 40);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "strength",
-            "formula": "additive",
-            "rate": 0.07
-        ]),
-        ([
-            "type": "attribute",
-            "name": "constitution",
-            "formula": "additive",
-            "rate": 0.07
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.09
-        ])
-    }));
 }

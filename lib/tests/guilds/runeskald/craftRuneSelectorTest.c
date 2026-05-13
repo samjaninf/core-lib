@@ -8,6 +8,27 @@ object Player;
 object Selector;
 
 /////////////////////////////////////////////////////////////////////////////
+private void Init()
+{
+    ignoreList += ({ "AdvanceToLevel" });
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private int AdvanceToLevel(int level)
+{
+    int runningLevel = Player.guildLevel("runeskald");
+    while ((Player.guildLevel("runeskald") < level) &&
+           Player.memberOfGuild("runeskald"))
+    {
+        Player.addExperience(1000 * (runningLevel + 1));
+        Player.advanceLevel("runeskald");
+        command("exit", Player);
+        runningLevel = Player.guildLevel("runeskald");
+    }
+    return runningLevel;
+}
+
+/////////////////////////////////////////////////////////////////////////////
 void Setup()
 {
     load_object("/guilds/runeskald/runeskald.c");
@@ -25,25 +46,11 @@ void Setup()
     Player.advanceSkill("spellcraft", 5);
 
     Player.addResearchPoints(20);
-    ExpectTrue(Player.addResearchTree(
-        "/guilds/runeskald/rune-crafting.c"));
 
     Player.joinGuild("runeskald");
-    Player.addExperience(10000);
-    Player.advanceLevel("runeskald");
-    Player.addExperience(10000);
-    Player.advanceLevel("runeskald");
-    Player.addExperience(10000);
-    Player.advanceLevel("runeskald");
-    Player.addExperience(10000);
-    Player.advanceLevel("runeskald");
-    Player.addExperience(10000);
-    Player.advanceLevel("runeskald");
-    Player.addExperience(10000);
-    Player.advanceLevel("runeskald");
-    Player.addExperience(10000);
-    Player.advanceLevel("runeskald");
-    ExpectEq("x", Player.memberOfGuilds());
+    command("exit", Player);
+    AdvanceToLevel(7);
+    ExpectEq(({ "runeskald" }), Player.memberOfGuilds());
 
     ExpectTrue(Player.initiateResearch(
         "/guilds/runeskald/rune-crafting/basic-power-rune.c"));
@@ -110,17 +117,16 @@ void TopLevelMenuDoesNotShowElderRunesWithoutElderResearch()
 /////////////////////////////////////////////////////////////////////////////
 void ElderRunesAppearAfterElderResearchGranted()
 {
-    Player.advanceSkill("gem crafting", 5);
-    Player.advanceSkill("spellcraft", 3);
-	ExpectEq("x", Player.guildLevel("runeskald"), "Player should be guild level x after advancement");
-    ExpectTrue(Player.initiateResearch(
-        "/guilds/runeskald/rune-crafting/elder-rune-crafting.c"));
-    ExpectTrue(Player.initiateResearch(
-        "/guilds/runeskald/rune-crafting/elder-power-rune.c"));
+	Player.advanceSkill("gem crafting", 5);
+	Player.advanceSkill("spellcraft", 3);
+	ExpectTrue(Player.initiateResearch(
+		"/guilds/runeskald/rune-crafting/elder-rune-crafting.c"));
+	ExpectTrue(Player.initiateResearch(
+		"/guilds/runeskald/rune-crafting/elder-power-rune.c"));
 
-    Selector.initiateSelector(Player);
-    string msg = Player.caughtMessage();
-    ExpectSubStringMatch("Elder Power rune", msg);
+	Selector.initiateSelector(Player);
+	string msg = Player.caughtMessage();
+	ExpectSubStringMatch("Elder Power rune", msg);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -140,8 +146,8 @@ void UnresearchedTypeAppearsDisabledInMenu()
     secondPlayer.advanceSkill("gem crafting", 1);
     secondPlayer.advanceSkill("local history", 1);
     secondPlayer.addResearchPoints(10);
-    ExpectTrue(secondPlayer.addResearchTree("/guilds/runeskald/rune-crafting.c"));
-    ExpectTrue(secondPlayer.initiateResearch("/guilds/runeskald/rune-crafting/root.c"));
+    secondPlayer.joinGuild("runeskald");
+    command("exit", secondPlayer);
     ExpectTrue(secondPlayer.initiateResearch(
         "/guilds/runeskald/rune-crafting/basic-power-rune.c"));
 

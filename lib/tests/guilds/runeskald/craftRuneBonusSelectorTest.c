@@ -18,12 +18,12 @@ void Init()
         "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_72_#0002",
         "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_75_#0003",
         "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_75_#0004",
-        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_411_#0005",
-        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_412_#0006",
-        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_475_#0007",
-        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_513_#0008",
-        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_554_#0009",
-        });
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_415_#0005",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_416_#0006",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_479_#0007",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_517_#0008",
+        "__inline_lib_tests_guilds_runeskald_craftRuneBonusSelectorTest_c_558_#0009",
+     });
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -113,7 +113,7 @@ void FullMenuDisplaysCorrectlyBeforeBonusChosen()
     ExpectSubStringMatch("granite", msg);
     ExpectSubStringMatch("None chosen yet", msg);
 
-    // All 15 power rune bonus options present.
+    // All 21 power rune bonus options present.
     ExpectSubStringMatch("Unarmed", msg);
     ExpectSubStringMatch("Two-Handed Sword", msg);
     ExpectSubStringMatch("Strength", msg);
@@ -133,9 +133,10 @@ void FullMenuDisplaysCorrectlyBeforeBonusChosen()
     // Exit present and enabled (%-22s pad + "    " default spacing).
     ExpectSubStringMatch("Exit Bonus Selection      ", msg);
 
-    // Menu has two columns - Attack (+2) and Attack (+4) appear on the same row.
+    // Menu has two columns - verify items in ascending alpha order.
     ExpectSubStringMatch("Attack \\(\\+2\\)", msg);
-    ExpectSubStringMatch("Attack \\(\\+4\\)", msg);
+    ExpectSubStringMatch("Unarmed \\(\\+2\\)", msg);
+    ExpectSubStringMatch("Wisdom \\(\\+2\\)", msg);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -152,8 +153,8 @@ void FullMenuDisplaysCorrectlyAfterBonusChosen()
     // Chosen option shows (*) marker (%-22s pad + " (*)").
     ExpectSubStringMatch("Attack \\(\\+2\\)            \\(\\*\\)", msg);
 
-    // Other options are disabled - Unarmed (+2) is option 15 (%-22s + " (X)").
-    ExpectSubStringMatch("Unarmed \\(\\+2\\)           \\(X\\)", msg);
+    // Other options are disabled - Wisdom (+2) shows (X).
+    ExpectSubStringMatch("Wisdom \\(\\+2\\)            \\(X\\)", msg);
 
     // Craft Rune now enabled (%-22s pad + "    " default spacing).
     ExpectSubStringMatch("Craft Rune                ", msg);
@@ -253,9 +254,9 @@ void ExitOptionAlwaysPresent()
 /////////////////////////////////////////////////////////////////////////////
 void ExitDoesNotCraftRune()
 {
-    // power rune basic tier: 15 bonus options + Craft Rune (16) + Exit (17).
+    // power rune basic tier: 21 bonus options + Craft Rune (22) + Exit (23).
     Selector.initiateSelector(Player);
-    Selector.applySelection("17");
+    Selector.applySelection("23");
     ExpectEq(0, countRunesInInventory(), "No rune created on exit");
 }
 
@@ -289,6 +290,7 @@ void ElderTierScalesBonusValuesToDoubleInMenu()
     move_object(elderSelector, elderPlayer);
 
     elderSelector.initiateSelector(elderPlayer);
+    // Ascending alpha: option 1 = Attack (+4) with elder multiplier.
     ExpectSubStringMatch("\\+4", elderPlayer.caughtMessage());
 
     destruct(elderPlayer);
@@ -300,7 +302,7 @@ void BasicTierAllowsOnlyOneBonusSlot()
 {
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    // Unarmed (+2) is option 15; after slot filled it shows disabled.
+    // After one slot is filled all other options are disabled.
     ExpectSubStringMatch("Unarmed \\(\\+2\\)           \\(X\\)", Player.caughtMessage());
 }
 
@@ -327,13 +329,15 @@ void ElderTierAllowsTwoBonusSlots()
     move_object(elderSelector, elderPlayer);
 
     elderSelector.initiateSelector(elderPlayer);
-    // Options 1 and 2 are Attack (+2) and Attack (+4) in ascending alpha sort.
+    // Ascending alpha: option 1 = Attack (+4), option 2 = Axe (+4).
     elderSelector.applySelection("1");
     elderSelector.applySelection("2");
     string elderMessage = elderPlayer.caughtMessage();
-    // Both chosen bonuses appear in the header summary (descending sort).
-    ExpectSubStringMatch("Attack \\(\\+8\\)", elderMessage);
-    ExpectSubStringMatch("Attack \\(\\+4\\)", elderMessage);
+    // Both chosen bonuses appear in the header summary.
+    ExpectSubStringMatch("Attack", elderMessage);
+    ExpectSubStringMatch("Axe", elderMessage);
+    // Craft Rune is now enabled (two slots filled).
+    ExpectSubStringMatch("Craft Rune", elderMessage);
 
     destruct(elderPlayer);
     destruct(elderSelector);
@@ -342,12 +346,12 @@ void ElderTierAllowsTwoBonusSlots()
 /////////////////////////////////////////////////////////////////////////////
 void CraftingConsumesMaterialFromInventory()
 {
-    // power rune basic tier: option 1 = Attack (+2), Craft Rune = option 16.
+    // power rune basic tier: option 1 = Attack (+2), Craft Rune = option 22.
     ExpectEq(5, countMaterialInInventory("granite"));
 
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     ExpectEq(4, countMaterialInInventory("granite"),
         "One granite consumed after crafting");
@@ -360,7 +364,7 @@ void CraftingProducesRuneInInventory()
 
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     ExpectEq(1, countRunesInInventory(), "Rune appears in inventory");
 }
@@ -370,7 +374,7 @@ void CraftedRuneHasCorrectTierAndType()
 {
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune), "Rune object exists");
@@ -383,7 +387,7 @@ void CraftedRuneHasCorrectMaterialSet()
 {
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune));
@@ -395,7 +399,7 @@ void CraftedRuneHasChosenBonusApplied()
 {
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune), "Rune exists");
@@ -413,7 +417,7 @@ void CraftingWithoutMaterialFailsGracefully()
 
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     ExpectSubStringMatch("no granite", Player.caughtMessage());
     ExpectEq(0, countRunesInInventory(), "No rune created without material");
@@ -424,7 +428,7 @@ void GraniteDefenseAddsResistElectricityToRune()
 {
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune));
@@ -437,7 +441,7 @@ void GraniteHasNoMaterialAttackBonus()
 {
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     object rune = getRuneInInventory();
     ExpectFalse(rune.query("material attack physical"),
@@ -469,7 +473,7 @@ void QuartziteAttackAddsPhysicalDamageToRune()
 
     quartziteSelector.initiateSelector(quartzitePlayer);
     quartziteSelector.applySelection("1");
-    quartziteSelector.applySelection("16");
+    quartziteSelector.applySelection("22");
 
     object *runesCreated = filter(deep_inventory(quartzitePlayer),
         (: member(inherit_list($1), "/lib/items/rune.c") > -1 :));
@@ -504,10 +508,10 @@ void QuartziteDefenseAddsResistPhysicalToRune()
     move_object(quartziteWardMaterial, quartziteWardPlayer);
     move_object(quartziteWardSelector, quartziteWardPlayer);
 
-    // ward rune basic tier: 19 bonus options + Craft Rune = option 20.
+    // ward rune basic tier: 24 bonus options + Craft Rune = option 25.
     quartziteWardSelector.initiateSelector(quartziteWardPlayer);
     quartziteWardSelector.applySelection("1");
-    quartziteWardSelector.applySelection("20");
+    quartziteWardSelector.applySelection("25");
 
     object *runesCreated = filter(deep_inventory(quartziteWardPlayer),
         (: member(inherit_list($1), "/lib/items/rune.c") > -1 :));
@@ -541,14 +545,14 @@ void ValueMultiplierOnDiamondScalesRuneValue()
     move_object(diamondMaterial, diamondPlayer);
     move_object(diamondSelector, diamondPlayer);
 
-    // power rune basic tier: Craft Rune = option 16.
+    // power rune basic tier: Craft Rune = option 22.
     diamondSelector.initiateSelector(diamondPlayer);
     diamondSelector.applySelection("1");
-    diamondSelector.applySelection("16");
+    diamondSelector.applySelection("22");
 
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     object *diamondRunes = filter(deep_inventory(diamondPlayer),
         (: member(inherit_list($1), "/lib/items/rune.c") > -1 :));
@@ -568,7 +572,7 @@ void NoValueMultiplierMaterialUsesBaseValue()
 {
     Selector.initiateSelector(Player);
     Selector.applySelection("1");
-    Selector.applySelection("16");
+    Selector.applySelection("22");
 
     object rune = getRuneInInventory();
     ExpectTrue(objectp(rune));

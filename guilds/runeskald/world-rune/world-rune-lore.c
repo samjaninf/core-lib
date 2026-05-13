@@ -22,18 +22,4 @@ protected void Setup()
 
     addSpecification("bonus spell points", 40);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "intelligence",
-            "formula": "additive",
-            "rate": 0.06
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.07
-        ])
-    }));
 }

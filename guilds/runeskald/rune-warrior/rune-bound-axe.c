@@ -22,6 +22,5 @@ protected void Setup()
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("bonus axe", 3);
-    addSpecification("bonus battle axe", 2);
+    addSpecification("bonus axe", 5);
 }

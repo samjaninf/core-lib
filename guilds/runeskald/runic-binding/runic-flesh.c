@@ -21,18 +21,4 @@ protected void Setup()
 
     addSpecification("bonus hit points", 35);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "constitution",
-            "formula": "additive",
-            "rate": 0.06
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.04
-        ])
-    }));
 }

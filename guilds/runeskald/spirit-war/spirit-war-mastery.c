@@ -25,24 +25,4 @@ protected void Setup()
     addSpecification("bonus armor class", 4);
     addSpecification("bonus hit points", 30);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "strength",
-            "formula": "additive",
-            "rate": 0.06
-        ]),
-        ([
-            "type": "attribute",
-            "name": "constitution",
-            "formula": "additive",
-            "rate": 0.06
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.07
-        ])
-    }));
 }

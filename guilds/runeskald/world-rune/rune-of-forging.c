@@ -26,7 +26,7 @@ protected void Setup()
     addSpecification("spell point cost", 50);
     addSpecification("stamina point cost", 5);
 
-    addSpecification("heal hit points", ({
+    addSpecification("increase hit points", ({
         ([
             "probability": 75,
             "base damage": 30,

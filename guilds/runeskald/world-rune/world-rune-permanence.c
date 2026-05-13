@@ -24,18 +24,4 @@ protected void Setup()
     addSpecification("bonus heal stamina", 5);
     addSpecification("bonus heal hit points", 5);
 
-    addSpecification("modifiers", ({
-        ([
-            "type": "attribute",
-            "name": "constitution",
-            "formula": "additive",
-            "rate": 0.09
-        ]),
-        ([
-            "type": "skill",
-            "name": "spellcraft",
-            "formula": "additive",
-            "rate": 0.08
-        ])
-    }));
 }

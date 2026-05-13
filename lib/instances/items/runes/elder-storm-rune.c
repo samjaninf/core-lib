@@ -1,4 +1,4 @@
-//*****************************************************************************
+﻿//*****************************************************************************
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
@@ -10,11 +10,9 @@ protected void Setup()
     set("name", "elder storm rune");
     set("short", "elder storm rune");
     set("aliases", ({ "rune", "storm rune" }));
-    set("long", "A rune of the storm carved into a dark stone that crackles "
-        "visibly with arcs of pale lightning.");
+    set("long", "A rune of elder storm cut into storm-grey stone. A charge plays across its surface.");
     set("rune type", "storm");
     set("rune tier", "elder");
-    set("value", 500);
-    set("bonus sonic damage", 9);
-    set("bonus electricity damage", 4);
+    set("value", 250);
+    set("rune enchantment electricity", 2);
 }

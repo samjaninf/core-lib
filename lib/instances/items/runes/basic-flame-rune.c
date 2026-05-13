@@ -1,4 +1,4 @@
-//*****************************************************************************
+﻿//*****************************************************************************
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
@@ -10,10 +10,9 @@ protected void Setup()
     set("name", "basic flame rune");
     set("short", "basic flame rune");
     set("aliases", ({ "rune", "flame rune" }));
-    set("long", "A rune of flame scored into a reddish-orange stone. "
-        "It radiates warmth and smells faintly of woodsmoke.");
+    set("long", "A rune of flame scored into a reddish-orange stone. It radiates warmth.");
     set("rune type", "flame");
     set("rune tier", "basic");
     set("value", 50);
-    set("bonus fire damage", 4);
+    set("rune enchantment fire", 1);
 }

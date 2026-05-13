@@ -1,4 +1,4 @@
-//*****************************************************************************
+﻿//*****************************************************************************
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
@@ -10,11 +10,9 @@ protected void Setup()
     set("name", "elder frost rune");
     set("short", "elder frost rune");
     set("aliases", ({ "rune", "frost rune" }));
-    set("long", "A rune of frost cut into a pale blue stone that glistens with "
-        "permanent ice crystals on its surface.");
+    set("long", "A rune of elder frost carved into blue-veined stone. Cold radiates from its inscribed lines.");
     set("rune type", "frost");
     set("rune tier", "elder");
-    set("value", 500);
-    set("bonus cold damage", 9);
-    set("bonus resist cold", 4);
+    set("value", 250);
+    set("rune enchantment cold", 2);
 }

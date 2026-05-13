@@ -1,4 +1,4 @@
-//*****************************************************************************
+﻿//*****************************************************************************
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
@@ -10,11 +10,9 @@ protected void Setup()
     set("name", "ancient storm rune");
     set("short", "ancient storm rune");
     set("aliases", ({ "rune", "storm rune" }));
-    set("long", "A rune of the storm cut into a jagged black stone. "
-        "Thunder rolls from it in waves and the air around it shimmers.");
+    set("long", "A rune of ancient storm cut into blue-black stone. Thunder rumbles faintly when it is held.");
     set("rune type", "storm");
     set("rune tier", "ancient");
-    set("value", 5000);
-    set("bonus sonic damage", 15);
-    set("bonus electricity damage", 9);
+    set("value", 1000);
+    set("rune enchantment electricity", 4);
 }

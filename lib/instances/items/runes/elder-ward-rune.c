@@ -1,4 +1,4 @@
-//*****************************************************************************
+﻿//*****************************************************************************
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
@@ -10,12 +10,9 @@ protected void Setup()
     set("name", "elder ward rune");
     set("short", "elder ward rune");
     set("aliases", ({ "rune", "ward rune" }));
-    set("long", "A rune of warding etched into a polished pale stone. "
-        "It radiates a steady silver light that deflects touch.");
+    set("long", "A rune of elder warding cut into layered grey-white stone. It deflects a searching touch.");
     set("rune type", "ward");
     set("rune tier", "elder");
-    set("value", 500);
-    set("bonus armor class", 4);
-    set("bonus resist physical", 5);
-    set("bonus resist magical", 3);
+    set("value", 250);
+    set("bonus armor class", 2);
 }

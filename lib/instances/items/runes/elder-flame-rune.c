@@ -7,12 +7,12 @@ inherit "/lib/items/rune.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    set("name", "primal power rune");
-    set("short", "primal power rune");
-    set("aliases", ({ "rune", "power rune" }));
-    set("long", "A rune of primal power carved into stone of unknown and unsettling origin.");
-    set("rune type", "power");
-    set("rune tier", "primal");
-    set("value", 5000);
-    set("bonus attack", 6);
+    set("name", "elder flame rune");
+    set("short", "elder flame rune");
+    set("aliases", ({ "rune", "flame rune" }));
+    set("long", "A rune of elder flame carved into deep-red stone. It burns warm even to those with no magic.");
+    set("rune type", "flame");
+    set("rune tier", "elder");
+    set("value", 250);
+    set("rune enchantment fire", 2);
 }

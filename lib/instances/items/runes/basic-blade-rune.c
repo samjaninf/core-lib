@@ -1,4 +1,4 @@
-//*****************************************************************************
+﻿//*****************************************************************************
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
@@ -10,12 +10,9 @@ protected void Setup()
     set("name", "basic blade rune");
     set("short", "basic blade rune");
     set("aliases", ({ "rune", "blade rune" }));
-    set("long", "A rune of the blade etched into a narrow sliver of iron-grey stone. "
-        "Its edges are impossibly sharp to the touch.");
+    set("long", "A rune of the blade etched into a narrow sliver of iron-grey stone.");
     set("rune type", "blade");
     set("rune tier", "basic");
     set("value", 50);
-    set("bonus long sword", 2);
-    set("bonus hand and a half sword", 2);
-    set("bonus two-handed sword", 2);
+    set("bonus long sword", 1);
 }

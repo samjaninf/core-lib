@@ -17,6 +17,4 @@ protected void Setup()
 
     addPrerequisite("gem crafting",
         (["type": "skill", "value": 1]));
-    addPrerequisite("/guilds/runeskald/rune-crafting/basic-power-rune.c",
-        (["type": "research"]));
 }

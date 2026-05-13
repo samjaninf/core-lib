@@ -13,7 +13,4 @@ protected void Setup()
         "foundational knowledge of runeskaldic vocal tradition: singing "
         "the old sagas to shape the battlefield.");
     addSpecification("research type", "tree root");
-
-    addPrerequisite("singing",
-        (["type": "skill", "value": 1]));
 }

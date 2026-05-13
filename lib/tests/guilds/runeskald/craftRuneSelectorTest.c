@@ -8,21 +8,22 @@ object Player;
 object Selector;
 
 /////////////////////////////////////////////////////////////////////////////
-private void Init()
+void Init()
 {
     ignoreList += ({ "AdvanceToLevel" });
 }
 
 /////////////////////////////////////////////////////////////////////////////
-private int AdvanceToLevel(int level)
+int AdvanceToLevel(int level)
 {
     int runningLevel = Player.guildLevel("runeskald");
     while ((Player.guildLevel("runeskald") < level) &&
            Player.memberOfGuild("runeskald"))
     {
-        Player.addExperience(1000 * (runningLevel + 1));
+        Player.addExperience(1000 * runningLevel + 1000);
         Player.advanceLevel("runeskald");
-        command("exit", Player);
+        destruct(present_clone("/lib/modules/guilds/advanceLevelSelector.c",
+            Player));
         runningLevel = Player.guildLevel("runeskald");
     }
     return runningLevel;
@@ -48,7 +49,8 @@ void Setup()
     Player.addResearchPoints(20);
 
     Player.joinGuild("runeskald");
-    command("exit", Player);
+    destruct(present_clone("/lib/modules/guilds/advanceLevelSelector.c",
+        Player));
     AdvanceToLevel(7);
     ExpectEq(({ "runeskald" }), Player.memberOfGuilds());
 
@@ -147,7 +149,8 @@ void UnresearchedTypeAppearsDisabledInMenu()
     secondPlayer.advanceSkill("local history", 1);
     secondPlayer.addResearchPoints(10);
     secondPlayer.joinGuild("runeskald");
-    command("exit", secondPlayer);
+    destruct(present_clone("/lib/modules/guilds/advanceLevelSelector.c",
+        secondPlayer));
     ExpectTrue(secondPlayer.initiateResearch(
         "/guilds/runeskald/rune-crafting/basic-power-rune.c"));
 

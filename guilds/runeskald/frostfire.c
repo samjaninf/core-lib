@@ -224,10 +224,217 @@ private void TwentySecondLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private void TwentyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency.c",
+        "/guilds/runeskald/frostfire/twin-elemental-form.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve.c",
+        "/guilds/runeskald/frostfire/twin-elemental-form.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-tempo.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-tempo.c",
+        "/guilds/runeskald/frostfire/twin-elemental-form.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency-ii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency-ii.c",
+        "/guilds/runeskald/frostfire/elemental-potency.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve-ii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve-ii.c",
+        "/guilds/runeskald/frostfire/elemental-reserve.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-tempo-ii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-tempo-ii.c",
+        "/guilds/runeskald/frostfire/elemental-tempo.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency-iii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency-iii.c",
+        "/guilds/runeskald/frostfire/elemental-potency-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve-iii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve-iii.c",
+        "/guilds/runeskald/frostfire/elemental-reserve-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-tempo-iii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-tempo-iii.c",
+        "/guilds/runeskald/frostfire/elemental-tempo-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency-iv.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency-iv.c",
+        "/guilds/runeskald/frostfire/elemental-potency-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve-iv.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve-iv.c",
+        "/guilds/runeskald/frostfire/elemental-reserve-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-tempo-iv.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-tempo-iv.c",
+        "/guilds/runeskald/frostfire/elemental-tempo-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency-v.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency-v.c",
+        "/guilds/runeskald/frostfire/elemental-potency-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve-v.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve-v.c",
+        "/guilds/runeskald/frostfire/elemental-reserve-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-tempo-v.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-tempo-v.c",
+        "/guilds/runeskald/frostfire/elemental-tempo-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency-vi.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency-vi.c",
+        "/guilds/runeskald/frostfire/elemental-potency-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve-vi.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve-vi.c",
+        "/guilds/runeskald/frostfire/elemental-reserve-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-tempo-vi.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-tempo-vi.c",
+        "/guilds/runeskald/frostfire/elemental-tempo-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency-vii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency-vii.c",
+        "/guilds/runeskald/frostfire/elemental-potency-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve-vii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve-vii.c",
+        "/guilds/runeskald/frostfire/elemental-reserve-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-tempo-vii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-tempo-vii.c",
+        "/guilds/runeskald/frostfire/elemental-tempo-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-potency-viii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-potency-viii.c",
+        "/guilds/runeskald/frostfire/elemental-potency-vii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/frostfire/elemental-reserve-viii.c");
+
+    addChild("/guilds/runeskald/frostfire/elemental-reserve-viii.c",
+        "/guilds/runeskald/frostfire/elemental-reserve-vii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     Name("Frostfire");
-    Source("Runeskald Guild");
+    Source("runeskald");
     Description("This tree covers the runeskaldic frostfire tradition: "
         "glacial ice bolts, runic fire bolts, combined frostfire explosions, "
         "sustained elemental auras, and the ultimate elemental dominion.");
@@ -252,4 +459,27 @@ protected void Setup()
     EighteenthLevel();
     TwentiethLevel();
     TwentySecondLevel();
+    TwentyFifthLevel();
+    TwentySeventhLevel();
+    TwentyNinthLevel();
+    ThirtyFirstLevel();
+    ThirtyThirdLevel();
+    ThirtyFifthLevel();
+    ThirtySeventhLevel();
+    ThirtyNinthLevel();
+    FortyFirstLevel();
+    FortyThirdLevel();
+    FortyFifthLevel();
+    FortySeventhLevel();
+    FortyNinthLevel();
+    FiftyFirstLevel();
+    FiftyThirdLevel();
+    FiftyFifthLevel();
+    FiftySeventhLevel();
+    FiftyNinthLevel();
+    SixtyFirstLevel();
+    SixtyThirdLevel();
+    SixtyFifthLevel();
+    SixtySeventhLevel();
+    SixtyNinthLevel();
 }

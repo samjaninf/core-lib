@@ -224,10 +224,226 @@ private void TwentiethLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private void TwentyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might.c",
+        "/guilds/runeskald/rune-warrior/runic-war-form.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance.c",
+        "/guilds/runeskald/rune-warrior/runic-war-form.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo.c",
+        "/guilds/runeskald/rune-warrior/runic-war-form.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might-ii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might-ii.c",
+        "/guilds/runeskald/rune-warrior/warriors-might.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance-ii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance-ii.c",
+        "/guilds/runeskald/rune-warrior/warriors-endurance.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo-ii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo-ii.c",
+        "/guilds/runeskald/rune-warrior/warriors-tempo.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might-iii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might-iii.c",
+        "/guilds/runeskald/rune-warrior/warriors-might-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance-iii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance-iii.c",
+        "/guilds/runeskald/rune-warrior/warriors-endurance-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo-iii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo-iii.c",
+        "/guilds/runeskald/rune-warrior/warriors-tempo-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might-iv.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might-iv.c",
+        "/guilds/runeskald/rune-warrior/warriors-might-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance-iv.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance-iv.c",
+        "/guilds/runeskald/rune-warrior/warriors-endurance-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo-iv.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo-iv.c",
+        "/guilds/runeskald/rune-warrior/warriors-tempo-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might-v.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might-v.c",
+        "/guilds/runeskald/rune-warrior/warriors-might-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance-v.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance-v.c",
+        "/guilds/runeskald/rune-warrior/warriors-endurance-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo-v.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo-v.c",
+        "/guilds/runeskald/rune-warrior/warriors-tempo-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might-vi.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might-vi.c",
+        "/guilds/runeskald/rune-warrior/warriors-might-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance-vi.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance-vi.c",
+        "/guilds/runeskald/rune-warrior/warriors-endurance-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo-vi.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo-vi.c",
+        "/guilds/runeskald/rune-warrior/warriors-tempo-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might-vii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might-vii.c",
+        "/guilds/runeskald/rune-warrior/warriors-might-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance-vii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance-vii.c",
+        "/guilds/runeskald/rune-warrior/warriors-endurance-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo-vii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo-vii.c",
+        "/guilds/runeskald/rune-warrior/warriors-tempo-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-might-viii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-might-viii.c",
+        "/guilds/runeskald/rune-warrior/warriors-might-vii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-endurance-viii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-endurance-viii.c",
+        "/guilds/runeskald/rune-warrior/warriors-endurance-vii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-warrior/warriors-tempo-viii.c");
+
+    addChild("/guilds/runeskald/rune-warrior/warriors-tempo-viii.c",
+        "/guilds/runeskald/rune-warrior/warriors-tempo-vii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     Name("Rune Warrior");
-    Source("Runeskald Guild");
+    Source("runeskald");
     Description("This tree covers the runeskaldic warrior tradition: "
         "painting runes on flesh and steel, delivering rune-enhanced "
         "weapon strikes, and sweeping rune-lit arcs through groups of foes.");
@@ -252,4 +468,28 @@ protected void Setup()
     SixteenthLevel();
     EighteenthLevel();
     TwentiethLevel();
+    TwentyThirdLevel();
+    TwentyFifthLevel();
+    TwentySeventhLevel();
+    TwentyNinthLevel();
+    ThirtyFirstLevel();
+    ThirtyThirdLevel();
+    ThirtyFifthLevel();
+    ThirtySeventhLevel();
+    ThirtyNinthLevel();
+    FortyFirstLevel();
+    FortyThirdLevel();
+    FortyFifthLevel();
+    FortySeventhLevel();
+    FortyNinthLevel();
+    FiftyFirstLevel();
+    FiftyThirdLevel();
+    FiftyFifthLevel();
+    FiftySeventhLevel();
+    FiftyNinthLevel();
+    SixtyFirstLevel();
+    SixtyThirdLevel();
+    SixtyFifthLevel();
+    SixtySeventhLevel();
+    SixtyNinthLevel();
 }

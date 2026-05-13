@@ -7,7 +7,6 @@ inherit "/lib/modules/research/researchTree.c";
 /////////////////////////////////////////////////////////////////////////////
 private void FirstLevel()
 {
-    addResearchElement("/guilds/runeskald/spirit-war/root.c");
     addResearchElement("/guilds/runeskald/spirit-war/call-warrior-spirit.c");
     addResearchElement("/guilds/runeskald/spirit-war/call-shield-spirit.c");
 
@@ -93,9 +92,16 @@ private void SeventhLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public void reset()
+protected void Setup()
 {
-    researchTree::reset();
+    Name("Spirit War");
+    Source("runeskald");
+    Description("This tree covers the summoning and commanding of "
+        "ancestral warrior spirits to fight alongside the runeskald.");
+
+    addResearchElement("/guilds/runeskald/spirit-war/root.c");
+    TreeRoot("/guilds/runeskald/spirit-war/root.c");
+
     FirstLevel();
     SecondLevel();
     ThirdLevel();

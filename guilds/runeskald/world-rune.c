@@ -7,7 +7,6 @@ inherit "/lib/modules/research/researchTree.c";
 /////////////////////////////////////////////////////////////////////////////
 private void FirstLevel()
 {
-    addResearchElement("/guilds/runeskald/world-rune/root.c");
     addResearchElement("/guilds/runeskald/world-rune/world-rune-lore.c");
 
     addChild("/guilds/runeskald/world-rune/world-rune-lore.c",
@@ -102,9 +101,16 @@ private void EighthLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public void reset()
+protected void Setup()
 {
-    researchTree::reset();
+    Name("World Rune");
+    Source("runeskald");
+    Description("This tree covers the most powerful runic inscriptions, "
+        "tapping into the primal forces of the world itself.");
+
+    addResearchElement("/guilds/runeskald/world-rune/root.c");
+    TreeRoot("/guilds/runeskald/world-rune/root.c");
+
     FirstLevel();
     SecondLevel();
     ThirdLevel();

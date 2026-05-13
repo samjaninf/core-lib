@@ -7,7 +7,6 @@ inherit "/lib/modules/research/researchTree.c";
 /////////////////////////////////////////////////////////////////////////////
 private void FirstLevel()
 {
-    addResearchElement("/guilds/runeskald/runic-binding/root.c");
     addResearchElement("/guilds/runeskald/runic-binding/bind-rune-of-warding.c");
     addResearchElement("/guilds/runeskald/runic-binding/bind-rune-of-fury.c");
     addResearchElement("/guilds/runeskald/runic-binding/bind-rune-of-endurance.c");
@@ -93,9 +92,17 @@ private void SeventhLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public void reset()
+protected void Setup()
 {
-    researchTree::reset();
+    Name("Runic Binding");
+    Source("runeskald");
+    Description("This tree covers the art of inscribing sustained runes "
+        "directly onto the body, granting ongoing effects of protection, "
+        "fury, and endurance.");
+
+    addResearchElement("/guilds/runeskald/runic-binding/root.c");
+    TreeRoot("/guilds/runeskald/runic-binding/root.c");
+
     FirstLevel();
     SecondLevel();
     ThirdLevel();

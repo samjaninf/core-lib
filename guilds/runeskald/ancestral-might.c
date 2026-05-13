@@ -230,10 +230,217 @@ private void TwentySecondLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private void TwentyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath.c",
+        "/guilds/runeskald/ancestral-might/bloodlines-end.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve.c",
+        "/guilds/runeskald/ancestral-might/bloodlines-end.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-haste.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-haste.c",
+        "/guilds/runeskald/ancestral-might/bloodlines-end.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath-ii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath-ii.c",
+        "/guilds/runeskald/ancestral-might/spirits-wrath.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve-ii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve-ii.c",
+        "/guilds/runeskald/ancestral-might/spirits-reserve.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-haste-ii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-haste-ii.c",
+        "/guilds/runeskald/ancestral-might/spirits-haste.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath-iii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath-iii.c",
+        "/guilds/runeskald/ancestral-might/spirits-wrath-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve-iii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve-iii.c",
+        "/guilds/runeskald/ancestral-might/spirits-reserve-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-haste-iii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-haste-iii.c",
+        "/guilds/runeskald/ancestral-might/spirits-haste-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath-iv.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath-iv.c",
+        "/guilds/runeskald/ancestral-might/spirits-wrath-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve-iv.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve-iv.c",
+        "/guilds/runeskald/ancestral-might/spirits-reserve-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-haste-iv.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-haste-iv.c",
+        "/guilds/runeskald/ancestral-might/spirits-haste-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath-v.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath-v.c",
+        "/guilds/runeskald/ancestral-might/spirits-wrath-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve-v.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve-v.c",
+        "/guilds/runeskald/ancestral-might/spirits-reserve-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-haste-v.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-haste-v.c",
+        "/guilds/runeskald/ancestral-might/spirits-haste-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath-vi.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath-vi.c",
+        "/guilds/runeskald/ancestral-might/spirits-wrath-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve-vi.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve-vi.c",
+        "/guilds/runeskald/ancestral-might/spirits-reserve-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-haste-vi.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-haste-vi.c",
+        "/guilds/runeskald/ancestral-might/spirits-haste-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath-vii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath-vii.c",
+        "/guilds/runeskald/ancestral-might/spirits-wrath-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve-vii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve-vii.c",
+        "/guilds/runeskald/ancestral-might/spirits-reserve-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-haste-vii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-haste-vii.c",
+        "/guilds/runeskald/ancestral-might/spirits-haste-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-wrath-viii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-wrath-viii.c",
+        "/guilds/runeskald/ancestral-might/spirits-wrath-vii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/ancestral-might/spirits-reserve-viii.c");
+
+    addChild("/guilds/runeskald/ancestral-might/spirits-reserve-viii.c",
+        "/guilds/runeskald/ancestral-might/spirits-reserve-vii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     Name("Ancestral Might");
-    Source("Runeskald Guild");
+    Source("runeskald");
     Description("This tree covers the runeskaldic ancestral tradition: "
         "invoking the blessings and wraths of fallen forebears, channeling "
         "spirit storms and barrages, wearing spiritual war mantles, and "
@@ -260,4 +467,27 @@ protected void Setup()
     EighteenthLevel();
     TwentiethLevel();
     TwentySecondLevel();
+    TwentyFifthLevel();
+    TwentySeventhLevel();
+    TwentyNinthLevel();
+    ThirtyFirstLevel();
+    ThirtyThirdLevel();
+    ThirtyFifthLevel();
+    ThirtySeventhLevel();
+    ThirtyNinthLevel();
+    FortyFirstLevel();
+    FortyThirdLevel();
+    FortyFifthLevel();
+    FortySeventhLevel();
+    FortyNinthLevel();
+    FiftyFirstLevel();
+    FiftyThirdLevel();
+    FiftyFifthLevel();
+    FiftySeventhLevel();
+    FiftyNinthLevel();
+    SixtyFirstLevel();
+    SixtyThirdLevel();
+    SixtyFifthLevel();
+    SixtySeventhLevel();
+    SixtyNinthLevel();
 }

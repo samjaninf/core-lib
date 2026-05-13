@@ -170,10 +170,190 @@ private void TwentyNinthLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private void ThirtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/master-carver.c");
+
+    addChild("/guilds/runeskald/rune-crafting/master-carver.c",
+        "/guilds/runeskald/rune-crafting/primal-rune-mastery.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/rune-potency.c");
+
+    addChild("/guilds/runeskald/rune-crafting/rune-potency.c",
+        "/guilds/runeskald/rune-crafting/primal-rune-mastery.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/crafting-efficiency.c");
+
+    addChild("/guilds/runeskald/rune-crafting/crafting-efficiency.c",
+        "/guilds/runeskald/rune-crafting/primal-rune-mastery.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/runic-calligraphy.c");
+
+    addChild("/guilds/runeskald/rune-crafting/runic-calligraphy.c",
+        "/guilds/runeskald/rune-crafting/master-carver.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/rune-potency-ii.c");
+
+    addChild("/guilds/runeskald/rune-crafting/rune-potency-ii.c",
+        "/guilds/runeskald/rune-crafting/rune-potency.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/crafting-efficiency-ii.c");
+
+    addChild("/guilds/runeskald/rune-crafting/crafting-efficiency-ii.c",
+        "/guilds/runeskald/rune-crafting/crafting-efficiency.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/deep-inscription.c");
+
+    addChild("/guilds/runeskald/rune-crafting/deep-inscription.c",
+        "/guilds/runeskald/rune-crafting/runic-calligraphy.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/rune-potency-iii.c");
+
+    addChild("/guilds/runeskald/rune-crafting/rune-potency-iii.c",
+        "/guilds/runeskald/rune-crafting/rune-potency-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/crafting-efficiency-iii.c");
+
+    addChild("/guilds/runeskald/rune-crafting/crafting-efficiency-iii.c",
+        "/guilds/runeskald/rune-crafting/crafting-efficiency-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/eternal-carving.c");
+
+    addChild("/guilds/runeskald/rune-crafting/eternal-carving.c",
+        "/guilds/runeskald/rune-crafting/deep-inscription.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/rune-potency-iv.c");
+
+    addChild("/guilds/runeskald/rune-crafting/rune-potency-iv.c",
+        "/guilds/runeskald/rune-crafting/rune-potency-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/crafting-efficiency-iv.c");
+
+    addChild("/guilds/runeskald/rune-crafting/crafting-efficiency-iv.c",
+        "/guilds/runeskald/rune-crafting/crafting-efficiency-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/world-rune-script.c");
+
+    addChild("/guilds/runeskald/rune-crafting/world-rune-script.c",
+        "/guilds/runeskald/rune-crafting/eternal-carving.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/rune-potency-v.c");
+
+    addChild("/guilds/runeskald/rune-crafting/rune-potency-v.c",
+        "/guilds/runeskald/rune-crafting/rune-potency-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/crafting-efficiency-v.c");
+
+    addChild("/guilds/runeskald/rune-crafting/crafting-efficiency-v.c",
+        "/guilds/runeskald/rune-crafting/crafting-efficiency-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/primordial-inscription.c");
+
+    addChild("/guilds/runeskald/rune-crafting/primordial-inscription.c",
+        "/guilds/runeskald/rune-crafting/world-rune-script.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/rune-potency-vi.c");
+
+    addChild("/guilds/runeskald/rune-crafting/rune-potency-vi.c",
+        "/guilds/runeskald/rune-crafting/rune-potency-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/crafting-efficiency-vi.c");
+
+    addChild("/guilds/runeskald/rune-crafting/crafting-efficiency-vi.c",
+        "/guilds/runeskald/rune-crafting/crafting-efficiency-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/transcendent-rune-craft.c");
+
+    addChild("/guilds/runeskald/rune-crafting/transcendent-rune-craft.c",
+        "/guilds/runeskald/rune-crafting/primordial-inscription.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/rune-crafting/rune-potency-vii.c");
+
+    addChild("/guilds/runeskald/rune-crafting/rune-potency-vii.c",
+        "/guilds/runeskald/rune-crafting/rune-potency-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     Name("Rune Crafting");
-    Source("Runeskald Guild");
+    Source("runeskald");
     Description("This tree covers the art of carving, charging, and binding "
         "rune-stones across all four tiers of runeskaldic tradition.");
 
@@ -188,4 +368,24 @@ protected void Setup()
     NineteenthLevel();
     TwentySeventhLevel();
     TwentyNinthLevel();
+    ThirtyFirstLevel();
+    ThirtyThirdLevel();
+    ThirtyFifthLevel();
+    ThirtySeventhLevel();
+    ThirtyNinthLevel();
+    FortyFirstLevel();
+    FortyThirdLevel();
+    FortyFifthLevel();
+    FortySeventhLevel();
+    FortyNinthLevel();
+    FiftyFirstLevel();
+    FiftyThirdLevel();
+    FiftyFifthLevel();
+    FiftySeventhLevel();
+    FiftyNinthLevel();
+    SixtyFirstLevel();
+    SixtyThirdLevel();
+    SixtyFifthLevel();
+    SixtySeventhLevel();
+    SixtyNinthLevel();
 }

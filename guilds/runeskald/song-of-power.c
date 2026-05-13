@@ -236,10 +236,199 @@ private void TwentyFourthLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private void TwentySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-power.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-power.c",
+        "/guilds/runeskald/song-of-power/world-song.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void TwentyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-endurance.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-endurance.c",
+        "/guilds/runeskald/song-of-power/world-song.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-swiftness.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-swiftness.c",
+        "/guilds/runeskald/song-of-power/world-song.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-power-ii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-power-ii.c",
+        "/guilds/runeskald/song-of-power/vocal-power.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-endurance-ii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-endurance-ii.c",
+        "/guilds/runeskald/song-of-power/vocal-endurance.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-swiftness-ii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-swiftness-ii.c",
+        "/guilds/runeskald/song-of-power/vocal-swiftness.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-power-iii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-power-iii.c",
+        "/guilds/runeskald/song-of-power/vocal-power-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-endurance-iii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-endurance-iii.c",
+        "/guilds/runeskald/song-of-power/vocal-endurance-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-swiftness-iii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-swiftness-iii.c",
+        "/guilds/runeskald/song-of-power/vocal-swiftness-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-power-iv.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-power-iv.c",
+        "/guilds/runeskald/song-of-power/vocal-power-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-endurance-iv.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-endurance-iv.c",
+        "/guilds/runeskald/song-of-power/vocal-endurance-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-swiftness-iv.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-swiftness-iv.c",
+        "/guilds/runeskald/song-of-power/vocal-swiftness-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-power-v.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-power-v.c",
+        "/guilds/runeskald/song-of-power/vocal-power-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-endurance-v.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-endurance-v.c",
+        "/guilds/runeskald/song-of-power/vocal-endurance-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-swiftness-v.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-swiftness-v.c",
+        "/guilds/runeskald/song-of-power/vocal-swiftness-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-power-vi.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-power-vi.c",
+        "/guilds/runeskald/song-of-power/vocal-power-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-endurance-vi.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-endurance-vi.c",
+        "/guilds/runeskald/song-of-power/vocal-endurance-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-swiftness-vi.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-swiftness-vi.c",
+        "/guilds/runeskald/song-of-power/vocal-swiftness-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-power-vii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-power-vii.c",
+        "/guilds/runeskald/song-of-power/vocal-power-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-swiftness-vii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-swiftness-vii.c",
+        "/guilds/runeskald/song-of-power/vocal-swiftness-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/song-of-power/vocal-endurance-vii.c");
+
+    addChild("/guilds/runeskald/song-of-power/vocal-endurance-vii.c",
+        "/guilds/runeskald/song-of-power/vocal-endurance-vi.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     Name("Song of Power");
-    Source("Runeskald Guild");
+    Source("runeskald");
     Description("This tree covers the vocal tradition of the runeskald: "
         "battle sagas, demoralising dirges, rallying war chants, devastating "
         "battle howls, and the primal saga that channels the power of creation.");
@@ -266,4 +455,25 @@ protected void Setup()
     NineteenthLevel();
     TwentySecondLevel();
     TwentyFourthLevel();
+    TwentySeventhLevel();
+    TwentyNinthLevel();
+    ThirtyFirstLevel();
+    ThirtyThirdLevel();
+    ThirtyFifthLevel();
+    ThirtySeventhLevel();
+    ThirtyNinthLevel();
+    FortyFirstLevel();
+    FortyThirdLevel();
+    FortyFifthLevel();
+    FortySeventhLevel();
+    FortyNinthLevel();
+    FiftyFirstLevel();
+    FiftyThirdLevel();
+    FiftyFifthLevel();
+    FiftySeventhLevel();
+    FiftyNinthLevel();
+    SixtyFirstLevel();
+    SixtyThirdLevel();
+    SixtyFifthLevel();
+    SixtySeventhLevel();
 }

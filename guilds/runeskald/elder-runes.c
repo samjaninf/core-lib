@@ -260,10 +260,172 @@ private void TwentyEighthLevel()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private void ThirtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-precision.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-precision.c",
+        "/guilds/runeskald/elder-runes/rune-of-dominion.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-efficiency.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-efficiency.c",
+        "/guilds/runeskald/elder-runes/rune-of-dominion.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-alacrity.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-alacrity.c",
+        "/guilds/runeskald/elder-runes/rune-of-dominion.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-precision-ii.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-precision-ii.c",
+        "/guilds/runeskald/elder-runes/runic-precision.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void ThirtyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-efficiency-ii.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-efficiency-ii.c",
+        "/guilds/runeskald/elder-runes/runic-efficiency.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-alacrity-ii.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-alacrity-ii.c",
+        "/guilds/runeskald/elder-runes/runic-alacrity.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-precision-iii.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-precision-iii.c",
+        "/guilds/runeskald/elder-runes/runic-precision-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-efficiency-iii.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-efficiency-iii.c",
+        "/guilds/runeskald/elder-runes/runic-efficiency-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FortySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-alacrity-iii.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-alacrity-iii.c",
+        "/guilds/runeskald/elder-runes/runic-alacrity-ii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-precision-iv.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-precision-iv.c",
+        "/guilds/runeskald/elder-runes/runic-precision-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-efficiency-iv.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-efficiency-iv.c",
+        "/guilds/runeskald/elder-runes/runic-efficiency-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-alacrity-iv.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-alacrity-iv.c",
+        "/guilds/runeskald/elder-runes/runic-alacrity-iii.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-precision-v.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-precision-v.c",
+        "/guilds/runeskald/elder-runes/runic-precision-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void FiftyNinthLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-efficiency-v.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-efficiency-v.c",
+        "/guilds/runeskald/elder-runes/runic-efficiency-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFirstLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-alacrity-v.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-alacrity-v.c",
+        "/guilds/runeskald/elder-runes/runic-alacrity-iv.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyThirdLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-precision-vi.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-precision-vi.c",
+        "/guilds/runeskald/elder-runes/runic-precision-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtyFifthLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-alacrity-vi.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-alacrity-vi.c",
+        "/guilds/runeskald/elder-runes/runic-alacrity-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private void SixtySeventhLevel()
+{
+    addResearchElement("/guilds/runeskald/elder-runes/runic-efficiency-vi.c");
+
+    addChild("/guilds/runeskald/elder-runes/runic-efficiency-vi.c",
+        "/guilds/runeskald/elder-runes/runic-efficiency-v.c");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     Name("Elder Runes");
-    Source("Runeskald Guild");
+    Source("runeskald");
     Description("This tree covers the ritual binding of runes into equipment, "
         "body inscription techniques, and the channelling of rune energy "
         "as devastating elemental attacks.");
@@ -294,4 +456,22 @@ protected void Setup()
     TwentySecondLevel();
     TwentyFifthLevel();
     TwentyEighthLevel();
+    ThirtyFirstLevel();
+    ThirtyThirdLevel();
+    ThirtyFifthLevel();
+    ThirtySeventhLevel();
+    ThirtyNinthLevel();
+    FortyFirstLevel();
+    FortyThirdLevel();
+    FortyFifthLevel();
+    FortySeventhLevel();
+    FiftyFirstLevel();
+    FiftyThirdLevel();
+    FiftyFifthLevel();
+    FiftySeventhLevel();
+    FiftyNinthLevel();
+    SixtyFirstLevel();
+    SixtyThirdLevel();
+    SixtyFifthLevel();
+    SixtySeventhLevel();
 }

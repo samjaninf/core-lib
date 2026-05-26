@@ -12,10 +12,19 @@ protected void Setup()
     addSpecification("description", "This research provides the knowledge to "
         "channel arcane energy through a melee strike.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
-    addSpecification("limited by", (["equipment": ({ "long sword", "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+    addSpecification("limited by", (["equipment":
+        ({ "long sword", "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,12 +36,26 @@ protected void Setup()
     addSpecification("bonus magical attack", 5);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "long sword", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "long sword",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "arcane strike");
-    addSpecification("use ability message", "##InitiatorName## ##Infinitive::channel## arcane energy through ##InitiatorPossessive## blade.");
+    addSpecification("use ability message",
+        "##InitiatorName## ##Infinitive::channel## arcane energy through "
+            "##InitiatorPossessive## blade.");
 }

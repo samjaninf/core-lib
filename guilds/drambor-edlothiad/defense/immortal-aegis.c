@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Immortal Aegis");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches the "
-        "Immortal Aegis defensive ward, providing substantial magical and physical protection.");
+        "Immortal Aegis defensive ward, providing substantial magical and "
+            "physical protection.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/invulnerability.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 51]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/invulnerability.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 51
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,5 +34,7 @@ protected void Setup()
     addSpecification("command template", "immortal aegis");
     addSpecification("use ability activate message", "A Immortal Aegis "
         "materializes around ##InitiatorName##.");
-    addSpecification("use ability deactivate message", "The Immortal Aegis fades.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Immortal Aegis fades.");
 }

@@ -10,12 +10,22 @@ protected void Setup()
     addSpecification("name", "Primordial Strike");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research provides the knowledge to "
-        "deliver a strike of primordial power, the ultimate spell sword technique.");
+        "deliver a strike of primordial power, the ultimate spell sword "
+            "technique.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/worldbreaker-strike.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 67]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/worldbreaker-strike.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 67
+        ]));
 
-    addSpecification("limited by", (["equipment": ({ "long sword", "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+    addSpecification("limited by", (["equipment":
+        ({ "long sword", "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,12 +40,26 @@ protected void Setup()
     addSpecification("bonus electricity attack", 15);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "long sword", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "long sword",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "primordial strike");
-    addSpecification("use ability message", "##InitiatorName## ##Infinitive::deliver## the Primordial Strike, the first and last strike, power incarnate.");
+    addSpecification("use ability message",
+        "##InitiatorName## ##Infinitive::deliver## the Primordial Strike, "
+            "the first and last strike, power incarnate.");
 }

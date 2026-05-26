@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research teaches the battlemage to "
         "maintain perfect concentration under any conditions.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/arcane-precision.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 33]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/arcane-precision.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 33
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

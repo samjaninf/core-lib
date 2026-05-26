@@ -9,15 +9,24 @@ protected void Setup()
 {
     addSpecification("name", "Bladesong Stance");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the legendary bladesong "
-        "stance, where the battlemage's blade movements create a humming melody "
+    addSpecification("description", "This research teaches the legendary "
+        "bladesong  stance, where the battlemage's blade movements create a "
+            "humming melody "
         "of arcane power that enhances both attack and defense.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/spell-riposte.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/spell-riposte.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -32,7 +41,9 @@ protected void Setup()
     addSpecification("command template", "bladesong stance");
     addSpecification("use ability activate message", "##InitiatorName## "
         "##Infinitive::begin## the bladesong, ##InitiatorPossessive## blade "
-        "humming with arcane melody as it weaves through attack and defense.");
+        "humming with arcane melody as it weaves through attack and "
+            "defense.");
     addSpecification("use ability deactivate message", "The bladesong fades "
-        "as ##InitiatorName## ##Infinitive::lower## ##InitiatorPossessive## stance.");
+        "as ##InitiatorName## ##Infinitive::lower## ##InitiatorPossessive## "
+            "stance.");
 }

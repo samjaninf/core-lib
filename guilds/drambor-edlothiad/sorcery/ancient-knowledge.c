@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research provides knowledge passed "
         "down through millennia of elven tradition.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/elven-insight.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/elven-insight.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

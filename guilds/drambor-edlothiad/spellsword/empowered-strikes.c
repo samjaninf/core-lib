@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Empowered Strikes");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research empowers all spell strikes with greater potency.");
+    addSpecification("description", "This research empowers all spell "
+        "strikes with greater potency.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/corrosive-strike.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 15]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/corrosive-strike.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 15
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

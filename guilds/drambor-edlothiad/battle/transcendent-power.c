@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research pushes battle magic "
         "beyond mortal limits.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/supreme-battle-mastery.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 43]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/supreme-battle-mastery.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 43
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Spell Strike Training");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research improves the fundamentals of spell strike technique.");
+    addSpecification("description", "This research improves the "
+        "fundamentals of spell strike "
+        "technique.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/arcane-strike.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/arcane-strike.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

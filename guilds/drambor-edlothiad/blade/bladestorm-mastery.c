@@ -9,11 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Bladestorm Mastery");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research provides supreme understanding "
-        "of bladestorm techniques, dramatically enhancing all active abilities.");
+    addSpecification("description", "This research provides supreme "
+        "understanding  of bladestorm techniques, dramatically enhancing all "
+            "active abilities.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/spell-weave-transcendence.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 51]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/spell-weave-transcendence.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 51
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

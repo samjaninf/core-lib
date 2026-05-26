@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Elven Agility");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research unlocks the supernatural agility of the elven bloodline.");
+    addSpecification("description", "This research unlocks the supernatural "
+        "agility of the elven bloodline.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/keen-senses.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/keen-senses.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

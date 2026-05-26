@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research improves the focus and "
         "power of all battle magic.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/combat-casting.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/combat-casting.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

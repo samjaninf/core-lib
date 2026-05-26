@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research provides resistance "
         "to cold damage.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/magical-resistance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/magical-resistance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 13
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

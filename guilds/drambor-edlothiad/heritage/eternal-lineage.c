@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Eternal Lineage");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research embodies the eternal lineage of the elven people.");
+    addSpecification("description", "This research embodies the eternal "
+        "lineage of the elven people.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/firstborn-legacy.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 67]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/firstborn-legacy.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 67
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Firstborn Legacy");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research unlocks the full legacy of the Firstborn elves.");
+    addSpecification("description", "This research unlocks the full legacy "
+        "of the Firstborn elves.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/elder-blood.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 63]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/elder-blood.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 63
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

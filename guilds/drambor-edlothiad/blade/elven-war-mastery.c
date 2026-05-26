@@ -9,14 +9,22 @@ protected void Setup()
 {
     addSpecification("name", "Elven War Mastery");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research represents complete mastery "
-        "of elven martial and magical techniques combined.");
+    addSpecification("description", "This research represents complete "
+        "mastery  of elven martial and magical techniques combined.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/battlemage-reflexes.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 41]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/battlemage-reflexes.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 41
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research increases the raw power "
         "of the battlemage's offensive spells.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/mana-efficiency.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/mana-efficiency.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

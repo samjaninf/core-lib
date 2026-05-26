@@ -13,10 +13,14 @@ protected void Setup()
         "channel fire through a wielded blade, wreathing it in flickering "
         "flames that sear foes with each strike.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/root.c",
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/root.c",
         (["type": "research"]));
     addPrerequisite("level",
-        (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 1]));
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 1
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
         "hand and a half sword", "two-handed sword", "short sword",
@@ -33,13 +37,26 @@ protected void Setup()
     addSpecification("bonus fire enchantment", 3);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "elemental fire", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "elemental fire",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "flame edge");
     addSpecification("use ability message", "##InitiatorPossessive::Name## "
-        "blade erupts in flickering flames as arcane fire courses along its edge.");
+        "blade erupts in flickering flames as arcane fire courses along its "
+            "edge.");
 }

@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research improves all elemental "
         "battle spells through deeper understanding.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/destructive-power.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 29]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/destructive-power.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 29
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

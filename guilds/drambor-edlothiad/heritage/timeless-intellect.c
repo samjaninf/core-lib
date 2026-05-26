@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Timeless Intellect");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research grants an intellect that transcends mortal understanding.");
+    addSpecification("description", "This research grants an intellect that "
+        "transcends mortal understanding.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/elder-knowledge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 43]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/elder-knowledge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 43
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

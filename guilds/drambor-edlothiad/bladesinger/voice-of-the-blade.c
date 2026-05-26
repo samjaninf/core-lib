@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Voice of the Blade");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the blade singer to hear the voice of the blade itself.");
+    addSpecification("description", "This research teaches the blade singer "
+        "to hear the voice of the blade itself.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/transcendent-bladesong.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 33]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/transcendent-bladesong.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 33
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,11 +13,19 @@ protected void Setup()
         "draw multiple elemental energies together, increasing the potency "
         "of all blade enchantments through convergent force.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/elemental-harmony.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 23]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/elemental-harmony.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 23
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

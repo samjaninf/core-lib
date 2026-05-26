@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Counter Melody");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches a counter-melody that disrupts enemy attacks.");
+    addSpecification("description", "This research teaches a counter-melody "
+        "that disrupts enemy attacks.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/shield-of-song.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 15]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/shield-of-song.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 15
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

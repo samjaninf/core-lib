@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Bladesong Initiation");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the foundational movements of the bladesong.");
+    addSpecification("description", "This research teaches the foundational "
+        "movements of the bladesong.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

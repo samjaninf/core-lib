@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Maestro of War");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves the rank of maestro in the art of war-song.");
+    addSpecification("description", "This research achieves the rank of "
+        "maestro in the art of war-song.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/symphonic-assault.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 43]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/symphonic-assault.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 43
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

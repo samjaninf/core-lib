@@ -12,11 +12,19 @@ protected void Setup()
     addSpecification("description", "This research teaches the battlemage to "
         "build and hold a static charge within their blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/shock-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/shock-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

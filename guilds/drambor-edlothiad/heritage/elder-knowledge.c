@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Elder Knowledge");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research unlocks knowledge preserved from the Elder Days.");
+    addSpecification("description", "This research unlocks knowledge "
+        "preserved from the Elder Days.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/mind-of-the-ancients.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 33]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/mind-of-the-ancients.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 33
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

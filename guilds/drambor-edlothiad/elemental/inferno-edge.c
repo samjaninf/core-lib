@@ -13,10 +13,14 @@ protected void Setup()
         "understanding of fire channeling, enhancing all fire-based blade "
         "enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/searing-brand.c",
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/searing-brand.c",
         (["type": "research"]));
     addPrerequisite("level",
-        (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 13
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

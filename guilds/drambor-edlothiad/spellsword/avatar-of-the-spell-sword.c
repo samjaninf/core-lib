@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Avatar of the Spell Sword");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research becomes the living avatar of the spell sword tradition.");
+    addSpecification("description", "This research becomes the living "
+        "avatar of the spell sword tradition.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/spell-sword-perfection.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 70]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/spell-sword-perfection.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 70
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

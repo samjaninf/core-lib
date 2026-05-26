@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Warding Song");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches a warding melody that deflects attacks.");
+    addSpecification("description", "This research teaches a warding melody "
+        "that deflects attacks.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/defensive-harmonics.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/defensive-harmonics.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

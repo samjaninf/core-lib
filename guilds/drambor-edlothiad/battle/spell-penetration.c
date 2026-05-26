@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research enhances the battlemage's "
         "ability to penetrate magical defenses with combat spells.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/spell-focus.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/spell-focus.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("affected research", ([

@@ -9,15 +9,24 @@ protected void Setup()
 {
     addSpecification("name", "Arcane Riposte");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches a devastating arcane "
-        "riposte technique that channels significant magical force into "
+    addSpecification("description", "This research teaches a devastating "
+        "arcane  riposte technique that channels significant magical force "
+            "into "
         "counter-attacks.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/mystic-guard.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 29]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/mystic-guard.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 29
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

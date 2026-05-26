@@ -12,10 +12,19 @@ protected void Setup()
     addSpecification("description", "This research provides the knowledge to "
         "perform the supreme bladesong, the pinnacle of the art.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/eternal-melody.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 41]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/eternal-melody.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 41
+        ]));
 
-    addSpecification("limited by", (["equipment": ({ "long sword", "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+    addSpecification("limited by", (["equipment":
+        ({ "long sword", "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,12 +38,26 @@ protected void Setup()
     addSpecification("bonus damage", 10);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "long sword", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "charisma", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "long sword",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "supreme bladesong");
-    addSpecification("use ability message", "##InitiatorName## ##Infinitive::perform## the Supreme Bladesong, reality itself bending to the melody.");
+    addSpecification("use ability message",
+        "##InitiatorName## ##Infinitive::perform## the Supreme Bladesong, "
+            "reality itself bending to the melody.");
 }

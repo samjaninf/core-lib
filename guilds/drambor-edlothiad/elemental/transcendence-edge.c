@@ -10,14 +10,22 @@ protected void Setup()
     addSpecification("name", "Transcendence Edge");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents mastery of pure "
-        "arcane blade techniques. The battlemage sustains an enchantment "
+        " arcane blade techniques. The battlemage sustains an enchantment "
         "that transcends normal magical boundaries.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/eldritch-blade.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 57]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/eldritch-blade.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 57
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,8 +38,9 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "transcendence edge");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade transcends physical form, becoming a conduit of pure arcane will.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
     addSpecification("use ability deactivate message", "The transcendence "
         "enchantment fades from ##InitiatorPossessive## blade.");
 }

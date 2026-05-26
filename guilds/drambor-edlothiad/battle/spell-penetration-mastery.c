@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research further enhances spell "
         "penetration capabilities.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/spell-penetration.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 19]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/spell-penetration.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 19
+        ]));
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("affected research", ([

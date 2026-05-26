@@ -9,14 +9,22 @@ protected void Setup()
 {
     addSpecification("name", "Precision of the Ancients");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research draws on ancient elven blade "
-        "techniques, granting exceptional precision in combat.");
+    addSpecification("description", "This research draws on ancient elven "
+        "blade  techniques, granting exceptional precision in combat.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/elven-swordcraft.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 19]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/elven-swordcraft.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 19
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

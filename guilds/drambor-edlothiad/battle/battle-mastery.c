@@ -10,9 +10,15 @@ protected void Setup()
     addSpecification("name", "Battle Mastery");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents growing mastery "
-        "of combat magic.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/devastating-focus.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 19]));
+        " of combat magic.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/devastating-focus.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 19
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

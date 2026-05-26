@@ -9,11 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Elemental Resonance");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research provides a profound understanding "
-        "of elemental resonance, significantly boosting all mid-tier enchantments.");
+    addSpecification("description", "This research provides a profound "
+        "understanding  of elemental resonance, significantly boosting all "
+            "mid-tier enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/elemental-convergence.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 29]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/elemental-convergence.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 29
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

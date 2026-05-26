@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Mind of the Ancients");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research connects to the vast intellect of the ancient elves.");
+    addSpecification("description", "This research connects to the vast "
+        "intellect of the ancient elves.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/lorekeepers-mind.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 25]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/lorekeepers-mind.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 25
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

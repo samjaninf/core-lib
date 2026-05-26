@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "War Caster");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research masters the art of casting in the heat of battle.");
+    addSpecification("description", "This research masters the art of "
+        "casting in the heat of battle.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/seamless-weave.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/seamless-weave.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 13
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

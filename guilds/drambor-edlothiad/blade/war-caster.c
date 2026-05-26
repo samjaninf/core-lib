@@ -13,8 +13,14 @@ protected void Setup()
         "cast spells seamlessly while fighting, reducing the penalty of "
         "divided attention.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/battle-meditation.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 27]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/battle-meditation.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 27
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

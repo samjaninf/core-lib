@@ -12,10 +12,19 @@ protected void Setup()
     addSpecification("description", "This research provides the knowledge to "
         "engulf a wielded blade in eldritch fire from beyond the veil.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/apocalypse-flame.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 63]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/apocalypse-flame.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 63
+        ]));
 
-    addSpecification("limited by", (["equipment": ({ "long sword", "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+    addSpecification("limited by", (["equipment":
+        ({ "long sword", "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,12 +36,26 @@ protected void Setup()
     addSpecification("bonus fire enchantment", 25);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "elemental fire", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "elemental fire",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
-    addSpecification("command template", "Eldritch Flame");
-    addSpecification("use ability message", "Eldritch fire from beyond the veil engulfs ##InitiatorPossessive## blade.");
+    
+    addSpecification("use ability message",
+        "Eldritch fire from beyond the veil engulfs ##InitiatorPossessive## "
+            "blade.");
 }

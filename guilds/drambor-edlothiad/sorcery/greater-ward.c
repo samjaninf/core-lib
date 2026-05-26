@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches an enhanced elven "
         "warding spell with stronger protection.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/elven-ward.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/elven-ward.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -23,6 +29,9 @@ protected void Setup()
     addSpecification("bonus resist undead", 5);
     addSpecification("command template", "greater elven ward");
     addSpecification("use ability activate message", "An enhanced elven ward "
-        "flares to life around ##InitiatorName##, its runes glowing brightly.");
-    addSpecification("use ability deactivate message", "The greater elven ward fades.");
+        "flares to life around ##InitiatorName##, its runes glowing "
+            "brightly.");
+    addSpecification(
+        "use ability deactivate message",
+        "The greater elven ward fades.");
 }

@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches the battlemage to "
         "tear reality itself, creating a rift of annihilating energy.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/annihilating-barrage.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 51]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/annihilating-barrage.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 51
+        ]));
     addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -22,11 +28,32 @@ protected void Setup()
     addSpecification("damage type", "energy");
     addSpecification("bonus energy attack", 40);
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/battle/spell-penetration-supremacy.c", "name": "spell-penetration-supremacy", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/battle/spell-penetration-transcendence.c", "name": "spell-penetration-transcendence", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 2.0]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.10]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/battle/spell-penetration-supremacy.c",
+            "name": "spell-penetration-supremacy",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/battle/spell-penetration-transcendence.c",
+            "name": "spell-penetration-transcendence",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 2.0]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.10]),
     }));
     addSpecification("command template", "reality tear");
     addSpecification("use ability message", "##InitiatorName## "

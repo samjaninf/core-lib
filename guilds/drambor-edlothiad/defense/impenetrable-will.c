@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research strengthens the "
         "battlemage's magical defenses and protective capabilities.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/supreme-resistance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 31]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/supreme-resistance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 31
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

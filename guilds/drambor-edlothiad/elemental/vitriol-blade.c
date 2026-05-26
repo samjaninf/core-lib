@@ -13,11 +13,19 @@ protected void Setup()
         "channel intensified corrosive energy through their blade, "
         "dissolving everything it touches.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/dissolution.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 33]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/dissolution.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 33
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,14 +38,33 @@ protected void Setup()
     addSpecification("bonus acid attack", 10);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/elemental/dissolution.c", "name": "dissolution", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "elemental earth", "formula": "additive", "rate": 0.15]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/elemental/dissolution.c",
+            "name": "dissolution",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "elemental earth",
+            "formula": "additive",
+            "rate": 0.15]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "vitriol blade");
     addSpecification("use ability message", "Intensified acid erupts along "
-        "##InitiatorPossessive## blade, dissolving the air itself with its virulence.");
+        "##InitiatorPossessive## blade, dissolving the air itself with its "
+            "virulence.");
 }

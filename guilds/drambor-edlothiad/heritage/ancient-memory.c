@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Ancient Memory");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research taps into the ancestral memories of the elven bloodline.");
+    addSpecification("description", "This research taps into the ancestral "
+        "memories of the elven bloodline.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

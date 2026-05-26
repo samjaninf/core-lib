@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research enhances the "
         "battlemage's martial prowess through arcane warrior techniques.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/war-magic-infusion.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 37]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/war-magic-infusion.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 37
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

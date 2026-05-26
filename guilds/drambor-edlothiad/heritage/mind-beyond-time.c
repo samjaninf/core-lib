@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Mind Beyond Time");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves a state of mind beyond the constraints of time.");
+    addSpecification("description", "This research achieves a state of mind "
+        "beyond the constraints of time.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/timeless-intellect.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 55]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/timeless-intellect.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 55
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

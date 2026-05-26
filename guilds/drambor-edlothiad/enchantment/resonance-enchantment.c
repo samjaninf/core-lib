@@ -12,10 +12,19 @@ protected void Setup()
     addSpecification("description", "This research provides the knowledge to "
         "amplify sonic vibrations through a wielded blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/sonic-enchantment.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 19]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/sonic-enchantment.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 19
+        ]));
 
-    addSpecification("limited by", (["equipment": ({ "long sword", "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+    addSpecification("limited by", (["equipment":
+        ({ "long sword", "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,12 +36,26 @@ protected void Setup()
     addSpecification("bonus sonic enchantment", 7);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "spellcraft", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
-    addSpecification("command template", "Resonance Enchantment");
-    addSpecification("use ability message", "Powerful vibrations resonate through ##InitiatorPossessive## blade.");
+    
+    addSpecification("use ability message",
+        "Powerful vibrations resonate through ##InitiatorPossessive## "
+            "blade.");
 }

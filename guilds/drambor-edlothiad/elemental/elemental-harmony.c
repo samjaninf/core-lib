@@ -9,11 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Elemental Harmony");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research provides a deeper understanding "
-        "of how all elements relate, universally boosting elemental blade enchantments.");
+    addSpecification("description", "This research provides a deeper "
+        "understanding  of how all elements relate, universally boosting "
+            "elemental blade enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/channeling-efficiency.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 17]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/channeling-efficiency.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 17
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

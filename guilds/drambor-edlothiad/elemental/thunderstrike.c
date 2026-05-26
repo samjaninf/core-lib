@@ -13,11 +13,19 @@ protected void Setup()
         "unleash devastating thunderous energy through their blade, "
         "each strike resonating with the power of a lightning bolt.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/conductivity.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 27]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/conductivity.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 27
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,11 +38,29 @@ protected void Setup()
     addSpecification("bonus electricity attack", 10);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/elemental/conductivity.c", "name": "conductivity", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "elemental air", "formula": "additive", "rate": 0.15]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/elemental/conductivity.c",
+            "name": "conductivity",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "elemental air",
+            "formula": "additive",
+            "rate": 0.15]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "thunderstrike");

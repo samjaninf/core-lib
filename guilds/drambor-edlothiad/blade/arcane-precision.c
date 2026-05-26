@@ -12,11 +12,19 @@ protected void Setup()
     addSpecification("description", "This research refines the precision of "
         "arcane-enhanced blade strikes.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/arcane-deflection.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 21]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/arcane-deflection.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 21
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

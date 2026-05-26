@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches an ancient elven "
         "warding spell that provides magical protection.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -23,5 +29,7 @@ protected void Setup()
     addSpecification("command template", "elven ward");
     addSpecification("use ability activate message", "An ancient elven ward "
         "shimmers into existence around ##InitiatorName##.");
-    addSpecification("use ability deactivate message", "The elven ward fades.");
+    addSpecification(
+        "use ability deactivate message",
+        "The elven ward fades.");
 }

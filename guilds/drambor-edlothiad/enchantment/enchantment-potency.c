@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Enchantment Potency");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research deepens understanding of enchantment magic, increasing effectiveness.");
+    addSpecification("description", "This research deepens understanding of "
+        "enchantment magic, increasing "
+        "effectiveness.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/dual-attunement.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 21]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/dual-attunement.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 21
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

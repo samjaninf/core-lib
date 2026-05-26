@@ -9,15 +9,23 @@ protected void Setup()
 {
     addSpecification("name", "Perfect Fusion");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research represents the absolute apex "
-        "of the spellblade art. Blade and magic become one, and the "
+    addSpecification("description", "This research represents the absolute "
+        "apex  of the spellblade art. Blade and magic become one, and the "
         "battlemage transcends the distinction between warrior and mage.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/perfect-bladesong.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 67]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/perfect-bladesong.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 67
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

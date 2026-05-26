@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Arcane Aegis");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches the "
-        "Arcane Aegis defensive ward, providing substantial magical and physical protection.");
+        "Arcane Aegis defensive ward, providing substantial magical and "
+            "physical protection.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/mystic-barrier.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 17]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/mystic-barrier.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 17
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,5 +34,7 @@ protected void Setup()
     addSpecification("command template", "arcane aegis");
     addSpecification("use ability activate message", "A Arcane Aegis "
         "materializes around ##InitiatorName##.");
-    addSpecification("use ability deactivate message", "The Arcane Aegis fades.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Arcane Aegis fades.");
 }

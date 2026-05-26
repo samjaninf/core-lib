@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Primordial Light");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "The primordial light spell, calling forth "
-        "the first light of creation.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/elder-star.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 43]));
+    addSpecification("description", "The primordial light spell, calling "
+        "forth  the first light of creation.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/elder-star.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 43
+        ]));
     addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -22,10 +28,25 @@ protected void Setup()
     addSpecification("bonus magical attack", 40);
     addSpecification("bonus radiant attack", 25);
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/sorcery/sorcery-supremacy.c", "name": "sorcery-supremacy", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 2.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "attribute", "name": "wisdom", "formula": "additive", "rate": 0.10]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/sorcery/sorcery-supremacy.c",
+            "name": "sorcery-supremacy",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 2.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
+            "rate": 0.10]),
     }));
     addSpecification("command template", "primordial light");
     addSpecification("use ability message", "##InitiatorName## "

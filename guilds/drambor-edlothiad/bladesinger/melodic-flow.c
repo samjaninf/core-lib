@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Melodic Flow");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows the blade singer to maintain the rhythm of combat.");
+    addSpecification("description", "This research allows the blade singer "
+        "to maintain the rhythm of combat.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/bladesong-stance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/bladesong-stance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

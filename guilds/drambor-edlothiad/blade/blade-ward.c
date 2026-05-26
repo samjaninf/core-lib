@@ -13,11 +13,19 @@ protected void Setup()
         "maintain a passive ward through their blade, granting minor magical "
         "protection at all times.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/arcane-parry.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/arcane-parry.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

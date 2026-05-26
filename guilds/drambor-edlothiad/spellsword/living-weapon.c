@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Living Weapon");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research becomes a living weapon, body and blade and spell unified.");
+    addSpecification("description", "This research becomes a living weapon, "
+        "body and blade and spell unified.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/grand-spell-sword.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 37]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/grand-spell-sword.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 37
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

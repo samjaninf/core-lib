@@ -13,11 +13,19 @@ protected void Setup()
         "sustain a deep frost enchantment, encasing their blade in glacial "
         "ice that numbs and slows enemies.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/frost-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/frost-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,8 +37,10 @@ protected void Setup()
     addSpecification("bonus cold attack", 5);
 
     addSpecification("command template", "glacial brand");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade becomes sheathed in thick glacial ice, radiating numbing cold.");
-    addSpecification("use ability deactivate message", "The glacial brand melts "
-        "from ##InitiatorPossessive## blade.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
+    addSpecification(
+        "use ability deactivate message",
+        "The glacial brand melts "
 }

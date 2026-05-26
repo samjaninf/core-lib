@@ -9,11 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Elemental Supremacy");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research provides supreme understanding "
-        "of elemental forces, significantly enhancing all capstone blade enchantments.");
+    addSpecification("description", "This research provides supreme "
+        "understanding  of elemental forces, significantly enhancing all "
+            "capstone blade enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/elemental-mastery.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 41]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/elemental-mastery.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 41
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

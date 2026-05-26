@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Immortal Spell Sword");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves the immortal state of spell sword mastery.");
+    addSpecification("description", "This research achieves the immortal "
+        "state of spell sword mastery.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/transcendent-spell-sword.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 61]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/transcendent-spell-sword.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 61
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

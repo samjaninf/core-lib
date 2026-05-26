@@ -13,11 +13,19 @@ protected void Setup()
         "reinforce parries with arcane energy, creating a shimmering barrier "
         "along the blade that deflects attacks more effectively.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 1]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 1
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,7 +38,8 @@ protected void Setup()
 
     addSpecification("command template", "arcane parry");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::raise## ##InitiatorPossessive## blade in an arcane parry "
+        "##Infinitive::raise## ##InitiatorPossessive## blade in an arcane "
+            "parry "
         "stance, the edge shimmering with defensive magic.");
     addSpecification("use ability deactivate message", "##InitiatorName## "
         "##Infinitive::lower## ##InitiatorPossessive## arcane parry stance.");

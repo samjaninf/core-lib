@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Crescendo");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research builds the bladesong to a crescendo of martial power.");
+    addSpecification("description", "This research builds the bladesong to "
+        "a crescendo of martial power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/bladesong-of-the-ancients.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 27]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/bladesong-of-the-ancients.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 27
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

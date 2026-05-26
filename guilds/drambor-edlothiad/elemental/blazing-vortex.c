@@ -13,10 +13,14 @@ protected void Setup()
         "envelop their blade in a spiraling vortex of flame, devastating "
         "opponents with intensified fire damage.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/inferno-edge.c",
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/inferno-edge.c",
         (["type": "research"]));
     addPrerequisite("level",
-        (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 25]));
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 25
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
         "hand and a half sword", "two-handed sword", "short sword",
@@ -34,11 +38,29 @@ protected void Setup()
     addSpecification("bonus fire attack", 10);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/elemental/inferno-edge.c", "name": "inferno-edge", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "elemental fire", "formula": "additive", "rate": 0.15]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/elemental/inferno-edge.c",
+            "name": "inferno-edge",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "elemental fire",
+            "formula": "additive",
+            "rate": 0.15]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "blazing vortex");

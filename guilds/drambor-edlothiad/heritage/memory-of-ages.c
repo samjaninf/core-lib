@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Memory of Ages");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research unlocks memories stretching back through generations.");
+    addSpecification("description", "This research unlocks memories "
+        "stretching back through generations.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/timeless-wisdom.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 15]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/timeless-wisdom.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 15
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

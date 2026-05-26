@@ -9,15 +9,24 @@ protected void Setup()
 {
     addSpecification("name", "Perfect Bladesong");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the perfect bladesong, "
-        "a flawless synthesis of blade and magic that represents the highest "
+    addSpecification("description", "This research teaches the perfect "
+        "bladesong,  a flawless synthesis of blade and magic that represents "
+            "the highest "
         "achievement of spellblade martial art.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/advanced-bladesong.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 39]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/advanced-bladesong.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 39
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -35,6 +44,7 @@ protected void Setup()
     addSpecification("use ability activate message", "##InitiatorName## "
         "##Infinitive::achieve## the perfect bladesong, blade and magic "
         "merging into a flawless symphony of combat.");
-    addSpecification("use ability deactivate message", "The perfect bladesong "
-        "falls silent.");
+    addSpecification(
+        "use ability deactivate message",
+        "The perfect bladesong "
 }

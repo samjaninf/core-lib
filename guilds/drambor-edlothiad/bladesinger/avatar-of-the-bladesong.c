@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Avatar of the Bladesong");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research represents the ultimate embodiment of the bladesong tradition.");
+    addSpecification("description", "This research represents the ultimate "
+        "embodiment of the bladesong tradition.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/bladesong-of-creation.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 70]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/bladesong-of-creation.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 70
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

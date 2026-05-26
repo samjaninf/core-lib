@@ -13,8 +13,14 @@ protected void Setup()
         "ability to channel pure magical energy, enhancing all arcane blade "
         "enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/mystic-brand.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 19]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/mystic-brand.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 19
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

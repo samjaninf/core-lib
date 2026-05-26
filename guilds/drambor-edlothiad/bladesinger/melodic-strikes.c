@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Melodic Strikes");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches how to weave melody into each sword stroke.");
+    addSpecification("description", "This research teaches how to weave "
+        "melody into each sword stroke.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/melodic-flow.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/melodic-flow.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

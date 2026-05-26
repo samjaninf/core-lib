@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Elder Magic");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "Magic of the elder age, the deepest secrets "
-        "of elven sorcery.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/elder-knowledge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 39]));
+    addSpecification("description", "Magic of the elder age, the deepest "
+        "secrets  of elven sorcery.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/elder-knowledge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 39
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

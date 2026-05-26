@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Permafrost");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research deepens the battlemage's "
-        "mastery of cold channeling, enhancing all frost-based blade enchantments.");
+        "mastery of cold channeling, enhancing all frost-based blade "
+            "enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/glacial-brand.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 17]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/glacial-brand.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 17
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

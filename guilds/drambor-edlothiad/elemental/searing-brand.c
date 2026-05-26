@@ -13,10 +13,14 @@ protected void Setup()
         "sustain an intense fire enchantment on their blade, branding foes "
         "with searing heat that lingers beyond the initial strike.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/flame-edge.c",
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/flame-edge.c",
         (["type": "research"]));
     addPrerequisite("level",
-        (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
         "hand and a half sword", "two-handed sword", "short sword",
@@ -33,8 +37,10 @@ protected void Setup()
     addSpecification("bonus fire attack", 5);
 
     addSpecification("command template", "searing brand");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade glows white-hot as a searing brand of arcane fire takes hold.");
-    addSpecification("use ability deactivate message", "The searing brand fades "
-        "from ##InitiatorPossessive## blade.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
+    addSpecification(
+        "use ability deactivate message",
+        "The searing brand fades "
 }

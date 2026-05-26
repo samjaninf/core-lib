@@ -13,11 +13,19 @@ protected void Setup()
         "sustain a shadow enchantment on their blade, cloaking it in "
         "darkness that saps the strength of those it strikes.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/shadow-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 15]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/shadow-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 15
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,8 +37,9 @@ protected void Setup()
     addSpecification("bonus shadow attack", 5);
 
     addSpecification("command template", "umbral brand");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade is swallowed by writhing shadows, light bending away from its edge.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
     addSpecification("use ability deactivate message", "The umbral brand "
         "recedes from ##InitiatorPossessive## blade.");
 }

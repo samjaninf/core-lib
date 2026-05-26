@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research strengthens the "
         "battlemage's magical defenses and protective capabilities.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/impenetrable-will.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 37]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/impenetrable-will.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 37
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

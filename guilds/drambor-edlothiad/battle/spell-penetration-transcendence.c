@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research provides transcendent "
         "understanding of magical penetration.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/spell-penetration-supremacy.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 43]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/spell-penetration-supremacy.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 43
+        ]));
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
     addSpecification("affected research", ([

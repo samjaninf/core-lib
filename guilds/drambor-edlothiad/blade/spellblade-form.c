@@ -13,11 +13,19 @@ protected void Setup()
         "spellblade combat stance, blending swordplay with arcane gestures "
         "to enhance both offense and defense.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 1]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 1
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

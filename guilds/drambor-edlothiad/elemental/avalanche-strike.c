@@ -13,11 +13,19 @@ protected void Setup()
         "channel devastating cold through their blade, each strike carrying "
         "the crushing force of an avalanche.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/permafrost.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 29]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/permafrost.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 29
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,14 +38,33 @@ protected void Setup()
     addSpecification("bonus cold attack", 10);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/elemental/permafrost.c", "name": "permafrost", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "elemental water", "formula": "additive", "rate": 0.15]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/elemental/permafrost.c",
+            "name": "permafrost",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "elemental water",
+            "formula": "additive",
+            "rate": 0.15]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "avalanche strike");
     addSpecification("use ability message", "Crushing cold erupts along "
-        "##InitiatorPossessive## blade as glacial power builds to devastating force.");
+        "##InitiatorPossessive## blade as glacial power builds to "
+            "devastating force.");
 }

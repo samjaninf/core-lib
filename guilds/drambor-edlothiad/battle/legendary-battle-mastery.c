@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Legendary Battle Mastery");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research represents legendary mastery "
-        "of battle magic, known only to the greatest battlemages.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/elven-devastation.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 55]));
+    addSpecification("description", "This research represents legendary "
+        "mastery  of battle magic, known only to the greatest battlemages.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/elven-devastation.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 55
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

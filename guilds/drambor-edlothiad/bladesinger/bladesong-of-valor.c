@@ -12,10 +12,19 @@ protected void Setup()
     addSpecification("description", "This research provides the knowledge to "
         "sing a bladesong of valor, inspiring martial excellence.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/melodic-flow.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/melodic-flow.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
 
-    addSpecification("limited by", (["equipment": ({ "long sword", "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+    addSpecification("limited by", (["equipment":
+        ({ "long sword", "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,12 +38,26 @@ protected void Setup()
     addSpecification("bonus damage", 2);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "long sword", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "charisma", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "long sword",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "charisma",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "bladesong of valor");
-    addSpecification("use ability message", "##InitiatorName## ##Infinitive::sing## a bladesong of valor, blade dancing with renewed purpose.");
+    addSpecification("use ability message",
+        "##InitiatorName## ##Infinitive::sing## a bladesong of valor, blade "
+            "dancing with renewed purpose.");
 }

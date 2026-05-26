@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Dual Attunement");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows the enchanter to maintain enchantments with greater ease.");
+    addSpecification("description", "This research allows the enchanter to "
+        "maintain enchantments with greater "
+        "ease.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/enchantment-duration.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/enchantment-duration.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 13
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

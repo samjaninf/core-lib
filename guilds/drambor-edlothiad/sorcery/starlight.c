@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Starlight");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the starlight spell, "
-        "calling down ethereal elven starlight that damages undead and evil.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 1]));
+    addSpecification("description", "This research teaches the starlight "
+        "spell,  calling down ethereal elven starlight that damages undead "
+            "and evil.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 1
+        ]));
     addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -22,9 +29,18 @@ protected void Setup()
     addSpecification("bonus magical attack", 3);
     addSpecification("bonus good attack", 3);
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "wisdom", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
     addSpecification("command template", "starlight");
     addSpecification("use ability message", "Ethereal starlight descends "

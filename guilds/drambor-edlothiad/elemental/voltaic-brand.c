@@ -13,11 +13,19 @@ protected void Setup()
         "sustain a powerful electrical enchantment, wreathing their blade "
         "in continuous arcs of voltaic energy.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/shock-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/shock-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,8 +37,9 @@ protected void Setup()
     addSpecification("bonus electricity attack", 5);
 
     addSpecification("command template", "voltaic brand");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade crackles with sustained voltaic energy, arcs leaping from its edge.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
     addSpecification("use ability deactivate message", "The voltaic brand "
         "dissipates from ##InitiatorPossessive## blade.");
 }

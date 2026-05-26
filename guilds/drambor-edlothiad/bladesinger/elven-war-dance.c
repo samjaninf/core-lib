@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Elven War Dance");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the ancient elven war dance, a precursor to advanced bladesinging.");
+    addSpecification("description", "This research teaches the ancient "
+        "elven war dance, a precursor to "
+        "advanced bladesinging.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/bladesong-of-valor.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/bladesong-of-valor.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 13
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

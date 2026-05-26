@@ -9,8 +9,9 @@ protected void Setup()
 {
     addSpecification("name", "Elven Sorcery Fundamentals");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This skill provides fundamental knowledge "
-        "of ancient elven sorcery traditions refined over millennia.");
+    addSpecification("description", "This skill provides fundamental "
+        "knowledge  of ancient elven sorcery traditions refined over "
+            "millennia.");
     addSpecification("scope", "self");
     addSpecification("research type", "tree root");
     addSpecification("bonus magical essence", 1);

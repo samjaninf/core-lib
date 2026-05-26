@@ -9,16 +9,25 @@ protected void Setup()
 {
     addSpecification("name", "Elemental Singularity");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research represents the absolute apex "
-        "of elemental blade mastery. The battlemage creates a singularity of "
+    addSpecification("description", "This research represents the absolute "
+        "apex  of elemental blade mastery. The battlemage creates a "
+            "singularity of "
         "elemental force in their blade, a point where all elements converge "
         "into devastating unity.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/prismatic-blade.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 65]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/prismatic-blade.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 65
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -39,6 +48,7 @@ protected void Setup()
     addSpecification("use ability activate message", "All elemental forces "
         "collapse into a single point of devastating power within "
         "##InitiatorPossessive## blade - a singularity of pure destruction.");
-    addSpecification("use ability deactivate message", "The elemental singularity "
-        "destabilizes and releases its hold on ##InitiatorPossessive## blade.");
+    addSpecification(
+        "use ability deactivate message",
+        "The elemental singularity "
 }

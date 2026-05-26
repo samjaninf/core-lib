@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Perfection of Form");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves physical perfection through elven heritage.");
+    addSpecification("description", "This research achieves physical "
+        "perfection through elven heritage.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/ethereal-movement.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 37]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/ethereal-movement.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 37
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

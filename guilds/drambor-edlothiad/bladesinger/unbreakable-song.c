@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Unbreakable Song");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research makes the blade singer's defenses nearly unbreakable.");
+    addSpecification("description", "This research makes the blade singer's "
+        "defenses nearly unbreakable.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/invincible-harmony.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 41]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/invincible-harmony.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 41
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

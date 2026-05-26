@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Elven Devastation");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research channels millennia of elven "
-        "magical tradition into devastating combat power.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/transcendent-power.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 49]));
+    addSpecification("description", "This research channels millennia of "
+        "elven  magical tradition into devastating combat power.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/transcendent-power.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 49
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

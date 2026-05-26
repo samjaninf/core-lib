@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Legendary Blade Singer");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research marks the achievement of legendary blade singer status.");
+    addSpecification("description", "This research marks the achievement of "
+        "legendary blade singer status.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/starlight-dancer.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 61]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/starlight-dancer.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 61
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

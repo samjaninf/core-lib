@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Destructive Power");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research increases the raw destructive "
-        "force of all battle magic.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/elven-battle-focus.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 27]));
+    addSpecification("description", "This research increases the raw "
+        "destructive  force of all battle magic.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/elven-battle-focus.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 27
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

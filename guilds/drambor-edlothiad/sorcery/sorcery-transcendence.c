@@ -1,24 +1,40 @@
 //*****************************************************************************
-// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
-//                      the accompanying LICENSE file for details.
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved.
+//                      See the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     addSpecification("name", "Sorcery Transcendence");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "Transcendent mastery of all sorcery.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/sorcery-supremacy.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 51]));
+    addSpecification("description", "This research provides the "
+        "user with sorcerous transcendence, the "
+        "ultimate achievement of elven magical "
+        "study. The battlemage becomes a living "
+        "conduit for pure arcane force, their very "
+        "existence blurring the line between mortal "
+        "spellcaster and elemental embodiment of "
+        "magical power.");
+
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/"
+        "transcendent-knowledge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/"
+                "drambor-edlothiad.c",
+            "value": 69
+        ]));
+
+    addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("affected research", ([
-        "Starlight": 25, "Moonbeam": 25, "Moonfire": 25,
-        "Eldritch Star": 25, "Celestial Lance": 25,
-        "Ancient Power": 25, "Elder Star": 25, "Primordial Light": 25,
-        "Star of Creation": 25,
-    ]));
-    addSpecification("affected research type", "percentage");
+    addSpecification("bonus intelligence", 3);
+    addSpecification("bonus wisdom", 3);
+    addSpecification("bonus spellcraft", 10);
+    addSpecification("bonus spell points", 75);
+    addSpecification("bonus resist magical", 10);
 }

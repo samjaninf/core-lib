@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Enchantment Transcendence");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research represents the ultimate mastery of blade enchantment, the pinnacle of Drambor tradition.");
+    addSpecification("description", "This research represents the ultimate "
+        "mastery of blade enchantment, the "
+        "pinnacle of Drambor tradition.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/arcane-imbuer.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 70]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/arcane-imbuer.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 70
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

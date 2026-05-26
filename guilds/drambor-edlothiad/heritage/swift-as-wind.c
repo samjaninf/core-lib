@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Swift as Wind");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research grants the speed of wind through elven heritage.");
+    addSpecification("description", "This research grants the speed of wind "
+        "through elven heritage.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/elven-agility.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/elven-agility.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 13
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

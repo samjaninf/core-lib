@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Elven Enchantcraft");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research draws upon ancient elven enchanting traditions.");
+    addSpecification("description", "This research draws upon ancient elven "
+        "enchanting traditions.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/rapid-enchanting.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 29]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/rapid-enchanting.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 29
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

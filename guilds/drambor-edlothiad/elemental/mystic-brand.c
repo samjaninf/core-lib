@@ -13,11 +13,19 @@ protected void Setup()
         "sustain a pure magical enchantment on their blade, each strike "
         "resonating with raw arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/arcane-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/arcane-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,8 +37,9 @@ protected void Setup()
     addSpecification("bonus magical attack", 5);
 
     addSpecification("command template", "mystic brand");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade pulses with sustained arcane energy, its edge limned in silver light.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
     addSpecification("use ability deactivate message", "The mystic brand "
         "fades from ##InitiatorPossessive## blade.");
 }

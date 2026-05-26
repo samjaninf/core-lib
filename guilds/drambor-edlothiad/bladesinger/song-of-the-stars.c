@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Song of the Stars");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research channels the song of the stars through the blade.");
+    addSpecification("description", "This research channels the song of the "
+        "stars through the blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/blade-singers-perfection.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 49]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/blade-singers-perfection.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 49
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -10,9 +10,15 @@ protected void Setup()
     addSpecification("name", "Elven Insight");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research grants deeper insight into "
-        "the magical nature of the world.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 1]));
+        " the magical nature of the world.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 1
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

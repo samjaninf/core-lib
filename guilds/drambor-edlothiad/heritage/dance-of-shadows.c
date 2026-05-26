@@ -1,6 +1,6 @@
 //*****************************************************************************
-// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
-//                      the accompanying LICENSE file for details.
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved.
+//                      See the accompanying LICENSE file for details.
 //*****************************************************************************
 inherit "/lib/modules/research/passiveResearchItem.c";
 
@@ -9,15 +9,29 @@ protected void Setup()
 {
     addSpecification("name", "Dance of Shadows");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows movement as silent as shadow.");
+    addSpecification("description", "This research provides the "
+        "user with the dance of shadows, a "
+        "movement art learned from observing the "
+        "interplay of light and darkness beneath "
+        "ancient forest canopies. The battlemage "
+        "weaves through combat like a flickering "
+        "shadow, present one moment and gone the "
+        "next.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/preternatural-grace.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 23]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/"
+        "ethereal-movement.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/"
+                "drambor-edlothiad.c",
+            "value": 37
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("bonus dodge", 3);
-    addSpecification("bonus hide", 3);
-    addSpecification("bonus move silently", 3);
+    addSpecification("bonus dodge", 4);
+    addSpecification("bonus attack", 3);
 }

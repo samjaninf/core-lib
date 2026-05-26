@@ -13,11 +13,19 @@ protected void Setup()
         "channel raw mana into their blade strikes, adding arcane force "
         "to each blow for a brief duration.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/spellblade-form.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/spellblade-form.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,11 +38,26 @@ protected void Setup()
     addSpecification("bonus magical attack", 3);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "long sword", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
-        (["type": "attribute", "name": "strength", "formula": "additive", "rate": 0.03]),
+        (["type": "skill",
+            "name": "long sword",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
+        (["type": "attribute",
+            "name": "strength",
+            "formula": "additive",
+            "rate": 0.03]),
     }));
 
     addSpecification("command template", "mana strike");

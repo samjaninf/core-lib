@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Ageless Endurance");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research grants the ageless endurance of immortal beings.");
+    addSpecification("description", "This research grants the ageless "
+        "endurance of immortal beings.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/spirit-of-the-wood.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 31]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/spirit-of-the-wood.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 31
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

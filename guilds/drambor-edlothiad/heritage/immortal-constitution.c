@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Immortal Constitution");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research unlocks the immortal constitution of the elder elves.");
+    addSpecification("description", "This research unlocks the immortal "
+        "constitution of the elder elves.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/ageless-endurance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 39]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/ageless-endurance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 39
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

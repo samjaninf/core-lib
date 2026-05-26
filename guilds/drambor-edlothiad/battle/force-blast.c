@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Force Blast");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches a concentrated blast "
-        "of arcane force that can stagger opponents.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/magic-missile.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addSpecification("description", "This research teaches a concentrated "
+        "blast  of arcane force that can stagger opponents.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/magic-missile.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -22,11 +28,21 @@ protected void Setup()
     addSpecification("damage type", "energy");
     addSpecification("bonus energy attack", 10);
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
     addSpecification("command template", "force blast");
     addSpecification("use ability message", "##InitiatorName## "
-        "##Infinitive::unleash## a concentrated blast of arcane force at ##TargetName##.");
+        "##Infinitive::unleash## a concentrated blast of arcane force at "
+            "##TargetName##.");
 }

@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "An ancient ward drawing on timeless "
         "elven protective magic.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/greater-ward.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 17]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/greater-ward.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 17
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -24,6 +30,9 @@ protected void Setup()
     addSpecification("bonus defense", 5);
     addSpecification("command template", "timeless ward");
     addSpecification("use ability activate message", "Ancient elven runes "
-        "spiral around ##InitiatorName##, forming a timeless ward of protection.");
-    addSpecification("use ability deactivate message", "The timeless ward fades.");
+        "spiral around ##InitiatorName##, forming a timeless ward of "
+            "protection.");
+    addSpecification(
+        "use ability deactivate message",
+        "The timeless ward fades.");
 }

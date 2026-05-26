@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Eternal Resilience");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves the eternal resilience of the firstborn.");
+    addSpecification("description", "This research achieves the eternal "
+        "resilience of the firstborn.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/undying-spirit.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 59]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/undying-spirit.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 59
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

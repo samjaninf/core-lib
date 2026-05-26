@@ -9,15 +9,24 @@ protected void Setup()
 {
     addSpecification("name", "Arcane Slash");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches an advanced technique "
-        "of weaving arcane energy into sweeping blade attacks, each slash "
+    addSpecification("description", "This research teaches an advanced "
+        "technique  of weaving arcane energy into sweeping blade attacks, "
+            "each slash "
         "trailing ribbons of magical force.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/focused-channeling.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/focused-channeling.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,11 +39,26 @@ protected void Setup()
     addSpecification("bonus magical attack", 5);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "long sword", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
-        (["type": "attribute", "name": "strength", "formula": "additive", "rate": 0.03]),
+        (["type": "skill",
+            "name": "long sword",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
+        (["type": "attribute",
+            "name": "strength",
+            "formula": "additive",
+            "rate": 0.03]),
     }));
 
     addSpecification("command template", "arcane slash");

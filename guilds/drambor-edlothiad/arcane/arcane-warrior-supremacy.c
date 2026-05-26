@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research enhances all "
         "arcane warrior combat abilities.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/enhanced-reflexes.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 53]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/enhanced-reflexes.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 53
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

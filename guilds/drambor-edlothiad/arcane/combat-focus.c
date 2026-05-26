@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Combat Focus");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches "
-        "the Combat Focus combat stance, enhancing martial capability through arcane power.");
+        "the Combat Focus combat stance, enhancing martial capability "
+            "through arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/arcane-haste.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/arcane-haste.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -26,6 +33,9 @@ protected void Setup()
 
     addSpecification("command template", "combat focus");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::enter## the Combat Focus stance, arcane energy surging through every movement.");
-    addSpecification("use ability deactivate message", "The Combat Focus stance fades.");
+        "##Infinitive::enter## the Combat Focus stance, arcane energy "
+            "surging through every movement.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Combat Focus stance fades.");
 }

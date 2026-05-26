@@ -10,14 +10,22 @@ protected void Setup()
     addSpecification("name", "Elemental Mastery");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents a comprehensive "
-        "mastery of elemental channeling through bladed weapons, granting "
+        " mastery of elemental channeling through bladed weapons, granting "
         "substantial combat bonuses.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/elemental-resonance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 35]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/elemental-resonance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 35
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

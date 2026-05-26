@@ -13,11 +13,19 @@ protected void Setup()
         "infuse their blade with prismatic energy, cycling through multiple "
         "elemental types simultaneously for devastating effect.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/elemental-transcendence.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 59]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/elemental-transcendence.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 59
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -34,15 +42,34 @@ protected void Setup()
     addSpecification("bonus energy enchantment", 5);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/elemental/elemental-supremacy.c", "name": "elemental-supremacy", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.50]),
-        (["type": "skill", "name": "magical essence", "formula": "logarithmic", "rate": 1.50]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.15]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.10]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/elemental/elemental-supremacy.c",
+            "name": "elemental-supremacy",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.50]),
+        (["type": "skill",
+            "name": "magical essence",
+            "formula": "logarithmic",
+            "rate": 1.50]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.15]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.10]),
     }));
 
     addSpecification("command template", "prismatic blade");
     addSpecification("use ability message", "##InitiatorPossessive::Name## "
-        "blade erupts in a cascade of prismatic energy, cycling through fire, "
+        "blade erupts in a cascade of prismatic energy, cycling through "
+            "fire, "
         "ice, lightning, acid, and pure force in a dazzling display.");
 }

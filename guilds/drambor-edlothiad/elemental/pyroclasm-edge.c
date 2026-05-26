@@ -10,13 +10,18 @@ protected void Setup()
     addSpecification("name", "Pyroclasm Edge");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents the pinnacle of "
-        "fire blade mastery. The battlemage sustains a devastating volcanic "
-        "enchantment that turns their blade into a weapon of cataclysmic fire.");
+        " fire blade mastery. The battlemage sustains a devastating volcanic "
+        "enchantment that turns their blade into a weapon of cataclysmic "
+            "fire.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/blazing-vortex.c",
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/blazing-vortex.c",
         (["type": "research"]));
     addPrerequisite("level",
-        (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 45]));
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 45
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
         "hand and a half sword", "two-handed sword", "short sword",
@@ -34,8 +39,10 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "pyroclasm edge");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade transforms into a shard of living magma, radiating volcanic fury.");
-    addSpecification("use ability deactivate message", "The pyroclasm enchantment "
-        "fades from ##InitiatorPossessive## blade.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
+    addSpecification(
+        "use ability deactivate message",
+        "The pyroclasm enchantment "
 }

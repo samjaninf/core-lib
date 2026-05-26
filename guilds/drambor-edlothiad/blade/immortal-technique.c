@@ -10,13 +10,21 @@ protected void Setup()
     addSpecification("name", "Immortal Technique");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches techniques refined "
-        "over immortal lifetimes, granting extraordinary combat prowess.");
+        " over immortal lifetimes, granting extraordinary combat prowess.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/steel-and-sorcery.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 57]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/steel-and-sorcery.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 57
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

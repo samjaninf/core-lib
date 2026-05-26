@@ -10,9 +10,15 @@ protected void Setup()
     addSpecification("name", "Supreme Battle Mastery");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents supreme mastery "
-        "of battle magic.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/overwhelming-force.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 37]));
+        " of battle magic.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/overwhelming-force.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 37
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

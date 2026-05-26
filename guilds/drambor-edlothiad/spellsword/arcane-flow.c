@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Arcane Flow");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves a state of arcane flow between spell and blade.");
+    addSpecification("description", "This research achieves a state of "
+        "arcane flow between spell and blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/war-caster.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 17]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/war-caster.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 17
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Starlight Dancer");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows the blade singer to dance among the starlight.");
+    addSpecification("description", "This research allows the blade singer "
+        "to dance among the starlight.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/celestial-bladesong.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 57]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/celestial-bladesong.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 57
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

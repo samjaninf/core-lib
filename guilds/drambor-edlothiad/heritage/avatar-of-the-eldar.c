@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Avatar of the Eldar");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research becomes the living avatar of the ancient Eldar.");
+    addSpecification("description", "This research becomes the living "
+        "avatar of the ancient Eldar.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/eternal-lineage.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 70]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/eternal-lineage.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 70
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

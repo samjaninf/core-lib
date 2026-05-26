@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Seamless Weave");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows seamless transition between spell and sword.");
+    addSpecification("description", "This research allows seamless "
+        "transition between spell and sword.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/battle-casting.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/battle-casting.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

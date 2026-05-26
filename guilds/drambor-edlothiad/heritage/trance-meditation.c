@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Trance Meditation");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the elven trance, restoring body and mind.");
+    addSpecification("description", "This research teaches the elven "
+        "trance, restoring body and mind.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/elven-vitality.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/elven-vitality.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

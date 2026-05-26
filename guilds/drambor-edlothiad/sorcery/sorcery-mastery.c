@@ -1,23 +1,36 @@
 //*****************************************************************************
-// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
-//                      the accompanying LICENSE file for details.
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved.
+//                      See the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     addSpecification("name", "Sorcery Mastery");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "Further mastery of elven sorcery.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/sorcery-amplification.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 21]));
+    addSpecification("description", "This research provides the "
+        "user with true mastery of elven sorcery. "
+        "Spells that once required intense focus "
+        "now flow as naturally as speech, and the "
+        "battlemage can weave complex enchantments "
+        "while simultaneously maintaining flawless "
+        "combat awareness.");
+
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/"
+        "eternal-ward.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/"
+                "drambor-edlothiad.c",
+            "value": 41
+        ]));
+
+    addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("affected research", ([
-        "Starlight": 25, "Moonbeam": 25, "Moonfire": 25,
-        "Eldritch Star": 25, "Celestial Lance": 25,
-        "Ancient Power": 25, "Elder Star": 25,
-    ]));
-    addSpecification("affected research type", "percentage");
+    addSpecification("bonus spellcraft", 5);
+    addSpecification("bonus spell points", 30);
 }

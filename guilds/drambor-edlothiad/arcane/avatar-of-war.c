@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Avatar of War");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches "
-        "the Avatar of War combat stance, enhancing martial capability through arcane power.");
+        "the Avatar of War combat stance, enhancing martial capability "
+            "through arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/storm-dancer.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 63]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/storm-dancer.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 63
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -26,6 +33,9 @@ protected void Setup()
 
     addSpecification("command template", "avatar of war");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::enter## the Avatar of War stance, arcane energy surging through every movement.");
-    addSpecification("use ability deactivate message", "The Avatar of War stance fades.");
+        "##Infinitive::enter## the Avatar of War stance, arcane energy "
+            "surging through every movement.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Avatar of War stance fades.");
 }

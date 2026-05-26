@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Elven Footwork");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the precise elven footwork essential to bladesinging.");
+    addSpecification("description", "This research teaches the precise "
+        "elven footwork essential to "
+        "bladesinging.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/bladesong-initiation.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/bladesong-initiation.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

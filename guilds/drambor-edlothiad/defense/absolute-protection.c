@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Absolute Protection");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches the "
-        "Absolute Protection defensive ward, providing substantial magical and physical protection.");
+        "Absolute Protection defensive ward, providing substantial magical "
+            "and physical protection.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/immortal-aegis.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 63]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/immortal-aegis.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 63
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,5 +34,7 @@ protected void Setup()
     addSpecification("command template", "absolute protection");
     addSpecification("use ability activate message", "A Absolute Protection "
         "materializes around ##InitiatorName##.");
-    addSpecification("use ability deactivate message", "The Absolute Protection fades.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Absolute Protection fades.");
 }

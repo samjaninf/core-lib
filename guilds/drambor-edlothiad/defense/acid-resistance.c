@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research provides resistance "
         "to acid damage.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/magical-resistance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 23]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/magical-resistance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 23
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

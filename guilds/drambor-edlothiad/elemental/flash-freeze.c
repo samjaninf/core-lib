@@ -12,11 +12,19 @@ protected void Setup()
     addSpecification("description", "This research improves the battlemage's "
         "ability to rapidly crystallize cold energy within a blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/frost-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/frost-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -13,11 +13,19 @@ protected void Setup()
         "attune their blade to a resonant frequency of arcane energy, "
         "creating devastating harmonic vibrations on impact.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/arcane-amplification.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 31]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/arcane-amplification.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 31
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,14 +38,33 @@ protected void Setup()
     addSpecification("bonus energy attack", 10);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/elemental/arcane-amplification.c", "name": "arcane-amplification", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "skill", "name": "magical essence", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/elemental/arcane-amplification.c",
+            "name": "arcane-amplification",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "magical essence",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "resonance blade");
     addSpecification("use ability message", "##InitiatorPossessive::Name## "
-        "blade hums with resonant arcane energy, vibrating at a devastating frequency.");
+        "blade hums with resonant arcane energy, vibrating at a devastating "
+            "frequency.");
 }

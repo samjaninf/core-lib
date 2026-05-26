@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Undying Spirit");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research grants an undying spirit that defies destruction.");
+    addSpecification("description", "This research grants an undying spirit "
+        "that defies destruction.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/immortal-constitution.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 47]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/immortal-constitution.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 47
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

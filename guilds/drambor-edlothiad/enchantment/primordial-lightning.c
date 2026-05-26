@@ -12,10 +12,19 @@ protected void Setup()
     addSpecification("description", "This research provides the knowledge to "
         "channel primordial lightning into a wielded blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/stormwrath-enchantment.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 51]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/stormwrath-enchantment.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 51
+        ]));
 
-    addSpecification("limited by", (["equipment": ({ "long sword", "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+    addSpecification("limited by", (["equipment":
+        ({ "long sword", "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,12 +36,26 @@ protected void Setup()
     addSpecification("bonus electricity enchantment", 18);
 
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "elemental air", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.05]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "elemental air",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.05]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
-    addSpecification("command template", "Primordial Lightning");
-    addSpecification("use ability message", "Primordial lightning arcs from ##InitiatorPossessive## blade, splitting the air.");
+    
+    addSpecification("use ability message",
+        "Primordial lightning arcs from ##InitiatorPossessive## blade, "
+            "splitting the air.");
 }

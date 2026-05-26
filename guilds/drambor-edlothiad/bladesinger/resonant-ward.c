@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Resonant Ward");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research maintains a constant resonant ward around the blade singer.");
+    addSpecification("description", "This research maintains a constant "
+        "resonant ward around the blade singer.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/shield-of-song.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/shield-of-song.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 13
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

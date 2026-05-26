@@ -10,14 +10,22 @@ protected void Setup()
     addSpecification("name", "Absolute Zero");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents the pinnacle of "
-        "frost blade mastery. The battlemage sustains an enchantment of "
+        " frost blade mastery. The battlemage sustains an enchantment of "
         "absolute cold that freezes the very air around their blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/avalanche-strike.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 49]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/avalanche-strike.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 49
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,8 +38,9 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "absolute zero");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade radiates impossible cold as frost crystallizes in the air around it.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
     addSpecification("use ability deactivate message", "The absolute zero "
         "enchantment releases its grip on ##InitiatorPossessive## blade.");
 }

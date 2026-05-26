@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Moonbeam");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the moonbeam spell, "
-        "calling down a beam of concentrated moonlight.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/starlight.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+    addSpecification("description", "This research teaches the moonbeam "
+        "spell,  calling down a beam of concentrated moonlight.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/starlight.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -22,9 +28,18 @@ protected void Setup()
     addSpecification("bonus magical attack", 8);
     addSpecification("bonus radiant attack", 5);
     addSpecification("modifiers", ({
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "wisdom", "formula": "additive", "rate": 0.05]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
     addSpecification("command template", "moonbeam");
     addSpecification("use ability message", "A concentrated beam of moonlight "

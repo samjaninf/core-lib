@@ -10,7 +10,8 @@ protected void Setup()
     addSpecification("name", "Battle Magic Fundamentals");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This skill provides the user with the "
-        "fundamental knowledge of offensive battle magic, the combat spellcasting "
+        "fundamental knowledge of offensive battle magic, the combat "
+            "spellcasting "
         "tradition of the Drambor Edlothiad.");
     addSpecification("scope", "self");
     addSpecification("research type", "tree root");

@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Mystic Barrier");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches the "
-        "Mystic Barrier defensive ward, providing substantial magical and physical protection.");
+        "Mystic Barrier defensive ward, providing substantial magical and "
+            "physical protection.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/spell-ward.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/spell-ward.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,5 +34,7 @@ protected void Setup()
     addSpecification("command template", "mystic barrier");
     addSpecification("use ability activate message", "A Mystic Barrier "
         "materializes around ##InitiatorName##.");
-    addSpecification("use ability deactivate message", "The Mystic Barrier fades.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Mystic Barrier fades.");
 }

@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Elven Spell Arts");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research draws upon traditional elven spell combat arts.");
+    addSpecification("description", "This research draws upon traditional "
+        "elven spell combat arts.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/spell-blade-focus.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 27]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/spell-blade-focus.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 27
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

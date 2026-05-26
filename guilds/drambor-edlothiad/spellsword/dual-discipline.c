@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Dual Discipline");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research masters the dual discipline of magic and martial arts.");
+    addSpecification("description", "This research masters the dual "
+        "discipline of magic and martial arts.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/legendary-spell-sword.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 45]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/legendary-spell-sword.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 45
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

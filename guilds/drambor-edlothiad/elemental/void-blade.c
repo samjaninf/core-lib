@@ -13,11 +13,19 @@ protected void Setup()
         "channel the emptiness of the void through their blade, each strike "
         "tearing at the fabric of reality.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/shadow-mastery.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 37]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/shadow-mastery.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 37
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,14 +38,33 @@ protected void Setup()
     addSpecification("bonus shadow attack", 10);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/elemental/shadow-mastery.c", "name": "shadow-mastery", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "skill", "name": "magical essence", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.10]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/elemental/shadow-mastery.c",
+            "name": "shadow-mastery",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "magical essence",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.10]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "void blade");
     addSpecification("use ability message", "Reality tears along the edge of "
-        "##InitiatorPossessive## blade as void energy wells forth from within.");
+        "##InitiatorPossessive## blade as void energy wells forth from "
+            "within.");
 }

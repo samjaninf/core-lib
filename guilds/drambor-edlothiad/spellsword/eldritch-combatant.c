@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Eldritch Combatant");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research becomes an eldritch combatant, equally deadly with spell and sword.");
+    addSpecification("description", "This research becomes an eldritch "
+        "combatant, equally deadly with spell "
+        "and sword.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/arcane-flow.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 21]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/arcane-flow.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 21
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

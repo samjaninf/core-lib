@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Lightning Reflexes");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches "
-        "the Lightning Reflexes combat stance, enhancing martial capability through arcane power.");
+        "the Lightning Reflexes combat stance, enhancing martial capability "
+            "through arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/whirlwind-stance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 27]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/whirlwind-stance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 27
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -26,6 +33,9 @@ protected void Setup()
 
     addSpecification("command template", "lightning reflexes");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::enter## the Lightning Reflexes stance, arcane energy surging through every movement.");
-    addSpecification("use ability deactivate message", "The Lightning Reflexes stance fades.");
+        "##Infinitive::enter## the Lightning Reflexes stance, arcane energy "
+            "surging through every movement.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Lightning Reflexes stance fades.");
 }

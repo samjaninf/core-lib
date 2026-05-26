@@ -9,14 +9,22 @@ protected void Setup()
 {
     addSpecification("name", "Battlemage Reflexes");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research hones the battlemage's reflexes "
-        "to supernatural levels through arcane enhancement.");
+    addSpecification("description", "This research hones the battlemage's "
+        "reflexes  to supernatural levels through arcane enhancement.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/precision-of-ancients.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 31]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/precision-of-ancients.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 31
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -1,23 +1,36 @@
 //*****************************************************************************
-// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
-//                      the accompanying LICENSE file for details.
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved.
+//                      See the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     addSpecification("name", "Sorcery Supremacy");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "Supreme mastery of elven sorcery.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/sorcery-mastery.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 31]));
+    addSpecification("description", "This research provides the "
+        "user with sorcerous supremacy, a level of "
+        "magical command that places the battlemage "
+        "among the most powerful practitioners in "
+        "existence. Every spell cast carries "
+        "devastating potency, and the reserves of "
+        "power available seem virtually limitless.");
+
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/"
+        "timeless-magic.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/"
+                "drambor-edlothiad.c",
+            "value": 59
+        ]));
+
+    addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("affected research", ([
-        "Starlight": 25, "Moonbeam": 25, "Moonfire": 25,
-        "Eldritch Star": 25, "Celestial Lance": 25,
-        "Ancient Power": 25, "Elder Star": 25,
-    ]));
-    addSpecification("affected research type", "percentage");
+    addSpecification("bonus spellcraft", 7);
+    addSpecification("bonus spell points", 50);
 }

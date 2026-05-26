@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Spell Sword Mastery");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves mastery of the spell sword discipline.");
+    addSpecification("description", "This research achieves mastery of the "
+        "spell sword discipline.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/eldritch-combatant.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 25]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/eldritch-combatant.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 25
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Devastating Spell Strikes");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research makes all spell strikes devastatingly powerful.");
+    addSpecification("description", "This research makes all spell strikes "
+        "devastatingly powerful.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/annihilation-strike.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 29]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/annihilation-strike.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 29
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

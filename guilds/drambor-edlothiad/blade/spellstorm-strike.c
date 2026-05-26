@@ -13,11 +13,19 @@ protected void Setup()
         "unleash a storm of arcane strikes, each blow sending shockwaves "
         "of magical energy outward.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/runic-blade.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 23]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/runic-blade.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 23
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -31,16 +39,40 @@ protected void Setup()
     addSpecification("bonus damage", 5);
 
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/blade/spell-weave.c", "name": "spell-weave", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/blade/spell-weave-mastery.c", "name": "spell-weave-mastery", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "long sword", "formula": "additive", "rate": 0.10]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 1.50]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.15]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.05]),
+        (["type": "research",
+            "research item": "/guilds/drambor-edlothiad/blade/spell-weave.c",
+            "name": "spell-weave",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/blade/spell-weave-mastery.c",
+            "name": "spell-weave-mastery",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "long sword",
+            "formula": "additive",
+            "rate": 0.10]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 1.50]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.15]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.05]),
     }));
 
     addSpecification("command template", "spellstorm strike");
     addSpecification("use ability message", "A storm of arcane energy erupts "
-        "from ##InitiatorPossessive## blade with each strike, sending shockwaves "
+        "from ##InitiatorPossessive## blade with each strike, sending "
+            "shockwaves "
         "of magical force outward.");
 }

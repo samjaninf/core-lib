@@ -10,13 +10,21 @@ protected void Setup()
     addSpecification("name", "Legendary Swordcraft");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents legendary skill "
-        "with the blade, known only to the greatest battlemages.");
+        " with the blade, known only to the greatest battlemages.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/elven-perfection.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 61]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/elven-perfection.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 61
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

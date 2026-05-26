@@ -13,8 +13,14 @@ protected void Setup()
         "ability to weave spells into blade techniques, enhancing all "
         "active spellblade abilities.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/arcane-slash.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/arcane-slash.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

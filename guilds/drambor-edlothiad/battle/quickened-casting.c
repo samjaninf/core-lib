@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Quickened Casting");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches rapid spell preparation "
-        "for battle conditions.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/combat-casting.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addSpecification("description", "This research teaches rapid spell "
+        "preparation  for battle conditions.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/combat-casting.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

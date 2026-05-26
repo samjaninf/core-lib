@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Blade Resonance");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research creates a resonant bond between enchanter and blade.");
+    addSpecification("description", "This research creates a resonant bond "
+        "between enchanter and blade.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/persistent-enchantments.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 45]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/persistent-enchantments.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 45
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

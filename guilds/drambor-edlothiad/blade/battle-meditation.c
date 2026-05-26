@@ -13,8 +13,14 @@ protected void Setup()
         "maintain a meditative state during combat, improving mana and "
         "stamina efficiency.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/elven-swordcraft.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 15]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/elven-swordcraft.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 15
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

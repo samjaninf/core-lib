@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research enhances the "
         "battlemage's martial prowess through arcane warrior techniques.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/battle-sense.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/battle-sense.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

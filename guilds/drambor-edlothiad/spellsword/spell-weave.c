@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Spell Weave");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the art of weaving spells between sword strokes.");
+    addSpecification("description", "This research teaches the art of "
+        "weaving spells between sword strokes.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Shadow Mastery");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research deepens the battlemage's "
-        "command of shadow energy, enhancing all shadow-based blade enchantments.");
+        "command of shadow energy, enhancing all shadow-based blade "
+            "enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/umbral-brand.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 23]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/umbral-brand.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 23
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

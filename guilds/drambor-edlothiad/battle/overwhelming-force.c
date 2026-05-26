@@ -10,9 +10,15 @@ protected void Setup()
     addSpecification("name", "Overwhelming Force");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches the application of "
-        "overwhelming magical force in battle.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/destructive-power.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 31]));
+        " overwhelming magical force in battle.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/destructive-power.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 31
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

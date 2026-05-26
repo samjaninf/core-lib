@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Spell Ward");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches the "
-        "Spell Ward defensive ward, providing substantial magical and physical protection.");
+        "Spell Ward defensive ward, providing substantial magical and "
+            "physical protection.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/defense/arcane-shield.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/defense/arcane-shield.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -27,5 +34,7 @@ protected void Setup()
     addSpecification("command template", "spell ward");
     addSpecification("use ability activate message", "A Spell Ward "
         "materializes around ##InitiatorName##.");
-    addSpecification("use ability deactivate message", "The Spell Ward fades.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Spell Ward fades.");
 }

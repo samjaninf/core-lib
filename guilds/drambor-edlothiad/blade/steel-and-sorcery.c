@@ -9,14 +9,22 @@ protected void Setup()
 {
     addSpecification("name", "Steel and Sorcery");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research represents the seamless unity "
-        "of steel and sorcery in the battlemage tradition.");
+    addSpecification("description", "This research represents the seamless "
+        "unity  of steel and sorcery in the battlemage tradition.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/combat-arcana.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 49]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/combat-arcana.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 49
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Lorekeeper's Mind");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research grants the vast mental capacity of ancient lorekeepers.");
+    addSpecification("description", "This research grants the vast mental "
+        "capacity of ancient lorekeepers.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/memory-of-ages.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 19]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/memory-of-ages.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 19
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

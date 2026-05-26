@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Elven Resilience");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research strengthens the natural elven resistance to harm.");
+    addSpecification("description", "This research strengthens the natural "
+        "elven resistance to harm.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/trance-meditation.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/trance-meditation.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

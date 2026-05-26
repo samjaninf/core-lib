@@ -10,10 +10,16 @@ protected void Setup()
     addSpecification("name", "Arcane Mastery");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research represents deep mastery of "
-        "arcane combat arts.");
+        " arcane combat arts.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/unflinching-focus.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 43]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/unflinching-focus.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 43
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

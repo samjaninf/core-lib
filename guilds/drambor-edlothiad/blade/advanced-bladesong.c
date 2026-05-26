@@ -9,15 +9,23 @@ protected void Setup()
 {
     addSpecification("name", "Advanced Bladesong");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches an advanced form of "
-        "the bladesong, incorporating more complex arcane harmonics for "
+    addSpecification("description", "This research teaches an advanced form "
+        "of  the bladesong, incorporating more complex arcane harmonics for "
         "greater offensive and defensive power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/bladesong-stance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 25]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/bladesong-stance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 25
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -32,8 +40,10 @@ protected void Setup()
 
     addSpecification("command template", "advanced bladesong");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::begin## an advanced bladesong, the melody more complex "
+        "##Infinitive::begin## an advanced bladesong, the melody more "
+            "complex "
         "and powerful than before.");
-    addSpecification("use ability deactivate message", "The advanced bladesong "
-        "fades to silence.");
+    addSpecification(
+        "use ability deactivate message",
+        "The advanced bladesong "
 }

@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Battle Casting");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research enables effective spellcasting during melee combat.");
+    addSpecification("description", "This research enables effective "
+        "spellcasting during melee combat.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/spell-weave.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 5]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/spell-weave.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 5
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

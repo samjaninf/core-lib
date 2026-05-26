@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Whirlwind Stance");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches "
-        "the Whirlwind Stance combat stance, enhancing martial capability through arcane power.");
+        "the Whirlwind Stance combat stance, enhancing martial capability "
+            "through arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/combat-focus.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 17]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/combat-focus.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 17
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -26,6 +33,9 @@ protected void Setup()
 
     addSpecification("command template", "whirlwind stance");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::enter## the Whirlwind Stance stance, arcane energy surging through every movement.");
-    addSpecification("use ability deactivate message", "The Whirlwind Stance stance fades.");
+        "##Infinitive::enter## the Whirlwind Stance stance, arcane energy "
+            "surging through every movement.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Whirlwind Stance stance fades.");
 }

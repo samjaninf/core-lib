@@ -13,11 +13,19 @@ protected void Setup()
         "sustain a potent acid enchantment, their blade continuously "
         "weeping caustic fluid that dissolves defenses.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/acid-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/acid-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,8 +37,9 @@ protected void Setup()
     addSpecification("bonus acid attack", 5);
 
     addSpecification("command template", "caustic brand");
-    addSpecification("use ability activate message", "##InitiatorPossessive::Name## "
-        "blade weeps caustic fluid, hissing where it touches the air.");
+    addSpecification(
+        "use ability activate message",
+        "##InitiatorPossessive::Name## "
     addSpecification("use ability deactivate message", "The caustic brand "
         "dries from ##InitiatorPossessive## blade.");
 }

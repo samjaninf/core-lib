@@ -9,15 +9,24 @@ protected void Setup()
 {
     addSpecification("name", "Mystic Guard");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches an advanced defensive "
-        "technique that layers multiple arcane wards through blade movements, "
+    addSpecification("description", "This research teaches an advanced "
+        "defensive  technique that layers multiple arcane wards through "
+            "blade movements, "
         "creating a near-impenetrable mystic guard.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/bladesong-stance.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 17]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/bladesong-stance.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 17
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -30,8 +39,9 @@ protected void Setup()
     addSpecification("bonus resist magical", 5);
 
     addSpecification("command template", "mystic guard");
-    addSpecification("use ability activate message", "Layers of arcane energy "
-        "ripple outward from ##InitiatorPossessive## blade as a mystic guard "
+    addSpecification(
+        "use ability activate message",
+        "Layers of arcane energy "
         "takes shape.");
     addSpecification("use ability deactivate message", "The mystic guard "
         "dissipates.");

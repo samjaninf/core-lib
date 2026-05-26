@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Elven Vitality");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research unlocks the natural vitality of the elven bloodline.");
+    addSpecification("description", "This research unlocks the natural "
+        "vitality of the elven bloodline.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/heritage/root.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/heritage/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

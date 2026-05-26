@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Storm Dancer");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches "
-        "the Storm Dancer combat stance, enhancing martial capability through arcane power.");
+        "the Storm Dancer combat stance, enhancing martial capability "
+            "through arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/arcane-fury.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 51]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/arcane-fury.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 51
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -26,6 +33,9 @@ protected void Setup()
 
     addSpecification("command template", "storm dancer");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::enter## the Storm Dancer stance, arcane energy surging through every movement.");
-    addSpecification("use ability deactivate message", "The Storm Dancer stance fades.");
+        "##Infinitive::enter## the Storm Dancer stance, arcane energy "
+            "surging through every movement.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Storm Dancer stance fades.");
 }

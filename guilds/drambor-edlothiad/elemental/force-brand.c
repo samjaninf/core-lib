@@ -13,11 +13,19 @@ protected void Setup()
         "sustain a concentrated force enchantment on their blade, each "
         "strike hitting with amplified arcane impact.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/energy-edge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 9]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/energy-edge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 9
+        ]));
 
     addSpecification("limited by", (["equipment": ({ "long sword",
-        "hand and a half sword", "two-handed sword", "short sword", "dagger" }) ]));
+            "hand and a half sword",
+            "two-handed sword", "short sword",
+            "dagger" }) ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -29,8 +37,9 @@ protected void Setup()
     addSpecification("bonus energy attack", 5);
 
     addSpecification("command template", "force brand");
-    addSpecification("use ability activate message", "Concentrated arcane force "
-        "ripples along ##InitiatorPossessive## blade, distorting the air around it.");
+    addSpecification(
+        "use ability activate message",
+        "Concentrated arcane force "
     addSpecification("use ability deactivate message", "The force brand "
         "dissipates from ##InitiatorPossessive## blade.");
 }

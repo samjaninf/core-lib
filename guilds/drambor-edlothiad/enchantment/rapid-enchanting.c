@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Rapid Enchanting");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows faster application of blade enchantments.");
+    addSpecification("description", "This research allows faster "
+        "application of blade enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/enchantment-potency.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 25]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/enchantment-potency.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 25
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -11,8 +11,14 @@ protected void Setup()
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches a barrage of "
         "annihilating energy that devastates everything in its path.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/disintegrate.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 39]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/disintegrate.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 39
+        ]));
     addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
@@ -23,14 +29,42 @@ protected void Setup()
     addSpecification("bonus energy attack", 30);
     addSpecification("bonus magical attack", 15);
     addSpecification("modifiers", ({
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/battle/spell-penetration.c", "name": "spell-penetration", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/battle/spell-penetration-mastery.c", "name": "spell-penetration-mastery", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "research", "research item": "/guilds/drambor-edlothiad/battle/spell-penetration-supremacy.c", "name": "spell-penetration-supremacy", "formula": "multiplicative", "base value": 1, "rate": 1.25]),
-        (["type": "skill", "name": "spellcraft", "formula": "logarithmic", "rate": 2.0]),
-        (["type": "level", "name": "level", "formula": "logarithmic", "rate": 1.25]),
-        (["type": "attribute", "name": "intelligence", "formula": "additive", "rate": 0.10]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/battle/spell-penetration.c",
+            "name": "spell-penetration",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/battle/spell-penetration-mastery.c",
+            "name": "spell-penetration-mastery",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "research",
+            "research item": 
+                "/guilds/drambor-edlothiad/battle/spell-penetration-supremacy.c",
+            "name": "spell-penetration-supremacy",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25]),
+        (["type": "skill",
+            "name": "spellcraft",
+            "formula": "logarithmic",
+            "rate": 2.0]),
+        (["type": "level",
+            "name": "level",
+            "formula": "logarithmic",
+            "rate": 1.25]),
+        (["type": "attribute",
+            "name": "intelligence",
+            "formula": "additive",
+            "rate": 0.10]),
     }));
     addSpecification("command template", "annihilating barrage");
     addSpecification("use ability message", "##InitiatorName## "
-        "##Infinitive::unleash## an annihilating barrage of pure destructive energy.");
+        "##Infinitive::unleash## an annihilating barrage of pure destructive "
+            "energy.");
 }

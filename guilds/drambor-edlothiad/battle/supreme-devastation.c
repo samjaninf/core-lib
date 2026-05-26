@@ -10,9 +10,15 @@ protected void Setup()
     addSpecification("name", "Supreme Devastation");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research amplifies all battle magic "
-        "to supreme levels of devastation.");
-    addPrerequisite("/guilds/drambor-edlothiad/battle/supreme-battle-mastery.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 41]));
+        " to supreme levels of devastation.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/battle/supreme-battle-mastery.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 41
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

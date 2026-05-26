@@ -9,10 +9,18 @@ protected void Setup()
 {
     addSpecification("name", "Eternal Melody");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research connects the blade singer to the eternal melody of creation.");
+    addSpecification("description", "This research connects the blade "
+        "singer to the eternal melody of "
+        "creation.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/voice-of-the-blade.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 37]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/voice-of-the-blade.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 37
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

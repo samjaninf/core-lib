@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Arcane Haste");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches "
-        "the Arcane Haste combat stance, enhancing martial capability through arcane power.");
+        "the Arcane Haste combat stance, enhancing martial capability "
+            "through arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/arcane-speed.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 3]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/arcane-speed.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 3
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -26,6 +33,9 @@ protected void Setup()
 
     addSpecification("command template", "arcane haste");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::enter## the Arcane Haste stance, arcane energy surging through every movement.");
-    addSpecification("use ability deactivate message", "The Arcane Haste stance fades.");
+        "##Infinitive::enter## the Arcane Haste stance, arcane energy "
+            "surging through every movement.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Arcane Haste stance fades.");
 }

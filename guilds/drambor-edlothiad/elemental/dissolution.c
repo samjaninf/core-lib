@@ -13,8 +13,14 @@ protected void Setup()
         "understanding of corrosive channeling, enhancing all acid-based "
         "blade enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/caustic-brand.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 21]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/caustic-brand.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 21
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

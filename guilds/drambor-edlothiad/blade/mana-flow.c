@@ -12,8 +12,14 @@ protected void Setup()
     addSpecification("description", "This research teaches the battlemage to "
         "maintain a steady flow of mana during combat.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/blade/focused-channeling.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 11]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/blade/focused-channeling.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 11
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

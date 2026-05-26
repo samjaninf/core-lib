@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Blade Singer's Perfection");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research achieves martial perfection through the bladesong.");
+    addSpecification("description", "This research achieves martial "
+        "perfection through the bladesong.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/supreme-bladesong.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 45]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/supreme-bladesong.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 45
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

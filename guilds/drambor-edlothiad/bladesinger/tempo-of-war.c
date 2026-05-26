@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Tempo of War");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research controls the tempo of battle through the bladesong.");
+    addSpecification("description", "This research controls the tempo of "
+        "battle through the bladesong.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/fortissimo.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 35]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/fortissimo.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 35
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

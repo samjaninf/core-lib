@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Rhythm of Battle");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows the blade singer to find the rhythm in any combat.");
+    addSpecification("description", "This research allows the blade singer "
+        "to find the rhythm in any combat.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/song-of-steel.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 21]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/song-of-steel.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 21
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

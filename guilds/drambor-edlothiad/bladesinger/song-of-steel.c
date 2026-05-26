@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Song of Steel");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the blade to sing its own song of destruction.");
+    addSpecification("description", "This research teaches the blade to "
+        "sing its own song of destruction.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/bladesinger/greater-bladesong.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 19]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/bladesinger/greater-bladesong.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 19
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

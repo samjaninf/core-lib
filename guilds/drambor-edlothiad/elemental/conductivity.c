@@ -10,11 +10,18 @@ protected void Setup()
     addSpecification("name", "Conductivity");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research deepens the battlemage's "
-        "understanding of electrical channeling, enhancing all lightning-based "
+        "understanding of electrical channeling, enhancing all "
+            "lightning-based "
         "blade enchantments.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/elemental/voltaic-brand.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 15]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/elemental/voltaic-brand.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 15
+        ]));
 
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

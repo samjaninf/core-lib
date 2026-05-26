@@ -1,27 +1,36 @@
 //*****************************************************************************
-// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
-//                      the accompanying LICENSE file for details.
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved.
+//                      See the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/sustainedResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     addSpecification("name", "Star Shield");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "A shield of stellar energy.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/moonlight-veil.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 13]));
+    addSpecification("description", "This research provides the "
+        "user with the star shield, an advanced "
+        "protective sorcery that draws power from "
+        "celestial bodies. The battlemage manifests "
+        "a constellation of tiny points of light "
+        "that orbit their body, each one deflecting "
+        "incoming attacks with concentrated force.");
+
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/"
+        "moonlight-veil.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/"
+                "drambor-edlothiad.c",
+            "value": 31
+        ]));
+
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("spell point cost", 55);
-    addSpecification("cooldown", 45);
-    addSpecification("bonus defense", 5);
-    addSpecification("bonus resist magical", 5);
-    addSpecification("bonus dodge", 3);
-    addSpecification("command template", "star shield");
-    addSpecification("use ability activate message", "A shield of stellar "
-        "energy coalesces around ##InitiatorName##.");
-    addSpecification("use ability deactivate message", "The star shield fades.");
+    addSpecification("bonus defense", 4);
+    addSpecification("bonus resist physical", 3);
 }

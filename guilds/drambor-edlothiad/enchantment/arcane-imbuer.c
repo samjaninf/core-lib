@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Arcane Imbuer");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research allows the enchanter to imbue blades with unprecedented power.");
+    addSpecification("description", "This research allows the enchanter to "
+        "imbue blades with unprecedented power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/enchantment/enchantment-supremacy.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 61]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/enchantment/enchantment-supremacy.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 61
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

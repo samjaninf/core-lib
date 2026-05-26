@@ -9,10 +9,16 @@ protected void Setup()
 {
     addSpecification("name", "Mana Sight");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research grants the ability to perceive "
-        "magical energies directly.");
-    addPrerequisite("/guilds/drambor-edlothiad/sorcery/ancient-knowledge.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 7]));
+    addSpecification("description", "This research grants the ability to "
+        "perceive  magical energies directly.");
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/sorcery/ancient-knowledge.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 7
+        ]));
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

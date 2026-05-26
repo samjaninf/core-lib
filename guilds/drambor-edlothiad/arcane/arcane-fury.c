@@ -10,10 +10,17 @@ protected void Setup()
     addSpecification("name", "Arcane Fury");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research teaches "
-        "the Arcane Fury combat stance, enhancing martial capability through arcane power.");
+        "the Arcane Fury combat stance, enhancing martial capability through "
+            "arcane power.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/arcane/lightning-reflexes.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 39]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/arcane/lightning-reflexes.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 39
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
@@ -26,6 +33,9 @@ protected void Setup()
 
     addSpecification("command template", "arcane fury");
     addSpecification("use ability activate message", "##InitiatorName## "
-        "##Infinitive::enter## the Arcane Fury stance, arcane energy surging through every movement.");
-    addSpecification("use ability deactivate message", "The Arcane Fury stance fades.");
+        "##Infinitive::enter## the Arcane Fury stance, arcane energy surging "
+            "through every movement.");
+    addSpecification(
+        "use ability deactivate message",
+        "The Arcane Fury stance fades.");
 }

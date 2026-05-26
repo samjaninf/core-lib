@@ -9,10 +9,17 @@ protected void Setup()
 {
     addSpecification("name", "Transcendent Spell Sword");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research transcends the mortal limits of spell and sword.");
+    addSpecification("description", "This research transcends the mortal "
+        "limits of spell and sword.");
 
-    addPrerequisite("/guilds/drambor-edlothiad/spellsword/legendary-spell-sword.c", (["type": "research"]));
-    addPrerequisite("level", (["type": "level", "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c", "value": 51]));
+    addPrerequisite(
+        "/guilds/drambor-edlothiad/spellsword/legendary-spell-sword.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
+            "value": 51
+        ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");

@@ -247,6 +247,7 @@ private void FortyNinthLevel()
 private void FiftyThirdLevel()
 {
     addResearchElement("/guilds/drambor-edlothiad/heritage/blood-of-the-firstborn.c");
+    addResearchElement("/guilds/drambor-edlothiad/heritage/mind-beyond-time.c");
 
     addChild("/guilds/drambor-edlothiad/heritage/blood-of-the-firstborn.c",
         "/guilds/drambor-edlothiad/heritage/mind-beyond-time.c");
@@ -255,8 +256,6 @@ private void FiftyThirdLevel()
 /////////////////////////////////////////////////////////////////////////////
 private void FiftyFifthLevel()
 {
-    addResearchElement("/guilds/drambor-edlothiad/heritage/mind-beyond-time.c");
-
     addChild("/guilds/drambor-edlothiad/heritage/mind-beyond-time.c",
         "/guilds/drambor-edlothiad/heritage/timeless-intellect.c");
 }

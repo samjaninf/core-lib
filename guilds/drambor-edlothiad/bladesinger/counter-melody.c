@@ -9,11 +9,12 @@ protected void Setup()
 {
     addSpecification("name", "Counter Melody");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches a counter-melody "
-        "that disrupts enemy attacks.");
+    addSpecification("description", "This research teaches the bladesinger "
+        "to weave a counter melody into their bladesong, a defensive harmony "
+        "that disrupts and negates incoming attacks.");
 
     addPrerequisite(
-        "/guilds/drambor-edlothiad/bladesinger/shield-of-song.c",
+        "/guilds/drambor-edlothiad/bladesinger/harmonic-flow.c",
         (["type": "research"]));
     addPrerequisite("level",
         (["type": "level",
@@ -24,6 +25,6 @@ protected void Setup()
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("bonus parry", 3);
-    addSpecification("bonus defense", 2);
+    addSpecification("bonus defense", 5);
+    addSpecification("bonus damage reflection", 3);
 }

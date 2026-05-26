@@ -37,10 +37,8 @@ protected void Setup()
     addSpecification("bonus fire attack", 5);
 
     addSpecification("command template", "searing brand");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
-    addSpecification(
-        "use ability deactivate message",
-        "The searing brand fades "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade erupts with searing heat, flames licking along the steel in a brand of molten fury.");
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::allow## the searing brand to fade, flames guttering into nothing.");
 }

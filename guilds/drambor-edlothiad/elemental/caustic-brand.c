@@ -37,9 +37,8 @@ protected void Setup()
     addSpecification("bonus acid attack", 5);
 
     addSpecification("command template", "caustic brand");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade weeps with virulent acid, the caustic brand hissing against the air.");
     addSpecification("use ability deactivate message", "The caustic brand "
         "dries from ##InitiatorPossessive## blade.");
 }

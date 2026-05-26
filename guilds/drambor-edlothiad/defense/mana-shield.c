@@ -7,30 +7,30 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Keen Senses");
+    addSpecification("name", "Mana Shield");
     addSpecification("source", "Drambor Edlothiad");
     addSpecification("description", "This research provides the "
-        "user with the keen senses that are the "
-        "hallmark of elven kind. Sight, hearing, "
-        "and even the subtle awareness of nearby "
-        "magical auras are sharpened to a razor "
-        "edge, granting the battlemage awareness "
-        "that borders on omniscience.");
+        "user with the mana shield technique. The "
+        "battlemage learns to reflexively convert "
+        "incoming damage into spell point drain, "
+        "absorbing physical and magical punishment "
+        "alike by sacrificing magical reserves "
+        "rather than suffering bodily harm.");
 
     addPrerequisite(
-        "/guilds/drambor-edlothiad/heritage/"
-        "elven-grace.c",
+        "/guilds/drambor-edlothiad/defense/"
+        "mystic-resilience.c",
         (["type": "research"]));
     addPrerequisite("level",
         (["type": "level",
             "guild": "/guilds/drambor-edlothiad/"
                 "drambor-edlothiad.c",
-            "value": 5
+            "value": 7
         ]));
 
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("bonus perception", 3);
-    addSpecification("bonus wisdom", 2);
+    addSpecification("bonus defense", 2);
+    addSpecification("bonus resist magical", 3);
 }

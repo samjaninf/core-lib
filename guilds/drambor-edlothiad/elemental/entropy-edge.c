@@ -38,10 +38,8 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "entropy edge");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
-    addSpecification(
-        "use ability deactivate message",
-        "The entropy enchantment "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade shimmers with the unraveling forces of entropy, matter decaying at its touch.");
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::release## the entropy enchantment, the blade returning to normal.");
 }

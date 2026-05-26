@@ -37,9 +37,8 @@ protected void Setup()
     addSpecification("bonus shadow attack", 5);
 
     addSpecification("command template", "umbral brand");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade drinks in surrounding light, cloaked in writhing shadow.");
     addSpecification("use ability deactivate message", "The umbral brand "
         "recedes from ##InitiatorPossessive## blade.");
 }

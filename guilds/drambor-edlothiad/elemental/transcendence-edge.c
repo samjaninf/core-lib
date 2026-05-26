@@ -38,9 +38,8 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "transcendence edge");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade shimmers with otherworldly energy as the transcendence enchantment takes hold.");
     addSpecification("use ability deactivate message", "The transcendence "
         "enchantment fades from ##InitiatorPossessive## blade.");
 }

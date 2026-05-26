@@ -39,10 +39,8 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "pyroclasm edge");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
-    addSpecification(
-        "use ability deactivate message",
-        "The pyroclasm enchantment "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade ignites with volcanic fury, superheated stone and flame cascading along its length.");
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::quench## the pyroclasm enchantment, the volcanic fury subsiding.");
 }

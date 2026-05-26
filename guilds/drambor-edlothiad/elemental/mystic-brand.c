@@ -37,9 +37,8 @@ protected void Setup()
     addSpecification("bonus magical attack", 5);
 
     addSpecification("command template", "mystic brand");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade pulses with enigmatic arcane energies, the mystic brand humming with power.");
     addSpecification("use ability deactivate message", "The mystic brand "
         "fades from ##InitiatorPossessive## blade.");
 }

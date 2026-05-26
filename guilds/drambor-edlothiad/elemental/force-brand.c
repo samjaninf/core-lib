@@ -37,9 +37,8 @@ protected void Setup()
     addSpecification("bonus energy attack", 5);
 
     addSpecification("command template", "force brand");
-    addSpecification(
-        "use ability activate message",
-        "Concentrated arcane force "
+    addSpecification("use ability activate message",
+        "Concentrated arcane force sheathes ##InitiatorPossessive## blade in a rippling corona of raw power.");
     addSpecification("use ability deactivate message", "The force brand "
         "dissipates from ##InitiatorPossessive## blade.");
 }

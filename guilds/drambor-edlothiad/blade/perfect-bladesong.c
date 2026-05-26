@@ -44,7 +44,7 @@ protected void Setup()
     addSpecification("use ability activate message", "##InitiatorName## "
         "##Infinitive::achieve## the perfect bladesong, blade and magic "
         "merging into a flawless symphony of combat.");
-    addSpecification(
-        "use ability deactivate message",
-        "The perfect bladesong "
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::release## the perfect bladesong, "
+        "the flawless harmony dissolving into stillness.");
 }

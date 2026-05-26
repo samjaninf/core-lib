@@ -2,15 +2,15 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/persistedActiveResearchItem.c";
+inherit "/lib/modules/research/instantaneousActiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
     addSpecification("name", "Tempest");
     addSpecification("source", "Drambor Edlothiad");
-    addSpecification("description", "This research teaches the tempest spell, "
-        " a whirlwind of electrical and wind energy.");
+    addSpecification("description", "This research teaches the battlemage to summon a devastating electrical tempest that engulfs the battlefield in crackling fury, striking all enemies with arcs of searing lightning.");
+
     addPrerequisite(
         "/guilds/drambor-edlothiad/battle/chain-lightning.c",
         (["type": "research"]));
@@ -19,33 +19,129 @@ protected void Setup()
             "guild": "/guilds/drambor-edlothiad/drambor-edlothiad.c",
             "value": 21
         ]));
+
     addSpecification("scope", "area");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
-    addSpecification("spell point cost", 85);
-    addSpecification("cooldown", 25);
-    addSpecification("duration", 4);
+
+    addSpecification("damage hit points", ({
+        ([
+            "probability": 80,
+            "base damage": 75,
+            "range": 45
+        ]),
+        ([
+            "probability": 20,
+            "base damage": 125,
+            "range": 75
+        ])
+    }));
+
     addSpecification("damage type", "electricity");
-    addSpecification("bonus electricity attack", 18);
+
     addSpecification("modifiers", ({
-        (["type": "skill",
+        ([
+            "type": "research",
+            "research item": "/guilds/drambor-edlothiad/battle/combat-casting.c",
+            "name": "Combat Casting",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/drambor-edlothiad/battle/spell-focus.c",
+            "name": "Spell Focus",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/drambor-edlothiad/battle/mana-efficiency.c",
+            "name": "Mana Efficiency",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/drambor-edlothiad/battle/spell-penetration.c",
+            "name": "Spell Penetration",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/drambor-edlothiad/battle/arcane-might.c",
+            "name": "Arcane Might",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/drambor-edlothiad/battle/devastating-focus.c",
+            "name": "Devastating Focus",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/drambor-edlothiad/battle/battle-mastery.c",
+            "name": "Battle Mastery",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "skill",
             "name": "spellcraft",
             "formula": "logarithmic",
-            "rate": 1.50]),
-        (["type": "skill",
+            "rate": 1.25
+        ]),
+        ([
+            "type": "skill",
+            "name": "magical essence",
+            "formula": "logarithmic",
+            "rate": 1.25
+        ]),
+        ([
+            "type": "skill",
             "name": "elemental air",
             "formula": "additive",
-            "rate": 0.15]),
-        (["type": "level",
+            "rate": 0.10
+        ]),
+        ([
+            "type": "skill",
+            "name": "evocation",
+            "formula": "additive",
+            "rate": 0.10
+        ]),
+        ([
+            "type": "level",
             "name": "level",
             "formula": "logarithmic",
-            "rate": 1.15]),
-        (["type": "attribute",
+            "rate": 1.05
+        ]),
+        ([
+            "type": "attribute",
             "name": "intelligence",
             "formula": "additive",
-            "rate": 0.08]),
+            "rate": 0.05
+        ]),
+        ([
+            "type": "attribute",
+            "name": "wisdom",
+            "formula": "additive",
+            "rate": 0.025
+        ])
     }));
+
+    addSpecification("spell point cost", 85);
+    addSpecification("cooldown", 25);
     addSpecification("command template", "tempest");
-    addSpecification("use ability message", "##InitiatorName## "
-        "##Infinitive::summon## a howling tempest of wind and lightning.");
+    addSpecification("use ability message", "##InitiatorName## ##Infinitive::summon## a crackling tempest that engulfs ##TargetName## and nearby foes in arcs of lightning.");
 }

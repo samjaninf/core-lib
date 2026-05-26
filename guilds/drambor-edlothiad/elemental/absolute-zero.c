@@ -38,9 +38,8 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "absolute zero");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade radiates an aura of impossible cold, frost crystallizing from the very air.");
     addSpecification("use ability deactivate message", "The absolute zero "
         "enchantment releases its grip on ##InitiatorPossessive## blade.");
 }

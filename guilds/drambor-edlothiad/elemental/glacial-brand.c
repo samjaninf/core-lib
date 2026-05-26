@@ -37,10 +37,8 @@ protected void Setup()
     addSpecification("bonus cold attack", 5);
 
     addSpecification("command template", "glacial brand");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
-    addSpecification(
-        "use ability deactivate message",
-        "The glacial brand melts "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade sheathes itself in glacial ice, the cold so intense it burns.");
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::allow## the glacial brand to melt away, warmth returning to the steel.");
 }

@@ -37,9 +37,8 @@ protected void Setup()
     addSpecification("bonus electricity attack", 5);
 
     addSpecification("command template", "voltaic brand");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade crackles with arcing electricity, the voltaic brand discharging sparks.");
     addSpecification("use ability deactivate message", "The voltaic brand "
         "dissipates from ##InitiatorPossessive## blade.");
 }

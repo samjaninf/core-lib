@@ -48,7 +48,6 @@ protected void Setup()
     addSpecification("use ability activate message", "All elemental forces "
         "collapse into a single point of devastating power within "
         "##InitiatorPossessive## blade - a singularity of pure destruction.");
-    addSpecification(
-        "use ability deactivate message",
-        "The elemental singularity "
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::release## the elemental singularity, the collapsed forces dissipating harmlessly.");
 }

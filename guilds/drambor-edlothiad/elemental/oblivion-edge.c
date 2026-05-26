@@ -39,10 +39,8 @@ protected void Setup()
     addSpecification("bonus damage", 8);
 
     addSpecification("command template", "oblivion edge");
-    addSpecification(
-        "use ability activate message",
-        "##InitiatorPossessive::Name## "
-    addSpecification(
-        "use ability deactivate message",
-        "The oblivion enchantment "
+    addSpecification("use ability activate message",
+        "##InitiatorPossessive::Name## blade opens a sliver of void along its edge, reality distorting around the oblivion enchantment.");
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::seal## the oblivion enchantment, the void closing along the blade's edge.");
 }

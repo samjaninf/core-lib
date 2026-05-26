@@ -43,7 +43,7 @@ protected void Setup()
         "##Infinitive::begin## an advanced bladesong, the melody more "
             "complex "
         "and powerful than before.");
-    addSpecification(
-        "use ability deactivate message",
-        "The advanced bladesong "
+    addSpecification("use ability deactivate message",
+        "##InitiatorName## ##Infinitive::allow## the advanced bladesong "
+        "to fade into silence.");
 }

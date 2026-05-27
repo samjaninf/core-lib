@@ -53,4 +53,5 @@ protected void Setup()
             "rate": 0.09
         ])
     }));
+    addSpecification("consumables", (["basic power rune": 1]));
 }

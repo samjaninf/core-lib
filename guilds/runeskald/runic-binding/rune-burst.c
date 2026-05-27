@@ -39,6 +39,8 @@ protected void Setup()
         ])
     }));
 
+    addSpecification("consumables", (["basic power rune": 1]));
+
     addSpecification("modifiers", ({
         ([
             "type": "attribute",

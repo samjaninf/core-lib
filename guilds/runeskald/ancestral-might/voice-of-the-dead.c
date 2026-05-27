@@ -63,4 +63,5 @@ protected void Setup()
             "rate": 1.15
         ])
     }));
+    addSpecification("consumables", (["basic ward rune": 1]));
 }

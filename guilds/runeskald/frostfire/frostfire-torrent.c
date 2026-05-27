@@ -42,6 +42,54 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
+            "type": "research",
+            "research item": "/guilds/runeskald/frostfire/elemental-potency.c",
+            "name": "elemental-potency",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/frostfire/elemental-reserve.c",
+            "name": "elemental-reserve",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/frostfire/elemental-tempo.c",
+            "name": "elemental-tempo",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/frostfire/elemental-potency-ii.c",
+            "name": "elemental-potency-ii",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/frostfire/elemental-reserve-ii.c",
+            "name": "elemental-reserve-ii",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/frostfire/elemental-tempo-ii.c",
+            "name": "elemental-tempo-ii",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
             "type": "skill",
             "name": "spellcraft",
             "formula": "additive",
@@ -62,4 +110,5 @@ protected void Setup()
             "rate": 1.18
         ])
     }));
+    addSpecification("consumables", (["elder power rune": 1]));
 }

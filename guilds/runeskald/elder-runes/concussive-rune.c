@@ -42,6 +42,54 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
+            "type": "research",
+            "research item": "/guilds/runeskald/elder-runes/runic-precision.c",
+            "name": "runic-precision",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/elder-runes/runic-efficiency.c",
+            "name": "runic-efficiency",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/elder-runes/runic-alacrity.c",
+            "name": "runic-alacrity",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/elder-runes/runic-precision-ii.c",
+            "name": "runic-precision-ii",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/elder-runes/runic-efficiency-ii.c",
+            "name": "runic-efficiency-ii",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/elder-runes/runic-alacrity-ii.c",
+            "name": "runic-alacrity-ii",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
             "type": "skill",
             "name": "spellcraft",
             "formula": "additive",
@@ -62,4 +110,5 @@ protected void Setup()
             "rate": 1.12
         ])
     }));
+    addSpecification("consumables", (["elder power rune": 1]));
 }

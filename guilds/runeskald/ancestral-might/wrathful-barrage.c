@@ -45,6 +45,30 @@ protected void Setup()
 
     addSpecification("modifiers", ({
         ([
+            "type": "research",
+            "research item": "/guilds/runeskald/ancestral-might/spirits-wrath.c",
+            "name": "spirits-wrath",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/ancestral-might/spirits-reserve.c",
+            "name": "spirits-reserve",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
+            "type": "research",
+            "research item": "/guilds/runeskald/ancestral-might/spirits-haste.c",
+            "name": "spirits-haste",
+            "formula": "multiplicative",
+            "base value": 1,
+            "rate": 1.25
+        ]),
+        ([
             "type": "attribute",
             "name": "wisdom",
             "formula": "additive",
@@ -65,4 +89,5 @@ protected void Setup()
             "rate": 1.15
         ])
     }));
+    addSpecification("consumables", (["elder ward rune": 1]));
 }

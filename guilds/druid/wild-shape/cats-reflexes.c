@@ -20,6 +20,8 @@ protected void Setup()
     addPrerequisite("/guilds/druid/wild-shape/bears-endurance.c",
         ([ "type": "research" ]));
 
+    addSpecification("limited by", (["research active": ({ "/guilds/druid/wild-shape/cat-aspect.c" })]));
+
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

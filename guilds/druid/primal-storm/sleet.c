@@ -42,7 +42,7 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
         "research item": "/guilds/druid/primal-storm/frozen-channel.c",
         "name": "frozen-channel",
@@ -50,7 +50,15 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/primal-storm/frost-knowledge.c",
+        "name": "frost-knowledge",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
         "type": "research",
         "research item": "/guilds/druid/primal-storm/storms-heart.c",
         "name": "storms-heart",
@@ -58,15 +66,7 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/primal-storm/arctic-power.c",
-        "name": "arctic-power",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
+        ([
         "type": "research",
         "research item": "/guilds/druid/primal-storm/winter-mastery.c",
         "name": "winter-mastery",
@@ -74,23 +74,7 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/primal-storm/eye-of-the-storm.c",
-        "name": "eye-of-the-storm",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/primal-storm/storm-mastery.c",
-        "name": "storm-mastery",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
+        ([
         "type": "skill",
         "name": "nature",
         "formula": "additive",

@@ -20,6 +20,8 @@ protected void Setup()
     addPrerequisite("/guilds/druid/wild-shape/predators-grace.c",
         ([ "type": "research" ]));
 
+    addSpecification("limited by", (["research active": ({ "/guilds/druid/wild-shape/wolf-aspect.c" })]));
+
     addSpecification("scope", "self");
     addSpecification("research type", "points");
     addSpecification("research cost", 1);

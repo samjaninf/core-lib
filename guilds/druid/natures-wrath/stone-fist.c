@@ -42,7 +42,15 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/natures-wrath/earthen-attunement.c",
+        "name": "earthen-attunement",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
         "type": "research",
         "research item": "/guilds/druid/natures-wrath/earthen-power.c",
         "name": "earthen-power",
@@ -50,31 +58,15 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/natures-conduit.c",
-        "name": "natures-conduit",
+        "research item": "/guilds/druid/natures-wrath/tectonic-knowledge.c",
+        "name": "tectonic-knowledge",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/natures-wrath/molten-core.c",
-        "name": "molten-core",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/natures-wrath/primal-fury.c",
-        "name": "primal-fury",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
+        ([
         "type": "research",
         "research item": "/guilds/druid/natures-wrath/tectonic-mastery.c",
         "name": "tectonic-mastery",
@@ -82,23 +74,7 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/natures-wrath/infernal-wild.c",
-        "name": "infernal-wild",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/natures-wrath/wrath-mastery.c",
-        "name": "wrath-mastery",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
+        ([
         "type": "skill",
         "name": "nature",
         "formula": "additive",

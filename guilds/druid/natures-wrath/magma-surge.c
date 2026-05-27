@@ -36,13 +36,13 @@ protected void Setup()
     addSpecification("modifiers", ({
     ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/earthen-power.c",
-        "name": "earthen-power",
+        "research item": "/guilds/druid/natures-wrath/wild-affinity.c",
+        "name": "wild-affinity",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
         "research item": "/guilds/druid/natures-wrath/burning-anger.c",
         "name": "burning-anger",
@@ -50,7 +50,7 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
         "research item": "/guilds/druid/natures-wrath/molten-core.c",
         "name": "molten-core",
@@ -58,23 +58,15 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/primal-fury.c",
-        "name": "primal-fury",
+        "research item": "/guilds/druid/natures-wrath/volcanic-knowledge.c",
+        "name": "volcanic-knowledge",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/natures-wrath/tectonic-mastery.c",
-        "name": "tectonic-mastery",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
+        ([
         "type": "research",
         "research item": "/guilds/druid/natures-wrath/infernal-wild.c",
         "name": "infernal-wild",
@@ -82,15 +74,23 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/wrath-mastery.c",
-        "name": "wrath-mastery",
+        "research item": "/guilds/druid/natures-wrath/earth-fire-mastery.c",
+        "name": "earth-fire-mastery",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/natures-wrath/earth-fire-supremacy.c",
+        "name": "earth-fire-supremacy",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
         "type": "skill",
         "name": "nature",
         "formula": "additive",

@@ -36,29 +36,37 @@ protected void Setup()
     addSpecification("modifiers", ({
     ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/natures-conduit.c",
-        "name": "natures-conduit",
+        "research item": "/guilds/druid/natures-wrath/wild-affinity.c",
+        "name": "wild-affinity",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/molten-core.c",
-        "name": "molten-core",
+        "research item": "/guilds/druid/natures-wrath/earthen-attunement.c",
+        "name": "earthen-attunement",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/primal-fury.c",
-        "name": "primal-fury",
+        "research item": "/guilds/druid/natures-wrath/earthen-power.c",
+        "name": "earthen-power",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/natures-wrath/tectonic-knowledge.c",
+        "name": "tectonic-knowledge",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
         "type": "research",
         "research item": "/guilds/druid/natures-wrath/tectonic-mastery.c",
         "name": "tectonic-mastery",
@@ -66,23 +74,23 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/infernal-wild.c",
-        "name": "infernal-wild",
+        "research item": "/guilds/druid/natures-wrath/primal-geomancer.c",
+        "name": "primal-geomancer",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/natures-wrath/wrath-mastery.c",
-        "name": "wrath-mastery",
+        "research item": "/guilds/druid/natures-wrath/natures-wrath-mastery.c",
+        "name": "natures-wrath-mastery",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "skill",
         "name": "nature",
         "formula": "additive",

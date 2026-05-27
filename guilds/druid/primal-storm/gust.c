@@ -39,7 +39,23 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/primal-storm/storm-focus.c",
+        "name": "storm-focus",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/primal-storm/wind-attunement.c",
+        "name": "wind-attunement",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
         "type": "research",
         "research item": "/guilds/druid/primal-storm/wind-mastery.c",
         "name": "wind-mastery",
@@ -47,47 +63,15 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/primal-storm/storms-heart.c",
-        "name": "storms-heart",
+        "research item": "/guilds/druid/primal-storm/tempest-lore.c",
+        "name": "tempest-lore",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/primal-storm/tempest-fury.c",
-        "name": "tempest-fury",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/primal-storm/winter-mastery.c",
-        "name": "winter-mastery",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/primal-storm/eye-of-the-storm.c",
-        "name": "eye-of-the-storm",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
-        "type": "research",
-        "research item": "/guilds/druid/primal-storm/storm-mastery.c",
-        "name": "storm-mastery",
-        "formula": "multiplicative",
-        "base value": 1,
-        "rate": 1.25
-    ]),
-    ([
+        ([
         "type": "skill",
         "name": "nature",
         "formula": "additive",

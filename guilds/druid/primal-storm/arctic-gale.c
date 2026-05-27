@@ -36,13 +36,29 @@ protected void Setup()
     addSpecification("modifiers", ({
     ([
         "type": "research",
-        "research item": "/guilds/druid/primal-storm/wind-mastery.c",
-        "name": "wind-mastery",
+        "research item": "/guilds/druid/primal-storm/storm-affinity.c",
+        "name": "storm-affinity",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/primal-storm/frozen-channel.c",
+        "name": "frozen-channel",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
+        "type": "research",
+        "research item": "/guilds/druid/primal-storm/frost-knowledge.c",
+        "name": "frost-knowledge",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+        ([
         "type": "research",
         "research item": "/guilds/druid/primal-storm/arctic-power.c",
         "name": "arctic-power",
@@ -50,31 +66,31 @@ protected void Setup()
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/primal-storm/winter-mastery.c",
-        "name": "winter-mastery",
+        "research item": "/guilds/druid/primal-storm/blizzard-mastery.c",
+        "name": "blizzard-mastery",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/primal-storm/eye-of-the-storm.c",
-        "name": "eye-of-the-storm",
+        "research item": "/guilds/druid/primal-storm/storm-core-knowledge.c",
+        "name": "storm-core-knowledge",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "research",
-        "research item": "/guilds/druid/primal-storm/storm-mastery.c",
-        "name": "storm-mastery",
+        "research item": "/guilds/druid/primal-storm/primal-stormcaller.c",
+        "name": "primal-stormcaller",
         "formula": "multiplicative",
         "base value": 1,
         "rate": 1.25
     ]),
-    ([
+        ([
         "type": "skill",
         "name": "nature",
         "formula": "additive",

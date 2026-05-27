@@ -48,64 +48,55 @@ protected void Setup()
     }));
 
     addSpecification("modifiers", ({
+    ([
+        "type": "research",
+        "research item": "/guilds/druid/primal-rites/ritual-attunement.c",
+        "name": "ritual-attunement",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
         ([
-            "type": "research",
-            "research item": "/guilds/druid/primal-rites/ritual-attunement.c",
-            "name": "Ritual Attunement",
-            "formula": "multiplicative",
-            "base value": 1,
-            "rate": 1.25
-        ]),
+        "type": "research",
+        "research item": "/guilds/druid/primal-rites/primal-channeling.c",
+        "name": "primal-channeling",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
         ([
-            "type": "research",
-            "research item": "/guilds/druid/primal-rites/herbal-mastery.c",
-            "name": "Herbal Mastery",
-            "formula": "multiplicative",
-            "base value": 1,
-            "rate": 1.25
-        ]),
+        "type": "research",
+        "research item": "/guilds/druid/primal-rites/ancient-lore.c",
+        "name": "ancient-lore",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
         ([
-            "type": "research",
-            "research item": "/guilds/druid/primal-rites/primal-channeling.c",
-            "name": "Primal Channeling",
-            "formula": "multiplicative",
-            "base value": 1,
-            "rate": 1.25
-        ]),
+        "type": "research",
+        "research item": "/guilds/druid/primal-rites/rite-mastery.c",
+        "name": "rite-mastery",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
         ([
-            "type": "research",
-            "research item": "/guilds/druid/primal-rites/ancient-lore.c",
-            "name": "Ancient Lore",
-            "formula": "multiplicative",
-            "base value": 1,
-            "rate": 1.25
-        ]),
+        "type": "research",
+        "research item": "/guilds/druid/primal-rites/ancient-ritualist.c",
+        "name": "ancient-ritualist",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
         ([
-            "type": "research",
-            "research item": "/guilds/druid/primal-rites/rite-mastery.c",
-            "name": "Rite Mastery",
-            "formula": "multiplicative",
-            "base value": 1,
-            "rate": 1.25
-        ]),
-        ([
-            "type": "research",
-            "research item": "/guilds/druid/primal-rites/elder-rites.c",
-            "name": "Elder Rites",
-            "formula": "multiplicative",
-            "base value": 1,
-            "rate": 1.25
-        ]),
-        ([
-            "type": "research",
-            "research item":
-                "/guilds/druid/primal-rites/primal-rite-mastery.c",
-            "name": "Primal Rite Mastery",
-            "formula": "multiplicative",
-            "base value": 1,
-            "rate": 1.25
-        ]),
-        ([
+        "type": "research",
+        "research item": "/guilds/druid/primal-rites/primal-rite-mastery.c",
+        "name": "primal-rite-mastery",
+        "formula": "multiplicative",
+        "base value": 1,
+        "rate": 1.25
+    ]),
+            ([
             "type": "skill",
             "name": "nature",
             "formula": "additive",

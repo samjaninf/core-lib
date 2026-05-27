@@ -353,7 +353,7 @@ protected void Setup()
     addSpecification("duration", 300);  // 5 minutes
     addSpecification("bonus resist physical", 95);
     addSpecification("penalty to resist magical", 25);
-    addSpecification("bonus stealth", 10);
+    addSpecification("bonus move silently", 10);
     addSpecification("expire message", "You feel yourself becoming solid again.");
 }
 ~~~
@@ -875,7 +875,7 @@ Traits can be affected by environment:
 ~~~c
 // Bonuses in specific environments
 addSpecification("environmental bonuses", ([
-    "forest": (["bonus stealth": 5, "bonus survival": 3]),
+    "forest": (["bonus move silently": 5, "bonus survival": 3]),
     "mountain": (["bonus climb": 4, "bonus endurance": 2]),
     "desert": (["bonus heat resistance": 20])
 ]));

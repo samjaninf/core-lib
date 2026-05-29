@@ -43,4 +43,62 @@ public void SetupGuild()
         "type": "skill points",
         "apply" : "5 every level"
     ]));
+
+    addCriteria("research points", ([
+        "type": "research points",
+        "apply": "1 every level"
+    ]));
+
+    addCriteria("supplemental research points", ([
+        "type": "research points",
+        "apply": "2 every 5 levels"
+    ]));
+
+    addCriteria("shadow arts", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/rogue/shadow-arts.c"
+    ]));
+
+    addCriteria("blade craft", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/rogue/blade-craft.c"
+    ]));
+
+    addCriteria("dirty fighting", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/rogue/dirty-fighting.c"
+    ]));
+
+    addCriteria("acrobatics", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/rogue/acrobatics.c"
+    ]));
+
+    addCriteria("subterfuge", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/rogue/subterfuge.c"
+    ]));
+
+    addCriteria("thievery", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/rogue/thievery.c"
+    ]));
+
+    addCriteria("poison lore", ([
+        "type": "research tree",
+        "apply": "at level 3",
+        "research tree": "/guilds/rogue/poison-lore.c"
+    ]));
+
+    addCriteria("opportunism", ([
+        "type": "research tree",
+        "apply": "at level 3",
+        "research tree": "/guilds/rogue/opportunism.c"
+    ]));
 }

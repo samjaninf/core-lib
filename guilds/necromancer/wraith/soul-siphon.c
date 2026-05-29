@@ -7,19 +7,19 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Soul Siphon");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the necromancer with the knowledge of teaching the wraith to siphon the very soul from living victims.");
+    addSpecification("name", "Soul Siphon");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the necromancer with the knowledge of teaching the wraith to siphon the very soul from living victims.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 5
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 5
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/wraith/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/wraith/root.c",
+    }));
 }

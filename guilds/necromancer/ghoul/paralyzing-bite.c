@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Paralyzing Bite");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the ghoul to "
-		"deliver a paralyzing bite that immobilizes its enemies.");
+    addSpecification("name", "Paralyzing Bite");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the ghoul to "
+        "deliver a paralyzing bite that immobilizes its enemies.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 3
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 3
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

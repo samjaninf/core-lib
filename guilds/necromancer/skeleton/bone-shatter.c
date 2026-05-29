@@ -7,19 +7,19 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Bone Shatter");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the necromancer with the knowledge of teaching the skeleton to shatter its own bones in a devastating area attack.");
+    addSpecification("name", "Bone Shatter");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the necromancer with the knowledge of teaching the skeleton to shatter its own bones in a devastating area attack.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 7
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 7
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/skeleton/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/skeleton/root.c",
+    }));
 }

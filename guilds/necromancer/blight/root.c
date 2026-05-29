@@ -7,13 +7,13 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Blight Spells");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This skill provides the user with the "
-		"knowledge of curse and blight-based abilities for Necromancers.");
+    addSpecification("name", "Blight Spells");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This skill provides the user with the "
+        "knowledge of curse and blight-based abilities for Necromancers.");
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "tree root");
-	addSpecification("bonus resist energy", 1);
-	addSpecification("bonus willpower", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "tree root");
+    addSpecification("bonus resist energy", 1);
+    addSpecification("bonus willpower", 1);
 }

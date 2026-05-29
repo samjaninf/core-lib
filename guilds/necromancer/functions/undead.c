@@ -7,24 +7,24 @@ inherit "/lib/modules/research/constructedResearchComponent.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Undead Energy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides knowledge of creating spells that use undead energy.");
+    addSpecification("name", "Undead Energy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides knowledge of creating spells that use undead energy.");
 
-	addPrerequisite("/guilds/necromancer/functions/entropy.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/functions/entropy.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("damage type", "undead");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("damage type", "undead");
 
-	addSpecification("affected research", ([
-		"Constructed Spell Multiplier": 18,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("affected research", ([
+        "Constructed Spell Multiplier": 18,
+    ]));
+    addSpecification("affected research type", "percentage");
 
-	addSpecification("additional cooldown", 8);
-	addSpecification("additional spell point cost", 18);
+    addSpecification("additional cooldown", 8);
+    addSpecification("additional spell point cost", 18);
 
-	addSpecification("combination descriptor", "undead");
+    addSpecification("combination descriptor", "undead");
 }

@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Grave Hunger");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research drives the ghoul with "
-		"intense grave hunger, making each strike more savage and fierce.");
+    addSpecification("name", "Grave Hunger");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research drives the ghoul with "
+        "intense grave hunger, making each strike more savage and fierce.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 3
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 3
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

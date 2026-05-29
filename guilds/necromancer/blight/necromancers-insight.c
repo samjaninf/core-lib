@@ -7,36 +7,36 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Necromancer's Insight");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This skill provides the user with "
-		"deep necromantic insight that enhances all blight and decay "
-		"abilities.");
+    addSpecification("name", "Necromancer's Insight");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This skill provides the user with "
+        "deep necromantic insight that enhances all blight and decay "
+        "abilities.");
 
-	addPrerequisite("/guilds/necromancer/blight/blight-cataclysm.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/blight-cataclysm.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 21
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 21
+        ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Wither": 25,
-		"Bone Chill": 25,
-		"Curse of Weakness": 25,
-		"Death Mark": 25,
-		"Corruption": 25,
-		"Necrotic Plague": 25,
-		"Wasting Curse": 25,
-		"Consuming Blight": 25,
-		"Entropy Aura": 25,
-		"Death Convergence": 25,
-		"Void Corruption": 25,
-		"Plague of Ages": 25,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Wither": 25,
+        "Bone Chill": 25,
+        "Curse of Weakness": 25,
+        "Death Mark": 25,
+        "Corruption": 25,
+        "Necrotic Plague": 25,
+        "Wasting Curse": 25,
+        "Consuming Blight": 25,
+        "Entropy Aura": 25,
+        "Death Convergence": 25,
+        "Void Corruption": 25,
+        "Plague of Ages": 25,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Bone Plating");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research reinforces the ghoul's "
-		"hide with necrotic bone plating, providing near-invulnerability.");
+    addSpecification("name", "Bone Plating");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research reinforces the ghoul's "
+        "hide with necrotic bone plating, providing near-invulnerability.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 11
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 11
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

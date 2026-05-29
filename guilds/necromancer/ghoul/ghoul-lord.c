@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Ghoul Lord");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research raises the ghoul to the "
-		"rank of ghoul lord with greatly enhanced combat capability.");
+    addSpecification("name", "Ghoul Lord");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research raises the ghoul to the "
+        "rank of ghoul lord with greatly enhanced combat capability.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 15
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 15
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

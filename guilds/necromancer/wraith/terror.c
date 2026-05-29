@@ -7,19 +7,19 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Terror");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the necromancer with the knowledge of amplifying the wraith's terror aura to paralyze enemies with supernatural fear.");
+    addSpecification("name", "Terror");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the necromancer with the knowledge of amplifying the wraith's terror aura to paralyze enemies with supernatural fear.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 3
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 3
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/wraith/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/wraith/root.c",
+    }));
 }

@@ -7,24 +7,24 @@ inherit "/lib/modules/research/constructedResearchComponent.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Shadow Energy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides knowledge of creating spells that use shadow energy.");
+    addSpecification("name", "Shadow Energy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides knowledge of creating spells that use shadow energy.");
 
-	addPrerequisite("/guilds/necromancer/functions/root.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/functions/root.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("damage type", "shadow");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("damage type", "shadow");
 
-	addSpecification("affected research", ([
-		"Constructed Spell Multiplier": 5,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("affected research", ([
+        "Constructed Spell Multiplier": 5,
+    ]));
+    addSpecification("affected research type", "percentage");
 
-	addSpecification("additional cooldown", 2);
-	addSpecification("additional spell point cost", 5);
+    addSpecification("additional cooldown", 2);
+    addSpecification("additional spell point cost", 5);
 
-	addSpecification("combination descriptor", "shadow");
+    addSpecification("combination descriptor", "shadow");
 }

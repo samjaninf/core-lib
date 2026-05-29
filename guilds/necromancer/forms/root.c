@@ -7,13 +7,13 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Necrotic Spell Forms");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This skill provides the user with the "
-		"knowledge of spell construction forms for Necromancers.");
+    addSpecification("name", "Necrotic Spell Forms");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This skill provides the user with the "
+        "knowledge of spell construction forms for Necromancers.");
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "tree root");
-	addSpecification("bonus spellcraft", 1);
-	addSpecification("bonus magical essence", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "tree root");
+    addSpecification("bonus spellcraft", 1);
+    addSpecification("bonus magical essence", 1);
 }

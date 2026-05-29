@@ -7,19 +7,19 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Skeletal Commander");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the necromancer with the knowledge of elevating one skeleton to a commander.");
+    addSpecification("name", "Skeletal Commander");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the necromancer with the knowledge of elevating one skeleton to a commander.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 9
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 9
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/skeleton/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/skeleton/root.c",
+    }));
 }

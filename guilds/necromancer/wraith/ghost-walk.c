@@ -7,19 +7,19 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Ghost Walk");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the necromancer with the knowledge of allowing the wraith to ghost walk through any obstacle or defense.");
+    addSpecification("name", "Ghost Walk");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the necromancer with the knowledge of allowing the wraith to ghost walk through any obstacle or defense.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 15
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 15
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/wraith/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/wraith/root.c",
+    }));
 }

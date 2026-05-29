@@ -7,24 +7,24 @@ inherit "/lib/modules/research/constructedResearchComponent.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Void Death Energy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides knowledge of creating spells that use void death energy.");
+    addSpecification("name", "Void Death Energy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides knowledge of creating spells that use void death energy.");
 
-	addPrerequisite("/guilds/necromancer/functions/soul.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/functions/soul.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("damage type", "energy");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("damage type", "energy");
 
-	addSpecification("affected research", ([
-		"Constructed Spell Multiplier": 25,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("affected research", ([
+        "Constructed Spell Multiplier": 25,
+    ]));
+    addSpecification("affected research type", "percentage");
 
-	addSpecification("additional cooldown", 12);
-	addSpecification("additional spell point cost", 25);
+    addSpecification("additional cooldown", 12);
+    addSpecification("additional spell point cost", 25);
 
-	addSpecification("combination descriptor", "void death");
+    addSpecification("combination descriptor", "void death");
 }

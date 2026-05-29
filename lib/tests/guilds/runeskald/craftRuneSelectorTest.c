@@ -119,16 +119,16 @@ void TopLevelMenuDoesNotShowElderRunesWithoutElderResearch()
 /////////////////////////////////////////////////////////////////////////////
 void ElderRunesAppearAfterElderResearchGranted()
 {
-	Player.advanceSkill("gem crafting", 5);
-	Player.advanceSkill("spellcraft", 3);
-	ExpectTrue(Player.initiateResearch(
-		"/guilds/runeskald/rune-crafting/elder-rune-crafting.c"));
-	ExpectTrue(Player.initiateResearch(
-		"/guilds/runeskald/rune-crafting/elder-power-rune.c"));
+    Player.advanceSkill("gem crafting", 5);
+    Player.advanceSkill("spellcraft", 3);
+    ExpectTrue(Player.initiateResearch(
+        "/guilds/runeskald/rune-crafting/elder-rune-crafting.c"));
+    ExpectTrue(Player.initiateResearch(
+        "/guilds/runeskald/rune-crafting/elder-power-rune.c"));
 
-	Selector.initiateSelector(Player);
-	string msg = Player.caughtMessage();
-	ExpectSubStringMatch("Elder Power rune", msg);
+    Selector.initiateSelector(Player);
+    string msg = Player.caughtMessage();
+    ExpectSubStringMatch("Elder Power rune", msg);
 }
 
 /////////////////////////////////////////////////////////////////////////////

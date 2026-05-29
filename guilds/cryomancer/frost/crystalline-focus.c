@@ -7,37 +7,37 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Crystalline Focus");
-	addSpecification("source", "cryomancer");
-	addSpecification("description", "This skill provides the user with "
-		"advanced knowledge that further enhances the cryomancer's "
-		"frost-based abilities.");
+    addSpecification("name", "Crystalline Focus");
+    addSpecification("source", "cryomancer");
+    addSpecification("description", "This skill provides the user with "
+        "advanced knowledge that further enhances the cryomancer's "
+        "frost-based abilities.");
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "cryomancer",
-			"value": 21
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "cryomancer",
+            "value": 21
+        ]));
 
-	addPrerequisite("/guilds/cryomancer/frost/cryostasis.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/cryomancer/frost/cryostasis.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Cold Snap": 25,
-		"Rime Burst": 25,
-		"Freezing Gale": 25,
-		"Frost Blades": 25,
-		"Frost Discharge": 25,
-		"Winter's Grasp": 25,
-		"Frozen Apocalypse": 25,
-		"Blizzard": 25,
-		"Frost Bolt": 25,
-		"Ice Lance": 25,
-		"Hoarfrost": 25,
-		"Ice Whip": 25,
-		"Arctic Tempest": 25,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Cold Snap": 25,
+        "Rime Burst": 25,
+        "Freezing Gale": 25,
+        "Frost Blades": 25,
+        "Frost Discharge": 25,
+        "Winter's Grasp": 25,
+        "Frozen Apocalypse": 25,
+        "Blizzard": 25,
+        "Frost Bolt": 25,
+        "Ice Lance": 25,
+        "Hoarfrost": 25,
+        "Ice Whip": 25,
+        "Arctic Tempest": 25,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

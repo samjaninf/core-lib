@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Pack Ambush");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the ghoul pack to "
-		"ambush enemies from multiple angles simultaneously.");
+    addSpecification("name", "Pack Ambush");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the ghoul pack to "
+        "ambush enemies from multiple angles simultaneously.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 11
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 11
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

@@ -7,34 +7,34 @@ inherit "/lib/modules/research/persistedActiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Bone Chill");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the user with "
-		"knowledge of the bone chill ability. The necromancer inflicts a "
-		"lingering chill that saps a foe's dexterity and defense.");
+    addSpecification("name", "Bone Chill");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the user with "
+        "knowledge of the bone chill ability. The necromancer inflicts a "
+        "lingering chill that saps a foe's dexterity and defense.");
 
-	addPrerequisite("/guilds/necromancer/blight/wither.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/wither.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 5
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 5
+        ]));
 
-	addSpecification("scope", "targeted");
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
+    addSpecification("scope", "targeted");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
 
-	addSpecification("penalty to dexterity", 2);
-	addSpecification("penalty to defense", 3);
-	addSpecification("duration", 150);
+    addSpecification("penalty to dexterity", 2);
+    addSpecification("penalty to defense", 3);
+    addSpecification("duration", 150);
 
-	addSpecification("spell point cost", 25);
-	addSpecification("cooldown", 35);
-	addSpecification("command template", "bone chill [##Target##]");
-	addSpecification("use ability message", "A chill that ##Infinitive::go## "
-		"to the bone ##Infinitive::seize## ##TargetName## as "
-		"##InitiatorName## ##Infinitive::curse## ##TargetObject## with "
-		"the cold of the grave.");
+    addSpecification("spell point cost", 25);
+    addSpecification("cooldown", 35);
+    addSpecification("command template", "bone chill [##Target##]");
+    addSpecification("use ability message", "A chill that ##Infinitive::go## "
+        "to the bone ##Infinitive::seize## ##TargetName## as "
+        "##InitiatorName## ##Infinitive::curse## ##TargetObject## with "
+        "the cold of the grave.");
 }

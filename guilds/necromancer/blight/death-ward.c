@@ -7,34 +7,34 @@ inherit "/lib/modules/research/persistedActiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Death Ward");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the user with "
-		"knowledge of the death ward ability. The necromancer raises a "
-		"powerful ward of death energy that absorbs and deflects attacks.");
+    addSpecification("name", "Death Ward");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the user with "
+        "knowledge of the death ward ability. The necromancer raises a "
+        "powerful ward of death energy that absorbs and deflects attacks.");
 
-	addPrerequisite("/guilds/necromancer/blight/gravewarden.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/gravewarden.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 23
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 23
+        ]));
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
 
-	addSpecification("bonus defense", 10);
-	addSpecification("bonus soak", 7);
-	addSpecification("bonus resist energy", 5);
-	addSpecification("duration", 400);
+    addSpecification("bonus defense", 10);
+    addSpecification("bonus soak", 7);
+    addSpecification("bonus resist energy", 5);
+    addSpecification("duration", 400);
 
-	addSpecification("spell point cost", 80);
-	addSpecification("cooldown", 80);
-	addSpecification("command template", "death ward");
-	addSpecification("use ability message", "##InitiatorName## "
-		"##Infinitive::raise## a shimmering ward of death energy that "
-		"##Infinitive::crackle## with necrotic power.");
+    addSpecification("spell point cost", 80);
+    addSpecification("cooldown", 80);
+    addSpecification("command template", "death ward");
+    addSpecification("use ability message", "##InitiatorName## "
+        "##Infinitive::raise## a shimmering ward of death energy that "
+        "##Infinitive::crackle## with necrotic power.");
 }

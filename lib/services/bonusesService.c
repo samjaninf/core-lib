@@ -57,7 +57,7 @@ private nomask string *bonusList()
 {
     if(!bonuses)
     {
-		bonuses = livingBonuses() + vehicleBonuses();
+        bonuses = livingBonuses() + vehicleBonuses();
     
         object attacksService = getService("attacks");
         if(attacksService && 

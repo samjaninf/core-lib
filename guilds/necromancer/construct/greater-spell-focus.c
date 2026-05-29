@@ -7,22 +7,22 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Greater Spell Focus");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the necromancer to greatly focus magical energy to increase constructed spell power.");
+    addSpecification("name", "Greater Spell Focus");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the necromancer to greatly focus magical energy to increase constructed spell power.");
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 13
-		]));
-	addPrerequisite("/guilds/necromancer/construct/efficient-channeling.c",
-		(["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 13
+        ]));
+    addPrerequisite("/guilds/necromancer/construct/efficient-channeling.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Necromancer Spell": 20,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Necromancer Spell": 20,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

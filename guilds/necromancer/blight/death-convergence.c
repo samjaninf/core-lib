@@ -7,35 +7,35 @@ inherit "/lib/modules/research/persistedActiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Death Convergence");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the user with "
-		"knowledge of the death convergence ability. The necromancer "
-		"causes all death energy in the area to converge, amplifying "
-		"all necrotic effects.");
+    addSpecification("name", "Death Convergence");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the user with "
+        "knowledge of the death convergence ability. The necromancer "
+        "causes all death energy in the area to converge, amplifying "
+        "all necrotic effects.");
 
-	addPrerequisite("/guilds/necromancer/blight/entropy-aura.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/entropy-aura.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 31
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 31
+        ]));
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
 
-	addSpecification("bonus energy attack", 8);
-	addSpecification("bonus shadow attack", 6);
-	addSpecification("bonus evil attack", 4);
-	addSpecification("duration", 400);
+    addSpecification("bonus energy attack", 8);
+    addSpecification("bonus shadow attack", 6);
+    addSpecification("bonus evil attack", 4);
+    addSpecification("duration", 400);
 
-	addSpecification("spell point cost", 110);
-	addSpecification("cooldown", 100);
-	addSpecification("command template", "death convergence");
-	addSpecification("use ability message", "##InitiatorName## "
-		"##Infinitive::draw## all death energy in the area inward, "
-		"##Infinitive::cause## it to ##Infinitive::converge## and amplify.");
+    addSpecification("spell point cost", 110);
+    addSpecification("cooldown", 100);
+    addSpecification("command template", "death convergence");
+    addSpecification("use ability message", "##InitiatorName## "
+        "##Infinitive::draw## all death energy in the area inward, "
+        "##Infinitive::cause## it to ##Infinitive::converge## and amplify.");
 }

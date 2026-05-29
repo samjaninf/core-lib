@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Rending Claws");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research augments the ghoul's "
-		"rending claws to tear through armor and flesh with greater force.");
+    addSpecification("name", "Rending Claws");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research augments the ghoul's "
+        "rending claws to tear through armor and flesh with greater force.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 1
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 1
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

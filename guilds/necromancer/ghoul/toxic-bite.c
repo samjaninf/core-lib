@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Toxic Bite");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research intensifies the ghoul's "
-		"venom to deliver a deeply toxic bite that ravages its victims.");
+    addSpecification("name", "Toxic Bite");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research intensifies the ghoul's "
+        "venom to deliver a deeply toxic bite that ravages its victims.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 7
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 7
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

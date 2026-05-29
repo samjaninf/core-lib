@@ -7,24 +7,24 @@ inherit "/lib/modules/research/constructedResearchComponent.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Grave Energy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides knowledge of creating spells that use grave energy.");
+    addSpecification("name", "Grave Energy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides knowledge of creating spells that use grave energy.");
 
-	addPrerequisite("/guilds/necromancer/functions/void.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/functions/void.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("damage type", "evil");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("damage type", "evil");
 
-	addSpecification("affected research", ([
-		"Constructed Spell Multiplier": 14,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("affected research", ([
+        "Constructed Spell Multiplier": 14,
+    ]));
+    addSpecification("affected research type", "percentage");
 
-	addSpecification("additional cooldown", 6);
-	addSpecification("additional spell point cost", 14);
+    addSpecification("additional cooldown", 6);
+    addSpecification("additional spell point cost", 14);
 
-	addSpecification("combination descriptor", "grave");
+    addSpecification("combination descriptor", "grave");
 }

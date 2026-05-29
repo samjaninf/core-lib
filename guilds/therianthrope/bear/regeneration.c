@@ -35,3 +35,5 @@ protected void Setup()
     addSpecification("bonus heal hit points rate", 3);
     addSpecification("bonus heal stamina rate", 2);
 }   
+
+

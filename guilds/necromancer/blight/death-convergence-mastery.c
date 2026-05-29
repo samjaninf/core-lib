@@ -7,32 +7,32 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Death Convergence Mastery");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This skill provides the user with "
-		"mastery over the convergence of death energies, greatly "
-		"amplifying all necrotic abilities.");
+    addSpecification("name", "Death Convergence Mastery");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This skill provides the user with "
+        "mastery over the convergence of death energies, greatly "
+        "amplifying all necrotic abilities.");
 
-	addPrerequisite("/guilds/necromancer/blight/death-convergence.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/death-convergence.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 33
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 33
+        ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Death Convergence": 25,
-		"Death Ward": 25,
-		"Undead Resilience": 25,
-		"Lord of Blight": 25,
-		"Soul Drain Aura": 25,
-		"Shadow Dominion": 25,
-		"Absolute Decay": 25,
-		"Death Dominion": 25,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Death Convergence": 25,
+        "Death Ward": 25,
+        "Undead Resilience": 25,
+        "Lord of Blight": 25,
+        "Soul Drain Aura": 25,
+        "Shadow Dominion": 25,
+        "Absolute Decay": 25,
+        "Death Dominion": 25,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

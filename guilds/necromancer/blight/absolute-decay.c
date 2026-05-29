@@ -7,37 +7,37 @@ inherit "/lib/modules/research/persistedActiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Absolute Decay");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the user with "
-		"knowledge of the absolute decay ability. The necromancer becomes "
-		"a font of absolute necrotic power, their presence causing all "
-		"things to decay.");
+    addSpecification("name", "Absolute Decay");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the user with "
+        "knowledge of the absolute decay ability. The necromancer becomes "
+        "a font of absolute necrotic power, their presence causing all "
+        "things to decay.");
 
-	addPrerequisite("/guilds/necromancer/blight/soul-drain-aura.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/soul-drain-aura.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 63
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 63
+        ]));
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
 
-	addSpecification("bonus energy attack", 15);
-	addSpecification("bonus shadow attack", 12);
-	addSpecification("bonus evil attack", 10);
-	addSpecification("bonus heal hit points rate", 8);
-	addSpecification("bonus intelligence", 5);
-	addSpecification("duration", 720);
+    addSpecification("bonus energy attack", 15);
+    addSpecification("bonus shadow attack", 12);
+    addSpecification("bonus evil attack", 10);
+    addSpecification("bonus heal hit points rate", 8);
+    addSpecification("bonus intelligence", 5);
+    addSpecification("duration", 720);
 
-	addSpecification("spell point cost", 200);
-	addSpecification("cooldown", 200);
-	addSpecification("command template", "absolute decay");
-	addSpecification("use ability message", "##InitiatorName## "
-		"##Infinitive::become## a living embodiment of decay; the very "
-		"air around ##InitiatorObject## ##Infinitive::wither## and rot.");
+    addSpecification("spell point cost", 200);
+    addSpecification("cooldown", 200);
+    addSpecification("command template", "absolute decay");
+    addSpecification("use ability message", "##InitiatorName## "
+        "##Infinitive::become## a living embodiment of decay; the very "
+        "air around ##InitiatorObject## ##Infinitive::wither## and rot.");
 }

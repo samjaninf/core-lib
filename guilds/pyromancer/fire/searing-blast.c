@@ -110,3 +110,5 @@ protected void Setup()
     addSpecification("use ability message", "A searing wave of heat erupts from "
         "##InitiatorName## and washes over ##TargetName##.");
 }   
+
+

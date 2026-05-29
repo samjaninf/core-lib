@@ -7,22 +7,22 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Arcane Construct");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the necromancer to achieve the pinnacle of necromantic spell construction power.");
+    addSpecification("name", "Arcane Construct");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the necromancer to achieve the pinnacle of necromantic spell construction power.");
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 21
-		]));
-	addPrerequisite("/guilds/necromancer/construct/supreme-spell-focus.c",
-		(["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 21
+        ]));
+    addPrerequisite("/guilds/necromancer/construct/supreme-spell-focus.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Necromancer Spell": 30,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Necromancer Spell": 30,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

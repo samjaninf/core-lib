@@ -7,35 +7,35 @@ inherit "/lib/modules/research/persistedActiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Blighted Strike");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the user with "
-		"knowledge of the blighted strike ability. The necromancer infuses "
-		"their attacks with blight energy, adding necrotic damage to each "
-		"blow.");
+    addSpecification("name", "Blighted Strike");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the user with "
+        "knowledge of the blighted strike ability. The necromancer infuses "
+        "their attacks with blight energy, adding necrotic damage to each "
+        "blow.");
 
-	addPrerequisite("/guilds/necromancer/blight/necrotic-plague.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/necrotic-plague.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 23
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 23
+        ]));
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
 
-	addSpecification("bonus energy attack", 5);
-	addSpecification("bonus damage", 4);
-	addSpecification("duration", 300);
+    addSpecification("bonus energy attack", 5);
+    addSpecification("bonus damage", 4);
+    addSpecification("duration", 300);
 
-	addSpecification("spell point cost", 75);
-	addSpecification("cooldown", 75);
-	addSpecification("command template", "blighted strike");
-	addSpecification("use ability message", "##InitiatorPossessive::Name## "
-		"hands ##Infinitive::crackle## with necrotic energy as "
-		"##InitiatorSubject## ##Infinitive::infuse## ##InitiatorPossessive## "
-		"attacks with blight.");
+    addSpecification("spell point cost", 75);
+    addSpecification("cooldown", 75);
+    addSpecification("command template", "blighted strike");
+    addSpecification("use ability message", "##InitiatorPossessive::Name## "
+        "hands ##Infinitive::crackle## with necrotic energy as "
+        "##InitiatorSubject## ##Infinitive::infuse## ##InitiatorPossessive## "
+        "attacks with blight.");
 }

@@ -26,7 +26,7 @@ public nomask string *validCraftingBonuses()
         "crafting weapon class", "crafting defense class", "crafting attack",
         "crafting weight reduction", "crafting armor class", "crafting duration",
         "crafting enchantment power", "crafting potency", "crafting enchantments",
-		"crafting vehicle structure", "crafting vehicle protection", "crafting vehicle speed", 
+        "crafting vehicle structure", "crafting vehicle protection", "crafting vehicle speed", 
         "crafting vehicle capacity", "crafting henchman bonus", "crafting vehicle attack", 
         "crafting vehicle damage", "crafting vehicle handling",
     });

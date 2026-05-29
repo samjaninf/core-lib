@@ -7,33 +7,33 @@ inherit "/lib/modules/research/persistedActiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Necrotic Aura");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the user with "
-		"knowledge of the necrotic aura ability. The necromancer radiates "
-		"a persistent aura of necrotic energy that weakens nearby foes.");
+    addSpecification("name", "Necrotic Aura");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the user with "
+        "knowledge of the necrotic aura ability. The necromancer radiates "
+        "a persistent aura of necrotic energy that weakens nearby foes.");
 
-	addPrerequisite("/guilds/necromancer/blight/root.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/root.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 3
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 3
+        ]));
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
 
-	addSpecification("bonus energy attack", 2);
-	addSpecification("bonus shadow attack", 1);
-	addSpecification("duration", 240);
+    addSpecification("bonus energy attack", 2);
+    addSpecification("bonus shadow attack", 1);
+    addSpecification("duration", 240);
 
-	addSpecification("spell point cost", 20);
-	addSpecification("cooldown", 40);
-	addSpecification("command template", "necrotic aura");
-	addSpecification("use ability message", "##InitiatorName## "
-		"##Infinitive::channel## necrotic energy outward, "
-		"##Infinitive::suffuse## the area with the scent of death.");
+    addSpecification("spell point cost", 20);
+    addSpecification("cooldown", 40);
+    addSpecification("command template", "necrotic aura");
+    addSpecification("use ability message", "##InitiatorName## "
+        "##Infinitive::channel## necrotic energy outward, "
+        "##Infinitive::suffuse## the area with the scent of death.");
 }

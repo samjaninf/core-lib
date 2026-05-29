@@ -7,32 +7,32 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Decay Mastery");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This skill provides the user with "
-		"mastery over decay and entropy, greatly enhancing those "
-		"abilities.");
+    addSpecification("name", "Decay Mastery");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This skill provides the user with "
+        "mastery over decay and entropy, greatly enhancing those "
+        "abilities.");
 
-	addPrerequisite("/guilds/necromancer/blight/gathering-decay.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/gathering-decay.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 31
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 31
+        ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Entropy Aura": 25,
-		"Death Convergence": 25,
-		"Consuming Blight": 25,
-		"Void Corruption": 25,
-		"Plague of Ages": 25,
-		"Death Dominion": 25,
-		"Lord of Blight": 25,
-		"Absolute Decay": 25,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Entropy Aura": 25,
+        "Death Convergence": 25,
+        "Consuming Blight": 25,
+        "Void Corruption": 25,
+        "Plague of Ages": 25,
+        "Death Dominion": 25,
+        "Lord of Blight": 25,
+        "Absolute Decay": 25,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

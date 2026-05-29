@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Corpse Hide");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research hardens the ghoul's body "
-		"with layers of toughened necrotic corpse matter.");
+    addSpecification("name", "Corpse Hide");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research hardens the ghoul's body "
+        "with layers of toughened necrotic corpse matter.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 5
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 5
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

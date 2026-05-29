@@ -767,7 +767,7 @@ private mapping VehicleComponents =
             "spellcraft": ([ "type": "skill", "value": 14 ]),
             "/lib/instances/research/vehicles/components/mind-spike-launcher.c": ([ "type": "research" ]),
         ]),
-	]),
+    ]),
 
     //=========================================================================
     // PROPULSION COMPONENTS

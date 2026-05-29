@@ -298,10 +298,10 @@ private nomask int validMoonPhaseLimitor(mixed moonPhaseValue)
 private nomask int validCraftingTypeLimitor(mixed type)
 {
     object craftingService = getService("crafting");
-	object vehicleService = getService("vehicle");
+    object vehicleService = getService("vehicle");
 
     return (craftingService && craftingService->isValidType(type)) ||
-		(vehicleService && vehicleService->isValidType(type));
+        (vehicleService && vehicleService->isValidType(type));
 }
 
 /////////////////////////////////////////////////////////////////////////////

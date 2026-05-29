@@ -45,7 +45,7 @@ protected void Setup()
     addSpecification("damage type", "psionic");
 
     addSpecification("modifiers", ({ 
-		([
+        ([
             "type": "research",
             "research item": "/guilds/oneiromancer/psionic-focus/overwhelming-presence.c",
             "name": "Overwhelming Presence",

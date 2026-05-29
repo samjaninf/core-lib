@@ -33,5 +33,5 @@ protected void Setup()
     addSpecification("research cost", 1);
     addSpecification("bonus elemental fire", 1);
     addSpecification("bonus evocation", 3);
-	addSpecification("bonus theology", 2);
+    addSpecification("bonus theology", 2);
 }

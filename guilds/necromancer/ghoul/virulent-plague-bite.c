@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Virulent Plague Bite");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research makes the ghoul's plague "
-		"bite virulently lethal, spreading rapidly and dealing massive damage.");
+    addSpecification("name", "Virulent Plague Bite");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research makes the ghoul's plague "
+        "bite virulently lethal, spreading rapidly and dealing massive damage.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 11
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 11
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

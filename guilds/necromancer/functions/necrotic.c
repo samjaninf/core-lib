@@ -7,24 +7,24 @@ inherit "/lib/modules/research/constructedResearchComponent.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Necrotic Energy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides knowledge of creating spells that use necrotic energy.");
+    addSpecification("name", "Necrotic Energy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides knowledge of creating spells that use necrotic energy.");
 
-	addPrerequisite("/guilds/necromancer/functions/decay.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/functions/decay.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("damage type", "energy");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("damage type", "energy");
 
-	addSpecification("affected research", ([
-		"Constructed Spell Multiplier": 10,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("affected research", ([
+        "Constructed Spell Multiplier": 10,
+    ]));
+    addSpecification("affected research type", "percentage");
 
-	addSpecification("additional cooldown", 4);
-	addSpecification("additional spell point cost", 10);
+    addSpecification("additional cooldown", 4);
+    addSpecification("additional spell point cost", 10);
 
-	addSpecification("combination descriptor", "necrotic");
+    addSpecification("combination descriptor", "necrotic");
 }

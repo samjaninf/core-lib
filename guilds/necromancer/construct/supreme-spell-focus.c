@@ -7,22 +7,22 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Supreme Spell Focus");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the necromancer to achieve supreme focus for the most powerful constructed spells.");
+    addSpecification("name", "Supreme Spell Focus");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the necromancer to achieve supreme focus for the most powerful constructed spells.");
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 17
-		]));
-	addPrerequisite("/guilds/necromancer/construct/greater-spell-focus.c",
-		(["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 17
+        ]));
+    addPrerequisite("/guilds/necromancer/construct/greater-spell-focus.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Necromancer Spell": 25,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Necromancer Spell": 25,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

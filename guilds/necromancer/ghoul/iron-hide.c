@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Iron Hide");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research reinforces the ghoul's "
-		"hide to be as tough as iron, greatly resisting damage.");
+    addSpecification("name", "Iron Hide");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research reinforces the ghoul's "
+        "hide to be as tough as iron, greatly resisting damage.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 7
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 7
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

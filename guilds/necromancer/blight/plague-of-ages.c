@@ -7,39 +7,39 @@ inherit "/lib/modules/research/persistedActiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Plague of Ages");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides the user with "
-		"knowledge of the plague of ages ability. The necromancer "
-		"inflicts a legendary curse that draws upon eons of accumulated "
-		"death to ravage a foe completely.");
+    addSpecification("name", "Plague of Ages");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides the user with "
+        "knowledge of the plague of ages ability. The necromancer "
+        "inflicts a legendary curse that draws upon eons of accumulated "
+        "death to ravage a foe completely.");
 
-	addPrerequisite("/guilds/necromancer/blight/void-corruption.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/blight/void-corruption.c",
+        (["type": "research"]));
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 57
-		]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 57
+        ]));
 
-	addSpecification("scope", "targeted");
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
+    addSpecification("scope", "targeted");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
 
-	addSpecification("penalty to strength", 8);
-	addSpecification("penalty to dexterity", 8);
-	addSpecification("penalty to constitution", 8);
-	addSpecification("penalty to intelligence", 4);
-	addSpecification("penalty to defense", 12);
-	addSpecification("penalty to soak", 10);
-	addSpecification("duration", 500);
+    addSpecification("penalty to strength", 8);
+    addSpecification("penalty to dexterity", 8);
+    addSpecification("penalty to constitution", 8);
+    addSpecification("penalty to intelligence", 4);
+    addSpecification("penalty to defense", 12);
+    addSpecification("penalty to soak", 10);
+    addSpecification("duration", 500);
 
-	addSpecification("spell point cost", 180);
-	addSpecification("cooldown", 180);
-	addSpecification("command template", "plague of ages [##Target##]");
-	addSpecification("use ability message", "##InitiatorName## "
-		"##Infinitive::call## down a plague drawn from eons of death "
-		"upon ##TargetName##, ##Infinitive::ravage## ##TargetPossessive## "
-		"body with accumulated corruption.");
+    addSpecification("spell point cost", 180);
+    addSpecification("cooldown", 180);
+    addSpecification("command template", "plague of ages [##Target##]");
+    addSpecification("use ability message", "##InitiatorName## "
+        "##Infinitive::call## down a plague drawn from eons of death "
+        "upon ##TargetName##, ##Infinitive::ravage## ##TargetPossessive## "
+        "body with accumulated corruption.");
 }

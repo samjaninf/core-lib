@@ -41,3 +41,5 @@ protected void Setup()
     addSpecification("use ability deactivate message", "##InitiatorName##'s "
         "sanctum of flame dissipates.");
 }   
+
+

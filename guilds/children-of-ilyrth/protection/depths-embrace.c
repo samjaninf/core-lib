@@ -34,3 +34,5 @@ protected void Setup()
     ]));
     addSpecification("affected research type", "percentage");
 }   
+
+

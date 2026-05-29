@@ -7,40 +7,40 @@ inherit "/lib/modules/research/activeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Construct Necromancer Spell");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This skill provides the user with the knowledge of how to construct a custom necromancer spell combining form, function, and effect.");
+    addSpecification("name", "Construct Necromancer Spell");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This skill provides the user with the knowledge of how to construct a custom necromancer spell combining form, function, and effect.");
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "granted");
-	addSpecification("command template", "construct necromancer spell");
+    addSpecification("scope", "self");
+    addSpecification("research type", "granted");
+    addSpecification("command template", "construct necromancer spell");
 }
 
 /////////////////////////////////////////////////////////////////////////////
 protected nomask int executeOnSelf(string unparsedCommand, object owner,
-	string researchName)
+    string researchName)
 {
-	object selectorObj = clone_object(
-		"/lib/modules/guilds/selectors/constructedResearchSelector.c");
+    object selectorObj = clone_object(
+        "/lib/modules/guilds/selectors/constructedResearchSelector.c");
 
-	selectorObj.setType("Necromancer Spell");
-	selectorObj.setConstructedGrouping("/guilds/necromancer/construct/root.c");
+    selectorObj.setType("Necromancer Spell");
+    selectorObj.setConstructedGrouping("/guilds/necromancer/construct/root.c");
 
-	move_object(selectorObj, owner);
-	selectorObj.registerEvent(this_object());
-	selectorObj.initiateSelector(owner);
+    move_object(selectorObj, owner);
+    selectorObj.registerEvent(this_object());
+    selectorObj.initiateSelector(owner);
 
-	return 1;
+    return 1;
 }
 
 /////////////////////////////////////////////////////////////////////////////
 public nomask void onSelectorCompleted(object caller)
 {
-	caller->cleanUp();
+    caller->cleanUp();
 }
 
 /////////////////////////////////////////////////////////////////////////////
 public nomask void onSelectorAborted(object caller)
 {
-	caller->cleanUp();
+    caller->cleanUp();
 }

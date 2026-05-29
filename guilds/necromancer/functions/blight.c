@@ -7,24 +7,24 @@ inherit "/lib/modules/research/constructedResearchComponent.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Blight Energy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research provides knowledge of creating spells that use blight energy.");
+    addSpecification("name", "Blight Energy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research provides knowledge of creating spells that use blight energy.");
 
-	addPrerequisite("/guilds/necromancer/functions/shadow.c",
-		(["type": "research"]));
+    addPrerequisite("/guilds/necromancer/functions/shadow.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("damage type", "energy");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("damage type", "energy");
 
-	addSpecification("affected research", ([
-		"Constructed Spell Multiplier": 8,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("affected research", ([
+        "Constructed Spell Multiplier": 8,
+    ]));
+    addSpecification("affected research type", "percentage");
 
-	addSpecification("additional cooldown", 3);
-	addSpecification("additional spell point cost", 8);
+    addSpecification("additional cooldown", 3);
+    addSpecification("additional spell point cost", 8);
 
-	addSpecification("combination descriptor", "blight");
+    addSpecification("combination descriptor", "blight");
 }

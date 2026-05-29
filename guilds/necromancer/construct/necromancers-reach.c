@@ -7,22 +7,22 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Necromancer's Reach");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the necromancer to extend the reach of constructed necromantic spells.");
+    addSpecification("name", "Necromancer's Reach");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the necromancer to extend the reach of constructed necromantic spells.");
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 5
-		]));
-	addPrerequisite("/guilds/necromancer/construct/necrotic-construct.c",
-		(["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 5
+        ]));
+    addPrerequisite("/guilds/necromancer/construct/necrotic-construct.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Necromancer Spell": 10,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Necromancer Spell": 10,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

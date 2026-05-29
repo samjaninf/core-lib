@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Death Leap");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the ghoul to "
-		"launch itself at enemies from great distances in a lethal leap.");
+    addSpecification("name", "Death Leap");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the ghoul to "
+        "launch itself at enemies from great distances in a lethal leap.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 9
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 9
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

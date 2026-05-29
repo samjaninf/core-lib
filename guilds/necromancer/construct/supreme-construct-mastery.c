@@ -7,22 +7,22 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Supreme Construct Mastery");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the necromancer to achieve mastery over all aspects of necromantic spell construction.");
+    addSpecification("name", "Supreme Construct Mastery");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the necromancer to achieve mastery over all aspects of necromantic spell construction.");
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 21
-		]));
-	addPrerequisite("/guilds/necromancer/construct/construct-mastery.c",
-		(["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 21
+        ]));
+    addPrerequisite("/guilds/necromancer/construct/construct-mastery.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Necromancer Spell": 30,
-	]));
-	addSpecification("affected research type", "percentage");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Necromancer Spell": 30,
+    ]));
+    addSpecification("affected research type", "percentage");
 }

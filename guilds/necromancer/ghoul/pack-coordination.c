@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Pack Coordination");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research teaches the ghoul pack to "
-		"coordinate devastatingly effective attacks against shared targets.");
+    addSpecification("name", "Pack Coordination");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research teaches the ghoul pack to "
+        "coordinate devastatingly effective attacks against shared targets.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 9
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 9
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Savage Frenzy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research pushes the ghoul's frenzy "
-		"to savage extremes of speed and violence.");
+    addSpecification("name", "Savage Frenzy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research pushes the ghoul's frenzy "
+        "to savage extremes of speed and violence.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 9
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 9
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

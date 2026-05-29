@@ -7,30 +7,30 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Deathweaver's Boon");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This skill provides the user with the "
-		"knowledge to reduce the cooldown of their death attack abilities.");
+    addSpecification("name", "Deathweaver's Boon");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This skill provides the user with the "
+        "knowledge to reduce the cooldown of their death attack abilities.");
 
-	addPrerequisite("level",
-		(["type": "level",
-			"guild": "necromancer",
-			"value": 13
-		]));
-	addPrerequisite("/guilds/necromancer/death/necrotic-bolt.c",
-		(["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+            "guild": "necromancer",
+            "value": 13
+        ]));
+    addPrerequisite("/guilds/necromancer/death/necrotic-bolt.c",
+        (["type": "research"]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("affected research", ([
-		"Chill Touch": 10,
-		"Shadow Bolt": 10,
-		"Necrotic Bolt": 10,
-		"Death Coil": 10,
-		"Necrotic Lance": 10,
-		"Soul Rend": 10,
-		"Necrotic Discharge": 10,
-		"Shadow Tempest": 10,
-	]));
-	addSpecification("affected research type", "decrease cooldown");
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("affected research", ([
+        "Chill Touch": 10,
+        "Shadow Bolt": 10,
+        "Necrotic Bolt": 10,
+        "Death Coil": 10,
+        "Necrotic Lance": 10,
+        "Soul Rend": 10,
+        "Necrotic Discharge": 10,
+        "Shadow Tempest": 10,
+    ]));
+    addSpecification("affected research type", "decrease cooldown");
 }

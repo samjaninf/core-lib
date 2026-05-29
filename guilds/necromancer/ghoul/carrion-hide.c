@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Carrion Hide");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research toughens the ghoul's "
-		"carrion hide to resist physical damage more effectively.");
+    addSpecification("name", "Carrion Hide");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research toughens the ghoul's "
+        "carrion hide to resist physical damage more effectively.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 3
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 3
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

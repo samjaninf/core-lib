@@ -1080,7 +1080,7 @@ public nomask mapping *getAttacks()
                                 "to hit": 50 + modifier->query(sprintf("bonus %s attack", attack)) +
                                           inventory->inventoryGetAttackBonus(modifier) +
                                           calculateServiceBonuses("AttackBonus"),
-								"damage": modifier->query(sprintf("bonus %s attack", attack)) +
+                                "damage": modifier->query(sprintf("bonus %s attack", attack)) +
                                           inventory->inventoryGetDamageBonus(modifier, attack) +
                                           calculateServiceBonuses("DamageBonus")
                         ]) });

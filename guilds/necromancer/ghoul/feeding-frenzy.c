@@ -7,20 +7,20 @@ inherit "/lib/modules/research/knowledgeResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Feeding Frenzy");
-	addSpecification("source", "necromancer");
-	addSpecification("description", "This research drives the ghoul into a "
-		"feeding frenzy that massively increases its attack speed.");
+    addSpecification("name", "Feeding Frenzy");
+    addSpecification("source", "necromancer");
+    addSpecification("description", "This research drives the ghoul into a "
+        "feeding frenzy that massively increases its attack speed.");
 
-	addPrerequisite("level", ([
-		"type": "level",
-		"guild": "necromancer",
-		"value": 5
-	]));
+    addPrerequisite("level", ([
+        "type": "level",
+        "guild": "necromancer",
+        "value": 5
+    ]));
 
-	addSpecification("research type", "points");
-	addSpecification("research cost", 1);
-	addSpecification("related research", ({
-		"/guilds/necromancer/ghoul/root.c",
-	}));
+    addSpecification("research type", "points");
+    addSpecification("research cost", 1);
+    addSpecification("related research", ({
+        "/guilds/necromancer/ghoul/root.c",
+    }));
 }

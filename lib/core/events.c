@@ -39,7 +39,7 @@ private nosave string *validEventHandlers = ({ "onDeath", "onHeartBeat",
     "onCraftingCompleted", "onCraftingAborted", "onTriggerConversation",
     "onMessageReceived", "onConstructionStarted", "onConstructionCompleted",
     "onDestructed", "onCreationIncomplete", "onLeavingGame", "onRecalculating",
-	"onProtectedFromDeath"
+    "onProtectedFromDeath"
 });
     
 private nosave mapping eventList = ([ ]);
@@ -196,8 +196,8 @@ public varargs nomask int notifySynchronous(string event, mixed message)
 {
     int ret = 0;
 
-	// It may seem weird to check this_object() here, but this can get called
-	// from a call_out while the object is getting destructed.
+    // It may seem weird to check this_object() here, but this can get called
+    // from a call_out while the object is getting destructed.
     if (event && stringp(event) && (member(validEventHandlers, event) > -1) &&
         this_object())
     {

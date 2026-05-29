@@ -7,13 +7,13 @@ inherit "/lib/modules/research/passiveResearchItem.c";
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-	addSpecification("name", "Frost Spells");
-	addSpecification("source", "cryomancer");
-	addSpecification("description", "This skill provides the user with the "
-		"knowledge of frost-based spells for Cryomancers.");
+    addSpecification("name", "Frost Spells");
+    addSpecification("source", "cryomancer");
+    addSpecification("description", "This skill provides the user with the "
+        "knowledge of frost-based spells for Cryomancers.");
 
-	addSpecification("scope", "self");
-	addSpecification("research type", "tree root");
-	addSpecification("bonus elemental water", 1);
-	addSpecification("bonus magical essence", 1);
+    addSpecification("scope", "self");
+    addSpecification("research type", "tree root");
+    addSpecification("bonus elemental water", 1);
+    addSpecification("bonus magical essence", 1);
 }

@@ -29,4 +29,3 @@ protected void Setup()
     addSpecification("use combination message",
         "##InitiatorName## ##Infinitive::touch## ##TargetName## with ##Function##.");
 }
-

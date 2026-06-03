@@ -2,15 +2,20 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Necromantic Arts");
     addSpecification("source", "Disciple of Argloth");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This research provides the Disciple "
+        "with the foundational knowledge of necromantic arts as practiced "
+        "by Argloth - the study of death, the undead, and the power "
+        "that flows between them.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus body", 2);
+    addSpecification("bonus magical essence", 1);
 }

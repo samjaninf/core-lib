@@ -9,8 +9,24 @@ protected void Setup()
 {
     addSpecification("name", "Dark Ritual");
     addSpecification("source", "Disciple of Argloth");
-    addSpecification("description", "Placeholder for Dark Ritual.");
-    addSpecification("scope", "self");
+    addSpecification("description", "This research teaches the Disciple the dark rituals of Argloth's inner circle - forbidden ceremonies that unlock the deepest reserves of blood and death power.");
+
+    addPrerequisite(
+        "/guilds/disciple-of-argloth/forbidden/root.c",
+        (["type": "research"]));
+    addPrerequisite("level",
+        (["type": "level",
+          "guild": "Disciple of Argloth",
+          "value": 15
+        ]));
+
     addSpecification("research type", "points");
     addSpecification("research cost", 1);
+    addSpecification("affected research type", "percentage");
+    addSpecification("affected research", ([
+        "Blood Veil": 20,
+        "Argloth's Lich Form": 20,
+        "Blood Obliteration": 15,
+        "Argloth's Chosen": 15,
+    ]));
 }

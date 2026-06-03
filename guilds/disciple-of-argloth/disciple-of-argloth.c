@@ -10,12 +10,6 @@ public void SetupGuild()
     guildName("Disciple of Argloth");
     addPreferredSkillType("magic");
 
-    prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk", 
-        "Drambor Edlothiad", "Guardian of Khazurath", "Children of Ilyrth",
-        "League of Assassins", "phaedra", "ranger", "rogue", "Werric Knight",
-        "Wrathguard", "necromancer", "Aegis Guard", "Disciple of Ferianth",
-        "druid", "Hand of Bilanx" }));
-
     addRank("acolyte", ([
         "name": "acolyte",
         "title": "the Disciple of Argloth",
@@ -44,22 +38,28 @@ public void SetupGuild()
 
     addRank("high necromancer", ([
         "name": "high necromancer",
-        "title": ", High Necromancer of Argloth",
+        "title": "the Disciple of Argloth",
         "pretitle": "High Necromancer",
-        "previous rank": "necromancer adept"
+        "previous rank": "necromancer adept",
     ]));
 
     setDefaultRank("acolyte");
 
+    prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk",
+        "Drambor Edlothiad", "Guardian of Khazurath", "Children of Ilyrth",
+        "League of Assassins", "phaedra", "ranger", "rogue", "Werric Knight",
+        "Wrathguard", "necromancer", "Aegis Guard", "Disciple of Ferianth",
+        "druid", "Hand of Bilanx" }));
+
     addCriteria("hit points", ([
         "type": "modifier",
-        "apply": "4 every level",
+        "apply": "3 every level",
         "begin at level": 1
     ]));
 
     addCriteria("spell points", ([
         "type": "modifier",
-        "apply": "5 every level",
+        "apply": "4 every level",
         "begin at level": 1
     ]));
 
@@ -67,11 +67,6 @@ public void SetupGuild()
         "type": "modifier",
         "apply": "2 every level",
         "begin at level": 1
-    ]));
-
-    addCriteria("weapon attack", ([
-        "type": "attack",
-        "apply": "1 every 15 levels"
     ]));
 
     addCriteria("attribute points", ([
@@ -99,45 +94,89 @@ public void SetupGuild()
         "apply": "2 every 5 levels"
     ]));
 
-    addCriteria("necromancy", ([
+    addCriteria("blood veil tree", ([
         "type": "research tree",
         "apply": "at level 1",
-        "research tree": "/guilds/disciple-of-argloth/necromancy.c"
+        "research tree": "/guilds/disciple-of-argloth/blood-veil/blood-veil.c"
     ]));
 
-    addCriteria("corrupted knowledge", ([
+    addCriteria("weapon focus", ([
+        "type": "research path",
+        "name": "The Weapon of the Blood Covenant",
+        "description": "Choose the weapon through which you channel Argloth's "
+            "blood magic.",
+        "apply": "at level 1",
+        "research objects": ({
+            "/guilds/disciple-of-argloth/paths/dagger.c",
+            "/guilds/disciple-of-argloth/paths/staff.c"
+        })
+    ]));
+
+    addCriteria("blood path (dagger)", ([
         "type": "research tree",
         "apply": "at level 1",
-        "research tree": "/guilds/disciple-of-argloth/corrupted-knowledge.c"
+        "apply if chosen": ({ "/guilds/disciple-of-argloth/paths/dagger.c" }),
+        "research tree": "/guilds/disciple-of-argloth/paths/dagger/blood.c"
     ]));
 
-    addCriteria("dark scholar", ([
+    addCriteria("blood path (staff)", ([
         "type": "research tree",
         "apply": "at level 1",
-        "research tree": "/guilds/disciple-of-argloth/dark-scholar.c"
+        "apply if chosen": ({ "/guilds/disciple-of-argloth/paths/staff.c" }),
+        "research tree": "/guilds/disciple-of-argloth/paths/staff/blood.c"
     ]));
 
-    addCriteria("death magic", ([
+    addCriteria("necromancy tree", ([
         "type": "research tree",
-        "apply": "at level 3",
-        "research tree": "/guilds/disciple-of-argloth/death-magic.c"
+        "apply": "at level 1",
+        "research tree": "/guilds/disciple-of-argloth/necromancy/necromancy.c"
     ]));
 
-    addCriteria("shadow arts", ([
+    addCriteria("death tree", ([
         "type": "research tree",
-        "apply": "at level 3",
-        "research tree": "/guilds/disciple-of-argloth/shadow-arts.c"
+        "apply": "at level 1",
+        "research tree": "/guilds/disciple-of-argloth/death/death.c"
     ]));
 
-    addCriteria("forbidden lore", ([
+    addCriteria("dark scholarship tree", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/disciple-of-argloth/dark-scholarship/dark-scholarship.c"
+    ]));
+
+    addCriteria("shadow tree", ([
+        "type": "research tree",
+        "apply": "at level 5",
+        "research tree": "/guilds/disciple-of-argloth/shadow/shadow.c"
+    ]));
+
+    addCriteria("lich form tree", ([
+        "type": "research tree",
+        "apply": "at level 5",
+        "research tree": "/guilds/disciple-of-argloth/lich-form/lich-form.c"
+    ]));
+
+    addCriteria("forbidden tree", ([
+        "type": "research tree",
+        "apply": "at level 15",
+        "research tree": "/guilds/disciple-of-argloth/forbidden/forbidden.c"
+    ]));
+
+    addCriteria("blood rites rank tree", ([
         "type": "research tree",
         "apply": "at rank death scholar",
-        "research tree": "/guilds/disciple-of-argloth/forbidden-lore.c"
+        "research tree": "/guilds/disciple-of-argloth/blood-rites/blood-rites.c"
     ]));
 
-    addCriteria("obsession", ([
+    addCriteria("unholy ascendance rank tree", ([
         "type": "research tree",
         "apply": "at rank necromancer adept",
-        "research tree": "/guilds/disciple-of-argloth/obsession.c"
+        "research tree": "/guilds/disciple-of-argloth/unholy-ascendance/unholy-ascendance.c"
+    ]));
+
+    addCriteria("argloth ascendant rank tree", ([
+        "type": "research tree",
+        "apply": "at rank high necromancer",
+        "research tree": "/guilds/disciple-of-argloth/argloth-ascendant/argloth-ascendant.c"
     ]));
 }

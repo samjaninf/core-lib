@@ -2,15 +2,20 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "The Art of Death");
     addSpecification("source", "Disciple of Argloth");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This research provides the Disciple "
+        "with foundational knowledge of death as a living force - the study "
+        "of endings, the power of the dying moment, and how Argloth's "
+        "disciples learned to wield death itself as a weapon.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus body", 2);
+    addSpecification("bonus wisdom", 1);
 }

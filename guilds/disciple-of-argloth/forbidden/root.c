@@ -2,15 +2,20 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Forbidden Arts");
     addSpecification("source", "Disciple of Argloth");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This research opens the path of the "
+        "forbidden arts - techniques so dangerous and heretical that even "
+        "Argloth kept them from most of his disciples.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus body", 3);
+    addSpecification("bonus blood", 3);
+    addSpecification("bonus magical essence", 2);
 }

@@ -2,15 +2,20 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-inherit "/lib/modules/research/knowledgeResearchItem.c";
+inherit "/lib/modules/research/passiveResearchItem.c";
 
 /////////////////////////////////////////////////////////////////////////////
 protected void Setup()
 {
-    addSpecification("name", "Root");
+    addSpecification("name", "Shadow Arts");
     addSpecification("source", "Disciple of Argloth");
-    addSpecification("description", "Placeholder for Root.");
+    addSpecification("description", "This research opens the path of the "
+        "shadow arts - the study and manipulation of darkness and shadow "
+        "as an extension of Argloth's death power.");
+
     addSpecification("scope", "self");
-    addSpecification("research type", "points");
-    addSpecification("research cost", 1);
+    addSpecification("research type", "tree root");
+    addSpecification("bonus spirit", 2);
+    addSpecification("bonus move silently", 1);
+    addSpecification("bonus perception", 1);
 }

@@ -45,7 +45,6 @@ optional steps:
 - Add cloned objects - these would be monsters/NPCs, weapons, armor, treasures, and so on
 - Add shop/shop inventory - If the environment is a shop, you can specify the type of shop and set up the buying/selling of items.
 - Add exits - You can attach environments togetherby setting up actions and the desired destination.
-- If the environment is part of a larger region / group of environments, you can set its coordinates within that region
 - Set an additional long description
 - Set a short description.
 - Set up a state machine to drive interesting behaviors. 
@@ -104,8 +103,7 @@ The original intent was to break down each environment into a 3x3 grid and allow
 the wizard to place objects either "front-and-center" in the room (ie: location not specified),
 or a cardinal / primary intercardinal direction (ie: n, s, e, w, ne, nw, se, sw). Having
 said that, items can be placed in an arbitrary location and multiple items can be
-placed in the same general area. There is a work item to change this to a coordinate system,
-but that is currently not implemented and may never be.
+placed in the same general area. 
 
 The syntax for creating features - be they buildings, features, or static items - is identical
 to that for creating terrain or interiors with the only difference being the class that you are
@@ -254,23 +252,6 @@ for examples) and the optional key object if the door is locked / lockable (see
 /lib/environment/doors/baseDoor.c). The key object must inherit /lib/items/key.c 
 
 #### Regions
-~~~c
-void setCoordinates(string region, int x, int y);
-~~~
-
-Regions are groups of related environments that can be automatically generated 
-or manually crafted. When you set coordinates for an environment, you're placing 
-it within a larger regional context. The region parameter is the name of the
-region, and x, y are the coordinates within that region.
-
-For example:
-~~~c
-setCoordinates("temple-interior", 0, 0);
-~~~
-
-This places the environment at coordinates (0,0) within the "temple-interior" 
-region. The coordinate system typically uses (0,0) as a reference point, with 
-positive x extending east and positive y extending north.
 
 ##### Region Auto-Generation
 
@@ -702,7 +683,6 @@ inherit "/lib/environment/environment.c";
 public void Setup()
 {
     setInterior("/lib/environment/interiors/temple.c");
-    setCoordinates("temple-interior", 0, 0);
     
     addFeature("/lib/environment/features/altar.c", "north");
     addItem("/lib/environment/items/lighting/brazier.c", "northeast");

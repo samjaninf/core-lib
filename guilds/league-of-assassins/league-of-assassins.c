@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("League of Assassins");
+    guildClass("combat");
     addPreferredSkillType("combat");
     prohibitedGuildCombinations(({ "Scion of Dhuras", "monk" }));
 

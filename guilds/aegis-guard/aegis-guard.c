@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("Aegis Guard");
+    guildClass("combat");
     addPreferredSkillType("combat");
 
     addRank("recruit", ([

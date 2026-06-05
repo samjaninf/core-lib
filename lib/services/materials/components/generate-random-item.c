@@ -112,7 +112,8 @@ public nomask varargs object generateRandomItem(string type, string subtype,
         {
             string *possibleDamageTypes = ({ "acid", "air", "chaos", "cold",
                 "earth", "electricity", "energy", "fire", "magical", "poison",
-                "water", "undead", "good", "evil", "psionic", "sonic", "steam" });
+                "water", "undead", "good", "evil", "psionic", "sonic", "steam",
+                "radiant", "shadow", "temporal" });
             string damageType =
                 possibleDamageTypes[random(sizeof(possibleDamageTypes))];
 

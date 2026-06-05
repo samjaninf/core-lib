@@ -1263,6 +1263,153 @@ protected mapping equipmentEnchantments =
         "value multiplier": 5.0,
         "experience modifier": 1.5
     ]),
+    "shadow enchantment":([
+        "class": "offensive",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/shadow/craftShadowEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "spirit": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "enchantments": ([
+                "shadow": 2,
+            ]),
+        ]),
+        "rune": "thurisaz",
+        "description": "Imbues the item with void-shadow energy drawn from the spaces between light.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "shadow resistance":([
+        "class": "defensive",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/shadow/craftShadowEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "spirit": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "resistances": ([
+                "shadow": 2,
+            ]),
+        ]),
+        "rune": "thurisaz",
+        "description": "Wards the wearer against shadow and void energy damage.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "shadow attack":([
+        "class": "attack mutations",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/shadow/craftShadowAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "spirit": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "damage type": "shadow",
+        ]),
+        "rune": "thurisaz",
+        "description": "Converts the weapon's attacks to channel void-shadow energy on impact.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "radiant enchantment":([
+        "class": "offensive",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/radiant/craftRadiantEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "theology": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "enchantments": ([
+                "radiant": 2,
+            ]),
+        ]),
+        "rune": "sowilo",
+        "description": "Blesses the item with radiant divine light that burns through darkness.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "radiant resistance":([
+        "class": "defensive",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/radiant/craftRadiantEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "theology": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "resistances": ([
+                "radiant": 2,
+            ]),
+        ]),
+        "rune": "sowilo",
+        "description": "Suffuses the item with holy light that deflects radiant and divine damage.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "radiant attack":([
+        "class": "attack mutations",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/radiant/craftRadiantAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "theology": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "damage type": "radiant",
+        ]),
+        "rune": "sowilo",
+        "description": "Converts the weapon's attacks to channel searing radiant divine energy.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "temporal enchantment":([
+        "class": "offensive",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/temporal/craftTemporalEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "evocation": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "enchantments": ([
+                "temporal": 2,
+            ]),
+        ]),
+        "rune": "jera",
+        "description": "Infuses the item with temporal energy that disrupts the flow of time on impact.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "temporal resistance":([
+        "class": "defensive",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/temporal/craftTemporalEnchantment.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 5]),
+            "evocation": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "resistances": ([
+                "temporal": 2,
+            ]),
+        ]),
+        "rune": "jera",
+        "description": "Anchors the wearer in time, protecting against temporal distortion damage.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
+    "temporal attack":([
+        "class": "attack mutations",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/enchantments/temporal/craftTemporalAttack.c":(["type": "research"]),
+            "spellcraft": (["type": "skill", "value": 10]),
+            "evocation": (["type": "skill", "value": 5]),
+        ]),
+        "effects": ([
+            "damage type": "temporal",
+        ]),
+        "rune": "jera",
+        "description": "Converts the weapon's attacks to unleash temporal distortion energy.",
+        "value multiplier": 5.0,
+        "experience modifier": 1.5
+    ]),
 ]);
 
 #endif

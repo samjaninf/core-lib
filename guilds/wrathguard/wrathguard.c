@@ -8,47 +8,49 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("Wrathguard");
+    guildClass("combat");
     addPreferredSkillType("magic");
 
     prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk",
         "Aegis Guard", "Drambor Edlothiad", "Guardian of Khazurath",
         "Werric Knight", "Hand of Bilanx", "Children of Ilyrth",
-        "Disciple of Ferianth", "druid" }));
+        "Disciple of Ferianth", "druid", "Disciple of Argloth",
+        "necromancer" }));
 
-    addRank("acolyte", ([
-        "name": "acolyte",
-        "title": "the Wrathguard",
+    addRank("acolyte of ruin", ([
+        "name": "acolyte of ruin",
+        "title": ", Keeper of the Night",
         "pretitle": "Acolyte",
-        "next rank": "priest of wrath",
+        "next rank": "warden of shadows",
         "delay for next promotion": 1200
     ]));
 
-    addRank("priest of wrath", ([
-        "name": "priest of wrath",
-        "title": "the Wrathguard",
-        "pretitle": "Priest of Wrath",
-        "previous rank": "acolyte",
-        "next rank": "high priest",
+    addRank("warden of shadows", ([
+        "name": "warden of shadows",
+        "title": ", Warden of Her Dark Majesty",
+        "pretitle": "Warden",
+        "previous rank": "acolyte of ruin",
+        "next rank": "herald of destruction",
         "delay for next promotion": 3600
     ]));
 
-    addRank("high priest", ([
-        "name": "high priest",
-        "title": "the Wrathguard",
-        "pretitle": "High Priest",
-        "previous rank": "priest of wrath",
-        "next rank": "avatar of destruction",
+    addRank("herald of destruction", ([
+        "name": "herald of destruction",
+        "title": ", Herald of Destruction",
+        "pretitle": "Herald",
+        "previous rank": "warden of shadows",
+        "next rank": "exarch of the void",
         "delay for next promotion": 7200
     ]));
 
-    addRank("avatar of destruction", ([
-        "name": "avatar of destruction",
-        "title": ", Avatar of Destruction",
-        "pretitle": "Avatar",
-        "previous rank": "high priest"
+    addRank("exarch of the void", ([
+        "name": "exarch of the void",
+        "title": ", Exarch of Seilyndria",
+        "pretitle": "Exarch",
+        "previous rank": "herald of destruction"
     ]));
 
-    setDefaultRank("acolyte");
+    setDefaultRank("acolyte of ruin");
 
     addCriteria("hit points", ([
         "type": "modifier",
@@ -66,11 +68,6 @@ public void SetupGuild()
         "type": "modifier",
         "apply": "2 every level",
         "begin at level": 1
-    ]));
-
-    addCriteria("weapon attack", ([
-        "type": "attack",
-        "apply": "1 every 15 levels"
     ]));
 
     addCriteria("attribute points", ([
@@ -98,51 +95,79 @@ public void SetupGuild()
         "apply": "2 every 5 levels"
     ]));
 
-    addCriteria("destruction magic", ([
-        "type": "research tree",
-        "apply": "at level 1",
-        "research tree": "/guilds/wrathguard/destruction-magic.c"
-    ]));
-
-    addCriteria("wrath of seilyndria", ([
+    // Shadow Magic - darkness, void bolts, shadow manipulation
+    addCriteria("shadow magic", ([
         "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/wrathguard/wrath-of-seilyndria.c"
     ]));
 
-    addCriteria("combat priest", ([
+    // Ruin and Devastation - destruction magic, area damage
+    addCriteria("ruin and devastation", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/wrathguard/destruction-magic.c"
+    ]));
+
+    // Vain Beauty - charm, domination, seduction magic
+    addCriteria("vain beauty", ([
         "type": "research tree",
         "apply": "at level 1",
         "research tree": "/guilds/wrathguard/combat-priest.c"
     ]));
 
-    addCriteria("dark blessings", ([
+    // The Queen's Will - command and will-breaking magic
+    addCriteria("the queens will", ([
         "type": "research tree",
         "apply": "at level 3",
         "research tree": "/guilds/wrathguard/dark-blessings.c"
     ]));
 
-    addCriteria("fury", ([
+    // Keeper's Rituals - dark rituals, summoning
+    addCriteria("keepers rituals", ([
         "type": "research tree",
-        "apply": "at level 3",
+        "apply": "at level 5",
         "research tree": "/guilds/wrathguard/fury.c"
     ]));
 
-    addCriteria("vengeance", ([
+    // Herald of Darkness - transformation form tree
+    addCriteria("herald of darkness", ([
         "type": "research tree",
         "apply": "at level 5",
         "research tree": "/guilds/wrathguard/vengeance.c"
     ]));
 
-    addCriteria("zealot", ([
+    // Chains of the Bound - binding/prison magic (rank: warden)
+    addCriteria("chains of the bound", ([
         "type": "research tree",
-        "apply": "at rank priest of wrath",
+        "apply": "at rank warden of shadows",
         "research tree": "/guilds/wrathguard/zealot.c"
     ]));
 
-    addCriteria("divine wrath", ([
+    addCriteria("warden research points", ([
+        "type": "research points",
+        "apply": "1 every 5 levels",
+        "begin at rank": "warden of shadows",
+        "end at rank": "herald of destruction"
+    ]));
+
+    // Liberation of the Queen - ultimate avatar abilities (rank: herald)
+    addCriteria("liberation of the queen", ([
         "type": "research tree",
-        "apply": "at rank high priest",
+        "apply": "at rank herald of destruction",
         "research tree": "/guilds/wrathguard/divine-wrath.c"
+    ]));
+
+    addCriteria("herald research points", ([
+        "type": "research points",
+        "apply": "1 every 4 levels",
+        "begin at rank": "herald of destruction",
+        "end at rank": "exarch of the void"
+    ]));
+
+    addCriteria("exarch research points", ([
+        "type": "research points",
+        "apply": "1 every 3 levels",
+        "begin at rank": "exarch of the void"
     ]));
 }

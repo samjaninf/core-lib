@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("necromancer");
+    guildClass("combat");
     addPreferredSkillType("magic");
 
     addCriteria("hit points", ([

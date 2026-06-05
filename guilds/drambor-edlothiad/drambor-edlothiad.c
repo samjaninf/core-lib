@@ -8,7 +8,9 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("Drambor Edlothiad");
+    guildClass("combat");
     addPreferredSkillType("combat");
+    addPreferredSkillType("magic");
 
     prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk", 
         "Disciple of Argloth", "Guardian of Khazurath",

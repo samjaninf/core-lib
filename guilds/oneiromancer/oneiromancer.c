@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("oneiromancer");
+    guildClass("combat");
     addPreferredSkillType("magic");
 
     addRank("initiate", ([

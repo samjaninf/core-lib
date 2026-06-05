@@ -8,7 +8,9 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("bard");
+    guildClass("combat");
     addPreferredSkillType("combat");
+    addPreferredSkillType("magic");
     prohibitedGuildCombinations(({ "monk" }));
 
     addCriteria("hit points", ([

@@ -8,7 +8,8 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("pyromancer");
-    addPreferredSkillType("combat");
+    guildClass("combat");
+    addPreferredSkillType("magic");
 
     addCriteria("hit points", ([
         "type": "modifier",

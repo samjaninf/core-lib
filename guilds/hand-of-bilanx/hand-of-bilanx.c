@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("Hand of Bilanx");
+    guildClass("combat");
     addPreferredSkillType("magic");
 
     prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk",

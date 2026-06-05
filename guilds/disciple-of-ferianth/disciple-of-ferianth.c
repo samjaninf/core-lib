@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("Disciple of Ferianth");
+    guildClass("combat");
     addPreferredSkillType("magic");
 
     prohibitedGuildCombinations(({ "Drambor Edlothiad", "Werric Knight",

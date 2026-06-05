@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("Children of Ilyrth");
+    guildClass("combat");
     addPreferredSkillType("magic");
 
     prohibitedGuildCombinations(({ "Drambor Edlothiad", "Werric Knight",

@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("therianthrope");
+    guildClass("combat");
     addPreferredSkillType("combat");
     prohibitedGuildCombinations(({ "Scion of Dhuras", "monk" }));
 

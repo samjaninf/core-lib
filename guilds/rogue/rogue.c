@@ -8,7 +8,10 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("rogue");
+    guildClass("combat");
     addPreferredSkillType("combat");
+    addPreferredSkillType("subterfuge");
+
     prohibitedGuildCombinations(({ "Scion of Dhuras", "monk" }));
 
     addCriteria("hit points", ([

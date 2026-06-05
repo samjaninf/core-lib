@@ -8,7 +8,8 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("druid");
-    addPreferredSkillType("combat");
+    guildClass("combat");
+    addPreferredSkillType("magic");
     prohibitedGuildCombinations(({ "Scion of Dhuras", "monk" }));
 
     addCriteria("hit points", ([

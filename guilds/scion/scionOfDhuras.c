@@ -8,6 +8,7 @@ inherit "/lib/modules/guilds/baseGuild.c";
 public void SetupGuild()
 {
     guildName("Scion of Dhuras");
+    guildClass("combat");
     addPreferredSkillType("combat");
 
     addRank("neophyte", ([

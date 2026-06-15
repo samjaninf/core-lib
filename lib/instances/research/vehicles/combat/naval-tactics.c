@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required for naval warfare, including ship positioning, "
         "wind advantage, and water-based combat maneuvers.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("tactics", (["type": "skill", "value" : 6]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/combat/vehicle-formations.c", 

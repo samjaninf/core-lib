@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to effectively use vehicles as battering rams, "
         "including optimal angles of attack and structural reinforcement.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("weapon smithing", (["type": "skill", "value" : 5]));
     addPrerequisite("engineering", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/combat/basic-vehicle-tactics.c", 

@@ -14,7 +14,7 @@ protected void Setup()
         "mundane shipbuilding - titanic vessels powered by arcane engines "
         "and protected by the most powerful enchantments known.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 12);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 18]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 15]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 12]));

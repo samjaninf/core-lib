@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that produce devastating "
         "sound waves, shattering structures and disorienting enemies.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 13]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 6]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-cannon.c", 

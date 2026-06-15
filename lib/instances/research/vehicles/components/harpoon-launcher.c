@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft harpoon launching systems for capturing "
         "or damaging targets from vehicle mounts.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 3]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 2]));
     addPrerequisite("engineering", (["type": "skill", "value" : 1]));

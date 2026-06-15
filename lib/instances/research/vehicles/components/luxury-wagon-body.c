@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft finely detailed wagon bodies with "
         "ornate decorations and comfortable accommodations for wealthy passengers.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
     addPrerequisite("sewing", (["type": "skill", "value" : 3]));
     addPrerequisite("artistic endeavors", (["type": "skill", "value" : 2]));

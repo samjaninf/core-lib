@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft heavy-duty chassis designed specifically "
         "for war wagons with weapon mounts and crew protection.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 6]));
     addPrerequisite("engineering", (["type": "skill", "value" : 4]));

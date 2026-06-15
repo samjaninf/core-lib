@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Provides knowledge of vehicle combat "
         "involving planar or extraplanar forces.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 5 ]));
     addPrerequisite("/lib/instances/research/vehicles/combat/elemental-warfare.c",
         (["type": "research"]));

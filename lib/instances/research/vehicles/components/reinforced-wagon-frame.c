@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft reinforced frames with metal bands "
         "and additional bracing for heavy-duty wagon construction.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 2]));
     addPrerequisite("engineering", (["type": "skill", "value" : 1]));

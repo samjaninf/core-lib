@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magically shielded chambers for "
         "arcane crew members and magical research while traveling.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 12]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));
     addPrerequisite("carpentry", (["type": "skill", "value" : 5]));

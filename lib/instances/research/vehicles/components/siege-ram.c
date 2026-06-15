@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft heavy ramming devices for breaking "
         "down gates, walls, and enemy vessels.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("engineering", (["type": "skill", "value" : 2]));

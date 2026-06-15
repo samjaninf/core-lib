@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct large ships with square-rigged sails, "
         "such as galleons and carracks, designed for ocean voyages and heavy cargo.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 10]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 7]));
     addPrerequisite("sewing", (["type": "skill", "value" : 5]));

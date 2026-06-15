@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to conduct warfare using elemental forces, "
         "including summoned elementals and elemental weapon systems.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 8);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 12]));
     addPrerequisite("summoning", (["type": "skill", "value" : 8]));
     addPrerequisite("elemental air", (["type": "skill", "value" : 6]));

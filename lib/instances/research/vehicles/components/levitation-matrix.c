@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that allow vehicles "
         "to float above the ground or water through levitation magic.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 8);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 15]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 10]));
     addPrerequisite("gem crafting", (["type": "skill", "value" : 6]));

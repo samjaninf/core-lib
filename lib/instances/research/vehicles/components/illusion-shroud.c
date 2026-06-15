@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical shrouds that conceal vehicles "
         "from view through powerful illusion magic.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 10]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 7]));
     addPrerequisite("sewing", (["type": "skill", "value" : 4]));

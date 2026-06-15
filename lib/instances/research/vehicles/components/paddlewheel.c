@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft paddlewheels for mechanical river "
         "propulsion, providing reliable movement in calm waters.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("engineering", (["type": "skill", "value" : 4]));
     addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 2]));

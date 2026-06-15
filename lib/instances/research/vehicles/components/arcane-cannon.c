@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft powerful magical artillery pieces "
         "that fire concentrated bolts of arcane energy.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 12]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 6]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 6]));

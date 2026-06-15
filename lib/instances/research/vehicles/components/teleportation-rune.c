@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft runes that allow vehicles to teleport "
         "short distances through dimensional magic.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 10);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 18]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 12]));
     addPrerequisite("gem crafting", (["type": "skill", "value" : 8]));

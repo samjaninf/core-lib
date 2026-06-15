@@ -14,30 +14,31 @@ public void SetupGuild()
     prohibitedGuildCombinations(({ "Scion of Dhuras", "fighter", "monk",
         "Aegis Guard", "Drambor Edlothiad", "Guardian of Khazurath",
         "Werric Knight", "Wrathguard", "Disciple of Argloth",
+        "Disciple of Ferianth", "Children of Ilyrth", "druid",
         "League of Assassins", "necromancer" }));
 
-    addRank("seeker", ([
-        "name": "seeker",
-        "title": "the Hand of Bilanx",
+    addRank("seeker of balance", ([
+        "name": "seeker of balance",
+        "title": ", Seeker of Equilibrium",
         "pretitle": "Seeker",
-        "next rank": "adept of balance",
+        "next rank": "arbiter",
         "delay for next promotion": 1200
     ]));
 
-    addRank("adept of balance", ([
-        "name": "adept of balance",
-        "title": "the Hand of Bilanx",
-        "pretitle": "Adept of Balance",
-        "previous rank": "seeker",
-        "next rank": "master of duality",
+    addRank("arbiter", ([
+        "name": "arbiter",
+        "title": ", Arbiter of Bilanx",
+        "pretitle": "Arbiter",
+        "previous rank": "seeker of balance",
+        "next rank": "hierophant",
         "delay for next promotion": 3600
     ]));
 
-    addRank("master of duality", ([
-        "name": "master of duality",
-        "title": "the Hand of Bilanx",
-        "pretitle": "Master of Duality",
-        "previous rank": "adept of balance",
+    addRank("hierophant", ([
+        "name": "hierophant",
+        "title": ", Hierophant of the Scales",
+        "pretitle": "Hierophant",
+        "previous rank": "arbiter",
         "next rank": "hand of bilanx",
         "delay for next promotion": 7200
     ]));
@@ -45,11 +46,11 @@ public void SetupGuild()
     addRank("hand of bilanx", ([
         "name": "hand of bilanx",
         "title": ", Hand of Bilanx",
-        "pretitle": "Hand of Bilanx",
-        "previous rank": "master of duality"
+        "pretitle": "The Hand",
+        "previous rank": "hierophant"
     ]));
 
-    setDefaultRank("seeker");
+    setDefaultRank("seeker of balance");
 
     addCriteria("hit points", ([
         "type": "modifier",
@@ -67,11 +68,6 @@ public void SetupGuild()
         "type": "modifier",
         "apply": "4 every level",
         "begin at level": 1
-    ]));
-
-    addCriteria("weapon attack", ([
-        "type": "attack",
-        "apply": "1 every 12 levels"
     ]));
 
     addCriteria("attribute points", ([
@@ -99,51 +95,51 @@ public void SetupGuild()
         "apply": "2 every 5 levels"
     ]));
 
-    addCriteria("equilibrium", ([
+    addCriteria("healing and harm", ([
         "type": "research tree",
         "apply": "at level 1",
-        "research tree": "/guilds/hand-of-bilanx/equilibrium.c"
+        "research tree": "/guilds/hand-of-bilanx/healing-and-harm.c"
     ]));
 
-    addCriteria("balance magic", ([
+    addCriteria("order and chaos", ([
         "type": "research tree",
         "apply": "at level 1",
-        "research tree": "/guilds/hand-of-bilanx/balance-magic.c"
+        "research tree": "/guilds/hand-of-bilanx/order-and-chaos.c"
     ]));
 
-    addCriteria("harmony", ([
+    addCriteria("light and shadow", ([
         "type": "research tree",
         "apply": "at level 1",
-        "research tree": "/guilds/hand-of-bilanx/harmony.c"
+        "research tree": "/guilds/hand-of-bilanx/light-and-shadow.c"
     ]));
 
-    addCriteria("duality", ([
+    addCriteria("the middle path", ([
         "type": "research tree",
         "apply": "at level 3",
-        "research tree": "/guilds/hand-of-bilanx/duality.c"
+        "research tree": "/guilds/hand-of-bilanx/middle-path.c"
     ]));
 
-    addCriteria("restoration", ([
-        "type": "research tree",
-        "apply": "at level 3",
-        "research tree": "/guilds/hand-of-bilanx/restoration.c"
-    ]));
-
-    addCriteria("neutrality", ([
+    addCriteria("scales of judgment", ([
         "type": "research tree",
         "apply": "at level 5",
-        "research tree": "/guilds/hand-of-bilanx/neutrality.c"
+        "research tree": "/guilds/hand-of-bilanx/scales-of-judgment.c"
     ]));
 
-    addCriteria("cosmic order", ([
+    addCriteria("equilibrium form", ([
         "type": "research tree",
-        "apply": "at rank adept of balance",
-        "research tree": "/guilds/hand-of-bilanx/cosmic-order.c"
+        "apply": "at level 7",
+        "research tree": "/guilds/hand-of-bilanx/equilibrium-form.c"
     ]));
 
-    addCriteria("perfect balance", ([
+    addCriteria("hand of the scales", ([
         "type": "research tree",
-        "apply": "at rank master of duality",
-        "research tree": "/guilds/hand-of-bilanx/perfect-balance.c"
+        "apply": "at rank arbiter",
+        "research tree": "/guilds/hand-of-bilanx/hand-of-the-scales.c"
+    ]));
+
+    addCriteria("perfect harmony", ([
+        "type": "research tree",
+        "apply": "at rank hand of bilanx",
+        "research tree": "/guilds/hand-of-bilanx/perfect-harmony.c"
     ]));
 }

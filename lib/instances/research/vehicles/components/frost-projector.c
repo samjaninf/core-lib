@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that project freezing "
         "cold and ice shards at enemies.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 10]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-wagon-frame.c", 

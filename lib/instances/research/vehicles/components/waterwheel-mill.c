@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft waterwheels for grinding grain while "
         "moored in a river, providing industrial capability to vessels.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 5);
+    addSpecification("research cost", 1);
     addPrerequisite("engineering", (["type": "skill", "value" : 6]));
     addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));

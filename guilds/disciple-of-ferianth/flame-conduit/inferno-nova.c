@@ -25,7 +25,7 @@ protected void Setup()
 
     addSpecification("scope", "area");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addSpecification("spell point cost", 100);
     addSpecification("cooldown", 30);
 

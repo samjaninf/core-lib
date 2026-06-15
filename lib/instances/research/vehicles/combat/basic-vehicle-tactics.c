@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge of fundamental vehicle combat tactics, including flanking "
         "maneuvers, positioning strategies, and basic engagement principles.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("weapon smithing", (["type": "skill", "value" : 4]));
     addPrerequisite("tactics", (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/vehicles/vehicleCombatBasics.c", 

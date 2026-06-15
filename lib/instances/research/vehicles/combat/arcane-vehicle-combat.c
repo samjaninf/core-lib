@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to integrate magical combat techniques with "
         "vehicle warfare, including spell targeting and arcane defenses.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 5);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
     addPrerequisite("tactics", (["type": "skill", "value" : 6]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));

@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft bindings that allow elementals to "
         "pull or propel vehicles through elemental magic.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 7);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 14]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));
     addPrerequisite("sewing", (["type": "skill", "value" : 5]));

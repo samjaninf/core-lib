@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct small, swift vessels that glide "
         "above water or air through pure magical energy, offering unmatched speed.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 7);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 6]));
     addPrerequisite("spellcraft", (["type": "skill", "value" : 12]));

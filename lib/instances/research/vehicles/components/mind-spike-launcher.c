@@ -14,7 +14,7 @@ protected void Setup()
         "infused with psychic energy, disrupting mental focus and causing "
         "disorientation in enemies.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 7);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 14]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 6]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));

@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft mounts for springald torsion engines, "
         "powerful bolt-throwing weapons for vehicle mounting.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
     addPrerequisite("engineering", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/basic-wagon-frame.c", 

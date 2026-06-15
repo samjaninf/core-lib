@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Provides knowledge of commanding multiple "
         "ships in coordinated fleet actions.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("/lib/instances/research/vehicles/combat/ship-to-ship-combat.c",
         (["type": "research"]));
 

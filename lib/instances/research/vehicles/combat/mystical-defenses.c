@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Provides knowledge of magical and "
         "mystical defenses for vehicles in combat.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 3]));
     addPrerequisite("/lib/instances/research/vehicles/combat/arcane-vehicle-combat.c",
         (["type": "research"]));

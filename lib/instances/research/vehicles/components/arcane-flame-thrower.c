@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that project streams "
         "of arcane fire at enemies, causing devastating damage.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 8);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 15]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));

@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical engines powered by bound "
         "elementals, providing tremendous propulsive force.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 12);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 20]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 15]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));

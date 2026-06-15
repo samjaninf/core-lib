@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft systems for dispensing flammable oils, "
         "often used in combination with ignition sources.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 2]));
     addPrerequisite("alchemy", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/components/basic-wagon-frame.c", 

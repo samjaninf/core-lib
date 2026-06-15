@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct magically-enhanced vessels that "
         "incorporate arcane energies for propulsion and protection.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 5);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 4]));
     addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));

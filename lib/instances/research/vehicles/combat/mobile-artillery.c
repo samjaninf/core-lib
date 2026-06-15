@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Provides knowledge of using and "
         "countering mobile artillery in vehicle combat.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("/lib/instances/research/vehicles/combat/siege-warfare.c",
         (["type": "research"]));
 

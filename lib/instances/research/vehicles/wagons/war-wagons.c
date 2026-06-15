@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct armored wagons designed for battlefield "
         "use, featuring reinforced construction and weapon mounting points.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 3]));
     addPrerequisite("engineering", (["type": "skill", "value" : 2]));

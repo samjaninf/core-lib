@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required for advanced naval combat between vessels, "
         "including artillery coordination and battle line tactics.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("tactics", (["type": "skill", "value" : 8]));
     addPrerequisite("engineering", (["type": "skill", "value" : 6]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 7]));

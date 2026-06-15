@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft systems for projecting burning liquid "
         "fire at enemy vessels, a fearsome naval weapon.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("engineering", (["type": "skill", "value" : 5]));
     addPrerequisite("alchemy", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/oil-dispenser.c", 

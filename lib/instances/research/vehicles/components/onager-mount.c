@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft mounts for onager catapults, heavy "
         "stone-throwing siege weapons for devastating ranged attacks.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
     addPrerequisite("engineering", (["type": "skill", "value" : 4]));
     addPrerequisite("/lib/instances/research/vehicles/components/springald-mount.c", 

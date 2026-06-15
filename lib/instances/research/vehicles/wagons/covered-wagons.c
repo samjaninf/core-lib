@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct wagons with protective covers, "
         "offering shelter from weather and basic security for cargo and passengers.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 3]));
     addPrerequisite("sewing", (["type": "skill", "value" : 2]));
     addPrerequisite("/lib/instances/research/vehicles/wagons/basic-wagon-construction.c", 

@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft rudders that allow vessels to shift "
         "between planes of existence, enabling interdimensional travel.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 15);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 22]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 18]));
     addPrerequisite("gem crafting", (["type": "skill", "value" : 12]));

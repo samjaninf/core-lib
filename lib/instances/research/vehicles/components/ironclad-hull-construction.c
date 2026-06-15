@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft hulls armored with iron plating "
         "for maximum protection in naval combat.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 5]));

@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct massive warships enhanced with "
         "mystical wards and arcane artillery, feared on all seas.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 8);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 12]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 10]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 8]));

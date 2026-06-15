@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft wagon bodies with metal plating "
         "and armor for battlefield use and dangerous travel.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("engineering", (["type": "skill", "value" : 2]));

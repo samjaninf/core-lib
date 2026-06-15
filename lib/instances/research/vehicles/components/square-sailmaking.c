@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft large square sails for maximum speed "
         "with favorable winds on ocean voyages.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("sewing", (["type": "skill", "value" : 4]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
     addPrerequisite("carpentry", (["type": "skill", "value" : 2]));

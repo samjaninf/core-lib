@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct massive warships representing the "
         "pinnacle of naval engineering, bristling with weapons and armor.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 10);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 15]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 12]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 10]));

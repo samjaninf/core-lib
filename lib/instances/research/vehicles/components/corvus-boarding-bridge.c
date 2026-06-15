@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft pivoting bridges with spikes for "
         "boarding enemy ships, turning naval combat into infantry warfare.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
     addPrerequisite("engineering", (["type": "skill", "value" : 3]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 3]));

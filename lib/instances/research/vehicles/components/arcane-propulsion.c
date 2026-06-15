@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical propulsion devices that move "
         "vessels through pure arcane energy without wind or oars.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 5);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 10]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 6]));

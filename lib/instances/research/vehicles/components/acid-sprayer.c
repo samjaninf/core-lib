@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that spray corrosive "
         "acid at targets, dissolving armor and flesh alike.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 5);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 11]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("alchemy", (["type": "skill", "value" : 3]));

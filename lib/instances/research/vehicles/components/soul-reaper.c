@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft dark magical devices that drain life "
         "force from enemies, a forbidden art of necromantic warfare.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 10);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 16]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 8]));
     addPrerequisite("gem crafting", (["type": "skill", "value" : 4]));

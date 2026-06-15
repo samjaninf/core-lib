@@ -14,7 +14,7 @@ protected void Setup()
         "designed for siege warfare, capable of mounting large weapons and "
         "carrying substantial crews.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 6]));
     addPrerequisite("engineering", (["type": "skill", "value" : 6]));

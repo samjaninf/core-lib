@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that cause confusion "
         "and fear in enemies, disrupting their coordination and morale.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 12]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/components/sonic-disruptor.c", 

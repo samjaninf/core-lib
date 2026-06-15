@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct small to medium sailing ships "
         "designed for coastal waters and short sea voyages.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
     addPrerequisite("sewing", (["type": "skill", "value" : 3]));

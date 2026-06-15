@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft hulls reinforced with magical runes "
         "and rare materials for enhanced durability and mystical protection.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 4]));
     addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));

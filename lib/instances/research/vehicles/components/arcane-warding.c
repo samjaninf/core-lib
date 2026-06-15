@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical wards that shield vehicles "
         "from both physical and magical harm.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 5]));
     addPrerequisite("/lib/instances/research/vehicles/components/arcane-wagon-frame.c", 

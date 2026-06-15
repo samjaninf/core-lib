@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct long, narrow vessels designed for "
         "both rowing and sailing, ideal for coastal raids and exploration.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 6]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 4]));
     addPrerequisite("leather crafting", (["type": "skill", "value" : 2]));

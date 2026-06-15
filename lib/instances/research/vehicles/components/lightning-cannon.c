@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that hurl devastating "
         "bolts of lightning at enemies.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 7);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 14]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 7]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 5]));

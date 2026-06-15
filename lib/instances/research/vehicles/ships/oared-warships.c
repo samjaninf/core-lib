@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct large warships powered primarily "
         "by oars, such as galleys and triremes, designed for naval combat.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 5);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 8]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 6]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 4]));

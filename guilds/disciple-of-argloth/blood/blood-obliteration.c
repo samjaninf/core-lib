@@ -36,7 +36,7 @@ protected void Setup()
 
     addSpecification("scope", "targeted");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addSpecification("spell point cost", 400);
     addSpecification("hit point cost", 100);
     addSpecification("spell point cost modifiers", ([

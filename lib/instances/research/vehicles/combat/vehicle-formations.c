@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Provides knowledge of effective vehicle "
         "formations for both offense and defense in combat.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("/lib/instances/research/vehicles/combat/basic-vehicle-tactics.c",
         (["type": "research"]));
 

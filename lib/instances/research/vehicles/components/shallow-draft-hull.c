@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft hulls designed for shallow water "
         "navigation, allowing access to rivers and coastal areas.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 4]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
     addPrerequisite("engineering", (["type": "skill", "value" : 1]));

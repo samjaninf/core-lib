@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct vessels incorporating crystal "
         "matrices for enhanced magical properties and ethereal beauty.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 6);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 7]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 5]));
     addPrerequisite("spellcraft", (["type": "skill", "value" : 10]));

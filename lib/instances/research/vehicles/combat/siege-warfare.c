@@ -12,7 +12,7 @@ protected void Setup()
     addSpecification("description", "Provides knowledge of siege tactics, "
         "including the use of siege engines and fortification assault.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("/lib/instances/research/vehicles/combat/ramming-techniques.c",
         (["type": "research"]));
 

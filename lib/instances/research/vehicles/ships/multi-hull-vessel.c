@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to construct vessels with multiple hulls, such as "
         "catamarans, providing increased stability and speed.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 3);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));
     addPrerequisite("engineering", (["type": "skill", "value" : 2]));

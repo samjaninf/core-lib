@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magically expanded cargo holds with "
         "protective wards and dimensional enhancement.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 5);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 10]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 6]));
     addPrerequisite("carpentry", (["type": "skill", "value" : 4]));

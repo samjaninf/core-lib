@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft magical devices that launch missiles "
         "of pure force from vehicle mounts.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 4);
+    addSpecification("research cost", 1);
     addPrerequisite("spellcraft", (["type": "skill", "value" : 8]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 3]));
     addPrerequisite("arcane crafting", (["type": "skill", "value" : 4]));

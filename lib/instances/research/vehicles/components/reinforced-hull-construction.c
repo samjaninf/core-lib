@@ -13,7 +13,7 @@ protected void Setup()
         "knowledge required to craft reinforced hulls with extra timber "
         "and metal bands for enhanced durability and seaworthiness.");
     addSpecification("research type", "points");
-    addSpecification("research cost", 2);
+    addSpecification("research cost", 1);
     addPrerequisite("carpentry", (["type": "skill", "value" : 5]));
     addPrerequisite("metal crafting", (["type": "skill", "value" : 2]));
     addPrerequisite("nautical skills", (["type": "skill", "value" : 3]));

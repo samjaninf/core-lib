@@ -3703,6 +3703,88 @@ protected mapping food =
             "winter on bare branches like tiny wooden roses.",
         "base experience": 1,
     ]),
+    "nightshade berries": ([
+        "type": "herb",
+        "subtype": "nightshade",
+        "crafting prerequisites": ([
+            "herbalism":(["type": "skill", "value": 5]),
+        ]),
+        "crafting materials": ([
+            "nightshade seed": 1
+        ]),
+        "default description": "Small, glossy black berries clustered on a plant with dull "
+            "green leaves and a faintly unpleasant smell. Their sweet taste "
+            "masks a deadly alkaloid poison that paralyzes the nervous system.",
+        "base experience": 3,
+    ]),
+    "wolfsbane root": ([
+        "type": "root",
+        "subtype": "wolfsbane",
+        "crafting prerequisites": ([
+            "herbalism":(["type": "skill", "value": 7]),
+        ]),
+        "crafting materials": ([
+            "wolfsbane seed": 1
+        ]),
+        "default description": "A dense, dark root with an acrid smell and waxy surface. "
+            "Harvested from the hooded wolfsbane plant, this root contains "
+            "concentrated aconitine that poisons the heart on contact.",
+        "base experience": 4,
+    ]),
+    "deathcap mushroom": ([
+        "type": "vegetable",
+        "subtype": "deathcap",
+        "crafting prerequisites": ([
+            "herbalism":(["type": "skill", "value": 8]),
+        ]),
+        "default description": "A pale, innocent-looking mushroom with a greenish-yellow cap "
+            "and white gills. Despite its mild appearance, it contains "
+            "amatoxins so potent that a single cap can kill a grown man.",
+        "base experience": 4,
+    ]),
+    "mandrake root": ([
+        "type": "root",
+        "subtype": "mandrake",
+        "crafting prerequisites": ([
+            "herbalism":(["type": "skill", "value": 10]),
+        ]),
+        "crafting materials": ([
+            "mandrake seed": 1
+        ]),
+        "default description": "A thick, forked root said to resemble a human figure. Its "
+            "narcotic and deliriant properties make it valuable to herbalists, "
+            "alchemists, and assassins alike. Harvesting it requires care.",
+        "base experience": 5,
+    ]),
+    "hemlock leaves": ([
+        "type": "herb",
+        "subtype": "hemlock",
+        "crafting prerequisites": ([
+            "herbalism":(["type": "skill", "value": 6]),
+        ]),
+        "crafting materials": ([
+            "hemlock seed": 1
+        ]),
+        "default description": "Finely divided, fern-like leaves with hollow purple-spotted "
+            "stems and a faintly unpleasant, musty odour. Hemlock's "
+            "coniine progressively paralyzes the muscles, starting "
+            "from the extremities and working inward.",
+        "base experience": 3,
+    ]),
+    "widow's tears flower": ([
+        "type": "flower",
+        "subtype": "widows tears",
+        "crafting prerequisites": ([
+            "herbalism":(["type": "skill", "value": 9]),
+        ]),
+        "crafting materials": ([
+            "widows tears seed": 1
+        ]),
+        "default description": "A drooping pale-blue flower that weeps droplets of clear sap "
+            "from its petals in morning humidity. The sap contains a soporific "
+            "compound prized by herbalists and poisoners for its sedative power.",
+        "base experience": 4,
+    ]),
 ]);
 
 #endif

@@ -709,6 +709,130 @@ protected mapping potions =
         "base experience": 5,
         "default value": 250,
     ]),
+    "vial of serpent's venom": ([
+        "type": "poison",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/potions/brewPotions.c":(["type": "research"]),
+            "chemistry": (["type": "skill", "value": 5]),
+            "herbalism": (["type": "skill", "value": 3]),
+        ]),
+        "crafting materials": ([
+            "nightshade berries": 2,
+            "wolfsbane root": 1
+        ]),
+        "effects": ([
+            "biological": "toxic",
+        ]),
+        "default description": "A small dark vial of thick, greenish fluid that clings to "
+            "the glass like syrup. A faint acrid smell escapes even through "
+            "the wax seal. Used to coat blades before combat.",
+        "base experience": 5,
+        "default value": 150,
+    ]),
+    "vial of contact toxin": ([
+        "type": "poison",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/potions/brewPotions.c":(["type": "research"]),
+            "chemistry": (["type": "skill", "value": 6]),
+            "herbalism": (["type": "skill", "value": 4]),
+        ]),
+        "crafting materials": ([
+            "hemlock leaves": 2,
+            "mandrake root": 1
+        ]),
+        "effects": ([
+            "biological": "toxic",
+        ]),
+        "default description": "A thin, oily fluid that absorbs rapidly through skin on contact. "
+            "A single drop on an ungloved hand is enough to cause numbness "
+            "and weakness within moments.",
+        "base experience": 5,
+        "default value": 175,
+    ]),
+    "vial of soporific draught": ([
+        "type": "poison",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/potions/brewPotions.c":(["type": "research"]),
+            "chemistry": (["type": "skill", "value": 7]),
+            "herbalism": (["type": "skill", "value": 5]),
+        ]),
+        "crafting materials": ([
+            "widow's tears flower": 2,
+            "mandrake root": 1
+        ]),
+        "effects": ([
+            "biological": "sedative",
+        ]),
+        "default description": "A pale, milky fluid with a faint floral scent that lingers "
+            "pleasantly on the air. The calming smell masks a powerful "
+            "sedative compound capable of rendering a target insensible.",
+        "base experience": 5,
+        "default value": 175,
+    ]),
+    "vial of virulent poison": ([
+        "type": "poison",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "chemistry": (["type": "skill", "value": 10]),
+            "herbalism": (["type": "skill", "value": 8]),
+        ]),
+        "crafting materials": ([
+            "nightshade berries": 2,
+            "wolfsbane root": 2,
+            "hemlock leaves": 1
+        ]),
+        "effects": ([
+            "biological": "toxic",
+        ]),
+        "default description": "A deep purple fluid that seems to shift and roil within its "
+            "sealed vial. The concentrated alkaloids within represent a "
+            "masterwork of the poisoner's art, lethal in the smallest dose.",
+        "base experience": 7,
+        "default value": 350,
+    ]),
+    "vial of wasting blight": ([
+        "type": "poison",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/potions/brewAdvancedPotions.c":(["type": "research"]),
+            "chemistry": (["type": "skill", "value": 12]),
+            "herbalism": (["type": "skill", "value": 10]),
+        ]),
+        "crafting materials": ([
+            "deathcap mushroom": 2,
+            "mandrake root": 2
+        ]),
+        "effects": ([
+            "biological": "toxic",
+        ]),
+        "default description": "A dark, brackish fluid flecked with microscopic spores. "
+            "Derived from the dreaded deathcap mushroom, it causes progressive "
+            "systemic damage that manifests as creeping weakness and decay.",
+        "base experience": 8,
+        "default value": 450,
+    ]),
+    "vial of shadowed death": ([
+        "type": "poison",
+        "crafting prerequisites": ([
+            "/lib/instances/research/crafting/potions/brewEpicPotions.c":(["type": "research"]),
+            "chemistry": (["type": "skill", "value": 20]),
+            "herbalism": (["type": "skill", "value": 18]),
+        ]),
+        "crafting materials": ([
+            "nightshade berries": 2,
+            "wolfsbane root": 2,
+            "deathcap mushroom": 2,
+            "widow's tears flower": 1
+        ]),
+        "effects": ([
+            "biological": "toxic",
+        ]),
+        "default description": "A near-black fluid sealed with crimson wax and etched with a "
+            "small skull. The signature poison of the League of Assassins, "
+            "this compound combines multiple lethal agents into a unified "
+            "toxin of horrifying potency.",
+        "base experience": 12,
+        "default value": 1200,
+    ]),
 ]);
 
 #endif

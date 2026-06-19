@@ -1,6 +1,6 @@
 //*****************************************************************************
-// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
-//                      the accompanying LICENSE file for details.
+// Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved.
+// See the accompanying LICENSE file for details.
 //*****************************************************************************
 inherit "/lib/modules/guilds/baseGuild.c";
 
@@ -9,30 +9,70 @@ public void SetupGuild()
 {
     guildName("League of Assassins");
     guildClass("combat");
+    addPreferredSkillType("subterfuge");
     addPreferredSkillType("combat");
-    prohibitedGuildCombinations(({ "Scion of Dhuras", "monk" }));
+
+    prohibitedGuildCombinations(({
+        "Hand of Bilanx", "Scion of Dhuras", "Aegis Guard",
+        "fighter", "monk"
+    }));
+
+    addRank("seeker of shadows", ([
+        "name": "seeker of shadows",
+        "title": ", Seeker of Shadows",
+        "pretitle": "Seeker",
+        "next rank": "assassin",
+        "delay for next promotion": 1200
+    ]));
+
+    addRank("assassin", ([
+        "name": "assassin",
+        "title": ", Assassin",
+        "pretitle": "Assassin",
+        "previous rank": "seeker of shadows",
+        "next rank": "master assassin",
+        "delay for next promotion": 3600
+    ]));
+
+    addRank("master assassin", ([
+        "name": "master assassin",
+        "title": ", Master Assassin",
+        "pretitle": "Master",
+        "previous rank": "assassin",
+        "next rank": "shadow lord",
+        "delay for next promotion": 7200
+    ]));
+
+    addRank("shadow lord", ([
+        "name": "shadow lord",
+        "title": ", Shadow Lord",
+        "pretitle": "Lord",
+        "previous rank": "master assassin"
+    ]));
+
+    setDefaultRank("seeker of shadows");
 
     addCriteria("hit points", ([
         "type": "modifier",
-        "apply" : "4 every level",
-        "begin at level" : 1
+        "apply": "3 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("spell points", ([
         "type": "modifier",
-        "apply" : "3 every level",
-        "begin at level" : 1
+        "apply": "2 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("stamina points", ([
         "type": "modifier",
-        "apply" : "3 every level",
-        "begin at level" : 1
+        "apply": "5 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("weapon attack", ([
         "type": "attack",
-        "apply" : "1 every 10 levels"
+        "apply": "1 every 15 levels"
     ]));
 
     addCriteria("attribute points", ([
@@ -42,6 +82,84 @@ public void SetupGuild()
 
     addCriteria("skill points", ([
         "type": "skill points",
-        "apply" : "5 every level"
+        "apply": "5 every level"
+    ]));
+
+    addCriteria("initial research points", ([
+        "type": "research points",
+        "apply": "5 at level 1"
+    ]));
+
+    addCriteria("research points", ([
+        "type": "research points",
+        "apply": "1 every level"
+    ]));
+
+    addCriteria("supplemental research points", ([
+        "type": "research points",
+        "apply": "2 every 5 levels"
+    ]));
+
+    addCriteria("blade techniques", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree":
+            "/guilds/league-of-assassins/blade-techniques.c"
+    ]));
+
+    addCriteria("poison craft", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree":
+            "/guilds/league-of-assassins/poison-craft.c"
+    ]));
+
+    addCriteria("evasion", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree":
+            "/guilds/league-of-assassins/evasion.c"
+    ]));
+
+    addCriteria("deception techniques", ([
+        "type": "research tree",
+        "apply": "at level 3",
+        "research tree":
+            "/guilds/league-of-assassins/deception-techniques.c"
+    ]));
+
+    addCriteria("shadow mastery", ([
+        "type": "research tree",
+        "apply": "at level 5",
+        "research tree":
+            "/guilds/league-of-assassins/shadow-mastery.c"
+    ]));
+
+    addCriteria("assassination techniques", ([
+        "type": "research tree",
+        "apply": "at level 7",
+        "research tree":
+            "/guilds/league-of-assassins/assassination-techniques.c"
+    ]));
+
+    addCriteria("assassin path", ([
+        "type": "research tree",
+        "apply": "at rank assassin",
+        "research tree":
+            "/guilds/league-of-assassins/assassin-path.c"
+    ]));
+
+    addCriteria("master assassin path", ([
+        "type": "research tree",
+        "apply": "at rank master assassin",
+        "research tree":
+            "/guilds/league-of-assassins/master-assassin-path.c"
+    ]));
+
+    addCriteria("shadow lord path", ([
+        "type": "research tree",
+        "apply": "at rank shadow lord",
+        "research tree":
+            "/guilds/league-of-assassins/shadow-lord-path.c"
     ]));
 }

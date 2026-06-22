@@ -333,8 +333,7 @@ private nomask void saveCompositeResearchElements(int dbHandle,
 }
 
 /////////////////////////////////////////////////////////////////////////////
-protected nomask void saveCompositeResearch(int dbHandle, string playerName, 
-    mapping playerData)
+protected nomask void saveCompositeResearch(int dbHandle, mapping playerData)
 {
     if (member(playerData, "compositeResearch") &&
         sizeof(playerData["compositeResearch"]))
@@ -477,8 +476,7 @@ private nomask void saveConstructedResearchElements(int dbHandle,
 }
 
 /////////////////////////////////////////////////////////////////////////////
-protected nomask void saveConstructedResearch(int dbHandle, string playerName, 
-    mapping playerData)
+protected nomask void saveConstructedResearch(int dbHandle, mapping playerData)
 {
     if (member(playerData, "constructedResearch") &&
         sizeof(playerData["constructedResearch"]))

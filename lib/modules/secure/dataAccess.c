@@ -84,8 +84,8 @@ public nomask void savePlayerData(mapping playerData)
             saveResearch(dbHandle, playerId, playerData);
             saveResearchChoices(dbHandle, playerId, playerData);
             saveOpenResearchTrees(dbHandle, playerId, playerData);
-            saveCompositeResearch(dbHandle, playerId, playerData);
-            saveConstructedResearch(dbHandle, playerId, playerData);
+            saveCompositeResearch(dbHandle, playerData);
+            saveConstructedResearch(dbHandle, playerData);
             saveSkills(dbHandle, playerId, playerData);
             saveTraits(dbHandle, playerId, playerData);
             saveFactions(dbHandle, playerId, playerData);

@@ -10,6 +10,8 @@ private int level = 0;
 private int experience = 0;
 private object guildObj = 0;
 private string rank = "";
+// extra guild entries: guild name -> ([ "level": int, "rank": string ])
+private mapping extraGuilds = ([]);
 
 /////////////////////////////////////////////////////////////////////////////
 public void ToggleMockGuilds()
@@ -25,9 +27,9 @@ public void SetGuild(string newGuild)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-public void SetGuildObject(object guild)
+public void SetGuildObject(object newGuildObj)
 {
-    guildObj = guild;
+    guildObj = newGuildObj;
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -46,6 +48,34 @@ public void SetRank(string newRank)
 public void SetExperience(int exp)
 {
     experience = exp;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void AddGuild(string newGuild, int newLevel)
+{
+    if (!member(extraGuilds, newGuild))
+    {
+        extraGuilds[newGuild] = (["level": newLevel, "rank": ""]);
+    }
+    else
+    {
+        extraGuilds[newGuild]["level"] = newLevel;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void AddGuildWithRank(string newGuild, int newLevel, string newRank)
+{
+    extraGuilds[newGuild] = (["level": newLevel, "rank": newRank]);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void RemoveGuild(string removeGuild)
+{
+    if (member(extraGuilds, removeGuild))
+    {
+        m_delete(extraGuilds, removeGuild);
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -70,13 +100,29 @@ public nomask mapping *guildsExtraAttacks()
 /////////////////////////////////////////////////////////////////////////////
 public nomask int guildLevel(string check)
 {
-    return (guild == check) ? level : 0;
+    if (guild == check)
+    {
+        return level;
+    }
+    if (member(extraGuilds, check))
+    {
+        return extraGuilds[check]["level"];
+    }
+    return 0;
 }
 
 /////////////////////////////////////////////////////////////////////////////
 public nomask string guildRank(string check)
 {
-    return (guild == check) ? rank : 0;
+    if (guild == check)
+    {
+        return rank;
+    }
+    if (member(extraGuilds, check))
+    {
+        return extraGuilds[check]["rank"];
+    }
+    return 0;
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -88,7 +134,15 @@ public nomask int guildExperience(string check)
 /////////////////////////////////////////////////////////////////////////////
 public nomask int memberOfGuild(string check)
 {
-    return (guild == check) ? useGuilds : 0;
+    if (guild == check)
+    {
+        return useGuilds;
+    }
+    if (useGuilds && member(extraGuilds, check))
+    {
+        return 1;
+    }
+    return 0;
 }
 
 /////////////////////////////////////////////////////////////////////////////

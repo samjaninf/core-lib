@@ -75,7 +75,7 @@ private nomask int isValidPrerequisiteType(string type)
     return (member(({ "research", "attribute", "skill", "quest", "guild",
         "race", "faction", "trait", "background", "combat statistic", "level",
         "opinion", "state", "presence", "not present", "guild rank",
-        "spoken topics" }), type) > -1);
+        "guilds at level", "guilds at rank", "spoken topics" }), type) > -1);
 }
 
 //-----------------------------------------------------------------------------
@@ -319,6 +319,74 @@ private nomask int checkGuildRanks(object researcher, string guild,
 {
     return checkGuilds(researcher, ({ guild })) && pointerp(ranks) &&
         (member(ranks, researcher->guildRank(guild)) > -1);
+}
+
+//-----------------------------------------------------------------------------
+// Method: checkGuildLevels
+// Description: This method will check whether or not the passed researcher
+//              is a member of at least the required number of guilds from
+//              the supplied list, each at or above the required level.
+//
+// Parameters: researcher    - the object to check
+//             guilds        - the list of guilds to check membership in
+//             minimumGuilds - the minimum number of qualifying guilds required
+//             level         - the minimum level required in each qualifying guild
+//
+// Returns: true if the researcher meets the minimum-guild-count requirement.
+//-----------------------------------------------------------------------------
+private nomask int checkGuildLevels(object researcher, string *guilds,
+    int minimumGuilds, int level)
+{
+    int ret = 0;
+    if (validResearcher(researcher) && researcher->has("guilds") &&
+        pointerp(guilds) && minimumGuilds > 0)
+    {
+        int qualifying = 0;
+        foreach (string guild in guilds)
+        {
+            if (researcher->memberOfGuild(guild) &&
+                researcher->guildLevel(guild) >= level)
+            {
+                qualifying++;
+            }
+        }
+        ret = (qualifying >= minimumGuilds);
+    }
+    return ret;
+}
+
+//-----------------------------------------------------------------------------
+// Method: checkMultiGuildRanks
+// Description: This method will check whether or not the passed researcher
+//              holds one of the required ranks in at least the required number
+//              of guilds from the supplied list.
+//
+// Parameters: researcher    - the object to check
+//             guilds        - the list of guilds to check
+//             minimumGuilds - minimum number of qualifying guilds required
+//             ranks         - the acceptable ranks in each qualifying guild
+//
+// Returns: true if the researcher meets the minimum-guild-count requirement.
+//-----------------------------------------------------------------------------
+private nomask int checkMultiGuildRanks(object researcher, string *guilds,
+    int minimumGuilds, string *ranks)
+{
+    int ret = 0;
+    if (validResearcher(researcher) && researcher->has("guilds") &&
+        pointerp(guilds) && pointerp(ranks) && minimumGuilds > 0)
+    {
+        int qualifying = 0;
+        foreach (string guild in guilds)
+        {
+            if (researcher->memberOfGuild(guild) &&
+                member(ranks, researcher->guildRank(guild)) > -1)
+            {
+                qualifying++;
+            }
+        }
+        ret = (qualifying >= minimumGuilds);
+    }
+    return ret;
 }
 
 //-----------------------------------------------------------------------------
@@ -572,6 +640,22 @@ public nomask varargs int checkPrerequisites(object researcher, string grouping,
                             prerequisiteData["guild"], prerequisiteData["value"]);
                         break;
                     }
+                    case "guilds at level":
+                    {
+                        ret &&= checkGuildLevels(researcher,
+                            prerequisiteData["guilds"],
+                            prerequisiteData["minimum guilds"],
+                            prerequisiteData["value"]);
+                        break;
+                    }
+                    case "guilds at rank":
+                    {
+                        ret &&= checkMultiGuildRanks(researcher,
+                            prerequisiteData["guilds"],
+                            prerequisiteData["minimum guilds"],
+                            prerequisiteData["value"]);
+                        break;
+                    }
                     case "race":
                     {
                         ret &&= checkRaces(researcher, prerequisiteData["value"]);
@@ -807,11 +891,48 @@ public nomask string displayPrerequisites(string colorConfiguration,
                     }
                     break;
                 }
+                case "guilds at level":
+                {
+                    if (pointerp(prerequisites[key]["guilds"]) &&
+                        sizeof(prerequisites[key]["guilds"]))
+                    {
+                        string *guildNames = map(
+                            prerequisites[key]["guilds"],
+                            (: capitalize($1) :));
+                        prereq = sprintf(
+                            "Member of at least %d of: %s at level %d",
+                            prerequisites[key]["minimum guilds"],
+                            implode(guildNames, ", "),
+                            prerequisites[key]["value"]);
+                    }
+                    break;
+                }
+                case "guilds at rank":
+                {
+                    if (pointerp(prerequisites[key]["guilds"]) &&
+                        sizeof(prerequisites[key]["guilds"]) &&
+                        pointerp(prerequisites[key]["value"]) &&
+                        sizeof(prerequisites[key]["value"]))
+                    {
+                        string *guildNames = map(
+                            prerequisites[key]["guilds"],
+                            (: capitalize($1) :));
+                        string *rankNames = map(
+                            prerequisites[key]["value"],
+                            (: capitalize($1) :));
+                        prereq = sprintf(
+                            "Member of at least %d of: %s at rank %s",
+                            prerequisites[key]["minimum guilds"],
+                            implode(guildNames, ", "),
+                            implode(rankNames, " or "));
+                    }
+                    break;
+                }
             }
 
-            if (sizeof(prereq) > 62)
+            if (sizeof(prereq) > 90)
             {
-                prereq = prereq[0..58] + "...";
+                prereq = prereq[0..86] + "...";
             }
 
             ret += configuration->decorate(sprintf("%15s: ",

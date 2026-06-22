@@ -535,3 +535,129 @@ void DisplayPrerequisitesCorrectlyDisplaysEquivalence()
         "\x1b[0;34mWeasel Blathering\n\x1b[0m",
         researchItem.displayPrerequisites(colorConfiguration, Configuration));
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void CheckPrerequsistesCorrectlyHandlesGuildLevelChecks()
+{
+    Researcher.ToggleMockGuilds();
+    ExpectTrue(Prerequisite.AddTestPrerequisite("mancer guilds",
+        (["type": "guilds at level",
+          "guilds": ({ "aeromancer", "aquamancer", "cryomancer" }),
+          "minimum guilds": 2,
+          "value": 10
+        ])));
+
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when in no guilds");
+
+    Researcher.SetGuild("aeromancer");
+    Researcher.SetLevel(15);
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when only one qualifying guild");
+
+    Researcher.AddGuild("aquamancer", 12);
+    ExpectTrue(Prerequisite.checkPrerequisites(Researcher),
+        "check passes with exactly two qualifying guilds");
+
+    Researcher.AddGuild("cryomancer", 20);
+    ExpectTrue(Prerequisite.checkPrerequisites(Researcher),
+        "check still passes with three qualifying guilds");
+
+    Researcher.RemoveGuild("cryomancer");
+    Researcher.RemoveGuild("aquamancer");
+    Researcher.AddGuild("aquamancer", 5);
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when second guild is below required level");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CheckPrerequsistesGuildLevelFailsWhenGuildsModuleAbsent()
+{
+    ExpectTrue(Prerequisite.AddTestPrerequisite("mancer guilds",
+        (["type": "guilds at level",
+          "guilds": ({ "aeromancer", "aquamancer" }),
+          "minimum guilds": 2,
+          "value": 10
+        ])));
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when guilds module not enabled");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CheckPrerequsistesCorrectlyHandlesGuildRanksChecks()
+{
+    Researcher.ToggleMockGuilds();
+    ExpectTrue(Prerequisite.AddTestPrerequisite("mancer guilds",
+        (["type": "guilds at rank",
+          "guilds": ({ "aeromancer", "aquamancer", "cryomancer" }),
+          "minimum guilds": 2,
+          "value": ({ "adept", "archmage" })
+        ])));
+
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when in no guilds");
+
+    Researcher.SetGuild("aeromancer");
+    Researcher.SetRank("adept");
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when only one qualifying guild");
+
+    Researcher.AddGuildWithRank("aquamancer", 1, "archmage");
+    ExpectTrue(Prerequisite.checkPrerequisites(Researcher),
+        "check passes with exactly two qualifying guilds");
+
+    Researcher.AddGuildWithRank("cryomancer", 1, "adept");
+    ExpectTrue(Prerequisite.checkPrerequisites(Researcher),
+        "check still passes with three qualifying guilds");
+
+    Researcher.RemoveGuild("cryomancer");
+    Researcher.RemoveGuild("aquamancer");
+    Researcher.AddGuildWithRank("aquamancer", 1, "acolyte");
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when second guild has a non-qualifying rank");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void CheckPrerequsistesGuildRanksFailsWhenGuildsModuleAbsent()
+{
+    ExpectTrue(Prerequisite.AddTestPrerequisite("mancer guilds",
+        (["type": "guilds at rank",
+          "guilds": ({ "aeromancer", "aquamancer" }),
+          "minimum guilds": 2,
+          "value": ({ "adept", "archmage" })
+        ])));
+    ExpectFalse(Prerequisite.checkPrerequisites(Researcher),
+        "check fails when guilds module not enabled");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void DisplayPrerequisitesCorrectlyDisplaysGuildRanksPrerequisites()
+{
+    ExpectTrue(Prerequisite.AddTestPrerequisite("mancer guilds",
+        (["type": "guilds at rank",
+          "guilds": ({ "aeromancer", "aquamancer", "cryomancer" }),
+          "minimum guilds": 2,
+          "value": ({ "adept", "archmage" })
+        ])));
+
+    ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33m Guilds at rank: "
+        "\x1b[0m\x1b[0;35mMember of at least 2 of: Aeromancer, Aquamancer,"
+        " Cryomancer at rank Adept or Archmage\n\x1b[0m",
+        Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void DisplayPrerequisitesCorrectlyDisplaysGuildLevelPrerequisites()
+{
+    ExpectTrue(Prerequisite.AddTestPrerequisite("mancer guilds",
+        (["type": "guilds at level",
+          "guilds": ({ "aeromancer", "aquamancer", "cryomancer" }),
+          "minimum guilds": 2,
+          "value": 10
+        ])));
+
+    ExpectEq("\x1b[0;36mPrerequisites:\n\x1b[0m\x1b[0;33mGuilds at level: "
+        "\x1b[0m\x1b[0;35mMember of at least 2 of: Aeromancer, Aquamancer,"
+        " Cryomancer at level 10\n\x1b[0m",
+        Prerequisite.displayPrerequisites(colorConfiguration, Configuration));
+}

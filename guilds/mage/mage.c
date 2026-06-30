@@ -11,22 +11,84 @@ public void SetupGuild()
     guildClass("combat");
     addPreferredSkillType("magic");
 
+    addRank("apprentice", ([
+        "name": "apprentice",
+        "title": "the Mage",
+        "pretitle": "Apprentice",
+        "next rank": "journeyman"
+    ]));
+
+    addRank("journeyman", ([
+        "name": "journeyman",
+        "title": "the Mage",
+        "pretitle": "Journeyman",
+        "previous rank": "apprentice",
+        "next rank": "adept",
+        "delay for next promotion": 200
+    ]));
+
+    addRank("adept", ([
+        "name": "adept",
+        "title": "the Mage",
+        "pretitle": "Adept",
+        "previous rank": "journeyman",
+        "next rank": "mage",
+        "delay for next promotion": 500
+    ]));
+
+    addRank("mage", ([
+        "name": "mage",
+        "title": "the Mage",
+        "pretitle": "Mage",
+        "previous rank": "adept",
+        "next rank": "archmage",
+        "delay for next promotion": 1000
+    ]));
+
+    addRank("archmage", ([
+        "name": "archmage",
+        "title": "the Archmage",
+        "pretitle": "Archmage",
+        "previous rank": "mage"
+    ]));
+
+    setDefaultRank("apprentice");
+
+    prohibitedGuildCombinations(({ "aeromancer", "pyromancer",
+        "cryomancer", "necromancer", "geomancer", "aquamancer" }));
+
+    addRankPrerequisite("journeyman", ([
+        "level": (["type": "level", "guild": "mage", "value": 5])
+    ]));
+
+    addRankPrerequisite("adept", ([
+        "level": (["type": "level", "guild": "mage", "value": 10])
+    ]));
+
+    addRankPrerequisite("mage", ([
+        "level": (["type": "level", "guild": "mage", "value": 15])
+    ]));
+
+    addRankPrerequisite("archmage", ([
+        "level": (["type": "level", "guild": "mage", "value": 20])
+    ]));
+
     addCriteria("hit points", ([
         "type": "modifier",
-        "apply" : "3 every level",
-        "begin at level" : 1
+        "apply": "3 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("spell points", ([
         "type": "modifier",
-        "apply" : "5 every level",
-        "begin at level" : 1
+        "apply": "5 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("stamina points", ([
         "type": "modifier",
-        "apply" : "3 every level",
-        "begin at level" : 1
+        "apply": "3 every level",
+        "begin at level": 1
     ]));
 
     addCriteria("attribute points", ([
@@ -36,6 +98,81 @@ public void SetupGuild()
 
     addCriteria("skill points", ([
         "type": "skill points",
-        "apply" : "5 every level"
+        "apply": "5 every level"
+    ]));
+
+    addCriteria("initial research points", ([
+        "type": "research points",
+        "apply": "5 at level 1"
+    ]));
+
+    addCriteria("research points", ([
+        "type": "research points",
+        "apply": "1 every level"
+    ]));
+
+    addCriteria("supplemental research points", ([
+        "type": "research points",
+        "apply": "2 every 5 levels"
+    ]));
+
+    addCriteria("evocation", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/mage/evocation.c"
+    ]));
+
+    addCriteria("destruction", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/mage/destruction.c"
+    ]));
+
+    addCriteria("transformation", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/mage/transformation.c"
+    ]));
+
+    addCriteria("manipulation", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/mage/manipulation.c"
+    ]));
+
+    addCriteria("mind", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/mage/mind.c"
+    ]));
+
+    addCriteria("divination", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/mage/divination.c"
+    ]));
+
+    addCriteria("senses", ([
+        "type": "research tree",
+        "apply": "at level 1",
+        "research tree": "/guilds/mage/senses.c"
+    ]));
+
+    addCriteria("arcane theory", ([
+        "type": "research tree",
+        "apply": "at rank apprentice",
+        "research tree": "/guilds/mage/arcane-theory.c"
+    ]));
+
+    addCriteria("higher arcana", ([
+        "type": "research tree",
+        "apply": "at rank adept",
+        "research tree": "/guilds/mage/higher-arcana.c"
+    ]));
+
+    addCriteria("arcane mastery", ([
+        "type": "research tree",
+        "apply": "at rank archmage",
+        "research tree": "/guilds/mage/arcane-mastery.c"
     ]));
 }

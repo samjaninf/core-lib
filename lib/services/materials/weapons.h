@@ -383,7 +383,9 @@ protected mapping weaponBlueprints = ([
         "default weight": 3,
         "default material": "steel",
         "default value": 250,
-        "default description": "This is a sword with a gracefully-curving, highly-sharpened, single-edged blade that is about 24 inches (60 cm) long.",
+        "default description": "This is a sword with a gracefully-curving, "
+            "highly-sharpened, single-edged blade that is about 24 inches "
+            "(60 cm) long.",
         "base experience": 15,
     ]),
     "machete": ([
@@ -654,7 +656,8 @@ protected mapping weaponBlueprints = ([
         "default weight": 1,
         "default material": "iron",
         "default value": 50,
-        "default description": "This is a weapon with a double-edged blade that is about 8 inches (20 cm) long.",
+        "default description": "This is a weapon with a double-edged blade "
+            "that is about 8 inches (20 cm) long.",
         "base experience": 10,
     ]),
     "dirk": ([
@@ -685,7 +688,8 @@ protected mapping weaponBlueprints = ([
         "default weight": 1,
         "default material": "iron",
         "default value": 75,
-        "default description": "This is a weapon with a double-edged blade that is about 8 inches (20 cm) long.",
+        "default description": "This is a weapon with a double-edged blade "
+            "that is about 8 inches (20 cm) long.",
         "base experience": 10,
     ]),
     "stiletto": ([
@@ -716,7 +720,8 @@ protected mapping weaponBlueprints = ([
         "default weight": 1,
         "default material": "iron",
         "default value": 65,
-        "default description": "This is a weapon with a slender, needle-like blade that is about 6 inches (15 cm) long.",
+        "default description": "This is a weapon with a slender, "
+            "needle-like blade that is about 6 inches (15 cm) long.",
         "base experience": 10,
     ]),
     "claymore": ([
@@ -809,7 +814,8 @@ protected mapping weaponBlueprints = ([
         "default weight": 8,
         "default material": "iron",
         "default value": 900,
-        "default description": "This is a sword with a gracefully-curving, highly-sharpened, single-edged blade that is about 48 inches (122 cm) long.",
+        "default description": "This is a sword with a gracefully-curving, "
+            "highly-sharpened, single-edged blade that is about 48 inches (122 cm) long.",
         "base experience": 25,
     ]),
     "bastard sword": ([

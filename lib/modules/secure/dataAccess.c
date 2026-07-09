@@ -18,6 +18,7 @@ virtual inherit "/lib/modules/secure/dataServices/conversationsDataService.c";
 virtual inherit "/lib/modules/secure/dataServices/stateDataService.c";
 virtual inherit "/lib/modules/secure/dataServices/settingsDataService.c";
 virtual inherit "/lib/modules/secure/dataServices/domainsDataService.c";
+virtual inherit "/lib/modules/secure/dataServices/experienceDataService.c";
 
 /////////////////////////////////////////////////////////////////////////////
 public nomask mapping getPlayerData(string name)
@@ -53,6 +54,7 @@ public nomask mapping getPlayerData(string name)
                 data += getPlayerSettings(dbHandle, name);
                 // data += getPlayerDomains(data["playerId"], dbHandle);
                 data += getInventory(data["playerId"], dbHandle);
+                data += getExperience(data["playerId"], dbHandle);
             }
 
             disconnect(dbHandle);
@@ -93,6 +95,7 @@ public nomask void savePlayerData(mapping playerData)
             saveSettings(dbHandle, playerData);
 //            saveDomains(dbHandle, playerId, playerData);
             saveInventory(dbHandle, playerId, playerData);
+            saveExperience(dbHandle, playerId, playerData);
             db_close(dbHandle);
         }
     }

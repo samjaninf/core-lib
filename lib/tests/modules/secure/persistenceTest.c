@@ -168,6 +168,25 @@ void PlayerResearchRestored()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+void PlayerExperienceRestored()
+{
+    Player.restore("gorthaur");
+
+    ExpectTrue(Player.hasExperience(([ "type": "combat.kill" ])));
+    ExpectEq(1, Player.countExperience(([ "type": "combat" ])));
+
+    mapping *observations = Player.queryExperience(([
+        "type": "combat.kill",
+        "weather": "snow",
+        "weapon": "katana"
+    ]));
+
+    ExpectEq(1, sizeof(observations));
+    ExpectEq("orc marauder", observations[0]["subject"]);
+    ExpectEq(142, observations[0]["metadata"]["damage"]);
+}
+
+/////////////////////////////////////////////////////////////////////////////
 void PlayerSkillsRestored()
 {
     Player.restore("gorthaur");
@@ -395,6 +414,35 @@ void PlayerResearchSaved()
     ExpectTrue(Player.isResearched("/lib/tests/support/research/testPersistedActiveTraitResearch.c"));
     ExpectTrue(Player.isResearched("/lib/tests/support/research/testSustainedResearchItem.c"));
     ExpectTrue(Player.sustainedResearchIsActive("/lib/tests/support/research/testSustainedResearchItem.c"));
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PlayerExperienceSaved()
+{
+    Player.restore("gorthaur");
+
+    Player.recordExperience(([
+        "type": "movement.enter",
+        "subject": "tol-dhurath temple",
+        "participants": ({ }),
+        "timestamp": 1234,
+        "location": "/areas/tol-dhurath/entry/1x0.c",
+        "context": ([ "terrain": "forest" ]),
+        "metadata": ([ "speed": "walk" ])
+    ]));
+
+    Player.save();
+
+    destruct(Player);
+    Player = clone_object("/lib/realizations/player.c");
+    Player.restore("gorthaur");
+
+    ExpectTrue(Player.hasExperience(([ "type": "movement.enter" ])));
+    ExpectEq(2, sizeof(Player.experienceLog()));
+    ExpectEq(1, Player.countExperience(([
+        "type": "movement.enter",
+        "terrain": "forest"
+    ])));
 }
 
 /////////////////////////////////////////////////////////////////////////////

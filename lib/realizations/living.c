@@ -16,6 +16,7 @@ virtual inherit "/lib/modules/races.c";
 virtual inherit "/lib/modules/movement.c";
 virtual inherit "/lib/modules/traits.c";
 virtual inherit "/lib/modules/state.c";
+virtual inherit "/lib/modules/experience.c";
 
 private nosave string *heartBeatMethods = ({});
 

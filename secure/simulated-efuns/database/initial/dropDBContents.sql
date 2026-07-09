@@ -128,6 +128,10 @@ drop procedure if exists saveSetting;
 ##
 drop procedure if exists saveBlockedUser;
 ##
+drop procedure if exists saveExperienceObservation;
+##
+drop procedure if exists pruneExperience;
+##
 drop procedure if exists updateLoginTime;
 ##
 drop procedure if exists saveIssue;
@@ -225,6 +229,8 @@ drop table if exists domains;
 drop table if exists settings;
 ##
 drop table if exists blockedUsers;
+##
+drop table if exists experienceObservations;
 ##
 drop table if exists opinions;
 ##

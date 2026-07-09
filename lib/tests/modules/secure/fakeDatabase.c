@@ -139,6 +139,18 @@ public nomask mapping Gorthaur()
         "userName": "gorthaur",
         "onKillList": 1,
         "openResearchTrees": ({ "/lib/tests/support/research/testSecondResearchTree.c", "/lib/tests/support/research/testBlargTree.c", "/lib/tests/support/research/testConstructedTree.c" }),
+        "experience": ({
+            ([
+                "type": "combat.kill",
+                "actor": "/lib/realizations/player#gorthaur",
+                "subject": "orc marauder",
+                "participants": ({ "/lib/realizations/monster#uhrdalen" }),
+                "timestamp": 777,
+                "location": "/areas/tol-dhurath/entry/0x0.c",
+                "context": ([ "weather": "snow", "weapon": "katana" ]),
+                "metadata": ([ "damage": 142, "critical": 1 ])
+            ])
+        }),
         "page size": 20,
         "playerId": 2,
         "pretitle": "Weasel Lord",
@@ -432,6 +444,18 @@ public nomask varargs mapping GetWizardOfLevel(string level, string name,
         "userName": (name ? name : "earl"),
         "onKillList": 1,
         "openResearchTrees": ({ "/lib/tests/support/research/testSecondResearchTree.c", "/lib/tests/support/research/testBlargTree.c", "/lib/tests/support/research/testConstructedTree.c" }),
+        "experience": ({
+            ([
+                "type": "combat.kill",
+                "actor": sprintf("/lib/realizations/player#%s", (name ? name : "earl")),
+                "subject": "orc marauder",
+                "participants": ({ "/lib/realizations/monster#uhrdalen" }),
+                "timestamp": 777,
+                "location": "/areas/tol-dhurath/entry/0x0.c",
+                "context": ([ "weather": "snow", "weapon": "katana" ]),
+                "metadata": ([ "damage": 142, "critical": 1 ])
+            ])
+        }),
         "page size": 20,
         "playerId": 3,
         "pretitle": "Weasel Lord",

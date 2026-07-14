@@ -170,20 +170,47 @@ void PlayerResearchRestored()
 /////////////////////////////////////////////////////////////////////////////
 void PlayerExperienceRestored()
 {
-    Player.restore("gorthaur");
+    object dataAccess = clone_object("/lib/modules/secure/dataAccess.c");
 
-    ExpectTrue(Player.hasExperience(([ "type": "combat.kill" ])));
-    ExpectEq(1, Player.countExperience(([ "type": "combat" ])));
-
-    mapping *observations = Player.queryExperience(([
-        "type": "combat.kill",
-        "weather": "snow",
-        "weapon": "katana"
-    ]));
+    mapping *observations = dataAccess.queryExperienceByPlayer("gorthaur",
+        ([]), 0, 0);
 
     ExpectEq(1, sizeof(observations));
+    ExpectEq("combat.kill", observations[0]["type"]);
     ExpectEq("orc marauder", observations[0]["subject"]);
     ExpectEq(142, observations[0]["metadata"]["damage"]);
+    ExpectEq("snow", observations[0]["context"]["weather"]);
+
+    ExpectTrue(dataAccess.hasExperienceByPlayer("gorthaur",
+        ([ "type": "combat.kill" ])));
+    ExpectEq(1, dataAccess.countExperienceByPlayer("gorthaur",
+        ([ "type": "combat" ])));
+
+    mapping *filtered = dataAccess.queryExperienceByPlayer("gorthaur",
+        ([ "type": "combat.kill", "weather": "snow", "weapon": "katana" ]),
+        0, 0);
+    ExpectEq(1, sizeof(filtered));
+
+    destruct(dataAccess);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void PlayerRelationshipsRestored()
+{
+    string targetKey = "/lib/realizations/monster#fred";
+
+    object dataAccess = clone_object("/lib/modules/secure/dataAccess.c");
+
+    ExpectTrue(dataAccess.hasRelationshipByPlayerAndTarget("gorthaur",
+        targetKey));
+    ExpectEq(5, dataAccess.relationshipDimensionByPlayerAndTarget("gorthaur",
+        targetKey, "trust"));
+    ExpectEq(2, dataAccess.relationshipDimensionByPlayerAndTarget("gorthaur",
+        targetKey, "respect"));
+    ExpectEq(1, sizeof(dataAccess.relationshipHistoryByPlayerAndTarget(
+        "gorthaur", targetKey, ([]))));
+
+    destruct(dataAccess);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -419,9 +446,9 @@ void PlayerResearchSaved()
 /////////////////////////////////////////////////////////////////////////////
 void PlayerExperienceSaved()
 {
-    Player.restore("gorthaur");
+    object dataAccess = clone_object("/lib/modules/secure/dataAccess.c");
 
-    Player.recordExperience(([
+    dataAccess.recordExperienceObservation("gorthaur", ([
         "type": "movement.enter",
         "subject": "tol-dhurath temple",
         "participants": ({ }),
@@ -431,18 +458,35 @@ void PlayerExperienceSaved()
         "metadata": ([ "speed": "walk" ])
     ]));
 
-    Player.save();
+    ExpectTrue(dataAccess.hasExperienceByPlayer("gorthaur",
+        ([ "type": "movement.enter" ])));
+    ExpectEq(2, sizeof(dataAccess.queryExperienceByPlayer("gorthaur",
+        ([]), 0, 0)));
+    ExpectEq(1, dataAccess.countExperienceByPlayer("gorthaur",
+        ([ "type": "movement.enter", "terrain": "forest" ])));
 
-    destruct(Player);
-    Player = clone_object("/lib/realizations/player.c");
-    Player.restore("gorthaur");
+    destruct(dataAccess);
+}
 
-    ExpectTrue(Player.hasExperience(([ "type": "movement.enter" ])));
-    ExpectEq(2, sizeof(Player.experienceLog()));
-    ExpectEq(1, Player.countExperience(([
-        "type": "movement.enter",
-        "terrain": "forest"
-    ])));
+/////////////////////////////////////////////////////////////////////////////
+void PlayerRelationshipsSaved()
+{
+    string targetKey = "/lib/realizations/monster#fred";
+
+    object dataAccess = clone_object("/lib/modules/secure/dataAccess.c");
+
+    dataAccess.updateRelationshipByPlayerAndTarget("gorthaur", targetKey,
+        ([ "trust": 3 ]),
+        ([ "event": "gift" ]),
+        ([ "item": "amulet" ]),
+        "relationship.gift");
+
+    ExpectEq(8, dataAccess.relationshipDimensionByPlayerAndTarget("gorthaur",
+        targetKey, "trust"));
+    ExpectEq(2, sizeof(dataAccess.relationshipHistoryByPlayerAndTarget(
+        "gorthaur", targetKey, ([]))));
+
+    destruct(dataAccess);
 }
 
 /////////////////////////////////////////////////////////////////////////////

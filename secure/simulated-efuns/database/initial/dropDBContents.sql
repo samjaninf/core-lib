@@ -132,6 +132,14 @@ drop procedure if exists saveExperienceObservation;
 ##
 drop procedure if exists pruneExperience;
 ##
+drop procedure if exists saveRelationshipHistory;
+##
+drop procedure if exists saveRelationshipDimension;
+##
+drop procedure if exists saveRelationship;
+##
+drop procedure if exists pruneRelationships;
+##
 drop procedure if exists updateLoginTime;
 ##
 drop procedure if exists saveIssue;
@@ -229,6 +237,12 @@ drop table if exists domains;
 drop table if exists settings;
 ##
 drop table if exists blockedUsers;
+##
+drop table if exists relationshipHistory;
+##
+drop table if exists relationshipDimensions;
+##
+drop table if exists relationships;
 ##
 drop table if exists experienceObservations;
 ##

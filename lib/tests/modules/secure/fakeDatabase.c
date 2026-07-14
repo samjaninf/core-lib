@@ -151,6 +151,29 @@ public nomask mapping Gorthaur()
                 "metadata": ([ "damage": 142, "critical": 1 ])
             ])
         }),
+        "relationships": ([
+            "/lib/realizations/monster#fred": ([
+                "source": "/lib/realizations/player#Gorthaur",
+                "target": "/lib/realizations/monster#fred",
+                "dimensions": ([ "trust": 5, "respect": 2 ]),
+                "updated": 777
+            ])
+        ]),
+        "relationshipHistory": ([
+            "/lib/realizations/monster#fred": ({
+                ([
+                    "source": "/lib/realizations/player#Gorthaur",
+                    "target": "/lib/realizations/monster#fred",
+                    "dimension": "trust",
+                    "delta": 5,
+                    "value": 5,
+                    "timestamp": 777,
+                    "producer": "conversation.greet",
+                    "context": ([ "location": "/areas/tol-dhurath/entry/0x0.c" ]),
+                    "metadata": ([ "note": "initial" ])
+                ])
+            })
+        ]),
         "page size": 20,
         "playerId": 2,
         "pretitle": "Weasel Lord",
@@ -456,6 +479,29 @@ public nomask varargs mapping GetWizardOfLevel(string level, string name,
                 "metadata": ([ "damage": 142, "critical": 1 ])
             ])
         }),
+        "relationships": ([
+            "/lib/realizations/monster#fred": ([
+                "source": sprintf("/lib/realizations/player#%s", capitalize(name ? name : "earl")),
+                "target": "/lib/realizations/monster#fred",
+                "dimensions": ([ "trust": 5, "respect": 2 ]),
+                "updated": 777
+            ])
+        ]),
+        "relationshipHistory": ([
+            "/lib/realizations/monster#fred": ({
+                ([
+                    "source": sprintf("/lib/realizations/player#%s", capitalize(name ? name : "earl")),
+                    "target": "/lib/realizations/monster#fred",
+                    "dimension": "trust",
+                    "delta": 5,
+                    "value": 5,
+                    "timestamp": 777,
+                    "producer": "conversation.greet",
+                    "context": ([ "location": "/areas/tol-dhurath/entry/0x0.c" ]),
+                    "metadata": ([ "note": "initial" ])
+                ])
+            })
+        ]),
         "page size": 20,
         "playerId": 3,
         "pretitle": "Weasel Lord",

@@ -3,7 +3,7 @@
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
 virtual inherit "/lib/core/thing.c";
-#include "/lib/include/gmcp.h"
+#include "/sys/telnet.h"
 
 // Whether the connected client has enabled GMCP (sent IAC DO GMCP). Telnet
 // negotiation state lives on the connection, but the interactive object can be

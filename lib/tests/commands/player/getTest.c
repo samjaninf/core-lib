@@ -4,7 +4,7 @@
 //*****************************************************************************
 inherit "/lib/tests/framework/testFixture.c";
 #include "/lib/include/inventory.h"
-#include "/lib/include/gmcp.h"
+#include "/sys/telnet.h"
 
 object Player;
 object Item;

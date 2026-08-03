@@ -2,11 +2,11 @@
 // Copyright (c) 2017-2026 - Allen Cummings, RealmsMUD, All rights reserved. See
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
-#include "/sys/input_to.h"
-#include "/lib/include/gmcp.h"
 virtual inherit "/secure/login/core.c";
 virtual inherit "/secure/login/menu-interactions.c";
 virtual inherit "/secure/login/user-creation.c";
+#include "/sys/input_to.h"
+#include "/sys/telnet.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // Advertise GMCP capability to the connecting client before exec() hands

@@ -3,7 +3,7 @@
 //                      See the accompanying LICENSE file for details.
 // *****************************************************************************
 inherit "/lib/tests/framework/testFixture.c";
-#include "/lib/include/gmcp.h"
+#include "/sys/telnet.h"
 
 object Player;
 

@@ -251,6 +251,7 @@ public nomask varargs int hitPoints(int increase)
     {
         hitPoints = maxHitPoints();
     }
+
     return hitPoints;
 }
 
@@ -380,7 +381,7 @@ public nomask varargs int spellPoints(int increase)
             }
         }
         spellPoints += increase;
-        
+
         combatNotification("onSpellPointsChanged");
     }
 
@@ -487,7 +488,7 @@ public nomask varargs int staminaPoints(int increase)
             }
         }    
         staminaPoints += increase;
-        combatNotification("onStaminaPointsChanged");       
+        combatNotification("onStaminaPointsChanged");
     }
     if (staminaPoints > maxStaminaPoints())
     {
@@ -497,6 +498,7 @@ public nomask varargs int staminaPoints(int increase)
     {
         staminaPoints = 0;
     }
+
     return staminaPoints;
 }
 

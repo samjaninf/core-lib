@@ -377,12 +377,16 @@ public nomask void clearRelationshipsByPlayer(string playerName)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-protected nomask mapping getRelationships(int playerId, int dbHandle)
+protected nomask mapping getRelationships(int playerId, int dbHandle,
+    string playerName)
 {
     mapping ret = ([
         "relationships": ([]),
         "relationshipHistory": ([])
     ]);
+
+    string source = sprintf("/lib/realizations/player#%s",
+        capitalize(playerName));
 
     string query = sprintf("select targetKey from relationships "
         "where playerId = %d order by targetKey;", playerId);
@@ -395,8 +399,10 @@ protected nomask mapping getRelationships(int playerId, int dbHandle)
         if (result)
         {
             string target = convertString(result[0]);
-            ret["relationships"][target] =
+            mapping relationship =
                 relationshipByPlayerIdAndTarget(playerId, target, dbHandle);
+            relationship["source"] = source;
+            ret["relationships"][target] = relationship;
 
             ret["relationshipHistory"][target] = ({ });
             string historyQuery = sprintf("select h.dimension, h.delta, h.value, "
@@ -414,6 +420,7 @@ protected nomask mapping getRelationships(int playerId, int dbHandle)
                 if (historyResult)
                 {
                     ret["relationshipHistory"][target] += ({ ([
+                        "source": source,
                         "target": target,
                         "dimension": convertString(historyResult[0]),
                         "delta": to_int(historyResult[1]),

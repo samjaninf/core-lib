@@ -8,17 +8,32 @@
 public nomask varargs string decorate(string text, string textClass, string type, string configuration)
 {
     string ret = 0;
-    if (sizeof(regexp(({ textClass }), "\x1b", 1)))
+    int hasAnsiClass = sizeof(regexp(({ textClass }), "\x1b", 1)) > 0;
+
+    if (configuration == "web")
     {
-        ret = textClass;
+        // Web clients receive semantic markers instead of ANSI so the front-end
+        // can theme output itself. The markers are C0-control delimited and
+        // newline-free: SOH type.textClass STX ... ETX
+        ret = hasAnsiClass ? text :
+            sprintf("\x01%s.%s\x02%s\x03", type || "", textClass || "", text);
     }
-    else if (member(decorators, type) && member(decorators[type], textClass) &&
-        member(decorators[type][textClass], configuration))
+    else
     {
-        ret = decorators[type][textClass][configuration];
+        string opening = 0;
+        if (hasAnsiClass)
+        {
+            opening = textClass;
+        }
+        else if (member(decorators, type) && member(decorators[type], textClass) &&
+            member(decorators[type][textClass], configuration))
+        {
+            opening = decorators[type][textClass][configuration];
+        }
+
+        ret = opening ? (opening + text + "\x1b[0m") : text;
     }
 
-    ret = ret ? (ret + text + "\x1b[0m") : text;
     return ret;
 }
 
@@ -26,21 +41,31 @@ public nomask varargs string decorate(string text, string textClass, string type
 public nomask string divider(string configuration, string charset)
 {
     string ret = 0;
-    if (member(decorators["dividers"], configuration))
-    {
-        ret = decorators["dividers"][configuration];
-    }
 
-    string lineDivider = "";
-    if (charset == "screen reader")
+    if (configuration == "web")
     {
-        lineDivider = sprintf("%78s\n", "");
+        ret = "\x01display.divider\x02\x03\n";
     }
     else
     {
-        lineDivider = "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n";
+        string opening = 0;
+        if (member(decorators["dividers"], configuration))
+        {
+            opening = decorators["dividers"][configuration];
+        }
+
+        string lineDivider = "";
+        if (charset == "screen reader")
+        {
+            lineDivider = sprintf("%78s\n", "");
+        }
+        else
+        {
+            lineDivider = "+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n";
+        }
+
+        ret = opening ? (opening + lineDivider + "\x1b[0m") : lineDivider;
     }
 
-    ret = ret ? (ret + lineDivider + "\x1b[0m") : lineDivider;
     return ret;
 }

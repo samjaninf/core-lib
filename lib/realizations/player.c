@@ -7,6 +7,7 @@ virtual inherit "/lib/modules/guilds.c";
 virtual inherit "/lib/modules/parties.c";
 virtual inherit "/lib/modules/quests.c";
 virtual inherit "/lib/modules/settings.c";
+virtual inherit "/lib/modules/gmcp.c";
 virtual inherit "/lib/modules/secure/persistence.c";
 virtual inherit "/lib/modules/conversations.c";
 virtual inherit "/lib/modules/crafting.c";

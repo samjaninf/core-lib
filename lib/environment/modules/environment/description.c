@@ -7,6 +7,7 @@ virtual inherit "/lib/environment/modules/environment/elements.c";
 virtual inherit "/lib/environment/modules/environment/lighting.c";
 virtual inherit "/lib/environment/modules/environment/region.c";
 virtual inherit "/lib/environment/modules/environment/state.c";
+virtual inherit "/lib/environment/environmentSnapshot.c";
 
 protected object configuration = 
     getService("configuration");
@@ -329,9 +330,20 @@ public varargs string long(string item, object viewer)
             "interior must be set.\n");
     }
 
-    return ret + (isOutside ? 
+    string result = ret + (isOutside ?
             getService("environment")->timeOfDayMessage(colorConfiguration) :
             "") +
         getExitDescription(viewer) +
         getInventoryDescription(illuminationLevel, viewer) + "\n";
+
+    // Co-emit structured out-of-band snapshots for GMCP-capable viewers. This
+    // is purely additive; terminal viewers and viewers without GMCP receive
+    // nothing here and the in-band description above is unchanged.
+    if (objectp(viewer))
+    {
+        pushRegionSnapshotForViewer(viewer);
+        pushRoomSnapshot(viewer);
+    }
+
+    return result;
 }

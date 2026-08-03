@@ -4,6 +4,7 @@
 //*****************************************************************************
 inherit "/lib/tests/framework/testFixture.c";
 #include "/lib/include/inventory.h"
+#include "/lib/include/gmcp.h"
 
 object Player;
 object Item;
@@ -34,10 +35,13 @@ void Setup()
     Chainmail = clone_object("/lib/items/armor.c");
     Chainmail.set("armor type", "chainmail");
     Chainmail.set("name", "chainmail");
+    Chainmail.set("short", "a chainmail hauberk");
     Chainmail.set("equipment locations", Armor);
 
     Weapon = clone_object("/lib/items/weapon.c");
-    Weapon.set("Weapon type", "long sword");
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("name", "sword");
+    Weapon.set("short", "a long sword");
     Weapon.set("aliases", ({ "sword" }));
 
     move_object(Chainmail, Player);
@@ -263,4 +267,45 @@ void WizardsCanDropItemsById()
     ExpectTrue(present(Player, Room));
 
     destruct(player2);
+}
+
+// ---------------------------------------------------------------------------
+// GMCP inventory push on drop
+// ---------------------------------------------------------------------------
+
+/////////////////////////////////////////////////////////////////////////////
+void DropPushesGmcpInventoryUpdateWhenGmcpEnabled()
+{
+    ToggleCallOutBypass();
+    Player.telnetNegotiation(DO, TELOPT_GMCP, 0);
+    int before = sizeof(Player.caughtGmcpFrames());
+    Player.executeCommand("drop sword");
+    ExpectTrue(sizeof(Player.caughtGmcpFrames()) > before,
+        "dropping an item triggers at least one GMCP frame");
+    ExpectSubStringMatch("Char.Inventory", Player.caughtGmcp(),
+        "the triggered frame is Char.Inventory");
+    ToggleCallOutBypass();
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void DropDoesNotPushGmcpWhenGmcpNotEnabled()
+{
+    int before = sizeof(Player.caughtGmcpFrames());
+    Player.executeCommand("drop sword");
+    ExpectEq(before, sizeof(Player.caughtGmcpFrames()),
+        "no GMCP frame emitted when GMCP is not enabled");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void DroppingEquippedItemPushesGmcpInventoryAndScore()
+{
+    ToggleCallOutBypass();
+    Chainmail.equip("armor");
+    Player.telnetNegotiation(DO, TELOPT_GMCP, 0);
+    int before = sizeof(Player.caughtGmcpFrames());
+    Player.executeCommand("drop -f chainmail");
+    int pushed = sizeof(Player.caughtGmcpFrames()) - before;
+    ExpectTrue(pushed >= 1,
+        "dropping equipped armor triggers GMCP push");
+    ToggleCallOutBypass();
 }

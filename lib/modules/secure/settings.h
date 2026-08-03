@@ -14,6 +14,7 @@ private string PrimaryGuild = 0;
 private mapping blocks = ([ ]);
 private string colorSetting = "3-bit";
 private string characterSet = "ascii";
+private string displayModeSetting = "terminal";
 private string combatVerbosity = "normal";
 private mapping roles = ([]);
 private int lastSafetyTeleport = 0;
@@ -29,6 +30,7 @@ static nomask void loadSettings(mapping data, object persistence)
         PageSize = to_int(persistence->extractSaveData("page size", data));
         colorSetting = persistence->extractSaveData("color setting", data);
         characterSet = persistence->extractSaveData("character set", data);
+        displayModeSetting = persistence->extractSaveData("display mode", data);
         combatVerbosity = persistence->extractSaveData("combat verbosity", data);
         PrimaryGuild = persistence->extractSaveData("primary guild", data);
         lastSafetyTeleport = persistence->extractSaveData("safety teleport", 
@@ -46,7 +48,7 @@ static nomask void loadSettings(mapping data, object persistence)
         PageSize = 20;
     }
 
-    if (member(({ "none", "3-bit", "8-bit", "24-bit", "grayscale" }), colorSetting) < 0)
+    if (member(({ "none", "3-bit", "8-bit", "24-bit", "grayscale", "web" }), colorSetting) < 0)
     {
         colorSetting = "3-bit";
     }
@@ -54,6 +56,11 @@ static nomask void loadSettings(mapping data, object persistence)
     if (member(({ "ascii", "unicode" }), characterSet) < 0)
     {
         characterSet = "ascii";
+    }
+
+    if (member(({ "terminal", "web" }), displayModeSetting) < 0)
+    {
+        displayModeSetting = "terminal";
     }
 
     if (member(({ "normal", "only hits", "digest", "show vitals", 
@@ -78,6 +85,7 @@ static nomask mapping sendSettings()
         "page size": to_string(PageSize),
         "color setting": colorSetting,
         "character set": characterSet,
+        "display mode": displayModeSetting,
         "primary guild": PrimaryGuild,
         "safety teleport": lastSafetyTeleport,
         "display mini map": DisplayMiniMap,

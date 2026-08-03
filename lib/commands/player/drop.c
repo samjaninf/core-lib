@@ -83,6 +83,7 @@ public nomask int execute(string command, object initiator)
                     }
                     if (!target->drop())
                     {
+                        initiator->notify("onUnregisterItem");
                         displayMessage("##InitiatorName## ##Infinitive::drop## " +
                             (target->query("name") || target->Name()) + ".\n", initiator);
                     }

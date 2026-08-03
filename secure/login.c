@@ -3,9 +3,25 @@
 //                      the accompanying LICENSE file for details.
 //*****************************************************************************
 #include "/sys/input_to.h"
+#include "/lib/include/gmcp.h"
 virtual inherit "/secure/login/core.c";
 virtual inherit "/secure/login/menu-interactions.c";
 virtual inherit "/secure/login/user-creation.c";
+
+/////////////////////////////////////////////////////////////////////////////
+// Advertise GMCP capability to the connecting client before exec() hands
+// off to the player object. login.c is not a player and must not carry the
+// full gmcp.c module; it only needs to send one telnet negotiation byte
+// sequence. writeBytesToConnection is provided by the driver's interactive
+// object via binary_message().
+/////////////////////////////////////////////////////////////////////////////
+private nomask void advertiseGmcp()
+{
+    if (interactive(this_object()))
+    {
+        binary_message(({ IAC, WILL, TELOPT_GMCP }), 0);
+    }
+}
 
 private int totalAuthFailures = 0;
 
@@ -143,6 +159,10 @@ public nomask int logon()
 
     ipAddress = query_ip_number(this_object());
     displayBanner();
+
+    // Advertise GMCP early so capable clients enable it before gameplay; the
+    // negotiation state persists across exec() to the player object.
+    advertiseGmcp();
 
     printf("There are %d wizards and %d mortals online.\n\n", wizardCount,
         playerCount);

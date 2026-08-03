@@ -55,6 +55,8 @@ public nomask mapping getPlayerData(string name)
                 data += getPlayerSettings(dbHandle, name);
                 // data += getPlayerDomains(data["playerId"], dbHandle);
                 data += getInventory(data["playerId"], dbHandle);
+                data += getExperience(data["playerId"], dbHandle);
+                data += getRelationships(data["playerId"], dbHandle, name);
             }
 
             disconnect(dbHandle);

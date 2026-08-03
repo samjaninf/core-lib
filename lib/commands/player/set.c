@@ -129,7 +129,7 @@ private mapping parametersToFunction = ([
         "same as": "description",
         "wizard only": 0
     ]),
-     "primary guild": ([
+    "primary guild": ([
         "method": "primaryGuildSetting",
         "query method": "primaryGuildSetting",
         "description": "Sets the primary / shown guild for a player in lists and "
@@ -166,6 +166,20 @@ private mapping parametersToFunction = ([
             "unicode - Use this option for unicode\n"
             "\nBe sure that your terminal / mud client supports the selected "
             "character set option to ensure proper display.\n",
+        "suppress message": 1,
+        "wizard only": 0
+    ]),
+    "display mode": ([
+        "method": "displayMode",
+        "query method": "displayMode",
+        "description": "Sets the format used to deliver game\n"
+            "output. This can be:\n"
+            "terminal - Standard text output for\n"
+            "        terminals and mud clients\n"
+            "web - Structured output (JSON) for the\n"
+            "        graphical web client\n"
+            "\nThe 'web' option is selected\n"
+            "automatically by the web client.\n",
         "suppress message": 1,
         "wizard only": 0
     ]),

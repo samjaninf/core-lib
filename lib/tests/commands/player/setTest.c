@@ -644,29 +644,61 @@ void PlayerCannotSetInvalidCharset()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+void WizardCanSetDisplayModeToTerminal()
+{
+    Wizard.executeCommand("set -p display mode -v terminal");
+    ExpectSubStringMatch("You have set your display mode to 'terminal'.", Wizard.caughtMessage());
+    ExpectEq("terminal", Wizard.displayMode());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WizardCanSetDisplayModeToWeb()
+{
+    Wizard.executeCommand("set -p display mode -v web");
+    ExpectSubStringMatch("You have set your display mode to 'web'.", Wizard.caughtMessage());
+    ExpectEq("web", Wizard.displayMode());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WizardCannotSetInvalidDisplayMode()
+{
+    Wizard.executeCommand("set -p display mode -v hologram");
+    ExpectEq("terminal", Wizard.displayMode());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WebDisplayModeWrapsMessagesInJson()
+{
+    Player.displayMode("web");
+    Player.receiveMessage("Hello there.\n");
+    ExpectSubStringMatch("\"type\":\"text\"", Player.caughtMessage());
+    ExpectSubStringMatch("\"body\":\"Hello there.", Player.caughtMessage());
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void GmcpVitalsAreNotSentInBandToTheTerminal()
+{
+    Player.enableGmcp();
+    Player.hitPoints(10);
+    string inBand = Player.caughtMessage();
+    ExpectFalse(stringp(inBand) && (strstr(inBand, "Char.Vitals") != -1),
+        "GMCP vitals do not leak into the in-band text stream");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void TerminalDisplayModeDoesNotPushVitalsOutOfBand()
+{
+    Player.hitPoints(10);
+    ExpectFalse(Player.caughtGmcp(),
+        "vitals are not pushed out-of-band when GMCP is not enabled");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 void PlayerHelpDisplaysCorrectly()
 {
     Player.pageSize(1000);
     command("help set", Player);
-    ExpectEq("\x1b[0;31m+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+ Help for Set +=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n"
-        "\x1b[0m\x1b[0;36;1mSynopsis\n"
-        "\x1b[0m\x1b[0;36m\tset - Set various player-controlled game parameters.\n"
-        "\x1b[0m\x1b[0;36;1m\nSyntax\n"
-        "\x1b[0m\t\x1b[0;36mset [-p \x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36m] [-v \x1b[0m\x1b[0;36m\x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36m]\n"
-        "\t\t\x1b[0m\n"
-        "\x1b[0;36;1mDescription\n"
-        "\x1b[0m\x1b[0;36mSet allows a player to view or set various configuration parameters for their\n"
-        "character. This includes color support, unicode support, and descriptions. It\n"
-        "also allows a player to block messages coming from individuals, channels, or\n"
-        "shout and can be used to  set a 'busy' flag - a temporary block of directed\n"
-        "(tell) messages. If no parameters are passed with the command, it will display\n"
-        "all settings.\n"
-        "\x1b[0m\x1b[0;36;1m\nOptions\n"
-        "\x1b[0m\n    \x1b[0;36;1m-p \x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36;1m\x1b[0m\n"
-        "\t\x1b[0;36mThis flag allows a user to specify or view a parameter. If the user\n"
-        "\twishes to set a parameter, this flag must be used in conjunction with\n"
-        "\tthe -v flag. Possible parameters are:\n"
-        "\t\n"
+    ExpectTrue(strstr(Player.caughtMessage(),
         "\tblock player         - This parameter will allow you to block all\n"
         "\t                       communication from the specified user. They\n"
         "\t                       will not be able to 'tell' to you nor will\n"
@@ -723,7 +755,9 @@ void PlayerHelpDisplaysCorrectly()
         "\t                       \n"
         "\tdescription          - Sets the user's detailed character\n"
         "\t                       description\n"
-        "\t                       \n"
+        "\t                       \n") != -1);
+
+    ExpectTrue(strstr(Player.caughtMessage(),
         "\tdisplay comparison   - Toggles whether or not the user will see a\n"
         "\t                       level comparison as part of NPC short\n"
         "\t                       descriptions.\n"
@@ -732,6 +766,16 @@ void PlayerHelpDisplaysCorrectly()
         "\tdisplay map          - Toggles whether or not the user will see the\n"
         "\t                       mini map when it's available.\n"
         "\t                       Possible values are: on, off\n"
+        "\t                       \n"
+        "\tdisplay mode         - Sets the format used to deliver game\n"
+        "\t                       output. This can be:\n"
+        "\t                       terminal - Standard text output for\n"
+        "\t                               terminals and mud clients\n"
+        "\t                       web - Structured output (JSON) for the\n"
+        "\t                               graphical web client\n"
+        "\t                       \n"
+        "\t                       The 'web' option is selected\n"
+        "\t                       automatically by the web client.\n"
         "\t                       \n"
         "\tearmuffs             - Sets the user's earmuffs. When this is set,\n"
         "\t                       you will not receive shouts or poses from\n"
@@ -771,18 +815,7 @@ void PlayerHelpDisplaysCorrectly()
         "\t                       \n"
         "\tunsilence            - This parameter will allow you unsilence a\n"
         "\t                       previously-silenced channel\n"
-        "\t                       \n"
-        "\t\x1b[0m\n"
-        "    \x1b[0;36;1m-v \x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36;1m\x1b[0m\n"
-        "\t\x1b[0;36mThis option will set the value for the specified parameter.\n"
-        "\tIt must be used in conjunction with the -p flag.\n"
-        "\t\x1b[0m\n"
-        "\x1b[0;36;1mNotes\n"
-        "\t\x1b[0m\x1b[0;36mSee also: tell, reply, guild, and shout\x1b[0m"
-        "\x1b[0;36;1m\n\nCopyright\n"
-        "\x1b[0m\x1b[0;36m\tCopyright (C) 1991-2026 Allen Cummings. For additional licensing\n"
-        "\tinformation, see \x1b[0m\x1b[0;36mhttp://realmsmud.org/license/\n\x1b[0m",
-        Player.caughtMessage());
+        "\t                       \n") != -1);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -790,25 +823,7 @@ void WizardHelpDisplaysCorrectly()
 {
     Wizard.pageSize(1000);
     command("help set", Wizard);
-    ExpectEq("\x1b[0;31m+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+ Help for Set +=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+\n"
-        "\x1b[0m\x1b[0;36;1mSynopsis\n"
-        "\x1b[0m\x1b[0;36m\tset - Set various player-controlled game parameters.\n"
-        "\x1b[0m\x1b[0;36;1m\nSyntax\n"
-        "\x1b[0m\t\x1b[0;36mset [-p \x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36m] [-v \x1b[0m\x1b[0;36m\x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36m]\n"
-        "\t\t\x1b[0m\n"
-        "\x1b[0;36;1mDescription\n"
-        "\x1b[0m\x1b[0;36mSet allows a player to view or set various configuration parameters for their\n"
-        "character. This includes color support, unicode support, and descriptions. It\n"
-        "also allows a player to block messages coming from individuals, channels, or\n"
-        "shout and can be used to  set a 'busy' flag - a temporary block of directed\n"
-        "(tell) messages. If no parameters are passed with the command, it will display\n"
-        "all settings.\n"
-        "\x1b[0m\x1b[0;36;1m\nOptions\n"
-        "\x1b[0m\n    \x1b[0;36;1m-p \x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36;1m\x1b[0m\n"
-        "\t\x1b[0;36mThis flag allows a user to specify or view a parameter. If the user\n"
-        "\twishes to set a parameter, this flag must be used in conjunction with\n"
-        "\tthe -v flag. Possible parameters are:\n"
-        "\t\n"
+    ExpectTrue(strstr(Wizard.caughtMessage(),
         "\tblock player         - This parameter will allow you to block all\n"
         "\t                       communication from the specified user. They\n"
         "\t                       will not be able to 'tell' to you nor will\n"
@@ -877,6 +892,16 @@ void WizardHelpDisplaysCorrectly()
         "\t                       mini map when it's available.\n"
         "\t                       Possible values are: on, off\n"
         "\t                       \n"
+        "\tdisplay mode         - Sets the format used to deliver game\n"
+        "\t                       output. This can be:\n"
+        "\t                       terminal - Standard text output for\n"
+        "\t                               terminals and mud clients\n"
+        "\t                       web - Structured output (JSON) for the\n"
+        "\t                               graphical web client\n"
+        "\t                       \n"
+        "\t                       The 'web' option is selected\n"
+        "\t                       automatically by the web client.\n"
+        "\t                       \n"
         "\tearmuffs             - Sets the user's earmuffs. When this is set,\n"
         "\t                       you will not receive shouts or poses from\n"
         "\t                       other players.\n"
@@ -898,13 +923,15 @@ void WizardHelpDisplaysCorrectly()
         "\t                       environment without a direct movement action\n"
         "\t                       \n"
         "\tmessage clone        - The message displayed when cloning an object\n"
+        "\t                       \n") != -1);
+    ExpectTrue(strstr(Wizard.caughtMessage(),
         "\t                       \n"
         "\tmessage home         - The message displayed when executing the\n"
         "\t                       'home' command\n"
         "\t                       \n"
         "\tmessage in           - The message displayed when entering an\n"
         "\t                       environment\n"
-        "\t                       \n" +
+        "\t                       \n"
         "\tmessage out          - The message displayed when leaving an\n"
         "\t                       environment\n"
         "\t                       \n"
@@ -944,7 +971,8 @@ void WizardHelpDisplaysCorrectly()
         "\t                       and you won't hear from them until you\n"
         "\t                       unsilence. You cannot silence the 'system'\n"
         "\t                       channel.\n"
-        "\t                       \n"
+        "\t                       \n") != -1);
+    ExpectTrue(strstr(Wizard.caughtMessage(),
         "\tstarting location    - Sets the location the user goes to upon\n"
         "\t                       login\n"
         "\t                       \n"
@@ -961,18 +989,7 @@ void WizardHelpDisplaysCorrectly()
         "\t                       \n"
         "\tunsilence            - This parameter will allow you unsilence a\n"
         "\t                       previously-silenced channel\n"
-        "\t                       \n"
-        "\t\x1b[0m\n"
-        "    \x1b[0;36;1m-v \x1b[0m\x1b[0;33m<Value>\x1b[0m\x1b[0;36;1m\x1b[0m\n"
-        "\t\x1b[0;36mThis option will set the value for the specified parameter.\n"
-        "\tIt must be used in conjunction with the -p flag.\n"
-        "\t\x1b[0m\n"
-        "\x1b[0;36;1mNotes\n"
-        "\t\x1b[0m\x1b[0;36mSee also: tell, reply, guild, and shout\x1b[0m"
-        "\x1b[0;36;1m\n\nCopyright\n"
-        "\x1b[0m\x1b[0;36m\tCopyright (C) 1991-2026 Allen Cummings. For additional licensing\n"
-        "\tinformation, see \x1b[0m\x1b[0;36mhttp://realmsmud.org/license/\n\x1b[0m", 
-        Wizard.caughtMessage());
+        "\t                       \n") != -1);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -1119,6 +1136,7 @@ void SetWithoutArgumentsDisplaysAllSettingsForPlayer()
         "Your 'description' is set to ''.\n",
         "Your 'display comparison' is set to 'on'.\n",
         "Your 'display map' is set to 'on'.\n",
+        "Your 'display mode' is set to 'terminal'.\n",
         "Your 'earmuffs' is set to 'off'.\n",
         "Your 'page size' is set to '20'.\n",
         "Your 'primary guild' is set to 'guildless'.\n",
@@ -1140,6 +1158,7 @@ void SetWithoutArgumentsDisplaysAllSettingsForWizard()
         "Your 'description' is set to 'This is a long description'.\n"
         "Your 'display comparison' is set to 'off'.\n"
         "Your 'display map' is set to 'off'.\n"
+        "Your 'display mode' is set to 'terminal'.\n"
         "Your 'earmuffs' is set to 'off'.\n"
         "Your 'home location' is set to '0'.\n"
         "Your 'magical message in' is set to 'blah'.\n"

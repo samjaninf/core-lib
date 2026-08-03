@@ -21,6 +21,8 @@ private nomask void execNewPlayer(string password, string userName)
         exec(player, this_object());
         addUser(player);
 
+        player->advertiseGmcp();
+
         command("l", player);
     }
 }
@@ -36,6 +38,8 @@ protected nomask void execGuestPlayer()
     {
         exec(player, this_object());
         addUser(player);
+
+        player->advertiseGmcp();
 
         command("l", player);
     }

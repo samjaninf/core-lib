@@ -232,15 +232,7 @@ private nomask int addValueToCache(object item, string bonus, int value)
         if (!member(inventoryCache[itemKey], bonus))
         {
             inventoryCache[itemKey][bonus] = value;
-
-            if (!member(inventoryCache["totals"], bonus))
-            {
-                inventoryCache["totals"][bonus] += value;
-            }
-            else
-            {
-                inventoryCache["totals"][bonus] += value;
-            }
+            inventoryCache["totals"][bonus] += value;
         }
     }
     return value;
@@ -254,7 +246,8 @@ private nomask void setEnchantments(object item, string type, string formatter)
     {
         foreach(string enchantment in m_indices(enchantments))
         {
-            addValueToCache(item, sprintf(formatter, type), enchantments[type]);
+            addValueToCache(item, sprintf(formatter, enchantment),
+                enchantments[enchantment]);
         }
     }
 }

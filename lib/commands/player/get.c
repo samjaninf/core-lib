@@ -100,6 +100,7 @@ private nomask int getObjects(object initiator, object source, object *targets)
             else if (initiator->canCarry(target))
             {
                 move_object(target, initiator);
+                initiator->notify("onRegisterItem");
                 displayMessage("##InitiatorName## ##Infinitive::pick## up " +
                     (target->query("name") || target->Name()) + ".\n", initiator);
             }

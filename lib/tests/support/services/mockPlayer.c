@@ -6,6 +6,7 @@ virtual inherit "/lib/realizations/player.c";
 
 private string lastCatch = 0;
 private string *catchList = ({ });
+private string *gmcpFrames = ({ });
 
 /////////////////////////////////////////////////////////////////////////////
 public void agePlayer(int amount)
@@ -43,4 +44,42 @@ public void resetCatchList()
 public int playerExists(string name)
 {
     return 1;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// Test seam: capture the raw bytes the GMCP module would write to the socket
+// instead of calling binary_message() (which requires a real interactive
+// connection). Store the decoded string so tests can assert on package/body.
+/////////////////////////////////////////////////////////////////////////////
+protected int writeBytesToConnection(int *data)
+{
+    if (pointerp(data) && sizeof(data))
+    {
+        gmcpFrames += ({ to_string(data) });
+    }
+    return sizeof(data);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// Test helper: enable GMCP on the mock without triggering the full telnet
+// negotiation lifecycle (subscriber clone + initial pushes). Tests that need
+// the subscriber must set it up themselves via gmcpEventSubscriber directly.
+/////////////////////////////////////////////////////////////////////////////
+public void enableGmcp()
+{
+    setGmcpEnabled(1);
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+public string caughtGmcp()
+{
+    return sizeof(gmcpFrames) ? gmcpFrames[<1] : 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public string *caughtGmcpFrames()
+{
+    return gmcpFrames + ({ });
 }

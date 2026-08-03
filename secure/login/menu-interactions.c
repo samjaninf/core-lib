@@ -39,6 +39,10 @@ private nomask void execCharacter(string characterName, string userName)
         configureCharset(player, player->charsetConfiguration());
         player->resetCaches();
 
+        // Re-advertise GMCP from the now-active player object so a capable
+        // client (re)confirms the option against the object that will send it.
+        player->advertiseGmcp();
+
         command("l", player);
     }
     else

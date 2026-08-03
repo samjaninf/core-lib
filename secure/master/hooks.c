@@ -140,6 +140,11 @@ protected nomask void addDriverHooks()
     set_driver_hook(H_MODIFY_COMMAND_FNAME, "modify_command");
     set_driver_hook(H_NOTIFY_FAIL, "What?\n");
 
+    // Route telnet option negotiation (GMCP and friends) to the interactive
+    // object's telnetNegotiation() lfun so the GMCP module can handle out-of-band
+    // subnegotiation. Objects without telnetNegotiation() simply ignore it.
+    set_driver_hook(H_TELNET_NEG, "telnetNegotiation");
+
     // Add system include directories
     set_driver_hook(H_INCLUDE_DIRS, 
         unbound_lambda( ({'includeFile, 'currentFile }),

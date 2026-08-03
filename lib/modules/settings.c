@@ -147,6 +147,14 @@ public nomask varargs int receiveMessage(string message, object initiator)
         {
             ReplyTo = initiator;
         }
+
+        if (displayModeSetting == "web")
+        {
+            message = sprintf("{\"type\":\"text\",\"channel\":\"%s\",\"body\":\"%s\"}\n",
+                objectp(initiator) ? "tell" : "system",
+                getService("messageEncoding")->escapeString(message));
+        }
+
         tell_object(this_object(), message);
     }
     return ret;
@@ -173,7 +181,7 @@ public nomask varargs int pageSize(int newSize)
 /////////////////////////////////////////////////////////////////////////////
 public nomask varargs string colorConfiguration(string newColorSetting)
 {
-    if(member(({ "none", "3-bit", "8-bit", "24-bit", "grayscale" }), newColorSetting) > -1)
+    if(member(({ "none", "3-bit", "8-bit", "24-bit", "grayscale", "web" }), newColorSetting) > -1)
     {
         colorSetting = newColorSetting;
         tell_object(this_object(), sprintf("You have set your color to '%s'.\n",
@@ -183,7 +191,7 @@ public nomask varargs string colorConfiguration(string newColorSetting)
     {
         tell_object(this_object(), format("Invalid argument. The valid "
             "options for color configuration are: none, 3-bit, 8-bit, "
-            "24-bit, or grayscale.", 78));
+            "24-bit, grayscale, or web.", 78));
     }
     return colorSetting;
 }
@@ -205,6 +213,23 @@ public nomask varargs string charsetConfiguration(string newCharSet)
             "screen reader.", 78));
     }
     return characterSet;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public nomask varargs string displayMode(string newDisplayMode)
+{
+    if (member(({ "terminal", "web" }), newDisplayMode) > -1)
+    {
+        displayModeSetting = newDisplayMode;
+        tell_object(this_object(), sprintf("You have set your display mode to '%s'.\n",
+            displayModeSetting));
+    }
+    else if (newDisplayMode)
+    {
+        tell_object(this_object(), format("Invalid argument. The valid "
+            "options for display mode are: terminal or web.", 78));
+    }
+    return displayModeSetting;
 }
 
 /////////////////////////////////////////////////////////////////////////////

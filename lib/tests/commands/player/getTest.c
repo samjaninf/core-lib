@@ -4,6 +4,7 @@
 //*****************************************************************************
 inherit "/lib/tests/framework/testFixture.c";
 #include "/lib/include/inventory.h"
+#include "/lib/include/gmcp.h"
 
 object Player;
 object Item;
@@ -34,11 +35,13 @@ void Setup()
     Chainmail = clone_object("/lib/items/armor.c");
     Chainmail.set("armor type", "chainmail");
     Chainmail.set("name", "chainmail");
+    Chainmail.set("short", "a chainmail hauberk");
     Chainmail.set("equipment locations", Armor);
 
     Weapon = clone_object("/lib/items/weapon.c");
-    Weapon.set("short", "sword");
-    Weapon.set("Weapon type", "long sword");
+    Weapon.set("weapon type", "long sword");
+    Weapon.set("name", "sword");
+    Weapon.set("short", "a long sword");
     Weapon.set("aliases", ({ "sword" }));
 
     move_object(Chainmail, Room);
@@ -365,4 +368,42 @@ void WizardsCanGetByObjectId()
 
     ExpectTrue(player2.executeCommand("get " + object_name(Player)));
     ExpectFalse(present(Player, Room));
+}
+
+// ---------------------------------------------------------------------------
+// GMCP inventory push on get
+// ---------------------------------------------------------------------------
+
+/////////////////////////////////////////////////////////////////////////////
+void GetPushesGmcpInventoryUpdateWhenGmcpEnabled()
+{
+    ToggleCallOutBypass();
+    Player.telnetNegotiation(DO, TELOPT_GMCP, 0);
+    int before = sizeof(Player.caughtGmcpFrames());
+    Player.executeCommand("get sword");
+    ExpectTrue(sizeof(Player.caughtGmcpFrames()) > before,
+        "getting an item triggers at least one GMCP frame");
+    ExpectSubStringMatch("Char.Inventory", Player.caughtGmcp(),
+        "the triggered frame is Char.Inventory");
+    ToggleCallOutBypass();
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void GetDoesNotPushGmcpWhenGmcpNotEnabled()
+{
+    int before = sizeof(Player.caughtGmcpFrames());
+    Player.executeCommand("get sword");
+    ExpectEq(before, sizeof(Player.caughtGmcpFrames()),
+        "no GMCP frame emitted when GMCP is not enabled");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void GetItemAppearsInCarriedListOfSubsequentInventoryFrame()
+{
+    ToggleCallOutBypass();
+    Player.telnetNegotiation(DO, TELOPT_GMCP, 0);
+    Player.executeCommand("get sword");
+    ExpectSubStringMatch("sword", Player.caughtGmcp(),
+        "newly picked up item appears in the Char.Inventory payload");
+    ToggleCallOutBypass();
 }

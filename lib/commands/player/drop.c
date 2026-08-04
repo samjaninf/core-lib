@@ -72,8 +72,15 @@ public nomask int execute(string command, object initiator)
             ret = 1;
             foreach(object target in targets)
             {
-                if (!initiator->isEquipped(target) ||
-                    sizeof(regexp(({ command }), "-f")))
+                if (initiator->isEquipped(target) &&
+                    !sizeof(regexp(({ command }), "-f")))
+                {
+                    tell_object(initiator, format(sprintf("You must unequip %s before "
+                        "dropping it. Use 'drop -f %s' to force.\n",
+                        (target->query("name") || target->Name()),
+                        (target->query("name") || target->Name())), 78));
+                }
+                else
                 {
                     if (!function_exists("drop", target) &&
                         (member(inherit_list(initiator),

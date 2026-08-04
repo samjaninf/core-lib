@@ -78,6 +78,10 @@ static nomask void loadInventory(mapping data, object persistence)
                             {
                                 equipString = "second " + equipString;
                             }
+                            else if (itemObject->query("blueprint") == "ring")
+                            {
+                                equipString = "first " + equipString;
+                            }
                             
                             itemObject->equip(equipString);
                         }

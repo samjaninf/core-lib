@@ -1444,3 +1444,216 @@ void UnregisterObjectsOfTypeRemovesParalysisModifier()
     ExpectTrue(Inventory.unregisterObjectsOfType("paralysis"), "unregisterObjectsOfType returns true");
     ExpectFalse(Inventory.registeredInventoryObject("paralysis effect"), "paralysis is unregistered");
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void RemoveRing2ThenWearRingGoesToRing1()
+{
+    object ring1 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring1.set("name", "Ring of Weasels");
+    move_object(ring1, Inventory);
+
+    object ring2 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring2.set("name", "Ring of Spiffiness");
+    move_object(ring2, Inventory);
+
+    object ring3 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring3.set("name", "Ring of Power");
+    move_object(ring3, Inventory);
+
+    command("wear Ring of Weasels", Inventory);
+    command("wear Ring of Spiffiness", Inventory);
+    ExpectEq(0x00001000, ring1.query("equipment locations"), "ring1 in ring 1 before remove");
+    ExpectEq(0x00002000, ring2.query("equipment locations"), "ring2 in ring 2 before remove");
+
+    command("remove Ring of Spiffiness", Inventory);
+    ExpectFalse(Inventory.isEquipped(ring2), "ring2 unequipped");
+    ExpectTrue(Inventory.isEquipped(ring1), "ring1 still equipped");
+
+    command("wear Ring of Power", Inventory);
+    ExpectTrue(Inventory.isEquipped(ring3), "ring3 equipped after remove");
+    ExpectEq(0x00002000, ring3.query("equipment locations"), "ring3 went into ring 2 (ring1 occupied)");
+    ExpectTrue(Inventory.isEquipped(ring1), "ring1 undisturbed");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WearingOtherItemDoesNotCorruptRing2LocationFlag()
+{
+    object ring1 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring1.set("name", "Ring of Weasels");
+    move_object(ring1, Inventory);
+
+    object ring2 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring2.set("name", "Ring of Spiffiness");
+    move_object(ring2, Inventory);
+
+    command("wear Ring of Weasels", Inventory);
+    command("wear Ring of Spiffiness", Inventory);
+    ExpectEq(0x00002000, ring2.query("equipment locations"), "ring2 location before equipping unrelated item");
+
+    object gloves = clone_object("/lib/items/armor");
+    gloves.set("name", "leather gloves");
+    gloves.set("equipment locations", Gloves);
+    move_object(gloves, Inventory);
+    command("wear leather gloves", Inventory);
+
+    ExpectTrue(Inventory.isEquipped(ring1), "ring1 still equipped after wearing gloves");
+    ExpectTrue(Inventory.isEquipped(ring2), "ring2 still equipped after wearing gloves");
+    ExpectEq(0x00001000, ring1.query("equipment locations"), "ring1 location not corrupted");
+    ExpectEq(0x00002000, ring2.query("equipment locations"), "ring2 location not corrupted");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void OffhandUnequipPreservesOffhandFlagOnFailure()
+{
+    object primary = clone_object("/lib/items/weapon");
+    primary.set("name", "sword");
+    primary.set("equipment locations", OnehandedWeapon);
+    move_object(primary, Inventory);
+
+    object offhand = clone_object("/lib/items/weapon");
+    offhand.set("name", "kama");
+    offhand.set("equipment locations", OnehandedWeapon);
+    offhand.set("cursed", (["equip message": "The kama bonds to your hand!",
+        "failed unequip message": "The kama won't let go!"]));
+    move_object(offhand, Inventory);
+
+    primary.equip("sword");
+    offhand.equip("kama offhand");
+    ExpectTrue(Inventory.isEquipped(offhand), "kama equipped offhand");
+    ExpectTrue(offhand.query("offhand"), "offhand flag set");
+
+    offhand.unequip("kama");
+    ExpectTrue(offhand.query("offhand"), "offhand flag preserved after failed unequip");
+    ExpectTrue(Inventory.isEquipped(offhand), "kama still equipped after failed unequip");
+    ExpectEq(Inventory.equipmentInSlot("wielded offhand"), offhand,
+        "wielded offhand slot still holds kama");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void OffhandUnequipClearsOffhandFlagOnSuccess()
+{
+    object primary = clone_object("/lib/items/weapon");
+    primary.set("name", "sword");
+    primary.set("equipment locations", OnehandedWeapon);
+    move_object(primary, Inventory);
+
+    object offhand = clone_object("/lib/items/weapon");
+    offhand.set("name", "kama");
+    offhand.set("equipment locations", OnehandedWeapon);
+    move_object(offhand, Inventory);
+
+    primary.equip("sword");
+    offhand.equip("kama offhand");
+    ExpectTrue(offhand.query("offhand"), "offhand flag set before unequip");
+
+    offhand.unequip("kama");
+    ExpectFalse(Inventory.isEquipped(offhand), "kama unequipped");
+    ExpectFalse(offhand.query("offhand"), "offhand flag cleared after successful unequip");
+    ExpectFalse(Inventory.equipmentInSlot("wielded offhand"),
+        "wielded offhand slot cleared");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WieldPrimaryWeaponOffhandWhenOffhandSlotEmpty()
+{
+    object sword = clone_object("/lib/items/weapon");
+    sword.set("name", "sword");
+    sword.set("equipment locations", OnehandedWeapon);
+    move_object(sword, Inventory);
+
+    sword.equip("sword");
+    ExpectTrue(Inventory.isEquipped(sword), "sword equipped as primary");
+    ExpectEq(Inventory.equipmentInSlot("wielded primary"), sword, "sword in primary slot");
+
+    sword.unequip("sword");
+    ExpectFalse(Inventory.isEquipped(sword), "sword unequipped from primary");
+
+    sword.equip("sword offhand");
+    ExpectTrue(Inventory.isEquipped(sword), "sword wielded offhand");
+    ExpectFalse(Inventory.equipmentInSlot("wielded primary"), "primary slot empty");
+    ExpectEq(Inventory.equipmentInSlot("wielded offhand"), sword, "sword in offhand slot");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WieldingOffhandDisplacesExistingOffhandWeapon()
+{
+    object sword = clone_object("/lib/items/weapon");
+    sword.set("name", "sword");
+    sword.set("equipment locations", OnehandedWeapon);
+    move_object(sword, Inventory);
+
+    object kama = clone_object("/lib/items/weapon");
+    kama.set("name", "kama");
+    kama.set("equipment locations", OnehandedWeapon);
+    move_object(kama, Inventory);
+
+    object angrist = clone_object("/lib/items/weapon");
+    angrist.set("name", "angrist");
+    angrist.set("equipment locations", OnehandedWeapon);
+    move_object(angrist, Inventory);
+
+    sword.equip("sword");
+    kama.equip("kama offhand");
+    ExpectEq(Inventory.equipmentInSlot("wielded primary"), sword, "sword primary");
+    ExpectEq(Inventory.equipmentInSlot("wielded offhand"), kama, "kama offhand");
+
+    angrist.equip("angrist offhand");
+    ExpectEq(Inventory.equipmentInSlot("wielded primary"), sword, "sword still primary");
+    ExpectEq(Inventory.equipmentInSlot("wielded offhand"), angrist,
+        "angrist displaced kama in offhand slot");
+    ExpectFalse(Inventory.isEquipped(kama), "kama displaced");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WearByNumberSelectsCorrectItem()
+{
+    object boots1 = clone_object("/lib/items/armor");
+    boots1.set("name", "boots");
+    boots1.set("short", "a pair of boots");
+    boots1.set("equipment locations", Boots);
+    move_object(boots1, Inventory);
+
+    object boots2 = clone_object("/lib/items/armor");
+    boots2.set("name", "boots");
+    boots2.set("short", "a pair of boots");
+    boots2.set("equipment locations", Boots);
+    move_object(boots2, Inventory);
+
+    object resolvedByPresent = present("boots 2", Inventory);
+    ExpectEq(boots2, resolvedByPresent, "present boots 2 resolves to boots2");
+
+    ExpectTrue(boots2.equip("boots"), "equip boots2 directly by name succeeds");
+    ExpectFalse(Inventory.isEquipped(boots1), "boots1 not equipped");
+    ExpectTrue(Inventory.isEquipped(boots2), "boots2 equipped");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void DropEquippedItemShowsFailureMessage()
+{
+    object weapon = clone_object("/lib/items/weapon");
+    weapon.set("name", "sword");
+    weapon.set("equipment locations", OnehandedWeapon);
+    move_object(weapon, Inventory);
+
+    weapon.equip("sword");
+    ExpectTrue(Inventory.isEquipped(weapon), "sword equipped before drop");
+
+    command("drop sword", Inventory);
+    ExpectTrue(Inventory.isEquipped(weapon), "sword still equipped after drop without -f");
+    ExpectTrue(objectp(weapon), "sword object still exists");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void DropEquippedItemWithForceFlagUnequipsAndDrops()
+{
+    object weapon = clone_object("/lib/items/weapon");
+    weapon.set("name", "sword");
+    weapon.set("equipment locations", OnehandedWeapon);
+    move_object(weapon, Inventory);
+
+    weapon.equip("sword");
+    ExpectTrue(Inventory.isEquipped(weapon), "sword equipped before drop -f");
+
+    weapon.drop();
+    ExpectFalse(Inventory.isEquipped(weapon), "sword unequipped by drop");
+}

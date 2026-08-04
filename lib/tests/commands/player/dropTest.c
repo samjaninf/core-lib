@@ -310,3 +310,18 @@ void DroppingEquippedItemPushesGmcpInventoryAndScore()
         "dropping equipped armor triggers GMCP push");
     ToggleCallOutBypass();
 }
+
+/////////////////////////////////////////////////////////////////////////////
+void DropEquippedItemWithoutFFlagShowsFailureMessage()
+{
+    destruct(Weapon);
+    Item.equip("sword");
+    ExpectTrue(Player.isEquipped(Item), "item equipped before drop");
+
+    Player.executeCommand("drop sword");
+    ExpectTrue(Player.isEquipped(Item), "item still equipped after drop without -f");
+    ExpectTrue(present(Item, Player), "item still in player inventory");
+    ExpectFalse(present(Item, Room), "item not in room");
+    ExpectSubStringMatch("You must unequip Sword of Weasels before dropping it", 
+        Player.caughtMessage());
+}

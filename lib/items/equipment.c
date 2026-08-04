@@ -717,23 +717,37 @@ public int equip(string item)
 {
     int ret = 0;
 
+    object env = environment(this_object());
+    if (item && stringp(item) && env)
+    {
+        object resolved = present(item, env) || present(item, environment(env));
+        if (resolved == this_object() && !env->isEquipped(this_object()))
+        {
+            item = query("name");
+        }
+    }
+
     if (query("blueprint") == "ring")
     {
-        itemData["equipment locations"] = Ring;
-
         if (sizeof(regexp(({ item }), "(first|second) .*")))
         {
             string ringLocation = regreplace(item, "(first|second).*", "\\1");
             item = regreplace(item, "(first|second) (.*)", "\\2");
-            if (id(item) && (ringLocation == "second"))
+            if (id(item))
             {
-                itemData["equipment locations"] = Ring2;
+                itemData["equipment locations"] = Ring;
+                if (ringLocation == "second")
+                {
+                    itemData["equipment locations"] = Ring2;
+                }
             }
         }
-        else
+        else if (id(item))
         {
+            itemData["equipment locations"] = Ring;
             object ringEnvironment = environment(this_object());
-            if (ringEnvironment && function_exists("equipmentInSlot", ringEnvironment) &&
+            if (ringEnvironment &&
+                function_exists("equipmentInSlot", ringEnvironment) &&
                 ringEnvironment->equipmentInSlot("ring 1") &&
                 !ringEnvironment->equipmentInSlot("ring 2"))
             {
@@ -742,7 +756,6 @@ public int equip(string item)
         }
     }
 
-    object env = environment(this_object());
     if(item && id(item) && env && function_exists("equip", env) &&
        !env->isEquipped(this_object()))
     {
@@ -804,10 +817,19 @@ public nomask int canUnequip()
 public varargs int unequip(string item, int silently)
 {
     int ret = 0;
-    
+
+    object env = environment(this_object());
+    if (item && stringp(item) && env && !silently)
+    {
+        object resolved = present(item, env) || present(item, environment(env));
+        if (resolved == this_object() && env->isEquipped(this_object()))
+        {
+            item = query("name");
+        }
+    }
+
     if(item && id(item))
     {
-        object env = environment(this_object());
         if (mappingp(query("cursed")) && member(query("cursed"), "failed unequip message")
             && !silently)
         {

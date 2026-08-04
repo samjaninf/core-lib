@@ -255,13 +255,12 @@ public nomask int equip(string item)
 public nomask varargs int unequip(string item, int silently)
 {
     int ret = equipment::unequip(item, silently);
-    
-    // If this was wielded offhand, remove that property
-    if(query("offhand"))
+
+    if(ret && query("offhand"))
     {
         m_delete(itemData, "offhand");
     }
-    
+
     return ret;
 }
 

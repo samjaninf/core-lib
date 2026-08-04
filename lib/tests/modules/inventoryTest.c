@@ -1185,6 +1185,166 @@ void UnequippingSecondRingResetsTheMaskToRing()
 }
 
 /////////////////////////////////////////////////////////////////////////////
+void DamageBonusCalledFirstDoesNotCorruptAttackBonusCache()
+{
+    Inventory.addSkillPoints(100);
+    Inventory.Str(16);
+    Inventory.advanceSkill("long sword", 6);
+
+    object weapon = clone_object("/lib/items/weapon");
+    weapon.set("name", "blah");
+    weapon.set("weapon class", 8);
+    weapon.set("material", "mithril");
+    weapon.set("weapon type", "long sword");
+    weapon.set("equipment locations", OnehandedWeapon);
+    move_object(weapon, Inventory);
+
+    ExpectTrue(weapon.equip("blah"), "weapon equip called");
+
+    ExpectEq(12, Inventory.inventoryGetDamageBonus(weapon, "physical"),
+        "damage bonus is correct on first call");
+    ExpectEq(11, Inventory.inventoryGetAttackBonus(weapon),
+        "attack bonus is correct after damage bonus was cached first");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void AttackBonusCalledFirstDoesNotCorruptDamageBonusCache()
+{
+    Inventory.addSkillPoints(100);
+    Inventory.Str(16);
+    Inventory.advanceSkill("long sword", 6);
+
+    object weapon = clone_object("/lib/items/weapon");
+    weapon.set("name", "blah");
+    weapon.set("weapon class", 8);
+    weapon.set("material", "mithril");
+    weapon.set("weapon type", "long sword");
+    weapon.set("equipment locations", OnehandedWeapon);
+    move_object(weapon, Inventory);
+
+    ExpectTrue(weapon.equip("blah"), "weapon equip called");
+
+    ExpectEq(11, Inventory.inventoryGetAttackBonus(weapon),
+        "attack bonus is correct on first call");
+    ExpectEq(12, Inventory.inventoryGetDamageBonus(weapon, "physical"),
+        "damage bonus is correct after attack bonus was cached first");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void DamageAndAttackBonusReturnSameValuesRegardlessOfCallOrder()
+{
+    object playerA = clone_object("/lib/tests/support/services/mockPlayer.c");
+    playerA.Name("Alice");
+    playerA.Gender("female");
+    move_object(playerA, this_object());
+    playerA.addSkillPoints(100);
+    playerA.Str(16);
+    playerA.advanceSkill("long sword", 6);
+
+    object weaponA = clone_object("/lib/items/weapon");
+    weaponA.set("name", "bladeA");
+    weaponA.set("weapon class", 8);
+    weaponA.set("material", "mithril");
+    weaponA.set("weapon type", "long sword");
+    weaponA.set("equipment locations", OnehandedWeapon);
+    move_object(weaponA, playerA);
+    weaponA.equip("bladeA");
+
+    int damageFirst = playerA.inventoryGetDamageBonus(weaponA, "physical");
+    int attackAfterDamage = playerA.inventoryGetAttackBonus(weaponA);
+    destruct(playerA);
+
+    object playerB = clone_object("/lib/tests/support/services/mockPlayer.c");
+    playerB.Name("Carol");
+    playerB.Gender("female");
+    move_object(playerB, this_object());
+    playerB.addSkillPoints(100);
+    playerB.Str(16);
+    playerB.advanceSkill("long sword", 6);
+
+    object weaponB = clone_object("/lib/items/weapon");
+    weaponB.set("name", "bladeB");
+    weaponB.set("weapon class", 8);
+    weaponB.set("material", "mithril");
+    weaponB.set("weapon type", "long sword");
+    weaponB.set("equipment locations", OnehandedWeapon);
+    move_object(weaponB, playerB);
+    weaponB.equip("bladeB");
+
+    int attackFirst = playerB.inventoryGetAttackBonus(weaponB);
+    int damageAfterAttack = playerB.inventoryGetDamageBonus(weaponB, "physical");
+    destruct(playerB);
+
+    ExpectEq(damageFirst, damageAfterAttack,
+        "damage bonus is identical regardless of which was called first");
+    ExpectEq(attackFirst, attackAfterDamage,
+        "attack bonus is identical regardless of which was called first");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WearRingWithNoQualifierUsesRing1WhenBothSlotsEmpty()
+{
+    object ring = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring.set("name", "Ring of Weasels");
+    move_object(ring, Inventory);
+
+    command("wear Ring of Weasels", Inventory);
+    ExpectTrue(Inventory.isEquipped(ring), "ring is equipped");
+    ExpectEq(0x00001000, ring.query("equipment locations"), "ring is in ring 1 slot");
+    ExpectTrue(objectp(Inventory.equipmentInSlot("ring 1")), "ring 1 slot is occupied");
+    ExpectFalse(Inventory.equipmentInSlot("ring 2"), "ring 2 slot is empty");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WearRingWithNoQualifierAutoFillsRing2WhenRing1IsOccupied()
+{
+    object ring1 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring1.set("name", "Ring of Weasels");
+    move_object(ring1, Inventory);
+
+    object ring2 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring2.set("name", "Ring of Spiffiness");
+    move_object(ring2, Inventory);
+
+    command("wear Ring of Weasels", Inventory);
+    ExpectTrue(Inventory.isEquipped(ring1), "first ring is equipped");
+    ExpectEq(0x00001000, ring1.query("equipment locations"), "first ring is in ring 1");
+
+    command("wear Ring of Spiffiness", Inventory);
+    ExpectTrue(Inventory.isEquipped(ring1), "first ring still equipped after second wear");
+    ExpectTrue(Inventory.isEquipped(ring2), "second ring is equipped");
+    ExpectEq(0x00001000, ring1.query("equipment locations"), "first ring remains in ring 1");
+    ExpectEq(0x00002000, ring2.query("equipment locations"), "second ring auto-selected ring 2");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+void WearRingWithNoQualifierDisplacesRing1WhenBothSlotsOccupied()
+{
+    object ring1 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring1.set("name", "Ring of Weasels");
+    move_object(ring1, Inventory);
+
+    object ring2 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring2.set("name", "Ring of Spiffiness");
+    move_object(ring2, Inventory);
+
+    object ring3 = clone_object("/lib/instances/items/armor/accessories/ring.c");
+    ring3.set("name", "Ring of Power");
+    move_object(ring3, Inventory);
+
+    command("wear Ring of Weasels", Inventory);
+    command("wear Ring of Spiffiness", Inventory);
+    ExpectTrue(Inventory.isEquipped(ring1), "ring 1 equipped");
+    ExpectTrue(Inventory.isEquipped(ring2), "ring 2 equipped");
+
+    command("wear Ring of Power", Inventory);
+    ExpectFalse(Inventory.isEquipped(ring1), "ring 1 displaced when both slots were full");
+    ExpectTrue(Inventory.isEquipped(ring2), "ring 2 undisturbed");
+    ExpectTrue(Inventory.isEquipped(ring3), "ring 3 now in ring 1 slot");
+    ExpectEq(0x00001000, ring3.query("equipment locations"), "ring 3 is in ring 1");
+}
+
+/////////////////////////////////////////////////////////////////////////////
 void UnregisterObjectsOfTypeRemovesAllMatchingModifiers()
 {
     object poison1 = clone_object("/lib/items/modifierObject");

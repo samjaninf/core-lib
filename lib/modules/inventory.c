@@ -815,7 +815,7 @@ public nomask int inventoryGetDamageBonus(object weapon, string damageType)
             }
             else
             {
-                ret += addValueToCache(weapon, "weapon attack",
+                ret += addValueToCache(weapon, "weapon class",
                     weapon->query("weapon class"));
             }
 

@@ -730,6 +730,16 @@ public int equip(string item)
                 itemData["equipment locations"] = Ring2;
             }
         }
+        else
+        {
+            object ringEnvironment = environment(this_object());
+            if (ringEnvironment && function_exists("equipmentInSlot", ringEnvironment) &&
+                ringEnvironment->equipmentInSlot("ring 1") &&
+                !ringEnvironment->equipmentInSlot("ring 2"))
+            {
+                itemData["equipment locations"] = Ring2;
+            }
+        }
     }
 
     object env = environment(this_object());

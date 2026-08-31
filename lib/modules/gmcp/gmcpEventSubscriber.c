@@ -227,6 +227,386 @@ private mapping summarizeInventoryItem(object item, string slot)
 }
 
 /////////////////////////////////////////////////////////////////////////////
+private mapping skillsSnapshot(object player)
+{
+    mapping ret = ([]);
+    object skillsService = getService("skills");
+
+    if (!objectp(skillsService))
+    {
+        return ret;
+    }
+
+    string *types = ({ "combat", "crafting", "erudite", "subterfuge",
+        "general", "magic", "language" });
+
+    foreach (string type in types)
+    {
+        string *skillList = skillsService->validSkillsOfType(type);
+        foreach (string skill in skillList)
+        {
+            int base = player->getSkill(skill, 1);
+            int effective = player->getSkill(skill);
+            if (base > 0 || effective > 0)
+            {
+                ret[skill] = ([
+                    "value": effective,
+                    "base": base,
+                    "bonus": effective - base,
+                    "type": type
+                ]);
+            }
+        }
+    }
+
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private mixed traitsSnapshot(object player)
+{
+    mixed ret = ({});
+    object traitService = getService("traits");
+
+    if (!objectp(traitService))
+    {
+        return ret;
+    }
+
+    string *traitList = player->Traits();
+    foreach (string trait in traitList)
+    {
+        object traitObj = traitService->traitObject(trait);
+        if (objectp(traitObj))
+        {
+            ret += ({ ([
+                "name": (traitObj->query("name") || ""),
+                "type": (traitObj->query("type") || ""),
+                "root": (traitObj->query("root") || ""),
+                "description": (traitObj->query("description") || "")
+            ]) });
+        }
+    }
+
+    return ret;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+private mapping researchSnapshot(object player)
+{
+    object researchService = getService("research");
+    mixed trees = ({});
+
+    string *availableTrees = player->availableResearchTrees();
+    if (!pointerp(availableTrees))
+    {
+        availableTrees = ({});
+    }
+
+    foreach (string treePath in availableTrees)
+    {
+        object treeObj = researchService->researchTree(treePath);
+        if (!objectp(treeObj))
+        {
+            continue;
+        }
+
+        mapping flatTree = treeObj->getFlattenedResearchTree(player);
+        if (!mappingp(flatTree))
+        {
+            continue;
+        }
+
+        mixed nodes = ({});
+        object *nodeObjects = m_indices(flatTree);
+
+        foreach (object researchObj in nodeObjects)
+        {
+            string nodePath;
+            mapping statusData;
+            string nodeStatus;
+            string *parents;
+
+            if (!objectp(researchObj))
+            {
+                continue;
+            }
+
+            nodePath = program_name(researchObj);
+            statusData = flatTree[researchObj];
+
+            nodeStatus = "locked";
+            if (mappingp(statusData))
+            {
+                if (member(statusData, "researched") != -1)
+                {
+                    nodeStatus = "known";
+                }
+                else if (member(statusData, "researching") != -1)
+                {
+                    nodeStatus = "in_progress";
+                }
+                else if (member(statusData, "can research") != -1)
+                {
+                    nodeStatus = "available";
+                }
+            }
+
+            parents = treeObj->getParents(nodePath);
+            if (!pointerp(parents))
+            {
+                parents = ({});
+            }
+
+            mixed prereqs = ({});
+            mapping prereqMap = researchObj->getPrerequisites();
+            if (mappingp(prereqMap))
+            {
+                string *prereqKeys = m_indices(prereqMap);
+                foreach (string prereqKey in prereqKeys)
+                {
+                    mapping pd = prereqMap[prereqKey];
+                    if (mappingp(pd))
+                    {
+                        string prereqType = (pd["type"] || "");
+                        string displayKey = prereqKey;
+                        if (prereqType == "research")
+                        {
+                            object rObj = getService("research")->researchObject(prereqKey);
+                            if (objectp(rObj))
+                            {
+                                displayKey = (rObj->query("name") || prereqKey);
+                            }
+                        }
+                        prereqs += ({ ([
+                            "key": displayKey,
+                            "type": prereqType,
+                            "value": (pd["value"] || 0),
+                            "guild": (pd["guild"] || "")
+                        ]) });
+                    }
+                }
+            }
+
+            // modifiers (damage/effect scaling formulas)
+            mixed *modifierData = researchObj->query("modifiers");
+            mixed modifiers = ({});
+            if (pointerp(modifierData))
+            {
+                foreach (mapping mod in modifierData)
+                {
+                    if (mappingp(mod))
+                    {
+                        modifiers += ({ ([
+                            "type": (mod["type"] || ""),
+                            "name": (mod["name"] || ""),
+                            "formula": (mod["formula"] || ""),
+                            "rate": (mod["rate"] || 0)
+                        ]) });
+                    }
+                }
+            }
+
+            // damage/healing effect formulas
+            string *effectTypes = ({
+                "damage hit points", "damage spell points",
+                "damage stamina points", "increase hit points",
+                "increase spell points", "increase stamina points",
+                "siphon hit points", "siphon spell points",
+                "siphon stamina points"
+            });
+            mapping damageEffects = ([]);
+            foreach (string effectType in effectTypes)
+            {
+                mixed *effectData = researchObj->query(effectType);
+                if (pointerp(effectData) && sizeof(effectData))
+                {
+                    mixed *entries = ({});
+                    foreach (mapping entry in effectData)
+                    {
+                        if (mappingp(entry))
+                        {
+                            entries += ({ ([
+                                "probability": (entry["probability"] || 0),
+                                "baseDamage": (entry["base damage"] || 0),
+                                "range": (entry["range"] || 0)
+                            ]) });
+                        }
+                    }
+                    if (sizeof(entries))
+                    {
+                        damageEffects[effectType] = entries;
+                    }
+                }
+            }
+
+            // damage type
+            string damageType = (researchObj->query("damage type") || "");
+
+            // apply to
+            string *applyToKeys = researchObj->query("apply to");
+            mixed applyTo = ({});
+            if (pointerp(applyToKeys))
+            {
+                applyTo = applyToKeys;
+            }
+
+            // affected research
+            mapping affectedResearchData = researchObj->query("affected research");
+            string affectedResearchType = (researchObj->query("affected research type") || "");
+            mapping affectedResearch = ([]);
+            if (mappingp(affectedResearchData))
+            {
+                affectedResearch = affectedResearchData;
+            }
+
+            // limiters
+            mapping limiterData = researchObj->query("limited by");
+            mapping limiters = ([]);
+            if (mappingp(limiterData))
+            {
+                string *limiterKeys = m_indices(limiterData);
+                foreach (string lk in limiterKeys)
+                {
+                    mixed lv = limiterData[lk];
+                    // resolve research/trait file paths to names
+                    if (lk == "research" || lk == "research active")
+                    {
+                        mixed *resolved = ({});
+                        if (pointerp(lv))
+                        {
+                            foreach (string rpath in lv)
+                            {
+                                object rObj = getService("research")->researchObject(rpath);
+                                resolved += ({ objectp(rObj) ? (rObj->query("name") || rpath) : rpath });
+                            }
+                        }
+                        limiters[lk] = resolved;
+                    }
+                    else if (lk == "traits")
+                    {
+                        mixed *resolved = ({});
+                        if (pointerp(lv))
+                        {
+                            foreach (string tpath in lv)
+                            {
+                                object tObj = getService("traits")->traitObject(tpath);
+                                resolved += ({ objectp(tObj) ? (tObj->query("name") || tpath) : tpath });
+                            }
+                        }
+                        limiters[lk] = resolved;
+                    }
+                    else
+                    {
+                        limiters[lk] = lv;
+                    }
+                }
+            }
+
+            // cost modifiers (research that reduces use cost)
+            mapping costModData = researchObj->query("cost modifiers");
+            mapping costModifiers = ([]);
+            if (mappingp(costModData))
+            {
+                foreach (string rpath in m_indices(costModData))
+                {
+                    object rObj = getService("research")->researchObject(rpath);
+                    string rName = objectp(rObj) ? (rObj->query("name") || rpath) : rpath;
+                    costModifiers[rName] = costModData[rpath];
+                }
+            }
+
+            // cooldown modifiers
+            mapping cdModData = researchObj->query("cooldown modifiers");
+            mapping cooldownModifiers = ([]);
+            if (mappingp(cdModData))
+            {
+                foreach (string rpath in m_indices(cdModData))
+                {
+                    object rObj = getService("research")->researchObject(rpath);
+                    string rName = objectp(rObj) ? (rObj->query("name") || rpath) : rpath;
+                    cooldownModifiers[rName] = cdModData[rpath];
+                }
+            }
+
+            // consumables
+            mapping consumableData = researchObj->query("consumables");
+            mapping consumables = ([]);
+            if (mappingp(consumableData))
+            {
+                consumables = consumableData;
+            }
+
+            int supercede = (researchObj->query("supercede targets") || 0);
+
+            string *bonusKeys = researchObj->query("bonuses");
+            string *penaltyKeys = researchObj->query("penalties");
+            mapping bonuses = ([]);
+            mapping penalties = ([]);
+            if (pointerp(bonusKeys))
+            {
+                foreach (string bk in bonusKeys)
+                {
+                    bonuses[bk] = researchObj->query(bk);
+                }
+            }
+            if (pointerp(penaltyKeys))
+            {
+                foreach (string pk in penaltyKeys)
+                {
+                    penalties[pk] = researchObj->query(pk);
+                }
+            }
+
+            nodes += ({ ([
+                "path": nodePath,
+                "name": (researchObj->query("name") || ""),
+                "description": (researchObj->query("description") || ""),
+                "type": (researchObj->query("research type") || ""),
+                "researchType": (researchObj->query("type") || ""),
+                "scope": (researchObj->query("scope") || ""),
+                "effect": (researchObj->query("effect") || ""),
+                "cost": (researchObj->query("research cost") || 0),
+                "spellPointCost": (researchObj->query("spell point cost") || 0),
+                "hitPointCost": (researchObj->query("hit point cost") || 0),
+                "staminaPointCost": (researchObj->query("stamina point cost") || 0),
+                "cooldown": (researchObj->query("cooldown") || 0),
+                "duration": (researchObj->query("duration") || 0),
+                "commandTemplate": (researchObj->query("command template") || ""),
+                "status": nodeStatus,
+                "parents": parents,
+                "prerequisites": prereqs,
+                "bonuses": bonuses,
+                "penalties": penalties,
+                "modifiers": modifiers,
+                "damageEffects": damageEffects,
+                "damageType": damageType,
+                "applyTo": applyTo,
+                "affectedResearch": affectedResearch,
+                "affectedResearchType": affectedResearchType,
+                "limiters": limiters,
+                "costModifiers": costModifiers,
+                "cooldownModifiers": cooldownModifiers,
+                "consumables": consumables,
+                "supercedeTargets": supercede
+            ]) });
+        }
+
+        trees += ({ ([
+            "name": (treeObj->Name() || ""),
+            "source": (treeObj->Source() || ""),
+            "root": (treeObj->TreeRoot() || ""),
+            "nodes": nodes
+        ]) });
+    }
+
+    return ([
+        "points": player->researchPoints(),
+        "trees": trees
+    ]);
+}
+
+/////////////////////////////////////////////////////////////////////////////
 public void pushVitals()
 {
     if (objectp(player) && function_exists("sendOutOfBand", player) &&
@@ -304,6 +684,38 @@ public void pushInventory()
             "equipped": equipped,
             "carried": carried
         ]));
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void pushSkills()
+{
+    if (objectp(player) && function_exists("sendOutOfBand", player) &&
+        function_exists("getSkill", player))
+    {
+        player->sendOutOfBand("Char.Skills", skillsSnapshot(player));
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void pushTraits()
+{
+    if (objectp(player) && function_exists("sendOutOfBand", player) &&
+        function_exists("Traits", player))
+    {
+        player->sendOutOfBand("Char.Traits", ([
+            "traits": traitsSnapshot(player)
+        ]));
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void pushResearch()
+{
+    if (objectp(player) && function_exists("sendOutOfBand", player) &&
+        function_exists("completedResearch", player))
+    {
+        player->sendOutOfBand("Char.Research", researchSnapshot(player));
     }
 }
 
@@ -432,6 +844,7 @@ public void onSkillAdvanced(object caller, mixed data)
     if (objectp(caller) && caller == player)
     {
         pushScore();
+        pushSkills();
     }
 }
 
@@ -441,6 +854,7 @@ public void onTraitAdded(object caller, mixed data)
     if (objectp(caller) && caller == player)
     {
         pushScore();
+        pushTraits();
     }
 }
 
@@ -450,5 +864,55 @@ public void onTraitRemoved(object caller, mixed data)
     if (objectp(caller) && caller == player)
     {
         pushScore();
+        pushTraits();
     }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void onResearchCompleted(object caller, mixed data)
+{
+    if (objectp(caller) && caller == player)
+    {
+        pushResearch();
+        pushScore();
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void onResearchStarted(object caller, mixed data)
+{
+    if (objectp(caller) && caller == player)
+    {
+        pushResearch();
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void onResearchPointsAdded(object caller, mixed data)
+{
+    if (objectp(caller) && caller == player)
+    {
+        pushResearch();
+        pushScore();
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void onResearchTreeOpen(object caller, mixed data)
+{
+    if (objectp(caller) && caller == player)
+    {
+        pushResearch();
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+public void pushAll()
+{
+    pushScore();
+    pushVitals();
+    pushInventory();
+    pushSkills();
+    pushTraits();
+    pushResearch();
 }

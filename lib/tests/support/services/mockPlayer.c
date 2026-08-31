@@ -83,3 +83,9 @@ public string *caughtGmcpFrames()
 {
     return gmcpFrames + ({ });
 }
+
+/////////////////////////////////////////////////////////////////////////////
+public void clearCaughtGmcp()
+{
+    gmcpFrames = ({ });
+}

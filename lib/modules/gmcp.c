@@ -49,7 +49,7 @@ public nomask int sendGmcp(string package, string json)
     if (gmcpEnabled && stringp(package) && stringp(json))
     {
         int *frame = ({ IAC, SB, TELOPT_GMCP });
-        string payload = sprintf("%s %s", package, json);
+        string payload = package + " " + json;
 
         foreach (int character in to_array(payload))
         {
@@ -90,8 +90,53 @@ public nomask int advertiseGmcp()
 /////////////////////////////////////////////////////////////////////////////
 protected nomask void receiveGmcp(string body)
 {
-    // Placeholder for future client->server packages.
-    // Intentionally a no-op for now beyond acknowledging enablement.
+    if (!stringp(body) || !sizeof(body))
+    {
+        return;
+    }
+
+    int spaceIndex = member(body, ' ');
+    string pkg = (spaceIndex > 0) ? body[0..spaceIndex - 1] : body;
+    string payload = (spaceIndex > 0) ? body[spaceIndex + 1..] : "";
+
+    if (lower_case(pkg) == "client.research" && sizeof(payload))
+    {
+        string path = regreplace(payload,
+            ".*\"path\"[ \t]*:[ \t]*\"([^\"]+)\".*", "\\1", 0);
+        if (stringp(path) && sizeof(path) && path != payload)
+        {
+            this_object()->initiateResearch(path);
+        }
+    }
+    else if (lower_case(pkg) == "client.request" && objectp(gmcpSubscriber))
+    {
+        string what = sizeof(payload) ? regreplace(payload,
+            ".*\"what\"[ \t]*:[ \t]*\"([^\"]+)\".*", "\\1", 0) : "";
+        if (what == "research")
+        {
+            gmcpSubscriber->pushResearch();
+        }
+        else if (what == "inventory")
+        {
+            gmcpSubscriber->pushInventory();
+        }
+        else if (what == "skills")
+        {
+            gmcpSubscriber->pushSkills();
+        }
+        else if (what == "traits")
+        {
+            gmcpSubscriber->pushTraits();
+        }
+        else if (what == "score")
+        {
+            gmcpSubscriber->pushScore();
+        }
+        else
+        {
+            gmcpSubscriber->pushAll();
+        }
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -107,6 +152,9 @@ private nomask void enableGmcpSubscriber()
     gmcpSubscriber->pushScore();
     gmcpSubscriber->pushVitals();
     gmcpSubscriber->pushInventory();
+    gmcpSubscriber->pushSkills();
+    gmcpSubscriber->pushTraits();
+    gmcpSubscriber->pushResearch();
 }
 
 /////////////////////////////////////////////////////////////////////////////

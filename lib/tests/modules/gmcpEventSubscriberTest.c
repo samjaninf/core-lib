@@ -1240,8 +1240,11 @@ void PushResearchIncludesPointsKey()
 /////////////////////////////////////////////////////////////////////////////
 void PushResearchIncludesTreesKey()
 {
+    Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"trees\"", Player.caughtGmcp(),
+    // New protocol: each tree is a separate Char.Research.Tree frame
+    string allFrames = implode(Player.caughtGmcpFrames(), "");
+    ExpectSubStringMatch("Char.Research.Tree", allFrames,
         "trees key present in Char.Research payload");
 }
 
@@ -1262,7 +1265,7 @@ void PushResearchIncludesTreeNameWhenTreeAvailable()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"name\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"name\"", implode(Player.caughtGmcpFrames(), ""),
         "name key present in tree entry");
 }
 
@@ -1271,7 +1274,7 @@ void PushResearchIncludesTreeSourceWhenTreeAvailable()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"source\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"source\"", implode(Player.caughtGmcpFrames(), ""),
         "source key present in tree entry");
 }
 
@@ -1280,7 +1283,7 @@ void PushResearchIncludesTreeRootWhenTreeAvailable()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"root\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"root\"", implode(Player.caughtGmcpFrames(), ""),
         "root key present in tree entry");
 }
 
@@ -1289,7 +1292,7 @@ void PushResearchIncludesNodesArrayWhenTreeAvailable()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"nodes\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"nodes\"", implode(Player.caughtGmcpFrames(), ""),
         "nodes key present in tree entry");
 }
 
@@ -1302,7 +1305,7 @@ void ResearchNodeIncludesPathField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"path\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"path\"", implode(Player.caughtGmcpFrames(), ""),
         "path field present on research node");
 }
 
@@ -1311,7 +1314,7 @@ void ResearchNodeIncludesNameField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"name\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"name\"", implode(Player.caughtGmcpFrames(), ""),
         "name field present on research node");
 }
 
@@ -1320,7 +1323,7 @@ void ResearchNodeIncludesDescriptionField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"description\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"description\"", implode(Player.caughtGmcpFrames(), ""),
         "description field present on research node");
 }
 
@@ -1329,7 +1332,7 @@ void ResearchNodeIncludesTypeField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"type\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"type\"", implode(Player.caughtGmcpFrames(), ""),
         "type field present on research node");
 }
 
@@ -1338,7 +1341,7 @@ void ResearchNodeIncludesStatusField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"status\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"status\"", implode(Player.caughtGmcpFrames(), ""),
         "status field present on research node");
 }
 
@@ -1347,7 +1350,7 @@ void ResearchNodeIncludesParentsField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"parents\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"parents\"", implode(Player.caughtGmcpFrames(), ""),
         "parents field present on research node");
 }
 
@@ -1356,7 +1359,7 @@ void ResearchNodeIncludesPrerequisitesField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"prerequisites\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"prerequisites\"", implode(Player.caughtGmcpFrames(), ""),
         "prerequisites field present on research node");
 }
 
@@ -1365,7 +1368,7 @@ void ResearchNodeIncludesBonusesField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"bonuses\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"bonuses\"", implode(Player.caughtGmcpFrames(), ""),
         "bonuses field present on research node");
 }
 
@@ -1374,7 +1377,7 @@ void ResearchNodeIncludesPenaltiesField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"penalties\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"penalties\"", implode(Player.caughtGmcpFrames(), ""),
         "penalties field present on research node");
 }
 
@@ -1383,7 +1386,7 @@ void ResearchNodeIncludesModifiersField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"modifiers\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"modifiers\"", implode(Player.caughtGmcpFrames(), ""),
         "modifiers field present on research node");
 }
 
@@ -1392,7 +1395,7 @@ void ResearchNodeIncludesDamageEffectsField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"damageEffects\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"damageEffects\"", implode(Player.caughtGmcpFrames(), ""),
         "damageEffects field present on research node");
 }
 
@@ -1401,7 +1404,7 @@ void ResearchNodeIncludesLimitersField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"limiters\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"limiters\"", implode(Player.caughtGmcpFrames(), ""),
         "limiters field present on research node");
 }
 
@@ -1410,7 +1413,7 @@ void ResearchNodeIncludesCostModifiersField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"costModifiers\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"costModifiers\"", implode(Player.caughtGmcpFrames(), ""),
         "costModifiers field present on research node");
 }
 
@@ -1419,7 +1422,7 @@ void ResearchNodeIncludesCooldownModifiersField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"cooldownModifiers\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"cooldownModifiers\"", implode(Player.caughtGmcpFrames(), ""),
         "cooldownModifiers field present on research node");
 }
 
@@ -1428,7 +1431,7 @@ void ResearchNodeIncludesConsumablesField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"consumables\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"consumables\"", implode(Player.caughtGmcpFrames(), ""),
         "consumables field present on research node");
 }
 
@@ -1437,7 +1440,7 @@ void ResearchNodeIncludesSupercedeTargetsField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"supercedeTargets\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"supercedeTargets\"", implode(Player.caughtGmcpFrames(), ""),
         "supercedeTargets field present on research node");
 }
 
@@ -1446,7 +1449,7 @@ void ResearchNodeIncludesAffectedResearchField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"affectedResearch\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"affectedResearch\"", implode(Player.caughtGmcpFrames(), ""),
         "affectedResearch field present on research node");
 }
 
@@ -1455,7 +1458,7 @@ void ResearchNodeIncludesAffectedResearchTypeField()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"affectedResearchType\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"affectedResearchType\"", implode(Player.caughtGmcpFrames(), ""),
         "affectedResearchType field present on research node");
 }
 
@@ -1465,8 +1468,8 @@ void ResearchNodeBonusValueIsSerializedForPassiveItem()
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
     // testTreeRoot has "bonus long sword": 2
-    string frame = Player.caughtGmcp();
-    ExpectSubStringMatch("long sword", frame,
+    string allFrames = implode(Player.caughtGmcpFrames(), "");
+    ExpectSubStringMatch("long sword", allFrames,
         "bonus key name appears in node bonuses");
 }
 
@@ -1475,7 +1478,7 @@ void ResearchNodeStatusIsLockedWhenNotResearched()
 {
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    ExpectSubStringMatch("\"status\"", Player.caughtGmcp(),
+    ExpectSubStringMatch("\"status\"", implode(Player.caughtGmcpFrames(), ""),
         "status field present");
 }
 
@@ -1485,8 +1488,8 @@ void ResearchNodePrerequisiteTypeIsSerializedForSkillPrereq()
     // testTreeRoot has a long sword skill prereq
     Player.addResearchTree("/lib/tests/support/research/testResearchTree.c");
     Subscriber.pushResearch();
-    string frame = Player.caughtGmcp();
-    ExpectSubStringMatch("\"type\"", frame,
+    string allFrames = implode(Player.caughtGmcpFrames(), "");
+    ExpectSubStringMatch("\"type\"", allFrames,
         "prereq type key serialized");
 }
 
@@ -1503,8 +1506,8 @@ void ResearchNodeStatusIsKnownAfterResearching()
     Player.initiateResearch("/lib/tests/support/research/testTreeRoot.c");
     Player.completedResearch("/lib/tests/support/research/testTreeRoot.c");
     Subscriber.pushResearch();
-    string frame = Player.caughtGmcp();
-    ExpectSubStringMatch("known", frame,
+    string allFrames = implode(Player.caughtGmcpFrames(), "");
+    ExpectSubStringMatch("known", allFrames,
         "node status is known after research completed");
 }
 

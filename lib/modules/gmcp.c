@@ -116,9 +116,18 @@ protected nomask void receiveGmcp(string body)
         {
             gmcpSubscriber->pushResearch();
         }
-        else if (what == "inventory")
+        else if (what == "research.list")
         {
-            gmcpSubscriber->pushInventory();
+            gmcpSubscriber->pushResearchList();
+        }
+        else if (what == "research.tree" && sizeof(payload))
+        {
+            string treePath = regreplace(payload,
+                ".*\"path\"[ \t]*:[ \t]*\"([^\"]+)\".*", "\\1", 0);
+            if (stringp(treePath) && sizeof(treePath) && treePath != payload)
+            {
+                gmcpSubscriber->pushResearchTree(treePath);
+            }
         }
         else if (what == "skills")
         {
